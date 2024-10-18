@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nombre": "Canal Uno",
-      "logo": "/IMG/1.jpg",
+      "logo": "IMG/1.jpg",
       "categoria": "Nacional",
       "descripcion": "Canal de televisión nacional con programación variada.",
       "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=cartoon-op2"
