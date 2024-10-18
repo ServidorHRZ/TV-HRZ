@@ -8,14 +8,14 @@
     },
     {
       "titulo": "IRON MAN 2",
-      "año": 2023,
+      "año": 2010,
       "imagen": "https://static.posters.cz/image/750/posters/iron-man-2-one-sheet-i7902.jpg",
       "enlace": "https://drive.google.com/file/d/ID_DE_LA_PELICULA_2/preview"
     },
     {
-      "titulo": "Título de la Película 3",
-      "año": 2024,
-      "imagen": "https://ejemplo.com/imagen-pelicula3.jpg",
+      "titulo": "IRON MAN 3",
+      "año": 2013,
+      "imagen": "https://static.posters.cz/image/750/posters/iron-man-3-one-sheet-i16526.jpg",
       "enlace": "https://drive.google.com/file/d/ID_DE_LA_PELICULA_3/preview"
     }
   ]
