@@ -2,8 +2,8 @@
   "canales": [
     {
       "id": 1,
-      "nombre": "Canal Uno",
-      "logo": "./IMG/1.jpg",
+      "nombre": "Caracol TV",
+      "logo": "https://revistacorrientes.com/wp-content/uploads/2020/02/logo-caracol-tv.jpg",
       "categoria": "Nacional",
       "descripcion": "Canal de televisión nacional con programación variada.",
       "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=cartoon-op2"
