@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRZ TV - Series</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00ffff;
+            --secondary-color: #ffffff;
+            --background-color: #000000;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(45deg, var(--background-color), #1a1a1a);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header {
+            text-align: center;
+            color: var(--primary-color);
+            padding: 2rem 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+        }
+        .header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color);
+            }
+            to {
+                text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 30px var(--primary-color);
+            }
+        }
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        .series-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .series-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid var(--primary-color);
+            width: 200px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+        .series-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255, 255, 255, 0.1) 0%,
+                rgba(255, 255, 255, 0.05) 50%,
+                transparent 50%,
+                transparent 100%
+            );
+            transform: rotate(-45deg);
+            transition: all 0.5s ease;
+        }
+        .series-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 0 30px var(--primary-color);
+            background-color: rgba(0, 255, 255, 0.1);
+        }
+        .series-card:hover::before {
+            top: -75%;
+            left: -75%;
+        }
+        .series-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        .series-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            transform: translateY(100%);
+            transition: all 0.3s ease;
+        }
+        .series-card:hover .series-info {
+            transform: translateY(0);
+        }
+        .series-info h3 {
+            color: var(--secondary-color);
+            margin: 0;
+            font-size: 1rem;
+        }
+        .series-info p {
+            color: var(--primary-color);
+            margin: 5px 0 0;
+            font-size: 0.8rem;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: var(--primary-color);
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 3rem;
+            }
+            .series-card {
+                width: 160px;
+                height: 240px;
+            }
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        #search-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px 0 0 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: var(--secondary-color);
+            width: 300px;
+        }
+
+        #search-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #search-button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="location.href='../index.html';">Volver</button>
+    <div class="header">
+        <h1>HRZ TV</h1>
+        <p>Series</p>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Buscar serie...">
+        <button id="search-button">Buscar</button>
+    </div>
+    <div class="series-container" id="series-container">
+        <!-- Las series se cargarán aquí dinámicamente -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Tecnologia HRZ. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Función para cargar las series desde el JSON
+        function cargarSeries() {
+            fetch('../DataBase/series.json')
+                .then(response => response.json())
+                .then(data => {
+                    const seriesContainer = document.getElementById('series-container');
+                    seriesContainer.innerHTML = ''; // Limpiar el contenedor
+
+                    data.series.forEach(serie => {
+                        const seriesCard = document.createElement('div');
+                        seriesCard.className = 'series-card';
+                        seriesCard.innerHTML = `
+                            <img src="${serie.imagen}" alt="${serie.titulo}">
+                            <div class="series-info">
+                                <h3>${serie.titulo}</h3>
+                                <p>Temporadas: ${serie.temporadas.length}</p>
+                            </div>
+                        `;
+                        seriesCard.addEventListener('click', () => {
+                            localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
+                            window.location.href = 'serie.html';
+                        });
+                        seriesContainer.appendChild(seriesCard);
+                    });
+                })
+                .catch(error => console.error('Error cargando las series:', error));
+        }
+
+        // Función de búsqueda
+        function searchSeries() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const seriesCards = document.getElementsByClassName('series-card');
+
+            for (let card of seriesCards) {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                if (title.includes(searchTerm)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            }
+        }
+
+        // Cargar series cuando la página se carga
+        window.addEventListener('load', cargarSeries);
+
+        // Event listeners para la búsqueda
+        document.getElementById('search-button').addEventListener('click', searchSeries);
+        document.getElementById('search-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchSeries();
+            }
+        });
+    </script>
+</body>
+</html>

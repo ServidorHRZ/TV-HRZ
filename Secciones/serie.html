@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRZ TV - Reproducción de Serie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00ffff;
+            --secondary-color: #ffffff;
+            --background-color: #000000;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(45deg, var(--background-color), #1a1a1a);
+            color: var(--secondary-color);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary-color);
+        }
+        .serie-info {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .serie-poster {
+            flex: 0 0 300px;
+        }
+        .serie-poster img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+        .serie-details {
+            flex: 1;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .video-container iframe, .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .temporadas-container {
+            margin-top: 20px;
+        }
+        .temporada {
+            margin-bottom: 20px;
+            background-color: rgba(0, 255, 255, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .temporada-titulo {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 10px;
+            cursor: pointer;
+        }
+        .episodios {
+            display: none;
+            padding: 10px;
+        }
+        .episodio {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .episodio:hover {
+            background-color: rgba(0, 255, 255, 0.2);
+        }
+        .episodio-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .episodio-titulo {
+            font-weight: bold;
+        }
+        .episodio-duracion {
+            font-size: 0.9em;
+            color: var(--primary-color);
+        }
+        .episodio-descripcion {
+            font-size: 0.9em;
+            margin-top: 5px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HRZ TV - Reproducción de Serie</h1>
+        <div class="serie-info">
+            <div class="serie-poster">
+                <img id="serie-imagen" src="" alt="Poster de la serie">
+            </div>
+            <div class="serie-details">
+                <h2 id="serie-titulo"></h2>
+                <p id="serie-descripcion"></p>
+                <p><strong>Año:</strong> <span id="serie-año"></span></p>
+                <p><strong>Género:</strong> <span id="serie-genero"></span></p>
+                <p><strong>Director:</strong> <span id="serie-director"></span></p>
+                <p><strong>Actores:</strong> <span id="serie-actores"></span></p>
+            </div>
+        </div>
+        <div class="video-container">
+            <video id="video-player" controls>
+                <source src="" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+        <div class="temporadas-container" id="temporadas-container"></div>
+        <a href="Series.html" class="back-button">Volver a Series</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const serieSeleccionada = JSON.parse(localStorage.getItem('serieSeleccionada'));
+            if (serieSeleccionada) {
+                cargarInformacionSerie(serieSeleccionada);
+                cargarTemporadas(serieSeleccionada.temporadas);
+            }
+        });
+
+        function cargarInformacionSerie(serie) {
+            document.getElementById('serie-imagen').src = serie.imagen;
+            document.getElementById('serie-titulo').textContent = serie.titulo;
+            document.getElementById('serie-descripcion').textContent = serie.descripcion;
+            document.getElementById('serie-año').textContent = serie.año;
+            document.getElementById('serie-genero').textContent = serie.genero.join(', ');
+            document.getElementById('serie-director').textContent = serie.director;
+            document.getElementById('serie-actores').textContent = serie.actores.join(', ');
+
+            // Cargar el tráiler
+            const videoPlayer = document.getElementById('video-player');
+            videoPlayer.src = serie.trailer;
+        }
+
+        function cargarTemporadas(temporadas) {
+            const temporadasContainer = document.getElementById('temporadas-container');
+            temporadasContainer.innerHTML = ''; // Limpiar el contenedor
+
+            temporadas.forEach(temporada => {
+                const temporadaElement = crearElementoTemporada(temporada);
+                temporadasContainer.appendChild(temporadaElement);
+            });
+        }
+
+        function crearElementoTemporada(temporada) {
+            const temporadaDiv = document.createElement('div');
+            temporadaDiv.className = 'temporada';
+            temporadaDiv.innerHTML = `
+                <div class="temporada-titulo">Temporada ${temporada.numero}</div>
+                <div class="episodios">
+                    ${temporada.episodios.map(crearElementoEpisodio).join('')}
+                </div>
+            `;
+
+            const tituloTemporada = temporadaDiv.querySelector('.temporada-titulo');
+            tituloTemporada.addEventListener('click', () => {
+                const episodios = temporadaDiv.querySelector('.episodios');
+                episodios.style.display = episodios.style.display === 'block' ? 'none' : 'block';
+            });
+
+            return temporadaDiv;
+        }
+
+        function crearElementoEpisodio(episodio) {
+            return `
+                <div class="episodio" data-url="${episodio.url}">
+                    <div class="episodio-info">
+                        <span class="episodio-titulo">Episodio ${episodio.numero}: ${episodio.titulo}</span>
+                        <span class="episodio-duracion">${episodio.duracion}</span>
+                    </div>
+                    <div class="episodio-descripcion">${episodio.descripcion}</div>
+                </div>
+            `;
+        }
+
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.episodio')) {
+                const episodio = e.target.closest('.episodio');
+                const videoUrl = episodio.getAttribute('data-url');
+                const videoPlayer = document.getElementById('video-player');
+                videoPlayer.src = videoUrl;
+                videoPlayer.play();
+            }
+        });
+    </script>
+</body>
+</html>

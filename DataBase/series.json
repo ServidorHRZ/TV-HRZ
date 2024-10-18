@@ -1,0 +1,157 @@
+{
+  "series": [
+    {
+      "id": 1,
+      "titulo": "Breaking Bad",
+      "descripcion": "Un profesor de química de secundaria se convierte en un implacable fabricante de metanfetamina después de ser diagnosticado con cáncer de pulmón.",
+      "imagen": "../img/series/breaking_bad.jpg",
+      "año": 2008,
+      "genero": ["Drama", "Crimen"],
+      "director": "Vince Gilligan",
+      "actores": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
+      "trailer": "https://www.youtube.com/embed/HhesaQXLuRY",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Piloto",
+              "descripcion": "Un profesor de química recurre a una vida de crimen.",
+              "duracion": "58:00",
+              "url": "https://ejemplo.com/breaking-bad-s01e01.mp4"
+            },
+            {
+              "numero": 2,
+              "titulo": "El gato está en la bolsa...",
+              "descripcion": "Walt y Jesse intentan deshacerse de dos cadáveres.",
+              "duracion": "48:00",
+              "url": "https://ejemplo.com/breaking-bad-s01e02.mp4"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Seven Thirty-Seven",
+              "descripcion": "Walt y Jesse enfrentan problemas con un distribuidor de drogas psicótico.",
+              "duracion": "47:00",
+              "url": "https://ejemplo.com/breaking-bad-s02e01.mp4"
+            },
+            {
+              "numero": 2,
+              "titulo": "Grilled",
+              "descripcion": "Walt y Jesse son retenidos cautivos por un distribuidor de drogas peligroso.",
+              "duracion": "48:00",
+              "url": "https://ejemplo.com/breaking-bad-s02e02.mp4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Stranger Things",
+      "descripcion": "Cuando un niño desaparece, un pequeño pueblo descubre un misterio que involucra experimentos secretos, fuerzas sobrenaturales aterradoras y una niña extraña.",
+      "imagen": "../img/series/stranger_things.jpg",
+      "año": 2016,
+      "genero": ["Drama", "Fantasía", "Horror"],
+      "director": "The Duffer Brothers",
+      "actores": ["Millie Bobby Brown", "Finn Wolfhard", "Winona Ryder"],
+      "trailer": "https://www.youtube.com/embed/b9EkMc79ZSU",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Capítulo Uno: La desaparición de Will Byers",
+              "descripcion": "Will Byers desaparece misteriosamente, y sus amigos comienzan una búsqueda para encontrarlo.",
+              "duracion": "49:00",
+              "url": "https://ejemplo.com/stranger-things-s01e01.mp4"
+            },
+            {
+              "numero": 2,
+              "titulo": "Capítulo Dos: La loca de la calle Maple",
+              "descripcion": "Los chicos encuentran a una niña extraña con poderes sobrenaturales.",
+              "duracion": "55:00",
+              "url": "https://ejemplo.com/stranger-things-s01e02.mp4"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Capítulo Uno: MADMAX",
+              "descripcion": "Un año después, una nueva chica llega al pueblo y despierta el interés de los chicos.",
+              "duracion": "51:00",
+              "url": "https://ejemplo.com/stranger-things-s02e01.mp4"
+            },
+            {
+              "numero": 2,
+              "titulo": "Capítulo Dos: Truco o trato, bicho raro",
+              "descripcion": "Will tiene visiones perturbadoras del Mundo del Revés.",
+              "duracion": "56:00",
+              "url": "https://ejemplo.com/stranger-things-s02e02.mp4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "The Mandalorian",
+      "descripcion": "Las aventuras de un pistolero solitario en los confines de la galaxia, lejos de la autoridad de la Nueva República.",
+      "imagen": "../img/series/mandalorian.jpg",
+      "año": 2019,
+      "genero": ["Acción", "Aventura", "Ciencia ficción"],
+      "director": "Jon Favreau",
+      "actores": ["Pedro Pascal", "Carl Weathers", "Giancarlo Esposito"],
+      "trailer": "https://www.youtube.com/embed/aOC8E8z_ifw",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Capítulo 1",
+              "descripcion": "Un cazarrecompensas mandaloriano rastrea un objetivo para un cliente bien pagado.",
+              "duracion": "39:00",
+              "url": "https://ejemplo.com/mandalorian-s01e01.mp4"
+            },
+            {
+              "numero": 2,
+              "titulo": "Capítulo 2: El Niño",
+              "descripcion": "El Mandaloriano emprende una misión peligrosa.",
+              "duracion": "32:00",
+              "url": "https://ejemplo.com/mandalorian-s01e02.mp4"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Capítulo 9: El Marshal",
+              "descripcion": "El Mandaloriano regresa a Tatooine en busca de otro de su clase.",
+              "duracion": "54:00",
+              "url": "https://ejemplo.com/mandalorian-s02e01.mp4"
+            },
+            {
+              "numero": 2,
+              "titulo": "Capítulo 10: El Pasajero",
+              "descripcion": "El Mandaloriano debe transportar a un pasajero con carga preciosa en un viaje arriesgado.",
+              "duracion": "42:00",
+              "url": "https://ejemplo.com/mandalorian-s02e02.mp4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

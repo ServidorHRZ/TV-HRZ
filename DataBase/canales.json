@@ -1,0 +1,45 @@
+{
+  "canales": [
+    {
+      "id": 1,
+      "nombre": "Canal Uno",
+      "logo": "/IMG/1.jpg",
+      "categoria": "Nacional",
+      "descripcion": "Canal de televisión nacional con programación variada.",
+      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=cartoon-op2"
+    },
+    {
+      "id": 2,
+      "nombre": "Noticias 24",
+      "logo": "../assets/logos/noticias_24.png",
+      "categoria": "Noticias",
+      "descripcion": "Canal de noticias con cobertura las 24 horas del día.",
+      "url_stream": "https://ejemplo.com/stream/noticias_24"
+    },
+    {
+      "id": 3,
+      "nombre": "Deportes Total",
+      "logo": "../assets/logos/deportes_total.png",
+      "categoria": "Deportes",
+      "descripcion": "El mejor canal para todos los eventos deportivos.",
+      "url_stream": "https://ejemplo.com/stream/deportes_total"
+    },
+    {
+      "id": 4,
+      "nombre": "Cine Clásico",
+      "logo": "../assets/logos/cine_clasico.png",
+      "categoria": "Películas",
+      "descripcion": "Canal dedicado a las mejores películas clásicas de todos los tiempos.",
+      "url_stream": "https://ejemplo.com/stream/cine_clasico"
+    },
+    {
+      "id": 5,
+      "nombre": "Mundo Kids",
+      "logo": "../assets/logos/mundo_kids.png",
+      "categoria": "Infantil",
+      "descripcion": "Programación educativa y entretenida para niños.",
+      "url_stream": "https://ejemplo.com/stream/mundo_kids"
+    }
+  ]
+}
+
