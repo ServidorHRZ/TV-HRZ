@@ -1,6 +1,24 @@
 {
   "peliculas": [
     {
+      "titulo": "Volver al Futuro",
+      "año": 1985,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut1.jpg",
+      "enlace": "https://drive.google.com/file/d/1lAW6VeuTHNQp1PUiEaVaXVp5mssEq072/preview"
+    },
+    {
+      "titulo": "Volver al Futuro II",
+      "año": 1989,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut2.jpg", 
+      "enlace": "https://drive.google.com/file/d/1peRBdi6Zm38xoKzjNRSnlU-_vVEift4s/preview"
+    },
+    {
+      "titulo": "Volver al Futuro III",
+      "año": 1990,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut3.jpg",
+      "enlace": "https://drive.google.com/file/d/1djpDf36EP-aCX3s1cU2z-86PkMw4XuQE/preview"
+    },
+    {
       "titulo": "Capitán América: El primer vengador",
       "año": 2011,
       "imagen": "https://ejemplo.com/capitan-america-primer-vengador.jpg",
