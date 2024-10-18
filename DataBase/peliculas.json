@@ -1,28 +1,280 @@
 {
   "peliculas": [
     {
-      "titulo": "IRON MAN 1",
+      "titulo": "Capitán América: El primer vengador",
+      "año": 2011,
+      "imagen": "https://ejemplo.com/capitan-america-primer-vengador.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_1/preview"
+    },
+    {
+      "titulo": "Capitana Marvel",
+      "año": 2019,
+      "imagen": "https://ejemplo.com/capitana-marvel.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_CAPITANA_MARVEL/preview"
+    },
+    {
+      "titulo": "Iron Man",
       "año": 2008,
       "imagen": "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/0/d/d/small-spos8825-poster-iron-man-1-a-official-sticker-sl-9829-wall-original-imaghs5pygznwxu9.jpeg?q=20&crop=false",
       "enlace": "https://drive.google.com/file/d/1SN5p9h38gXNL2kKEuqUogODVOhnOxmsF/preview"
     },
     {
-      "titulo": "IRON MAN 2",
+      "titulo": "Iron Man 2",
       "año": 2010,
       "imagen": "https://static.posters.cz/image/750/posters/iron-man-2-one-sheet-i7902.jpg",
       "enlace": "https://drive.google.com/file/d/ID_DE_LA_PELICULA_2/preview"
     },
     {
-      "titulo": "IRON MAN 3",
+      "titulo": "El increíble Hulk",
+      "año": 2008,
+      "imagen": "https://ejemplo.com/increible-hulk.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_INCREIBLE_HULK/preview"
+    },
+    {
+      "titulo": "Thor",
+      "año": 2011,
+      "imagen": "https://ejemplo.com/thor.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_THOR/preview"
+    },
+    {
+      "titulo": "Los Vengadores",
+      "año": 2012,
+      "imagen": "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "enlace": "https://drive.google.com/file/d/1ABC123XYZ/preview"
+    },
+    {
+      "titulo": "Iron Man 3",
       "año": 2013,
       "imagen": "https://static.posters.cz/image/750/posters/iron-man-3-one-sheet-i16526.jpg",
       "enlace": "https://drive.google.com/file/d/1XS2avxLTV6T7WeSRz1XHQzQQCUhm9Sk8/preview"
     },
     {
-      "titulo": "Los Vengadores",
-      "año": 2012,
-      "imagen": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/The_Avengers_Poster.png",
-      "enlace": "https://drive.google.com/file/d/1ABC123XYZ/preview"
+      "titulo": "Thor: El mundo oscuro",
+      "año": 2013,
+      "imagen": "https://ejemplo.com/thor-mundo-oscuro.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_THOR_MUNDO_OSCURO/preview"
+    },
+    {
+      "titulo": "Capitán América: El Soldado de Invierno",
+      "año": 2014,
+      "imagen": "https://ejemplo.com/capitan-america-soldado-invierno.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_2/preview"
+    },
+    {
+      "titulo": "Guardianes de la Galaxia",
+      "año": 2014,
+      "imagen": "https://ejemplo.com/guardianes-galaxia.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA/preview"
+    },
+    {
+      "titulo": "Guardianes de la Galaxia Vol. 2",
+      "año": 2017,
+      "imagen": "https://ejemplo.com/guardianes-galaxia-2.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_2/preview"
+    },
+    {
+      "titulo": "Yo soy Groot",
+      "año": 2022,
+      "imagen": "https://ejemplo.com/yo-soy-groot.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_YO_SOY_GROOT/preview"
+    },
+    {
+      "titulo": "Vengadores: La era de Ultrón",
+      "año": 2015,
+      "imagen": "https://ejemplo.com/vengadores-era-ultron.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_ULTRON/preview"
+    },
+    {
+      "titulo": "Ant-Man",
+      "año": 2015,
+      "imagen": "https://ejemplo.com/ant-man.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN/preview"
+    },
+    {
+      "titulo": "Capitán América: Civil War",
+      "año": 2016,
+      "imagen": "https://ejemplo.com/capitan-america-civil-war.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_3/preview"
+    },
+    {
+      "titulo": "Spider-Man: Homecoming",
+      "año": 2017,
+      "imagen": "https://ejemplo.com/spiderman-homecoming.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_HOMECOMING/preview"
+    },
+    {
+      "titulo": "Doctor Extraño",
+      "año": 2016,
+      "imagen": "https://ejemplo.com/doctor-extrano.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DOCTOR_EXTRANO/preview"
+    },
+    {
+      "titulo": "Viuda Negra",
+      "año": 2020,
+      "imagen": "https://ejemplo.com/viuda-negra.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_VIUDA_NEGRA/preview"
+    },
+    {
+      "titulo": "Black Panther",
+      "año": 2018,
+      "imagen": "https://ejemplo.com/black-panther.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER/preview"
+    },
+    {
+      "titulo": "Thor: Ragnarok",
+      "año": 2017,
+      "imagen": "https://ejemplo.com/thor-ragnarok.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_THOR_RAGNAROK/preview"
+    },
+    {
+      "titulo": "Ant-Man y la Avispa",
+      "año": 2018,
+      "imagen": "https://ejemplo.com/ant-man-avispa.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN_AVISPA/preview"
+    },
+    {
+      "titulo": "Vengadores: Infinity War",
+      "año": 2018,
+      "imagen": "https://ejemplo.com/vengadores-infinity-war.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_INFINITY_WAR/preview"
+    },
+    {
+      "titulo": "Vengadores: Endgame",
+      "año": 2019,
+      "imagen": "https://ejemplo.com/vengadores-endgame.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_ENDGAME/preview"
+    },
+    {
+      "titulo": "Loki",
+      "año": 2021,
+      "imagen": "https://ejemplo.com/loki.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_LOKI/preview"
+    },
+    {
+      "titulo": "Bruja Escarlata y Visión",
+      "año": 2021,
+      "imagen": "https://ejemplo.com/bruja-escarlata-vision.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_BRUJA_ESCARLATA_VISION/preview"
+    },
+    {
+      "titulo": "Shang-Chi y la leyenda de los diez anillos",
+      "año": 2021,
+      "imagen": "https://ejemplo.com/shang-chi.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_SHANG_CHI/preview"
+    },
+    {
+      "titulo": "Falcon y el Soldado de Invierno",
+      "año": 2021,
+      "imagen": "https://ejemplo.com/falcon-soldado-invierno.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_FALCON_SOLDADO_INVIERNO/preview"
+    },
+    {
+      "titulo": "Spider-Man: Lejos de casa",
+      "año": 2019,
+      "imagen": "https://ejemplo.com/spiderman-lejos-casa.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_LEJOS_CASA/preview"
+    },
+    {
+      "titulo": "Spider-Man: No Way Home",
+      "año": 2021,
+      "imagen": "https://ejemplo.com/spiderman-no-way-home.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_NO_WAY_HOME/preview"
+    },
+    {
+      "titulo": "Eternals",
+      "año": 2021,
+      "imagen": "https://ejemplo.com/eternals.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_ETERNALS/preview"
+    },
+    {
+      "titulo": "Ojo de Halcón",
+      "año": 2021,
+      "imagen": "https://ejemplo.com/ojo-halcon.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_OJO_HALCON/preview"
+    },
+    {
+      "titulo": "Echo",
+      "año": 2024,
+      "imagen": "https://ejemplo.com/echo.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_ECHO/preview"
+    },
+    {
+      "titulo": "Doctor Strange en el multiverso de la locura",
+      "año": 2022,
+      "imagen": "https://ejemplo.com/doctor-strange-multiverso.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DOCTOR_STRANGE_MULTIVERSO/preview"
+    },
+    {
+      "titulo": "Caballero Luna",
+      "año": 2022,
+      "imagen": "https://ejemplo.com/caballero-luna.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_CABALLERO_LUNA/preview"
+    },
+    {
+      "titulo": "She-Hulk: Abogada Hulka",
+      "año": 2022,
+      "imagen": "https://ejemplo.com/she-hulk.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_SHE_HULK/preview"
+    },
+    {
+      "titulo": "Ms. Marvel",
+      "año": 2022,
+      "imagen": "https://ejemplo.com/ms-marvel.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_MS_MARVEL/preview"
+    },
+    {
+      "titulo": "Thor: Love and Thunder",
+      "año": 2022,
+      "imagen": "https://ejemplo.com/thor-love-thunder.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_THOR_LOVE_THUNDER/preview"
+    },
+    {
+      "titulo": "Black Panther: Wakanda Forever",
+      "año": 2022,
+      "imagen": "https://ejemplo.com/black-panther-wakanda-forever.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER_WAKANDA_FOREVER/preview"
+    },
+    {
+      "titulo": "Guardianes de la Galaxia: Especial Felices Fiestas",
+      "año": 2022,
+      "imagen": "https://ejemplo.com/guardianes-galaxia-felices-fiestas.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_FELICES_FIESTAS/preview"
+    },
+    {
+      "titulo": "Ant-Man y la Avispa: Quantumania",
+      "año": 2023,
+      "imagen": "https://ejemplo.com/ant-man-avispa-quantumania.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN_AVISPA_QUANTUMANIA/preview"
+    },
+    {
+      "titulo": "Guardianes de la Galaxia Vol. 3",
+      "año": 2023,
+      "imagen": "https://ejemplo.com/guardianes-galaxia-3.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_3/preview"
+    },
+    {
+      "titulo": "Invasión secreta",
+      "año": 2023,
+      "imagen": "https://ejemplo.com/invasion-secreta.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_INVASION_SECRETA/preview"
+    },
+    {
+      "titulo": "Loki T2",
+      "año": 2023,
+      "imagen": "https://ejemplo.com/loki-t2.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_LOKI_T2/preview"
+    },
+    {
+      "titulo": "The Marvels",
+      "año": 2023,
+      "imagen": "https://ejemplo.com/the-marvels.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_THE_MARVELS/preview"
+    },
+    {
+      "titulo": "Deadpool y Lobezno",
+      "año": 2024,
+      "imagen": "https://ejemplo.com/deadpool-lobezno.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DEADPOOL_LOBEZNO/preview"
     }
   ]
 }
