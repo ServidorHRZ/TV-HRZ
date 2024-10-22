@@ -3,43 +3,146 @@
     {
       "id": 1,
       "nombre": "Caracol TV",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnzp1DvQehXtEVDSGlUPy29mfhD4POepMzIQ&s",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Caracol_Televisi%C3%B3n_logo.svg/1200px-Caracol_Televisi%C3%B3n_logo.svg.png",
       "categoria": "Nacional",
       "descripcion": "Canal de televisión nacional con programación variada.",
-      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=cartoon-op2"
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=caracol"
     },
     {
       "id": 2,
-      "nombre": "Noticias 24",
-      "logo": "../assets/logos/noticias_24.png",
-      "categoria": "Noticias",
-      "descripcion": "Canal de noticias con cobertura las 24 horas del día.",
-      "url_stream": "https://ejemplo.com/stream/noticias_24"
+      "nombre": "RCN",
+      "logo": "https://seeklogo.com/images/R/rcn-logo-20EE2A3DDB-seeklogo.com.png",
+      "categoria": "Nacional",
+      "descripcion": "Canal de televisión nacional con variedad de programas y noticias.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=rcn"
+    },
+    {
+      "id": 9,
+      "nombre": "Canal Uno",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Channel_1_%28Colombia%29_-_2017_logo.svg/1200px-Channel_1_%28Colombia%29_-_2017_logo.svg.png",
+      "categoria": "Nacional",
+      "descripcion": "Canal de televisión nacional con programación variada y noticias.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=canal1-co"
+    },
+    {
+      "id": 10,
+      "nombre": "Señal Colombia",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Se%C3%B1al_Colombia_logo.svg/1200px-Se%C3%B1al_Colombia_logo.svg.png",
+      "categoria": "Nacional",
+      "descripcion": "Canal público nacional con contenido educativo y cultural.",
+      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=senal-colombia"
     },
     {
       "id": 3,
-      "nombre": "Deportes Total",
-      "logo": "../assets/logos/deportes_total.png",
-      "categoria": "Deportes",
-      "descripcion": "El mejor canal para todos los eventos deportivos.",
-      "url_stream": "https://ejemplo.com/stream/deportes_total"
+      "nombre": "Cartoon Network",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/1200px-Cartoon_Network_2010_logo.svg.png",
+      "categoria": "Infantil",
+      "descripcion": "Canal de televisión infantil con dibujos animados y series para niños.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=cartoon-op2"
+    },
+    {
+      "id": 18,
+      "nombre": "Cartoonito",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/1200px-Cartoonito_-_Logo_2021.svg.png",
+      "categoria": "Infantil",
+      "descripcion": "Canal de televisión infantil con programación para preescolares.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=cartoonito-op2"
+    },
+    {
+      "id": 19,
+      "nombre": "Tooncast",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tooncast_logo.svg/1200px-Tooncast_logo.svg.png",
+      "categoria": "Infantil",
+      "descripcion": "Canal de televisión infantil con dibujos animados clásicos.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=tooncast"
     },
     {
       "id": 4,
-      "nombre": "Cine Clásico",
-      "logo": "../assets/logos/cine_clasico.png",
-      "categoria": "Películas",
-      "descripcion": "Canal dedicado a las mejores películas clásicas de todos los tiempos.",
-      "url_stream": "https://ejemplo.com/stream/cine_clasico"
+      "nombre": "Disney Channel",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/2014_Disney_Channel_logo.svg/1200px-2014_Disney_Channel_logo.svg.png",
+      "categoria": "Infantil",
+      "descripcion": "Canal de televisión infantil con programación de Disney para niños y adolescentes.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=disney-op2"
     },
     {
       "id": 5,
-      "nombre": "Mundo Kids",
-      "logo": "../assets/logos/mundo_kids.png",
+      "nombre": "Nickelodeon",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/1200px-Nickelodeon_2009_logo.svg.png",
       "categoria": "Infantil",
-      "descripcion": "Programación educativa y entretenida para niños.",
-      "url_stream": "https://ejemplo.com/stream/mundo_kids"
+      "descripcion": "Canal de televisión infantil con series animadas y programas para niños.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=nick-op2"
+    },
+    {
+      "id": 6,
+      "nombre": "Disney Junior",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Disney_Junior.svg/1200px-Disney_Junior.svg.png",
+      "categoria": "Infantil",
+      "descripcion": "Canal de televisión infantil para preescolares con programas educativos y de entretenimiento.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=disney-jr-op2"
+    },
+    {
+      "id": 7,
+      "nombre": "ESPN",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/1280px-ESPN_wordmark.svg.png",
+      "categoria": "Internacional",
+      "descripcion": "Canal de televisión deportivo con cobertura de diversos eventos y noticias deportivas.",
+      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=espn"
+    },
+    {
+      "id": 13,
+      "nombre": "ESPN 2",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/1280px-ESPN2_logo.svg.png",
+      "categoria": "Internacional",
+      "descripcion": "Segundo canal de ESPN con más eventos deportivos en vivo.",
+      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=espn-2"
+    },
+    {
+      "id": 14,
+      "nombre": "ESPN 3",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/1280px-ESPN_wordmark.svg.png",
+      "categoria": "Internacional",
+      "descripcion": "Tercer canal de ESPN con cobertura adicional de eventos deportivos.",
+      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=espn-3"
+    },
+    {
+      "id": 8,
+      "nombre": "Fox Sports",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/1280px-FOX_Sports_logo.svg.png",
+      "categoria": "Internacional",
+      "descripcion": "Canal de televisión deportivo con transmisiones en vivo y programas de análisis.",
+      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=fox-sports"
+    },
+    {
+      "id": 15,
+      "nombre": "Fox Sports 2",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2015_Fox_sports_logo.svg/1200px-2015_Fox_sports_logo.svg.png",
+      "categoria": "Internacional",
+      "descripcion": "Segundo canal de Fox Sports con más eventos deportivos en vivo.",
+      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=fox-sports-2"
+    },
+    {
+      "id": 16,
+      "nombre": "Fox Sports 3",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Fox_sports_3_logo.svg/1200px-Fox_sports_3_logo.svg.png",
+      "categoria": "Internacional",
+      "descripcion": "Tercer canal de Fox Sports con cobertura adicional de eventos deportivos.",
+      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=fox-sports-3"
+    },
+    {
+      "id": 11,
+      "nombre": "Win Sports",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Win_Sports%2B_logo.svg/1200px-Win_Sports%2B_logo.svg.png",
+      "categoria": "Fútbol",
+      "descripcion": "Canal deportivo especializado en fútbol colombiano y otros deportes.",
+      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=win-sports"
+    },
+    {
+      "id": 17,
+      "nombre": "Win Sports+",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Win_Sports%2B_logo.svg/1200px-Win_Sports%2B_logo.svg.png",
+      "categoria": "Fútbol",
+      "descripcion": "Canal premium de Win Sports con contenido exclusivo de fútbol colombiano.",
+      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=win-sports-plus"
     }
   ]
 }
-
