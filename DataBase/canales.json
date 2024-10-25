@@ -131,7 +131,7 @@
     {
       "id": 21,
       "nombre": "ESPN 7",
-      "logo": "https://www.televisionlibre.co/img/espn7.webp",
+      "logo": "https://www.televisionlibre.co/img/espn7.png",
       "categoria": "Internacional",
       "descripcion": "Séptimo canal de ESPN con contenido deportivo especializado y eventos en vivo.",
       "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn7-op3"
