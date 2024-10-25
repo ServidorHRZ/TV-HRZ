@@ -146,76 +146,65 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        window.addEventListener('load', () => {
             const serieSeleccionada = JSON.parse(localStorage.getItem('serieSeleccionada'));
             if (serieSeleccionada) {
-                cargarInformacionSerie(serieSeleccionada);
-                cargarTemporadas(serieSeleccionada.temporadas);
-            }
-        });
+                const serieContainer = document.getElementById('serie-container');
+                let temporadasHTML = '';
+                
+                serieSeleccionada.temporadas.forEach(temporada => {
+                    let episodiosHTML = '';
+                    temporada.episodios.forEach(episodio => {
+                        episodiosHTML += `
+                            <div class="episodio">
+                                <div class="episodio-info">
+                                    <span class="episodio-titulo">Episodio ${episodio.numero}: ${episodio.titulo}</span>
+                                    <span class="episodio-duracion">${episodio.duracion}</span>
+                                </div>
+                                <p class="episodio-descripcion">${episodio.descripcion}</p>
+                                <div class="video-container">
+                                    <iframe src="${episodio.url}" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        `;
+                    });
 
-        function cargarInformacionSerie(serie) {
-            document.getElementById('serie-imagen').src = serie.imagen;
-            document.getElementById('serie-titulo').textContent = serie.titulo;
-            document.getElementById('serie-descripcion').textContent = serie.descripcion;
-            document.getElementById('serie-año').textContent = serie.año;
-            document.getElementById('serie-genero').textContent = serie.genero.join(', ');
-            document.getElementById('serie-director').textContent = serie.director;
-            document.getElementById('serie-actores').textContent = serie.actores.join(', ');
+                    temporadasHTML += `
+                        <div class="temporada">
+                            <div class="temporada-titulo">Temporada ${temporada.numero}</div>
+                            <div class="episodios">
+                                ${episodiosHTML}
+                            </div>
+                        </div>
+                    `;
+                });
 
-            // Cargar el tráiler
-            const videoPlayer = document.getElementById('video-player');
-            videoPlayer.src = serie.trailer;
-        }
-
-        function cargarTemporadas(temporadas) {
-            const temporadasContainer = document.getElementById('temporadas-container');
-            temporadasContainer.innerHTML = ''; // Limpiar el contenedor
-
-            temporadas.forEach(temporada => {
-                const temporadaElement = crearElementoTemporada(temporada);
-                temporadasContainer.appendChild(temporadaElement);
-            });
-        }
-
-        function crearElementoTemporada(temporada) {
-            const temporadaDiv = document.createElement('div');
-            temporadaDiv.className = 'temporada';
-            temporadaDiv.innerHTML = `
-                <div class="temporada-titulo">Temporada ${temporada.numero}</div>
-                <div class="episodios">
-                    ${temporada.episodios.map(crearElementoEpisodio).join('')}
-                </div>
-            `;
-
-            const tituloTemporada = temporadaDiv.querySelector('.temporada-titulo');
-            tituloTemporada.addEventListener('click', () => {
-                const episodios = temporadaDiv.querySelector('.episodios');
-                episodios.style.display = episodios.style.display === 'block' ? 'none' : 'block';
-            });
-
-            return temporadaDiv;
-        }
-
-        function crearElementoEpisodio(episodio) {
-            return `
-                <div class="episodio" data-url="${episodio.url}">
-                    <div class="episodio-info">
-                        <span class="episodio-titulo">Episodio ${episodio.numero}: ${episodio.titulo}</span>
-                        <span class="episodio-duracion">${episodio.duracion}</span>
+                serieContainer.innerHTML = `
+                    <div class="serie-info">
+                        <div class="serie-poster">
+                            <img src="${serieSeleccionada.imagen}" alt="${serieSeleccionada.titulo}">
+                        </div>
+                        <div class="serie-details">
+                            <h2>${serieSeleccionada.titulo}</h2>
+                            <p>Año: ${serieSeleccionada.año}</p>
+                            <p>${serieSeleccionada.descripcion}</p>
+                        </div>
                     </div>
-                    <div class="episodio-descripcion">${episodio.descripcion}</div>
-                </div>
-            `;
-        }
+                    <div class="temporadas-container">
+                        ${temporadasHTML}
+                    </div>
+                `;
 
-        document.addEventListener('click', function(e) {
-            if (e.target.closest('.episodio')) {
-                const episodio = e.target.closest('.episodio');
-                const videoUrl = episodio.getAttribute('data-url');
-                const videoPlayer = document.getElementById('video-player');
-                videoPlayer.src = videoUrl;
-                videoPlayer.play();
+                // Agregar funcionalidad para mostrar/ocultar episodios
+                document.querySelectorAll('.temporada-titulo').forEach(titulo => {
+                    titulo.addEventListener('click', () => {
+                        const episodios = titulo.nextElementSibling;
+                        episodios.style.display = episodios.style.display === 'none' ? 'block' : 'none';
+                    });
+                });
+            } else {
+                alert('No se ha seleccionado ninguna serie');
+                window.location.href = 'Series.html';
             }
         });
     </script>
