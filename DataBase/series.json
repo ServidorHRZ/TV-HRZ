@@ -2,31 +2,38 @@
   "series": [
     {
       "id": 1,
-      "titulo": "Breaking Bad",
-      "descripcion": "Un profesor de química de secundaria se convierte en un implacable fabricante de metanfetamina después de ser diagnosticado con cáncer de pulmón.",
-      "imagen": "../img/series/breaking_bad.jpg",
-      "año": 2008,
-      "genero": ["Drama", "Crimen"],
-      "director": "Vince Gilligan",
-      "actores": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
-      "trailer": "https://www.youtube.com/embed/HhesaQXLuRY",
+      "titulo": "Sherlock",
+      "descripcion": "Una adaptación moderna de las historias clásicas de Sherlock Holmes, ambientada en el Londres del siglo XXI.",
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Sherlock.jpg",
+      "año": 2010,
+      "genero": ["Crimen", "Drama", "Misterio"],
+      "director": "Mark Gatiss, Steven Moffat",
+      "actores": ["Benedict Cumberbatch", "Martin Freeman", "Una Stubbs"],
+      "trailer": "https://www.youtube.com/embed/xK7S9mrFWL4",
       "temporadas": [
         {
           "numero": 1,
           "episodios": [
             {
               "numero": 1,
-              "titulo": "Piloto",
-              "descripcion": "Un profesor de química recurre a una vida de crimen.",
-              "duracion": "58:00",
-              "url": "https://ejemplo.com/breaking-bad-s01e01.mp4"
+              "titulo": "Estudio en rosa",
+              "descripcion": "Sherlock y John Watson investigan una serie de suicidios sospechosos en Londres.",
+              "duracion": "88:00",
+              "url": "https://ejemplo.com/sherlock-s01e01.mp4"
             },
             {
               "numero": 2,
-              "titulo": "El gato está en la bolsa...",
-              "descripcion": "Walt y Jesse intentan deshacerse de dos cadáveres.",
-              "duracion": "48:00",
-              "url": "https://ejemplo.com/breaking-bad-s01e02.mp4"
+              "titulo": "El banquero ciego",
+              "descripcion": "Sherlock y Watson investigan un misterioso caso de asesinatos vinculados a mensajes cifrados.",
+              "duracion": "89:00",
+              "url": "https://ejemplo.com/sherlock-s01e02.mp4"
+            },
+            {
+              "numero": 3,
+              "titulo": "El gran juego",
+              "descripcion": "Sherlock enfrenta una serie de casos complejos orquestados por un desconocido y astuto criminal: Jim Moriarty.",
+              "duracion": "89:00",
+              "url": "https://ejemplo.com/sherlock-s01e03.mp4"
             }
           ]
         },
@@ -35,22 +42,82 @@
           "episodios": [
             {
               "numero": 1,
-              "titulo": "Seven Thirty-Seven",
-              "descripcion": "Walt y Jesse enfrentan problemas con un distribuidor de drogas psicótico.",
-              "duracion": "47:00",
-              "url": "https://ejemplo.com/breaking-bad-s02e01.mp4"
+              "titulo": "Un escándalo en Belgravia",
+              "descripcion": "Sherlock se enfrenta a Irene Adler, una mujer manipuladora y de gran inteligencia.",
+              "duracion": "89:00",
+              "url": "https://ejemplo.com/sherlock-s02e01.mp4"
             },
             {
               "numero": 2,
-              "titulo": "Grilled",
-              "descripcion": "Walt y Jesse son retenidos cautivos por un distribuidor de drogas peligroso.",
-              "duracion": "48:00",
-              "url": "https://ejemplo.com/breaking-bad-s02e02.mp4"
+              "titulo": "Los sabuesos de Baskerville",
+              "descripcion": "Sherlock y Watson investigan la leyenda de un perro monstruoso en Dartmoor.",
+              "duracion": "88:00",
+              "url": "https://ejemplo.com/sherlock-s02e02.mp4"
+            },
+            {
+              "numero": 3,
+              "titulo": "La caída de Reichenbach",
+              "descripcion": "Sherlock se enfrenta a su mayor desafío contra Moriarty, que lo lleva a un clímax dramático en su lucha.",
+              "duracion": "88:00",
+              "url": "https://ejemplo.com/sherlock-s02e03.mp4"
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "El coche fúnebre vacío",
+              "descripcion": "Sherlock regresa a Londres tras su aparente muerte y se enfrenta a una nueva amenaza terrorista.",
+              "duracion": "88:00",
+              "url": "https://ejemplo.com/sherlock-s03e01.mp4"
+            },
+            {
+              "numero": 2,
+              "titulo": "La señal de los tres",
+              "descripcion": "Durante la boda de Watson, Sherlock resuelve un caso y descubre una amenaza en el mismo evento.",
+              "duracion": "86:00",
+              "url": "https://ejemplo.com/sherlock-s03e02.mp4"
+            },
+            {
+              "numero": 3,
+              "titulo": "Su último juramento",
+              "descripcion": "Sherlock se enfrenta a un chantajista maestro que amenaza a Londres.",
+              "duracion": "89:00",
+              "url": "https://ejemplo.com/sherlock-s03e03.mp4"
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Las seis Thatchers",
+              "descripcion": "Sherlock investiga la destrucción sistemática de imágenes de Margaret Thatcher.",
+              "duracion": "88:00",
+              "url": "https://ejemplo.com/sherlock-s04e01.mp4"
+            },
+            {
+              "numero": 2,
+              "titulo": "El detective mentiroso",
+              "descripcion": "Sherlock enfrenta al hijo aparentemente psicóptico de un filántropo millonario.",
+              "duracion": "89:00",
+              "url": "https://ejemplo.com/sherlock-s04e02.mp4"
+            },
+            {
+              "numero": 3,
+              "titulo": "El problema final",
+              "descripcion": "Sherlock y Watson enfrentan su desafío más difícil en una confrontación final con Eurus Holmes.",
+              "duracion": "90:00",
+              "url": "https://ejemplo.com/sherlock-s04e03.mp4"
             }
           ]
         }
       ]
     },
+    
     {
       "id": 2,
       "titulo": "Stranger Things",
