@@ -136,10 +136,7 @@
             </div>
         </div>
         <div class="video-container">
-            <video id="video-player" controls>
-                <source src="" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
+            <iframe id="video-player" src="" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="temporadas-container" id="temporadas-container"></div>
         <a href="Series.html" class="back-button">Volver a Series</a>
@@ -215,7 +212,6 @@
                 const videoUrl = episodio.getAttribute('data-url');
                 const videoPlayer = document.getElementById('video-player');
                 videoPlayer.src = videoUrl;
-                videoPlayer.play();
             }
         });
     </script>
