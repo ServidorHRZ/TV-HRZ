@@ -1,6 +1,84 @@
 {
   "peliculas": [
     {
+      "titulo": "X-Men",
+      "año": 2000,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMen1.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_1/preview"
+    },
+    {
+      "titulo": "X-Men 2",
+      "año": 2003,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMen2.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_2/preview"
+    },
+    {
+      "titulo": "X-Men: La decisión final",
+      "año": 2006,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMen3.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_3/preview"
+    },
+    {
+      "titulo": "X-Men Orígenes: Wolverine",
+      "año": 2009,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenWolverine.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_WOLVERINE/preview"
+    },
+    {
+      "titulo": "X-Men: Primera generación",
+      "año": 2011,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenFirstClass.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_FIRST_CLASS/preview"
+    },
+    {
+      "titulo": "Wolverine: Inmortal",
+      "año": 2013,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/WolverineInmortal.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_WOLVERINE_INMORTAL/preview"
+    },
+    {
+      "titulo": "X-Men: Días del futuro pasado",
+      "año": 2014,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDOFP.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_DOFP/preview"
+    },
+    {
+      "titulo": "X-Men: Apocalipsis",
+      "año": 2016,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenApocalipsis.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_APOCALIPSIS/preview"
+    },
+    {
+      "titulo": "Logan",
+      "año": 2017,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Logan.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_LOGAN/preview"
+    },
+    {
+      "titulo": "Deadpool",
+      "año": 2016,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DEADPOOL/preview"
+    },
+    {
+      "titulo": "Deadpool 2",
+      "año": 2018,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool2.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DEADPOOL_2/preview"
+    },
+    {
+      "titulo": "X-Men: Fénix Oscura",
+      "año": 2019,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDarkPhoenix.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_DARK_PHOENIX/preview"
+    },
+    {
+      "titulo": "Los Nuevos Mutantes",
+      "año": 2020,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NewMutants.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_NEW_MUTANTS/preview"
+    },
+    {
       "titulo": "Anonymous",
       "año": 2016,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Anonymus.jpg",
