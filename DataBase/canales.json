@@ -86,7 +86,7 @@
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/1280px-ESPN_wordmark.svg.png",
       "categoria": "Internacional",
       "descripcion": "Canal de televisión deportivo con cobertura de diversos eventos y noticias deportivas.",
-      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=espn"
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn-op3"
     },
     {
       "id": 13,
@@ -94,7 +94,7 @@
       "logo": "https://www.televisionlibre.co/img/espn2.webp",
       "categoria": "Internacional",
       "descripcion": "Segundo canal de ESPN con más eventos deportivos en vivo.",
-      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=espn-2"
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn2-op3"
     },
     {
       "id": 14,
@@ -102,7 +102,39 @@
       "logo": "https://www.televisionlibre.co/img/espn3.webp",
       "categoria": "Internacional",
       "descripcion": "Tercer canal de ESPN con cobertura adicional de eventos deportivos.",
-      "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=espn-3"
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn3-op3"
+    },
+    {
+      "id": 18,
+      "nombre": "ESPN 4",
+      "logo": "https://www.televisionlibre.co/img/espn4.webp",
+      "categoria": "Internacional",
+      "descripcion": "Cuarto canal de ESPN con más eventos deportivos y programación especializada.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn4-op3"
+    },
+    {
+      "id": 19,
+      "nombre": "ESPN 5",
+      "logo": "https://www.televisionlibre.co/img/espn5.webp",
+      "categoria": "Internacional",
+      "descripcion": "Quinto canal de ESPN con cobertura adicional de eventos deportivos y análisis.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn5-op3"
+    },
+    {
+      "id": 20,
+      "nombre": "ESPN 6",
+      "logo": "https://www.televisionlibre.co/img/espn6.webp",
+      "categoria": "Internacional",
+      "descripcion": "Sexto canal de ESPN con transmisiones en vivo de diversos deportes.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn6-op3"
+    },
+    {
+      "id": 21,
+      "nombre": "ESPN 7",
+      "logo": "https://www.televisionlibre.co/img/espn7.webp",
+      "categoria": "Internacional",
+      "descripcion": "Séptimo canal de ESPN con contenido deportivo especializado y eventos en vivo.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn7-op3"
     },
     {
       "id": 8,
