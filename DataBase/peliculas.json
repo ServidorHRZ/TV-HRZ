@@ -1,6 +1,12 @@
 {
   "peliculas": [
     {
+      "titulo": "La red social",
+      "año": 2010,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/RedSocial.jpg",
+      "enlace": "https://drive.google.com/file/d/13dvFl4C8MK48UDfF8MvjStjsORDXvTp1/preview"
+    },
+    {
       "titulo": "Anonymous",
       "año": 2016,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Anonymus.jpg",
