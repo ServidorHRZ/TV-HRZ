@@ -1,6 +1,48 @@
 {
   "peliculas": [
     {
+      "titulo": "Anonymous",
+      "año": 2016,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Anonymus.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DE_ANONYMOUS/preview"
+    },
+    {
+      "titulo": "Hackers: Ningún sistema es seguro",
+      "año": 2014,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NingunSistem.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DE_HACKERS_2014/preview"
+    },
+    {
+      "titulo": "Hackers",
+      "año": 1995,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Hackers.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DE_HACKERS/preview"
+    },
+    {
+      "titulo": "Hacker",
+      "año": 2019,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/HACKER.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DE_HACKER_2019/preview"
+    },
+    {
+      "titulo": "Volver al Futuro",
+      "año": 1985,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut1.jpg",
+      "enlace": "https://drive.google.com/file/d/1lAW6VeuTHNQp1PUiEaVaXVp5mssEq072/preview"
+    },
+    {
+      "titulo": "Volver al Futuro II",
+      "año": 1989,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut2.jpg", 
+      "enlace": "https://drive.google.com/file/d/1peRBdi6Zm38xoKzjNRSnlU-_vVEift4s/preview"
+    },
+    {
+      "titulo": "Volver al Futuro III",
+      "año": 1990,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut3.jpg",
+      "enlace": "https://drive.google.com/file/d/1djpDf36EP-aCX3s1cU2z-86PkMw4XuQE/preview"
+    },
+    {
       "titulo": "X-Men",
       "año": 2000,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMen1.jpg",
@@ -77,48 +119,6 @@
       "año": 2020,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NewMutants.jpg",
       "enlace": "https://drive.google.com/file/d/ID_NEW_MUTANTS/preview"
-    },
-    {
-      "titulo": "Anonymous",
-      "año": 2016,
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Anonymus.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DE_ANONYMOUS/preview"
-    },
-    {
-      "titulo": "Hackers: Ningún sistema es seguro",
-      "año": 2014,
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NingunSistem.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DE_HACKERS_2014/preview"
-    },
-    {
-      "titulo": "Hackers",
-      "año": 1995,
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Hackers.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DE_HACKERS/preview"
-    },
-    {
-      "titulo": "Hacker",
-      "año": 2019,
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/HACKER.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DE_HACKER_2019/preview"
-    },
-    {
-      "titulo": "Volver al Futuro",
-      "año": 1985,
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut1.jpg",
-      "enlace": "https://drive.google.com/file/d/1lAW6VeuTHNQp1PUiEaVaXVp5mssEq072/preview"
-    },
-    {
-      "titulo": "Volver al Futuro II",
-      "año": 1989,
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut2.jpg", 
-      "enlace": "https://drive.google.com/file/d/1peRBdi6Zm38xoKzjNRSnlU-_vVEift4s/preview"
-    },
-    {
-      "titulo": "Volver al Futuro III",
-      "año": 1990,
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut3.jpg",
-      "enlace": "https://drive.google.com/file/d/1djpDf36EP-aCX3s1cU2z-86PkMw4XuQE/preview"
     },
     {
       "titulo": "Capitán América: El primer vengador",
