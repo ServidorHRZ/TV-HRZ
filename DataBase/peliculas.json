@@ -1,6 +1,42 @@
 {
   "peliculas": [
     {
+      "titulo": "La Forja",
+      "año": 2024,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/LaForja.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DE_LA_FORJA/preview"
+    },
+    {
+      "titulo": "A través de mi ventana",
+      "año": 2022,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/AtravesdemiVentana.jpg", 
+      "enlace": "https://drive.google.com/file/d/ID_DE_A_TRAVES_DE_MI_VENTANA/preview"
+    },
+    {
+      "titulo": "Toy Story",
+      "año": 1995,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/ToyStory1.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DE_TOY_STORY_1/preview"
+    },
+    {
+      "titulo": "Toy Story 2",
+      "año": 1999,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/ToyStory2.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DE_TOY_STORY_2/preview"
+    },
+    {
+      "titulo": "Toy Story 3",
+      "año": 2010,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/ToyStory3.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DE_TOY_STORY_3/preview"
+    },
+    {
+      "titulo": "Toy Story 4",
+      "año": 2019,
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/ToyStory4.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DE_TOY_STORY_4/preview"
+    },
+    {
       "titulo": "La red social",
       "año": 2010,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/RedSocial.jpg",
