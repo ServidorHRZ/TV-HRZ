@@ -91,7 +91,7 @@
     {
       "id": 13,
       "nombre": "ESPN 2",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/1280px-ESPN2_logo.svg.png",
+      "logo": "https://www.televisionlibre.co/img/espn2.webp",
       "categoria": "Internacional",
       "descripcion": "Segundo canal de ESPN con más eventos deportivos en vivo.",
       "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=espn-2"
@@ -99,7 +99,7 @@
     {
       "id": 14,
       "nombre": "ESPN 3",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/1280px-ESPN_wordmark.svg.png",
+      "logo": "https://www.televisionlibre.co/img/espn3.webp",
       "categoria": "Internacional",
       "descripcion": "Tercer canal de ESPN con cobertura adicional de eventos deportivos.",
       "url_stream": "https://www.televisionlibre.co/en-vivo/player/embed.php?r=espn-3"
