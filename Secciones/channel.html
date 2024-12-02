@@ -221,6 +221,59 @@
     </footer>
 
     <script>
+        // Función para prevenir redirecciones
+        function prevenirRedirecciones() {
+            // Prevenir que los iframes redirijan la página principal
+            const iframes = document.getElementsByTagName('iframe');
+            for (let iframe of iframes) {
+                iframe.sandbox = "allow-scripts allow-same-origin allow-forms";
+                
+                // Intentar prevenir que el iframe cambie el top-level window
+                iframe.addEventListener('load', function() {
+                    try {
+                        iframe.contentWindow.onbeforeunload = function() {
+                            return false;
+                        };
+                    } catch (e) {
+                        // Error de seguridad por cross-origin - es esperado
+                    }
+                });
+            }
+
+            // Prevenir redirecciones de ventana principal
+            window.onbeforeunload = function(e) {
+                const currentTime = new Date().getTime();
+                const timeSinceLoad = currentTime - window.performance.timing.navigationStart;
+                
+                // Permitir redirecciones internas del sitio
+                if (e && e.target && e.target.location && e.target.location.href) {
+                    const newUrl = e.target.location.href;
+                    if (newUrl.includes('HRZ') || newUrl.includes('Secciones')) {
+                        return;
+                    }
+                }
+                
+                // Bloquear redirecciones externas
+                if (timeSinceLoad > 1000) { // Ignorar la carga inicial
+                    e.preventDefault();
+                    return false;
+                }
+            };
+
+            // Bloquear popups
+            window.addEventListener('click', function(e) {
+                window.onbeforeunload = null;
+                setTimeout(function() {
+                    window.onbeforeunload = function() { return false; };
+                }, 0);
+            }, true);
+
+            // Sobrescribir funciones comunes de redirección
+            window.open = function() { return null; };
+            window.alert = function() { return null; };
+            window._blank = null;
+        }
+
         window.addEventListener('load', () => {
             const canalSeleccionado = JSON.parse(localStorage.getItem('canalSeleccionado'));
             if (canalSeleccionado) {
@@ -232,13 +285,34 @@
                         <p>${canalSeleccionado.descripcion}</p>
                     </div>
                     <div class="iframe-container">
-                        <iframe src="${canalSeleccionado.url_stream}" allowfullscreen></iframe>
+                        <iframe 
+                            src="${canalSeleccionado.url_stream}" 
+                            allowfullscreen
+                            sandbox="allow-scripts allow-same-origin allow-forms"
+                        ></iframe>
                     </div>
                 `;
+                
+                // Activar la protección contra redirecciones
+                prevenirRedirecciones();
             } else {
                 alert('No se ha seleccionado ningún canal');
                 window.location.href = 'TV-Online.html';
             }
+        });
+
+        // Observador de mutaciones para mantener la protección en elementos dinámicos
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.addedNodes.length) {
+                    prevenirRedirecciones();
+                }
+            });
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
         });
     </script>
 </body>
