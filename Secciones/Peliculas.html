@@ -179,27 +179,64 @@
             background-color: var(--secondary-color);
         }
 
-        .back-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: var(--primary-color);
-            color: var(--background-color);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.2);
+            z-index: 1000;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--secondary-color);
+            text-decoration: none;
             transition: all 0.3s ease;
         }
 
-        .back-button:hover {
-            background-color: var(--secondary-color);
+        .nav-item.active {
+            color: var(--primary-color);
+        }
+
+        .nav-item i {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .nav-item span {
+            font-size: 0.8rem;
+        }
+
+        .new-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff0000;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            z-index: 2;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
         }
     </style>
 </head>
 <body>
-    <button class="back-button" onclick="location.href='../index.html';">Volver</button>
     <div class="header">
         <h1>HRZ TV</h1>
         <p>Películas</p>
@@ -211,6 +248,20 @@
     <div class="movie-container" id="movie-container">
         <!-- Las películas se cargarán aquí dinámicamente -->
     </div>
+    <nav class="bottom-nav">
+        <a href="Peliculas.html" class="nav-item active">
+            <i class="fas fa-film"></i>
+            <span>Películas</span>
+        </a>
+        <a href="Series.html" class="nav-item">
+            <i class="fas fa-tv"></i>
+            <span>Series</span>
+        </a>
+        <a href="TV-Online.html" class="nav-item">
+            <i class="fas fa-broadcast-tower"></i>
+            <span>TV Online</span>
+        </a>
+    </nav>
     <footer>
         <p>&copy; 2024 Tecnologia HRZ. Todos los derechos reservados.</p>
     </footer>
@@ -219,22 +270,27 @@
         // Función para cargar las películas desde el JSON
         function cargarPeliculas() {
             fetch('../DataBase/peliculas.json')
-            
                 .then(response => response.json())
                 .then(data => {
                     const movieContainer = document.getElementById('movie-container');
-                    movieContainer.innerHTML = ''; // Limpiar el contenedor
+                    movieContainer.innerHTML = '';
 
                     data.peliculas.forEach(pelicula => {
                         const movieCard = document.createElement('div');
                         movieCard.className = 'movie-card';
+                        
+                        // Agregar la etiqueta "NUEVO" si corresponde
+                        const newBadgeHTML = pelicula.nuevo ? '<div class="new-badge">NUEVO</div>' : '';
+                        
                         movieCard.innerHTML = `
+                            ${newBadgeHTML}
                             <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
                             <div class="movie-info">
                                 <h3>${pelicula.titulo}</h3>
                                 <p>Año: ${pelicula.año}</p>
                             </div>
                         `;
+                        
                         movieCard.addEventListener('click', () => {
                             localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
                             window.location.href = 'movie.html';

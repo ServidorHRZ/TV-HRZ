@@ -25,26 +25,106 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            margin-bottom: 70px;
         }
         h1, h2, h3 {
             font-family: 'Orbitron', sans-serif;
             color: var(--primary-color);
         }
         .serie-info {
-            display: flex;
-            gap: 30px;
-            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            margin: 40px 0;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        .serie-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+            z-index: 1;
         }
         .serie-poster {
-            flex: 0 0 300px;
+            position: relative;
+            z-index: 2;
         }
         .serie-poster img {
             width: 100%;
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .serie-poster img:hover {
+            transform: scale(1.02);
         }
         .serie-details {
-            flex: 1;
+            position: relative;
+            z-index: 2;
+        }
+        .serie-details h2 {
+            font-size: 2.5em;
+            margin: 0 0 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .serie-metadata {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-size: 0.9em;
+        }
+        .serie-descripcion {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        .serie-info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .info-item {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 255, 255, 0.1);
+        }
+        .info-item strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .info-item span {
+            color: var(--secondary-color);
+            font-size: 1em;
+            line-height: 1.4;
+        }
+        .genero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .genero-tag {
+            background: rgba(0, 255, 255, 0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
         }
         .video-container {
             position: relative;
@@ -61,61 +141,122 @@
             height: 100%;
         }
         .temporadas-container {
-            margin-top: 20px;
+            margin-top: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
         }
         .temporada {
-            margin-bottom: 20px;
-            background-color: rgba(0, 255, 255, 0.1);
-            border-radius: 5px;
-            overflow: hidden;
+            margin-bottom: 15px;
+            background: rgba(20, 20, 20, 0.8);
+            border-radius: 8px;
+            transition: all 0.3s ease;
         }
         .temporada-titulo {
-            background-color: var(--primary-color);
-            color: var(--background-color);
-            padding: 10px;
-            cursor: pointer;
+            background: transparent;
+            color: var(--secondary-color);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        .temporada-titulo::after {
+            content: '\f107';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            transition: transform 0.3s ease;
+        }
+        .temporada.active .temporada-titulo::after {
+            transform: rotate(180deg);
         }
         .episodios {
-            display: none;
-            padding: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         .episodio {
-            padding: 10px;
+            padding: 20px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .episodio:hover {
-            background-color: rgba(0, 255, 255, 0.2);
-        }
-        .episodio-info {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 20px;
             align-items: center;
         }
-        .episodio-titulo {
-            font-weight: bold;
+        .episodio-numero {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.2em;
+            width: 30px;
         }
-        .episodio-duracion {
-            font-size: 0.9em;
-            color: var(--primary-color);
+        .episodio-contenido {
+            flex: 1;
+        }
+        .episodio-titulo {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
         }
         .episodio-descripcion {
-            font-size: 0.9em;
-            margin-top: 5px;
             color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        .episodio-duracion {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9em;
+        }
+        .episodio:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .episodio.playing {
+            background: rgba(0, 255, 255, 0.1);
+            border-left: 4px solid var(--primary-color);
         }
         .back-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: var(--primary-color);
-            color: var(--background-color);
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            display: none;
         }
-        .back-button:hover {
-            background-color: var(--secondary-color);
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.2);
+            z-index: 1000;
+        }
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .nav-item.active {
+            color: var(--primary-color);
+        }
+        .nav-item i {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        .nav-item span {
+            font-size: 0.8rem;
+        }
+        @media (max-width: 768px) {
+            .serie-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .serie-poster {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            .serie-info-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -128,19 +269,44 @@
             </div>
             <div class="serie-details">
                 <h2 id="serie-titulo"></h2>
-                <p id="serie-descripcion"></p>
-                <p><strong>Año:</strong> <span id="serie-año"></span></p>
-                <p><strong>Género:</strong> <span id="serie-genero"></span></p>
-                <p><strong>Director:</strong> <span id="serie-director"></span></p>
-                <p><strong>Actores:</strong> <span id="serie-actores"></span></p>
+                <div class="serie-metadata">
+                    <span id="serie-año"></span>
+                    <span id="serie-duracion"></span>
+                </div>
+                <div class="genero-tags" id="genero-tags"></div>
+                <p class="serie-descripcion" id="serie-descripcion"></p>
+                <div class="serie-info-grid">
+                    <div class="info-item">
+                        <strong>Director</strong>
+                        <span id="serie-director"></span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Reparto Principal</strong>
+                        <span id="serie-actores"></span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="video-container">
             <iframe id="video-player" src="" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="temporadas-container" id="temporadas-container"></div>
-        <a href="Series.html" class="back-button">Volver a Series</a>
     </div>
+
+    <nav class="bottom-nav">
+        <a href="Peliculas.html" class="nav-item">
+            <i class="fas fa-film"></i>
+            <span>Películas</span>
+        </a>
+        <a href="Series.html" class="nav-item active">
+            <i class="fas fa-tv"></i>
+            <span>Series</span>
+        </a>
+        <a href="TV-Online.html" class="nav-item">
+            <i class="fas fa-broadcast-tower"></i>
+            <span>TV Online</span>
+        </a>
+    </nav>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -156,9 +322,14 @@
             document.getElementById('serie-titulo').textContent = serie.titulo;
             document.getElementById('serie-descripcion').textContent = serie.descripcion;
             document.getElementById('serie-año').textContent = serie.año;
-            document.getElementById('serie-genero').textContent = serie.genero.join(', ');
             document.getElementById('serie-director').textContent = serie.director;
             document.getElementById('serie-actores').textContent = serie.actores.join(', ');
+
+            // Generar tags de géneros
+            const generoTags = document.getElementById('genero-tags');
+            generoTags.innerHTML = serie.genero.map(gen => 
+                `<span class="genero-tag">${gen}</span>`
+            ).join('');
 
             // Cargar el tráiler
             const videoPlayer = document.getElementById('video-player');
@@ -179,31 +350,42 @@
             const temporadaDiv = document.createElement('div');
             temporadaDiv.className = 'temporada';
             temporadaDiv.innerHTML = `
-                <div class="temporada-titulo">Temporada ${temporada.numero}</div>
-                <div class="episodios">
-                    ${temporada.episodios.map(crearElementoEpisodio).join('')}
+                <div class="temporada-titulo">
+                    Temporada ${temporada.numero}
+                </div>
+                <div class="episodios" style="display: none;">
+                    ${temporada.episodios.map((episodio, index) => `
+                        <div class="episodio" data-url="${episodio.url}">
+                            <div class="episodio-numero">${episodio.numero}</div>
+                            <div class="episodio-contenido">
+                                <div class="episodio-titulo">${episodio.titulo}</div>
+                                <div class="episodio-descripcion">${episodio.descripcion}</div>
+                            </div>
+                            <div class="episodio-duracion">${episodio.duracion}</div>
+                        </div>
+                    `).join('')}
                 </div>
             `;
 
             const tituloTemporada = temporadaDiv.querySelector('.temporada-titulo');
             tituloTemporada.addEventListener('click', () => {
                 const episodios = temporadaDiv.querySelector('.episodios');
-                episodios.style.display = episodios.style.display === 'block' ? 'none' : 'block';
+                const estaActivo = temporadaDiv.classList.contains('active');
+                
+                // Cerrar todas las temporadas
+                document.querySelectorAll('.temporada').forEach(t => {
+                    t.classList.remove('active');
+                    t.querySelector('.episodios').style.display = 'none';
+                });
+
+                // Abrir/cerrar la temporada actual
+                if (!estaActivo) {
+                    temporadaDiv.classList.add('active');
+                    episodios.style.display = 'block';
+                }
             });
 
             return temporadaDiv;
-        }
-
-        function crearElementoEpisodio(episodio) {
-            return `
-                <div class="episodio" data-url="${episodio.url}">
-                    <div class="episodio-info">
-                        <span class="episodio-titulo">Episodio ${episodio.numero}: ${episodio.titulo}</span>
-                        <span class="episodio-duracion">${episodio.duracion}</span>
-                    </div>
-                    <div class="episodio-descripcion">${episodio.descripcion}</div>
-                </div>
-            `;
         }
 
         document.addEventListener('click', function(e) {
@@ -211,7 +393,17 @@
                 const episodio = e.target.closest('.episodio');
                 const videoUrl = episodio.getAttribute('data-url');
                 const videoPlayer = document.getElementById('video-player');
+                
+                // Remover la clase 'playing' de todos los episodios
+                document.querySelectorAll('.episodio').forEach(ep => ep.classList.remove('playing'));
+                
+                // Agregar la clase 'playing' al episodio actual
+                episodio.classList.add('playing');
+                
                 videoPlayer.src = videoUrl;
+                
+                // Desplazar la página hacia el reproductor
+                videoPlayer.scrollIntoView({ behavior: 'smooth' });
             }
         });
     </script>

@@ -132,6 +132,7 @@
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.7);
             color: var(--primary-color);
+            margin-bottom: 70px;
         }
         @media (max-width: 768px) {
             .header h1 {
@@ -175,26 +176,46 @@
         }
 
         .back-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: var(--primary-color);
-            color: var(--background-color);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            display: none;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.2);
+            z-index: 1000;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--secondary-color);
+            text-decoration: none;
             transition: all 0.3s ease;
         }
 
-        .back-button:hover {
-            background-color: var(--secondary-color);
+        .nav-item.active {
+            color: var(--primary-color);
+        }
+
+        .nav-item i {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .nav-item span {
+            font-size: 0.8rem;
         }
     </style>
 </head>
 <body>
-    <button class="back-button" onclick="location.href='../index.html';">Volver</button>
     <div class="header">
         <h1>HRZ TV</h1>
         <p>Canales de TV</p>
@@ -206,6 +227,20 @@
     <div class="channel-container" id="channel-container">
         <!-- Los canales se cargarán aquí dinámicamente -->
     </div>
+    <nav class="bottom-nav">
+        <a href="Peliculas.html" class="nav-item">
+            <i class="fas fa-film"></i>
+            <span>Películas</span>
+        </a>
+        <a href="Series.html" class="nav-item">
+            <i class="fas fa-tv"></i>
+            <span>Series</span>
+        </a>
+        <a href="TV-Online.html" class="nav-item active">
+            <i class="fas fa-broadcast-tower"></i>
+            <span>TV Online</span>
+        </a>
+    </nav>
     <footer>
         <p>&copy; 2024 Tecnologia HRZ. Todos los derechos reservados.</p>
     </footer>

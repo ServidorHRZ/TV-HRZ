@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Copiar los mismos estilos de Peliculas.html -->
+    <title>HRZ TV - Favoritos</title>
+</head>
+<body>
+    <div class="header">
+        <h1>HRZ TV</h1>
+        <p>Mis Favoritos</p>
+    </div>
+    <div class="movie-container" id="favorites-container">
+        <!-- Los favoritos se cargarán aquí -->
+    </div>
+    <nav class="bottom-nav">
+        <a href="Peliculas.html" class="nav-item">
+            <i class="fas fa-film"></i>
+            <span>Películas</span>
+        </a>
+        <a href="Series.html" class="nav-item">
+            <i class="fas fa-tv"></i>
+            <span>Series</span>
+        </a>
+        <a href="TV-Online.html" class="nav-item">
+            <i class="fas fa-broadcast-tower"></i>
+            <span>TV Online</span>
+        </a>
+        <a href="Favoritos.html" class="nav-item active">
+            <i class="fas fa-heart"></i>
+            <span>Favoritos</span>
+        </a>
+    </nav>
+    <footer>
+        <p>&copy; 2024 Tecnologia HRZ. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function loadFavorites() {
+            const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            const container = document.getElementById('favorites-container');
+            
+            if (favorites.length === 0) {
+                container.innerHTML = '<div class="favorites-empty">No tienes favoritos guardados</div>';
+                return;
+            }
+            
+            container.innerHTML = '';
+            favorites.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'movie-card';
+                card.innerHTML = `
+                    <div class="favorite-btn active" onclick="removeFavorite(this, ${JSON.stringify(item).replace(/"/g, '&quot;')})">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <img src="${item.imagen}" alt="${item.titulo}">
+                    <div class="movie-info">
+                        <h3>${item.titulo}</h3>
+                        <p>${item.contentType === 'movie' ? 'Película' : 'Serie'}</p>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function removeFavorite(element, item) {
+            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            favorites = favorites.filter(fav => 
+                !(fav.titulo === item.titulo && fav.contentType === item.contentType)
+            );
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+            loadFavorites();
+            showToast('Eliminado de favoritos');
+        }
+
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.remove();
+            }, 2000);
+        }
+
+        window.addEventListener('load', loadFavorites);
+    </script>
+</body>
+</html> 

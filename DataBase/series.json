@@ -3,6 +3,7 @@
     {
       "id": 1,
       "titulo": "Sherlock",
+      "nuevo": false,
       "descripcion": "Una adaptación moderna de las historias clásicas de Sherlock Holmes, ambientada en el Londres del siglo XXI.",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Sherlock.jpg",
       "año": 2010,
