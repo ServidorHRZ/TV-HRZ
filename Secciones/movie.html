@@ -20,7 +20,12 @@
             min-height: 100vh;
             background: linear-gradient(45deg, var(--background-color), #1a1a1a);
             color: var(--secondary-color);
-            padding-bottom: 70px;
+            overflow: hidden; /* Prevenir scroll en el body */
+        }
+        .main-content {
+            height: calc(100vh - 70px); /* Altura total menos el menú */
+            overflow-y: auto; /* Scroll solo para el contenido */
+            padding-bottom: 20px;
         }
         .header {
             text-align: center;
@@ -101,6 +106,7 @@
             bottom: 0;
             left: 0;
             right: 0;
+            height: 70px; /* Altura fija para el menú */
             background-color: rgba(0, 0, 0, 0.9);
             display: flex;
             justify-content: space-around;
@@ -192,12 +198,14 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>HRZ TV</h1>
-        <p>Reproducir Película</p>
-    </div>
-    <div class="movie-container" id="movie-container">
-        <!-- La información de la película y el iframe se cargarán aquí dinámicamente -->
+    <div class="main-content">
+        <div class="header">
+            <h1>HRZ TV</h1>
+            <p>Reproducir Película</p>
+        </div>
+        <div class="movie-container" id="movie-container">
+            <!-- La información de la película y el iframe se cargarán aquí dinámicamente -->
+        </div>
     </div>
     <nav class="bottom-nav">
         <a href="Peliculas.html" class="nav-item active">
