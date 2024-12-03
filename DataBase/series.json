@@ -117,6 +117,186 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2,
+      "titulo": "The Flash",
+      "nuevo": true,
+      "descripcion": "Barry Allen es un investigador forense que adquiere super velocidad después de que un rayo lo alcanza durante un accidente en un acelerador de partículas.",
+      "imagen": "https://www.themoviedb.org/t/p/original/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg",
+      "año": 2014,
+      "genero": ["Acción", "Aventura", "Ciencia ficción"],
+      "director": "Greg Berlanti, Geoff Johns, Andrew Kreisberg",
+      "actores": ["Grant Gustin", "Candice Patton", "Danielle Panabaker"],
+      "trailer": "https://www.youtube.com/embed/_l9HkDJnwLw",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Piloto",
+              "descripcion": "Barry Allen despierta de un coma de nueve meses y descubre que tiene super velocidad.",
+              "duracion": "43:00",
+              "url": "https://iplayerhls.com/e/ag1apkrpkkkg"
+            },
+            {
+              "numero": 2,
+              "titulo": "El hombre más rápido vivo",
+              "descripcion": "Barry enfrenta a un metahumano que puede crear clones de sí mismo.",
+              "duracion": "42:00",
+              "url": "https://iplayerhls.com/e/kads69yz2qsl"
+            },
+            {
+              "numero": 3,
+              "titulo": "Cosas que no se pueden escapar",
+              "descripcion": "Barry persigue a un metahumano que puede convertir todo lo que toca en explosivos.",
+              "duracion": "42:00",
+              "url": "https://iplayerhls.com/e/rbolfab1iokq"
+            },
+            {
+              "numero": 4,
+              "titulo": "Capitán Frío",
+              "descripcion": "Barry se enfrenta a Leonard Snart, quien utiliza un arma de frío para cometer crímenes.",
+              "duracion": "42:00",
+              "url": "https://iplayerhls.com/e/sbjfpeo65bzk"
+            },
+            {
+              "numero": 5,
+              "titulo": "Plastique",
+              "descripcion": "Barry conoce a una ex-militar que puede convertir objetos en bombas con solo tocarlos.",
+              "duracion": "42:00",
+              "url": "https://iplayerhls.com/e/58yheibs93qe"
+            },
+            {
+              "numero": 6,
+              "titulo": "El origen de Flash",
+              "descripcion": "Joe y Barry rastrean al meta-humano Girder, que resulta ser un antiguo matón de la escuela de Barry.",
+              "duracion": "42:00",
+              "url": "https://iplayerhls.com/e/9kuckwwchdxj"
+            },
+            {
+              "numero": 7,
+              "titulo": "Flash vs. Arrow",
+              "descripcion": "Barry trabaja con Oliver Queen para atrapar a un meta-humano que puede controlar las emociones.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder7/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "El hombre con traje amarillo",
+              "descripcion": "Barry finalmente se enfrenta al misterioso hombre del traje amarillo que mató a su madre.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder8/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "El ascenso del Capitán Frío",
+              "descripcion": "Leonard Snart regresa a Central City con un nuevo socio y una nueva arma congelante.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder9/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Venganza de los villanos",
+              "descripcion": "El Capitán Frío y Heat Wave regresan para vengarse de The Flash.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder10/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "El sonido y la furia",
+              "descripcion": "El ex mentor de Cisco en los laboratorios STAR busca venganza contra Harrison Wells.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder11/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Loco por ti",
+              "descripcion": "Caitlin lleva a Barry a un bar karaoke para animarlo, pero la noche toma un giro peligroso.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder12/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "El hombre nuclear",
+              "descripcion": "Barry y el equipo enfrentan a Ronnie Raymond y el Dr. Martin Stein fusionados como el meta-humano Firestorm.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder13/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "Fallout",
+              "descripcion": "Barry ayuda a Martin Stein y Ronnie Raymond a separarse, mientras el general Eiling persigue a Firestorm.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder14/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "Fuera del tiempo",
+              "descripcion": "Mark Mardon busca venganza contra Joe, mientras Barry descubre una verdad impactante sobre el Dr. Wells.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder15/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Rogue Time",
+              "descripcion": "Barry descubre las consecuencias de viajar en el tiempo mientras lidia con el regreso del Capitán Frío.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder16/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "Tricksters",
+              "descripcion": "Un bromista terrorista de los 90 escapa de prisión y se une a un joven imitador para causar caos.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder17/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "All Star Team Up",
+              "descripcion": "Felicity Smoak y Ray Palmer visitan Central City mientras Barry investiga muertes misteriosas.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder18/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "Who is Harrison Wells?",
+              "descripcion": "Joe y Cisco viajan a Starling City para investigar el accidente de auto del Dr. Wells.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder19/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "The Trap",
+              "descripcion": "Barry, Cisco y Caitlin establecen una trampa para el Dr. Wells, pero las cosas no salen según lo planeado.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder20/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "Grodd Lives",
+              "descripcion": "Barry y el equipo enfrentan a un gorila telepático mientras buscan al Dr. Wells.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder21/preview"
+            },
+            {
+              "numero": 22,
+              "titulo": "Rogue Air",
+              "descripcion": "Para transportar meta-humanos peligrosos, Barry busca ayuda del Capitán Frío, con consecuencias desastrosas.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder22/preview"
+            },
+            {
+              "numero": 23,
+              "titulo": "Fast Enough",
+              "descripcion": "Barry debe decidir si cambiar el pasado y salvar a su madre, arriesgando su presente y futuro.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/placeholder23/preview"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
