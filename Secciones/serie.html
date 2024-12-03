@@ -310,6 +310,93 @@
     </nav>
 
     <script>
+        // Sistema anti-redirecciones y bloqueador de anuncios
+        function implementarProteccion() {
+            // Proteger iframes
+            const iframes = document.getElementsByTagName('iframe');
+            for (let iframe of iframes) {
+                // Configurar sandbox para iframes
+                iframe.sandbox = "allow-scripts allow-same-origin allow-forms";
+                
+                // Prevenir redirecciones desde iframes
+                iframe.addEventListener('load', function() {
+                    try {
+                        iframe.contentWindow.onbeforeunload = function() {
+                            return false;
+                        };
+                    } catch (e) {
+                        // Error esperado por cross-origin
+                    }
+                });
+            }
+
+            // Bloquear redirecciones de ventana principal
+            window.onbeforeunload = function(e) {
+                const currentTime = new Date().getTime();
+                const lastClick = window.lastClickTime || 0;
+                
+                // Permitir solo navegación interna legítima
+                if (currentTime - lastClick < 1000) {
+                    return;
+                }
+                
+                e.preventDefault();
+                return false;
+            };
+
+            // Bloquear popups y funciones de redirección
+            window.open = function() { return null; };
+            window.alert = function() { return null; };
+            window._blank = null;
+
+            // Bloquear anuncios y scripts maliciosos
+            const bloqueadorAnuncios = {
+                bloquearElemento: function(element) {
+                    if (element.tagName === 'IFRAME' || element.tagName === 'SCRIPT') {
+                        const src = element.src || '';
+                        const dominiosProhibidos = [
+                            'ads', 'advert', 'banner', 'pop', 'track',
+                            'analytics', 'click', 'count', 'stat'
+                        ];
+                        
+                        if (dominiosProhibidos.some(domain => src.toLowerCase().includes(domain))) {
+                            element.remove();
+                            return true;
+                        }
+                    }
+                    return false;
+                },
+                
+                observarCambios: function() {
+                    const observer = new MutationObserver((mutations) => {
+                        mutations.forEach((mutation) => {
+                            mutation.addedNodes.forEach((node) => {
+                                if (node.nodeType === 1) { // ELEMENT_NODE
+                                    this.bloquearElemento(node);
+                                    
+                                    // Revisar elementos hijos
+                                    node.querySelectorAll('iframe, script').forEach(child => {
+                                        this.bloquearElemento(child);
+                                    });
+                                }
+                            });
+                        });
+                    });
+
+                    observer.observe(document.body, {
+                        childList: true,
+                        subtree: true
+                    });
+                }
+            };
+
+            // Iniciar bloqueador de anuncios
+            bloqueadorAnuncios.observarCambios();
+        }
+
+        // Implementar protección al cargar la página
+        document.addEventListener('DOMContentLoaded', implementarProteccion);
+
         // Agregar antes de los otros event listeners
         // Sistema anti-redirecciones
         window.addEventListener('beforeunload', function(e) {
