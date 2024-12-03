@@ -59,37 +59,67 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 10px;
+            padding: 20px;
             width: 100%;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            margin-bottom: 60px;
+            box-sizing: border-box;
         }
         .movie-info {
+            width: 100%;
             text-align: center;
-            margin-bottom: 10px;
-            color: var(--secondary-color);
+            margin: 20px 0 30px 0;
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .movie-poster {
+            max-width: 200px;
+            height: auto;
+            margin: 15px auto;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .movie-poster:hover {
+            transform: scale(1.05);
+        }
+        .movie-details {
+            margin-top: 15px;
+            width: 100%;
+            max-width: 800px;
         }
         .movie-info h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
             color: var(--primary-color);
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+        .movie-info p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: var(--secondary-color);
+            opacity: 0.9;
         }
         .iframe-container {
             width: 100%;
+            max-width: 1200px;
             padding-top: 56.25%;
             position: relative;
-            margin-bottom: 60px;
+            margin: 0 auto 40px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
         }
         iframe {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 90%;
+            height: 100%;
             border: none;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.8);
         }
         footer {
             text-align: center;
@@ -136,14 +166,24 @@
             .header h1 {
                 font-size: 2.5rem;
             }
-            .movie-info h2 {
-                font-size: 1.5rem;
+            .movie-container {
+                padding: 15px;
             }
-            .back-button {
-                top: 10px;
-                left: 10px;
-                padding: 8px 16px;
-                font-size: 14px;
+            .movie-info {
+                margin: 15px 0 20px 0;
+            }
+            .movie-info h2 {
+                font-size: 1.8rem;
+            }
+            .movie-info p {
+                font-size: 1rem;
+            }
+            .iframe-container {
+                width: 95%;
+                margin-bottom: 30px;
+            }
+            .movie-poster {
+                max-width: 160px;
             }
         }
         @media (max-width: 480px) {
@@ -153,15 +193,21 @@
             .header p {
                 font-size: 0.9rem;
             }
+            .movie-container {
+                padding: 10px;
+            }
             .movie-info h2 {
-                font-size: 1.2rem;
+                font-size: 1.5rem;
             }
             .movie-info p {
                 font-size: 0.9rem;
             }
-            .back-button {
-                padding: 6px 12px;
-                font-size: 12px;
+            .iframe-container {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+            .movie-poster {
+                max-width: 140px;
             }
         }
         @media (max-width: 320px) {
@@ -182,17 +228,10 @@
                 font-size: 10px;
             }
         }
-        @media (min-width: 768px) {
-            .movie-container {
-                padding: 40px;
-            }
+        @media (min-width: 1200px) {
             .iframe-container {
                 width: 90%;
-            }
-        }
-        @media (min-width: 1024px) {
-            .iframe-container {
-                width: 80%;
+                max-width: 1400px;
             }
         }
     </style>
@@ -232,8 +271,11 @@
                 const movieContainer = document.getElementById('movie-container');
                 movieContainer.innerHTML = `
                     <div class="movie-info">
-                        <h2>${peliculaSeleccionada.titulo}</h2>
-                        <p>Año: ${peliculaSeleccionada.año}</p>
+                        <img src="${peliculaSeleccionada.imagen}" alt="${peliculaSeleccionada.titulo}" class="movie-poster">
+                        <div class="movie-details">
+                            <h2>${peliculaSeleccionada.titulo}</h2>
+                            <p>Año: ${peliculaSeleccionada.año}</p>
+                        </div>
                     </div>
                     <div class="iframe-container">
                         <iframe src="${peliculaSeleccionada.enlace}" allowfullscreen></iframe>

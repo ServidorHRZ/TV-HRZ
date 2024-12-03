@@ -1,6 +1,48 @@
 {
   "peliculas": [
     {
+      "titulo": "Mi Pobre Angelito 1",
+      "año": 1990,
+      "imagen": "https://pics.filmaffinity.com/home_alone-163260879-large.jpg",
+      "enlace": "https://drive.google.com/file/d/1CagmtZmCgS5X132pdz70pugxWOnmc71Y/preview",
+      "nuevo": true
+    },
+    {
+      "titulo": "Mi Pobre Angelito 2",
+      "año": 1992,
+      "imagen": "https://image.tmdb.org/t/p/original/48Wa6L2QzY47nWqtRCgiqYlecc9.jpg",
+      "enlace": "https://drive.google.com/file/d/1ZStdjNhTEKs1DnT8b7-QgrJNyecLQh3Q/preview",
+      "nuevo": true
+    },
+    {
+      "titulo": "Mi Pobre Angelito 3",
+      "año": 1997,
+      "imagen": "https://image.tmdb.org/t/p/original/eyGhwPTLYTKpCi5c9OvtKNS4zB7.jpg",
+      "enlace": "https://drive.google.com/file/d/18FZon3d_EZBsByFgK18iyIJ_XYC99vBO/preview",
+      "nuevo": true
+    },
+    {
+      "titulo": "Las Crónicas de Navidad",
+      "año": 2018,
+      "imagen": "https://es.web.img3.acsta.net/pictures/18/10/10/16/04/5479886.jpg",
+      "enlace": "https://drive.google.com/file/d/10R6fkumlnJSVCDaKmHtXIoNrZkSPud6l/preview",
+      "nuevo": true
+    },
+    {
+      "titulo": "Las Crónicas de Navidad 2",
+      "año": 2020,
+      "imagen": "https://es.web.img2.acsta.net/pictures/20/10/20/08/59/0323500.jpg",
+      "enlace": "https://drive.google.com/file/d/1G4ojr6PrMop9UkbszlekhJFbFTioms5v/preview",
+      "nuevo": true
+    },
+    {
+      "titulo": "El Regalo Prometido",
+      "año": 1996,
+      "imagen": "https://mx.web.img2.acsta.net/pictures/18/11/09/02/47/1757410.jpg",
+      "enlace": "https://drive.google.com/file/d/14mgzLgkKVuGirawp5i_aAysoIWFajMux/preview",
+      "nuevo": true
+    },
+    {
       "titulo": "La Forja",
       "año": 2024,
       "imagen": "https://procinal.com/uploads/PELICULAS/Img_movies/Img_360x500/360%20X%20500%20LA%20FORJA.jpg",
