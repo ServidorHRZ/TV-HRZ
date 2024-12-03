@@ -1,15 +1,6 @@
 {
   "peliculas": [
     {
-      "titulo": "El hermano de Santa",
-      "disponible": false,
-      "año": 2007,
-      "imagen": "https://pics.filmaffinity.com/fred_claus-584818055-large.jpg",
-      "enlace": "",
-      "nuevo": true,
-      "descripcion": "Fred Claus, el hermano mayor de Santa Claus, está en problemas económicos y va al Polo Norte para pedir ayuda. A cambio, debe trabajar en el taller de juguetes, donde su actitud cínica pone en riesgo la Navidad."
-    },
-    {
       "titulo": "Noche sin paz",
       "disponible": false,
       "año": 2023,
