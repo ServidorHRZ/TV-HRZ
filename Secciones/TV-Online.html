@@ -21,7 +21,11 @@
             background: linear-gradient(45deg, var(--background-color), #1a1a1a);
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+        }
+        .main-content {
+            flex: 1;
+            padding-bottom: 70px;
+            overflow-y: auto;
         }
         .header {
             text-align: center;
@@ -76,6 +80,7 @@
             position: relative;
             overflow: hidden;
             border-radius: 15px;
+            margin: 0 auto;
         }
         .channel-card::before {
             content: '';
@@ -221,18 +226,31 @@
             padding: 20px;
             max-width: 1400px;
             margin: 0 auto;
+            margin-bottom: 20px;
         }
 
         @media (max-width: 768px) {
             .channels-container {
-                display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                gap: 8px;
+                gap: 10px;
                 padding: 10px;
             }
-            
+
             .channel-card {
-                border-width: 1px;
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1/1;
+                min-width: 0;
+            }
+
+            .channel-card img {
+                width: 70%;
+                height: 70%;
+                object-fit: contain;
+            }
+
+            .channel-info {
+                padding: 5px;
             }
 
             .channel-info h3 {
@@ -242,25 +260,44 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            
+
             .channel-info p {
-                font-size: 0.65rem;
-                margin: 2px 0 0;
-                opacity: 0.8;
+                display: none;
             }
         }
 
         @media (max-width: 480px) {
             .channels-container {
                 gap: 6px;
-                padding: 8px;
+                padding: 6px;
+            }
+
+            .channel-card {
+                border-width: 1px;
+            }
+
+            .logo-container h1 {
+                font-size: 1.2rem;
+            }
+
+            #search-input {
+                font-size: 0.9rem;
+                padding: 0.8rem 3rem 0.8rem 1rem;
             }
         }
 
         @media (max-width: 360px) {
             .channels-container {
                 gap: 4px;
-                padding: 6px;
+                padding: 4px;
+            }
+
+            .nav-item span {
+                font-size: 0.7rem;
+            }
+
+            .nav-item i {
+                font-size: 1.2rem;
             }
         }
 
@@ -353,29 +390,32 @@
     </style>
 </head>
 <body>
-    <div class="top-header">
-        <div class="header-content">
-            <div class="logo-container">
-                <h1>HRZ TV</h1>
+    <div class="main-content">
+        <div class="top-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <h1>HRZ TV</h1>
+                </div>
+                <div class="nav-icons">
+                    <!-- Aquí puedes agregar íconos adicionales si lo deseas -->
+                </div>
             </div>
-            <div class="nav-icons">
-                <!-- Aquí puedes agregar íconos adicionales si lo deseas -->
+        </div>
+
+        <div class="search-wrapper">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar canales...">
+                <button id="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
+        </div>
+
+        <div class="channels-container" id="channels-container">
+            <!-- Los canales se cargarán aquí dinámicamente -->
         </div>
     </div>
 
-    <div class="search-wrapper">
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Buscar canales...">
-            <button id="search-button">
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
-    </div>
-
-    <div class="channels-container" id="channels-container">
-        <!-- Los canales se cargarán aquí dinámicamente -->
-    </div>
     <nav class="bottom-nav">
         <a href="Peliculas.html" class="nav-item">
             <i class="fas fa-film"></i>
