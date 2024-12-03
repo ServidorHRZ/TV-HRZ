@@ -1,7 +1,53 @@
 {
   "peliculas": [
     {
+      "titulo": "El hermano de Santa",
+      "disponible": false,
+      "año": 2007,
+      "imagen": "https://pics.filmaffinity.com/fred_claus-584818055-large.jpg",
+      "enlace": "",
+      "nuevo": true,
+      "descripcion": "Fred Claus, el hermano mayor de Santa Claus, está en problemas económicos y va al Polo Norte para pedir ayuda. A cambio, debe trabajar en el taller de juguetes, donde su actitud cínica pone en riesgo la Navidad."
+    },
+    {
+      "titulo": "Noche sin paz",
+      "disponible": false,
+      "año": 2023,
+      "imagen": "https://www.universalpictures.com.mx/tl_files/content/movies/violent_night/posters/01.jpg",
+      "enlace": "",
+      "nuevo": true,
+      "descripcion": "Cuando un grupo de mercenarios ataca la propiedad de una familia adinerada en Nochebuena, Santa Claus debe intervenir para salvar el día y la Navidad, demostrando por qué es mejor no estar en su lista de traviesos."
+    },
+    {
+      "titulo": "Mi pobre y dulce angelito",
+      "disponible": false,
+      "año": 2021,
+      "imagen": "https://pics.filmaffinity.com/home_sweet_home_alone-872888087-large.jpg",
+      "enlace": "",
+      "nuevo": true,
+      "descripcion": "Un niño ingenioso debe proteger su hogar de una pareja casada que intenta recuperar una reliquia familiar invaluable durante la temporada navideña."
+    },
+    {
+      "titulo": "Una Navidad muy Prendida",
+      "disponible": false,
+      "año": 2022,
+      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/8d2f4db249ea1eb1d50862345c2cfbb0a7f018fbb8e2541c80bd21494d982727.jpg",
+      "enlace": "",
+      "nuevo": true,
+      "descripcion": "Un padre de familia decide hacer la mejor fiesta de Navidad en su oficina para impresionar a un cliente importante, pero la celebración se sale de control y amenaza con arruinar su carrera."
+    },
+    {
+      "titulo": "Genie",
+      "disponible": false,
+      "año": 2023,
+      "imagen": "https://pics.filmaffinity.com/Genie-138388806-large.jpg",
+      "enlace": "",
+      "nuevo": true,
+      "descripcion": "Un genio atrapado en una caja de música durante 2000 años ayuda a un padre a reconectar con su hija durante la temporada navideña, enseñándoles el verdadero significado de la magia y el amor familiar."
+    },
+    {
       "titulo": "Mi Pobre Angelito 1",
+      "disponible": true,
       "año": 1990,
       "imagen": "https://pics.filmaffinity.com/home_alone-163260879-large.jpg",
       "enlace": "https://drive.google.com/file/d/1CagmtZmCgS5X132pdz70pugxWOnmc71Y/preview",
@@ -10,6 +56,7 @@
     },
     {
       "titulo": "Mi Pobre Angelito 2",
+      "disponible": true,
       "año": 1992,
       "imagen": "https://image.tmdb.org/t/p/original/48Wa6L2QzY47nWqtRCgiqYlecc9.jpg",
       "enlace": "https://drive.google.com/file/d/1ZStdjNhTEKs1DnT8b7-QgrJNyecLQh3Q/preview",
@@ -18,6 +65,7 @@
     },
     {
       "titulo": "Mi Pobre Angelito 3",
+      "disponible": true,
       "año": 1997,
       "imagen": "https://image.tmdb.org/t/p/original/eyGhwPTLYTKpCi5c9OvtKNS4zB7.jpg",
       "enlace": "https://drive.google.com/file/d/18FZon3d_EZBsByFgK18iyIJ_XYC99vBO/preview",
@@ -26,6 +74,7 @@
     },
     {
       "titulo": "Las Crónicas de Navidad",
+      "disponible": true,
       "año": 2018,
       "imagen": "https://es.web.img3.acsta.net/pictures/18/10/10/16/04/5479886.jpg",
       "enlace": "https://drive.google.com/file/d/10R6fkumlnJSVCDaKmHtXIoNrZkSPud6l/preview",
@@ -34,6 +83,7 @@
     },
     {
       "titulo": "Las Crónicas de Navidad 2",
+      "disponible": true,
       "año": 2020,
       "imagen": "https://es.web.img2.acsta.net/pictures/20/10/20/08/59/0323500.jpg",
       "enlace": "https://drive.google.com/file/d/1G4ojr6PrMop9UkbszlekhJFbFTioms5v/preview",
@@ -42,6 +92,7 @@
     },
     {
       "titulo": "El Regalo Prometido",
+      "disponible": true,
       "año": 1996,
       "imagen": "https://mx.web.img2.acsta.net/pictures/18/11/09/02/47/1757410.jpg",
       "enlace": "https://drive.google.com/file/d/14mgzLgkKVuGirawp5i_aAysoIWFajMux/preview",
@@ -50,6 +101,7 @@
     },
     {
       "titulo": "La Forja",
+      "disponible": true,
       "año": 2024,
       "imagen": "https://procinal.com/uploads/PELICULAS/Img_movies/Img_360x500/360%20X%20500%20LA%20FORJA.jpg",
       "enlace": "https://drive.google.com/file/d/1qGA8-6kEpjvzTXi_ww2RD9-Ax3cvRGTO/preview",
@@ -58,6 +110,7 @@
     },
     {
       "titulo": "A través de mi ventana",
+      "disponible": true,
       "año": 2022,
       "imagen": "https://hips.hearstapps.com/hmg-prod/images/a-traves-de-mi-ventana-netflix-1638373301.jpg?resize=980:*", 
       "enlace": "https://drive.google.com/file/d/1xYTEORHybllVFEzH-J32CmyuEOdJKE4B/preview",
@@ -65,6 +118,7 @@
     },
     {
       "titulo": "Toy Story",
+      "disponible": true,
       "año": 1995,
       "imagen": "https://m.media-amazon.com/images/I/71aBLaC4TzL._AC_UF894,1000_QL80_.jpg",
       "enlace": "https://drive.google.com/file/d/1peXqF9w8NFHXcF2dBNfoHMn29GSawven/preview",
@@ -72,6 +126,7 @@
     },
     {
       "titulo": "Toy Story 2",
+      "disponible": true,
       "año": 1999,
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNmi6gmFlX3-Qf-ukyotjtiq_ODkhNMsazKw&s",
       "enlace": "https://drive.google.com/file/d/1MnY-PuI21kJhq8NuZVweK0kUn3BWcNPu/preview",
@@ -79,6 +134,7 @@
     },
     {
       "titulo": "Toy Story 3",
+      "disponible": true,
       "año": 2010,
       "imagen": "https://pecime.com.mx/wp-content/uploads/2020/08/Toy-Story-3-poster-683x1024.jpg",
       "enlace": "https://drive.google.com/file/d/18zddOcQdtYhjBvM30IljvG-sV_r1yjrw/preview",
@@ -86,6 +142,7 @@
     },
     {
       "titulo": "Toy Story 4",
+      "disponible": true,
       "año": 2019,
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FyF1vPDuHVrAUMX5dy1tVMbAjkEL.jpg&w=256&q=75",
       "enlace": "https://drive.google.com/file/d/1ZF8rHpWopwkRGcniZoJ-dEi9vaOVVsmb/preview",
@@ -93,6 +150,7 @@
     },
     {
       "titulo": "La red social",
+      "disponible": true,
       "año": 2010,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/RedSocial.jpg",
       "enlace": "https://drive.google.com/file/d/13dvFl4C8MK48UDfF8MvjStjsORDXvTp1/preview",
@@ -100,6 +158,7 @@
     },
     {
       "titulo": "Anonymous",
+      "disponible": true,
       "año": 2016,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Anonymus.jpg",
       "enlace": "https://drive.google.com/file/d/ID_DE_ANONYMOUS/preview",
@@ -107,6 +166,7 @@
     },
     {
       "titulo": "Hackers: Ningún sistema es seguro",
+      "disponible": true,
       "año": 2014,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NingunSistem.jpg",
       "enlace": "https://drive.google.com/file/d/1T90gWXegYWZtUfDsSsZzqLlmuCGwCtbt/preview",
@@ -114,6 +174,7 @@
     },
     {
       "titulo": "Hackers",
+      "disponible": true,
       "año": 1995,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Hackers.jpg",
       "enlace": "https://drive.google.com/file/d/1o7vY1ELaOV5-nLAer2aArmrbO0s4ZrS7/preview",
@@ -121,6 +182,7 @@
     },
     {
       "titulo": "Hacker",
+      "disponible": true,
       "año": 2019,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/HACKER.jpg",
       "enlace": "https://drive.google.com/file/d/1VKYgBWnk2tND991LpT0WzZz9Md21d7DF/preview",
@@ -128,6 +190,7 @@
     },
     {
       "titulo": "Volver al Futuro",
+      "disponible": true,
       "año": 1985,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut1.jpg",
       "enlace": "https://drive.google.com/file/d/1lAW6VeuTHNQp1PUiEaVaXVp5mssEq072/preview",
@@ -135,6 +198,7 @@
     },
     {
       "titulo": "Volver al Futuro II",
+      "disponible": true,
       "año": 1989,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut2.jpg", 
       "enlace": "https://drive.google.com/file/d/1peRBdi6Zm38xoKzjNRSnlU-_vVEift4s/preview",
@@ -142,6 +206,7 @@
     },
     {
       "titulo": "Volver al Futuro III",
+      "disponible": true,
       "año": 1990,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut3.jpg",
       "enlace": "https://drive.google.com/file/d/1djpDf36EP-aCX3s1cU2z-86PkMw4XuQE/preview",
@@ -149,6 +214,7 @@
     },
     {
       "titulo": "X-Men",
+      "disponible": true,
       "año": 2000,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-Men.jpg",
       "enlace": "https://drive.google.com/file/d/13ECXfnUTHpg3ZJVBOWSf-ri8nsbiH94A/preview",
@@ -156,6 +222,7 @@
     },
     {
       "titulo": "X-Men 2",
+      "disponible": true,
       "año": 2003,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-Men2.png",
       "enlace": "https://drive.google.com/file/d/10mgRsk787did59eCbuukODWIRt6TzMON/preview",
@@ -163,6 +230,7 @@
     },
     {
       "titulo": "X-Men: La decisión final",
+      "disponible": true,
       "año": 2006,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-Men3.jpg",
       "enlace": "https://drive.google.com/file/d/1prfhUoPkEA5xYHvdpcFwWUWVEPxq4knA/preview",
@@ -170,6 +238,7 @@
     },
     {
       "titulo": "X-Men Orígenes: Wolverine",
+      "disponible": true,
       "año": 2009,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-MEN1.jpg",
       "enlace": "https://drive.google.com/file/d/151Kwlcmw1Xm_Y_3F_sulIKhEUQCThbJU/preview",
@@ -177,6 +246,7 @@
     },
     {
       "titulo": "X-Men: Primera generación",
+      "disponible": true,
       "año": 2011,
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1gqPbslGDHAJDvqD8HmnXNpM726-JR6tNw&s",
       "enlace": "https://drive.google.com/file/d/1mFrkmwgflkqrEYUyM_U3wd4Om04y4Lj7/preview",
@@ -184,6 +254,7 @@
     },
     {
       "titulo": "Wolverine: Inmortal",
+      "disponible": true,
       "año": 2013,
       "imagen": "https://i.pinimg.com/originals/d0/47/57/d04757a75659b6a24accef9aaedc606b.jpg",
       "enlace": "https://drive.google.com/file/d/1ZBD4ZHxVAyudpTNTQL9g1Tbh-sdy3X3Z/preview",
@@ -191,6 +262,7 @@
     },
     {
       "titulo": "X-Men: Días del futuro pasado",
+      "disponible": true,
       "año": 2014,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDOFP.jpg",
       "enlace": "https://drive.google.com/file/d/ID_XMEN_DOFP/preview",
@@ -198,6 +270,7 @@
     },
     {
       "titulo": "X-Men: Apocalipsis",
+      "disponible": true,
       "año": 2016,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenApocalipsis.jpg",
       "enlace": "https://drive.google.com/file/d/ID_XMEN_APOCALIPSIS/preview",
@@ -205,6 +278,7 @@
     },
     {
       "titulo": "Logan",
+      "disponible": true,
       "año": 2017,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Logan.jpg",
       "enlace": "https://drive.google.com/file/d/ID_LOGAN/preview",
@@ -212,6 +286,7 @@
     },
     {
       "titulo": "Deadpool",
+      "disponible": true,
       "año": 2016,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool.jpg",
       "enlace": "https://drive.google.com/file/d/ID_DEADPOOL/preview",
@@ -219,6 +294,7 @@
     },
     {
       "titulo": "Deadpool 2",
+      "disponible": true,
       "año": 2018,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool2.jpg",
       "enlace": "https://drive.google.com/file/d/ID_DEADPOOL_2/preview",
@@ -226,6 +302,7 @@
     },
     {
       "titulo": "X-Men: Fénix Oscura",
+      "disponible": true,
       "año": 2019,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDarkPhoenix.jpg",
       "enlace": "https://drive.google.com/file/d/ID_XMEN_DARK_PHOENIX/preview",
@@ -233,6 +310,7 @@
     },
     {
       "titulo": "Los Nuevos Mutantes",
+      "disponible": true,
       "año": 2020,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NewMutants.jpg",
       "enlace": "https://drive.google.com/file/d/ID_NEW_MUTANTS/preview",
@@ -240,6 +318,7 @@
     },
     {
       "titulo": "Capitán América: El primer vengador",
+      "disponible": true,
       "año": 2011,
       "imagen": "https://m.media-amazon.com/images/I/81y9W+06QrL._AC_UF894,1000_QL80_.jpg",
       "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_1/preview",
@@ -247,6 +326,7 @@
     },
     {
       "titulo": "Capitana Marvel",
+      "disponible": true,
       "año": 2019,
       "imagen": "https://m.media-amazon.com/images/I/71NnJU9liHL.jpg",
       "enlace": "https://m.media-amazon.com/images/I/71NnJU9liHL.jpg",
@@ -254,6 +334,7 @@
     },
     {
       "titulo": "Iron Man",
+      "disponible": true,
       "año": 2008,
       "imagen": "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/0/d/d/small-spos8825-poster-iron-man-1-a-official-sticker-sl-9829-wall-original-imaghs5pygznwxu9.jpeg?q=20&crop=false",
       "enlace": "https://drive.google.com/file/d/1SN5p9h38gXNL2kKEuqUogODVOhnOxmsF/preview",
@@ -261,6 +342,7 @@
     },
     {
       "titulo": "Iron Man 2",
+      "disponible": true,
       "año": 2010,
       "imagen": "https://static.posters.cz/image/750/posters/iron-man-2-one-sheet-i7902.jpg",
       "enlace": "https://drive.google.com/file/d/1QbC6edJkiQ3qaGZ-hH_TWK_gF8fnVba4/preview",
@@ -268,6 +350,7 @@
     },
     {
       "titulo": "El increíble Hulk",
+      "disponible": true,
       "año": 2008,
       "imagen": "https://ejemplo.com/increible-hulk.jpg",
       "enlace": "https://drive.google.com/file/d/ID_INCREIBLE_HULK/preview",
@@ -275,6 +358,7 @@
     },
     {
       "titulo": "Thor",
+      "disponible": true,
       "año": 2011,
       "imagen": "https://ejemplo.com/thor.jpg",
       "enlace": "https://drive.google.com/file/d/ID_THOR/preview",
@@ -282,6 +366,7 @@
     },
     {
       "titulo": "Los Vengadores",
+      "disponible": true,
       "año": 2012,
       "imagen": "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "enlace": "https://drive.google.com/file/d/1juUhD1wkvZG4Ve4pX9cHjSmxreKnN4B-/preview",
@@ -289,6 +374,7 @@
     },
     {
       "titulo": "Iron Man 3",
+      "disponible": true,
       "año": 2013,
       "imagen": "https://static.posters.cz/image/750/posters/iron-man-3-one-sheet-i16526.jpg",
       "enlace": "https://drive.google.com/file/d/1XS2avxLTV6T7WeSRz1XHQzQQCUhm9Sk8/preview",
@@ -296,6 +382,7 @@
     },
     {
       "titulo": "Thor: El mundo oscuro",
+      "disponible": true,
       "año": 2013,
       "imagen": "https://ejemplo.com/thor-mundo-oscuro.jpg",
       "enlace": "https://drive.google.com/file/d/ID_THOR_MUNDO_OSCURO/preview",
@@ -303,6 +390,7 @@
     },
     {
       "titulo": "Capitán América: El Soldado de Invierno",
+      "disponible": true,
       "año": 2014,
       "imagen": "https://es.web.img3.acsta.net/pictures/14/01/31/16/12/220933.jpg",
       "enlace": "https://drive.google.com/file/d/1-m3NjNYPmN5A2yK8HNJJ5mmf7JYK2l6o/preview",
@@ -310,6 +398,7 @@
     },
     {
       "titulo": "Guardianes de la Galaxia",
+      "disponible": true,
       "año": 2014,
       "imagen": "https://ejemplo.com/guardianes-galaxia.jpg",
       "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA/preview",
@@ -317,210 +406,245 @@
     },
     {
       "titulo": "Guardianes de la Galaxia Vol. 2",
+      "disponible": true,
       "año": 2017,
       "imagen": "https://ejemplo.com/guardianes-galaxia-2.jpg",
       "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_2/preview"
     },
     {
       "titulo": "Yo soy Groot",
+      "disponible": true,
       "año": 2022,
       "imagen": "https://ejemplo.com/yo-soy-groot.jpg",
       "enlace": "https://drive.google.com/file/d/ID_YO_SOY_GROOT/preview"
     },
     {
       "titulo": "Vengadores: La era de Ultrón",
+      "disponible": true,
       "año": 2015,
       "imagen": "https://ejemplo.com/vengadores-era-ultron.jpg",
       "enlace": "https://drive.google.com/file/d/ID_VENGADORES_ULTRON/preview"
     },
     {
       "titulo": "Ant-Man",
+      "disponible": true,
       "año": 2015,
       "imagen": "https://ejemplo.com/ant-man.jpg",
       "enlace": "https://drive.google.com/file/d/ID_ANT_MAN/preview"
     },
     {
       "titulo": "Capitán América: Civil War",
+      "disponible": true,
       "año": 2016,
       "imagen": "https://ejemplo.com/capitan-america-civil-war.jpg",
       "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_3/preview"
     },
     {
       "titulo": "Spider-Man: Homecoming",
+      "disponible": true,
       "año": 2017,
       "imagen": "https://ejemplo.com/spiderman-homecoming.jpg",
       "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_HOMECOMING/preview"
     },
     {
       "titulo": "Doctor Extraño",
+      "disponible": true,
       "año": 2016,
       "imagen": "https://ejemplo.com/doctor-extrano.jpg",
       "enlace": "https://drive.google.com/file/d/ID_DOCTOR_EXTRANO/preview"
     },
     {
       "titulo": "Viuda Negra",
+      "disponible": true,
       "año": 2020,
       "imagen": "https://ejemplo.com/viuda-negra.jpg",
       "enlace": "https://drive.google.com/file/d/ID_VIUDA_NEGRA/preview"
     },
     {
       "titulo": "Black Panther",
+      "disponible": true,
       "año": 2018,
       "imagen": "https://ejemplo.com/black-panther.jpg",
       "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER/preview"
     },
     {
       "titulo": "Thor: Ragnarok",
+      "disponible": true,
       "año": 2017,
       "imagen": "https://ejemplo.com/thor-ragnarok.jpg",
       "enlace": "https://drive.google.com/file/d/ID_THOR_RAGNAROK/preview"
     },
     {
       "titulo": "Ant-Man y la Avispa",
+      "disponible": true,
       "año": 2018,
       "imagen": "https://ejemplo.com/ant-man-avispa.jpg",
       "enlace": "https://drive.google.com/file/d/ID_ANT_MAN_AVISPA/preview"
     },
     {
       "titulo": "Vengadores: Infinity War",
+      "disponible": true,
       "año": 2018,
       "imagen": "https://ejemplo.com/vengadores-infinity-war.jpg",
       "enlace": "https://drive.google.com/file/d/ID_VENGADORES_INFINITY_WAR/preview"
     },
     {
       "titulo": "Vengadores: Endgame",
+      "disponible": true,
       "año": 2019,
       "imagen": "https://ejemplo.com/vengadores-endgame.jpg",
       "enlace": "https://drive.google.com/file/d/ID_VENGADORES_ENDGAME/preview"
     },
     {
       "titulo": "Loki",
+      "disponible": true,
       "año": 2021,
       "imagen": "https://ejemplo.com/loki.jpg",
       "enlace": "https://drive.google.com/file/d/ID_LOKI/preview"
     },
     {
       "titulo": "Bruja Escarlata y Visión",
+      "disponible": true,
       "año": 2021,
       "imagen": "https://ejemplo.com/bruja-escarlata-vision.jpg",
       "enlace": "https://drive.google.com/file/d/ID_BRUJA_ESCARLATA_VISION/preview"
     },
     {
       "titulo": "Shang-Chi y la leyenda de los diez anillos",
+      "disponible": true,
       "año": 2021,
       "imagen": "https://ejemplo.com/shang-chi.jpg",
       "enlace": "https://drive.google.com/file/d/ID_SHANG_CHI/preview"
     },
     {
       "titulo": "Falcon y el Soldado de Invierno",
+      "disponible": true,
       "año": 2021,
       "imagen": "https://ejemplo.com/falcon-soldado-invierno.jpg",
       "enlace": "https://drive.google.com/file/d/ID_FALCON_SOLDADO_INVIERNO/preview"
     },
     {
       "titulo": "Spider-Man: Lejos de casa",
+      "disponible": true,
       "año": 2019,
       "imagen": "https://ejemplo.com/spiderman-lejos-casa.jpg",
       "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_LEJOS_CASA/preview"
     },
     {
       "titulo": "Spider-Man: No Way Home",
+      "disponible": true,
       "año": 2021,
       "imagen": "https://ejemplo.com/spiderman-no-way-home.jpg",
       "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_NO_WAY_HOME/preview"
     },
     {
       "titulo": "Eternals",
+      "disponible": true,
       "año": 2021,
       "imagen": "https://ejemplo.com/eternals.jpg",
       "enlace": "https://drive.google.com/file/d/ID_ETERNALS/preview"
     },
     {
       "titulo": "Ojo de Halcón",
+      "disponible": true,
       "año": 2021,
       "imagen": "https://ejemplo.com/ojo-halcon.jpg",
       "enlace": "https://drive.google.com/file/d/ID_OJO_HALCON/preview"
     },
     {
       "titulo": "Echo",
+      "disponible": true,
       "año": 2024,
       "imagen": "https://ejemplo.com/echo.jpg",
       "enlace": "https://drive.google.com/file/d/ID_ECHO/preview"
     },
     {
       "titulo": "Doctor Strange en el multiverso de la locura",
+      "disponible": true,
       "año": 2022,
       "imagen": "https://ejemplo.com/doctor-strange-multiverso.jpg",
       "enlace": "https://drive.google.com/file/d/ID_DOCTOR_STRANGE_MULTIVERSO/preview"
     },
     {
       "titulo": "Caballero Luna",
+      "disponible": true,
       "año": 2022,
       "imagen": "https://ejemplo.com/caballero-luna.jpg",
       "enlace": "https://drive.google.com/file/d/ID_CABALLERO_LUNA/preview"
     },
     {
       "titulo": "She-Hulk: Abogada Hulka",
+      "disponible": true,
       "año": 2022,
       "imagen": "https://ejemplo.com/she-hulk.jpg",
       "enlace": "https://drive.google.com/file/d/ID_SHE_HULK/preview"
     },
     {
       "titulo": "Ms. Marvel",
+      "disponible": true,
       "año": 2022,
       "imagen": "https://ejemplo.com/ms-marvel.jpg",
       "enlace": "https://drive.google.com/file/d/ID_MS_MARVEL/preview"
     },
     {
       "titulo": "Thor: Love and Thunder",
+      "disponible": true,
       "año": 2022,
       "imagen": "https://ejemplo.com/thor-love-thunder.jpg",
       "enlace": "https://drive.google.com/file/d/ID_THOR_LOVE_THUNDER/preview"
     },
     {
       "titulo": "Black Panther: Wakanda Forever",
+      "disponible": true,
       "año": 2022,
       "imagen": "https://ejemplo.com/black-panther-wakanda-forever.jpg",
       "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER_WAKANDA_FOREVER/preview"
     },
     {
       "titulo": "Guardianes de la Galaxia: Especial Felices Fiestas",
+      "disponible": true,
       "año": 2022,
       "imagen": "https://ejemplo.com/guardianes-galaxia-felices-fiestas.jpg",
       "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_FELICES_FIESTAS/preview"
     },
     {
       "titulo": "Ant-Man y la Avispa: Quantumania",
+      "disponible": true,
       "año": 2023,
       "imagen": "https://ejemplo.com/ant-man-avispa-quantumania.jpg",
       "enlace": "https://drive.google.com/file/d/ID_ANT_MAN_AVISPA_QUANTUMANIA/preview"
     },
     {
       "titulo": "Guardianes de la Galaxia Vol. 3",
+      "disponible": true,
       "año": 2023,
       "imagen": "https://ejemplo.com/guardianes-galaxia-3.jpg",
       "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_3/preview"
     },
     {
       "titulo": "Invasión secreta",
+      "disponible": true,
       "año": 2023,
       "imagen": "https://ejemplo.com/invasion-secreta.jpg",
       "enlace": "https://drive.google.com/file/d/ID_INVASION_SECRETA/preview"
     },
     {
       "titulo": "Loki T2",
+      "disponible": true,
       "año": 2023,
       "imagen": "https://ejemplo.com/loki-t2.jpg",
       "enlace": "https://drive.google.com/file/d/ID_LOKI_T2/preview"
     },
     {
       "titulo": "The Marvels",
+      "disponible": true,
       "año": 2023,
       "imagen": "https://ejemplo.com/the-marvels.jpg",
       "enlace": "https://drive.google.com/file/d/ID_THE_MARVELS/preview"
     },
     {
       "titulo": "Deadpool y Lobezno",
+      "disponible": true,
       "año": 2024,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool%203.jpg",
       "enlace": "https://drive.google.com/file/d/1yA-A8IBfcWAn8eA_fEh860NxPp2P_oFw/preview"

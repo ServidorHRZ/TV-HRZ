@@ -365,7 +365,10 @@
             if (serieSeleccionada) {
                 cargarInformacionSerie(serieSeleccionada);
                 cargarTemporadas(serieSeleccionada.temporadas);
-                prevenirRedirecciones(); // Activar protección inicial
+                if (serieSeleccionada.enProceso) {
+                    mostrarModalEnProceso(serieSeleccionada);
+                }
+                prevenirRedirecciones();
             }
         });
 
@@ -472,6 +475,194 @@
                 videoPlayer.scrollIntoView({ behavior: 'smooth' });
             }
         });
+
+        function mostrarModalEnProceso(serie) {
+            // Crear el modal
+            const modalHTML = `
+                <div class="modal-overlay" id="modal-en-proceso">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <i class="fas fa-clock-rotate-left fa-2x"></i>
+                            <h3>¡Contenido en actualización!</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="progress-ring">
+                                <div class="progress-circle"></div>
+                            </div>
+                            <p class="modal-title">¡Grandes noticias para los fans de ${serie.titulo}!</p>
+                            <p class="modal-message">Estamos trabajando para traerte todos los episodios de esta increíble serie. Mientras tanto, ya puedes disfrutar de los capítulos disponibles.</p>
+                            <div class="modal-status">
+                                <div class="status-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Capítulos disponibles listos para ver</span>
+                                </div>
+                                <div class="status-item">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    <span>Nuevos episodios en proceso</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="modal-close">Entendido</button>
+                    </div>
+                </div>
+            `;
+
+            // Insertar el modal en el documento
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+            // Añadir estilos
+            const style = document.createElement('style');
+            style.textContent = `
+                .modal-overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.8);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1000;
+                    animation: fadeIn 0.3s ease;
+                }
+
+                .modal-content {
+                    background: linear-gradient(145deg, #1a1a1a, #000000);
+                    border: 2px solid var(--primary-color);
+                    border-radius: 20px;
+                    padding: 30px;
+                    max-width: 500px;
+                    width: 90%;
+                    position: relative;
+                    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+                    animation: slideIn 0.3s ease;
+                }
+
+                .modal-header {
+                    text-align: center;
+                    margin-bottom: 20px;
+                    color: var(--primary-color);
+                }
+
+                .modal-header i {
+                    margin-bottom: 15px;
+                    animation: pulse 2s infinite;
+                }
+
+                .modal-header h3 {
+                    font-size: 1.8em;
+                    margin: 10px 0;
+                }
+
+                .modal-body {
+                    text-align: center;
+                }
+
+                .modal-title {
+                    color: var(--secondary-color);
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    margin: 15px 0;
+                }
+
+                .modal-message {
+                    color: rgba(255, 255, 255, 0.8);
+                    line-height: 1.6;
+                    margin-bottom: 20px;
+                }
+
+                .modal-status {
+                    background: rgba(0, 0, 0, 0.3);
+                    border-radius: 10px;
+                    padding: 15px;
+                    margin: 20px 0;
+                }
+
+                .status-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin: 10px 0;
+                    color: var(--secondary-color);
+                }
+
+                .status-item i {
+                    color: var(--primary-color);
+                }
+
+                .modal-close {
+                    background: var(--primary-color);
+                    color: var(--background-color);
+                    border: none;
+                    padding: 12px 30px;
+                    border-radius: 25px;
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    display: block;
+                    margin: 20px auto 0;
+                }
+
+                .modal-close:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+                }
+
+                .progress-ring {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    border: 3px solid rgba(0, 255, 255, 0.1);
+                    position: relative;
+                    margin: 0 auto 20px;
+                }
+
+                .progress-circle {
+                    position: absolute;
+                    top: -3px;
+                    left: -3px;
+                    right: -3px;
+                    bottom: -3px;
+                    border-radius: 50%;
+                    border: 3px solid transparent;
+                    border-top-color: var(--primary-color);
+                    animation: spin 1s linear infinite;
+                }
+
+                @keyframes fadeIn {
+                    from { opacity: 0; }
+                    to { opacity: 1; }
+                }
+
+                @keyframes slideIn {
+                    from { transform: translateY(-20px); opacity: 0; }
+                    to { transform: translateY(0); opacity: 1; }
+                }
+
+                @keyframes pulse {
+                    0% { transform: scale(1); }
+                    50% { transform: scale(1.1); }
+                    100% { transform: scale(1); }
+                }
+
+                @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
+            `;
+            document.head.appendChild(style);
+
+            // Añadir funcionalidad para cerrar el modal
+            const modal = document.getElementById('modal-en-proceso');
+            const closeButton = modal.querySelector('.modal-close');
+            
+            closeButton.addEventListener('click', () => {
+                modal.style.animation = 'fadeOut 0.3s ease';
+                setTimeout(() => modal.remove(), 300);
+            });
+        }
     </script>
 </body>
 </html>

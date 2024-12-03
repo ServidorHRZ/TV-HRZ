@@ -292,8 +292,12 @@
                         `;
                         
                         movieCard.addEventListener('click', () => {
-                            localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
-                            window.location.href = 'movie.html';
+                            if (pelicula.disponible) {
+                                localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
+                                window.location.href = 'movie.html';
+                            } else {
+                                mostrarMensajeNoDisponible();
+                            }
                         });
                         movieContainer.appendChild(movieCard);
                     });
@@ -326,6 +330,42 @@
                 searchMovies();
             }
         });
+
+        // Agrega esta función después del script existente
+        function mostrarMensajeNoDisponible() {
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0, 0, 0, 0.9);
+                padding: 20px;
+                border: 2px solid var(--primary-color);
+                border-radius: 10px;
+                color: var(--secondary-color);
+                text-align: center;
+                z-index: 1000;
+                box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            `;
+            
+            modal.innerHTML = `
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Contenido No Disponible</h3>
+                <p>Este contenido estará disponible próximamente.</p>
+                <p>¡Intenta más tarde!</p>
+                <button onclick="this.parentElement.remove()" style="
+                    margin-top: 15px;
+                    padding: 8px 16px;
+                    background: var(--primary-color);
+                    border: none;
+                    border-radius: 5px;
+                    color: black;
+                    cursor: pointer;
+                ">Aceptar</button>
+            `;
+            
+            document.body.appendChild(modal);
+        }
     </script>
 </body>
 </html>

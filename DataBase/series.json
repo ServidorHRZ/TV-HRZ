@@ -3,6 +3,7 @@
     {
       "id": 1,
       "titulo": "Sherlock",
+      "disponible": true,
       "nuevo": false,
       "descripcion": "Una adaptación moderna de las historias clásicas de Sherlock Holmes, ambientada en el Londres del siglo XXI.",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Sherlock.jpg",
@@ -121,7 +122,9 @@
     {
       "id": 2,
       "titulo": "The Flash",
+      "disponible": false,
       "nuevo": true,
+      "enProceso": true,
       "descripcion": "Barry Allen es un investigador forense que adquiere super velocidad después de que un rayo lo alcanza durante un accidente en un acelerador de partículas.",
       "imagen": "https://www.themoviedb.org/t/p/original/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg",
       "año": 2014,
@@ -174,125 +177,230 @@
               "descripcion": "Joe y Barry rastrean al meta-humano Girder, que resulta ser un antiguo matón de la escuela de Barry.",
               "duracion": "42:00",
               "url": "https://iplayerhls.com/e/9kuckwwchdxj"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Mr. Robot",
+      "nuevo": true,
+      "disponible": true,
+      "enProceso": true,
+      "descripcion": "Un joven programador que trabaja como ingeniero de seguridad informática de día y como hacker vigilante de noche se ve envuelto en una compleja trama de ciberterrorismo.",
+      "imagen": "https://www.themoviedb.org/t/p/original/oKIBhzZzDX07SoE2bOLhq2EE8rf.jpg",
+      "año": 2015,
+      "genero": ["Drama", "Thriller", "Crimen"],
+      "director": "Sam Esmail",
+      "actores": ["Rami Malek", "Christian Slater", "Carly Chaikin"],
+      "trailer": "https://www.youtube.com/embed/xIBiJ_SzJTA",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Hola amigo",
+              "descripcion": "Elliot, un brillante programador con problemas de ansiedad social, es reclutado por Mr. Robot para unirse a un grupo de hacktivistas.",
+              "duracion": "62:00",
+              "url": "https://drive.google.com/file/d/1uU--Z2ZpUzu1VcnanXQ-LP9xdQdRj8uh/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Unos y ceros",
+              "descripcion": "Elliot debe decidir si se une a fsociety mientras lidia con una crisis personal.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/19FUuTIj8Lrf9amCFKaoE1l1ICOpGenZo/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Depuración",
+              "descripcion": "Elliot intenta llevar una vida normal mientras fsociety planea su próximo movimiento.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1e4RzhZPlLgAP2iiPaVpzoxPbrymonMri/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Daemons",
+              "descripcion": "Elliot intenta hackear su propio pasado mientras ayuda a una misteriosa mujer en apuros.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1uw72poq10aur1QpZXP09KiWAxpml-WWS/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "3xpl0its.wmv",
+              "descripcion": "Elliot y fsociety intentan penetrar Steel Mountain, el centro de almacenamiento de datos más seguro de América.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1hCjCdimSc6Fst0_LaamfyX_fwzyatUlq/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Br4v0-1.asf",
+              "descripcion": "fsociety inicia su plan para destruir los servidores de Steel Mountain mientras Elliot lidia con sus demonios internos.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1aOj4cZK0-x-wLCF9vhlhS3dqmo7wdUha/preview"
             },
             {
               "numero": 7,
-              "titulo": "Flash vs. Arrow",
-              "descripcion": "Barry trabaja con Oliver Queen para atrapar a un meta-humano que puede controlar las emociones.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder7/preview"
+              "titulo": "v1ew-s0urce.flv",
+              "descripcion": "Elliot comienza a cuestionar la realidad mientras Mr. Robot presiona para completar la misión.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1LD--ESyAXwGcWAfHSC9i27z3oKLkmm-v/preview"
             },
             {
               "numero": 8,
-              "titulo": "El hombre con traje amarillo",
-              "descripcion": "Barry finalmente se enfrenta al misterioso hombre del traje amarillo que mató a su madre.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder8/preview"
+              "titulo": "wh1ter0se.m4v",
+              "descripcion": "Elliot finalmente conoce a White Rose mientras Tyrell se vuelve más errático.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1y-at7sQXOSdnNrCgRFwb_dRLs8qor5MT/preview"
             },
             {
               "numero": 9,
-              "titulo": "El ascenso del Capitán Frío",
-              "descripcion": "Leonard Snart regresa a Central City con un nuevo socio y una nueva arma congelante.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder9/preview"
+              "titulo": "m1rr0r1ng.qt",
+              "descripcion": "La verdad sobre Mr. Robot es revelada mientras fsociety prepara su ataque final.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/10JL1r62cmTSrNC1-Zx_aKuevJEO6Kr6g/preview"
             },
             {
               "numero": 10,
-              "titulo": "Venganza de los villanos",
-              "descripcion": "El Capitán Frío y Heat Wave regresan para vengarse de The Flash.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder10/preview"
+              "titulo": "zer0-day.avi",
+              "descripcion": "El plan de fsociety llega a su clímax mientras el mundo financiero se desmorona.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1nxJsDr8XZDrlcURYZ8XOs51ij8H9Maa3/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Ed, Edd y Eddy",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Las aventuras de tres amigos preadolescentes que viven en un callejón suburbano. Ed, Edd (Double D) y Eddy pasan sus días inventando estafas para conseguir dinero y comprar sus adorados caramelos, mientras lidian con los otros niños del vecindario.",
+      "imagen": "https://es.web.img3.acsta.net/r_1280_720/pictures/18/04/25/10/15/5039486.png",
+      "año": 1999,
+      "genero": ["Animación", "Comedia", "Familiar"],
+      "director": "Danny Antonucci",
+      "actores": ["Matt Hill", "Samuel Vincent", "Tony Sampson"],
+      "trailer": "https://www.youtube.com/embed/6KZZQJf8BzM",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "El Ed-tocable / Botella de Ed / Un Ed en la Mano",
+              "descripcion": "Los Eds intentan unirse al club de Kevin / Los chicos buscan botellas para reciclar / Los Eds abren un puesto de la fortuna.",
+              "duracion": "22:00",
+              "url": ""
             },
             {
-              "numero": 11,
-              "titulo": "El sonido y la furia",
-              "descripcion": "El ex mentor de Cisco en los laboratorios STAR busca venganza contra Harrison Wells.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder11/preview"
+              "numero": 2,
+              "titulo": "Más de un Ed / Ed y Seekers / Si no puedes con un Ed",
+              "descripcion": "Double D intenta organizar todo / Los Eds juegan al escondite / Los Eds intentan impresionar a las hermanas Kanker.",
+              "duracion": "22:00",
+              "url": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Johnny Bravo",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Johnny Bravo es un joven musculoso y narcisista que vive con su madre y constantemente intenta conquistar mujeres, aunque siempre fracasa. Sus aventuras están llenas de humor y situaciones absurdas mientras intenta impresionar a las chicas con sus movimientos de karate y su peculiar personalidad.",
+      "imagen": "https://pics.filmaffinity.com/johnny_bravo-502318534-large.jpg",
+      "año": 1997,
+      "genero": ["Animación", "Comedia", "Familiar"],
+      "director": "Van Partible",
+      "actores": ["Jeff Bennett", "Brenda Vaccaro", "Mae Whitman"],
+      "trailer": "https://www.youtube.com/embed/xnGnl-UElVA",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Johnny Bravo y el Amazonas / Johnny Bravo y el Ángel",
+              "descripcion": "Johnny viaja a la selva amazónica / Johnny cree haber encontrado a su ángel de la guarda.",
+              "duracion": "22:00",
+              "url": ""
             },
             {
-              "numero": 12,
-              "titulo": "Loco por ti",
-              "descripcion": "Caitlin lleva a Barry a un bar karaoke para animarlo, pero la noche toma un giro peligroso.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder12/preview"
+              "numero": 2,
+              "titulo": "Super Duper Héroe / Johnny Bravo conoce a Farrah Fawcett",
+              "descripcion": "Johnny intenta convertirse en superhéroe / Johnny persigue a su actriz favorita.",
+              "duracion": "22:00",
+              "url": ""
             },
             {
-              "numero": 13,
-              "titulo": "El hombre nuclear",
-              "descripcion": "Barry y el equipo enfrentan a Ronnie Raymond y el Dr. Martin Stein fusionados como el meta-humano Firestorm.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder13/preview"
+              "numero": 3,
+              "titulo": "Johnny Bravo y el Rey Kong / Johnny Bravo vs. Drácula",
+              "descripcion": "Johnny se enfrenta a un gorila gigante / Johnny tiene un encuentro con un vampiro.",
+              "duracion": "22:00",
+              "url": ""
             },
             {
-              "numero": 14,
-              "titulo": "Fallout",
-              "descripcion": "Barry ayuda a Martin Stein y Ronnie Raymond a separarse, mientras el general Eiling persigue a Firestorm.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder14/preview"
+              "numero": 4,
+              "titulo": "La Cita a Ciegas / Johnny Bravo Conoce a Donny Osmond",
+              "descripcion": "La madre de Johnny le arregla una cita a ciegas / Johnny conoce a su ídolo musical.",
+              "duracion": "22:00",
+              "url": ""
             },
             {
-              "numero": 15,
-              "titulo": "Fuera del tiempo",
-              "descripcion": "Mark Mardon busca venganza contra Joe, mientras Barry descubre una verdad impactante sobre el Dr. Wells.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder15/preview"
+              "numero": 5,
+              "titulo": "Johnny en el Ballet / Johnny y las Luchas",
+              "descripcion": "Johnny se une a una clase de ballet / Johnny intenta convertirse en luchador profesional.",
+              "duracion": "22:00",
+              "url": ""
             },
             {
-              "numero": 16,
-              "titulo": "Rogue Time",
-              "descripcion": "Barry descubre las consecuencias de viajar en el tiempo mientras lidia con el regreso del Capitán Frío.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder16/preview"
-            },
-            {
-              "numero": 17,
-              "titulo": "Tricksters",
-              "descripcion": "Un bromista terrorista de los 90 escapa de prisión y se une a un joven imitador para causar caos.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder17/preview"
-            },
-            {
-              "numero": 18,
-              "titulo": "All Star Team Up",
-              "descripcion": "Felicity Smoak y Ray Palmer visitan Central City mientras Barry investiga muertes misteriosas.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder18/preview"
-            },
-            {
-              "numero": 19,
-              "titulo": "Who is Harrison Wells?",
-              "descripcion": "Joe y Cisco viajan a Starling City para investigar el accidente de auto del Dr. Wells.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder19/preview"
-            },
-            {
-              "numero": 20,
-              "titulo": "The Trap",
-              "descripcion": "Barry, Cisco y Caitlin establecen una trampa para el Dr. Wells, pero las cosas no salen según lo planeado.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder20/preview"
-            },
-            {
-              "numero": 21,
-              "titulo": "Grodd Lives",
-              "descripcion": "Barry y el equipo enfrentan a un gorila telepático mientras buscan al Dr. Wells.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder21/preview"
-            },
-            {
-              "numero": 22,
-              "titulo": "Rogue Air",
-              "descripcion": "Para transportar meta-humanos peligrosos, Barry busca ayuda del Capitán Frío, con consecuencias desastrosas.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder22/preview"
-            },
-            {
-              "numero": 23,
-              "titulo": "Fast Enough",
-              "descripcion": "Barry debe decidir si cambiar el pasado y salvar a su madre, arriesgando su presente y futuro.",
-              "duracion": "42:00",
-              "url": "https://drive.google.com/file/placeholder23/preview"
+              "numero": 6,
+              "titulo": "Un Show Más",
+              "disponible": false,
+              "nuevo": true,
+              "enProceso": true,
+              "descripcion": "Las aventuras surrealistas de Mordecai y Rigby, dos amigos que trabajan como jardineros en un parque y harán cualquier cosa para evitar trabajar, lo que generalmente resulta en situaciones extraordinarias y sobrenaturales.",
+              "imagen": "https://www.themoviedb.org/t/p/original/mS5SLxMYcKfUxA0utBSR5MOAWWr.jpg",
+              "año": 2010,
+              "genero": ["Animación", "Comedia", "Ciencia ficción"],
+              "director": "J.G. Quintel",
+              "actores": ["J.G. Quintel", "William Salyers", "Mark Hamill"],
+              "trailer": "https://www.youtube.com/embed/y894QNtX0VA",
+              "temporadas": [
+                {
+                  "numero": 1,
+                  "episodios": [
+                    {
+                      "numero": 1,
+                      "titulo": "El Poder / Solo Acomoden las Sillas",
+                      "descripcion": "Mordecai y Rigby encuentran un teclado mágico / Los chicos deben organizar sillas para una fiesta.",
+                      "duracion": "22:00",
+                      "url": ""
+                    },
+                    {
+                      "numero": 2,
+                      "titulo": "Boletos con Cafeína / El Pastel Gratis",
+                      "descripcion": "Los chicos toman demasiada cafeína / Mordecai y Rigby intentan conseguir un pastel gratis.",
+                      "duracion": "22:00",
+                      "url": ""
+                    },
+                    {
+                      "numero": 3,
+                      "titulo": "La Puntualidad / El Cuerpo de Rigby",
+                      "descripcion": "Mordecai y Rigby llegan tarde al trabajo / Rigby intercambia su cuerpo con un archivo de computadora.",
+                      "duracion": "22:00",
+                      "url": ""
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
