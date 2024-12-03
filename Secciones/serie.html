@@ -310,6 +310,63 @@
     </nav>
 
     <script>
+        // Agregar antes del DOMContentLoaded
+        // Bloqueador básico de redirecciones y anuncios
+        (function() {
+            // Lista de dominios bloqueados (puedes expandir esta lista)
+            const dominiosBloqueados = [
+                'ads.example.com',
+                'tracker.example.com',
+                'analytics.example.com',
+                'pop-ups.com',
+                'ads.google.com'
+            ];
+
+            // Interceptar solicitudes de navegación
+            const bloqueadorOriginal = window.open;
+            window.open = function(url, ...args) {
+                if (url && dominiosBloqueados.some(dominio => url.includes(dominio))) {
+                    console.log('Redirección bloqueada:', url);
+                    return null;
+                }
+                return bloqueadorOriginal.call(window, url, ...args);
+            };
+
+            // Bloquear pop-ups y redirecciones
+            window.addEventListener('beforeunload', function(e) {
+                const url = document.location.href;
+                if (dominiosBloqueados.some(dominio => url.includes(dominio))) {
+                    e.preventDefault();
+                    e.returnValue = '';
+                }
+            });
+
+            // Observador de mutaciones para eliminar elementos de anuncios
+            const observador = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    mutation.addedNodes.forEach(function(node) {
+                        if (node.nodeType === 1) { // Elemento HTML
+                            // Detectar y eliminar iframes sospechosos
+                            if (node.tagName === 'IFRAME' && !node.getAttribute('id')?.includes('video-player')) {
+                                node.remove();
+                            }
+                            // Detectar y eliminar elementos con clases o IDs sospechosos
+                            if (node.className?.toLowerCase().includes('ad') || 
+                                node.id?.toLowerCase().includes('ad')) {
+                                node.remove();
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Configurar el observador
+            observador.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        })();
+
         document.addEventListener('DOMContentLoaded', function() {
             const serieSeleccionada = JSON.parse(localStorage.getItem('serieSeleccionada'));
             if (serieSeleccionada) {
