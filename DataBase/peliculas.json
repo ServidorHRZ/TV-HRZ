@@ -5,271 +5,315 @@
       "año": 1990,
       "imagen": "https://pics.filmaffinity.com/home_alone-163260879-large.jpg",
       "enlace": "https://drive.google.com/file/d/1CagmtZmCgS5X132pdz70pugxWOnmc71Y/preview",
-      "nuevo": true
+      "nuevo": true,
+      "descripcion": "Kevin McCallister, un niño de 8 años, es accidentalmente olvidado cuando su familia se va de vacaciones navideñas a París. Kevin debe defender su casa de dos torpes ladrones usando una serie de ingeniosas trampas."
     },
     {
       "titulo": "Mi Pobre Angelito 2",
       "año": 1992,
       "imagen": "https://image.tmdb.org/t/p/original/48Wa6L2QzY47nWqtRCgiqYlecc9.jpg",
       "enlace": "https://drive.google.com/file/d/1ZStdjNhTEKs1DnT8b7-QgrJNyecLQh3Q/preview",
-      "nuevo": true
+      "nuevo": true,
+      "descripcion": "Kevin McCallister se pierde en Nueva York y debe enfrentarse nuevamente a los mismos ladrones, quienes buscan venganza después de su encuentro anterior. Esta vez, Kevin usa el ambiente urbano para crear elaboradas trampas."
     },
     {
       "titulo": "Mi Pobre Angelito 3",
       "año": 1997,
       "imagen": "https://image.tmdb.org/t/p/original/eyGhwPTLYTKpCi5c9OvtKNS4zB7.jpg",
       "enlace": "https://drive.google.com/file/d/18FZon3d_EZBsByFgK18iyIJ_XYC99vBO/preview",
-      "nuevo": true
+      "nuevo": true,
+      "descripcion": "Un nuevo niño protagonista debe proteger un microchip experimental de unos espías internacionales que han invadido su hogar. Utilizando tecnología avanzada y trampas ingeniosas, deberá defender la valiosa información."
     },
     {
       "titulo": "Las Crónicas de Navidad",
       "año": 2018,
       "imagen": "https://es.web.img3.acsta.net/pictures/18/10/10/16/04/5479886.jpg",
       "enlace": "https://drive.google.com/file/d/10R6fkumlnJSVCDaKmHtXIoNrZkSPud6l/preview",
-      "nuevo": true
+      "nuevo": true,
+      "descripcion": "Dos hermanos planean atrapar a Santa Claus en Nochebuena, pero terminan embarcándose en una aventura mágica con él para salvar la Navidad. Durante su viaje, descubren el verdadero significado del espíritu navideño."
     },
     {
       "titulo": "Las Crónicas de Navidad 2",
       "año": 2020,
       "imagen": "https://es.web.img2.acsta.net/pictures/20/10/20/08/59/0323500.jpg",
       "enlace": "https://drive.google.com/file/d/1G4ojr6PrMop9UkbszlekhJFbFTioms5v/preview",
-      "nuevo": true
+      "nuevo": true,
+      "descripcion": "Kate Pierce, ahora una adolescente cínica, se reúne inesperadamente con Santa Claus cuando un misterioso alborotador amenaza con cancelar la Navidad para siempre. Una nueva aventura mágica comienza para salvar las fiestas."
     },
     {
       "titulo": "El Regalo Prometido",
       "año": 1996,
       "imagen": "https://mx.web.img2.acsta.net/pictures/18/11/09/02/47/1757410.jpg",
       "enlace": "https://drive.google.com/file/d/14mgzLgkKVuGirawp5i_aAysoIWFajMux/preview",
-      "nuevo": true
+      "nuevo": true,
+      "descripcion": "Un padre ocupado promete a su hijo conseguir el juguete más popular de la temporada navideña: Turbo-Man. Sin embargo, al dejarlo para último momento, se embarca en una frenética búsqueda el día de Nochebuena, compitiendo con otros padres desesperados."
     },
     {
       "titulo": "La Forja",
       "año": 2024,
       "imagen": "https://procinal.com/uploads/PELICULAS/Img_movies/Img_360x500/360%20X%20500%20LA%20FORJA.jpg",
       "enlace": "https://drive.google.com/file/d/1qGA8-6kEpjvzTXi_ww2RD9-Ax3cvRGTO/preview",
-      "nuevo": true
+      "nuevo": true,
+      "descripcion": "Un thriller sobrenatural que sigue a una familia que se muda a una antigua herrería con un oscuro pasado. Pronto descubren que el lugar está maldito y deben enfrentarse a fuerzas sobrenaturales para sobrevivir."
     },
     {
       "titulo": "A través de mi ventana",
       "año": 2022,
       "imagen": "https://hips.hearstapps.com/hmg-prod/images/a-traves-de-mi-ventana-netflix-1638373301.jpg?resize=980:*", 
-      "enlace": "https://drive.google.com/file/d/1xYTEORHybllVFEzH-J32CmyuEOdJKE4B/preview"
+      "enlace": "https://drive.google.com/file/d/1xYTEORHybllVFEzH-J32CmyuEOdJKE4B/preview",
+      "descripcion": "Una historia romántica adolescente basada en la novela de Ariana Godoy, donde Raquel se enamora de su misterioso vecino Ares. A través de su ventana, observa su vida y sueña con una relación que parece imposible."
     },
     {
       "titulo": "Toy Story",
       "año": 1995,
       "imagen": "https://m.media-amazon.com/images/I/71aBLaC4TzL._AC_UF894,1000_QL80_.jpg",
-      "enlace": "https://drive.google.com/file/d/1peXqF9w8NFHXcF2dBNfoHMn29GSawven/preview"
+      "enlace": "https://drive.google.com/file/d/1peXqF9w8NFHXcF2dBNfoHMn29GSawven/preview",
+      "descripcion": "Los juguetes de Andy cobran vida cuando nadie los ve. Woody, un vaquero que ha sido siempre el favorito de Andy, ve amenazada su posición con la llegada de Buzz Lightyear, un moderno guardián espacial. Su rivalidad inicial se transforma en una gran amistad."
     },
     {
       "titulo": "Toy Story 2",
       "año": 1999,
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNmi6gmFlX3-Qf-ukyotjtiq_ODkhNMsazKw&s",
-      "enlace": "https://drive.google.com/file/d/1MnY-PuI21kJhq8NuZVweK0kUn3BWcNPu/preview"
+      "enlace": "https://drive.google.com/file/d/1MnY-PuI21kJhq8NuZVweK0kUn3BWcNPu/preview",
+      "descripcion": "Cuando Woody es robado por un coleccionista de juguetes, Buzz Lightyear y el resto de los juguetes de Andy emprenden una misión de rescate. En el camino, Woody descubre su verdadero origen y debe decidir entre regresar con Andy o quedarse con su 'familia' original."
     },
     {
       "titulo": "Toy Story 3",
       "año": 2010,
       "imagen": "https://pecime.com.mx/wp-content/uploads/2020/08/Toy-Story-3-poster-683x1024.jpg",
-      "enlace": "https://drive.google.com/file/d/18zddOcQdtYhjBvM30IljvG-sV_r1yjrw/preview"
+      "enlace": "https://drive.google.com/file/d/18zddOcQdtYhjBvM30IljvG-sV_r1yjrw/preview",
+      "descripcion": "Andy se prepara para ir a la universidad y sus juguetes terminan por accidente en una guardería. Allí descubren que no todo es tan idílico como parece y deben planear un arriesgado escape para volver a casa."
     },
     {
       "titulo": "Toy Story 4",
       "año": 2019,
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FyF1vPDuHVrAUMX5dy1tVMbAjkEL.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1ZF8rHpWopwkRGcniZoJ-dEi9vaOVVsmb/preview"
+      "enlace": "https://drive.google.com/file/d/1ZF8rHpWopwkRGcniZoJ-dEi9vaOVVsmb/preview",
+      "descripcion": "Woody, Buzz y el resto de la pandilla se embarcan en un viaje por carretera con Bonnie y un nuevo juguete llamado Forky. La aventura se convierte en una reunión inesperada cuando Woody se encuentra con su vieja amiga Bo Peep."
     },
     {
       "titulo": "La red social",
       "año": 2010,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/RedSocial.jpg",
-      "enlace": "https://drive.google.com/file/d/13dvFl4C8MK48UDfF8MvjStjsORDXvTp1/preview"
+      "enlace": "https://drive.google.com/file/d/13dvFl4C8MK48UDfF8MvjStjsORDXvTp1/preview",
+      "descripcion": "La historia de Mark Zuckerberg y la creación de Facebook, desde sus inicios en la Universidad de Harvard hasta convertirse en una de las redes sociales más influyentes del mundo, atravesando conflictos legales y personales en el proceso."
     },
     {
       "titulo": "Anonymous",
       "año": 2016,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Anonymus.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DE_ANONYMOUS/preview"
+      "enlace": "https://drive.google.com/file/d/ID_DE_ANONYMOUS/preview",
+      "descripcion": "Un talentoso hacker se une al grupo activista Anonymous para luchar contra la injusticia y la corrupción. Sin embargo, pronto se encuentra atrapado en una red de conspiraciones que ponen en riesgo su vida y sus ideales."
     },
     {
       "titulo": "Hackers: Ningún sistema es seguro",
       "año": 2014,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NingunSistem.jpg",
-      "enlace": "https://drive.google.com/file/d/1T90gWXegYWZtUfDsSsZzqLlmuCGwCtbt/preview"
+      "enlace": "https://drive.google.com/file/d/1T90gWXegYWZtUfDsSsZzqLlmuCGwCtbt/preview",
+      "descripcion": "Un joven hacker alemán descubre una conspiración global mientras busca reconocimiento en la comunidad underground de hackers. Su habilidad para infiltrarse en sistemas de alta seguridad lo convierte en objetivo de agencias gubernamentales y criminales."
     },
     {
       "titulo": "Hackers",
       "año": 1995,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Hackers.jpg",
-      "enlace": "https://drive.google.com/file/d/1o7vY1ELaOV5-nLAer2aArmrbO0s4ZrS7/preview"
+      "enlace": "https://drive.google.com/file/d/1o7vY1ELaOV5-nLAer2aArmrbO0s4ZrS7/preview",
+      "descripcion": "Un grupo de jóvenes hackers descubre un plan criminal que podría causar un desastre ambiental global. Deberán usar sus habilidades informáticas para exponer la verdad mientras son perseguidos por el FBI y los verdaderos criminales."
     },
     {
       "titulo": "Hacker",
       "año": 2019,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/HACKER.jpg",
-      "enlace": "https://drive.google.com/file/d/1VKYgBWnk2tND991LpT0WzZz9Md21d7DF/preview"
+      "enlace": "https://drive.google.com/file/d/1VKYgBWnk2tND991LpT0WzZz9Md21d7DF/preview",
+      "descripcion": "Un joven inmigrante descubre que sus habilidades de programación pueden ser la clave para ayudar a su familia a escapar de la pobreza. Sin embargo, sus actividades de hacking lo llevan a un peligroso mundo criminal del que no podrá escapar fácilmente."
     },
     {
       "titulo": "Volver al Futuro",
       "año": 1985,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut1.jpg",
-      "enlace": "https://drive.google.com/file/d/1lAW6VeuTHNQp1PUiEaVaXVp5mssEq072/preview"
+      "enlace": "https://drive.google.com/file/d/1lAW6VeuTHNQp1PUiEaVaXVp5mssEq072/preview",
+      "descripcion": "Marty McFly, un adolescente de los años 80, viaja accidentalmente al pasado en un DeLorean modificado por su amigo científico Doc Brown. En 1955, debe asegurarse de que sus padres se enamoren para garantizar su propia existencia."
     },
     {
       "titulo": "Volver al Futuro II",
       "año": 1989,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut2.jpg", 
-      "enlace": "https://drive.google.com/file/d/1peRBdi6Zm38xoKzjNRSnlU-_vVEift4s/preview"
+      "enlace": "https://drive.google.com/file/d/1peRBdi6Zm38xoKzjNRSnlU-_vVEift4s/preview",
+      "descripcion": "Marty y Doc viajan al futuro para evitar un desastre familiar, pero sus acciones causan una reacción en cadena que altera la línea temporal. Deberán corregir los errores mientras enfrentan una versión alternativa y distópica de su presente."
     },
     {
       "titulo": "Volver al Futuro III",
       "año": 1990,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut3.jpg",
-      "enlace": "https://drive.google.com/file/d/1djpDf36EP-aCX3s1cU2z-86PkMw4XuQE/preview"
+      "enlace": "https://drive.google.com/file/d/1djpDf36EP-aCX3s1cU2z-86PkMw4XuQE/preview",
+      "descripcion": "Marty viaja al Viejo Oeste de 1885 para rescatar a Doc Brown, quien está atrapado en el pasado y amenazado de muerte. Juntos deberán encontrar la manera de regresar al presente mientras se enfrentan a los peligros del salvaje oeste."
     },
     {
       "titulo": "X-Men",
       "año": 2000,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-Men.jpg",
-      "enlace": "https://drive.google.com/file/d/13ECXfnUTHpg3ZJVBOWSf-ri8nsbiH94A/preview"
+      "enlace": "https://drive.google.com/file/d/13ECXfnUTHpg3ZJVBOWSf-ri8nsbiH94A/preview",
+      "descripcion": "En un mundo donde los mutantes son temidos y perseguidos, el Profesor Charles Xavier lidera un grupo de superhéroes mutantes que luchan por la coexistencia pacífica entre humanos y mutantes, mientras se enfrentan a Magneto y su Hermandad."
     },
     {
       "titulo": "X-Men 2",
       "año": 2003,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-Men2.png",
-      "enlace": "https://drive.google.com/file/d/10mgRsk787did59eCbuukODWIRt6TzMON/preview"
+      "enlace": "https://drive.google.com/file/d/10mgRsk787did59eCbuukODWIRt6TzMON/preview",
+      "descripcion": "Los X-Men deben unir fuerzas con sus enemigos cuando un exmilitar fanático amenaza a todos los mutantes. La lucha por la supervivencia los llevará a descubrir secretos sobre el origen de los mutantes."
     },
     {
       "titulo": "X-Men: La decisión final",
       "año": 2006,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-Men3.jpg",
-      "enlace": "https://drive.google.com/file/d/1prfhUoPkEA5xYHvdpcFwWUWVEPxq4knA/preview"
+      "enlace": "https://drive.google.com/file/d/1prfhUoPkEA5xYHvdpcFwWUWVEPxq4knA/preview",
+      "descripcion": "Cuando se descubre una 'cura' para la mutación, la comunidad mutante se divide. Los X-Men deben enfrentarse a una Jean Grey resucitada y más poderosa que nunca, mientras luchan por preservar su identidad mutante."
     },
     {
       "titulo": "X-Men Orígenes: Wolverine",
       "año": 2009,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-MEN1.jpg",
-      "enlace": "https://drive.google.com/file/d/151Kwlcmw1Xm_Y_3F_sulIKhEUQCThbJU/preview"
+      "enlace": "https://drive.google.com/file/d/151Kwlcmw1Xm_Y_3F_sulIKhEUQCThbJU/preview",
+      "descripcion": "La historia del origen de Wolverine, desde su infancia en el siglo XIX hasta convertirse en el feroz guerrero que conocemos. Su relación con su hermano Sabretooth y su participación en el programa Arma X marcarán su destino."
     },
     {
       "titulo": "X-Men: Primera generación",
       "año": 2011,
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1gqPbslGDHAJDvqD8HmnXNpM726-JR6tNw&s",
-      "enlace": "https://drive.google.com/file/d/1mFrkmwgflkqrEYUyM_U3wd4Om04y4Lj7/preview"
+      "enlace": "https://drive.google.com/file/d/1mFrkmwgflkqrEYUyM_U3wd4Om04y4Lj7/preview",
+      "descripcion": "La historia del origen de los X-Men en los años 60, centrándose en la amistad entre Charles Xavier y Erik Lehnsherr antes de convertirse en el Profesor X y Magneto, mientras forman el primer equipo de mutantes."
     },
     {
       "titulo": "Wolverine: Inmortal",
       "año": 2013,
       "imagen": "https://i.pinimg.com/originals/d0/47/57/d04757a75659b6a24accef9aaedc606b.jpg",
-      "enlace": "https://drive.google.com/file/d/1ZBD4ZHxVAyudpTNTQL9g1Tbh-sdy3X3Z/preview"
+      "enlace": "https://drive.google.com/file/d/1ZBD4ZHxVAyudpTNTQL9g1Tbh-sdy3X3Z/preview",
+      "descripcion": "Logan viaja a Japón donde se enfrenta a su pasado y a un enemigo que amenaza no solo su inmortalidad sino también su humanidad. En el proceso, debe redescubrir al héroe que lleva dentro."
     },
     {
       "titulo": "X-Men: Días del futuro pasado",
       "año": 2014,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDOFP.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_XMEN_DOFP/preview"
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_DOFP/preview",
+      "descripcion": "Los X-Men envían a Wolverine al pasado para cambiar un evento histórico que podría resultar en la destrucción tanto de humanos como de mutantes. Una misión que unirá a las versiones jóvenes y mayores de los X-Men."
     },
     {
       "titulo": "X-Men: Apocalipsis",
       "año": 2016,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenApocalipsis.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_XMEN_APOCALIPSIS/preview"
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_APOCALIPSIS/preview",
+      "descripcion": "El primer y más poderoso mutante, Apocalipsis, despierta tras miles de años y busca destruir la civilización moderna. Los X-Men deben unirse para detener sus planes de extinción global."
     },
     {
       "titulo": "Logan",
       "año": 2017,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Logan.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_LOGAN/preview"
+      "enlace": "https://drive.google.com/file/d/ID_LOGAN/preview",
+      "descripcion": "En un futuro cercano, un Logan envejecido cuida de un enfermo Profesor X mientras protege a una joven mutante con poderes similares a los suyos. Una última aventura que pondrá a prueba su legado como Wolverine."
     },
     {
       "titulo": "Deadpool",
       "año": 2016,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DEADPOOL/preview"
+      "enlace": "https://drive.google.com/file/d/ID_DEADPOOL/preview",
+      "descripcion": "Wade Wilson, un mercenario, es sometido a un experimento que lo deja desfigurado pero con poderes de curación acelerada. Adoptando el alter ego de Deadpool, busca venganza contra quienes lo transformaron."
     },
     {
       "titulo": "Deadpool 2",
       "año": 2018,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool2.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DEADPOOL_2/preview"
+      "enlace": "https://drive.google.com/file/d/ID_DEADPOOL_2/preview",
+      "descripcion": "Deadpool forma un equipo de mutantes llamado Fuerza-X para proteger a un joven mutante de Cable, un soldado cibernético del futuro. Una aventura llena de acción y humor irreverente."
     },
     {
       "titulo": "X-Men: Fénix Oscura",
       "año": 2019,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDarkPhoenix.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_XMEN_DARK_PHOENIX/preview"
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_DARK_PHOENIX/preview",
+      "descripcion": "Jean Grey desarrolla increíbles poderes que la corrompen y la transforman en Fénix Oscura. Los X-Men deberán decidir si la vida de un miembro del equipo vale más que toda la humanidad."
     },
     {
       "titulo": "Los Nuevos Mutantes",
       "año": 2020,
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NewMutants.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_NEW_MUTANTS/preview"
+      "enlace": "https://drive.google.com/file/d/ID_NEW_MUTANTS/preview",
+      "descripcion": "Cinco jóvenes mutantes descubren sus habilidades mientras están retenidos en una instalación secreta contra su voluntad. Luchan por escapar de su pasado y salvarse a sí mismos."
     },
     {
       "titulo": "Capitán América: El primer vengador",
       "año": 2011,
       "imagen": "https://m.media-amazon.com/images/I/81y9W+06QrL._AC_UF894,1000_QL80_.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_1/preview"
+      "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_1/preview",
+      "descripcion": "Steve Rogers se somete a un experimento que lo transforma en el super soldado Capitán América durante la Segunda Guerra Mundial. Debe enfrentarse a la organización HYDRA y su líder, Red Skull."
     },
     {
       "titulo": "Capitana Marvel",
       "año": 2019,
       "imagen": "https://m.media-amazon.com/images/I/71NnJU9liHL.jpg",
-      "enlace": "https://m.media-amazon.com/images/I/71NnJU9liHL.jpg"
+      "enlace": "https://m.media-amazon.com/images/I/71NnJU9liHL.jpg",
+      "descripcion": "Carol Danvers se convierte en una de las heroínas más poderosas del universo cuando la Tierra se ve atrapada en medio de una guerra galáctica entre dos razas alienígenas."
     },
     {
       "titulo": "Iron Man",
       "año": 2008,
       "imagen": "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/0/d/d/small-spos8825-poster-iron-man-1-a-official-sticker-sl-9829-wall-original-imaghs5pygznwxu9.jpeg?q=20&crop=false",
-      "enlace": "https://drive.google.com/file/d/1SN5p9h38gXNL2kKEuqUogODVOhnOxmsF/preview"
+      "enlace": "https://drive.google.com/file/d/1SN5p9h38gXNL2kKEuqUogODVOhnOxmsF/preview",
+      "descripcion": "Tony Stark, un genio millonario, construye una armadura de alta tecnología después de un incidente que casi le cuesta la vida. Como Iron Man, debe enfrentarse a las consecuencias de su pasado como fabricante de armas."
     },
     {
       "titulo": "Iron Man 2",
       "año": 2010,
       "imagen": "https://static.posters.cz/image/750/posters/iron-man-2-one-sheet-i7902.jpg",
-      "enlace": "https://drive.google.com/file/d/1QbC6edJkiQ3qaGZ-hH_TWK_gF8fnVba4/preview"
+      "enlace": "https://drive.google.com/file/d/1QbC6edJkiQ3qaGZ-hH_TWK_gF8fnVba4/preview",
+      "descripcion": "Tony Stark enfrenta presiones del gobierno, nuevos villanos y su propia mortalidad mientras lidia con las consecuencias de revelar su identidad como Iron Man al mundo."
     },
     {
       "titulo": "El increíble Hulk",
       "año": 2008,
       "imagen": "https://ejemplo.com/increible-hulk.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_INCREIBLE_HULK/preview"
+      "enlace": "https://drive.google.com/file/d/ID_INCREIBLE_HULK/preview",
+      "descripcion": "Bruce Banner busca una cura para la radiación gamma que lo convierte en Hulk mientras es perseguido por el ejército. Debe enfrentarse a un enemigo que ha abusado del mismo poder que él intenta curar."
     },
     {
       "titulo": "Thor",
       "año": 2011,
       "imagen": "https://ejemplo.com/thor.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_THOR/preview"
+      "enlace": "https://drive.google.com/file/d/ID_THOR/preview",
+      "descripcion": "El poderoso Thor es desterrado de Asgard a la Tierra, donde debe aprender humildad mientras su hermano Loki planea usurpar el trono. Su encuentro con Jane Foster cambiará su perspectiva sobre la humanidad."
     },
     {
       "titulo": "Los Vengadores",
       "año": 2012,
       "imagen": "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      "enlace": "https://drive.google.com/file/d/1juUhD1wkvZG4Ve4pX9cHjSmxreKnN4B-/preview"
+      "enlace": "https://drive.google.com/file/d/1juUhD1wkvZG4Ve4pX9cHjSmxreKnN4B-/preview",
+      "descripcion": "Nick Fury reúne a un equipo de superhéroes para formar Los Vengadores y combatir a Loki y su ejército alienígena que amenaza con conquistar la Tierra."
     },
     {
       "titulo": "Iron Man 3",
       "año": 2013,
       "imagen": "https://static.posters.cz/image/750/posters/iron-man-3-one-sheet-i16526.jpg",
-      "enlace": "https://drive.google.com/file/d/1XS2avxLTV6T7WeSRz1XHQzQQCUhm9Sk8/preview"
+      "enlace": "https://drive.google.com/file/d/1XS2avxLTV6T7WeSRz1XHQzQQCUhm9Sk8/preview",
+      "descripcion": "Después de los eventos de Los Vengadores, Tony Stark lucha contra el insomnio y ataques de ansiedad mientras enfrenta a un nuevo enemigo, el Mandarín, que amenaza con destruir todo lo que ama."
     },
     {
       "titulo": "Thor: El mundo oscuro",
       "año": 2013,
       "imagen": "https://ejemplo.com/thor-mundo-oscuro.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_THOR_MUNDO_OSCURO/preview"
+      "enlace": "https://drive.google.com/file/d/ID_THOR_MUNDO_OSCURO/preview",
+      "descripcion": "Thor debe unir fuerzas con Loki para salvar los Nueve Reinos de los Elfos Oscuros liderados por Malekith, quien busca sumir al universo en la oscuridad eterna."
     },
     {
       "titulo": "Capitán América: El Soldado de Invierno",
       "año": 2014,
       "imagen": "https://es.web.img3.acsta.net/pictures/14/01/31/16/12/220933.jpg",
-      "enlace": "https://drive.google.com/file/d/1-m3NjNYPmN5A2yK8HNJJ5mmf7JYK2l6o/preview"
+      "enlace": "https://drive.google.com/file/d/1-m3NjNYPmN5A2yK8HNJJ5mmf7JYK2l6o/preview",
+      "descripcion": "Steve Rogers se une a Viuda Negra y Falcon para descubrir una conspiración dentro de S.H.I.E.L.D. mientras se enfrenta a un nuevo enemigo, el misterioso Soldado de Invierno."
     },
     {
       "titulo": "Guardianes de la Galaxia",
       "año": 2014,
       "imagen": "https://ejemplo.com/guardianes-galaxia.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA/preview"
+      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA/preview",
+      "descripcion": "Un grupo de inadaptados intergalácticos debe unirse para salvar la galaxia cuando un poderoso villano amenaza con destruirla. Una aventura espacial llena de humor y acción."
     },
     {
       "titulo": "Guardianes de la Galaxia Vol. 2",

@@ -234,6 +234,101 @@
                 max-width: 1400px;
             }
         }
+        .movie-description {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .movie-description:hover {
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .movie-description h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .movie-description p {
+            color: var(--secondary-color);
+            line-height: 1.8;
+            text-align: justify;
+            font-size: 1.1rem;
+            margin: 0;
+            padding: 10px 0;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .movie-description {
+                width: 90%;
+                margin: 15px auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .movie-description {
+                padding: 15px;
+                margin: 15px auto;
+                width: 95%;
+            }
+            .movie-description h3 {
+                font-size: 1.3rem;
+                margin-bottom: 12px;
+            }
+            .movie-description p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .movie-description {
+                padding: 12px;
+                margin: 12px auto;
+            }
+            .movie-description h3 {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+            .movie-description p {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .movie-description {
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
     </style>
 </head>
 <body>
@@ -279,6 +374,10 @@
                     </div>
                     <div class="iframe-container">
                         <iframe src="${peliculaSeleccionada.enlace}" allowfullscreen></iframe>
+                    </div>
+                    <div class="movie-description">
+                        <h3>Sinopsis</h3>
+                        <p>${peliculaSeleccionada.descripcion || 'Descripción no disponible.'}</p>
                     </div>
                 `;
             } else {
