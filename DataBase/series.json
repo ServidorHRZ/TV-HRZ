@@ -275,6 +275,48 @@
     },
     {
       "id": 4,
+      "titulo": "Las Sombrías Aventuras de Billy y Mandy",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Billy y Mandy son dos niños que ganan la amistad de la Muerte (alias Calavera) en una apuesta. Ahora viven aventuras sobrenaturales junto a él, enfrentándose a todo tipo de criaturas y situaciones paranormales.",
+      "imagen": "https://image.tmdb.org/t/p/original/gxdTn5UwvriN1EzDSNnWr5AAQN7.jpg",
+      "año": 2001,
+      "genero": ["Animación", "Comedia", "Fantasía"],
+      "director": "Maxwell Atoms",
+      "actores": ["Richard Steven Horvitz", "Grey DeLisle", "Greg Eagles"],
+      "trailer": "https://www.youtube.com/embed/4Iqe9-zPDQY",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Encuentro con Calavera / Galleta de la Suerte",
+              "descripcion": "Billy y Mandy conocen a Calavera / Los protagonistas visitan un restaurante chino con consecuencias inesperadas.",
+              "duracion": "22:00",
+              "url": "URL_DEL_EPISODIO"
+            },
+            {
+              "numero": 2,
+              "titulo": "Nergal / La Mascota de Billy",
+              "descripcion": "Los chicos conocen a Nergal / Billy adopta una peligrosa mascota del inframundo.",
+              "duracion": "22:00",
+              "url": "URL_DEL_EPISODIO"
+            },
+            {
+              "numero": 3,
+              "titulo": "Pudin / El Gato de Mandy",
+              "descripcion": "Calavera obsesionado con el pudin / Mandy recibe un gato con poderes sobrenaturales.",
+              "duracion": "22:00",
+              "url": "URL_DEL_EPISODIO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
       "titulo": "Ed, Edd y Eddy",
       "disponible": false,
       "nuevo": true,
@@ -309,7 +351,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "titulo": "Johnny Bravo",
       "disponible": true,
       "nuevo": true,
@@ -414,7 +456,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "titulo": "Un Show Más",
       "disponible": false,
       "nuevo": true,
@@ -449,7 +491,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "titulo": "Kick Buttowski",
       "disponible": false,
       "nuevo": true,
