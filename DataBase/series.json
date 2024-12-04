@@ -548,8 +548,36 @@
     },
     {
       "id": 7,
+      "titulo": "Johnny Test",
+      "disponible": true,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Johnny Test es un niño de 11 años que sirve como sujeto de prueba para los experimentos científicos de sus hermanas gemelas superdotadas, Susan y Mary. Junto con su perro parlante Dukey, Johnny vive increíbles aventuras mientras prueba los inventos que frecuentemente salen mal.",
+      "imagen": "https://image.tmdb.org/t/p/original/cGceNrHpUl3utUzE502xSY8l9ST.jpg",
+      "año": 2005,
+      "genero": ["Animación", "Comedia", "Ciencia ficción"],
+      "director": "Scott Fellows",
+      "actores": ["James Arnold Taylor", "Louis Chirillo", "Maryke Hendrikse"],
+      "trailer": "https://www.youtube.com/embed/4Iqe9-zPDQY",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Johnny al Rescate / El Perro Genio",
+              "descripcion": "Johnny debe salvar la ciudad de un robot gigante / Las hermanas de Johnny convierten a su perro en un genio",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1gJsElW0wgWdTTSBApGx4bI6tHT07o7YZ/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
       "titulo": "Un Show Más",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Las aventuras de Mordecai y Rigby, dos amigos que trabajan como jardineros en un parque y harán todo lo posible para evitar trabajar.",
@@ -564,25 +592,102 @@
           "numero": 1,
           "episodios": [
             {
+              "numero": 0,
+              "titulo": "Piloto",
+              "descripcion": "El episodio piloto que introduce a Mordecai y Rigby y sus aventuras en el parque.",
+              "duracion": "7:58",
+              "url": "https://drive.google.com/file/d/1dB1X4y2r21RPs85o-c0I2XxV9hxC5yoS/preview"
+            },
+            {
               "numero": 1,
               "titulo": "El Poder",
               "descripcion": "Mordecai y Rigby encuentran un teclado mágico que les da poderes especiales.",
               "duracion": "11:00",
-              "url": "URL_DEL_EPISODIO"
+              "url": "https://drive.google.com/file/d/1e_0zyjCriOFjcGMV8km2PBx8_tU_QEzP/preview"
             },
             {
               "numero": 2,
               "titulo": "Solo Acomoden las Sillas",
               "descripcion": "Mordecai y Rigby deben organizar las sillas para una fiesta en el parque.",
               "duracion": "11:00",
-              "url": "URL_DEL_EPISODIO"
+              "url": "https://drive.google.com/file/d/1fujXiJgBqI6r6SAs6BHp-hvqdqSWmki2/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Boletos con Cafeína",
+              "descripcion": "Los chicos intentan mantenerse despiertos para conseguir boletos para un concierto.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1CgQxDgXxwU7f5x2Z9y7X3LLeZPrT6uB2/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Golpes Mortales",
+              "descripcion": "Mordecai y Rigby compiten en un torneo de golpes.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1-t3mjyLpQZQojUbnZXLyoIqubgawX4O7/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Pastel Gratis",
+              "descripcion": "Los chicos intentan conseguir un pastel gratis en un restaurante.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1plKZooyi_DwX-oarDYf5UGzNLQ7gnZc6/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Parrillada",
+              "descripcion": "Mordecai y Rigby organizan una parrillada en el parque.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1RwFHsiavQp5Z3iLI76MnV7JGxn2PTQ55/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Emparedado de Queso a la Parrilla",
+              "descripcion": "Los chicos intentan proteger un emparedado perfecto.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1MsMJHZPl91CGNuyeCfz1IaHzxxE9Q36o/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "El Cuerpo de Rigby",
+              "descripcion": "Rigby intercambia cuerpos con un archivo de computadora.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1AuLR4yEfr4gtDK1vh8sSaRf6Z1F4wOPK/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Don",
+              "descripcion": "El hermano menor de Rigby visita el parque.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1YzJxNSut6qMtXkqhcqR5Lr4A9IPqgiiv/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Mordecai y los Rigbys",
+              "descripcion": "Mordecai y Rigby forman una banda para un concurso de talentos.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1hV09KDoYyWknh0tLn-npl84JH1ZrMXng/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Toca la Bocina",
+              "descripcion": "Los chicos molestan a un conductor con la bocina del carrito de golf.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1ThnZTS_LQde2wDnFiaVsCrTmW15wQoQ5/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Fisgón",
+              "descripcion": "Mordecai y Rigby se enfrentan a un fisgón en el parque.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1moCx3E-icZo7h7RSLsgTQ9EtodyH-r9t/preview"
             }
           ]
         }
       ]
     },
     {
-      "id": 8,
+      "id": 9,
       "titulo": "Kick Buttowski",
       "disponible": false,
       "nuevo": true,
