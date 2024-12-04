@@ -276,7 +276,7 @@
     {
       "id": 4,
       "titulo": "Las Sombrías Aventuras de Billy y Mandy",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Billy y Mandy son dos niños que ganan la amistad de la Muerte (alias Calavera) en una apuesta. Ahora viven aventuras sobrenaturales junto a él, enfrentándose a todo tipo de criaturas y situaciones paranormales.",
@@ -292,24 +292,115 @@
           "episodios": [
             {
               "numero": 1,
-              "titulo": "Encuentro con Calavera / Galleta de la Suerte",
-              "descripcion": "Billy y Mandy conocen a Calavera / Los protagonistas visitan un restaurante chino con consecuencias inesperadas.",
+              "titulo": "Conoce a la Muerte / Pastelillos de Chocolate",
+              "descripcion": "Billy y Mandy conocen a la Muerte en un juego de limbo / Los chicos intentan conseguir pastelillos de chocolate con resultados sobrenaturales",
               "duracion": "22:00",
-              "url": "URL_DEL_EPISODIO"
+              "url": "https://drive.google.com/file/d/1gJsElW0wgWdTTSBApGx4bI6tHT07o7YZ/preview"
             },
             {
               "numero": 2,
-              "titulo": "Nergal / La Mascota de Billy",
-              "descripcion": "Los chicos conocen a Nergal / Billy adopta una peligrosa mascota del inframundo.",
+              "titulo": "Nergal / La Nueva Mascota",
+              "descripcion": "Los chicos conocen a Nergal, un solitario demonio del centro de la Tierra / Billy adopta una peligrosa criatura como mascota",
               "duracion": "22:00",
-              "url": "URL_DEL_EPISODIO"
+              "url": "https://drive.google.com/file/d/1wch9G7DkGWTD3YGcYpjrnahyNuobQHsw/preview"
             },
             {
               "numero": 3,
-              "titulo": "Pudin / El Gato de Mandy",
-              "descripcion": "Calavera obsesionado con el pudin / Mandy recibe un gato con poderes sobrenaturales.",
+              "titulo": "El Pudín / El Gato de Mandy",
+              "descripcion": "Calavera desarrolla una obsesión por el pudín / Mandy recibe un gato con poderes sobrenaturales",
               "duracion": "22:00",
-              "url": "URL_DEL_EPISODIO"
+              "url": "https://drive.google.com/file/d/1lM7XLsWo3Ylix2twaBKyrTslkvMvBgpi/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "La Gran Aventura / El Problema con Clowny",
+              "descripcion": "Los chicos se embarcan en una aventura épica / Billy enfrenta sus miedos con un payaso",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1NWG4C1I7DMBxIiG2-rtOmbizo25Uc4Oq/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "La Batalla de los Bichos / El Gran Susto",
+              "descripcion": "Una invasión de insectos causa caos / Los chicos intentan asustar a Calavera",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1QEZjVapNDfYVbinJ0KW6D_bEqJM055Qm/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "El Día de Campo / La Mascota Perfecta",
+              "descripcion": "Un día de campo se convierte en una aventura sobrenatural / Billy busca la mascota perfecta",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1LfVUOwvNWm72_hnJPzVJ5EnwR7loyvVm/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "El Regalo / La Invasión",
+              "descripcion": "Calavera recibe un regalo misterioso / Una invasión alienígena amenaza la ciudad",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/16uYlLKDV2U-r0vVXudBGicCdr-K5xFOe/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "El Concurso / La Maldición",
+              "descripcion": "Los chicos participan en un concurso sobrenatural / Una antigua maldición afecta a Billy",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1gHSuH4sEI121hjeuG2Z7f-VA6PAZHlyT/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "La Fiesta / El Secreto",
+              "descripcion": "Una fiesta en el inframundo se sale de control / Mandy descubre un secreto oscuro",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Age0Nt-ybsDx6xgTV7SJmr0dcwvculV2/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "El Cambio / La Venganza",
+              "descripcion": "Billy y Mandy intercambian personalidades / Calavera busca venganza",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1w3ykksu09LJbS-ztl8yLP88vWe3rddDs/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "El Portal / La Competencia",
+              "descripcion": "Los chicos descubren un portal misterioso / Una competencia sobrenatural",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1laDYiDd50KGzqIxRajd53CqreIJbIuxf/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "El Hechizo / La Búsqueda",
+              "descripcion": "Un hechizo sale mal / Los chicos buscan un artefacto místico",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1FQqlmhl7X57FqHtArn_aR87UIGrl685H/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "El Caos / La Decisión",
+              "descripcion": "El caos reina en la ciudad / Mandy debe tomar una decisión importante",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1jVeQCS5wWAG49XLQkA35dGVV1mkKigak/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "La Transformación / El Desafío",
+              "descripcion": "Billy sufre una extraña transformación / Un nuevo desafío sobrenatural",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1-x7otQJv1j6TpkyfPlmESdan-mhTrOIu/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "El Misterio / La Revelación",
+              "descripcion": "Los chicos resuelven un misterio / Una sorprendente revelación",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1jjaGW_cjwdgrA0I9mdL0ZnOr2TsjSq2p/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "El Final / Nuevo Comienzo",
+              "descripcion": "Una aventura llega a su fin / El inicio de una nueva saga",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1BJkVfoMPvkzLF7ewHR84XVQTbZrxs-C7/preview"
             }
           ]
         }
