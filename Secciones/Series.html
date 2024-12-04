@@ -478,7 +478,14 @@
 
         // Agrega esta función después del script existente
         function mostrarMensajeNoDisponible() {
+            // Verificar si ya existe un modal
+            const modalExistente = document.querySelector('.modal-no-disponible');
+            if (modalExistente) {
+                return; // Si ya existe un modal, no crear otro
+            }
+
             const modal = document.createElement('div');
+            modal.className = 'modal-no-disponible'; // Agregar clase para identificación
             modal.style.cssText = `
                 position: fixed;
                 top: 50%;
