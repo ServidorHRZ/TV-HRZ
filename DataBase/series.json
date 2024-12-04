@@ -320,7 +320,7 @@
       "genero": ["Animación", "Comedia", "Familiar"],
       "director": "Van Partible",
       "actores": ["Jeff Bennett", "Brenda Vaccaro", "Mae Whitman"],
-      "trailer": "https://youtu.be/0xsdgf5SGZI?si=zEMEmmIk2dWYDEhi",
+      "trailer": "https://drive.google.com/file/d/1Kzs3WckpuFRHxtY7BNu7nn2pR63srIAs/preview",
       "temporadas": [
         {
           "numero": 1,
@@ -408,6 +408,76 @@
               "descripcion": "Johnny se encuentra con un payaso misterioso.",
               "duracion": "07:00",
               "url": "https://drive.google.com/file/d/18fMbqHpN8j6wlpCK5gmxYV0Waw1Vin3J/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Un Show Más",
+      "disponible": true,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Las aventuras de Mordecai y Rigby, dos amigos que trabajan como jardineros en un parque y harán todo lo posible para evitar trabajar.",
+      "imagen": "https://www.themoviedb.org/t/p/original/mS5SLxMYcKfUxA0utBSR5MOAWWr.jpg",
+      "año": 2010,
+      "genero": ["Animación", "Comedia", "Fantasía"],
+      "director": "J.G. Quintel",
+      "actores": ["J.G. Quintel", "William Salyers", "Sam Marin"],
+      "trailer": "https://www.youtube.com/embed/y894QNtX0VA",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "El Poder",
+              "descripcion": "Mordecai y Rigby encuentran un teclado mágico que les da poderes especiales.",
+              "duracion": "11:00",
+              "url": "URL_DEL_EPISODIO"
+            },
+            {
+              "numero": 2,
+              "titulo": "Solo Acomoden las Sillas",
+              "descripcion": "Mordecai y Rigby deben organizar las sillas para una fiesta en el parque.",
+              "duracion": "11:00",
+              "url": "URL_DEL_EPISODIO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Kick Buttowski",
+      "disponible": true,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Las aventuras de Clarence 'Kick' Buttowski, un joven aspirante a acróbata que busca convertirse en el mejor especialista del mundo.",
+      "imagen": "https://www.themoviedb.org/t/p/original/qy7rXm6atqV7hmKYfvgvAMXqpnN.jpg",
+      "año": 2010,
+      "genero": ["Animación", "Comedia", "Acción"],
+      "director": "Sandro Corsaro",
+      "actores": ["Charlie Schlatter", "Matt L. Jones", "Danny Cooksey"],
+      "trailer": "https://www.youtube.com/embed/T5F_hTJKcu4",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Hazlo o Déjalo",
+              "descripcion": "Kick intenta realizar una acrobacia peligrosa en la colina más empinada de la ciudad.",
+              "duracion": "11:00",
+              "url": "URL_DEL_EPISODIO"
+            },
+            {
+              "numero": 2,
+              "titulo": "Bailando con el Enemigo",
+              "descripcion": "Kick debe aprender a bailar para una competencia escolar.",
+              "duracion": "11:00",
+              "url": "URL_DEL_EPISODIO"
             }
           ]
         }
