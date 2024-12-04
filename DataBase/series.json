@@ -122,7 +122,7 @@
     {
       "id": 2,
       "titulo": "The Flash",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Barry Allen es un investigador forense que adquiere super velocidad después de que un rayo lo alcanza durante un accidente en un acelerador de partículas.",
@@ -141,42 +141,42 @@
               "titulo": "Piloto",
               "descripcion": "Barry Allen despierta de un coma de nueve meses y descubre que tiene super velocidad.",
               "duracion": "43:00",
-              "url": "https://iplayerhls.com/ag1apkrpkkkg"
+              "url": "https://drive.google.com/file/d/16XVpVgy7LQ_OfEg91hqZzMgzFSDyt39G/preview"
             },
             {
               "numero": 2,
               "titulo": "El hombre más rápido vivo",
               "descripcion": "Barry enfrenta a un metahumano que puede crear clones de sí mismo.",
               "duracion": "42:00",
-              "url": "https://iplayerhls.com/e/kads69yz2qsl"
+              "url": "https://drive.google.com/file/d/17tqfHKlImJOHjfjShoNHVoT53e8ToL2H/preview"
             },
             {
               "numero": 3,
               "titulo": "Cosas que no se pueden escapar",
               "descripcion": "Barry persigue a un metahumano que puede convertir todo lo que toca en explosivos.",
               "duracion": "42:00",
-              "url": "https://iplayerhls.com/e/rbolfab1iokq"
+              "url": "https://drive.google.com/file/d/1LqSaVEZGcKWHB3WVDDNDa-2qa09Z9Peq/preview"
             },
             {
               "numero": 4,
               "titulo": "Capitán Frío",
               "descripcion": "Barry se enfrenta a Leonard Snart, quien utiliza un arma de frío para cometer crímenes.",
               "duracion": "42:00",
-              "url": "https://iplayerhls.com/e/sbjfpeo65bzk"
+              "url": "https://drive.google.com/file/d/1DLZ924eYMXzwqucoRWGaDi-7qtNz-0hY/preview"
             },
             {
               "numero": 5,
               "titulo": "Plastique",
               "descripcion": "Barry conoce a una ex-militar que puede convertir objetos en bombas con solo tocarlos.",
               "duracion": "42:00",
-              "url": "https://iplayerhls.com/e/58yheibs93qe"
+              "url": "https://drive.google.com/file/d/1z45VtpypJD24T0qFGfV8-EugzUU83hxC/preview"
             },
             {
               "numero": 6,
               "titulo": "El origen de Flash",
               "descripcion": "Joe y Barry rastrean al meta-humano Girder, que resulta ser un antiguo matón de la escuela de Barry.",
               "duracion": "42:00",
-              "url": "https://iplayerhls.com/e/9kuckwwchdxj"
+              "url": "https://drive.google.com/file/d/1QFxGhsi2LucVFWO_L7jylEdI9oUnqHT9/preview"
             }
           ]
         }
