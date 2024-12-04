@@ -311,7 +311,7 @@
     {
       "id": 5,
       "titulo": "Johnny Bravo",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Johnny Bravo es un joven musculoso y narcisista que vive con su madre y constantemente intenta conquistar mujeres, aunque siempre fracasa. Sus aventuras están llenas de humor y situaciones absurdas mientras intenta impresionar a las chicas con sus movimientos de karate y su peculiar personalidad.",
@@ -327,80 +327,87 @@
           "episodios": [
             {
               "numero": 1,
-              "titulo": "Johnny Bravo y el Amazonas / Johnny Bravo y el Ángel",
-              "descripcion": "Johnny viaja a la selva amazónica / Johnny cree haber encontrado a su ángel de la guarda.",
-              "duracion": "22:00",
-              "url": ""
+              "titulo": "Johnny Bravo",
+              "descripcion": "El episodio original de Johnny Bravo.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1HMUwoL0WhQ1N3goXHalYbLqbXscgEgdE/preview"
             },
             {
               "numero": 2,
-              "titulo": "Super Duper Héroe / Johnny Bravo conoce a Farrah Fawcett",
-              "descripcion": "Johnny intenta convertirse en superhéroe / Johnny persigue a su actriz favorita.",
-              "duracion": "22:00",
-              "url": ""
+              "titulo": "El Candidato",
+              "descripcion": "Johnny se involucra en política local.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1LMBKaPsN_3yp_--5q9982upe_P4QSFMg/preview"
             },
             {
               "numero": 3,
-              "titulo": "Johnny Bravo y el Rey Kong / Johnny Bravo vs. Drácula",
-              "descripcion": "Johnny se enfrenta a un gorila gigante / Johnny tiene un encuentro con un vampiro.",
-              "duracion": "22:00",
-              "url": ""
+              "titulo": "Un Macho Sensible",
+              "descripcion": "Johnny intenta mostrar su lado más sensible.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1Z7EHvB3SBBy-HUTyevUrigrk49tHin0x/preview"
             },
             {
               "numero": 4,
-              "titulo": "La Cita a Ciegas / Johnny Bravo Conoce a Donny Osmond",
-              "descripcion": "La madre de Johnny le arregla una cita a ciegas / Johnny conoce a su ídolo musical.",
-              "duracion": "22:00",
-              "url": ""
+              "titulo": "Bravo Dooby-Doo",
+              "descripcion": "Johnny tiene un encuentro con el equipo de Scooby-Doo.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1xTsKe81GbUOkTVeHrqChLrUkC-J-M2I7/preview"
             },
             {
               "numero": 5,
-              "titulo": "Johnny en el Ballet / Johnny y las Luchas",
-              "descripcion": "Johnny se une a una clase de ballet / Johnny intenta convertirse en luchador profesional.",
-              "duracion": "22:00",
-              "url": ""
+              "titulo": "Cita con un Antílope",
+              "descripcion": "Johnny tiene una cita inesperada con un antílope.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1BrDgzHpUZVPfR0F3DLIuJjLrK6yyGvGp/preview"
             },
             {
               "numero": 6,
-              "titulo": "Un Show Más",
-              "disponible": false,
-              "nuevo": true,
-              "enProceso": true,
-              "descripcion": "Las aventuras surrealistas de Mordecai y Rigby, dos amigos que trabajan como jardineros en un parque y harán cualquier cosa para evitar trabajar, lo que generalmente resulta en situaciones extraordinarias y sobrenaturales.",
-              "imagen": "https://www.themoviedb.org/t/p/original/mS5SLxMYcKfUxA0utBSR5MOAWWr.jpg",
-              "año": 2010,
-              "genero": ["Animación", "Comedia", "Ciencia ficción"],
-              "director": "J.G. Quintel",
-              "actores": ["J.G. Quintel", "William Salyers", "Mark Hamill"],
-              "trailer": "https://www.youtube.com/embed/y894QNtX0VA",
-              "temporadas": [
-                {
-                  "numero": 1,
-                  "episodios": [
-                    {
-                      "numero": 1,
-                      "titulo": "El Poder / Solo Acomoden las Sillas",
-                      "descripcion": "Mordecai y Rigby encuentran un teclado mágico / Los chicos deben organizar sillas para una fiesta.",
-                      "duracion": "22:00",
-                      "url": ""
-                    },
-                    {
-                      "numero": 2,
-                      "titulo": "Boletos con Cafeína / El Pastel Gratis",
-                      "descripcion": "Los chicos toman demasiada cafeína / Mordecai y Rigby intentan conseguir un pastel gratis.",
-                      "duracion": "22:00",
-                      "url": ""
-                    },
-                    {
-                      "numero": 3,
-                      "titulo": "La Puntualidad / El Cuerpo de Rigby",
-                      "descripcion": "Mordecai y Rigby llegan tarde al trabajo / Rigby intercambia su cuerpo con un archivo de computadora.",
-                      "duracion": "22:00",
-                      "url": ""
-                    }
-                  ]
-                }
-              ]
+              "titulo": "A-ha Toro",
+              "descripcion": "Johnny se enfrenta a un toro.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1SOdO4HOFB4kvlklLZJH5R2S9lzBPNbN5/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Crisis de Galletas",
+              "descripcion": "Johnny tiene problemas con las galletas.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1xgoXx99E3L27rfIhiRrk4o5HHez10Hzo/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Mi Bello Tonto",
+              "descripcion": "Las aventuras de Johnny como un bello tonto.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1iB9ntIrG5dhCcwahTMySqsCEq8D7vq1b/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Mi Amigo Blarney",
+              "descripcion": "Johnny hace un nuevo amigo llamado Blarney.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/11EK-Yc5ct6u8gBsOkYd-l3UtYpsgSRTe/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Johnny Legionario",
+              "descripcion": "Las aventuras de Johnny como legionario.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1Htn2WH_eznecUri-m1Fqcxc-XvkTYGCR/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Johnny Conoce a Farrah Fawcett",
+              "descripcion": "Johnny intenta impresionar a la famosa actriz Farrah Fawcett.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/141RTgdHU75-zFqsVoyACjeWI2pmYS62J/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "El hombre que gritaba Payaso",
+              "descripcion": "Johnny se encuentra con un payaso misterioso.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/18fMbqHpN8j6wlpCK5gmxYV0Waw1Vin3J/preview"
             }
           ]
         }
