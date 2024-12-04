@@ -565,10 +565,94 @@
           "episodios": [
             {
               "numero": 1,
-              "titulo": "Johnny al Rescate / El Perro Genio",
-              "descripcion": "Johnny debe salvar la ciudad de un robot gigante / Las hermanas de Johnny convierten a su perro en un genio",
+              "titulo": "Johnny X / Johnny y el Mundo de los Perros",
+              "descripcion": "Johnny obtiene superpoderes / Johnny entra en un mundo donde los perros dominan",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1gJsElW0wgWdTTSBApGx4bI6tHT07o7YZ/preview"
+              "url": "https://drive.google.com/file/d/1E-misCXYpG_pac3VglMwMm2xWnWlmyyc/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Johnny contra Bling-Bling / Johnny Prueba las Píldoras",
+              "descripcion": "Johnny se enfrenta a Eugene / Johnny prueba unas píldoras experimentales",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Ow1vDWOt7EZl3oGCLvft0YxtwGprXUEn/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Johnny Imposible / Johnny vs El Moño",
+              "descripcion": "Johnny intenta lo imposible / Johnny se enfrenta a un moño malvado",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ZlCeXcs2JY5_FXBjAgVQ5q84n_xnUQcl/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Johnny Hollywood / Johnny y los Gemelos",
+              "descripcion": "Johnny se vuelve una estrella / Johnny lidia con gemelos problemáticos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1FxqJitjijGpxHSZItbwKvc_GoOpSHTj0/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Johnny y el Dragón / Johnny y la Máquina del Tiempo",
+              "descripcion": "Johnny se encuentra con un dragón / Johnny viaja en el tiempo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1VAOO7abvHlmqvTuBNc5KMLuoU7yG_EYJ/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Johnny y el Bebé / Johnny y la Fábrica de Dulces",
+              "descripcion": "Johnny cuida a un bebé / Johnny visita una fábrica de dulces",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1tibGs1dKO8nuplkdhCQQXGSnW0I4z-N3/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Johnny Súper Inteligente / Johnny y los Extraterrestres",
+              "descripcion": "Johnny se vuelve un genio / Johnny se encuentra con alienígenas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1wklET8ZRtYLW7Vlrg5f_z0fvjDW-W5Ge/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Johnny y el Campamento / Johnny y el Concurso",
+              "descripcion": "Johnny va de campamento / Johnny participa en un concurso",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/15sH1CHsS9XU9dQ-zWkgYn2xM47FlLw9D/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Johnny y el Parque / Johnny y la Casa Embrujada",
+              "descripcion": "Johnny salva el parque / Johnny explora una casa embrujada",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1D2emLmikgPS7JPyXbk7sGeCNMuIV6B_J/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Johnny y el Robot / Johnny y la Competencia",
+              "descripcion": "Johnny construye un robot / Johnny compite en un torneo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1uayXA8U0HiqBHH-XG8BbfV8n64Sv491b/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Johnny y el Videojuego / Johnny y el Superhéroe",
+              "descripcion": "Johnny queda atrapado en un videojuego / Johnny conoce a su superhéroe favorito",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Hzr_XcjKOf2WbfuU-XMiDG1en0XqyQFa/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Johnny y el Circo / Johnny y el Dinosaurio",
+              "descripcion": "Johnny se une al circo / Johnny encuentra un dinosaurio",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1fZcxSS5Dk7RqdQAH4x0brWgYf4QGNLL6/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Johnny y la Nave Espacial / Johnny y el Tesoro",
+              "descripcion": "Johnny viaja al espacio / Johnny busca un tesoro perdido",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1JBpb2889KYOpHu7L422s8BraXjzVNm23/preview"
             }
           ]
         }
