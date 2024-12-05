@@ -773,7 +773,7 @@
     {
       "id": 9,
       "titulo": "Kick Buttowski",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Las aventuras de Clarence 'Kick' Buttowski, un joven aspirante a acróbata que busca convertirse en el mejor especialista del mundo.",
@@ -789,17 +789,143 @@
           "episodios": [
             {
               "numero": 1,
-              "titulo": "Hazlo o Déjalo",
-              "descripcion": "Kick intenta realizar una acrobacia peligrosa en la colina más empinada de la ciudad.",
-              "duracion": "11:00",
-              "url": "URL_DEL_EPISODIO"
+              "titulo": "Hazlo o Déjalo / Splash Mountain",
+              "descripcion": "Kick intenta realizar una acrobacia peligrosa / Kick y Gunther visitan un parque acuático",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/14m5VUg5I85_9qNbm8fjjbDeYNTDEZrFM/preview"
             },
             {
               "numero": 2,
-              "titulo": "Bailando con el Enemigo",
-              "descripcion": "Kick debe aprender a bailar para una competencia escolar.",
-              "duracion": "11:00",
-              "url": "URL_DEL_EPISODIO"
+              "titulo": "Bailando con el Enemigo / Abanderado",
+              "descripcion": "Kick debe aprender a bailar / Kick se convierte en abanderado de la escuela",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1XS-EKNOzwynYwrlHP8YGScOMNDjinN2_/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Desesperado / Saltando la Ciencia",
+              "descripcion": "Kick busca desesperadamente diversión / Kick realiza experimentos científicos extremos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Rduchhq517ZSx9lphrhWfUKfJ2vO6UIw/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Para los Insectos / No Hay Dolor, No Hay Juego",
+              "descripcion": "Kick se enfrenta a insectos gigantes / Kick participa en juegos deportivos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1M_ZcC-cR7u4TE7-pagQb_CzMJ2z7J8n6/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Conoce a Brad / Partido de Fútbol",
+              "descripcion": "Brad intenta arruinar el día de Kick / Kick juega un partido de fútbol extremo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1XA5mxxfm9Ef-zTGDg5L9lc_PngBffIFM/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Mellowbrook a la Deriva / Kick el Cocinero",
+              "descripcion": "La ciudad entera se convierte en una pista de acrobacias / Kick participa en un concurso de cocina",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/187LTfq96MjZurlI2BRJZ7RHiQLnTkQ0M/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "El Concurso / Salta la Rampa",
+              "descripcion": "Kick participa en un concurso de acrobacias / Kick intenta saltar una rampa legendaria",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1WOU-trQIGuIT0P4TBHrPaOi_DcDkArul/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Aplastado / Trato Hecho",
+              "descripcion": "Kick debe enfrentarse a un rival más grande / Kick hace un trato con Brad",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1lB52hOCnCbQoKo8T0ZE2ykI9RtYP6--4/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Desesperación en el Día de San Valentín / El Gran Desafío",
+              "descripcion": "Kick lidia con el día de San Valentín / Kick acepta un desafío extremo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1kfvDX3LJ82XWtDMVwpwbP8qD6uoVo1hc/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Kyle E. Coyote / Awesomefest",
+              "descripcion": "Kick conoce a su ídolo / Kick participa en un festival de acrobacias",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/19ggxNjg6QAnfmM3yfLSSz1PSZONOfXrQ/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Rank of Awesome / Detención Dominical",
+              "descripcion": "Kick busca alcanzar el máximo nivel de asombroso / Kick pasa un domingo en detención",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/174YX3iF2UDyQEzX-XvKCrpLNX8asmtyA/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Snowpocalypse! / La Carrera del Papel",
+              "descripcion": "Kick aprovecha una tormenta de nieve / Kick participa en una carrera de periódicos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1qhUpmHJnwNtAjnEHZ1EZGmWQukeuXets/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Proyecto Kick / Muere Intentando",
+              "descripcion": "Kick trabaja en un proyecto escolar / Kick intenta una acrobacia peligrosa",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1OlK1QATHYYyJ7siwQK2GRAowbWPMQmxW/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "Sold! / Rompiendo el Récord",
+              "descripcion": "La casa de Kick está en venta / Kick intenta romper un récord mundial",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1pe3I8xIcbK1t6siQLEtqHgEtqLrrm9an/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "El Cumpleaños de Brad / El Gran Escape",
+              "descripcion": "Kick debe sobrevivir al cumpleaños de Brad / Kick planea un escape épico",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1LsT9Q65g1FJjtKXKvIL8RQcm74H2Vn9p/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Kickasaurus Wrecks / La Batalla por el Botón",
+              "descripcion": "Kick se enfrenta a un dinosaurio / Kick y Brad pelean por el control remoto",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1yfNmrcNMABN7pbl3bqr9Q9oxQA-n6_J7/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "El Día de los Gemelos / Competencia de Saltos",
+              "descripcion": "Kick y Gunther intercambian roles / Kick participa en una competencia de saltos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1UezsieNIxJPralkeDctokxbyLxNCDCdZ/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "Enfrentamiento en el Centro Comercial / Kick va al Doctor",
+              "descripcion": "Kick causa caos en el centro comercial / Kick tiene que ir al médico",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1hH1KpdqqEGYTqvSOzk1PGh9hyUYPBTLr/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "Atrápame si Puedes / El Concurso de Talentos",
+              "descripcion": "Kick es perseguido por toda la ciudad / Kick participa en un show de talentos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/10BTFJE9TOz0S77dZ1Wzpetn6vI37VnWq/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "Kyle 2.0 / El Último Desafío",
+              "descripcion": "Kyle regresa con nuevos trucos / Kick enfrenta su mayor desafío hasta ahora",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1PgRlw55Eq5LIDT8V_IWto9kCUW16KBsa/preview"
             }
           ]
         }
