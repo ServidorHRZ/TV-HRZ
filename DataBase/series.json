@@ -775,7 +775,7 @@
       "titulo": "Kick Buttowski",
       "disponible": true,
       "nuevo": true,
-      "enProceso": true,
+      "enProceso": false,
       "descripcion": "Las aventuras de Clarence 'Kick' Buttowski, un joven aspirante a acróbata que busca convertirse en el mejor especialista del mundo.",
       "imagen": "https://i.pinimg.com/736x/02/0b/01/020b01a85c01be77a9daaa5bdf3149f0.jpg",
       "año": 2010,
