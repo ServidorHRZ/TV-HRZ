@@ -350,313 +350,313 @@
               "numero": 9,
               "titulo": "La Fiesta / El Secreto",
               "descripcion": "Una fiesta en el inframundo se sale de control / Mandy descubre un secreto oscuro",
-              "duracion": "22:00",
+                      "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1Age0Nt-ybsDx6xgTV7SJmr0dcwvculV2/preview"
-            },
-            {
-              "numero": 10,
+                    },
+                    {
+                      "numero": 10,
               "titulo": "El Cambio / La Venganza",
               "descripcion": "Billy y Mandy intercambian personalidades / Calavera busca venganza",
-              "duracion": "22:00",
+                      "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1w3ykksu09LJbS-ztl8yLP88vWe3rddDs/preview"
-            },
-            {
-              "numero": 11,
+                    },
+                    {
+                      "numero": 11,
               "titulo": "El Portal / La Competencia",
               "descripcion": "Los chicos descubren un portal misterioso / Una competencia sobrenatural",
-              "duracion": "22:00",
+                      "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1laDYiDd50KGzqIxRajd53CqreIJbIuxf/preview"
-            },
-            {
-              "numero": 12,
+                    },
+                    {
+                      "numero": 12,
               "titulo": "El Hechizo / La Búsqueda",
               "descripcion": "Un hechizo sale mal / Los chicos buscan un artefacto místico",
-              "duracion": "22:00",
+                      "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1FQqlmhl7X57FqHtArn_aR87UIGrl685H/preview"
-            },
-            {
-              "numero": 13,
+                    },
+                    {
+                      "numero": 13,
               "titulo": "El Caos / La Decisión",
               "descripcion": "El caos reina en la ciudad / Mandy debe tomar una decisión importante",
-              "duracion": "22:00",
+                      "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1jVeQCS5wWAG49XLQkA35dGVV1mkKigak/preview"
-            },
-            {
-              "numero": 14,
+                    },
+                    {
+                      "numero": 14,
               "titulo": "La Transformación / El Desafío",
               "descripcion": "Billy sufre una extraña transformación / Un nuevo desafío sobrenatural",
-              "duracion": "22:00",
+                      "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1-x7otQJv1j6TpkyfPlmESdan-mhTrOIu/preview"
-            },
-            {
-              "numero": 15,
+                    },
+                    {
+                      "numero": 15,
               "titulo": "El Misterio / La Revelación",
               "descripcion": "Los chicos resuelven un misterio / Una sorprendente revelación",
-              "duracion": "22:00",
+                      "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1jjaGW_cjwdgrA0I9mdL0ZnOr2TsjSq2p/preview"
-            },
-            {
-              "numero": 16,
+                    },
+                    {
+                      "numero": 16,
               "titulo": "El Final / Nuevo Comienzo",
               "descripcion": "Una aventura llega a su fin / El inicio de una nueva saga",
-              "duracion": "22:00",
+                      "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1BJkVfoMPvkzLF7ewHR84XVQTbZrxs-C7/preview"
-            }
-          ]
-        }
-      ]
-    },
-    {
+                    }
+                  ]
+                }
+              ]
+            },
+            {
       "id": 5,
-      "titulo": "Ed, Edd y Eddy",
-      "disponible": false,
-      "nuevo": true,
-      "enProceso": true,
-      "descripcion": "Las aventuras de tres amigos preadolescentes que viven en un callejón suburbano. Ed, Edd (Double D) y Eddy pasan sus días inventando estafas para conseguir dinero y comprar sus adorados caramelos, mientras lidian con los otros niños del vecindario.",
-      "imagen": "https://es.web.img3.acsta.net/r_1280_720/pictures/18/04/25/10/15/5039486.png",
-      "año": 1999,
-      "genero": ["Animación", "Comedia", "Familiar"],
-      "director": "Danny Antonucci",
-      "actores": ["Matt Hill", "Samuel Vincent", "Tony Sampson"],
-      "trailer": "https://www.youtube.com/embed/6KZZQJf8BzM",
-      "temporadas": [
-        {
-          "numero": 1,
-          "episodios": [
-            {
-              "numero": 1,
-              "titulo": "El Ed-tocable / Botella de Ed / Un Ed en la Mano",
-              "descripcion": "Los Eds intentan unirse al club de Kevin / Los chicos buscan botellas para reciclar / Los Eds abren un puesto de la fortuna.",
-              "duracion": "22:00",
-              "url": ""
+              "titulo": "Ed, Edd y Eddy",
+              "disponible": false,
+              "nuevo": true,
+              "enProceso": true,
+              "descripcion": "Las aventuras de tres amigos preadolescentes que viven en un callejón suburbano. Ed, Edd (Double D) y Eddy pasan sus días inventando estafas para conseguir dinero y comprar sus adorados caramelos, mientras lidian con los otros niños del vecindario.",
+              "imagen": "https://es.web.img3.acsta.net/r_1280_720/pictures/18/04/25/10/15/5039486.png",
+              "año": 1999,
+              "genero": ["Animación", "Comedia", "Familiar"],
+              "director": "Danny Antonucci",
+              "actores": ["Matt Hill", "Samuel Vincent", "Tony Sampson"],
+              "trailer": "https://www.youtube.com/embed/6KZZQJf8BzM",
+              "temporadas": [
+                {
+                  "numero": 1,
+                  "episodios": [
+                    {
+                      "numero": 1,
+                      "titulo": "El Ed-tocable / Botella de Ed / Un Ed en la Mano",
+                      "descripcion": "Los Eds intentan unirse al club de Kevin / Los chicos buscan botellas para reciclar / Los Eds abren un puesto de la fortuna.",
+                      "duracion": "22:00",
+                      "url": ""
+                    },
+                    {
+                      "numero": 2,
+                      "titulo": "Más de un Ed / Ed y Seekers / Si no puedes con un Ed",
+                      "descripcion": "Double D intenta organizar todo / Los Eds juegan al escondite / Los Eds intentan impresionar a las hermanas Kanker.",
+                      "duracion": "22:00",
+                      "url": ""
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "numero": 2,
-              "titulo": "Más de un Ed / Ed y Seekers / Si no puedes con un Ed",
-              "descripcion": "Double D intenta organizar todo / Los Eds juegan al escondite / Los Eds intentan impresionar a las hermanas Kanker.",
-              "duracion": "22:00",
-              "url": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": 6,
-      "titulo": "Johnny Bravo",
-      "disponible": true,
-      "nuevo": true,
-      "enProceso": true,
-      "descripcion": "Johnny Bravo es un joven musculoso y narcisista que vive con su madre y constantemente intenta conquistar mujeres, aunque siempre fracasa. Sus aventuras están llenas de humor y situaciones absurdas mientras intenta impresionar a las chicas con sus movimientos de karate y su peculiar personalidad.",
-      "imagen": "https://pics.filmaffinity.com/johnny_bravo-502318534-large.jpg",
-      "año": 1997,
-      "genero": ["Animación", "Comedia", "Familiar"],
-      "director": "Van Partible",
-      "actores": ["Jeff Bennett", "Brenda Vaccaro", "Mae Whitman"],
-      "trailer": "https://drive.google.com/file/d/1Kzs3WckpuFRHxtY7BNu7nn2pR63srIAs/preview",
-      "temporadas": [
-        {
-          "numero": 1,
-          "episodios": [
-            {
-              "numero": 1,
               "titulo": "Johnny Bravo",
-              "descripcion": "El episodio original de Johnny Bravo.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/1HMUwoL0WhQ1N3goXHalYbLqbXscgEgdE/preview"
+              "disponible": true,
+              "nuevo": true,
+              "enProceso": true,
+              "descripcion": "Johnny Bravo es un joven musculoso y narcisista que vive con su madre y constantemente intenta conquistar mujeres, aunque siempre fracasa. Sus aventuras están llenas de humor y situaciones absurdas mientras intenta impresionar a las chicas con sus movimientos de karate y su peculiar personalidad.",
+              "imagen": "https://pics.filmaffinity.com/johnny_bravo-502318534-large.jpg",
+              "año": 1997,
+              "genero": ["Animación", "Comedia", "Familiar"],
+              "director": "Van Partible",
+              "actores": ["Jeff Bennett", "Brenda Vaccaro", "Mae Whitman"],
+              "trailer": "https://drive.google.com/file/d/1Kzs3WckpuFRHxtY7BNu7nn2pR63srIAs/preview",
+              "temporadas": [
+                {
+                  "numero": 1,
+                  "episodios": [
+                    {
+                      "numero": 1,
+                      "titulo": "Johnny Bravo",
+                      "descripcion": "El episodio original de Johnny Bravo.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/1HMUwoL0WhQ1N3goXHalYbLqbXscgEgdE/preview"
+                    },
+                    {
+                      "numero": 2,
+                      "titulo": "El Candidato",
+                      "descripcion": "Johnny se involucra en política local.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/1LMBKaPsN_3yp_--5q9982upe_P4QSFMg/preview"
+                    },
+                    {
+                      "numero": 3,
+                      "titulo": "Un Macho Sensible",
+                      "descripcion": "Johnny intenta mostrar su lado más sensible.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/1Z7EHvB3SBBy-HUTyevUrigrk49tHin0x/preview"
+                    },
+                    {
+                      "numero": 4,
+                      "titulo": "Bravo Dooby-Doo",
+                      "descripcion": "Johnny tiene un encuentro con el equipo de Scooby-Doo.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/1xTsKe81GbUOkTVeHrqChLrUkC-J-M2I7/preview"
+                    },
+                    {
+                      "numero": 5,
+                      "titulo": "Cita con un Antílope",
+                      "descripcion": "Johnny tiene una cita inesperada con un antílope.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/1BrDgzHpUZVPfR0F3DLIuJjLrK6yyGvGp/preview"
+                    },
+                    {
+                      "numero": 6,
+                      "titulo": "A-ha Toro",
+                      "descripcion": "Johnny se enfrenta a un toro.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/1SOdO4HOFB4kvlklLZJH5R2S9lzBPNbN5/preview"
+                    },
+                    {
+                      "numero": 7,
+                      "titulo": "Crisis de Galletas",
+                      "descripcion": "Johnny tiene problemas con las galletas.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/1xgoXx99E3L27rfIhiRrk4o5HHez10Hzo/preview"
+                    },
+                    {
+                      "numero": 8,
+                      "titulo": "Mi Bello Tonto",
+                      "descripcion": "Las aventuras de Johnny como un bello tonto.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/1iB9ntIrG5dhCcwahTMySqsCEq8D7vq1b/preview"
+                    },
+                    {
+                      "numero": 9,
+                      "titulo": "Mi Amigo Blarney",
+                      "descripcion": "Johnny hace un nuevo amigo llamado Blarney.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/11EK-Yc5ct6u8gBsOkYd-l3UtYpsgSRTe/preview"
+                    },
+                    {
+                      "numero": 10,
+                      "titulo": "Johnny Legionario",
+                      "descripcion": "Las aventuras de Johnny como legionario.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/1Htn2WH_eznecUri-m1Fqcxc-XvkTYGCR/preview"
+                    },
+                    {
+                      "numero": 11,
+                      "titulo": "Johnny Conoce a Farrah Fawcett",
+                      "descripcion": "Johnny intenta impresionar a la famosa actriz Farrah Fawcett.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/141RTgdHU75-zFqsVoyACjeWI2pmYS62J/preview"
+                    },
+                    {
+                      "numero": 12,
+                      "titulo": "El hombre que gritaba Payaso",
+                      "descripcion": "Johnny se encuentra con un payaso misterioso.",
+                      "duracion": "07:00",
+                      "url": "https://drive.google.com/file/d/18fMbqHpN8j6wlpCK5gmxYV0Waw1Vin3J/preview"
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "numero": 2,
-              "titulo": "El Candidato",
-              "descripcion": "Johnny se involucra en política local.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/1LMBKaPsN_3yp_--5q9982upe_P4QSFMg/preview"
-            },
-            {
-              "numero": 3,
-              "titulo": "Un Macho Sensible",
-              "descripcion": "Johnny intenta mostrar su lado más sensible.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/1Z7EHvB3SBBy-HUTyevUrigrk49tHin0x/preview"
-            },
-            {
-              "numero": 4,
-              "titulo": "Bravo Dooby-Doo",
-              "descripcion": "Johnny tiene un encuentro con el equipo de Scooby-Doo.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/1xTsKe81GbUOkTVeHrqChLrUkC-J-M2I7/preview"
-            },
-            {
-              "numero": 5,
-              "titulo": "Cita con un Antílope",
-              "descripcion": "Johnny tiene una cita inesperada con un antílope.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/1BrDgzHpUZVPfR0F3DLIuJjLrK6yyGvGp/preview"
-            },
-            {
-              "numero": 6,
-              "titulo": "A-ha Toro",
-              "descripcion": "Johnny se enfrenta a un toro.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/1SOdO4HOFB4kvlklLZJH5R2S9lzBPNbN5/preview"
-            },
-            {
-              "numero": 7,
-              "titulo": "Crisis de Galletas",
-              "descripcion": "Johnny tiene problemas con las galletas.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/1xgoXx99E3L27rfIhiRrk4o5HHez10Hzo/preview"
-            },
-            {
-              "numero": 8,
-              "titulo": "Mi Bello Tonto",
-              "descripcion": "Las aventuras de Johnny como un bello tonto.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/1iB9ntIrG5dhCcwahTMySqsCEq8D7vq1b/preview"
-            },
-            {
-              "numero": 9,
-              "titulo": "Mi Amigo Blarney",
-              "descripcion": "Johnny hace un nuevo amigo llamado Blarney.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/11EK-Yc5ct6u8gBsOkYd-l3UtYpsgSRTe/preview"
-            },
-            {
-              "numero": 10,
-              "titulo": "Johnny Legionario",
-              "descripcion": "Las aventuras de Johnny como legionario.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/1Htn2WH_eznecUri-m1Fqcxc-XvkTYGCR/preview"
-            },
-            {
-              "numero": 11,
-              "titulo": "Johnny Conoce a Farrah Fawcett",
-              "descripcion": "Johnny intenta impresionar a la famosa actriz Farrah Fawcett.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/141RTgdHU75-zFqsVoyACjeWI2pmYS62J/preview"
-            },
-            {
-              "numero": 12,
-              "titulo": "El hombre que gritaba Payaso",
-              "descripcion": "Johnny se encuentra con un payaso misterioso.",
-              "duracion": "07:00",
-              "url": "https://drive.google.com/file/d/18fMbqHpN8j6wlpCK5gmxYV0Waw1Vin3J/preview"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": 7,
-      "titulo": "Johnny Test",
-      "disponible": true,
-      "nuevo": true,
-      "enProceso": true,
-      "descripcion": "Johnny Test es un niño de 11 años que sirve como sujeto de prueba para los experimentos científicos de sus hermanas gemelas superdotadas, Susan y Mary. Junto con su perro parlante Dukey, Johnny vive increíbles aventuras mientras prueba los inventos que frecuentemente salen mal.",
-      "imagen": "https://image.tmdb.org/t/p/original/cGceNrHpUl3utUzE502xSY8l9ST.jpg",
-      "año": 2005,
-      "genero": ["Animación", "Comedia", "Ciencia ficción"],
-      "director": "Scott Fellows",
-      "actores": ["James Arnold Taylor", "Louis Chirillo", "Maryke Hendrikse"],
-      "trailer": "https://www.youtube.com/embed/4Iqe9-zPDQY",
-      "temporadas": [
-        {
-          "numero": 1,
-          "episodios": [
-            {
-              "numero": 1,
-              "titulo": "Johnny X / Johnny y el Mundo de los Perros",
-              "descripcion": "Johnny obtiene superpoderes / Johnny entra en un mundo donde los perros dominan",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1E-misCXYpG_pac3VglMwMm2xWnWlmyyc/preview"
-            },
-            {
-              "numero": 2,
-              "titulo": "Johnny contra Bling-Bling / Johnny Prueba las Píldoras",
-              "descripcion": "Johnny se enfrenta a Eugene / Johnny prueba unas píldoras experimentales",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1Ow1vDWOt7EZl3oGCLvft0YxtwGprXUEn/preview"
-            },
-            {
-              "numero": 3,
-              "titulo": "Johnny Imposible / Johnny vs El Moño",
-              "descripcion": "Johnny intenta lo imposible / Johnny se enfrenta a un moño malvado",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1ZlCeXcs2JY5_FXBjAgVQ5q84n_xnUQcl/preview"
-            },
-            {
-              "numero": 4,
-              "titulo": "Johnny Hollywood / Johnny y los Gemelos",
-              "descripcion": "Johnny se vuelve una estrella / Johnny lidia con gemelos problemáticos",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1FxqJitjijGpxHSZItbwKvc_GoOpSHTj0/preview"
-            },
-            {
-              "numero": 5,
-              "titulo": "Johnny y el Dragón / Johnny y la Máquina del Tiempo",
-              "descripcion": "Johnny se encuentra con un dragón / Johnny viaja en el tiempo",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1VAOO7abvHlmqvTuBNc5KMLuoU7yG_EYJ/preview"
-            },
-            {
-              "numero": 6,
-              "titulo": "Johnny y el Bebé / Johnny y la Fábrica de Dulces",
-              "descripcion": "Johnny cuida a un bebé / Johnny visita una fábrica de dulces",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1tibGs1dKO8nuplkdhCQQXGSnW0I4z-N3/preview"
-            },
-            {
-              "numero": 7,
-              "titulo": "Johnny Súper Inteligente / Johnny y los Extraterrestres",
-              "descripcion": "Johnny se vuelve un genio / Johnny se encuentra con alienígenas",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1wklET8ZRtYLW7Vlrg5f_z0fvjDW-W5Ge/preview"
-            },
-            {
-              "numero": 8,
-              "titulo": "Johnny y el Campamento / Johnny y el Concurso",
-              "descripcion": "Johnny va de campamento / Johnny participa en un concurso",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/15sH1CHsS9XU9dQ-zWkgYn2xM47FlLw9D/preview"
-            },
-            {
-              "numero": 9,
-              "titulo": "Johnny y el Parque / Johnny y la Casa Embrujada",
-              "descripcion": "Johnny salva el parque / Johnny explora una casa embrujada",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1D2emLmikgPS7JPyXbk7sGeCNMuIV6B_J/preview"
-            },
-            {
-              "numero": 10,
-              "titulo": "Johnny y el Robot / Johnny y la Competencia",
-              "descripcion": "Johnny construye un robot / Johnny compite en un torneo",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1uayXA8U0HiqBHH-XG8BbfV8n64Sv491b/preview"
-            },
-            {
-              "numero": 11,
-              "titulo": "Johnny y el Videojuego / Johnny y el Superhéroe",
-              "descripcion": "Johnny queda atrapado en un videojuego / Johnny conoce a su superhéroe favorito",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1Hzr_XcjKOf2WbfuU-XMiDG1en0XqyQFa/preview"
-            },
-            {
-              "numero": 12,
-              "titulo": "Johnny y el Circo / Johnny y el Dinosaurio",
-              "descripcion": "Johnny se une al circo / Johnny encuentra un dinosaurio",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1fZcxSS5Dk7RqdQAH4x0brWgYf4QGNLL6/preview"
-            },
-            {
-              "numero": 13,
-              "titulo": "Johnny y la Nave Espacial / Johnny y el Tesoro",
-              "descripcion": "Johnny viaja al espacio / Johnny busca un tesoro perdido",
-              "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1JBpb2889KYOpHu7L422s8BraXjzVNm23/preview"
-            }
-          ]
-        }
-      ]
+              "titulo": "Johnny Test",
+              "disponible": true,
+              "nuevo": true,
+              "enProceso": true,
+              "descripcion": "Johnny Test es un niño de 11 años que sirve como sujeto de prueba para los experimentos científicos de sus hermanas gemelas superdotadas, Susan y Mary. Junto con su perro parlante Dukey, Johnny vive increíbles aventuras mientras prueba los inventos que frecuentemente salen mal.",
+              "imagen": "https://image.tmdb.org/t/p/original/cGceNrHpUl3utUzE502xSY8l9ST.jpg",
+              "año": 2005,
+              "genero": ["Animación", "Comedia", "Ciencia ficción"],
+              "director": "Scott Fellows",
+              "actores": ["James Arnold Taylor", "Louis Chirillo", "Maryke Hendrikse"],
+              "trailer": "https://www.youtube.com/embed/4Iqe9-zPDQY",
+              "temporadas": [
+                {
+                  "numero": 1,
+                  "episodios": [
+                    {
+                      "numero": 1,
+                      "titulo": "Johnny X / Johnny y el Mundo de los Perros",
+                      "descripcion": "Johnny obtiene superpoderes / Johnny entra en un mundo donde los perros dominan",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1E-misCXYpG_pac3VglMwMm2xWnWlmyyc/preview"
+                    },
+                    {
+                      "numero": 2,
+                      "titulo": "Johnny contra Bling-Bling / Johnny Prueba las Píldoras",
+                      "descripcion": "Johnny se enfrenta a Eugene / Johnny prueba unas píldoras experimentales",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1Ow1vDWOt7EZl3oGCLvft0YxtwGprXUEn/preview"
+                    },
+                    {
+                      "numero": 3,
+                      "titulo": "Johnny Imposible / Johnny vs El Moño",
+                      "descripcion": "Johnny intenta lo imposible / Johnny se enfrenta a un moño malvado",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1ZlCeXcs2JY5_FXBjAgVQ5q84n_xnUQcl/preview"
+                    },
+                    {
+                      "numero": 4,
+                      "titulo": "Johnny Hollywood / Johnny y los Gemelos",
+                      "descripcion": "Johnny se vuelve una estrella / Johnny lidia con gemelos problemáticos",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1FxqJitjijGpxHSZItbwKvc_GoOpSHTj0/preview"
+                    },
+                    {
+                      "numero": 5,
+                      "titulo": "Johnny y el Dragón / Johnny y la Máquina del Tiempo",
+                      "descripcion": "Johnny se encuentra con un dragón / Johnny viaja en el tiempo",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1VAOO7abvHlmqvTuBNc5KMLuoU7yG_EYJ/preview"
+                    },
+                    {
+                      "numero": 6,
+                      "titulo": "Johnny y el Bebé / Johnny y la Fábrica de Dulces",
+                      "descripcion": "Johnny cuida a un bebé / Johnny visita una fábrica de dulces",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1tibGs1dKO8nuplkdhCQQXGSnW0I4z-N3/preview"
+                    },
+                    {
+                      "numero": 7,
+                      "titulo": "Johnny Súper Inteligente / Johnny y los Extraterrestres",
+                      "descripcion": "Johnny se vuelve un genio / Johnny se encuentra con alienígenas",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1wklET8ZRtYLW7Vlrg5f_z0fvjDW-W5Ge/preview"
+                    },
+                    {
+                      "numero": 8,
+                      "titulo": "Johnny y el Campamento / Johnny y el Concurso",
+                      "descripcion": "Johnny va de campamento / Johnny participa en un concurso",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/15sH1CHsS9XU9dQ-zWkgYn2xM47FlLw9D/preview"
+                    },
+                    {
+                      "numero": 9,
+                      "titulo": "Johnny y el Parque / Johnny y la Casa Embrujada",
+                      "descripcion": "Johnny salva el parque / Johnny explora una casa embrujada",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1D2emLmikgPS7JPyXbk7sGeCNMuIV6B_J/preview"
+                    },
+                    {
+                      "numero": 10,
+                      "titulo": "Johnny y el Robot / Johnny y la Competencia",
+                      "descripcion": "Johnny construye un robot / Johnny compite en un torneo",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1uayXA8U0HiqBHH-XG8BbfV8n64Sv491b/preview"
+                    },
+                    {
+                      "numero": 11,
+                      "titulo": "Johnny y el Videojuego / Johnny y el Superhéroe",
+                      "descripcion": "Johnny queda atrapado en un videojuego / Johnny conoce a su superhéroe favorito",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1Hzr_XcjKOf2WbfuU-XMiDG1en0XqyQFa/preview"
+                    },
+                    {
+                      "numero": 12,
+                      "titulo": "Johnny y el Circo / Johnny y el Dinosaurio",
+                      "descripcion": "Johnny se une al circo / Johnny encuentra un dinosaurio",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1fZcxSS5Dk7RqdQAH4x0brWgYf4QGNLL6/preview"
+                    },
+                    {
+                      "numero": 13,
+                      "titulo": "Johnny y la Nave Espacial / Johnny y el Tesoro",
+                      "descripcion": "Johnny viaja al espacio / Johnny busca un tesoro perdido",
+                      "duracion": "22:00",
+                      "url": "https://drive.google.com/file/d/1JBpb2889KYOpHu7L422s8BraXjzVNm23/preview"
+                    }
+                  ]
+                }
+              ]
     },
     {
       "id": 8,
@@ -789,143 +789,372 @@
           "episodios": [
             {
               "numero": 1,
-              "titulo": "Hazlo o Déjalo / Splash Mountain",
-              "descripcion": "Kick intenta realizar una acrobacia peligrosa / Kick y Gunther visitan un parque acuático",
+              "titulo": "La Colina Del Muerto / Bukky Stumps",
+              "descripcion": "Kick enfrenta la colina más peligrosa / Kick conoce a Bukky Stumps",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/14m5VUg5I85_9qNbm8fjjbDeYNTDEZrFM/preview"
             },
             {
               "numero": 2,
-              "titulo": "Bailando con el Enemigo / Abanderado",
-              "descripcion": "Kick debe aprender a bailar / Kick se convierte en abanderado de la escuela",
+              "titulo": "Máxima Musicalidad / Triciclo X-5",
+              "descripcion": "Kick demuestra sus habilidades musicales / Aventuras con un triciclo especial",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1XS-EKNOzwynYwrlHP8YGScOMNDjinN2_/preview"
             },
             {
               "numero": 3,
-              "titulo": "Desesperado / Saltando la Ciencia",
-              "descripcion": "Kick busca desesperadamente diversión / Kick realiza experimentos científicos extremos",
+              "titulo": "La Bibliotecaria / Habrá Nachos",
+              "descripcion": "Kick tiene problemas en la biblioteca / Una aventura por nachos",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1Rduchhq517ZSx9lphrhWfUKfJ2vO6UIw/preview"
             },
             {
               "numero": 4,
-              "titulo": "Para los Insectos / No Hay Dolor, No Hay Juego",
-              "descripcion": "Kick se enfrenta a insectos gigantes / Kick participa en juegos deportivos",
+              "titulo": "Noqueado / ¡No Sin Mi Cereal!",
+              "descripcion": "Kick queda noqueado / Kick lucha por su cereal favorito",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1M_ZcC-cR7u4TE7-pagQb_CzMJ2z7J8n6/preview"
             },
             {
               "numero": 5,
-              "titulo": "Conoce a Brad / Partido de Fútbol",
-              "descripcion": "Brad intenta arruinar el día de Kick / Kick juega un partido de fútbol extremo",
+              "titulo": "La Guarida / Acrobacias Prohibidas",
+              "descripcion": "Kick protege su guarida / Kick intenta acrobacias peligrosas",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1XA5mxxfm9Ef-zTGDg5L9lc_PngBffIFM/preview"
             },
             {
               "numero": 6,
-              "titulo": "Mellowbrook a la Deriva / Kick el Cocinero",
-              "descripcion": "La ciudad entera se convierte en una pista de acrobacias / Kick participa en un concurso de cocina",
+              "titulo": "Kickasaurio Rex / Batalla Por Los Bocadillos",
+              "descripcion": "Kick se convierte en dinosaurio / Una batalla por bocadillos",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/187LTfq96MjZurlI2BRJZ7RHiQLnTkQ0M/preview"
             },
             {
               "numero": 7,
-              "titulo": "El Concurso / Salta la Rampa",
-              "descripcion": "Kick participa en un concurso de acrobacias / Kick intenta saltar una rampa legendaria",
+              "titulo": "Bailando Con El Enemigo / La Vecina Indiscreta",
+              "descripcion": "Kick baila con su rival / Problemas con una vecina curiosa",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1WOU-trQIGuIT0P4TBHrPaOi_DcDkArul/preview"
             },
             {
               "numero": 8,
-              "titulo": "Aplastado / Trato Hecho",
-              "descripcion": "Kick debe enfrentarse a un rival más grande / Kick hace un trato con Brad",
+              "titulo": "Obsesión Por Kick / Pescado Del Diablo",
+              "descripcion": "Alguien se obsesiona con Kick / Aventuras con un pescado peligroso",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1lB52hOCnCbQoKo8T0ZE2ykI9RtYP6--4/preview"
             },
             {
               "numero": 9,
-              "titulo": "Desesperación en el Día de San Valentín / El Gran Desafío",
-              "descripcion": "Kick lidia con el día de San Valentín / Kick acepta un desafío extremo",
+              "titulo": "Nievepocalipsis / De Acuerdo Con El Chimpancé",
+              "descripcion": "Caos en la nieve / Kick sigue el consejo de un chimpancé",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1kfvDX3LJ82XWtDMVwpwbP8qD6uoVo1hc/preview"
             },
             {
               "numero": 10,
-              "titulo": "Kyle E. Coyote / Awesomefest",
-              "descripcion": "Kick conoce a su ídolo / Kick participa en un festival de acrobacias",
+              "titulo": "Lucha Entre Hermanos / Pelea En El Cine",
+              "descripcion": "Kick y Brad pelean / Problemas en el cine",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/19ggxNjg6QAnfmM3yfLSSz1PSZONOfXrQ/preview"
             },
             {
               "numero": 11,
-              "titulo": "Rank of Awesome / Detención Dominical",
-              "descripcion": "Kick busca alcanzar el máximo nivel de asombroso / Kick pasa un domingo en detención",
+              "titulo": "Prisa Matutina / Puños De Helados",
+              "descripcion": "Kick tiene prisa por la mañana / Aventuras con helados",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/174YX3iF2UDyQEzX-XvKCrpLNX8asmtyA/preview"
             },
             {
               "numero": 12,
-              "titulo": "Snowpocalypse! / La Carrera del Papel",
-              "descripcion": "Kick aprovecha una tormenta de nieve / Kick participa en una carrera de periódicos",
+              "titulo": "El Auto De Papá / El Tesoro Del Muerto Dave",
+              "descripcion": "Kick usa el auto de su padre / La búsqueda de un tesoro",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1qhUpmHJnwNtAjnEHZ1EZGmWQukeuXets/preview"
             },
             {
               "numero": 13,
-              "titulo": "Proyecto Kick / Muere Intentando",
-              "descripcion": "Kick trabaja en un proyecto escolar / Kick intenta una acrobacia peligrosa",
+              "titulo": "El Campamento / Mi Perro, Yo Mismo",
+              "descripcion": "Aventuras en el campamento / Kick y su perro intercambian roles",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1OlK1QATHYYyJ7siwQK2GRAowbWPMQmxW/preview"
             },
             {
               "numero": 14,
-              "titulo": "Sold! / Rompiendo el Récord",
-              "descripcion": "La casa de Kick está en venta / Kick intenta romper un récord mundial",
+              "titulo": "El Amor De Gunther / El Papá Real",
+              "descripcion": "Gunther se enamora / Kick busca a su verdadero padre",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1pe3I8xIcbK1t6siQLEtqHgEtqLrrm9an/preview"
             },
             {
               "numero": 15,
-              "titulo": "El Cumpleaños de Brad / El Gran Escape",
-              "descripcion": "Kick debe sobrevivir al cumpleaños de Brad / Kick planea un escape épico",
+              "titulo": "Las Leyes De Lo Increíble / El Regalo De Jackie",
+              "descripcion": "Kick establece sus propias leyes / Jackie tiene un regalo para Kick",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1LsT9Q65g1FJjtKXKvIL8RQcm74H2Vn9p/preview"
             },
             {
               "numero": 16,
-              "titulo": "Kickasaurus Wrecks / La Batalla por el Botón",
-              "descripcion": "Kick se enfrenta a un dinosaurio / Kick y Brad pelean por el control remoto",
+              "titulo": "Abandonen La Amistad / Interceptando El Correo",
+              "descripcion": "Una amistad en peligro / Kick intercepta el correo",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1yfNmrcNMABN7pbl3bqr9Q9oxQA-n6_J7/preview"
             },
             {
               "numero": 17,
-              "titulo": "El Día de los Gemelos / Competencia de Saltos",
-              "descripcion": "Kick y Gunther intercambian roles / Kick participa en una competencia de saltos",
+              "titulo": "Lo Más Increíble / Un Día De Las Madres Buttowski",
+              "descripcion": "Kick intenta lo imposible / Celebración del día de las madres",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1UezsieNIxJPralkeDctokxbyLxNCDCdZ/preview"
             },
             {
               "numero": 18,
-              "titulo": "Enfrentamiento en el Centro Comercial / Kick va al Doctor",
-              "descripcion": "Kick causa caos en el centro comercial / Kick tiene que ir al médico",
+              "titulo": "¡Expuesto! / Wade Contra La Máquina",
+              "descripcion": "Kick es expuesto / Wade se enfrenta a la tecnología",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1hH1KpdqqEGYTqvSOzk1PGh9hyUYPBTLr/preview"
             },
             {
               "numero": 19,
-              "titulo": "Atrápame si Puedes / El Concurso de Talentos",
-              "descripcion": "Kick es perseguido por toda la ciudad / Kick participa en un show de talentos",
+              "titulo": "La Leyenda De Los Dobles Boom McCondor / El Primo Kyle",
+              "descripcion": "Una leyenda de acrobacias / La visita del primo Kyle",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/10BTFJE9TOz0S77dZ1Wzpetn6vI37VnWq/preview"
             },
             {
               "numero": 20,
-              "titulo": "Kyle 2.0 / El Último Desafío",
-              "descripcion": "Kyle regresa con nuevos trucos / Kick enfrenta su mayor desafío hasta ahora",
+              "titulo": "Inculpado / ¡Y... Acción!",
+              "descripcion": "Kick es acusado injustamente / Kick se convierte en estrella de cine",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1PgRlw55Eq5LIDT8V_IWto9kCUW16KBsa/preview"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Más Dinero / El Amor Apuesta",
+              "descripcion": "Kick busca ganar dinero / Kick se involucra en asuntos del corazón",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1E4B-IkuBhmLnVu0IqjtjdEEbC26Gzdq5/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Limpieza Al Extremo / Entrega Total",
+              "descripcion": "Kick convierte la limpieza en un deporte extremo / Kick da todo de sí en una nueva aventura",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1yW7lCIy2qKi6rOPmnb9f31DreSkXbW4-/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Cambio De Bici / La Batalla De Las Bandas",
+              "descripcion": "Kick consigue una nueva bicicleta / Kick participa en una competencia musical",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1CnwDcqqaZpEe9-NwDByRfozmn7RXKmX6/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Los Genes De Kick / Kick Compra Traje",
+              "descripcion": "Se explora la herencia familiar de Kick / Kick necesita un nuevo traje",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1KodZ61e_0Jzqtg94xcM9SgrTkSlh2PYJ/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "La Piscina / La Vida Con Wade",
+              "descripcion": "Kick tiene aventuras en la piscina / Un día en la vida con Wade",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1MBZCgeGhKEQVvYJxVhGh46r9ojf_04qU/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "¡Vendido! / Destrozados",
+              "descripcion": "Kick debe lidiar con una venta importante / Aventuras destructivas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1S6gEjxZedFPZrhf6jjYjmrIqOk_oY22n/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Verdad O Desafío",
+              "descripcion": "Kick participa en un intenso juego de verdad o reto",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1w60EakUT9QlJu6qhB1t5nbKBUPGgFP-K/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Bully Stumps Regresa / La Foto De Kick",
+              "descripcion": "El regreso de un viejo rival / Kick tiene problemas con una foto",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1W2BhbQG97C51ugIHFXVA_JlGWqF7lq-C/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Mano A Mano / Luigi Vendetta",
+              "descripcion": "Kick se enfrenta a un desafío personal / Una venganza italiana",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/16zeWS9Ug9caP_gDWSNgzNDo8jYmMUPyp/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Dulce O Kick / La Montaña Rusa Del Muerto",
+              "descripcion": "Aventuras dulces y peligrosas / Kick enfrenta una montaña rusa extrema",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1gjmFXwcla9eN5IwGZw0W-E6Ti5cG72Kj/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Los Go Karts / Kyle Re-Programado",
+              "descripcion": "Carreras de Go Karts / Kyle sufre cambios inesperados",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/12RDijz4bMKddxWg142R1pcT0SZ8PZfj9/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Ya Te Tengo / La Pijamada",
+              "descripcion": "Kick planea una trampa / Una noche de pijamada extrema",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/16sWhGl8Y8k9KKMShgU7ouxQl9z3a0Wqp/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "El Campeón / Castigados",
+              "descripcion": "Kick busca ser campeón / Problemas con los castigos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1mSIYoBeYzYOcYGzYD379zOkGG6qac114/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "El Cuarto De Brad / Dónde Está Mi Wade",
+              "descripcion": "Aventuras en el cuarto de Brad / Kick busca a Wade",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/10MLwuoCEV7txAipnGtYOHss84XaBUZNb/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "Pacto Entre Hermanos / ¡Shh!",
+              "descripcion": "Los hermanos hacen un pacto / Una misión silenciosa",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1-Uvua8--0tKJynBW_NKlHN6IUF0izHJs/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Una Navidad Con El Primo Kyle / Problemas De Nieve",
+              "descripcion": "Navidad con Kyle / Aventuras en la nieve",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/12iYPHOmhKV30eTo8n0uHfxdpmAbizOIt/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "El Río Holgazán Salvaje / Romeo y El Suplente",
+              "descripcion": "Aventuras en el río / Una historia de amor y suplentes",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1xX1ns_fRjI5I5Kn4OCV_srI7L7dfbq_P/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "No Es Mío / Amor De Tres",
+              "descripcion": "Kick niega su propiedad / Un triángulo amoroso",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1_t5c4eGbnJF_J3GWQI7wMDCLzKIg9_vW/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "Escape Del Ático / Liberen A Gunther",
+              "descripcion": "Kick escapa del ático / Una misión de rescate",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1H-q2EZ29JoQt5JBiRnAPCAvETUJTCt5l/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "Intercambio / Deletrenado",
+              "descripcion": "Un intercambio inesperado / Problemas con el deletreo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1sgydP_lHzjaijDxSBoOKuB9OsW6XN7IF/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "La Elección / El Campamento De Jock Wilder",
+              "descripcion": "Kick participa en una elección / Aventuras en el campamento",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/18Doq0bjaj9zkMSLI2tfJf0vq6MqPHcSQ/preview"
+            },
+            {
+              "numero": 22,
+              "titulo": "Guerra De Basuras / Guardia Vecinal",
+              "descripcion": "Una batalla con la basura / Kick se une a la guardia vecinal",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1XtLuD-jPO51-ckoFsP4MqK6EczfGYdm2/preview"
+            },
+            {
+              "numero": 23,
+              "titulo": "Adiós Guarida, Adiós / Monique Y Yo",
+              "descripcion": "Kick se despide de su guarida / Aventuras con Monique",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1SWNHgQr9IxPG_cl8mRJII5fLKUkrMh_P/preview"
+            },
+            {
+              "numero": 24,
+              "titulo": "Malos Modales En La Mesa / Petrificados",
+              "descripcion": "Problemas en la mesa / Una aventura petrificante",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1V_RV9Q8FYLcHAVpW-kLZyJKkY80F1XB4/preview"
+            },
+            {
+              "numero": 25,
+              "titulo": "La Guerra Y La Paz",
+              "descripcion": "Kick busca la paz en medio del caos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1gXNKzMHRNiD9CXLW9U7oB1L-6ZW5Lorf/preview"
+            },
+            {
+              "numero": 26,
+              "titulo": "El Diario De Brad / Lo Que Cosió La Abuela",
+              "descripcion": "Secretos del diario de Brad / Una aventura con la abuela",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1whjx3f6IhheV8Ir1aNkTToKbS1LLVMwy/preview"
+            },
+            {
+              "numero": 27,
+              "titulo": "Foto Familiar / La Niñera",
+              "descripcion": "Problemas con la foto familiar / Kick y su niñera",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1l1Yk2lpyIZpakm3WQrxM8stUlfGxPkqM/preview"
+            },
+            {
+              "numero": 28,
+              "titulo": "Migajas / Mantén La Calma",
+              "descripcion": "Aventuras con migajas / Kick intenta mantener la calma",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/18QAdsQnWF04K8-ES8J7jPt7fzOB3LXXr/preview"
+            },
+            {
+              "numero": 29,
+              "titulo": "Mouth Es Grande / El Mayor Admirador",
+              "descripcion": "Aventuras con Mouth / Kick conoce a su mayor fan",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1gkdKxhapOEq_tD7gNpCfCMHBjH7Fa0hD/preview"
+            },
+            {
+              "numero": 30,
+              "titulo": "Kyle E. Coyote / Bloqueado / Roqueado",
+              "descripcion": "Kyle regresa / Kick se queda bloqueado / Aventuras en la roca",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Y5ROrguhgNGimbUvFwk_pFV1Zhazahsf/preview"
+            },
+            {
+              "numero": 31,
+              "titulo": "Justicia De Idiotas / Mercado Vikingo",
+              "descripcion": "Kick imparte justicia / Aventuras en el mercado vikingo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1aFVAtBDMJ4AM3vx9EcloUbDFTUFx2VnM/preview"
+            },
+            {
+              "numero": 32,
+              "titulo": "Sólo Quienes Tienen Un Préstamo / Inversión De Rollos",
+              "descripcion": "Problemas con un préstamo / Una inversión arriesgada",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/18RjN7L7AyQ8ZG2uH_pEVWJvPhvSihKoO/preview"
             }
           ]
         }
