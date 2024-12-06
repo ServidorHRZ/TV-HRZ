@@ -561,12 +561,8 @@
                 `;
                 
                 movieCard.addEventListener('click', () => {
-                    if (pelicula.disponible) {
-                        localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
-                        window.location.href = 'movie.html';
-                    } else {
-                        mostrarMensajeNoDisponible();
-                    }
+                    localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
+                    window.location.href = 'movie.html';
                 });
                 
                 movieContainer.appendChild(movieCard);
