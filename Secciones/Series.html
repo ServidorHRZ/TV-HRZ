@@ -393,6 +393,10 @@
             <i class="fas fa-broadcast-tower"></i>
             <span>TV Online</span>
         </a>
+        <a href="Proximos.html" class="nav-item">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Próximos</span>
+        </a>
     </nav>
     <footer>
         <p>&copy; 2024 Tecnologia HRZ. Todos los derechos reservados.</p>
@@ -405,7 +409,7 @@
             fetch('../DataBase/series.json')
                 .then(response => response.json())
                 .then(data => {
-                    todasLasSeries = data.series;
+                    todasLasSeries = data.series.filter(serie => serie.disponible);
                     mostrarSeries(todasLasSeries);
                 })
                 .catch(error => console.error('Error cargando las series:', error));

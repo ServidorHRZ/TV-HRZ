@@ -1,6 +1,33 @@
 {
   "peliculas": [
     {
+      "titulo": "Santa Clausula 1",
+      "disponible": false,
+      "año": 1994,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDp2IR-UpIpOOpvy5g1vDs6AUEIu0NFADqg&s",
+      "enlace": "https://drive.google.com/file/d/1Ck2gXmCgS5X132pdz70pugxWOnmc71Y/preview",
+      "nuevo": true,
+      "descripcion": "Scott Calvin, un padre divorciado, se convierte accidentalmente en Santa Claus después de que el verdadero Santa se cae de su tejado en Nochebuena. Scott debe aceptar su nuevo rol mientras intenta mantener su relación con su hijo."
+    },
+    {
+      "titulo": "Santa Clausula 2",
+      "disponible": false,
+      "año": 2002,
+      "imagen": "https://i5.walmartimages.com/asr/63b8a7bc-d802-49ce-9b19-01eb34711dd9.a69a33ae23a5a5043d5aaaa76d43ca62.jpeg", 
+      "enlace": "https://drive.google.com/file/d/1Dk3gXmCgS5X132pdz70pugxWOnmc71Y/preview",
+      "nuevo": true,
+      "descripcion": "Scott Calvin ha sido Santa Claus durante ocho años, pero ahora debe encontrar una Sra. Claus antes de la próxima Navidad o dejará de ser Santa para siempre."
+    },
+    {
+      "titulo": "Santa Clausula 3",
+      "disponible": false,
+      "año": 2006,
+      "imagen": "https://m.media-amazon.com/images/I/51Qm2xVv3zL._AC_UF1000,1000_QL80_.jpg",
+      "enlace": "https://drive.google.com/file/d/1Ek4gXmCgS5X132pdz70pugxWOnmc71Y/preview", 
+      "nuevo": true,
+      "descripcion": "Santa/Scott Calvin debe enfrentarse a Jack Frost, quien está intentando tomar el control de la Navidad. Mientras tanto, debe lidiar con problemas familiares y mantener la magia navideña viva."
+    },
+    {
       "titulo": "Noche sin paz",
       "disponible": true,
       "año": 2023,

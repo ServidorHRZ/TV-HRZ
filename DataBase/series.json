@@ -123,7 +123,7 @@
       "id": 2,
       "titulo": "The Flash",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Barry Allen es un investigador forense que adquiere super velocidad después de que un rayo lo alcanza durante un accidente en un acelerador de partículas.",
       "imagen": "https://www.themoviedb.org/t/p/original/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg",
@@ -185,7 +185,7 @@
     {
       "id": 3,
       "titulo": "Mr. Robot",
-      "nuevo": true,
+      "nuevo": false,
       "disponible": true,
       "enProceso": true,
       "descripcion": "Un joven programador que trabaja como ingeniero de seguridad informática de día y como hacker vigilante de noche se ve envuelto en una compleja trama de ciberterrorismo.",
@@ -277,7 +277,7 @@
       "id": 4,
       "titulo": "Las Sombrías Aventuras de Billy y Mandy",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Billy y Mandy son dos niños que ganan la amistad de la Muerte (alias Calavera) en una apuesta. Ahora viven aventuras sobrenaturales junto a él, enfrentándose a todo tipo de criaturas y situaciones paranormales.",
       "imagen": "https://image.tmdb.org/t/p/original/gxdTn5UwvriN1EzDSNnWr5AAQN7.jpg",
@@ -350,319 +350,655 @@
               "numero": 9,
               "titulo": "La Fiesta / El Secreto",
               "descripcion": "Una fiesta en el inframundo se sale de control / Mandy descubre un secreto oscuro",
-                      "duracion": "22:00",
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1Age0Nt-ybsDx6xgTV7SJmr0dcwvculV2/preview"
-                    },
-                    {
-                      "numero": 10,
+            },
+            {
+              "numero": 10,
               "titulo": "El Cambio / La Venganza",
               "descripcion": "Billy y Mandy intercambian personalidades / Calavera busca venganza",
-                      "duracion": "22:00",
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1w3ykksu09LJbS-ztl8yLP88vWe3rddDs/preview"
-                    },
-                    {
-                      "numero": 11,
+            },
+            {
+              "numero": 11,
               "titulo": "El Portal / La Competencia",
               "descripcion": "Los chicos descubren un portal misterioso / Una competencia sobrenatural",
-                      "duracion": "22:00",
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1laDYiDd50KGzqIxRajd53CqreIJbIuxf/preview"
-                    },
-                    {
-                      "numero": 12,
+            },
+            {
+              "numero": 12,
               "titulo": "El Hechizo / La Búsqueda",
               "descripcion": "Un hechizo sale mal / Los chicos buscan un artefacto místico",
-                      "duracion": "22:00",
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1FQqlmhl7X57FqHtArn_aR87UIGrl685H/preview"
-                    },
-                    {
-                      "numero": 13,
+            },
+            {
+              "numero": 13,
               "titulo": "El Caos / La Decisión",
               "descripcion": "El caos reina en la ciudad / Mandy debe tomar una decisión importante",
-                      "duracion": "22:00",
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1jVeQCS5wWAG49XLQkA35dGVV1mkKigak/preview"
-                    },
-                    {
-                      "numero": 14,
+            },
+            {
+              "numero": 14,
               "titulo": "La Transformación / El Desafío",
               "descripcion": "Billy sufre una extraña transformación / Un nuevo desafío sobrenatural",
-                      "duracion": "22:00",
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1-x7otQJv1j6TpkyfPlmESdan-mhTrOIu/preview"
-                    },
-                    {
-                      "numero": 15,
+            },
+            {
+              "numero": 15,
               "titulo": "El Misterio / La Revelación",
               "descripcion": "Los chicos resuelven un misterio / Una sorprendente revelación",
-                      "duracion": "22:00",
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1jjaGW_cjwdgrA0I9mdL0ZnOr2TsjSq2p/preview"
-                    },
-                    {
-                      "numero": 16,
+            },
+            {
+              "numero": 16,
               "titulo": "El Final / Nuevo Comienzo",
               "descripcion": "Una aventura llega a su fin / El inicio de una nueva saga",
-                      "duracion": "22:00",
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1BJkVfoMPvkzLF7ewHR84XVQTbZrxs-C7/preview"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 5,
-              "titulo": "Ed, Edd y Eddy",
-              "disponible": false,
-              "nuevo": true,
-              "enProceso": true,
-              "descripcion": "Las aventuras de tres amigos preadolescentes que viven en un callejón suburbano. Ed, Edd (Double D) y Eddy pasan sus días inventando estafas para conseguir dinero y comprar sus adorados caramelos, mientras lidian con los otros niños del vecindario.",
-              "imagen": "https://es.web.img3.acsta.net/r_1280_720/pictures/18/04/25/10/15/5039486.png",
-              "año": 1999,
-              "genero": ["Animación", "Comedia", "Familiar"],
-              "director": "Danny Antonucci",
-              "actores": ["Matt Hill", "Samuel Vincent", "Tony Sampson"],
-              "trailer": "https://www.youtube.com/embed/6KZZQJf8BzM",
-              "temporadas": [
-                {
-                  "numero": 1,
-                  "episodios": [
-                    {
-                      "numero": 1,
-                      "titulo": "El Ed-tocable / Botella de Ed / Un Ed en la Mano",
-                      "descripcion": "Los Eds intentan unirse al club de Kevin / Los chicos buscan botellas para reciclar / Los Eds abren un puesto de la fortuna.",
-                      "duracion": "22:00",
-                      "url": ""
-                    },
-                    {
-                      "numero": 2,
-                      "titulo": "Más de un Ed / Ed y Seekers / Si no puedes con un Ed",
-                      "descripcion": "Double D intenta organizar todo / Los Eds juegan al escondite / Los Eds intentan impresionar a las hermanas Kanker.",
-                      "duracion": "22:00",
-                      "url": ""
-                    }
-                  ]
-                }
-              ]
+      "titulo": "Ed, Edd y Eddy",
+      "disponible": true,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Las aventuras de tres amigos preadolescentes que viven en un callejón suburbano. Ed, Edd (Double D) y Eddy pasan sus días inventando estafas para conseguir dinero y comprar sus adorados caramelos, mientras lidian con los otros niños del vecindario.",
+      "imagen": "https://es.web.img3.acsta.net/r_1280_720/pictures/18/04/25/10/15/5039486.png",
+      "año": 1999,
+      "genero": ["Animación", "Comedia", "Familiar"],
+      "director": "Danny Antonucci",
+      "actores": ["Matt Hill", "Samuel Vincent", "Tony Sampson"],
+      "trailer": "https://www.youtube.com/embed/6KZZQJf8BzM",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "El Ed-tocable / Botella de Ed / Un Ed en la Mano",
+              "descripcion": "Los Eds intentan unirse al club de Kevin / Los chicos buscan botellas para reciclar / Los Eds abren un puesto de la fortuna",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1wehU8soUrNsLU_YfThlk7zJku6P3jHxS/preview"
             },
             {
+              "numero": 2,
+              "titulo": "Más de un Ed / Ed y Seekers / Si no puedes con un Ed", 
+              "descripcion": "Double D intenta organizar todo / Los Eds juegan al escondite / Los Eds intentan impresionar a las hermanas Kanker",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1AYdNhWHcne7iSEq07k-iC5zUapW4yEHQ/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Ed en el Cine / Ed está Servido / Un Ed en el Arbusto",
+              "descripcion": "Los Eds hacen su propia película / Los Eds abren un restaurante / Los Eds se pierden en el bosque",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/16_VhZMBbVBjv9Gmc6F8CSv61Y6K5a4PU/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Risa y Ed / Ed en las Nubes / Ed Marca Registrada",
+              "descripcion": "Los Eds montan un show de comedia / Los Eds construyen un avión / Los Eds crean su propia marca",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Sb3c2MYJEC-VC8qbux11PKVthGsrl8Qv/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Ed y el Gran Show / Ed al Cuadrado / Ed al Rescate",
+              "descripcion": "Los Eds organizan un espectáculo / Double D clona a Ed / Los Eds salvan el vecindario",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/18m6CPxrtxdj9seXjclE9__rJ4CBQawZ_/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Ed va a la Escuela / Ed el Inventor / Ed el Héroe",
+              "descripcion": "Los Eds tienen problemas en la escuela / Double D inventa algo nuevo / Ed se convierte en héroe",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1VuhMoQVc29nU0bTlrs7LzaycPm5CO5KO/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Ed el Artista / Ed el Detective / Ed el Deportista",
+              "descripcion": "Los Eds hacen arte / Los Eds resuelven un misterio / Los Eds juegan deportes",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Cj-_O4Sv168X69WTyisBMDdYeCieHSjj/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Ed en la Luna / Ed el Mago / Ed el Cocinero",
+              "descripcion": "Los Eds viajan al espacio / Los Eds hacen magia / Los Eds preparan comida",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1WXPCWNo5kB79bSMQyRrYd3BzowOSvQTy/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Ed el Granjero / Ed el Pirata / Ed el Científico",
+              "descripcion": "Los Eds trabajan en una granja / Los Eds buscan tesoros / Los Eds hacen experimentos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1vhTuK0QGqzm0iNnid0oiW3q4JOqlvlW0/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Ed el Músico / Ed el Constructor / Ed el Poeta",
+              "descripcion": "Los Eds forman una banda / Los Eds construyen una casa / Los Eds escriben poesía",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1NPUYz221uBxMzX4jH7ggrUdrJIXPE62A/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Ed el Explorador / Ed el Fotógrafo / Ed el Jardinero",
+              "descripcion": "Los Eds exploran lugares nuevos / Los Eds toman fotos / Los Eds cultivan un jardín",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/18sDrP2PypNzi1DMypVCbFUCQm2c6Tnlp/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Ed el Veterinario / Ed el Pintor / Ed el Chef",
+              "descripcion": "Los Eds cuidan animales / Los Eds pintan cuadros / Los Eds cocinan platillos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1EUwtp3mZ-p8th2AyeHl-orXm-x3r4zQg/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Ed el Bombero / Ed el Policía / Ed el Doctor",
+              "descripcion": "Los Eds apagan un incendio / Los Eds resuelven crímenes / Los Eds curan enfermos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1-Jk5bGI4GJbEkmleT1-zv7kB1C8MgMYE/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "Ed el Piloto / Ed el Capitán / Ed el Astronauta",
+              "descripcion": "Los Eds vuelan un avión / Los Eds navegan un barco / Los Eds viajan al espacio",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1l2c7EL5xnPY01LCkvZuF1GNe-3oYKkXu/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "Ed el Monstruo / Ed el Fantasma / Ed el Vampiro",
+              "descripcion": "Los Eds asustan al vecindario / Los Eds cazan fantasmas / Los Eds se convierten en vampiros",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1JL2_tjKpQ20wnVIT58UArkT_qQnYAVD3/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Ed el Rey / Ed el Caballero / Ed el Príncipe",
+              "descripcion": "Los Eds gobiernan el vecindario / Los Eds luchan en torneos / Los Eds buscan princesas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/12pxqZWHMiOENJxjbOzmvJGLUcA7D63I4/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "Ed el Ninja / Ed el Samurai / Ed el Guerrero",
+              "descripcion": "Los Eds practican artes marciales / Los Eds aprenden el camino del samurai / Los Eds entrenan para ser guerreros",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1s26o79LEf1ftpinTdxxU-KEAU9pfZjN7/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "Ed el Vikingo / Ed el Pirata / Ed el Explorador",
+              "descripcion": "Los Eds navegan los mares / Los Eds buscan tesoros / Los Eds exploran tierras lejanas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1UYNo-0jXHegIlTeNnaCpKzr2MH_x2GFT/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "Ed el Mago / Ed el Brujo / Ed el Hechicero",
+              "descripcion": "Los Eds aprenden magia / Los Eds hacen pociones / Los Eds lanzan hechizos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1OOJmkLMDh-iVQCgYbURu_Nib5QFZEibB/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "Ed el Robot / Ed el Cyborg / Ed el Androide",
+              "descripcion": "Los Eds construyen robots / Los Eds se convierten en cyborgs / Los Eds crean androides",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ERUkp5Npkz-f7bHVZ-9XjPaGRJphcTwm/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "Ed el Superhéroe / Ed el Villano / Ed el Antihéroe",
+              "descripcion": "Los Eds salvan el día / Los Eds causan problemas / Los Eds hacen justicia a su manera",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ctRYtSznEKwX-yso4x6u2D0K1JUXJ3-p/preview"
+            },
+            {
+              "numero": 22,
+              "titulo": "Ed el Alien / Ed el Mutante / Ed el Extraterrestre",
+              "descripcion": "Los Eds encuentran vida extraterrestre / Los Eds sufren mutaciones / Los Eds viajan a otros planetas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1F28tBWwIqlwaXLLc1zUn7oDW_QC1uf30/preview"
+            },
+            {
+              "numero": 23,
+              "titulo": "Ed el Vaquero / Ed el Sheriff / Ed el Forajido",
+              "descripcion": "Los Eds montan caballos / Los Eds mantienen la ley / Los Eds causan problemas en el viejo oeste",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1e7ZeP47BLPmeJEE7ZfziWwnot_aXWaLa/preview"
+            },
+            {
+              "numero": 24,
+              "titulo": "Ed el Espía / Ed el Agente / Ed el Detective",
+              "descripcion": "Los Eds realizan misiones secretas / Los Eds trabajan encubierto / Los Eds resuelven casos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1XGn5GC8juk9PaKlvEAJe0y0AxgdvxkWm/preview"
+            },
+            {
+              "numero": 25,
+              "titulo": "Ed el Deportista / Ed el Campeón / Ed el Atleta",
+              "descripcion": "Los Eds practican deportes / Los Eds ganan competencias / Los Eds entrenan duro",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1KhNmvgxHyQokHgKc9ZWNjUcluorqsCiH/preview"
+            },
+            {
+              "numero": 26,
+              "titulo": "Ed el Aventurero / Ed el Explorador / Ed el Descubridor",
+              "descripcion": "Los Eds viven aventuras / Los Eds exploran lugares nuevos / Los Eds hacen descubrimientos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1IQpySeMqHPEWHtyVrJnH85rFclcoeAxO/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 6,
+      "titulo": "Johnny Bravo",
+      "disponible": true,
+      "nuevo": false,
+      "enProceso": true,
+      "descripcion": "Johnny Bravo es un joven musculoso y narcisista que vive con su madre y constantemente intenta conquistar mujeres, aunque siempre fracasa. Sus aventuras están llenas de humor y situaciones absurdas mientras intenta impresionar a las chicas con sus movimientos de karate y su peculiar personalidad.",
+      "imagen": "https://pics.filmaffinity.com/johnny_bravo-502318534-large.jpg",
+      "año": 1997,
+      "genero": ["Animación", "Comedia", "Familiar"],
+      "director": "Van Partible",
+      "actores": ["Jeff Bennett", "Brenda Vaccaro", "Mae Whitman"],
+      "trailer": "https://drive.google.com/file/d/1Kzs3WckpuFRHxtY7BNu7nn2pR63srIAs/preview",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
               "titulo": "Johnny Bravo",
-              "disponible": true,
-              "nuevo": true,
-              "enProceso": true,
-              "descripcion": "Johnny Bravo es un joven musculoso y narcisista que vive con su madre y constantemente intenta conquistar mujeres, aunque siempre fracasa. Sus aventuras están llenas de humor y situaciones absurdas mientras intenta impresionar a las chicas con sus movimientos de karate y su peculiar personalidad.",
-              "imagen": "https://pics.filmaffinity.com/johnny_bravo-502318534-large.jpg",
-              "año": 1997,
-              "genero": ["Animación", "Comedia", "Familiar"],
-              "director": "Van Partible",
-              "actores": ["Jeff Bennett", "Brenda Vaccaro", "Mae Whitman"],
-              "trailer": "https://drive.google.com/file/d/1Kzs3WckpuFRHxtY7BNu7nn2pR63srIAs/preview",
-              "temporadas": [
-                {
-                  "numero": 1,
-                  "episodios": [
-                    {
-                      "numero": 1,
-                      "titulo": "Johnny Bravo",
-                      "descripcion": "El episodio original de Johnny Bravo.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/1HMUwoL0WhQ1N3goXHalYbLqbXscgEgdE/preview"
-                    },
-                    {
-                      "numero": 2,
-                      "titulo": "El Candidato",
-                      "descripcion": "Johnny se involucra en política local.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/1LMBKaPsN_3yp_--5q9982upe_P4QSFMg/preview"
-                    },
-                    {
-                      "numero": 3,
-                      "titulo": "Un Macho Sensible",
-                      "descripcion": "Johnny intenta mostrar su lado más sensible.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/1Z7EHvB3SBBy-HUTyevUrigrk49tHin0x/preview"
-                    },
-                    {
-                      "numero": 4,
-                      "titulo": "Bravo Dooby-Doo",
-                      "descripcion": "Johnny tiene un encuentro con el equipo de Scooby-Doo.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/1xTsKe81GbUOkTVeHrqChLrUkC-J-M2I7/preview"
-                    },
-                    {
-                      "numero": 5,
-                      "titulo": "Cita con un Antílope",
-                      "descripcion": "Johnny tiene una cita inesperada con un antílope.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/1BrDgzHpUZVPfR0F3DLIuJjLrK6yyGvGp/preview"
-                    },
-                    {
-                      "numero": 6,
-                      "titulo": "A-ha Toro",
-                      "descripcion": "Johnny se enfrenta a un toro.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/1SOdO4HOFB4kvlklLZJH5R2S9lzBPNbN5/preview"
-                    },
-                    {
-                      "numero": 7,
-                      "titulo": "Crisis de Galletas",
-                      "descripcion": "Johnny tiene problemas con las galletas.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/1xgoXx99E3L27rfIhiRrk4o5HHez10Hzo/preview"
-                    },
-                    {
-                      "numero": 8,
-                      "titulo": "Mi Bello Tonto",
-                      "descripcion": "Las aventuras de Johnny como un bello tonto.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/1iB9ntIrG5dhCcwahTMySqsCEq8D7vq1b/preview"
-                    },
-                    {
-                      "numero": 9,
-                      "titulo": "Mi Amigo Blarney",
-                      "descripcion": "Johnny hace un nuevo amigo llamado Blarney.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/11EK-Yc5ct6u8gBsOkYd-l3UtYpsgSRTe/preview"
-                    },
-                    {
-                      "numero": 10,
-                      "titulo": "Johnny Legionario",
-                      "descripcion": "Las aventuras de Johnny como legionario.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/1Htn2WH_eznecUri-m1Fqcxc-XvkTYGCR/preview"
-                    },
-                    {
-                      "numero": 11,
-                      "titulo": "Johnny Conoce a Farrah Fawcett",
-                      "descripcion": "Johnny intenta impresionar a la famosa actriz Farrah Fawcett.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/141RTgdHU75-zFqsVoyACjeWI2pmYS62J/preview"
-                    },
-                    {
-                      "numero": 12,
-                      "titulo": "El hombre que gritaba Payaso",
-                      "descripcion": "Johnny se encuentra con un payaso misterioso.",
-                      "duracion": "07:00",
-                      "url": "https://drive.google.com/file/d/18fMbqHpN8j6wlpCK5gmxYV0Waw1Vin3J/preview"
-                    }
-                  ]
-                }
-              ]
+              "descripcion": "El episodio original de Johnny Bravo.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1HMUwoL0WhQ1N3goXHalYbLqbXscgEgdE/preview"
             },
             {
+              "numero": 2,
+              "titulo": "El Candidato",
+              "descripcion": "Johnny se involucra en política local.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1LMBKaPsN_3yp_--5q9982upe_P4QSFMg/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Un Macho Sensible",
+              "descripcion": "Johnny intenta mostrar su lado más sensible.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1Z7EHvB3SBBy-HUTyevUrigrk49tHin0x/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Bravo Dooby-Doo",
+              "descripcion": "Johnny tiene un encuentro con el equipo de Scooby-Doo.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1xTsKe81GbUOkTVeHrqChLrUkC-J-M2I7/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Cita con un Antílope",
+              "descripcion": "Johnny tiene una cita inesperada con un antílope.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1BrDgzHpUZVPfR0F3DLIuJjLrK6yyGvGp/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "A-ha Toro",
+              "descripcion": "Johnny se enfrenta a un toro.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1SOdO4HOFB4kvlklLZJH5R2S9lzBPNbN5/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Crisis de Galletas",
+              "descripcion": "Johnny tiene problemas con las galletas.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1xgoXx99E3L27rfIhiRrk4o5HHez10Hzo/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Mi Bello Tonto",
+              "descripcion": "Las aventuras de Johnny como un bello tonto.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1iB9ntIrG5dhCcwahTMySqsCEq8D7vq1b/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Mi Amigo Blarney",
+              "descripcion": "Johnny hace un nuevo amigo llamado Blarney.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/11EK-Yc5ct6u8gBsOkYd-l3UtYpsgSRTe/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Johnny Legionario",
+              "descripcion": "Las aventuras de Johnny como legionario.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/1Htn2WH_eznecUri-m1Fqcxc-XvkTYGCR/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Johnny Conoce a Farrah Fawcett",
+              "descripcion": "Johnny intenta impresionar a la famosa actriz Farrah Fawcett.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/141RTgdHU75-zFqsVoyACjeWI2pmYS62J/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "El hombre que gritaba Payaso",
+              "descripcion": "Johnny se encuentra con un payaso misterioso.",
+              "duracion": "07:00",
+              "url": "https://drive.google.com/file/d/18fMbqHpN8j6wlpCK5gmxYV0Waw1Vin3J/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 7,
-              "titulo": "Johnny Test",
-              "disponible": true,
-              "nuevo": true,
-              "enProceso": true,
-              "descripcion": "Johnny Test es un niño de 11 años que sirve como sujeto de prueba para los experimentos científicos de sus hermanas gemelas superdotadas, Susan y Mary. Junto con su perro parlante Dukey, Johnny vive increíbles aventuras mientras prueba los inventos que frecuentemente salen mal.",
-              "imagen": "https://image.tmdb.org/t/p/original/cGceNrHpUl3utUzE502xSY8l9ST.jpg",
-              "año": 2005,
-              "genero": ["Animación", "Comedia", "Ciencia ficción"],
-              "director": "Scott Fellows",
-              "actores": ["James Arnold Taylor", "Louis Chirillo", "Maryke Hendrikse"],
-              "trailer": "https://www.youtube.com/embed/4Iqe9-zPDQY",
-              "temporadas": [
-                {
-                  "numero": 1,
-                  "episodios": [
-                    {
-                      "numero": 1,
-                      "titulo": "Johnny X / Johnny y el Mundo de los Perros",
-                      "descripcion": "Johnny obtiene superpoderes / Johnny entra en un mundo donde los perros dominan",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1E-misCXYpG_pac3VglMwMm2xWnWlmyyc/preview"
-                    },
-                    {
-                      "numero": 2,
-                      "titulo": "Johnny contra Bling-Bling / Johnny Prueba las Píldoras",
-                      "descripcion": "Johnny se enfrenta a Eugene / Johnny prueba unas píldoras experimentales",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1Ow1vDWOt7EZl3oGCLvft0YxtwGprXUEn/preview"
-                    },
-                    {
-                      "numero": 3,
-                      "titulo": "Johnny Imposible / Johnny vs El Moño",
-                      "descripcion": "Johnny intenta lo imposible / Johnny se enfrenta a un moño malvado",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1ZlCeXcs2JY5_FXBjAgVQ5q84n_xnUQcl/preview"
-                    },
-                    {
-                      "numero": 4,
-                      "titulo": "Johnny Hollywood / Johnny y los Gemelos",
-                      "descripcion": "Johnny se vuelve una estrella / Johnny lidia con gemelos problemáticos",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1FxqJitjijGpxHSZItbwKvc_GoOpSHTj0/preview"
-                    },
-                    {
-                      "numero": 5,
-                      "titulo": "Johnny y el Dragón / Johnny y la Máquina del Tiempo",
-                      "descripcion": "Johnny se encuentra con un dragón / Johnny viaja en el tiempo",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1VAOO7abvHlmqvTuBNc5KMLuoU7yG_EYJ/preview"
-                    },
-                    {
-                      "numero": 6,
-                      "titulo": "Johnny y el Bebé / Johnny y la Fábrica de Dulces",
-                      "descripcion": "Johnny cuida a un bebé / Johnny visita una fábrica de dulces",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1tibGs1dKO8nuplkdhCQQXGSnW0I4z-N3/preview"
-                    },
-                    {
-                      "numero": 7,
-                      "titulo": "Johnny Súper Inteligente / Johnny y los Extraterrestres",
-                      "descripcion": "Johnny se vuelve un genio / Johnny se encuentra con alienígenas",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1wklET8ZRtYLW7Vlrg5f_z0fvjDW-W5Ge/preview"
-                    },
-                    {
-                      "numero": 8,
-                      "titulo": "Johnny y el Campamento / Johnny y el Concurso",
-                      "descripcion": "Johnny va de campamento / Johnny participa en un concurso",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/15sH1CHsS9XU9dQ-zWkgYn2xM47FlLw9D/preview"
-                    },
-                    {
-                      "numero": 9,
-                      "titulo": "Johnny y el Parque / Johnny y la Casa Embrujada",
-                      "descripcion": "Johnny salva el parque / Johnny explora una casa embrujada",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1D2emLmikgPS7JPyXbk7sGeCNMuIV6B_J/preview"
-                    },
-                    {
-                      "numero": 10,
-                      "titulo": "Johnny y el Robot / Johnny y la Competencia",
-                      "descripcion": "Johnny construye un robot / Johnny compite en un torneo",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1uayXA8U0HiqBHH-XG8BbfV8n64Sv491b/preview"
-                    },
-                    {
-                      "numero": 11,
-                      "titulo": "Johnny y el Videojuego / Johnny y el Superhéroe",
-                      "descripcion": "Johnny queda atrapado en un videojuego / Johnny conoce a su superhéroe favorito",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1Hzr_XcjKOf2WbfuU-XMiDG1en0XqyQFa/preview"
-                    },
-                    {
-                      "numero": 12,
-                      "titulo": "Johnny y el Circo / Johnny y el Dinosaurio",
-                      "descripcion": "Johnny se une al circo / Johnny encuentra un dinosaurio",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1fZcxSS5Dk7RqdQAH4x0brWgYf4QGNLL6/preview"
-                    },
-                    {
-                      "numero": 13,
-                      "titulo": "Johnny y la Nave Espacial / Johnny y el Tesoro",
-                      "descripcion": "Johnny viaja al espacio / Johnny busca un tesoro perdido",
-                      "duracion": "22:00",
-                      "url": "https://drive.google.com/file/d/1JBpb2889KYOpHu7L422s8BraXjzVNm23/preview"
-                    }
-                  ]
-                }
-              ]
+      "titulo": "El Laboratorio de Dexter",
+      "disponible": true,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Dexter es un niño genio que tiene un laboratorio secreto en su habitación donde realiza experimentos científicos. Su hermana mayor Dee Dee constantemente interfiere con sus inventos, causando caos y destrucción.",
+      "imagen": "https://pics.filmaffinity.com/dexter_s_laboratory-784708242-large.jpg",
+      "año": 1996,
+      "genero": ["Animación", "Comedia", "Ciencia ficción"],
+      "director": "Genndy Tartakovsky",
+      "actores": ["Christine Cavanaugh", "Allison Moore", "Kath Soucie"],
+      "trailer": "https://www.youtube.com/embed/QbZxvwki_rA",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "DeeDeemensional / Magmanimus / Maternal Combat",
+              "descripcion": "Dee Dee usa un invento de Dexter para viajar entre dimensiones / Dexter crea un robot gigante / Dexter y Dee Dee compiten por el amor de su madre",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1FU7aaprisq3gD4-aBlov2vovAQ5YDuKl/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Dexter Dodgeball / Rasslor / Dexter's Assistant",
+              "descripcion": "Dexter enfrenta el dodgeball / Un luchador intergaláctico desafía a Dexter / Dexter busca un asistente de laboratorio",
+              "duracion": "22:00", 
+              "url": "https://drive.google.com/file/d/1DayZiu0e_JxvE5v1K4V3suMpPNFM8Hga/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Dexter's Rival / Simion / Old Man Dexter",
+              "descripcion": "Dexter conoce a un rival científico / Un mono superinteligente causa problemas / Dexter envejece accidentalmente",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ZQVY9jRO269eHeNcqv8KJd7O7QS562DF/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Double Trouble / Changes / Jurassic Pooch",
+              "descripcion": "Dexter crea un clon / Dee Dee experimenta cambios / Dexter convierte a su perro en un dinosaurio",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Y85MXY8DDgNdrwSFy6DA-egjY4Bvk-Ym/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Dee Dee's Room / Huntor / The Big Sister",
+              "descripcion": "Dexter explora el cuarto de Dee Dee / Un cazador persigue a Dexter / Dee Dee se convierte en la hermana mayor",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/14dsOoiP88Y8ugwp5R51cQPRN0RbK55NB/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Star Spangled Sidekicks / TV Super Pals / Game Over",
+              "descripcion": "Dexter y Dee Dee se convierten en superhéroes / Aventuras en la TV / Dexter queda atrapado en un videojuego",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Q_bfr2feHd4Kdo5AlCUex3cgWPziRQTV/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Babysitter Blues / Valhallen's Room / Dream Machine",
+              "descripcion": "Dexter tiene una niñera / Explorando el cuarto de Valhallen / Dexter inventa una máquina de sueños",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1lmeRrs2p_4xAnnyKxMYePKhKQx2tWPyE/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Dimwit Dexter / Dee Dee's Rival / Monstory",
+              "descripcion": "Dexter pierde su inteligencia / Dee Dee encuentra una rival / Historia de monstruos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/16lmRJkKw8y98HFtQgARSMpGYhtf_QGCA/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Beard to Be Feared / Quackor / Ant Pants",
+              "descripcion": "Dexter se deja crecer la barba / El pato de Dexter cobra vida / Aventuras con hormigas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/188U0j7QCQykwEnw4QNP-qWqCluCPSczi/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Mom and Jerry / Chubby Cheese / That Crazy Robot",
+              "descripcion": "Mamá conoce a Jerry / Aventuras en Chubby Cheese / Un robot se vuelve loco",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1CpOtEgpD5-Z9uWOeWfImhMSfCRjJgz6_/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Dee Dee Locks / Boogie Shoes / Space Case",
+              "descripcion": "Dee Dee se encierra / Zapatos de baile mágicos / Aventura espacial",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1WkbjerTJ0-mSzFOkLBZf_KZpm3vYpsrS/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Dexter's Debt / Dexter vs Santa / Critical Gas",
+              "descripcion": "Dexter debe dinero / Dexter se enfrenta a Santa / Problemas con gas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1CKhw8__kburHRiTbfSRFEtwIaVpKZMGk/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Old Man Dexter / Morning Stretch / Dexter's Lab",
+              "descripcion": "Dexter envejece / Ejercicios matutinos / Un día en el laboratorio",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1N1l2n-Gr7LX4BrXV0Oog9aCIid6bDvn6/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "Ocean Commotion / Quiet Riot / Dexter's Helper",
+              "descripcion": "Aventuras en el océano / Ruido en el laboratorio / Dexter consigue ayuda",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1MMgGhNQjZ0FjFt8Xm1RK3v7J5pVM58X8/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "Tag Team / Dee Dee's Dance / Lab of the Lost",
+              "descripcion": "Dexter y Dee Dee hacen equipo / El baile de Dee Dee / Laboratorio perdido",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1mcQX-WDtPZqSJrY7BQ4PWvUkXYklQnkl/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Dollhouse Drama / Krunk's Date / The Big Cheese",
+              "descripcion": "Drama en la casa de muñecas / La cita de Krunk / El gran queso",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Cqjnraov5f5670eimxgtP4Wg5vOrby-m/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "Way of the Dee Dee / Say Uncle / Tribe Called Girl",
+              "descripcion": "El camino de Dee Dee / El tío visita / La tribu de chicas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1oWd9agz2l9Y77Gu_TJlzoa_EsTltYa_z/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "Laboratorio Submarino / Dexter al Rescate",
+              "descripcion": "Dexter construye un laboratorio bajo el agua / Dexter debe rescatar a Dee Dee de un experimento fallido",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1BJkVfoMPvkzLF7ewHR84XVQTbZrxs-C7/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "El Concurso de Ciencias / El Robot Rebelde",
+              "descripcion": "Dexter participa en una feria de ciencias / Un robot se sale de control",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1jjaGW_cjwdgrA0I9mdL0ZnOr2TsjSq2p/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "La Máquina del Tiempo / El Día de Campo",
+              "descripcion": "Dexter viaja en el tiempo / La familia va de día de campo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/10BTFJE9TOz0S77dZ1Wzpetn6vI37VnWq/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "El Gran Final / Un Nuevo Comienzo",
+              "descripcion": "Dexter enfrenta su mayor desafío / Se prepara para nuevas aventuras",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1PgRlw55Eq5LIDT8V_IWto9kCUW16KBsa/preview"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 8,
+      "titulo": "Johnny Test",
+      "disponible": true,
+      "nuevo": false,
+      "enProceso": true,
+      "descripcion": "Johnny Test es un niño de 11 años que sirve como sujeto de prueba para los experimentos científicos de sus hermanas gemelas superdotadas, Susan y Mary. Junto con su perro parlante Dukey, Johnny vive increíbles aventuras mientras prueba los inventos que frecuentemente salen mal.",
+      "imagen": "https://image.tmdb.org/t/p/original/cGceNrHpUl3utUzE502xSY8l9ST.jpg",
+      "año": 2005,
+      "genero": ["Animación", "Comedia", "Ciencia ficción"],
+      "director": "Scott Fellows",
+      "actores": ["James Arnold Taylor", "Louis Chirillo", "Maryke Hendrikse"],
+      "trailer": "https://www.youtube.com/embed/4Iqe9-zPDQY",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Johnny X / Johnny y el Mundo de los Perros",
+              "descripcion": "Johnny obtiene superpoderes / Johnny entra en un mundo donde los perros dominan",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1E-misCXYpG_pac3VglMwMm2xWnWlmyyc/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Johnny contra Bling-Bling / Johnny Prueba las Píldoras",
+              "descripcion": "Johnny se enfrenta a Eugene / Johnny prueba unas píldoras experimentales",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Ow1vDWOt7EZl3oGCLvft0YxtwGprXUEn/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Johnny Imposible / Johnny vs El Moño",
+              "descripcion": "Johnny intenta lo imposible / Johnny se enfrenta a un moño malvado",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ZlCeXcs2JY5_FXBjAgVQ5q84n_xnUQcl/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Johnny Hollywood / Johnny y los Gemelos",
+              "descripcion": "Johnny se vuelve una estrella / Johnny lidia con gemelos problemáticos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1FxqJitjijGpxHSZItbwKvc_GoOpSHTj0/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Johnny y el Dragón / Johnny y la Máquina del Tiempo",
+              "descripcion": "Johnny se encuentra con un dragón / Johnny viaja en el tiempo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1VAOO7abvHlmqvTuBNc5KMLuoU7yG_EYJ/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Johnny y el Bebé / Johnny y la Fábrica de Dulces",
+              "descripcion": "Johnny cuida a un bebé / Johnny visita una fábrica de dulces",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1tibGs1dKO8nuplkdhCQQXGSnW0I4z-N3/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Johnny Súper Inteligente / Johnny y los Extraterrestres",
+              "descripcion": "Johnny se vuelve un genio / Johnny se encuentra con alienígenas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1wklET8ZRtYLW7Vlrg5f_z0fvjDW-W5Ge/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Johnny y el Campamento / Johnny y el Concurso",
+              "descripcion": "Johnny va de campamento / Johnny participa en un concurso",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/15sH1CHsS9XU9dQ-zWkgYn2xM47FlLw9D/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Johnny y el Parque / Johnny y la Casa Embrujada",
+              "descripcion": "Johnny salva el parque / Johnny explora una casa embrujada",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1D2emLmikgPS7JPyXbk7sGeCNMuIV6B_J/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Johnny y el Robot / Johnny y la Competencia",
+              "descripcion": "Johnny construye un robot / Johnny compite en un torneo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1uayXA8U0HiqBHH-XG8BbfV8n64Sv491b/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Johnny y el Videojuego / Johnny y el Superhéroe",
+              "descripcion": "Johnny queda atrapado en un videojuego / Johnny conoce a su superhéroe favorito",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Hzr_XcjKOf2WbfuU-XMiDG1en0XqyQFa/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Johnny y el Circo / Johnny y el Dinosaurio",
+              "descripcion": "Johnny se une al circo / Johnny encuentra un dinosaurio",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1fZcxSS5Dk7RqdQAH4x0brWgYf4QGNLL6/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Johnny y la Nave Espacial / Johnny y el Tesoro",
+              "descripcion": "Johnny viaja al espacio / Johnny busca un tesoro perdido",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1JBpb2889KYOpHu7L422s8BraXjzVNm23/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
       "titulo": "Un Show Más",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Las aventuras de Mordecai y Rigby, dos amigos que trabajan como jardineros en un parque y harán todo lo posible para evitar trabajar.",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kpQd8v4PFD1EsIAoW4gGx3ModNXFjQoJPA&s",
@@ -771,10 +1107,218 @@
       ]
     },
     {
-      "id": 9,
+      "id": 10,
+      "titulo": "Ben 10",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": false,
+      "descripcion": "Ben Tennyson descubre un misterioso dispositivo alienígena llamado Omnitrix durante sus vacaciones de verano. Este dispositivo le permite transformarse en diferentes alienígenas, cada uno con poderes únicos, que utiliza para combatir el mal junto a su prima Gwen y su abuelo Max.",
+      "imagen": "https://image.tmdb.org/t/p/original/qVBQynX6J9gtYWVwqbfNKVe0kYU.jpg",
+      "año": 2005,
+      "genero": ["Animación", "Acción", "Ciencia ficción"],
+      "director": "Man of Action",
+      "actores": ["Tara Strong", "Paul Eiding", "Meagan Smith"],
+      "trailer": "https://www.youtube.com/embed/97dwYLnbW4E",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Y Fueron 10",
+              "descripcion": "Ben encuentra el Omnitrix durante sus vacaciones de verano y obtiene la capacidad de transformarse en diferentes alienígenas.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1AUi-Tqtxq_SAgiSa5c4JAMX_q_yFGUi7/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Washington A.C.",
+              "descripcion": "Ben debe detener a un villano que planea congelar Washington D.C.",
+              "duracion": "22:00", 
+              "url": "https://drive.google.com/file/d/1LG1mJ9r_VefUuBJJ8ZaJ-4DTQQVYL1Se/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "El Krakken",
+              "descripcion": "Ben investiga avistamientos de una misteriosa criatura en un lago.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1QbeGP17Na3obCbZjwUILo-f6j_ESyIdu/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Efectos Permanentes",
+              "descripcion": "Ben queda atrapado en forma alienígena y debe encontrar una solución.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1RJMWZVpHb3LCr9fg3gP8m1gOK4wzkvYe/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Cazado",
+              "descripcion": "Un cazador intergaláctico persigue a Ben para coleccionar el Omnitrix.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Ug2FJ0Y9Sb1wa1t6lSVcq1bu66h6fZZO/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Turista Espacial",
+              "descripcion": "Ben y su familia se encuentran con un turista alienígena problemático.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1QnFQ_290KJE6nNHy7eg2IuFJbEffgmTR/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Kevin 11",
+              "descripcion": "Ben conoce a Kevin, un chico con la habilidad de absorber energía.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/12JVXGNvN3-2GFRLPiI-37ebjNQUqhMQI/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "La Alianza",
+              "descripcion": "Vilgax forma una alianza con otros villanos para capturar a Ben.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/17M9qcJabrOzzAwuEHlzjmWsNwcVcWc3J/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "El Último Reír",
+              "descripcion": "Ben se enfrenta a un payaso que no es lo que parece.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1DVl9B1tJQG4cf9R0IUx_g8B9o7JM7H3V/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Suerte Oxidada",
+              "descripcion": "Ben debe detener a un robot oxidado que amenaza una ciudad.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/17nJz2bAOvwAgqh57B-W44mtKkdstC6ws/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Un Pequeño Problema",
+              "descripcion": "Ben queda atrapado en forma diminuta y debe sobrevivir.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1M2fgBRE8azC9zdDZ6GJBouWLgLaio9HI/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Efectos Secundarios",
+              "descripcion": "El Omnitrix comienza a causar efectos secundarios en Ben.",
+              "duracion": "22:00", 
+              "url": "https://drive.google.com/file/d/1ZFly95job9FI_H2yKKqD5IiGrDdyfk7P/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Secretos",
+              "descripcion": "Vilgax revela secretos sobre el pasado del abuelo Max.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1qOeDsSY8L9FmXv1ifwf2TR51DLVptUWJ/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "titulo": "Ben 10: Fuerza Alienígena",
+      "disponible": false,
+      "nuevo": true,
+      "descripcion": "Cinco años después de la serie original, Ben Tennyson vuelve a usar el Omnitrix para salvar al universo con nuevos alienígenas.",
+      "imagen": "https://preview.redd.it/p9k9u5uusruc1.jpeg?auto=webp&s=4c75279be2d367688e5dc6c59482afd5a63c8a99",
+      "año": 2008,
+      "genero": ["Animación", "Acción", "Ciencia ficción"],
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Ben 10 Regresa",
+              "descripcion": "Ben vuelve a usar el Omnitrix después de 5 años.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/sample_url1/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12, 
+      "titulo": "Ben 10: Supremacía Alienígena",
+      "disponible": false,
+      "nuevo": true,
+      "descripcion": "Ben debe enfrentar nuevas amenazas con la versión mejorada del Ultimatrix.",
+      "imagen": "https://image.tmdb.org/t/p/original/lcpZhrGSQyCr7VmzeuUt3kEuuQI.jpg",
+      "año": 2010,
+      "genero": ["Animación", "Acción", "Ciencia ficción"],
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Fama",
+              "descripcion": "Ben lidia con su nueva fama como héroe público.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/sample_url2/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "titulo": "Ben 10: Omniverse",
+      "disponible": false,
+      "nuevo": true,
+      "descripcion": "Ben se asocia con Rook y enfrenta nuevas amenazas mientras descubre secretos del Omnitrix.",
+      "imagen": "https://i.pinimg.com/474x/80/56/0b/80560b2dd962dd04ef9e7479a2595a2d.jpg",
+      "año": 2012,
+      "genero": ["Animación", "Acción", "Ciencia ficción"],
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "La Más Grande Historia Jamás Contada",
+              "descripcion": "Ben conoce a su nuevo compañero Rook.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/sample_url3/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "titulo": "Ben 10 Reboot",
+      "disponible": false,
+      "nuevo": true,
+      "descripcion": "Un reinicio de la serie original con un Ben de 10 años descubriendo el Omnitrix por primera vez.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP_4us7sLg0_ITbXVLnn59bWuLArbb_KKyTQ&s",
+      "año": 2016,
+      "genero": ["Animación", "Acción", "Ciencia ficción"],
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Preparados Para el Despegue",
+              "descripcion": "Ben encuentra el Omnitrix durante sus vacaciones de verano.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/sample_url4/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
       "titulo": "Kick Buttowski",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": false,
       "descripcion": "Las aventuras de Clarence 'Kick' Buttowski, un joven aspirante a acróbata que busca convertirse en el mejor especialista del mundo.",
       "imagen": "https://i.pinimg.com/736x/02/0b/01/020b01a85c01be77a9daaa5bdf3149f0.jpg",
@@ -1153,8 +1697,36 @@
               "numero": 32,
               "titulo": "Sólo Quienes Tienen Un Préstamo / Inversión De Rollos",
               "descripcion": "Problemas con un préstamo / Una inversión arriesgada",
-              "duracion": "22:00",
+              "duracion": "22:00", 
               "url": "https://drive.google.com/file/d/18RjN7L7AyQ8ZG2uH_pEVWJvPhvSihKoO/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "titulo": "Kid vs Kat",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Coop Burtonburger descubre que el nuevo gato de su hermana, el Sr. Gato, es en realidad un alienígena malvado que planea conquistar la Tierra. Mientras intenta exponer la verdadera identidad del gato, Coop debe proteger a su familia y al mundo de los planes diabólicos del Sr. Gato.",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BZmY5NWNhNWEtNmVmZC00Yzg4LTk3ZGUtNzViZWE3N2E5NmUwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "año": 2008,
+      "genero": ["Animación", "Comedia", "Ciencia ficción"],
+      "director": "Rob Boutilier",
+      "actores": ["Erin Mathews", "Kathleen Barr", "Trevor Devall"],
+      "trailer": "https://www.youtube.com/embed/TmY_pounds6w",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Que Comience el Juego / El Gato del Mal",
+              "descripcion": "Coop conoce al Sr. Gato / El Sr. Gato revela sus intenciones malvadas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1YourGoogleDriveURL1/preview"
             }
           ]
         }

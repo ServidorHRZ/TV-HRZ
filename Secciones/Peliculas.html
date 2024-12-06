@@ -423,6 +423,53 @@
                 width: 85%;
             }
         }
+        /* Estilos para el mensaje navideño */
+        .christmas-message {
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: sparkle 2s infinite;
+        }
+
+        .snowman {
+            font-size: 1.5em;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff; }
+            50% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        /* Animación de nieve */
+        .snowflakes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .snowflake {
+            position: fixed;
+            color: #fff;
+            font-size: 1em;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-100vh) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
     </style>
 </head>
 <body>
@@ -430,6 +477,10 @@
         <div class="header-content">
             <div class="logo-container">
                 <h1>HRZ TV</h1>
+                <div class="christmas-message">
+                    <span>¡Feliz Navidad!</span>
+                    <span class="snowman">☃️</span>
+                </div>
             </div>
             <div class="nav-icons">
                 <!-- Aquí puedes agregar íconos adicionales si lo deseas -->
@@ -462,10 +513,17 @@
             <i class="fas fa-broadcast-tower"></i>
             <span>TV Online</span>
         </a>
+        <a href="Proximos.html" class="nav-item">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Próximos</span>
+        </a>
     </nav>
     <footer>
         <p>&copy; 2024 Tecnologia HRZ. Todos los derechos reservados.</p>
     </footer>
+
+    <div class="snowflakes" aria-hidden="true">
+    </div>
 
     <script>
         // Función para cargar las películas desde el JSON
@@ -475,7 +533,8 @@
             fetch('../DataBase/peliculas.json')
                 .then(response => response.json())
                 .then(data => {
-                    todasLasPeliculas = data.peliculas;
+                    // Filtrar solo las películas disponibles
+                    todasLasPeliculas = data.peliculas.filter(pelicula => pelicula.disponible);
                     mostrarPeliculas(todasLasPeliculas);
                 })
                 .catch(error => console.error('Error cargando las películas:', error));
@@ -561,7 +620,7 @@
             modal.innerHTML = `
                 <h3 style="color: var(--primary-color); margin-bottom: 15px;">Contenido No Disponible</h3>
                 <p>Este contenido estará disponible próximamente.</p>
-                <p>¡Intenta más tarde!</p>
+                <p>Intenta más tarde!</p>
                 <button onclick="this.parentElement.remove()" style="
                     margin-top: 15px;
                     padding: 8px 16px;
@@ -585,6 +644,26 @@
                 header.classList.remove('scrolled');
             }
         });
+
+        // Agregar después de los scripts existentes
+        function createSnowflakes() {
+            const snowflakesContainer = document.querySelector('.snowflakes');
+            const snowflakes = ['❅', '❆', '❄'];
+            const numberOfSnowflakes = 50;
+
+            for (let i = 0; i < numberOfSnowflakes; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.style.left = `${Math.random() * 100}vw`;
+                snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                snowflake.style.opacity = Math.random();
+                snowflake.innerHTML = snowflakes[Math.floor(Math.random() * snowflakes.length)];
+                snowflakesContainer.appendChild(snowflake);
+            }
+        }
+
+        // Llamar a la función cuando se carga la página
+        window.addEventListener('load', createSnowflakes);
     </script>
 </body>
 </html>
