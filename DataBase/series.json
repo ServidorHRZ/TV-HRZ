@@ -1731,6 +1731,57 @@
           ]
         }
       ]
+    },
+    {
+      "id": 16,
+      "titulo": "Como Hermanos",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": false,
+      "descripcion": "Pahe y Seb son amigos inseparables y sus culturas se unen a través de una amistad única y especial que demuestra que las diferencias culturales no son obstáculo para una verdadera amistad.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK-UE1BRsCaNDWGk9g3XG0OBQGeSze706zIlUDFB5lBKDcWPI9xcqgZRaf0HQjUpdZaxM&usqp=CAU",
+      "año": 2023,
+      "genero": ["Animación", "Infantil", "Amistad"],
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": []
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "titulo": "Caillou",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": false,
+      "descripcion": "Las aventuras diarias de Caillou, un niño de cuatro años que aprende sobre el mundo que lo rodea a través de sus experiencias cotidianas.",
+      "imagen": "https://www.justwatch.com/images/poster/175688943/s718/caillou.jpg",
+      "año": 1997,
+      "genero": ["Animación", "Infantil", "Educativo"],
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": []
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "titulo": "Jorge el Curioso",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": false,
+      "descripcion": "Las aventuras de Jorge, un mono muy curioso que vive en la ciudad con su amigo, el Hombre del Sombrero Amarillo, aprendiendo valiosas lecciones mientras satisface su curiosidad.",
+      "imagen": "https://pics.filmaffinity.com/curious_george-844946295-large.jpg",
+      "año": 2006,
+      "genero": ["Animación", "Infantil", "Educativo"],
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": []
+        }
+      ]
     }
   ]
 }
