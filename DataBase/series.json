@@ -1109,9 +1109,9 @@
     {
       "id": 10,
       "titulo": "Ben 10",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
-      "enProceso": false,
+      "enProceso": true,
       "descripcion": "Ben Tennyson descubre un misterioso dispositivo alienígena llamado Omnitrix durante sus vacaciones de verano. Este dispositivo le permite transformarse en diferentes alienígenas, cada uno con poderes únicos, que utiliza para combatir el mal junto a su prima Gwen y su abuelo Max.",
       "imagen": "https://image.tmdb.org/t/p/original/qVBQynX6J9gtYWVwqbfNKVe0kYU.jpg",
       "año": 2005,
@@ -1128,91 +1128,91 @@
               "titulo": "Y Fueron 10",
               "descripcion": "Ben encuentra el Omnitrix durante sus vacaciones de verano y obtiene la capacidad de transformarse en diferentes alienígenas.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1AUi-Tqtxq_SAgiSa5c4JAMX_q_yFGUi7/preview"
+              "url": "https://drive.google.com/file/d/1vuFt395WgTadCvTkutujrWqthUzwVCq3/preview"
             },
             {
               "numero": 2,
               "titulo": "Washington A.C.",
               "descripcion": "Ben debe detener a un villano que planea congelar Washington D.C.",
               "duracion": "22:00", 
-              "url": "https://drive.google.com/file/d/1LG1mJ9r_VefUuBJJ8ZaJ-4DTQQVYL1Se/preview"
+              "url": "https://drive.google.com/file/d/1N3q3L2cGMYdSeGLbb0QLyfU07PUfX4Bk/preview"
             },
             {
               "numero": 3,
               "titulo": "El Krakken",
               "descripcion": "Ben investiga avistamientos de una misteriosa criatura en un lago.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1QbeGP17Na3obCbZjwUILo-f6j_ESyIdu/preview"
+              "url": "https://drive.google.com/file/d/1DX2qLAaxNQ1iIshQWcoyPt1zoqVuNC7e/preview"
             },
             {
               "numero": 4,
-              "titulo": "Efectos Permanentes",
-              "descripcion": "Ben queda atrapado en forma alienígena y debe encontrar una solución.",
+              "titulo": "Visitando a los Viejos",
+              "descripcion": "Ben y Gwen visitan a sus abuelos y descubren que un extraño virus está afectando a los residentes de un asilo de ancianos.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1RJMWZVpHb3LCr9fg3gP8m1gOK4wzkvYe/preview"
+              "url": "https://drive.google.com/file/d/1ceO8cO4k7MZiwC6jB7Ja6LxYY9ayMSjW/preview"
             },
             {
               "numero": 5,
               "titulo": "Cazado",
               "descripcion": "Un cazador intergaláctico persigue a Ben para coleccionar el Omnitrix.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1Ug2FJ0Y9Sb1wa1t6lSVcq1bu66h6fZZO/preview"
+              "url": "https://drive.google.com/file/d/1J5J83AHydjrilI2IVaRWg7ecI8aOeYrS/preview"
             },
             {
               "numero": 6,
               "titulo": "Turista Espacial",
               "descripcion": "Ben y su familia se encuentran con un turista alienígena problemático.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1QnFQ_290KJE6nNHy7eg2IuFJbEffgmTR/preview"
+              "url": "https://drive.google.com/file/d/1c8nVyED3y74H6NPYZ8REqZ72kEcPHDSc/preview"
             },
             {
               "numero": 7,
               "titulo": "Kevin 11",
               "descripcion": "Ben conoce a Kevin, un chico con la habilidad de absorber energía.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/12JVXGNvN3-2GFRLPiI-37ebjNQUqhMQI/preview"
+              "url": "https://drive.google.com/file/d/1pPW-zyIy_NVYjDO5YwqHikLrePQWaOF4/preview"
             },
             {
               "numero": 8,
               "titulo": "La Alianza",
               "descripcion": "Vilgax forma una alianza con otros villanos para capturar a Ben.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/17M9qcJabrOzzAwuEHlzjmWsNwcVcWc3J/preview"
+              "url": "https://drive.google.com/file/d/1_XZ1XuS-kMU8PTg0xGLeAYjUKdjJE5dC/preview"
             },
             {
               "numero": 9,
               "titulo": "El Último Reír",
               "descripcion": "Ben se enfrenta a un payaso que no es lo que parece.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1DVl9B1tJQG4cf9R0IUx_g8B9o7JM7H3V/preview"
+              "url": "https://drive.google.com/file/d/1hcGjZz1TOrb3isNTxRbSKJac8IFUXUWw/preview"
             },
             {
               "numero": 10,
-              "titulo": "Suerte Oxidada",
-              "descripcion": "Ben debe detener a un robot oxidado que amenaza una ciudad.",
+              "titulo": "La Chica Con Suerte",
+              "descripcion": "Gwen parece tener una suerte extraordinaria, pero pronto descubre que hay algo más detrás de su aparente fortuna.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/17nJz2bAOvwAgqh57B-W44mtKkdstC6ws/preview"
+              "url": "https://drive.google.com/file/d/1S4mx4pvYlpDuynHD0fPpLsEGZ_Nm3Npi/preview"
             },
             {
               "numero": 11,
               "titulo": "Un Pequeño Problema",
               "descripcion": "Ben queda atrapado en forma diminuta y debe sobrevivir.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1M2fgBRE8azC9zdDZ6GJBouWLgLaio9HI/preview"
+              "url": "https://drive.google.com/file/d/1VibGAYMAKGiVfpcXJUytL3eRkKUnd-mf/preview"
             },
             {
               "numero": 12,
               "titulo": "Efectos Secundarios",
               "descripcion": "El Omnitrix comienza a causar efectos secundarios en Ben.",
               "duracion": "22:00", 
-              "url": "https://drive.google.com/file/d/1ZFly95job9FI_H2yKKqD5IiGrDdyfk7P/preview"
+              "url": "https://drive.google.com/file/d/1OAt-s7tHzQYhJ0VWWLCZNKPXeFjTHiU5/preview"
             },
             {
               "numero": 13,
               "titulo": "Secretos",
               "descripcion": "Vilgax revela secretos sobre el pasado del abuelo Max.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1qOeDsSY8L9FmXv1ifwf2TR51DLVptUWJ/preview"
+              "url": "https://drive.google.com/file/d/1LGZyxMPrzcbAB7tmhyh6PmbVsmKICf9L/preview"
             }
           ]
         }
