@@ -1188,7 +1188,7 @@
             },
             {
               "numero": 10,
-              "titulo": "La Chica Con Suerte",
+              "titulo": "La Chica Con Suerte", 
               "descripcion": "Gwen parece tener una suerte extraordinaria, pero pronto descubre que hay algo más detrás de su aparente fortuna.",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1S4mx4pvYlpDuynHD0fPpLsEGZ_Nm3Npi/preview"
@@ -1204,7 +1204,7 @@
               "numero": 12,
               "titulo": "Efectos Secundarios",
               "descripcion": "El Omnitrix comienza a causar efectos secundarios en Ben.",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1OAt-s7tHzQYhJ0VWWLCZNKPXeFjTHiU5/preview"
             },
             {
@@ -1213,6 +1213,102 @@
               "descripcion": "Vilgax revela secretos sobre el pasado del abuelo Max.",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1LGZyxMPrzcbAB7tmhyh6PmbVsmKICf9L/preview"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "La verdad",
+              "descripcion": "Ben descubre nuevas verdades sobre el Omnitrix.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1mUkYCAMbskF4IafEFkmgcnPJz0Xvncmn/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Un nuevo héroe",
+              "descripcion": "Ben enfrenta nuevos desafíos como héroe.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1DHhczb41PHSm8eCxbVZr7aMjhKxd3los/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Kevin regresa",
+              "descripcion": "Kevin vuelve más poderoso que nunca.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1shgM875uavOsUx9wr1cXCjlYDrdTEDxt/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Gwen 10",
+              "descripcion": "Gwen obtiene acceso al Omnitrix.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1v8GhyNBf6UPikZrqM5A4mtfNgbwTjMdL/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Gladiadores",
+              "descripcion": "Ben debe participar en un torneo de gladiadores alienígenas.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1O_lwoVrM5QbwxQQsmca67NcaBMicZ2lT/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Los Luchadores Galácticos",
+              "descripcion": "Ben conoce a un grupo de luchadores intergalácticos.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1AKIChdPBzwz0dmLIZJcDrWIXY8Z3A9tC/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "El campamento del terror",
+              "descripcion": "Extraños sucesos ocurren en un campamento de verano.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/12HGXuK_Y_0bsURZLniHrHcuJmVPVt55B/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "La mejor arma",
+              "descripcion": "Ben debe evitar que un arma poderosa caiga en manos equivocadas.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1_ZvgzqwZCDFfKvA_9MT8lAoeEAr9I81_/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "La suerte regresa",
+              "descripcion": "Gwen vuelve a experimentar eventos sobrenaturales relacionados con la suerte.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1aR35pnDdLi0r6fIjtJ7GEFjvrbQdK971/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "El nuevo hotel",
+              "descripcion": "La familia Tennyson se hospeda en un hotel con oscuros secretos.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1z5Fg8RxsfTMcvM41vuSSulWFagaWpXl6/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "El fantasma anda suelto",
+              "descripcion": "Ben se enfrenta a una presencia fantasmal.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1w38aXsk0BhdXvDYN1xUF--AheQpDdh9u/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Dr. Animo y el rayo mutante",
+              "descripcion": "El Dr. Animo regresa con una nueva arma peligrosa.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1z-I-wnFBAIUD6tQbOddxtLGKenfcm3Pp/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Los malos están de regreso",
+              "descripcion": "Antiguos enemigos de Ben unen fuerzas para vengarse.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/199PVfOJd384IOm9LEJhiU5jN1QM36_Oq/preview"
             }
           ]
         }
