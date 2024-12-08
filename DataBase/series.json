@@ -1,6 +1,83 @@
 {
   "series": [
     {
+      "id": 19,
+      "titulo": "Silicon Valley",
+      "disponible": true,
+      "nuevo": true ,
+      "enProceso": true,
+      "descripcion": "La serie sigue a Richard Hendricks, un programador que crea una aplicación de compresión de datos, y las aventuras y desventuras que él y su startup Pied Piper enfrentan en el competitivo mundo de Silicon Valley.",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BM2Q5YjNjZWMtYThmYy00N2ZjLWE2NDctNmZjMmZjYWE2NjEwXkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_.jpg",
+      "año": 2014,
+      "genero": ["Comedia", "Tecnología", "Drama"],
+      "director": "Mike Judge",
+      "actores": ["Thomas Middleditch", "T.J. Miller", "Josh Brener", "Martin Starr", "Kumail Nanjiani"],
+      "trailer": "https://www.youtube.com/embed/dGs_0b2SeX0",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Producto mínimamente viable",
+              "descripcion": "Richard Hendricks desarrolla un revolucionario algoritmo de compresión y debe decidir entre venderlo a una gran compañía o crear su propia startup.",
+              "duracion": "30:00",
+              "url": "https://drive.google.com/file/d/1hmkbN1pto2yc5_YBytqep3BHxHSbWvn6/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "La capitalización", 
+              "descripcion": "Mientras Richard intenta definir el rumbo de Pied Piper, se encuentra atrapado entre las diferentes visiones de Peter Gregory y Erlich.",
+              "duracion": "30:00",
+              "url": "https://drive.google.com/file/d/1VBMDH6sU0JS__RZuHjH2FTWLkbNvueXg/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Estatutos",
+              "descripcion": "La formalización de Pied Piper enfrenta a Richard con diversos obstáculos legales y técnicos que debe superar.",
+              "duracion": "30:00",
+              "url": "https://drive.google.com/file/d/1y6nuLfQB5mlGymTbBAlzTQsNhThGv9wq/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Obligaciones fiduciarias",
+              "descripcion": "Mientras Richard lucha por asegurar los derechos del código, todo el equipo debe enfrentar problemas relacionados con la propiedad intelectual.",
+              "duracion": "30:00",
+              "url": "https://drive.google.com/file/d/1mGw4rFHWePxrvCbGVQoFO879ovLtgRaW/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Indicador de riesgo",
+              "descripcion": "La presión por desarrollar un producto viable aumenta para Richard, quien además debe manejar la excéntrica personalidad de Peter Gregory.",
+              "duracion": "30:00",
+              "url": "https://drive.google.com/file/d/1ZgwPEXoJuhzyMvjPS8-RXNDUs1uS5P8f/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Ayuda externa",
+              "descripcion": "El futuro de Pied Piper depende de una crucial prueba realizada por terceros que podría determinar su destino.",
+              "duracion": "30:00",
+              "url": "https://drive.google.com/file/d/1t5vJgnmoXOK6hWcYyoZCRx4orAM8N-Lj/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Prueba de concepto",
+              "descripcion": "En su preparación para presentar en TechCrunch Disrupt, el equipo debe superar múltiples desafíos inesperados.",
+              "duracion": "30:00",
+              "url": "https://drive.google.com/file/d/1lSqn6OyzBu5Al9Htu4aI5PuGwIPkT2eX/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Eficacia óptima punta con punta",
+              "descripcion": "A poco tiempo de la presentación, Richard y su equipo descubren que necesitan cambiar completamente su estrategia.",
+              "duracion": "30:00",
+              "url": "https://drive.google.com/file/d/10G3zcMA_2b3a--6jo8qyp-P7b6s1cdkP/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 1,
       "titulo": "Sherlock",
       "disponible": true,
@@ -273,6 +350,7 @@
         }
       ]
     },
+    
     {
       "id": 4,
       "titulo": "Las Sombrías Aventuras de Billy y Mandy",
