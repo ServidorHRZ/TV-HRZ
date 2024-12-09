@@ -1501,6 +1501,102 @@
               "url": "https://drive.google.com/file/d/1VcWta7i3GnXgAf2BbPMB1u1dWgbTZkO_/preview"
             }
           ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "La aparición de Darkstar",
+              "descripcion": "Ben y su equipo se enfrentan a un nuevo y poderoso enemigo llamado Darkstar.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1G3yxZ_TWdgZ1vsUn71v4yIsMUYmTxQcm/preview"
+            },
+            {
+              "numero": 2, 
+              "titulo": "A solas con el enemigo",
+              "descripcion": "Ben debe enfrentarse a un enemigo en solitario.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1wNAJgcGAI-m2iFxfySovfG3DocIWyF-G/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Buena copia, mala copia",
+              "descripcion": "Ben se enfrenta a un clon de sí mismo.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1KhsrCvda6Y3ijN07UqPoFUjUs_vfzsEG/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "El baile de Gwen",
+              "descripcion": "Gwen asiste a un baile que se complica por una amenaza alienígena.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1QMAY_MPzCr6iiDnExdAhk7mq-RbM_Bs9/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Un Viejo Conocido",
+              "descripcion": "Un rostro familiar del pasado regresa.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/17NThsfo9sSkUH-hCEDI2kENiCrhued3L/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Proyecto Mascota",
+              "descripcion": "Ben y su equipo investigan un misterioso proyecto relacionado con mascotas alienígenas.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/11Q_TmbtPyP0dfm48gmgsYSusJb-JCNTm/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Castigado",
+              "descripcion": "Ben debe lidiar con un castigo mientras intenta salvar el mundo.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/17VutMVjdpssASj70aw8skoMA6az9PZkP/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Proyectado",
+              "descripcion": "Ben experimenta con nuevas habilidades de proyección.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1w9l_Z6QRiBmTXwR6aOhtTdurWQOm0x5S/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "El Informante",
+              "descripcion": "El equipo recibe información crucial de un misterioso informante.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1LWkV7MwCiYPFr3YM5BUgHbebQpA_70K1/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Ayudando al enemigo",
+              "descripcion": "Ben debe ayudar a uno de sus enemigos para evitar una amenaza mayor.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1b6xNZuv5tDRm9B4SBna5QUy3-4MprCjz/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Olvidados en la tierra",
+              "descripcion": "El equipo queda varado en una zona remota de la Tierra.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1jIcSoKyeHE_9DEfAgAYja3C1YOH7kJGK/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "La Guerra de los Mundos Parte 1",
+              "descripcion": "Primera parte de la batalla final contra los Highbreed.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/10iUD46CMHM0af3GBgMiACW4GNXl_qlwJ/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "La Guerra de los Mundos Parte 2",
+              "descripcion": "Conclusión épica de la guerra contra los Highbreed.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1fGBTYlVcWN310ZnzWRVrcbr-G_JSZ6da/preview"
+            }
+          ]
         }
       ]
     },
