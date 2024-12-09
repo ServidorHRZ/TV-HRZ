@@ -1395,22 +1395,110 @@
     {
       "id": 11,
       "titulo": "Ben 10: Fuerza Alienígena",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
+      "enProceso": true,
       "descripcion": "Cinco años después de la serie original, Ben Tennyson vuelve a usar el Omnitrix para salvar al universo con nuevos alienígenas.",
       "imagen": "https://preview.redd.it/p9k9u5uusruc1.jpeg?auto=webp&s=4c75279be2d367688e5dc6c59482afd5a63c8a99",
       "año": 2008,
       "genero": ["Animación", "Acción", "Ciencia ficción"],
+      "director": "Glen Murakami",
+      "actores": ["Yuri Lowenthal", "Ashley Johnson", "Greg Cipes"],
+      "trailer": "https://www.youtube.com/embed/WBc9ZmOtHtw",
       "temporadas": [
         {
           "numero": 1,
           "episodios": [
             {
               "numero": 1,
-              "titulo": "Ben 10 Regresa",
-              "descripcion": "Ben vuelve a usar el Omnitrix después de 5 años.",
+              "titulo": "El regreso de Ben 10 Parte 1",
+              "descripcion": "Ben Tennyson regresa después de 5 años para enfrentar una nueva amenaza alienígena junto a su prima Gwen y Kevin Levin.",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/sample_url1/preview"
+              "url": "https://drive.google.com/file/d/19GTOx2meSvYXf3ua2PVR17uJGb-PaXQu/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "El regreso de Ben 10 Parte 2",
+              "descripcion": "La batalla contra los Highbreed continúa mientras Ben aprende a dominar sus nuevos poderes alienígenas.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1wYlI37GcErZIoZCqxgfCzFm4PIKceeJt/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Todos hablan del clima",
+              "descripcion": "Ben y su equipo investigan extraños fenómenos meteorológicos causados por un nuevo enemigo.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1pcd8Iue-yBtMqtYggs4XZXR8vplkoxVy/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "El gran golpe de Kevin",
+              "descripcion": "Kevin debe enfrentarse a su pasado criminal mientras ayuda al equipo en una nueva misión.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1_SPrIMnDu4Vzww3EmOGJDkJYbaGs8_8-/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Todo brilla",
+              "descripcion": "Una misteriosa sustancia alienígena amenaza con convertir todo en diamante.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1VyoXbATTNuWV8x_pT2ysy2-CHs3qoxRL/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Un encuentro con el abuelo max",
+              "descripcion": "El equipo encuentra pistas sobre el paradero del desaparecido Abuelo Max.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1HZ5W1o-w7TX24a_g4ObOcHxa-ZG-4Xng/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Presión en el muelle",
+              "descripcion": "Una amenaza submarina pone en peligro a los habitantes de la costa.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1gpF1xa-IuDUjK8erxR8elP81W7Vhq56Q/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "El potencial de Gwen",
+              "descripcion": "Gwen comienza a explorar sus poderes mágicos con más profundidad.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1S401NjTOXjRn6el9BibiURBzyVS-sttL/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "El guante",
+              "descripcion": "Ben y el equipo deben detener a un cazador alienígena que usa un poderoso guante tecnológico.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Oag0jMmesIRd750WTarPyCZDSMRx7pt8/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Paradora",
+              "descripcion": "Una misteriosa chica alienígena busca la ayuda de Ben para salvar su planeta.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1xxb96Tj15lqf_v--ZO9bdsrS-jJri4lt/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Caballerizado",
+              "descripcion": "Ben debe infiltrarse en una sociedad secreta de Caballeros Eternos.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1w2eu973YtYVGsooNb2iXc0nou5kY1Bu1/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Unos nuevos plomeros",
+              "descripcion": "Ben y el equipo ayudan a entrenar a nuevos reclutas de los Plomeros.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1AgzX6CPI9GjymOuL9iTsCEfgf0W_aay_/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "X = Ben + 2",
+              "descripcion": "Una ecuación alienígena amenaza con destruir la realidad misma.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1VcWta7i3GnXgAf2BbPMB1u1dWgbTZkO_/preview"
             }
           ]
         }
