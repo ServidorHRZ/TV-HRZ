@@ -2184,7 +2184,7 @@
     {
       "id": 15,
       "titulo": "Kid vs Kat",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Coop Burtonburger descubre que el nuevo gato de su hermana, el Sr. Gato, es en realidad un alienígena malvado que planea conquistar la Tierra. Mientras intenta exponer la verdadera identidad del gato, Coop debe proteger a su familia y al mundo de los planes diabólicos del Sr. Gato.",
@@ -2203,7 +2203,182 @@
               "titulo": "Que Comience el Juego / El Gato del Mal",
               "descripcion": "Coop conoce al Sr. Gato / El Sr. Gato revela sus intenciones malvadas",
               "duracion": "22:00",
-              "url": "https://drive.google.com/file/d/1YourGoogleDriveURL1/preview"
+              "url": "https://drive.google.com/file/d/1jn6H9biP-3zeyBv19k0duO2Mai1j-OYW/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "El Cooper y El Gato / Tontería De Señor Gato",
+              "descripcion": "Cooper enfrenta al Sr. Gato / Las travesuras del Sr. Gato causan problemas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/14k2QW-u0k1ZbglS4LVh9oZR0CC0TOy_V/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "En El Perro Confiamos / Carrera En La Nieve",
+              "descripcion": "Coop busca ayuda de un perro / Una carrera invernal se complica",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1M4UyZ3QJcLt3JeVOaOXB-PJQOjsUid_5/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Prisión Repentina / El Gato Desaparece",
+              "descripcion": "Coop queda atrapado / El Sr. Gato desaparece misteriosamente",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1mZjl6iOOirq8ZCnzk3fzpG4tlRWg--ts/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Captura Al Gato / Desde El Espacio Exterior",
+              "descripcion": "Coop intenta atrapar al Sr. Gato / Revelaciones sobre el origen espacial",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1OoWjULTQcIqcnr1vGAFKFvZubd-42m2-/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Lárgate / Gato Gordo",
+              "descripcion": "Intentos por deshacerse del Sr. Gato / Problemas con un gato con sobrepeso",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1rasJ0y7ADSPENnXYAxnD9ym-GKmssK1F/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Encantador De Gatos / Quiero Ser Como Burtonberger",
+              "descripcion": "Un encantador de gatos visita / Alguien imita a Coop",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1La2bWf4uxGSUfwMBY4jwgsiA9IfbE9mO/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Debes Parar La Música / En Destrucción",
+              "descripcion": "Problemas con música / El Sr. Gato causa destrucción",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1m0QMQGpHwcy7ypbCttCZjcuRMV0lldDo/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Cuídate Del Hombre-Coop / Truco O Golosina",
+              "descripcion": "Coop sufre una transformación / Aventuras en Halloween",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1dLu-BfSLfavfgUotAH7KM9e8sVLnKmSk/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Ataque Ciber-Gatuno / Es Un Cohete Viejo",
+              "descripcion": "Un ataque tecnológico / Aventuras con un cohete antiguo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/159_XRuXo_549pTSFIzxbifQ_tBaLK-MX/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Algo Sospechoso En El Lago Del Búho / Educación Funesta",
+              "descripcion": "Misterios en el lago / Problemas en la escuela",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/189MjilXW0otfyyOCPZuZTSXq9Q1TSXCW/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "El Cooper y El Gato / Tontería De Señor Gato",
+              "descripcion": "Más enfrentamientos entre Coop y el Sr. Gato / Nuevas travesuras felinas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1k1swkiAs-s8NHrOMsh3UGR4roDpNzi95/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "En El Perro Confiamos / Carrera En La Nieve",
+              "descripcion": "Nueva confianza en el perro / Otra aventura invernal",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1WElEDOnsilRM4Al0c-UhC7aXl18WUuoQ/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "Prisión Repentina / El Gato Desaparece",
+              "descripcion": "Nuevo encarcelamiento / Otra desaparición misteriosa",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Uy6_AhsHb77ScduQVqD-y05iBWHKZOdd/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "Captura Al Gato / Desde El Espacio Exterior",
+              "descripcion": "Nueva captura fallida / Más secretos espaciales",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1vUsaSPKVczNrEsRNoHeQT6kcHazCAziu/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Lárgate / Gato Gordo",
+              "descripcion": "Nuevos intentos de expulsión / Más problemas de peso",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ZIZYpRTUAOKMWkZVpv-lAOR65vD2mcuo/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "Encantador De Gatos / Quiero Ser Como Burtonberger",
+              "descripcion": "Regreso del encantador / Nuevas imitaciones",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/10QVCC3j1epVEs3mKGb4bShRgUaAg6tYa/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "Debes Parar La Música / En Destrucción",
+              "descripcion": "Más caos musical / Nueva ola de destrucción",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Pjw-l0HA3PFH7WtiUVVKNXFpNYGZVlh_/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "Cuídate Del Hombre-Coop / Truco O Golosina",
+              "descripcion": "Nueva transformación / Más aventuras de Halloween",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1tzws11J7_gDVdVCJUtZBRuCOzgxZqhlO/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "Ataque Ciber-Gatuno / Es Un Cohete Viejo",
+              "descripcion": "Nuevo ataque tecnológico / Más aventuras espaciales",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/10uPWm7aCenitVZzyR61m83GB9cOh_AeJ/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "Algo Sospechoso En El Lago Del Búho / Educación Funesta",
+              "descripcion": "Nuevos misterios lacustres / Más problemas escolares",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Y6Nnwx293a5uOpuPGpczO7wSHFJ_2ulf/preview"
+            },
+            {
+              "numero": 22,
+              "titulo": "El Cooper y El Gato / Tontería De Señor Gato",
+              "descripcion": "Continúan los enfrentamientos / Más travesuras del Sr. Gato",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1C0poClkhD1_nIRvMc-osy5gdvOOvBagy/preview"
+            },
+            {
+              "numero": 23,
+              "titulo": "En El Perro Confiamos / Carrera En La Nieve",
+              "descripcion": "Más aventuras con el perro / Nueva carrera invernal",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1B6Xsy59U_q7IqUuemx7OuFMK_y7HpYBo/preview"
+            },
+            {
+              "numero": 24,
+              "titulo": "Prisión Repentina / El Gato Desaparece",
+              "descripcion": "Último encarcelamiento / Desaparición final",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/116ENbiAmp4B8bjsLabkAwuvoV3S1W0Wm/preview"
+            },
+            {
+              "numero": 25,
+              "titulo": "Captura Al Gato / Desde El Espacio Exterior",
+              "descripcion": "Última captura / Revelaciones espaciales finales",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1k65cIPW_5Nax1cjnQMG5R1umIGdJOy_T/preview"
+            },
+            {
+              "numero": 26,
+              "titulo": "Navidad Parte 1 Y 2",
+              "descripcion": "Especial navideño de dos partes donde Coop y el Sr. Gato tienen aventuras festivas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/10L2ujm9onS5NHTdeOUNu7x6eosQKtGDj/preview"
             }
           ]
         }
