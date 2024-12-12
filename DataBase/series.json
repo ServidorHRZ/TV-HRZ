@@ -222,38 +222,157 @@
             },
             {
               "numero": 2,
-              "titulo": "El hombre más rápido vivo",
+              "titulo": "El hombre más rápido del mundo",
               "descripcion": "Barry enfrenta a un metahumano que puede crear clones de sí mismo.",
               "duracion": "42:00",
               "url": "https://drive.google.com/file/d/17tqfHKlImJOHjfjShoNHVoT53e8ToL2H/preview"
             },
             {
               "numero": 3,
-              "titulo": "Cosas que no se pueden escapar",
+              "titulo": "Cosas de las que no puedes escapar",
               "descripcion": "Barry persigue a un metahumano que puede convertir todo lo que toca en explosivos.",
               "duracion": "42:00",
               "url": "https://drive.google.com/file/d/1LqSaVEZGcKWHB3WVDDNDa-2qa09Z9Peq/preview"
             },
             {
               "numero": 4,
-              "titulo": "Capitán Frío",
+              "titulo": "Rebelde",
               "descripcion": "Barry se enfrenta a Leonard Snart, quien utiliza un arma de frío para cometer crímenes.",
               "duracion": "42:00",
               "url": "https://drive.google.com/file/d/1DLZ924eYMXzwqucoRWGaDi-7qtNz-0hY/preview"
             },
             {
               "numero": 5,
-              "titulo": "Plastique",
+              "titulo": "Plástico",
               "descripcion": "Barry conoce a una ex-militar que puede convertir objetos en bombas con solo tocarlos.",
               "duracion": "42:00",
               "url": "https://drive.google.com/file/d/1z45VtpypJD24T0qFGfV8-EugzUU83hxC/preview"
             },
             {
               "numero": 6,
-              "titulo": "El origen de Flash",
-              "descripcion": "Joe y Barry rastrean al meta-humano Girder, que resulta ser un antiguo matón de la escuela de Barry.",
+              "titulo": "Ha nacido Flash",
+              "descripcion": "Joe y Barry viajan a Starling City para investigar un caso que podría tener conexión con el asesinato de la madre de Barry.",
               "duracion": "42:00",
               "url": "https://drive.google.com/file/d/1QFxGhsi2LucVFWO_L7jylEdI9oUnqHT9/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Apagón",
+              "descripcion": "Barry recibe la visita de Oliver Queen mientras persigue a un metahumano que puede controlar las emociones.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1Bpo4ybdOOcn5H42mmYyyYnB7uqLVPhKn/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Flash vs Arrow",
+              "descripcion": "Barry se enfrenta por primera vez al misterioso velocista de traje amarillo.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1esYXgAM1CqvATzwHYKJZX9B0Upz0T7rd/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "El hombre del traje amarillo",
+              "descripcion": "Leonard Snart regresa con un nuevo compañero y un arma de calor.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/19w9EWhTmslKZSjveQX-FgJsgUyL2rsWv/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "La venganza de los villanos",
+              "descripcion": "El Capitán Frío y Ola de Calor regresan para vengarse de Flash.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1wK7n17dbj5G9lHbVR2cUZgYMBM_XmjKt/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "El sonido y la furia",
+              "descripcion": "Barry se enfrenta a Hartley Rathaway, un ex empleado de los laboratorios STAR.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1P2zDwgRk_ll-dUVgyEmBBwsPiOOyxYNm/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Loco por tí",
+              "descripcion": "Caitlin investiga el regreso de su supuestamente fallecido prometido.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1hmKkwFXJFm_3YSiZRRPp1w8XIxxVl0k5/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "El hombre nuclear",
+              "descripcion": "Ronnie Raymond y el Dr. Martin Stein se fusionan para convertirse en Firestorm.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1qHLs6NgR15QT6e6nUzBF8GoP3a6F7h4F/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "Lluvia radioactiva",
+              "descripcion": "Un metahumano con la capacidad de teletransportarse busca venganza contra el Dr. Wells.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1YzSroslY2tQWKs-1swdo5nRjLSJf9v7q/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "Más allá del tiempo",
+              "descripcion": "Barry viaja accidentalmente al pasado y debe decidir si cambiar la historia.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1TjDnGMAHN3QZi2Duv__lXH61ipCc07vS/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Tiempo de villanos",
+              "descripcion": "El Tramposo regresa y secuestra a alguien cercano a Barry.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1-I0OgojWUAXLm1EHWQHoG21pgQfhHu30/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "Tramposos",
+              "descripcion": "El Tramposo original escapa de prisión y se une a su joven admirador.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1T1ooYxNyj6OEAY2lV-TYXG9Fa8lY3Cgx/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "El equipo de las estrellas se une",
+              "descripcion": "El equipo Flash se une a los Laboratorios STAR para detener a un metahumano peligroso.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1l3lNCSREv5mFDIjr63fwVCrdIA9pQltD/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "¿Quién es Harrison Wells?",
+              "descripcion": "Joe y Cisco viajan a Starling City para investigar el pasado del Dr. Wells.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1dJM158JbUKc1Kuar9QNs_TivrO6zRK67/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "La trampa",
+              "descripcion": "Barry y el equipo planean una trampa para el Dr. Wells.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/16rxL0v1UGrxR8pz1dkgetWSWaO99QMWK/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "Grodd vive",
+              "descripcion": "El equipo se enfrenta a un gorila superinteligente llamado Grodd.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1ocNePjIRfWbZJHSyYmtt2KDkFtVrpAV4/preview"
+            },
+            {
+              "numero": 22,
+              "titulo": "Aire granuja",
+              "descripcion": "Barry debe limpiar su nombre cuando es acusado de un crimen que no cometió.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1wvx88Z5maZeQTuHnQkUiwBtSTxjKM0HQ/preview"
+            },
+            {
+              "numero": 23,
+              "titulo": "Suficientemente rápido",
+              "descripcion": "Barry enfrenta su batalla final contra el Reverse-Flash.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/13WTIvDT7wX2uw6avIgNu_PxiO73rY-d7/preview"
             }
           ]
         }

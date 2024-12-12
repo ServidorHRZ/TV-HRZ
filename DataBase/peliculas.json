@@ -1,6 +1,24 @@
 {
   "peliculas": [
     {
+      "titulo": "Deseo navideño cumplido", 
+      "disponible": true,
+      "nuevo": true,
+      "año": 2023,
+      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/3dba8b664cf475571a78b91057bee8706e51b4998e586306e10ec64ab69ecaa9.jpg",
+      "enlace": "https://www.youtube.com/embed/yDmlpOQdNcM",
+      "descripcion": "Una conmovedora historia navideña sobre esperanza, familia y el verdadero significado de los deseos en esta época especial del año."
+    },
+    {
+      "titulo": "Elf Man",
+      "disponible": true,
+      "nuevo": true,
+      "año": 2012,
+      "imagen": "https://pics.filmaffinity.com/Elf_Man-879900270-mmed.jpg",
+      "enlace": "https://www.youtube.com/embed/-b7Vjc5zlgo",
+      "descripcion": "Un elfo mágico ayuda a una familia durante la temporada navideña."
+    },
+    {
       "titulo": "Moana",
       "disponible": false,
       "año": 2016,
