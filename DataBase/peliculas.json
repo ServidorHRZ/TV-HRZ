@@ -1,6 +1,15 @@
 {
   "peliculas": [
     {
+      "titulo": "Billy y Mandy Salvan la Navidad",
+      "disponible": true,
+      "nuevo": true,
+      "año": 2005,
+      "imagen": "https://www.lavanguardia.com/peliculas-series/images/movie/poster/2005/12/w1280/4XjisTfsdBSVWBIwumtz1qvvRWX.jpg",
+      "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview",
+      "descripcion": "Billy y Mandy deben salvar la Navidad cuando Santa Claus es secuestrado. Con la ayuda de Puro Hueso, emprenderán una aventura para rescatar a Santa y asegurar que los regalos lleguen a tiempo."
+    },
+    {
       "titulo": "Deseo navideño cumplido", 
       "disponible": true,
       "nuevo": true,
@@ -17,22 +26,6 @@
       "imagen": "https://pics.filmaffinity.com/Elf_Man-879900270-mmed.jpg",
       "enlace": "https://www.youtube.com/embed/-b7Vjc5zlgo",
       "descripcion": "Un elfo mágico ayuda a una familia durante la temporada navideña."
-    },
-    {
-      "titulo": "Moana",
-      "disponible": false,
-      "año": 2016,
-      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fy6wkgEH1gTWAafH9Bc7cNNut0Kf.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/ID_MOANA/preview",
-      "descripcion": "Una joven navegante polinesia se embarca en una aventura épica para salvar a su pueblo, acompañada por el semidiós Maui."
-    },
-    {
-      "titulo": "Moana 2",
-      "disponible": false, 
-      "año": 2024,
-      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FfY3GzGhhsc6TwopDvNbCYIDNgvs.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/ID_MOANA2/preview",
-      "descripcion": "Moana regresa en una nueva aventura épica que la llevará a las peligrosas aguas del Pacífico Sur en una misión para salvar su hogar una vez más."
     },
     {
       "titulo": "Santa Claus 1",
