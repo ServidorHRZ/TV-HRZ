@@ -469,7 +469,6 @@
         }
       ]
     },
-    
     {
       "id": 4,
       "titulo": "Las Sombrías Aventuras de Billy y Mandy",
@@ -1506,6 +1505,102 @@
               "descripcion": "Antiguos enemigos de Ben unen fuerzas para vengarse.",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/199PVfOJd384IOm9LEJhiU5jN1QM36_Oq/preview"
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Ben 10.000",
+              "descripcion": "Ben y Gwen viajan al futuro donde conocen a una versión adulta de Ben.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1k0WQYNq2Wig6lGmtRmTR2kd2JJRlr8-J/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Locura a la Medianoche", 
+              "descripcion": "Ben enfrenta extraños eventos durante la noche.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1MKq8SF8vWD2F2hB_2Y_6FpLHq3McO2hI/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Cambio de cara",
+              "descripcion": "Ben experimenta un intercambio de identidad.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/13ZKobMgJ3W1eq-QST3tpfkwIw5h07kCc/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Feliz Navidad",
+              "descripcion": "Ben vive una aventura navideña.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ZTC7Obzaa4zhIgdMxI77aKONwzL5Fw6_/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Benlobo",
+              "descripcion": "Ben enfrenta una transformación inesperada.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/10cZjJ6ILFfjOBn9kmGR9ajyW8kw-9fA0/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "El juego terminó",
+              "descripcion": "Ben se enfrenta a un desafío final.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1EpzNsYqjJc2NBPAj9DkbG9eeHDkTCmCK/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Super Alianza de Héroes",
+              "descripcion": "Ben forma equipo con otros héroes.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1mUoTYGxRADG7NBwF4ubBiKW0yOLeB_i2/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "La Momia Mutante",
+              "descripcion": "Ben enfrenta a una antigua amenaza.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1jkB2g0lAv70uEhcIS0m8wwL-KYFhOa2X/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Los anormales",
+              "descripcion": "Ben descubre un grupo de individuos con poderes únicos.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/14Jr2LDEP0W8nXNBKkBjGKNTpzh-XUtG_/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "El Monstruo del Clima",
+              "descripcion": "Ben enfrenta a un villano que controla el clima.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1wchd0H02ocl_UWDKB9AXYCOk8fR_CYFJ/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "El regreso",
+              "descripcion": "Un antiguo enemigo regresa para enfrentar a Ben.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/18MYWWpKxfeYxtShjERjWVVXyTE0DTK73/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Miedo a la oscuridad",
+              "descripcion": "Ben enfrenta sus miedos en la oscuridad.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/121shY7WtDtRrpSfZmvwt1nydz-7NIA1B/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "La visitante",
+              "descripcion": "Una misteriosa visitante llega buscando ayuda.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1UbKC3Mhl_2awaMcH_R1L_cQ_ZUdCSsTz/preview"
             }
           ]
         }
