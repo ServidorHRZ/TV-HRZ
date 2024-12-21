@@ -2,6 +2,26 @@
   "series": [
     {
       "id": 19,
+      "titulo": "Doctor House",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": false,
+      "descripcion": "El Dr. Gregory House, un genio de la medicina poco convencional y antisocial, lidera un equipo de diagnóstico en el hospital universitario Princeton-Plainsboro. A pesar de su actitud sarcástica y sus métodos poco ortodoxos, House resuelve los casos médicos más complejos y misteriosos.",
+      "imagen": "https://image.tmdb.org/t/p/original/lW7MvZ4m49IUj2UrUu4z0xVVl81.jpg",
+      "año": 2004,
+      "genero": ["Drama", "Medicina", "Misterio"],
+      "director": "David Shore",
+      "actores": ["Hugh Laurie", "Lisa Edelstein", "Omar Epps", "Robert Sean Leonard", "Jennifer Morrison"],
+      "trailer": "https://www.youtube.com/embed/MczMB8nU1sY",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": []
+        }
+      ]
+    },
+    {
+      "id": 19,
       "titulo": "Silicon Valley",
       "disponible": true,
       "nuevo": true ,
