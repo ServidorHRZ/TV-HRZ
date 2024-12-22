@@ -1,6 +1,71 @@
 {
   "series": [
     {
+      "id": 21,
+      "titulo": "Dexter",
+      "disponible": false,
+      "nuevo": false,
+      "enProceso": false,
+      "descripcion": "Dexter Morgan, un experto forense en sangre para el departamento de policía de Miami, lleva una vida secreta como asesino en serie, pero con un giro: solo mata a otros asesinos que han eludido la justicia.",
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fq8dWfc4JwQuv3HayIZeO84jAXED.jpg&w=256&q=75",
+      "año": 2006,
+      "genero": ["Drama", "Crimen", "Suspenso"],
+      "director": "James Manos Jr.",
+      "actores": ["Michael C. Hall", "Jennifer Carpenter", "David Zayas", "James Remar", "Julie Benz"],
+      "trailer": "https://www.youtube.com/embed/YQeUmSD1c3g",
+      "temporadas": []
+    },
+    {
+      "id": 22,
+      "titulo": "Dexter: New Blood",
+      "disponible": false,
+      "nuevo": false,
+      "enProceso": false,
+      "descripcion": "Ambientada 10 años después de que Dexter desapareciera en el ojo del huracán Laura, la serie lo encuentra viviendo con un nombre falso en la pequeña ciudad de Iron Lake, Nueva York.",
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9EBKgrFIsCFSV1RZKWhYUdbtGiv.jpg&w=256&q=75",
+      "año": 2021,
+      "genero": ["Drama", "Crimen", "Suspenso"],
+      "director": "Clyde Phillips",
+      "actores": ["Michael C. Hall", "Jack Alcott", "Julia Jones", "Johnny Sequoyah", "Alano Miller"],
+      "trailer": "https://www.youtube.com/embed/l9H1uSS_zkk",
+      "temporadas": []
+    },
+    {
+      "id": 20,
+      "titulo": "Dexter: Pecado Original",
+      "disponible": true,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "En 1991, Miami. Dexter Morgan pasa de ser estudiante a ser un asesino en serie vengador, ya que sus impulsos sanguinarios no pueden ignorarse y debe aprender a canalizar su oscuridad interior. Un desafío particular para el joven Dexter, que comienza una pasantía forense en el Departamento de Policía Metropolitana de Miami.",
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9XLULEZTkeLwRytTUQtgmx2HH4o.jpg&w=256&q=75",
+      "año": 2024,
+      "genero": ["Drama", "Crimen", "Suspenso"],
+      "director": "Marcos Siega",
+      "actores": ["Michael C. Hall", "Jack Alcott", "Julia Jones", "Johnny Sequoyah", "Alano Miller"],
+      "trailer": "https://www.youtube.com/embed/l9H1uSS_zkk",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Original Sin",
+              "descripcion": "Dexter Morgan comienza su pasantía en el Departamento de Policía de Miami mientras lucha con sus impulsos oscuros.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1pGmvEZ0myS-Sh1f8FrjPg-sb7YH2ZLEe/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Un niño en una tienda de dulces",
+              "descripcion": "Dexter se adapta a su nueva vida en el departamento de policía mientras intenta mantener sus impulsos bajo control.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1p0X47kcHkLRAm_F-T3S6fRJu6r6ZGofK/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 19,
       "titulo": "Doctor House",
       "disponible": true,
