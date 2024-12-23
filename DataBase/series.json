@@ -1547,7 +1547,7 @@
       "titulo": "Ben 10",
       "disponible": true,
       "nuevo": true,
-      "enProceso": true,
+      "enProceso": false,
       "descripcion": "Ben Tennyson descubre un misterioso dispositivo alienígena llamado Omnitrix durante sus vacaciones de verano. Este dispositivo le permite transformarse en diferentes alienígenas, cada uno con poderes únicos, que utiliza para combatir el mal junto a su prima Gwen y su abuelo Max.",
       "imagen": "https://image.tmdb.org/t/p/original/qVBQynX6J9gtYWVwqbfNKVe0kYU.jpg",
       "año": 2005,
@@ -1839,8 +1839,91 @@
               "numero": 13,
               "titulo": "La visitante",
               "descripcion": "Una misteriosa visitante llega buscando ayuda.",
-              "duracion": "22:00",
+              "duracion": "22:00", 
               "url": "https://drive.google.com/file/d/1UbKC3Mhl_2awaMcH_R1L_cQ_ZUdCSsTz/preview"
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Un día perfecto",
+              "descripcion": "Ben tiene un día aparentemente perfecto que resulta ser demasiado bueno para ser verdad.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1-Cpo6dyTy5McBe9cBLftnLD1NZ-NIaJG/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Es hora de dividirnos",
+              "descripcion": "El equipo debe separarse para enfrentar múltiples amenazas simultáneas.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1hopkfXtwQq-8B51vXhbIDH5wo6-gZp2O/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "No tomes el agua",
+              "descripcion": "Una amenaza alienígena contamina el suministro de agua local.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1qdQNc5DH0LAmzI3B75WZgj6kJiAcckf9/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "La gran boda alienígena",
+              "descripcion": "Ben y su equipo deben proteger una importante ceremonia de boda alienígena.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1kSA4kZkYezdN4zULE6_hYxnN058mDB4k/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Un viaje en carretera",
+              "descripcion": "Un simple viaje por carretera se convierte en una aventura peligrosa.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1RIhx6qR2tabo1-U1fq3jwF1K5oAmS59P/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Listo para luchar",
+              "descripcion": "Ben se prepara para un importante enfrentamiento contra un poderoso enemigo.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ij124xma9Nwr9GGft2PGXt-cmBjii2d1/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Ken 10",
+              "descripcion": "Un vistazo al futuro muestra al hijo de Ben usando su propio Omnitrix.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1hzaeBY_90PyFNvTK8Fv-q51cMpFeeh7d/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Ben 10 contra Los 10 Negativos Parte 1",
+              "descripcion": "Ben se enfrenta a versiones malvadas de sus transformaciones alienígenas.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/12fGg3ny59MB_N0LSuVsh30G9r2fsJeFv/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Ben 10 contra Los 10 Negativos Parte 2",
+              "descripcion": "La batalla contra los Ben 10 Negativos llega a su conclusión.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1FkmcknXqlARttaTUmXy3GI2Da3cgj1D7/preview"
+            },
+            {
+              "tipo": "Película",
+              "numero": "10-11-12",
+              "titulo": "El secreto del Omnitrix",
+              "descripcion": "Ben descubre un secreto importante sobre el Omnitrix que cambiará todo.",
+              "duracion": "66:00", 
+              "url": "https://drive.google.com/file/d/1zpBW75QRxT-6B1KZTeiKxtZoBJVaGySc/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "De regreso a casa",
+              "descripcion": "Ben debe encontrar el camino de regreso a casa después de quedar varado en un planeta lejano.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/172l2pGxqGoO7v0iLiCf7JBhqPS7H_rVe/preview"
             }
           ]
         }
