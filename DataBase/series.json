@@ -18,7 +18,7 @@
     {
       "id": 22,
       "titulo": "Dexter: New Blood",
-      "disponible": false,
+      "disponible": true,
       "nuevo": false,
       "enProceso": false,
       "descripcion": "Ambientada 10 años después de que Dexter desapareciera en el ojo del huracán Laura, la serie lo encuentra viviendo con un nombre falso en la pequeña ciudad de Iron Lake, Nueva York.",
