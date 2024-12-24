@@ -17,7 +17,7 @@
     },
     {
       "id": 22,
-      "titulo": "Dexter: New Blood",
+      "titulo": "Dexter: New Blood", 
       "disponible": true,
       "nuevo": true,
       "enProceso": false,
@@ -27,7 +27,7 @@
       "genero": ["Drama", "Crimen", "Suspenso"],
       "director": "Clyde Phillips",
       "actores": ["Michael C. Hall", "Jack Alcott", "Julia Jones", "Johnny Sequoyah", "Alano Miller"],
-      "trailer": "https://youtu.be/t779a6O_Me0?si=UsTa0Y2XkXnSMv80",
+      "trailer": "https://www.youtube.com/embed/t779a6O_Me0",
       "temporadas": [
         {
           "numero": 1,
