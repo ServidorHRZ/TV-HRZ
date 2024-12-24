@@ -28,7 +28,83 @@
       "director": "Clyde Phillips",
       "actores": ["Michael C. Hall", "Jack Alcott", "Julia Jones", "Johnny Sequoyah", "Alano Miller"],
       "trailer": "https://www.youtube.com/embed/l9H1uSS_zkk",
-      "temporadas": []
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Ola de frío",
+              "descripcion": "Primer episodio de la temporada",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1CtT3vdmtnsbcLv0Y8Nopa_rfVskNDw4r/preview"
+            },
+            {
+              "numero": 2, 
+              "titulo": "Las peores circunstancias",
+              "descripcion": "Segundo episodio de la temporada",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Señales de humo",
+              "descripcion": "Tercer episodio de la temporada", 
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1Emb4bnE0o3CMqGDupwg-34fwlIcjzsdV/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Héroe se escribe con Hache",
+              "descripcion": "Cuarto episodio de la temporada",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1vy0GGTIG0gDOZhl4iK50MGOh8G_Bv71t/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Huida",
+              "descripcion": "Quinto episodio de la temporada",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1Rhk636ZbQTZB0F2Tq8h5DcuviiRPERmK/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Demasiados Sándwiches de Atún",
+              "descripcion": "Sexto episodio de la temporada",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/14lhWPBYMPtAHcuxk0TCPaqCkBr07vVIk/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "La piel en sus dientes",
+              "descripcion": "Séptimo episodio de la temporada",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1PE_i_w4Fgg89Wnwx262F3GskWcazVP77/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "El Juego injusto",
+              "descripcion": "Octavo episodio de la temporada",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1idmhghx5RN01m5c4TDLq5KQ7DKuHJH7m/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "El negocio familiar",
+              "descripcion": "Noveno episodio de la temporada",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/13e9SnBADJvaMBgUL44pkHYwJy32s5jG_/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Pecados del padre",
+              "descripcion": "Décimo episodio de la temporada",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1RMy3ud94kZNh89ycS4WFkcujaoC2YPAh/preview"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 20,
