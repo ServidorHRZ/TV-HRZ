@@ -1,6 +1,151 @@
 {
   "series": [
     {
+      "id": 20,
+      "titulo": "Lupin",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": false,
+      "descripcion": "Un ladrón profesional y maestro del disfraz que sigue los pasos de su abuelo, realizando elaborados atracos mientras es perseguido por un tenaz detective.",
+      "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sgxawbFB5Vi5OkPWQLNfl3dvkNJ.jpg",
+      "año": 2021,
+      "genero": ["Crimen", "Drama", "Misterio"],
+      "director": "George Kay",
+      "actores": ["Omar Sy", "Ludivine Sagnier", "Clotilde Hesme", "Vincent Londez"],
+      "trailer": "https://www.youtube.com/embed/ga0iTWXCGa0",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Capítulo 1",
+              "descripcion": "En París actual, Assane Diop se inspira en las aventuras de Arsène Lupin para vengar a su padre por una injusticia infligida por una familia adinerada.",
+              "duracion": "40:00",
+              "url": "https://drive.google.com/file/d/1CtT3vdmtnsbcLv0Y8Nopa_rfVskNDw4r/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Capítulo 2",
+              "descripcion": "Assane busca pistas sobre el paradero del collar y recuerda su primer robo, mientras que el comisario Dumont lucha por capturar al misterioso ladrón.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Capítulo 3",
+              "descripcion": "Assane planea una elaborada fiesta en el Louvre para exponer los crímenes de Hubert Pellegrini. El comisario Dumont se acerca a descubrir su identidad.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Capítulo 4", 
+              "descripcion": "Para proteger a su hijo, Assane debe encontrar a Raoul antes que sus enemigos. Claire confronta a Assane sobre sus mentiras.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Capítulo 5",
+              "descripcion": "Assane busca ayuda para rescatar a Raoul y planea su venganza contra Hubert. El detective Youssef Guedira se acerca a la verdad.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Capítulo 6",
+              "descripcion": "Assane tiende una trampa a Hubert Pellegrini, pero el plan se complica cuando interviene la policía.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Capítulo 7",
+              "descripcion": "Mientras Hubert intenta cubrir sus huellas, Assane y Youssef trabajan juntos para exponer la verdad.",
+              "duracion": "44:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Capítulo 8",
+              "descripcion": "La investigación de Assane lo lleva a descubrir nuevos secretos sobre el pasado de su padre.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Capítulo 9",
+              "descripcion": "Assane ejecuta la fase final de su plan mientras la policía cierra el cerco sobre él.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Capítulo 10",
+              "descripcion": "En el dramático final de temporada, Assane enfrenta a Pellegrini en un último encuentro decisivo.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Capítulo 1",
+              "descripcion": "Assane debe idear un nuevo plan mientras lidia con las consecuencias de sus acciones anteriores.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Capítulo 2",
+              "descripcion": "Una nueva amenaza emerge mientras Assane intenta mantener a su familia a salvo.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Capítulo 3",
+              "descripcion": "Assane descubre una conspiración más profunda que lo obliga a replantearse su estrategia.",
+              "duracion": "44:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Capítulo 4",
+              "descripcion": "Los secretos del pasado salen a la luz mientras Assane busca nuevos aliados.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Capítulo 5",
+              "descripcion": "Assane se ve obligado a tomar decisiones difíciles que afectarán a todos sus seres queridos.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Capítulo 6",
+              "descripcion": "La tensión aumenta mientras Assane prepara su jugada final.",
+              "duracion": "44:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Capítulo 7",
+              "descripcion": "En el episodio final, Assane enfrenta su destino en un enfrentamiento que cambiará todo.",
+              "duracion": "50:00",
+              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 21,
       "titulo": "Dexter",
       "disponible": false,
