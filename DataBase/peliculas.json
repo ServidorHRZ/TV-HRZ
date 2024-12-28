@@ -1,6 +1,33 @@
 {
   "peliculas": [
     {
+      "titulo": "Sonic La Película",
+      "disponible": false,
+      "nuevo": false,
+      "año": 2020,
+      "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/eOC0FSGqyzcnnx7XFgLazI9nACT.jpg",
+      "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview",
+      "descripcion": "Sonic, el veloz erizo azul basado en la famosa serie de videojuegos de Sega, vivirá aventuras y desafíos cuando él y su nuevo mejor amigo Tom unan sus fuerzas para evitar que el malvado Dr. Robotnik capture a Sonic y use sus inmensos poderes para dominar el mundo."
+    },
+    {
+      "titulo": "Sonic 2: La Película",
+      "disponible": false,
+      "nuevo": false,
+      "año": 2022,
+      "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sJiHVM0A3OXDVxl4Z6a7ihMPHfm.jpg",
+      "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview",
+      "descripcion": "Después de establecerse en Green Hills, Sonic está listo para más libertad e independencia, y Tom y Maddie acuerdan dejarlo en casa mientras van de vacaciones. Pero, tan pronto como se van, el Dr. Robotnik regresa con un nuevo compañero, Knuckles, en busca de una esmeralda que tiene el poder de destruir civilizaciones."
+    },
+    {
+      "titulo": "Sonic 3: La Película",
+      "disponible": false,
+      "nuevo": false,
+      "año": 2024,
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrqvtiGmHubDElsKxlCWPuCTkwPI.jpg&w=256&q=75",
+      "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview",
+      "descripcion": "La tercera entrega de las aventuras cinematográficas de Sonic, donde el erizo azul se enfrentará a nuevos desafíos y enemigos mientras continúa protegiendo su nuevo hogar."
+    },
+    {
       "titulo": "Dios No Está Muerto",
       "disponible": false,
       "nuevo": false,
