@@ -50,8 +50,8 @@
             font-size: 1.2rem;
             opacity: 0.8;
         }
-        .movie-container {
-            margin-top: 60px;
+        .movies-container {
+            margin-top: 100px;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 20px;
@@ -142,7 +142,7 @@
             .header h1 {
                 font-size: 3rem;
             }
-            .movie-container {
+            .movies-container {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 8px;
@@ -182,13 +182,13 @@
             }
         }
         @media (max-width: 480px) {
-            .movie-container {
+            .movies-container {
                 gap: 6px;
                 padding: 8px;
             }
         }
         @media (max-width: 360px) {
-            .movie-container {
+            .movies-container {
                 gap: 4px;
                 padding: 6px;
             }
@@ -598,7 +598,7 @@
         </div>
     </div>
 
-    <div class="movie-container" id="movie-container">
+    <div class="movies-container" id="movie-container">
         <!-- Las películas se cargarán aquí dinámicamente -->
     </div>
     <nav class="bottom-nav">
@@ -783,6 +783,13 @@
         document.getElementById('searchClearBtn').addEventListener('click', () => {
             document.getElementById('search-input').value = '';
             mostrarPeliculas(todasLasPeliculas);
+        });
+
+        document.getElementById('search-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault(); // Previene el comportamiento por defecto del Enter
+                searchMovies(e.target.value);
+            }
         });
     </script>
 </body>
