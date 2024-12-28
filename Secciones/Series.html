@@ -52,12 +52,14 @@
             opacity: 0.8;
         }
         .series-container {
+            margin-top: 60px;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 20px;
             padding: 20px;
             max-width: 1400px;
-            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
         }
         .series-card {
             background-color: rgba(0, 0, 0, 0.7);
@@ -145,34 +147,232 @@
         }
 
         .search-container {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8%;
+            max-width: 160px;
+            min-width: 140px;
             display: flex;
-            justify-content: center;
-            margin: 20px 0;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.85);
+            border: 2px solid var(--primary-color);
+            border-radius: 30px;
+            padding: 6px 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+            z-index: 1000;
         }
 
         #search-input {
-            padding: 10px;
-            font-size: 16px;
-            border: 2px solid var(--primary-color);
-            border-radius: 5px 0 0 5px;
-            background-color: rgba(0, 0, 0, 0.7);
+            width: calc(100% - 25px);
+            background: transparent;
+            border: none;
+            padding: 6px;
+            font-size: 13px;
             color: var(--secondary-color);
-            width: 300px;
+            outline: none;
         }
 
-        #search-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: var(--primary-color);
-            color: var(--background-color);
+        #search-input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+        }
+
+        .search-close-btn {
+            background: transparent;
             border: none;
-            border-radius: 0 5px 5px 0;
+            color: var(--primary-color);
+            font-size: 18px;
             cursor: pointer;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 30px;
             transition: all 0.3s ease;
         }
 
-        #search-button:hover {
-            background-color: var(--secondary-color);
+        .search-close-btn:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .search-container:hover {
+            border-color: #fff;
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+        }
+
+        /* Estilos para el mensaje de no resultados */
+        .no-results-message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50vh;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .no-results-content {
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            width: 90%;
+            max-width: 300px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+        }
+
+        .no-results-icon {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        .no-results-title {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .no-results-subtitle {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Media queries para el buscador */
+        @media (max-width: 1200px) {
+            .search-container {
+                width: 15%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .series-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+                padding: 10px;
+            }
+
+            .series-card {
+                width: 100%;
+                aspect-ratio: 2/3;
+                border-width: 1px;
+            }
+
+            .series-info {
+                padding: 6px;
+                background: linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.95) 0%,
+                    rgba(0, 0, 0, 0.7) 70%,
+                    transparent 100%
+                );
+            }
+
+            .series-info h3 {
+                font-size: 0.75rem;
+                margin: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .series-info p {
+                font-size: 0.65rem;
+                margin: 2px 0 0;
+                opacity: 0.8;
+            }
+
+            .new-badge {
+                padding: 2px 6px;
+                font-size: 0.6rem;
+                top: 4px;
+                right: 4px;
+            }
+
+            .search-container {
+                width: 70%;
+                max-width: none;
+            }
+
+            .logo-container h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .series-container {
+                gap: 6px;
+                padding: 8px;
+            }
+
+            .search-container {
+                width: 85%;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .series-container {
+                gap: 4px;
+                padding: 6px;
+            }
+        }
+
+        /* Estilos para el header y buscador en el header */
+        .header-search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-toggle {
+            background: transparent;
+            border: none;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-toggle:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .header-search-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgb(0, 0, 0);
+            padding: 1rem;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            z-index: 1001;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-search-container.active {
+            transform: translateY(0);
+        }
+
+        .header-search-container input {
+            flex: 1;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.8);
+            color: var(--secondary-color);
+            margin-right: 1rem;
         }
 
         .back-button {
@@ -245,11 +445,8 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            background: linear-gradient(to bottom, 
-                rgba(0, 0, 0, 0.9) 0%,
-                rgba(0, 0, 0, 0.8) 50%,
-                rgba(0, 0, 0, 0) 100%);
-            padding: 1rem 0;
+            background: rgb(0, 0, 0);
+            padding: 0.5rem 0;
             transition: all 0.3s ease;
         }
 
@@ -286,30 +483,38 @@
 
         .search-wrapper {
             position: relative;
-            margin-top: 80px;
-            padding: 2rem;
+            margin-top: 70px;
+            padding: 1.5rem;
             background: linear-gradient(to bottom, 
-                rgba(0,0,0,0.8), 
-                rgba(0,0,0,0.4),
+                rgba(0,0,0,0.7), 
+                rgba(0,0,0,0.3),
                 transparent);
         }
 
         .search-container {
-            max-width: 700px;
-            margin: 0 auto;
             position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
         }
 
         #search-input {
             width: 100%;
-            padding: 1rem 3.5rem 1rem 1.5rem;
-            font-size: 1.1rem;
+            padding: 0.8rem 2.5rem 0.8rem 1rem;
+            font-size: 1rem;
             border: 2px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            background: rgba(0, 0, 0, 0.75);
+            border-radius: 25px;
+            background: rgba(0, 0, 0, 0.85);
             color: var(--secondary-color);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
+        }
+
+        #search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+            width: 100%;
         }
 
         #search-button {
@@ -326,32 +531,14 @@
             transition: all 0.3s ease;
         }
 
+        #search-button:hover {
+            color: #fff;
+            transform: translateY(-50%) scale(1.1);
+        }
+
         @media (max-width: 768px) {
-            .series-container {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 8px;
-                padding: 10px;
-            }
-            
-            .series-card {
-                width: 100%;
-                aspect-ratio: 2/3;
-                border-width: 1px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .series-container {
-                gap: 6px;
-                padding: 8px;
-            }
-        }
-
-        @media (max-width: 360px) {
-            .series-container {
-                gap: 4px;
-                padding: 6px;
+            .logo-container h1 {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -362,17 +549,16 @@
             <div class="logo-container">
                 <h1>HRZ TV</h1>
             </div>
-            <div class="nav-icons">
-                <!-- Aquí puedes agregar íconos adicionales si lo deseas -->
+            <div class="header-search">
+                <button class="search-toggle" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
         </div>
-    </div>
-
-    <div class="search-wrapper">
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Buscar series...">
-            <button id="search-button">
-                <i class="fas fa-search"></i>
+        <div class="header-search-container" id="headerSearch">
+            <input type="text" id="search-input" placeholder="Buscar películas, series y más...">
+            <button class="search-toggle" id="searchClose">
+                <i class="fas fa-times"></i>
             </button>
         </div>
     </div>
@@ -522,6 +708,23 @@
             
             document.body.appendChild(modal);
         }
+
+        // Agregar el código para el manejo del buscador en el header
+        const searchToggle = document.getElementById('searchToggle');
+        const searchClose = document.getElementById('searchClose');
+        const headerSearch = document.getElementById('headerSearch');
+        const searchInput = document.getElementById('search-input');
+
+        searchToggle.addEventListener('click', () => {
+            headerSearch.classList.add('active');
+            searchInput.focus();
+        });
+
+        searchClose.addEventListener('click', () => {
+            headerSearch.classList.remove('active');
+            searchInput.value = '';
+            mostrarSeries(todasLasSeries);
+        });
     </script>
 </body>
 </html>
