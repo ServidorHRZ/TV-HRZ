@@ -1,0 +1,43 @@
+{
+  "announcements": [
+    {
+      "id": 1,
+      "tipo": "nuevo_episodio",
+      "titulo": "El Juego del Calamar",
+      "subtitulo": "Temporada 2 Ya Disponible",
+      "descripcion": "La segunda temporada del fenómeno mundial ya está aquí. Nuevos juegos, nuevas reglas, misma supervivencia.",
+      "imagen": "https://sietedias.co/wp-content/uploads/2022/05/juego-calamar-1140x631.jpeg",
+      "fecha": "Disponible Ahora",
+      "destacado": true,
+      "link": "serie.html",
+      "serieId": 25,
+      "disponible": true
+    },
+    {
+      "id": 2,
+      "tipo": "nuevo_episodio",
+      "titulo": "Dexter: Pecado Original",
+      "subtitulo": "Nuevo episodio cada sábado",
+      "descripcion": "Descubre los orígenes oscuros de Dexter Morgan",
+      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/63cc5af30c4ace2e242145ad3abd20c17579aadf60deebba85eb7ed2388255af.jpg",
+      "fecha": "Sábados 8:00 pm",
+      "destacado": true,
+      "link": "serie.html",
+      "serieId": 21,
+      "disponible": true
+    },
+    {
+      "id": 3,
+      "tipo": "proximo_estreno",
+      "titulo": "Doctor House",
+      "subtitulo": "Temporada 2 completa",
+      "descripcion": "Próximamente disponible la segunda temporada completa",
+      "imagen": "https://editorialtelevisa.brightspotcdn.com/dims4/default/5636049/2147483647/strip/false/crop/1308x736+0+0/resize/1200x675!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2F1a%2F2a%2Fd1b0dbdd4caba148ce7f5a220e9d%2Fdr-house.jpg",
+      "fecha": "Próximo mes",
+      "destacado": false,
+      "link": "serie.html",
+      "serieId": 20,
+      "disponible": true
+    }
+  ]
+} 

@@ -52,11 +52,11 @@
             opacity: 0.8;
         }
         .series-container {
-            margin-top: 100px;
+            margin-top: 20px;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 20px;
+            gap: 15px;
+            padding: 10px;
             max-width: 1400px;
             margin-left: auto;
             margin-right: auto;
@@ -541,6 +541,222 @@
                 font-size: 1.5rem;
             }
         }
+
+        /* Estilos mejorados para el carrusel de anuncios */
+        .announcements-carousel {
+            position: relative;
+            width: 100%;
+            max-width: 1400px;
+            margin: 70px auto 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            z-index: 1;
+            height: 400px; /* Altura fija para el banner */
+        }
+
+        .announcements-container {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .announcement-slide {
+            min-width: 100%;
+            position: relative;
+            height: 100%;
+        }
+
+        .announcement-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .announcement-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 40px;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.95) 0%,
+                rgba(0, 0, 0, 0.8) 40%,
+                rgba(0, 0, 0, 0.4) 80%,
+                transparent 100%
+            );
+            color: var(--secondary-color);
+            z-index: 2;
+        }
+
+        .announcement-title {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(45deg, var(--primary-color), #fff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+
+        .announcement-subtitle {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .announcement-description {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .announcement-date {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            padding: 8px 16px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            display: flex;
+            gap: 10px;
+            z-index: 3;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+        }
+
+        .indicator.active {
+            background: var(--primary-color);
+            transform: scale(1.2);
+        }
+
+        /* Animación de entrada para los slides */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .announcement-slide {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        /* Mejoras responsive */
+        @media (max-width: 768px) {
+            .announcements-carousel {
+                height: 300px;
+            }
+
+            .announcement-content {
+                padding: 20px;
+            }
+
+            .announcement-title {
+                font-size: 2rem;
+            }
+
+            .announcement-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .announcement-description {
+                font-size: 0.9rem;
+                margin-bottom: 15px;
+            }
+
+            .announcement-date {
+                font-size: 1rem;
+                padding: 5px 10px;
+            }
+
+            .carousel-buttons {
+                padding: 0 10px;
+            }
+
+            .carousel-button {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+
+        /* Efecto de zoom suave en la imagen de fondo */
+        .announcement-image {
+            transition: transform 6s ease;
+        }
+
+        .announcement-slide.active .announcement-image {
+            transform: scale(1.1);
+        }
+
+        .announcement-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .ver-ahora-btn {
+            background: var(--primary-color);
+            color: black;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .ver-ahora-btn:hover {
+            background: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+        }
+
+        .ver-ahora-btn i {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .ver-ahora-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+            
+            .announcement-info {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+        }
     </style>
 </head>
 <body>
@@ -560,6 +776,15 @@
             <button class="search-toggle" id="searchClose">
                 <i class="fas fa-times"></i>
             </button>
+        </div>
+    </div>
+
+    <div class="announcements-carousel">
+        <div class="announcements-container" id="announcementsContainer">
+            <!-- Los anuncios se cargarán aquí dinámicamente -->
+        </div>
+        <div class="carousel-indicators" id="carouselIndicators">
+            <!-- Los indicadores se generarán dinámicamente -->
         </div>
     </div>
 
@@ -732,6 +957,142 @@
             searchInput.value = '';
             mostrarSeries(todasLasSeries);
         });
+
+        // Carrusel de anuncios
+        let currentSlide = 0;
+        let announcements = [];
+
+        function cargarAnuncios() {
+            fetch('../DataBase/announcements.json')
+                .then(response => response.json())
+                .then(data => {
+                    announcements = data.announcements;
+                    mostrarAnuncios();
+                    setupIndicators();
+                    startAutoSlide();
+                })
+                .catch(error => console.error('Error cargando los anuncios:', error));
+        }
+
+        function mostrarAnuncios() {
+            const container = document.getElementById('announcementsContainer');
+            container.innerHTML = '';
+            
+            announcements.forEach(announcement => {
+                const slide = document.createElement('div');
+                slide.className = 'announcement-slide';
+                
+                // Agregar botón "Ver ahora" solo si está disponible
+                const botonHTML = announcement.disponible ? 
+                    `<button class="ver-ahora-btn" onclick="verSerie(${announcement.serieId})">
+                        Ver ahora <i class="fas fa-play-circle"></i>
+                    </button>` : '';
+                
+                slide.innerHTML = `
+                    <img src="${announcement.imagen}" alt="${announcement.titulo}" class="announcement-image">
+                    <div class="announcement-content">
+                        <h2 class="announcement-title">${announcement.titulo}</h2>
+                        <h3 class="announcement-subtitle">${announcement.subtitulo}</h3>
+                        <p class="announcement-description">${announcement.descripcion}</p>
+                        <div class="announcement-info">
+                            <div class="announcement-date">${announcement.fecha}</div>
+                            ${botonHTML}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(slide);
+            });
+            
+            updateSlidePosition();
+        }
+
+        function setupIndicators() {
+            const indicators = document.getElementById('carouselIndicators');
+            indicators.innerHTML = '';
+            
+            announcements.forEach((_, index) => {
+                const indicator = document.createElement('div');
+                indicator.className = `indicator ${index === currentSlide ? 'active' : ''}`;
+                indicator.addEventListener('click', () => goToSlide(index));
+                indicators.appendChild(indicator);
+            });
+        }
+
+        function updateSlidePosition() {
+            const container = document.getElementById('announcementsContainer');
+            const slides = document.querySelectorAll('.announcement-slide');
+            
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+            });
+            
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+            slides[currentSlide].classList.add('active');
+            
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % announcements.length;
+            updateSlidePosition();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + announcements.length) % announcements.length;
+            updateSlidePosition();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlidePosition();
+        }
+
+        let autoSlideInterval;
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(() => {
+                const nextSlideIndex = (currentSlide + 1) % announcements.length;
+                goToSlide(nextSlideIndex);
+            }, 5000);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Cargar anuncios cuando se carga la página
+        window.addEventListener('load', cargarAnuncios);
+
+        // Añadir efecto de hover para pausar el carrusel
+        document.querySelector('.announcements-carousel').addEventListener('mouseenter', () => {
+            stopAutoSlide();
+        });
+
+        document.querySelector('.announcements-carousel').addEventListener('mouseleave', () => {
+            startAutoSlide();
+        });
+
+        // Agregar esta nueva función
+        function verSerie(serieId) {
+            // Cargar el archivo series.json
+            fetch('../DataBase/series.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Buscar la serie por su ID
+                    const serie = data.series.find(s => s.id === serieId);
+                    if (serie) {
+                        // Guardar la serie seleccionada en localStorage
+                        localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
+                        // Redirigir a la página de la serie
+                        window.location.href = 'serie.html';
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
     </script>
 </body>
 </html>
+

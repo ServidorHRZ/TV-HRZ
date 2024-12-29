@@ -1,7 +1,7 @@
 {
   "series": [
     {
-      "id": 21,
+      "id": 25,
       "titulo": "El Juego del Calamar",
       "disponible": true,
       "nuevo": true,
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 24,
       "titulo": "Lupin",
       "disponible": true,
       "nuevo": true,
@@ -284,7 +284,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 23,
       "titulo": "Dexter",
       "disponible": false,
       "nuevo": false,
@@ -390,7 +390,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 21,
       "titulo": "Dexter: Pecado Original",
       "disponible": true,
       "nuevo": true,
@@ -415,17 +415,24 @@
             },
             {
               "numero": 2,
-              "titulo": "Un niño en una tienda de dulces",
+              "titulo": "Un niño en una tienda de dulces", 
               "descripcion": "Dexter se adapta a su nueva vida en el departamento de policía mientras intenta mantener sus impulsos bajo control.",
               "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1p0X47kcHkLRAm_F-T3S6fRJu6r6ZGofK/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Miami Vice",
+              "descripcion": "Dexter se involucra en un caso complejo mientras investiga un asesinato relacionado con el tráfico de drogas en Miami.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1BmLGVzmT6itOJpSHs0D9yd_MeSbRr6Qf/preview"
             }
           ]
         }
       ]
     },
     {
-      "id": 19,
+      "id": 20,
       "titulo": "Doctor House",
       "disponible": true,
       "nuevo": true,
@@ -677,7 +684,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 0,
       "titulo": "Sherlock",
       "disponible": true,
       "nuevo": false,
@@ -796,7 +803,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 1,
       "titulo": "The Flash",
       "disponible": true,
       "nuevo": false,
@@ -978,7 +985,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "titulo": "Mr. Robot",
       "nuevo": false,
       "disponible": true,
@@ -1069,7 +1076,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 3,
       "titulo": "Las Sombrías Aventuras de Billy y Mandy",
       "disponible": true,
       "nuevo": false,
@@ -1202,7 +1209,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "titulo": "Ed, Edd y Eddy",
       "disponible": true,
       "nuevo": true,
@@ -1405,7 +1412,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 5,
       "titulo": "Johnny Bravo",
       "disponible": true,
       "nuevo": false,
@@ -1510,7 +1517,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 6,
       "titulo": "El Laboratorio de Dexter",
       "disponible": true,
       "nuevo": true,
@@ -1678,7 +1685,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 7,
       "titulo": "Johnny Test",
       "disponible": true,
       "nuevo": false,
@@ -1790,7 +1797,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 8,
       "titulo": "Un Show Más",
       "disponible": true,
       "nuevo": false,
@@ -1902,7 +1909,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 9,
       "titulo": "Ben 10",
       "disponible": true,
       "nuevo": true,
@@ -2289,7 +2296,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 10,
       "titulo": "Ben 10: Fuerza Alienígena",
       "disponible": true,
       "nuevo": true,
@@ -2497,7 +2504,7 @@
       ]
     },
     {
-      "id": 12, 
+      "id": 11, 
       "titulo": "Ben 10: Supremacía Alienígena",
       "disponible": false,
       "nuevo": true,

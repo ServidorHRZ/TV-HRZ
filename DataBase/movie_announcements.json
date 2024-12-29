@@ -1,0 +1,43 @@
+{
+  "announcements": [
+    {
+      "id": 1,
+      "tipo": "nuevo_estreno", 
+      "titulo": "Culpa Tuya",
+      "subtitulo": "El esperado estreno",
+      "descripcion": "La continuación de la apasionante historia de Noah y Nick. Basada en la exitosa novela de Mercedes Ron.",
+      "imagen": "https://images.justwatch.com/backdrop/323290040/s640/culpa-tuya",
+      "fecha": "Estreno 29 de Diciembre",
+      "destacado": true,
+      "link": "movie.html",
+      "peliculaId": 1,
+      "disponible": false
+    },
+    {
+      "id": 2,
+      "tipo": "proximo_estreno",
+      "titulo": "Sonic 3",
+      "subtitulo": "La Nueva Aventura",
+      "descripcion": "Sonic y sus amigos regresan en una nueva y emocionante aventura contra el Dr. Robotnik.",
+      "imagen": "https://www.mundodeportivo.com/alfabeta/hero/2024/11/sonic-3-la-pelicula.jpg?width=1200",
+      "fecha": "Estreno 29 de Diciembre",
+      "destacado": true,
+      "link": "movie.html",
+      "peliculaId": 2,
+      "disponible": false
+    },
+    {
+      "id": 3,
+      "tipo": "destacado",
+      "titulo": "Ben 10: El Secreto del Omnitrix",
+      "subtitulo": "La Película Clásica",
+      "descripcion": "Ben Tennyson debe emprender una aventura épica para salvar al universo cuando el Omnitrix comienza una cuenta regresiva de autodestrucción.",
+      "imagen": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/4fa79426-2fd4-4ae8-9ba4-fe12db24b04f/1dea915a-6ec1-11ef-a510-023929f9f003?host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "fecha": "Estreno 29 de Diciembre",
+      "destacado": true,
+      "link": "movie.html",
+      "peliculaId": 3,
+      "disponible": false
+    }
+  ]
+}

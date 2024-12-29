@@ -21,6 +21,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            gap: 0;
+            padding-bottom: 70px;
         }
         .header {
             text-align: center;
@@ -50,24 +52,25 @@
             font-size: 1.2rem;
             opacity: 0.8;
         }
-        .movies-container {
-            margin-top: 100px;
+        .movie-container {
+            margin-top: 20px;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 20px;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            padding: 10px;
             max-width: 1400px;
             margin-left: auto;
             margin-right: auto;
         }
         .movie-card {
             background-color: rgba(0, 0, 0, 0.7);
-            border: 2px solid var(--primary-color);
+            border: 1px solid var(--primary-color);
             aspect-ratio: 2/3;
             position: relative;
             overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+            transition: transform 0.3s ease;
         }
         .movie-card::before {
             content: '';
@@ -87,9 +90,7 @@
             transition: all 0.5s ease;
         }
         .movie-card:hover {
-            transform: translateY(-10px) scale(1.05);
-            box-shadow: 0 0 30px var(--primary-color);
-            background-color: rgba(0, 255, 255, 0.1);
+            transform: scale(1.05);
         }
         .movie-card:hover::before {
             top: -75%;
@@ -142,11 +143,10 @@
             .header h1 {
                 font-size: 3rem;
             }
-            .movies-container {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
+            .movie-container {
+                grid-template-columns: repeat(4, 1fr);
                 gap: 8px;
-                padding: 10px;
+                padding: 8px;
             }
             .movie-card {
                 width: 100%;
@@ -154,25 +154,13 @@
                 border-width: 1px;
             }
             .movie-info {
-                padding: 6px;
-                background: linear-gradient(
-                    to top,
-                    rgba(0, 0, 0, 0.95) 0%,
-                    rgba(0, 0, 0, 0.7) 70%,
-                    transparent 100%
-                );
+                padding: 5px;
             }
             .movie-info h3 {
                 font-size: 0.75rem;
-                margin: 0;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
             }
             .movie-info p {
                 font-size: 0.65rem;
-                margin: 2px 0 0;
-                opacity: 0.8;
             }
             .new-badge {
                 padding: 2px 6px;
@@ -182,13 +170,14 @@
             }
         }
         @media (max-width: 480px) {
-            .movies-container {
+            .movie-container {
+                grid-template-columns: repeat(3, 1fr);
                 gap: 6px;
-                padding: 8px;
+                padding: 6px;
             }
         }
         @media (max-width: 360px) {
-            .movies-container {
+            .movie-container {
                 gap: 4px;
                 padding: 6px;
             }
@@ -576,6 +565,237 @@
                 width: 85%;
             }
         }
+
+        /* Estilos mejorados para el carrusel de anuncios */
+        .announcements-carousel {
+            position: relative;
+            width: 100%;
+            max-width: 1400px;
+            margin: 70px auto 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            z-index: 1;
+            height: 400px;
+        }
+
+        .announcements-container {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .announcement-slide {
+            min-width: 100%;
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .announcement-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 6s ease;
+        }
+
+        .announcement-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 40px;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.95) 0%,
+                rgba(0, 0, 0, 0.8) 40%,
+                rgba(0, 0, 0, 0.4) 80%,
+                transparent 100%
+            );
+            color: var(--secondary-color);
+            z-index: 2;
+        }
+
+        .announcement-title {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(45deg, var(--primary-color), #fff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+
+        .announcement-subtitle {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .announcement-description {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .announcement-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .announcement-date {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            padding: 8px 16px;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            display: flex;
+            gap: 10px;
+            z-index: 3;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+        }
+
+        .indicator.active {
+            background: var(--primary-color);
+            transform: scale(1.2);
+        }
+
+        .ver-ahora-btn {
+            background: var(--primary-color);
+            color: black;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .ver-ahora-btn:hover {
+            background: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+        }
+
+        .ver-ahora-btn i {
+            font-size: 1.2rem;
+        }
+
+        /* Animación de entrada para los slides */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .announcement-slide {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .announcement-slide.active .announcement-image {
+            transform: scale(1.1);
+        }
+
+        /* Media queries para el carrusel */
+        @media (max-width: 768px) {
+            .announcements-carousel {
+                height: 300px;
+                margin-top: 60px;
+            }
+
+            .announcement-content {
+                padding: 20px;
+            }
+
+            .announcement-title {
+                font-size: 2rem;
+            }
+
+            .announcement-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .announcement-description {
+                font-size: 0.9rem;
+                margin-bottom: 15px;
+            }
+
+            .announcement-date {
+                font-size: 1rem;
+                padding: 5px 10px;
+            }
+
+            .ver-ahora-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .announcement-info {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+        }
+
+        /* Ajustes responsive */
+        @media (max-width: 1200px) {
+            .movie-container {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .movie-container {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .movie-container {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 8px;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .movie-container {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 6px;
+                padding: 6px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -598,7 +818,17 @@
         </div>
     </div>
 
-    <div class="movies-container" id="movie-container">
+    <!-- Carrusel de anuncios -->
+    <div class="announcements-carousel">
+        <div class="announcements-container" id="announcementsContainer">
+            <!-- Los anuncios se cargarán aquí dinámicamente -->
+        </div>
+        <div class="carousel-indicators" id="carouselIndicators">
+            <!-- Los indicadores se generarán dinámicamente -->
+        </div>
+    </div>
+
+    <div class="movie-container" id="movie-container">
         <!-- Las películas se cargarán aquí dinámicamente -->
     </div>
     <nav class="bottom-nav">
@@ -627,21 +857,24 @@
     </div>
 
     <script>
-        // Función para cargar las películas desde el JSON
-        let todasLasPeliculas = []; // Variable global para almacenar todas las películas
+        // Variables globales
+        let todasLasPeliculas = []; // Para las películas
+        let currentSlide = 0;       // Para el carrusel
+        let announcements = [];     // Para los anuncios
+        let autoSlideInterval;      // Para el control del carrusel
 
+        // Función para cargar películas
         function cargarPeliculas() {
             fetch('../DataBase/peliculas.json')
                 .then(response => response.json())
                 .then(data => {
-                    // Filtrar solo las películas disponibles
                     todasLasPeliculas = data.peliculas.filter(pelicula => pelicula.disponible);
                     mostrarPeliculas(todasLasPeliculas);
                 })
                 .catch(error => console.error('Error cargando las películas:', error));
         }
 
-        // Función para mostrar las películas filtradas
+        // Función para mostrar películas
         function mostrarPeliculas(peliculasFiltradas) {
             const movieContainer = document.getElementById('movie-container');
             movieContainer.innerHTML = '';
@@ -670,7 +903,165 @@
             });
         }
 
-        // Función de búsqueda en tiempo real
+        // Funciones para el carrusel de anuncios
+        function cargarAnuncios() {
+            fetch('../DataBase/movie_announcements.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Error al cargar los anuncios');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (!data || !data.announcements) {
+                        throw new Error('Formato de datos inválido');
+                    }
+                    announcements = data.announcements;
+                    mostrarAnuncios();
+                    setupIndicators();
+                    startAutoSlide();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    const container = document.getElementById('announcementsContainer');
+                    container.innerHTML = `
+                        <div class="announcement-slide">
+                            <div class="announcement-content">
+                                <h2 class="announcement-title">Error al cargar los anuncios</h2>
+                                <p class="announcement-description">Por favor, intente más tarde.</p>
+                            </div>
+                        </div>
+                    `;
+                });
+        }
+
+        function mostrarAnuncios() {
+            const container = document.getElementById('announcementsContainer');
+            container.innerHTML = '';
+            
+            announcements.forEach(announcement => {
+                const slide = document.createElement('div');
+                slide.className = 'announcement-slide';
+                
+                const botonHTML = announcement.disponible ? 
+                    `<button class="ver-ahora-btn" onclick="verPelicula(${announcement.peliculaId})">
+                        Ver ahora <i class="fas fa-play-circle"></i>
+                    </button>` : '';
+                
+                slide.innerHTML = `
+                    <img src="${announcement.imagen}" alt="${announcement.titulo}" class="announcement-image">
+                    <div class="announcement-content">
+                        <h2 class="announcement-title">${announcement.titulo}</h2>
+                        <h3 class="announcement-subtitle">${announcement.subtitulo}</h3>
+                        <p class="announcement-description">${announcement.descripcion}</p>
+                        <div class="announcement-info">
+                            <div class="announcement-date">${announcement.fecha}</div>
+                            ${botonHTML}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(slide);
+            });
+            
+            updateSlidePosition();
+        }
+
+        // Funciones auxiliares del carrusel
+        function setupIndicators() {
+            const indicators = document.getElementById('carouselIndicators');
+            indicators.innerHTML = '';
+            
+            announcements.forEach((_, index) => {
+                const indicator = document.createElement('div');
+                indicator.className = `indicator ${index === currentSlide ? 'active' : ''}`;
+                indicator.addEventListener('click', () => goToSlide(index));
+                indicators.appendChild(indicator);
+            });
+        }
+
+        function updateSlidePosition() {
+            const container = document.getElementById('announcementsContainer');
+            const slides = document.querySelectorAll('.announcement-slide');
+            
+            // Remover la clase active de todos los slides
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            // Actualizar la posición del contenedor
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Añadir la clase active al slide actual
+            slides[currentSlide].classList.add('active');
+            
+            // Actualizar los indicadores
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function startAutoSlide() {
+            stopAutoSlide();
+            autoSlideInterval = setInterval(() => {
+                nextSlide();
+            }, 5000);
+        }
+
+        function stopAutoSlide() {
+            if (autoSlideInterval) {
+                clearInterval(autoSlideInterval);
+            }
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % announcements.length;
+            updateSlidePosition();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlidePosition();
+        }
+
+        function updateIndicators() {
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        // Función para ver película
+        function verPelicula(peliculaId) {
+            fetch('../DataBase/peliculas.json')
+                .then(response => response.json())
+                .then(data => {
+                    const pelicula = data.peliculas.find(p => p.id === peliculaId);
+                    if (pelicula) {
+                        localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
+                        window.location.href = 'movie.html';
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        // Event Listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            cargarPeliculas();
+            cargarAnuncios();
+            
+            const carousel = document.querySelector('.announcements-carousel');
+            if (carousel) {
+                carousel.addEventListener('mouseenter', stopAutoSlide);
+                carousel.addEventListener('mouseleave', startAutoSlide);
+            }
+        });
+
+        // Búsqueda
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            searchMovies(e.target.value);
+        });
+
         function searchMovies(searchTerm) {
             searchTerm = searchTerm.toLowerCase().trim();
             
@@ -686,50 +1077,6 @@
             });
 
             mostrarPeliculas(peliculasFiltradas);
-        }
-
-        // Event listeners
-        window.addEventListener('load', cargarPeliculas);
-
-        // Búsqueda en tiempo real con cada tecla
-        document.getElementById('search-input').addEventListener('input', (e) => {
-            searchMovies(e.target.value);
-        });
-
-        // Agrega esta función después del script existente
-        function mostrarMensajeNoDisponible() {
-            const modal = document.createElement('div');
-            modal.style.cssText = `
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: rgba(0, 0, 0, 0.9);
-                padding: 20px;
-                border: 2px solid var(--primary-color);
-                border-radius: 10px;
-                color: var(--secondary-color);
-                text-align: center;
-                z-index: 1000;
-                box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-            `;
-            
-            modal.innerHTML = `
-                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Contenido No Disponible</h3>
-                <p>Este contenido estará disponible próximamente.</p>
-                <p>Intenta más tarde!</p>
-                <button onclick="this.parentElement.remove()" style="
-                    margin-top: 15px;
-                    padding: 8px 16px;
-                    background: var(--primary-color);
-                    border: none;
-                    border-radius: 5px;
-                    color: black;
-                    cursor: pointer;
-                ">Aceptar</button>
-            `;
-            
-            document.body.appendChild(modal);
         }
 
         // Efecto de scroll en el header
