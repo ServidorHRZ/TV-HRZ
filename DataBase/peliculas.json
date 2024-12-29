@@ -3,7 +3,7 @@
     {
       "titulo": "Sonic La Película",
       "disponible": false,
-      "nuevo": false,
+      "nuevo": true,
       "año": 2020,
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/eOC0FSGqyzcnnx7XFgLazI9nACT.jpg",
       "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview",
@@ -12,7 +12,7 @@
     {
       "titulo": "Sonic 2: La Película",
       "disponible": false,
-      "nuevo": false,
+      "nuevo": true,
       "año": 2022,
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sJiHVM0A3OXDVxl4Z6a7ihMPHfm.jpg",
       "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview",
@@ -21,7 +21,7 @@
     {
       "titulo": "Sonic 3: La Película",
       "disponible": false,
-      "nuevo": false,
+      "nuevo": true,
       "año": 2024,
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrqvtiGmHubDElsKxlCWPuCTkwPI.jpg&w=256&q=75",
       "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview",
@@ -30,7 +30,7 @@
     {
       "titulo": "Dios No Está Muerto",
       "disponible": true,
-      "nuevo": false,
+      "nuevo": true,
       "año": 2014,
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FqgcoPSP51XWN4i5KuXpkYM1fryn.jpg&w=256&q=75",
       "enlace": "https://drive.google.com/file/d/1mAei6LMV-0chbfJwZM-GeUWMKg2hLVOL/preview",
@@ -39,7 +39,7 @@
     {
       "titulo": "Dios No Está Muerto 2",
       "disponible": true, 
-      "nuevo": false,
+      "nuevo": true,
       "año": 2016,
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FVPJGWbHC4OR0SP4YDsMNg6kWBJ.jpg&w=256&q=75",
       "enlace": "https://drive.google.com/file/d/1ttJpUmuRuo7yrxAN3T8dVOBf5WhkK6oi/preview",
@@ -48,7 +48,7 @@
     {
       "titulo": "Dios No Está Muerto 3: Una Luz en la Oscuridad",
       "disponible": true,
-      "nuevo": false, 
+      "nuevo": true, 
       "año": 2018,
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7dRJo48oFLQsNs4DtCrR4onp09d.jpg&w=256&q=75",
       "enlace": "https://drive.google.com/file/d/1-X4D6-wURD5JKs5NrtHVBH-_psD6xNpz/preview",
@@ -57,7 +57,7 @@
     {
       "titulo": "Dios No Está Muerto 4: Nos, El Pueblo",
       "disponible": false,
-      "nuevo": false,
+      "nuevo": true,
       "año": 2021,
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FapaFJ4MlhAC4QNlMKk9cgKNE8wE.jpg&w=256&q=75",
       "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview", 
@@ -66,7 +66,7 @@
     {
       "titulo": "Billy y Mandy Salvan la Navidad",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "año": 2005,
       "imagen": "https://www.lavanguardia.com/peliculas-series/images/movie/poster/2005/12/w1280/4XjisTfsdBSVWBIwumtz1qvvRWX.jpg",
       "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview",
@@ -75,7 +75,7 @@
     {
       "titulo": "Deseo navideño cumplido", 
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "año": 2023,
       "imagen": "https://m.media-amazon.com/images/S/pv-target-images/3dba8b664cf475571a78b91057bee8706e51b4998e586306e10ec64ab69ecaa9.jpg",
       "enlace": "https://www.youtube.com/embed/yDmlpOQdNcM",
@@ -83,8 +83,8 @@
     },
     {
       "titulo": "Elf Man",
-      "disponible": true,
-      "nuevo": true,
+      "disponible": false,
+      "nuevo": false,
       "año": 2012,
       "imagen": "https://pics.filmaffinity.com/Elf_Man-879900270-mmed.jpg",
       "enlace": "https://www.youtube.com/embed/-b7Vjc5zlgo",
@@ -96,7 +96,7 @@
       "año": 1994,
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDp2IR-UpIpOOpvy5g1vDs6AUEIu0NFADqg&s",
       "enlace": "https://drive.google.com/file/d/1xW87XqTgjNtoy17KrCONceCgc4A7_gM7/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Scott Calvin, un padre divorciado, se convierte accidentalmente en Santa Claus después de que el verdadero Santa se cae de su tejado en Nochebuena. Scott debe aceptar su nuevo rol mientras intenta mantener su relación con su hijo."
     },
     {
@@ -105,7 +105,7 @@
       "año": 2002,
       "imagen": "https://es.web.img3.acsta.net/medias/nmedia/18/82/96/87/20199304.jpg", 
       "enlace": "https://drive.google.com/file/d/1g4C-koSYINkVv4B9MW2WvIZYCvHSLZcR/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Scott Calvin ha sido Santa Claus durante ocho años, pero ahora debe encontrar una Sra. Claus antes de la próxima Navidad o dejará de ser Santa para siempre."
     },
     {
@@ -114,7 +114,7 @@
       "año": 2006,
       "imagen": "https://es.web.img3.acsta.net/pictures/15/01/05/15/05/424480.jpg",
       "enlace": "https://drive.google.com/file/d/1Ir7lsbWah4r1Kje2EaHrZzKyisVd-Xyx/preview", 
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Santa/Scott Calvin debe enfrentarse a Jack Frost, quien está intentando tomar el control de la Navidad. Mientras tanto, debe lidiar con problemas familiares y mantener la magia navideña viva."
     },
     {
@@ -123,7 +123,7 @@
       "año": 2023,
       "imagen": "https://www.universalpictures.com.mx/tl_files/content/movies/violent_night/posters/01.jpg",
       "enlace": "https://drive.google.com/file/d/1C4HfovUjsyGJkrzd9Cq0xE_ENNLyOT34/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Cuando un grupo de mercenarios ataca la propiedad de una familia adinerada en Nochebuena, Santa Claus debe intervenir para salvar el día y la Navidad, demostrando por qué es mejor no estar en su lista de traviesos."
     },
     {
@@ -132,7 +132,7 @@
       "año": 2021,
       "imagen": "https://pics.filmaffinity.com/home_sweet_home_alone-872888087-large.jpg",
       "enlace": "https://drive.google.com/file/d/1gpoJTZvu8sx6vMQ5a0bJnvohTPUKw_3Q/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Un niño ingenioso debe proteger su hogar de una pareja casada que intenta recuperar una reliquia familiar invaluable durante la temporada navideña."
     },
     {
@@ -141,7 +141,7 @@
       "año": 2022,
       "imagen": "https://m.media-amazon.com/images/S/pv-target-images/8d2f4db249ea1eb1d50862345c2cfbb0a7f018fbb8e2541c80bd21494d982727.jpg",
       "enlace": "https://drive.google.com/file/d/1KUHyoKq931HT2kOzL3-MxBQI6Hn6-Oqf/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Un padre de familia decide hacer la mejor fiesta de Navidad en su oficina para impresionar a un cliente importante, pero la celebración se sale de control y amenaza con arruinar su carrera."
     },
     {
@@ -150,7 +150,7 @@
       "año": 2023,
       "imagen": "https://pics.filmaffinity.com/Genie-138388806-large.jpg",
       "enlace": "https://drive.google.com/file/d/1wGGJFyv83-qTld12-tTu7vMQynQcTYvO/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Un genio atrapado en una caja de música durante 2000 años ayuda a un padre a reconectar con su hija durante la temporada navideña, enseñándoles el verdadero significado de la magia y el amor familiar."
     },
     {
@@ -159,7 +159,7 @@
       "año": 1990,
       "imagen": "https://pics.filmaffinity.com/home_alone-163260879-large.jpg",
       "enlace": "https://drive.google.com/file/d/1CagmtZmCgS5X132pdz70pugxWOnmc71Y/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Kevin McCallister, un niño de 8 años, es accidentalmente olvidado cuando su familia se va de vacaciones navideñas a París. Kevin debe defender su casa de dos torpes ladrones usando una serie de ingeniosas trampas."
     },
     {
@@ -168,7 +168,7 @@
       "año": 1992,
       "imagen": "https://image.tmdb.org/t/p/original/48Wa6L2QzY47nWqtRCgiqYlecc9.jpg",
       "enlace": "https://drive.google.com/file/d/1ZStdjNhTEKs1DnT8b7-QgrJNyecLQh3Q/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Kevin McCallister se pierde en Nueva York y debe enfrentarse nuevamente a los mismos ladrones, quienes buscan venganza después de su encuentro anterior. Esta vez, Kevin usa el ambiente urbano para crear elaboradas trampas."
     },
     {
@@ -177,7 +177,7 @@
       "año": 1997,
       "imagen": "https://image.tmdb.org/t/p/original/eyGhwPTLYTKpCi5c9OvtKNS4zB7.jpg",
       "enlace": "https://drive.google.com/file/d/18FZon3d_EZBsByFgK18iyIJ_XYC99vBO/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Un nuevo niño protagonista debe proteger un microchip experimental de unos espías internacionales que han invadido su hogar. Utilizando tecnología avanzada y trampas ingeniosas, deberá defender la valiosa información."
     },
     {
@@ -186,7 +186,7 @@
       "año": 2018,
       "imagen": "https://es.web.img3.acsta.net/pictures/18/10/10/16/04/5479886.jpg",
       "enlace": "https://drive.google.com/file/d/10R6fkumlnJSVCDaKmHtXIoNrZkSPud6l/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Dos hermanos planean atrapar a Santa Claus en Nochebuena, pero terminan embarcándose en una aventura mágica con él para salvar la Navidad. Durante su viaje, descubren el verdadero significado del espíritu navideño."
     },
     {
@@ -195,7 +195,7 @@
       "año": 2020,
       "imagen": "https://es.web.img2.acsta.net/pictures/20/10/20/08/59/0323500.jpg",
       "enlace": "https://drive.google.com/file/d/1G4ojr6PrMop9UkbszlekhJFbFTioms5v/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Kate Pierce, ahora una adolescente cínica, se reúne inesperadamente con Santa Claus cuando un misterioso alborotador amenaza con cancelar la Navidad para siempre. Una nueva aventura mágica comienza para salvar las fiestas."
     },
     {
@@ -204,7 +204,7 @@
       "año": 1996,
       "imagen": "https://mx.web.img2.acsta.net/pictures/18/11/09/02/47/1757410.jpg",
       "enlace": "https://drive.google.com/file/d/14mgzLgkKVuGirawp5i_aAysoIWFajMux/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Un padre ocupado promete a su hijo conseguir el juguete más popular de la temporada navideña: Turbo-Man. Sin embargo, al dejarlo para último momento, se embarca en una frenética búsqueda el día de Nochebuena, compitiendo con otros padres desesperados."
     },
     {
@@ -213,7 +213,7 @@
       "año": 2024,
       "imagen": "https://laforja.canzionfilms.com/images/about-poster.jpg",
       "enlace": "https://drive.google.com/file/d/1qGA8-6kEpjvzTXi_ww2RD9-Ax3cvRGTO/preview",
-      "nuevo": true,
+      "nuevo": false,
       "descripcion": "Un thriller sobrenatural que sigue a una familia que se muda a una antigua herrería con un oscuro pasado. Pronto descubren que el lugar está maldito y deben enfrentarse a fuerzas sobrenaturales para sobrevivir."
     },
     {
