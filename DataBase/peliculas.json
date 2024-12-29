@@ -29,29 +29,29 @@
     },
     {
       "titulo": "Dios No Está Muerto",
-      "disponible": false,
+      "disponible": true,
       "nuevo": false,
       "año": 2014,
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FqgcoPSP51XWN4i5KuXpkYM1fryn.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview",
+      "enlace": "https://drive.google.com/file/d/1mAei6LMV-0chbfJwZM-GeUWMKg2hLVOL/preview",
       "descripcion": "Un estudiante universitario cristiano se enfrenta a su profesor de filosofía ateo cuando este declara que Dios está muerto y exige que sus estudiantes firmen una declaración confirmando la muerte de Dios."
     },
     {
       "titulo": "Dios No Está Muerto 2",
-      "disponible": false, 
+      "disponible": true, 
       "nuevo": false,
       "año": 2016,
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FVPJGWbHC4OR0SP4YDsMNg6kWBJ.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview",
+      "enlace": "https://drive.google.com/file/d/1ttJpUmuRuo7yrxAN3T8dVOBf5WhkK6oi/preview",
       "descripcion": "Una profesora cristiana de secundaria se enfrenta a un juicio cuando responde la pregunta de un estudiante sobre Jesús en clase."
     },
     {
       "titulo": "Dios No Está Muerto 3: Una Luz en la Oscuridad",
-      "disponible": false,
+      "disponible": true,
       "nuevo": false, 
       "año": 2018,
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7dRJo48oFLQsNs4DtCrR4onp09d.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1TLIrtnG0LbdEv2q5QCctmgoaPt3tJXxA/preview",
+      "enlace": "https://drive.google.com/file/d/1-X4D6-wURD5JKs5NrtHVBH-_psD6xNpz/preview",
       "descripcion": "El pastor Dave debe defender su iglesia universitaria de la demolición mientras lidia con una tragedia personal y busca reconciliación."
     },
     {
