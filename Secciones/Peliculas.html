@@ -862,6 +862,9 @@
         let currentSlide = 0;       // Para el carrusel
         let announcements = [];     // Para los anuncios
         let autoSlideInterval;      // Para el control del carrusel
+        let startX;
+        let currentTranslate = 0;
+        let isDragging = false;
 
         // Función para cargar películas
         function cargarPeliculas() {
@@ -1049,6 +1052,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             cargarPeliculas();
             cargarAnuncios();
+            setupCarouselTouch();
             
             const carousel = document.querySelector('.announcements-carousel');
             if (carousel) {
@@ -1138,6 +1142,45 @@
                 searchMovies(e.target.value);
             }
         });
+
+        function setupCarouselTouch() {
+            const container = document.getElementById('announcementsContainer');
+            
+            container.addEventListener('touchstart', touchStart);
+            container.addEventListener('touchmove', touchMove);
+            container.addEventListener('touchend', touchEnd);
+        }
+
+        function touchStart(event) {
+            startX = event.touches[0].clientX;
+            isDragging = true;
+            stopAutoSlide();
+        }
+
+        function touchMove(event) {
+            if (!isDragging) return;
+            
+            const currentX = event.touches[0].clientX;
+            const diff = startX - currentX;
+            const sensitivity = 50; // Ajusta la sensibilidad del deslizamiento
+
+            if (Math.abs(diff) > sensitivity) {
+                if (diff > 0) {
+                    // Deslizar a la izquierda
+                    currentSlide = Math.min(currentSlide + 1, announcements.length - 1);
+                } else {
+                    // Deslizar a la derecha
+                    currentSlide = Math.max(currentSlide - 1, 0);
+                }
+                updateSlidePosition();
+                isDragging = false;
+            }
+        }
+
+        function touchEnd() {
+            isDragging = false;
+            startAutoSlide();
+        }
     </script>
 </body>
 </html>
