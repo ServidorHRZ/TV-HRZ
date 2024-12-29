@@ -141,7 +141,7 @@
     {
       "id": 20,
       "titulo": "Lupin",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "enProceso": false,
       "descripcion": "Un ladrón profesional y maestro del disfraz que sigue los pasos de su abuelo, realizando elaborados atracos mientras es perseguido por un tenaz detective.",
@@ -160,70 +160,70 @@
               "titulo": "Capítulo 1",
               "descripcion": "En París actual, Assane Diop se inspira en las aventuras de Arsène Lupin para vengar a su padre por una injusticia infligida por una familia adinerada.",
               "duracion": "40:00",
-              "url": "https://drive.google.com/file/d/1CtT3vdmtnsbcLv0Y8Nopa_rfVskNDw4r/preview"
+              "url": "https://drive.google.com/file/d/1SEDa8Tude447Pz_F8ItMJYbF3-WlENXT/preview"
             },
             {
               "numero": 2,
               "titulo": "Capítulo 2",
               "descripcion": "Assane busca pistas sobre el paradero del collar y recuerda su primer robo, mientras que el comisario Dumont lucha por capturar al misterioso ladrón.",
               "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://drive.google.com/file/d/1o8OA2Sfsg6ofqxlfB8C3svmDE1dE_6PQ/preview"
             },
             {
               "numero": 3,
               "titulo": "Capítulo 3",
               "descripcion": "Assane planea una elaborada fiesta en el Louvre para exponer los crímenes de Hubert Pellegrini. El comisario Dumont se acerca a descubrir su identidad.",
               "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://drive.google.com/file/d/1muxommfV3u_r4o2BVA9xl_OZ2bZu-n_F/preview"
             },
             {
               "numero": 4,
               "titulo": "Capítulo 4", 
               "descripcion": "Para proteger a su hijo, Assane debe encontrar a Raoul antes que sus enemigos. Claire confronta a Assane sobre sus mentiras.",
               "duracion": "42:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://drive.google.com/file/d/1cM1uJotJI2p7_EWTJ0vJDFCGbv9Ru015/preview"
             },
             {
               "numero": 5,
               "titulo": "Capítulo 5",
               "descripcion": "Assane busca ayuda para rescatar a Raoul y planea su venganza contra Hubert. El detective Youssef Guedira se acerca a la verdad.",
               "duracion": "43:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://drive.google.com/file/d/1TkTMxO6D6K0HptzP3f6QECfJJ8_neC7B/preview"
             },
             {
               "numero": 6,
               "titulo": "Capítulo 6",
               "descripcion": "Assane tiende una trampa a Hubert Pellegrini, pero el plan se complica cuando interviene la policía.",
               "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://drive.google.com/file/d/18p2Eez0IUEAs-EaU3lUbzwkXkpicfFYC/preview"
             },
             {
               "numero": 7,
               "titulo": "Capítulo 7",
               "descripcion": "Mientras Hubert intenta cubrir sus huellas, Assane y Youssef trabajan juntos para exponer la verdad.",
               "duracion": "44:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://drive.google.com/file/d/1dD1pIUlTMqlIBCCUYPECPC8Fzkh9W7m9/preview"
             },
             {
               "numero": 8,
               "titulo": "Capítulo 8",
               "descripcion": "La investigación de Assane lo lleva a descubrir nuevos secretos sobre el pasado de su padre.",
               "duracion": "42:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://drive.google.com/file/d/1lY8QL6T21PFNvS4bYyn2nGh6vWkPnXCV/preview"
             },
             {
               "numero": 9,
               "titulo": "Capítulo 9",
               "descripcion": "Assane ejecuta la fase final de su plan mientras la policía cierra el cerco sobre él.",
               "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://drive.google.com/file/d/1S8OawPbrZHrjG84IuEY-aXxbB1fRFhB0/preview"
             },
             {
               "numero": 10,
               "titulo": "Capítulo 10",
               "descripcion": "En el dramático final de temporada, Assane enfrenta a Pellegrini en un último encuentro decisivo.",
               "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://drive.google.com/file/d/1jUE4pej2V_D1Kn5LBTS3F1qqdym4BZJh/preview"
             }
           ]
         },
