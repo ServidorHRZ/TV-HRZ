@@ -41,7 +41,7 @@
     {
       "id": 3,
       "titulo": "Ben 10: El Secreto del Omnitrix",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "año": 2007,
       "imagen": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/4fa79426-2fd4-4ae8-9ba4-fe12db24b04f/1dea915a-6ec1-11ef-a510-023929f9f003?host=wbd-images.prod-vod.h264.io&partner=beamcom",
