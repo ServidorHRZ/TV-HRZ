@@ -3,19 +3,6 @@
     {
       "id": 1,
       "tipo": "nuevo_episodio",
-      "titulo": "El Juego del Calamar",
-      "subtitulo": "Temporada 2 Ya Disponible",
-      "descripcion": "La segunda temporada del fenómeno mundial ya está aquí. Nuevos juegos, nuevas reglas, misma supervivencia.",
-      "imagen": "https://sietedias.co/wp-content/uploads/2022/05/juego-calamar-1140x631.jpeg",
-      "fecha": "Disponible Ahora",
-      "destacado": true,
-      "link": "serie.html",
-      "serieId": 25,
-      "disponible": true
-    },
-    {
-      "id": 2,
-      "tipo": "nuevo_episodio",
       "titulo": "Dexter: Pecado Original",
       "subtitulo": "Nuevo episodio cada sábado",
       "descripcion": "Descubre los orígenes oscuros de Dexter Morgan",
@@ -27,17 +14,43 @@
       "disponible": true
     },
     {
-      "id": 3,
-      "tipo": "proximo_estreno",
-      "titulo": "Doctor House",
-      "subtitulo": "Temporada 2 completa",
-      "descripcion": "Próximamente disponible la segunda temporada completa",
-      "imagen": "https://editorialtelevisa.brightspotcdn.com/dims4/default/5636049/2147483647/strip/false/crop/1308x736+0+0/resize/1200x675!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2F1a%2F2a%2Fd1b0dbdd4caba148ce7f5a220e9d%2Fdr-house.jpg",
-      "fecha": "Próximo mes",
+      "id": 2,
+      "tipo": "nuevo_episodio", 
+      "titulo": "Lupin",
+      "subtitulo": "Temporada Parte 1 y 2 completa",
+      "descripcion": "Assane Diop, un ladrón profesional inspirado por el legendario Arsène Lupin, mientras busca venganza por una injusticia contra su familia",
+      "imagen": "https://i0.wp.com/cloud.estacaonerd.com/wp-content/uploads/2021/01/28153217/CAPA-lupin.png?fit=987%2C407&ssl=1",
+      "fecha": "Disponible Ahora",
       "destacado": false,
       "link": "serie.html",
-      "serieId": 20,
+      "serieId": 24,
       "disponible": true
+    },
+    {
+      "id": 3,
+      "tipo": "nuevo_episodio",
+      "titulo": "What If...?",
+      "subtitulo": "Temporadas 1, 2 y 3",
+      "descripcion": "Explora líneas temporales alternativas en momentos clave del Universo Cinematográfico Marvel",
+      "imagen": "https://pxcdn.dolarhoy.com/122024/1734975185595.jpg",
+      "fecha": "Disponible 7 de Enero",
+      "destacado": false,
+      "link": "serie.html",
+      "serieId": 25,
+      "disponible": false
+    },
+    {
+      "id": 4,
+      "tipo": "nuevo_episodio",
+      "titulo": "Phineas y Ferb",
+      "subtitulo": "Serie Completa",
+      "descripcion": "Sigue las aventuras de dos hermanastros que buscan formas de animar sus vacaciones de verano",
+      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/01/phineas-ferb-tv-2928350.jpg?tf=3840x",
+      "fecha": "Disponible 8 de Enero",
+      "destacado": false,
+      "link": "serie.html",
+      "serieId": 26,
+      "disponible": false
     }
   ]
-} 
+}

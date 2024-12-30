@@ -25,7 +25,7 @@
       "nuevo": true,
       "año": 2024,
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrqvtiGmHubDElsKxlCWPuCTkwPI.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1-k4bzvn9rn133gQU2tkY5zcHpYcd3mos/preview",
+      "enlace": "https://drive.google.com/file/d/18zecchw5jf2HvVTvYKGoP-JB4GyN41yI/preview",
       "descripcion": "La tercera entrega de las aventuras cinematográficas de Sonic, donde el erizo azul se enfrentará a nuevos desafíos y enemigos mientras continúa protegiendo su nuevo hogar."
     },
     {
@@ -104,7 +104,7 @@
     },
     {
       "titulo": "Elf Man",
-      "disponible": false,
+      "disponible": true,
       "nuevo": false,
       "año": 2012,
       "imagen": "https://pics.filmaffinity.com/Elf_Man-879900270-mmed.jpg",
