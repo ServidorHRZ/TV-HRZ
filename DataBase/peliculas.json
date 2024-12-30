@@ -2,7 +2,7 @@
   "peliculas": [
     {
       "titulo": "Sonic La Película",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "año": 2020,
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/eOC0FSGqyzcnnx7XFgLazI9nACT.jpg",
@@ -11,7 +11,7 @@
     },
     {
       "titulo": "Sonic 2: La Película",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "año": 2022,
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sJiHVM0A3OXDVxl4Z6a7ihMPHfm.jpg",
@@ -21,7 +21,7 @@
     {
       "id": 2,
       "titulo": "Sonic 3: La Película",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "año": 2024,
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrqvtiGmHubDElsKxlCWPuCTkwPI.jpg&w=256&q=75",
