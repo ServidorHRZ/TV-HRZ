@@ -394,14 +394,14 @@
       "titulo": "Dexter: Pecado Original",
       "disponible": true,
       "nuevo": true,
-      "enProceso": true,
+      "enProceso": false,
       "descripcion": "En 1991, Miami. Dexter Morgan pasa de ser estudiante a ser un asesino en serie vengador, ya que sus impulsos sanguinarios no pueden ignorarse y debe aprender a canalizar su oscuridad interior. Un desafío particular para el joven Dexter, que comienza una pasantía forense en el Departamento de Policía Metropolitana de Miami.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9XLULEZTkeLwRytTUQtgmx2HH4o.jpg&w=256&q=75",
       "año": 2024,
       "genero": ["Drama", "Crimen", "Suspenso"],
       "director": "Marcos Siega",
       "actores": ["Michael C. Hall", "Jack Alcott", "Julia Jones", "Johnny Sequoyah", "Alano Miller"],
-      "trailer": "https://www.youtube.com/embed/l9H1uSS_zkk",
+      "trailer": "https://www.youtube.com/embed/S7U8e2TiwYU",
       "temporadas": [
         {
           "numero": 1,
