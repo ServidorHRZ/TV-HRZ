@@ -362,7 +362,13 @@
                         </div>
                     </div>
                     <div class="iframe-container">
-                        <iframe src="${peliculaSeleccionada.enlace}" allowfullscreen></iframe>
+                        <iframe 
+                            src="${peliculaSeleccionada.enlace}" 
+                            allowfullscreen
+                            allow="autoplay; fullscreen; encrypted-media"
+                            webkitallowfullscreen
+                            mozallowfullscreen>
+                        </iframe>
                     </div>
                 `;
             } else {
