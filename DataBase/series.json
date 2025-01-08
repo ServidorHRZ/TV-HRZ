@@ -3147,7 +3147,7 @@
               "numero": 23,
               "titulo": "En El Perro Confiamos / Carrera En La Nieve",
               "descripcion": "Más aventuras con el perro / Nueva carrera invernal",
-              "duracion": "22:00",
+              "duracion": "22:00", 
               "url": "https://drive.google.com/file/d/1B6Xsy59U_q7IqUuemx7OuFMK_y7HpYBo/preview"
             },
             {
@@ -3159,7 +3159,7 @@
             },
             {
               "numero": 25,
-              "titulo": "Captura Al Gato / Desde El Espacio Exterior",
+              "titulo": "Captura Al Gato / Desde El Espacio Exterior", 
               "descripcion": "Última captura / Revelaciones espaciales finales",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1k65cIPW_5Nax1cjnQMG5R1umIGdJOy_T/preview"
@@ -3170,6 +3170,207 @@
               "descripcion": "Especial navideño de dos partes donde Coop y el Sr. Gato tienen aventuras festivas",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/10L2ujm9onS5NHTdeOUNu7x6eosQKtGDj/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "titulo": "Phineas y Ferb",
+      "disponible": true,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Durante sus vacaciones de verano, los hermanastros Phineas Flynn y Ferb Fletcher viven aventuras extraordinarias mientras su hermana Candace intenta delatarlos ante su madre.",
+      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/01/phineas-ferb-tv-2928350.jpg",
+      "año": 2007,
+      "trailer": "https://www.youtube.com/embed/Nt5AuDn6BwE",
+      "genero": ["Animación", "Comedia", "Familiar"],
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Montaña Rusa",
+              "descripcion": "Phineas y Ferb construyen una montaña rusa en su patio trasero",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1CNmr9LMkcbt-lkFr_67XvhCiIdJ-G2wz/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "La Playa",
+              "descripcion": "Los chicos traen la playa a su patio trasero",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1X9FDyqJ0rApeOTY6KY40HbsiqpTpawhg/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "El Viaje a las Estrellas",
+              "descripcion": "Phineas y Ferb construyen una nave espacial",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Zl5I9yY6_mitmXFgg1_Ak3tGS-UMH1OV/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Las Luces",
+              "descripcion": "Los chicos crean un espectáculo de luces",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1mE0PO4esHzU5rGelU70E0mgZyPRx7O4_/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "El Árbol de la Casa",
+              "descripcion": "Construyen la casa del árbol definitiva",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1mV-T75e-mlG90nedrdyc3v6sTqjMvorR/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "El Circo",
+              "descripcion": "Crean su propio circo en el patio",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1EjEdl6AqkoGiR9LI_YnghZVBlai-nCjP/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "El Rodeo",
+              "descripcion": "Organizan un rodeo en el patio trasero",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ejSqz-5RTVsxSiKkx2zXXbm_fu_h_ITA/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "La Máquina del Tiempo",
+              "descripcion": "Construyen una máquina del tiempo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1mkyGfn7dEyA6td0sVd-03sgg-t0Stf7B/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "El Parque de Diversiones",
+              "descripcion": "Crean su propio parque de diversiones",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/19jaef1-a7950JAH16PDJ44oBtBUKq6D8/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "El Submarino",
+              "descripcion": "Construyen un submarino para explorar",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1U2zZPIZyiX5J77S_Q5927qziL5G6dyx8/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "La Banda de Rock",
+              "descripcion": "Forman una banda de rock de un solo éxito",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1jVrXdDK6VRn-qdE8dkv_0-zPZnxLjAhH/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "El Cohete",
+              "descripcion": "Construyen un cohete espacial",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/14KOyzNVGh9N7tWDbR5KB8NSX5bo6uzdL/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "El Juego de Bolos",
+              "descripcion": "Crean una pista de bolos gigante",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1CMzBJh7Ogh40Qb2fTedboNohuLZ43DU_/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "El Robot",
+              "descripcion": "Construyen un robot gigante",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1vwddpivtJ5yBxf9m7-ARFnNFYQUsLd7n/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "La Carrera",
+              "descripcion": "Organizan una carrera por toda la ciudad",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1FvXfVZ0NtXmlfa7nlyruK2okWTZsRoI9/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "El Zoológico",
+              "descripcion": "Crean su propio zoológico",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1gnV_Z5lLfQMAgKQ8OpYd0IhRp_pgFBHO/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "El Museo",
+              "descripcion": "Construyen su propio museo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1kJj-zxgKANcAuQm2wxQ4On6l0BnZX6al/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "La Película",
+              "descripcion": "Dirigen su propia película",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1EmDySn3rtl93K9wWFHGJMd_-u1oFPA0G/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "El Restaurante",
+              "descripcion": "Abren su propio restaurante",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1eD4KIoiNFiFrG4VUlTcSNuGD57OXs8gV/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "El Videojuego",
+              "descripcion": "Crean su propio videojuego",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1sptwt-YJTPRaf1huPEKQ8nKZl1VcBiBg/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "La Feria Medieval",
+              "descripcion": "Organizan una feria medieval",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1wnOLGeTNZeTWZMyjcXHIIgN0bz8LTHyd/preview"
+            },
+            {
+              "numero": 22,
+              "titulo": "El Laboratorio",
+              "descripcion": "Construyen un laboratorio científico",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1rpdd6L63pxM80fGUjxf6Fa9v-F5jTaZy/preview"
+            },
+            {
+              "numero": 23,
+              "titulo": "La Máquina del Clima",
+              "descripcion": "Inventan una máquina para controlar el clima",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1mQ50sdy3l1cH8gHTpwR9jLHs6qvE-Mt1/preview"
+            },
+            {
+              "numero": 24,
+              "titulo": "El Concierto",
+              "descripcion": "Organizan un gran concierto",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1K8D1OYLFBe1kY-GT1l6yQo51UhUqI-qa/preview"
+            },
+            {
+              "numero": 25,
+              "titulo": "La Expedición",
+              "descripcion": "Realizan una expedición al centro de la Tierra",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1pvRyPEq8kkJtlpdxoYv-C1GlnT_rVUG-/preview"
+            },
+            {
+              "numero": 26,
+              "titulo": "El Gran Final",
+              "descripcion": "El episodio final de la temporada con una gran aventura",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1xchkeUuDRYtYqgG2wgcg0xpLXUPqWV-j/preview"
             }
           ]
         }
