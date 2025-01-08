@@ -1,7 +1,7 @@
 {
   "announcements": [
     {
-      "id": 1,
+      "id": 2,
       "tipo": "nuevo_episodio",
       "titulo": "Dexter: Pecado Original",
       "subtitulo": "Nuevo episodio cada sábado",
@@ -14,7 +14,7 @@
       "disponible": true
     },
     {
-      "id": 2,
+      "id": 3,
       "tipo": "nuevo_episodio", 
       "titulo": "Lupin",
       "subtitulo": "Temporada Parte 1 y 2 completa",
@@ -27,30 +27,17 @@
       "disponible": true
     },
     {
-      "id": 3,
-      "tipo": "nuevo_episodio",
-      "titulo": "What If...?",
-      "subtitulo": "Temporadas 1, 2 y 3",
-      "descripcion": "Explora líneas temporales alternativas en momentos clave del Universo Cinematográfico Marvel",
-      "imagen": "https://pxcdn.dolarhoy.com/122024/1734975185595.jpg",
-      "fecha": "Disponible 7 de Enero",
-      "destacado": false,
-      "link": "serie.html",
-      "serieId": 25,
-      "disponible": false
-    },
-    {
-      "id": 4,
+      "id": 1,
       "tipo": "nuevo_episodio",
       "titulo": "Phineas y Ferb",
-      "subtitulo": "Serie Completa",
+      "subtitulo": "Temporada 1",
       "descripcion": "Sigue las aventuras de dos hermanastros que buscan formas de animar sus vacaciones de verano",
       "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/01/phineas-ferb-tv-2928350.jpg?tf=3840x",
-      "fecha": "Disponible 8 de Enero",
+      "fecha": "Disponible Ahora",
       "destacado": false,
       "link": "serie.html",
       "serieId": 26,
-      "disponible": false
+      "disponible": true
     }
   ]
 }
