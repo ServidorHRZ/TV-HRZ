@@ -177,8 +177,7 @@
               "url": "https://drive.google.com/file/d/1muxommfV3u_r4o2BVA9xl_OZ2bZu-n_F/preview"
             },
             {
-              "numero": 4,
-              "titulo": "Capítulo 4", 
+              "numero": 4, 
               "descripcion": "Para proteger a su hijo, Assane debe encontrar a Raoul antes que sus enemigos. Claire confronta a Assane sobre sus mentiras.",
               "duracion": "42:00",
               "url": "https://drive.google.com/file/d/1cM1uJotJI2p7_EWTJ0vJDFCGbv9Ru015/preview"
@@ -3182,10 +3181,12 @@
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Durante sus vacaciones de verano, los hermanastros Phineas Flynn y Ferb Fletcher viven aventuras extraordinarias mientras su hermana Candace intenta delatarlos ante su madre.",
-      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/01/phineas-ferb-tv-2928350.jpg",
+      "imagen": "https://image.tmdb.org/t/p/original/3R8WxvMhUr65L4bCpYRKuX46yih.jpg",
       "año": 2007,
-      "trailer": "https://www.youtube.com/embed/Nt5AuDn6BwE",
       "genero": ["Animación", "Comedia", "Familiar"],
+      "director": "Dan Povenmire, Jeff 'Swampy' Marsh",
+      "actores": ["Vincent Martella", "Thomas Sangster", "Ashley Tisdale"],
+      "trailer": "https://www.youtube.com/embed/DX6QNxGQ_QA",
       "temporadas": [
         {
           "numero": 1,
@@ -3373,57 +3374,6 @@
               "url": "https://drive.google.com/file/d/1xchkeUuDRYtYqgG2wgcg0xpLXUPqWV-j/preview"
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "titulo": "Como Hermanos",
-      "disponible": false,
-      "nuevo": true,
-      "enProceso": false,
-      "descripcion": "Pahe y Seb son amigos inseparables y sus culturas se unen a través de una amistad única y especial que demuestra que las diferencias culturales no son obstáculo para una verdadera amistad.",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK-UE1BRsCaNDWGk9g3XG0OBQGeSze706zIlUDFB5lBKDcWPI9xcqgZRaf0HQjUpdZaxM&usqp=CAU",
-      "año": 2023,
-      "genero": ["Animación", "Infantil", "Amistad"],
-      "temporadas": [
-        {
-          "numero": 1,
-          "episodios": []
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "titulo": "Caillou",
-      "disponible": false,
-      "nuevo": true,
-      "enProceso": false,
-      "descripcion": "Las aventuras diarias de Caillou, un niño de cuatro años que aprende sobre el mundo que lo rodea a través de sus experiencias cotidianas.",
-      "imagen": "https://www.justwatch.com/images/poster/175688943/s718/caillou.jpg",
-      "año": 1997,
-      "genero": ["Animación", "Infantil", "Educativo"],
-      "temporadas": [
-        {
-          "numero": 1,
-          "episodios": []
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "titulo": "Jorge el Curioso",
-      "disponible": false,
-      "nuevo": true,
-      "enProceso": false,
-      "descripcion": "Las aventuras de Jorge, un mono muy curioso que vive en la ciudad con su amigo, el Hombre del Sombrero Amarillo, aprendiendo valiosas lecciones mientras satisface su curiosidad.",
-      "imagen": "https://pics.filmaffinity.com/curious_george-844946295-large.jpg",
-      "año": 2006,
-      "genero": ["Animación", "Infantil", "Educativo"],
-      "temporadas": [
-        {
-          "numero": 1,
-          "episodios": []
         }
       ]
     }
