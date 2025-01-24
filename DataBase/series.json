@@ -1072,10 +1072,85 @@
             },
             {
               "numero": 10,
-              "titulo": "zer0-day.avi",
+              "titulo": "zer0-day.avi", 
               "descripcion": "El plan de fsociety llega a su clímax mientras el mundo financiero se desmorona.",
               "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1nxJsDr8XZDrlcURYZ8XOs51ij8H9Maa3/preview"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "unm4sk-pt1.tc",
+              "descripcion": "Elliot intenta recuperar el control mientras fsociety enfrenta las consecuencias de sus acciones.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/13MXIenvlOpGteNN3wyfnTJPq6MVPPtdQ/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "unm4sk-pt2.tc",
+              "descripcion": "Mientras el FBI investiga el hack de 5/9, Elliot se despierta sin recordar los últimos tres días.",
+              "duracion": "45:00", 
+              "url": "https://drive.google.com/file/d/1hDH07PNR_lCb2KkyBXMte14z7MBIwpcF/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "k3rnel-pan1c.ksd",
+              "descripcion": "Elliot lucha por mantener el control mientras Mr. Robot toma el mando.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1TWAyIm0gU32UlbIRZpJV-ceQQ0tDrS3H/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "init_1.asec",
+              "descripcion": "Elliot es forzado a hackear al FBI mientras Darlene lidera fsociety en un nuevo ataque.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/156xZcdip9mCAzxAewGr65LjQyJCJNQ6V/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "logic-b0mb.hc",
+              "descripcion": "Elliot descubre la verdad sobre su encarcelamiento mientras Angela avanza en su plan.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1S29uQR-OjEUVSJbnllVFM-pdkrdSxmMr/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "succ3ss0r.p12",
+              "descripcion": "fsociety se enfrenta a una crisis de liderazgo mientras Darlene toma decisiones drásticas.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/15lRmH5ZcnK9JtxdwJ0yqIuG24R9QYi_B/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "h4ndshake.sme",
+              "descripcion": "Elliot se enfrenta a la Fase 2 mientras Angela hace un descubrimiento impactante.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/sample7/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "h1dden-pr0cess.axx",
+              "descripcion": "Elliot sigue el rastro de un misterioso poder detrás de E Corp.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/sample8/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "pyth0n-pt1.p7z",
+              "descripcion": "Angela acepta ayudar a Elliot mientras la Dark Army revela sus verdaderas intenciones.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/sample9/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "pyth0n-pt2.p7z",
+              "descripcion": "Elliot y Mr. Robot se enfrentan mientras la Fase 2 se pone en marcha.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/sample10/preview"
             }
           ]
         }
