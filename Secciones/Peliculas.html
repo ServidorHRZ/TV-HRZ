@@ -53,7 +53,8 @@
             opacity: 0.8;
         }
         .movie-container {
-            margin-top: 20px;
+            margin-top: 0.5rem;
+            padding-top: 0;
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             gap: 10px;
@@ -435,54 +436,6 @@
                 width: 85%;
             }
         }
-        /* Estilos para el mensaje navideño */
-        .christmas-message {
-            color: white;
-            font-family: 'Orbitron', sans-serif;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            animation: sparkle 2s infinite;
-        }
-
-        .snowman {
-            font-size: 1.5em;
-            animation: bounce 2s ease-in-out infinite;
-        }
-
-        @keyframes sparkle {
-            0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff; }
-            50% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; }
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
-        }
-
-        /* Animación de nieve */
-        .snowflakes {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            pointer-events: none;
-            z-index: 1000;
-        }
-
-        .snowflake {
-            position: fixed;
-            color: #fff;
-            font-size: 1em;
-            animation: fall linear infinite;
-        }
-
-        @keyframes fall {
-            0% { transform: translateY(-100vh) rotate(0deg); }
-            100% { transform: translateY(100vh) rotate(360deg); }
-        }
-
         /* Nuevos estilos para el buscador en el header */
         .header-search {
             display: flex;
@@ -571,7 +524,7 @@
             position: relative;
             width: 100%;
             max-width: 1400px;
-            margin: 70px auto 10px;
+            margin: 0 auto 10px;
             overflow: hidden;
             border-radius: 10px;
             z-index: 1;
@@ -731,7 +684,7 @@
         @media (max-width: 768px) {
             .announcements-carousel {
                 height: 300px;
-                margin-top: 60px;
+                margin-top: 0;
             }
 
             .announcement-content {
@@ -796,6 +749,73 @@
                 padding: 6px;
             }
         }
+
+        .categories-wrapper {
+            position: sticky;
+            top: 60px;
+            background: linear-gradient(to bottom, 
+                rgba(0,0,0,0.95) 0%,
+                rgba(0,0,0,0.8) 100%);
+            padding: 0.5rem 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+            margin-top: -5px;
+        }
+
+        .categories-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.5rem;
+            padding: 0 0.5rem;
+            overflow-x: auto;
+        }
+
+        .categories-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .category-btn {
+            background: rgba(0, 255, 255, 0.1);
+            border: 1px solid var(--primary-color);
+            color: var(--secondary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        .category-btn i {
+            font-size: 1rem;
+        }
+
+        .category-btn:hover {
+            background: rgba(0, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .category-btn.active {
+            background: var(--primary-color);
+            color: black;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .categories-wrapper {
+                top: 55px;
+            }
+            
+            .category-btn {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -828,6 +848,55 @@
         </div>
     </div>
 
+    <div class="categories-wrapper">
+        <div class="categories-container">
+            <button class="category-btn active" data-category="todos">
+                <i class="fas fa-film"></i>
+                Todas
+            </button>
+            <button class="category-btn" data-category="nuevos">
+                <i class="fas fa-star"></i>
+                Nuevos Estrenos
+            </button>
+            <button class="category-btn" data-category="marvel">
+                <i class="fas fa-shield-alt"></i>
+                Marvel
+            </button>
+            <button class="category-btn" data-category="dc">
+                <i class="fas fa-bolt"></i>
+                DC Comics
+            </button>
+            <button class="category-btn" data-category="infantil">
+                <i class="fas fa-child"></i>
+                Infantiles
+            </button>
+            <button class="category-btn" data-category="navidad">
+                <i class="fas fa-gift"></i>
+                Navidad
+            </button>
+            <button class="category-btn" data-category="terror">
+                <i class="fas fa-ghost"></i>
+                Terror
+            </button>
+            <button class="category-btn" data-category="familiar">
+                <i class="fas fa-home"></i>
+                Familiar
+            </button>
+            <button class="category-btn" data-category="cristiana">
+                <i class="fas fa-cross"></i>
+                Cristianas
+            </button>
+            <button class="category-btn" data-category="accion">
+                <i class="fas fa-fire"></i>
+                Acción
+            </button>
+            <button class="category-btn" data-category="drama">
+                <i class="fas fa-theater-masks"></i>
+                Drama
+            </button>
+        </div>
+    </div>
+
     <div class="movie-container" id="movie-container">
         <!-- Las películas se cargarán aquí dinámicamente -->
     </div>
@@ -853,9 +922,6 @@
         <p>&copy; 2024 Tecnologia HRZ. Todos los derechos reservados.</p>
     </footer>
 
-    <div class="snowflakes" aria-hidden="true">
-    </div>
-
     <script>
         // Variables globales
         let todasLasPeliculas = []; // Para las películas
@@ -872,7 +938,14 @@
                 .then(response => response.json())
                 .then(data => {
                     todasLasPeliculas = data.peliculas.filter(pelicula => pelicula.disponible);
-                    mostrarPeliculas(todasLasPeliculas);
+                    // Ordenar películas nuevas primero, pero mostrar todas
+                    todasLasPeliculas.sort((a, b) => {
+                        if (a.nuevo && !b.nuevo) return -1;
+                        if (!a.nuevo && b.nuevo) return 1;
+                        return 0;
+                    });
+                    mostrarPeliculas(todasLasPeliculas); // Mostrar todas por defecto
+                    setupCategorias();
                 })
                 .catch(error => console.error('Error cargando las películas:', error));
         }
@@ -1093,26 +1166,6 @@
             }
         });
 
-        // Agregar después de los scripts existentes
-        function createSnowflakes() {
-            const snowflakesContainer = document.querySelector('.snowflakes');
-            const snowflakes = ['❅', '❆', '❄'];
-            const numberOfSnowflakes = 50;
-
-            for (let i = 0; i < numberOfSnowflakes; i++) {
-                const snowflake = document.createElement('div');
-                snowflake.className = 'snowflake';
-                snowflake.style.left = `${Math.random() * 100}vw`;
-                snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
-                snowflake.style.opacity = Math.random();
-                snowflake.innerHTML = snowflakes[Math.floor(Math.random() * snowflakes.length)];
-                snowflakesContainer.appendChild(snowflake);
-            }
-        }
-
-        // Llamar a la función cuando se carga la página
-        window.addEventListener('load', createSnowflakes);
-
         // Agregar el código para el manejo del buscador en el header
         const searchToggle = document.getElementById('searchToggle');
         const searchClose = document.getElementById('searchClose');
@@ -1180,6 +1233,36 @@
         function touchEnd() {
             isDragging = false;
             startAutoSlide();
+        }
+
+        function setupCategorias() {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remover clase active de todos los botones
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    // Agregar clase active al botón clickeado
+                    button.classList.add('active');
+                    
+                    const categoria = button.dataset.category;
+                    filtrarPorCategoria(categoria);
+                });
+            });
+        }
+
+        function filtrarPorCategoria(categoria) {
+            let peliculasFiltradas = [...todasLasPeliculas];
+            
+            if (categoria !== 'todos') {
+                if (categoria === 'nuevos') {
+                    peliculasFiltradas = todasLasPeliculas.filter(pelicula => pelicula.nuevo);
+                } else {
+                    peliculasFiltradas = todasLasPeliculas.filter(pelicula => pelicula.genero === categoria);
+                }
+            }
+            
+            mostrarPeliculas(peliculasFiltradas);
         }
     </script>
 </body>
