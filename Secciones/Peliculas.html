@@ -53,7 +53,7 @@
             opacity: 0.8;
         }
         .movie-container {
-            margin-top: 0.5rem;
+            margin-top: -20px;
             padding-top: 0;
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -145,6 +145,7 @@
                 font-size: 3rem;
             }
             .movie-container {
+                margin-top: -15px;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 8px;
                 padding: 8px;
@@ -751,16 +752,15 @@
         }
 
         .categories-wrapper {
-            position: sticky;
-            top: 60px;
-            background: linear-gradient(to bottom, 
-                rgba(0,0,0,0.95) 0%,
-                rgba(0,0,0,0.8) 100%);
-            padding: 0.5rem 0;
-            z-index: 100;
+            position: fixed;
+            top: 55px;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 8px 0;
+            z-index: 99;
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(0, 255, 255, 0.1);
-            margin-top: -5px;
         }
 
         .categories-container {
@@ -768,7 +768,7 @@
             margin: 0 auto;
             display: flex;
             gap: 0.5rem;
-            padding: 0 0.5rem;
+            padding: 0 10px;
             overflow-x: auto;
         }
 
@@ -780,7 +780,7 @@
             background: rgba(0, 255, 255, 0.1);
             border: 1px solid var(--primary-color);
             color: var(--secondary-color);
-            padding: 0.3rem 0.8rem;
+            padding: 6px 12px;
             border-radius: 20px;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -788,7 +788,7 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
 
         .category-btn i {
@@ -808,13 +808,22 @@
 
         @media (max-width: 768px) {
             .categories-wrapper {
-                top: 55px;
+                top: 50px;
+            }
+            
+            .announcements-carousel {
+                margin-top: 80px;
             }
             
             .category-btn {
-                padding: 0.3rem 0.6rem;
-                font-size: 0.8rem;
+                padding: 4px 10px;
+                font-size: 0.75rem;
             }
+        }
+
+        /* Ajustamos el contenedor principal para compensar el espacio del header y categorías */
+        .announcements-carousel {
+            margin-top: 90px;
         }
     </style>
 </head>
@@ -835,16 +844,6 @@
             <button class="search-toggle" id="searchClose">
                 <i class="fas fa-times"></i>
             </button>
-        </div>
-    </div>
-
-    <!-- Carrusel de anuncios -->
-    <div class="announcements-carousel">
-        <div class="announcements-container" id="announcementsContainer">
-            <!-- Los anuncios se cargarán aquí dinámicamente -->
-        </div>
-        <div class="carousel-indicators" id="carouselIndicators">
-            <!-- Los indicadores se generarán dinámicamente -->
         </div>
     </div>
 
@@ -894,6 +893,16 @@
                 <i class="fas fa-theater-masks"></i>
                 Drama
             </button>
+        </div>
+    </div>
+
+    <!-- Carrusel de anuncios -->
+    <div class="announcements-carousel">
+        <div class="announcements-container" id="announcementsContainer">
+            <!-- Los anuncios se cargarán aquí dinámicamente -->
+        </div>
+        <div class="carousel-indicators" id="carouselIndicators">
+            <!-- Los indicadores se generarán dinámicamente -->
         </div>
     </div>
 

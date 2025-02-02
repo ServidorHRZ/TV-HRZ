@@ -52,7 +52,8 @@
             opacity: 0.8;
         }
         .series-container {
-            margin-top: 20px;
+            margin-top: -20px;
+            padding-top: 0;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 15px;
@@ -254,6 +255,7 @@
 
         @media (max-width: 768px) {
             .series-container {
+                margin-top: -15px;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 8px;
@@ -547,7 +549,7 @@
             position: relative;
             width: 100%;
             max-width: 1400px;
-            margin: 70px auto 10px;
+            margin: 90px auto 10px;
             overflow: hidden;
             border-radius: 10px;
             z-index: 1;
@@ -757,6 +759,73 @@
                 align-items: flex-start;
             }
         }
+
+        .categories-wrapper {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 100;
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+        }
+
+        .categories-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 0 15px;
+            max-width: 1400px;
+            margin: 0 auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .categories-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .category-btn {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 6px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .category-btn:hover {
+            background: rgba(0, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .category-btn.active {
+            background: var(--primary-color);
+            color: black;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .categories-wrapper {
+                top: 50px;
+            }
+            
+            .announcements-carousel {
+                margin-top: 80px;
+            }
+            
+            .category-btn {
+                padding: 4px 10px;
+                font-size: 0.75rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -775,6 +844,47 @@
             <input type="text" id="search-input" placeholder="Buscar películas, series y más...">
             <button class="search-toggle" id="searchClose">
                 <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="categories-wrapper">
+        <div class="categories-container">
+            <button class="category-btn active" data-category="todos">
+                <i class="fas fa-tv"></i>
+                Todas
+            </button>
+            <button class="category-btn" data-category="nuevos">
+                <i class="fas fa-star"></i>
+                Nuevos Estrenos
+            </button>
+            <button class="category-btn" data-category="marvel">
+                <i class="fas fa-shield-alt"></i>
+                Marvel
+            </button>
+            <button class="category-btn" data-category="dc">
+                <i class="fas fa-bolt"></i>
+                DC Comics
+            </button>
+            <button class="category-btn" data-category="anime">
+                <i class="fas fa-dragon"></i>
+                Anime
+            </button>
+            <button class="category-btn" data-category="infantil">
+                <i class="fas fa-child"></i>
+                Infantiles
+            </button>
+            <button class="category-btn" data-category="drama">
+                <i class="fas fa-theater-masks"></i>
+                Drama
+            </button>
+            <button class="category-btn" data-category="comedia">
+                <i class="fas fa-laugh"></i>
+                Comedia
+            </button>
+            <button class="category-btn" data-category="accion">
+                <i class="fas fa-fire"></i>
+                Acción
             </button>
         </div>
     </div>
@@ -1141,6 +1251,33 @@
             cargarAnuncios();
             setupCarouselTouch();
             // ... resto del código existente ...
+        });
+
+        // Agregar el manejo de categorías
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remover clase active de todos los botones
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Agregar clase active al botón clickeado
+                button.classList.add('active');
+                
+                // Obtener la categoría seleccionada
+                const categoria = button.dataset.category;
+                
+                // Filtrar series según la categoría
+                if (categoria === 'todos') {
+                    mostrarSeries(todasLasSeries);
+                } else {
+                    const seriesFiltradas = todasLasSeries.filter(serie => 
+                        serie.genero.some(gen => gen.toLowerCase() === categoria) ||
+                        (categoria === 'nuevos' && serie.nuevo)
+                    );
+                    mostrarSeries(seriesFiltradas);
+                }
+            });
         });
     </script>
 </body>
