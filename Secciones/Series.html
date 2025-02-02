@@ -55,8 +55,8 @@
             margin-top: -20px;
             padding-top: 0;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
             padding: 10px;
             max-width: 1400px;
             margin-left: auto;
@@ -772,14 +772,12 @@
         }
 
         .categories-container {
-            display: flex;
-            overflow-x: auto;
-            gap: 10px;
-            padding: 0 15px;
             max-width: 1400px;
             margin: 0 auto;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
+            display: flex;
+            gap: 0.5rem;
+            padding: 0 10px;
+            overflow-x: auto;
         }
 
         .categories-container::-webkit-scrollbar {
@@ -810,6 +808,10 @@
             background: var(--primary-color);
             color: black;
             font-weight: bold;
+        }
+
+        .category-btn i {
+            font-size: 1rem;
         }
 
         @media (max-width: 768px) {
@@ -851,7 +853,7 @@
     <div class="categories-wrapper">
         <div class="categories-container">
             <button class="category-btn active" data-category="todos">
-                <i class="fas fa-tv"></i>
+                <i class="fas fa-film"></i>
                 Todas
             </button>
             <button class="category-btn" data-category="nuevos">
