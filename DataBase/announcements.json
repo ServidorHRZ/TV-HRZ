@@ -1,6 +1,19 @@
 {
   "announcements": [
     {
+      "id": 1,
+      "tipo": "nuevo_episodio",
+      "titulo": "Phineas y Ferb",
+      "subtitulo": "Temporada 2",
+      "descripcion": "Sigue las aventuras de dos hermanastros que buscan formas de animar sus vacaciones de verano",
+      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/01/phineas-ferb-tv-2928350.jpg?tf=3840x",
+      "fecha": "Disponible Ahora",
+      "destacado": false,
+      "link": "serie.html",
+      "serieId": 26,
+      "disponible": true
+    },
+    {
       "id": 2,
       "tipo": "nuevo_episodio",
       "titulo": "Dexter: Pecado Original",
@@ -24,19 +37,6 @@
       "destacado": false,
       "link": "serie.html",
       "serieId": 24,
-      "disponible": true
-    },
-    {
-      "id": 1,
-      "tipo": "nuevo_episodio",
-      "titulo": "Phineas y Ferb",
-      "subtitulo": "Temporada 1",
-      "descripcion": "Sigue las aventuras de dos hermanastros que buscan formas de animar sus vacaciones de verano",
-      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/01/phineas-ferb-tv-2928350.jpg?tf=3840x",
-      "fecha": "Disponible Ahora",
-      "destacado": false,
-      "link": "serie.html",
-      "serieId": 26,
       "disponible": true
     }
   ]

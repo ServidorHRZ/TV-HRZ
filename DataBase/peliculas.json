@@ -3,7 +3,7 @@
     {
       "titulo": "Sonic La Película",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "año": 2020,
       "genero": "accion",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/eOC0FSGqyzcnnx7XFgLazI9nACT.jpg",
@@ -13,7 +13,7 @@
     {
       "titulo": "Sonic 2: La Película",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "año": 2022,
       "genero": "accion",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sJiHVM0A3OXDVxl4Z6a7ihMPHfm.jpg",
@@ -21,10 +21,9 @@
       "descripcion": "Después de establecerse en Green Hills, Sonic está listo para más libertad e independencia, y Tom y Maddie acuerdan dejarlo en casa mientras van de vacaciones. Pero, tan pronto como se van, el Dr. Robotnik regresa con un nuevo compañero, Knuckles, en busca de una esmeralda que tiene el poder de destruir civilizaciones."
     },
     {
-      "id": 2,
       "titulo": "Sonic 3: La Película",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "año": 2024,
       "genero": "accion",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrqvtiGmHubDElsKxlCWPuCTkwPI.jpg&w=256&q=75",
@@ -32,10 +31,9 @@
       "descripcion": "La tercera entrega de las aventuras cinematográficas de Sonic, donde el erizo azul se enfrentará a nuevos desafíos y enemigos mientras continúa protegiendo su nuevo hogar."
     },
     {
-      "id": 1,
       "titulo": "Culpa Tuya",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "año": 2024,
       "genero": "drama",
       "imagen": "https://es.web.img3.acsta.net/c_310_420/img/76/37/7637d68ab33d9a9474a91efa00ed7d3b.jpg",
@@ -43,10 +41,9 @@
       "descripcion": "La continuación de la apasionante historia de Noah y Nick. Basada en la exitosa novela de Mercedes Ron."
     },
     {
-      "id": 3,
       "titulo": "Ben 10: El Secreto del Omnitrix",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "año": 2007,
       "genero": "infantil",
       "imagen": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/4fa79426-2fd4-4ae8-9ba4-fe12db24b04f/1dea915a-6ec1-11ef-a510-023929f9f003?host=wbd-images.prod-vod.h264.io&partner=beamcom",
@@ -56,7 +53,7 @@
     {
       "titulo": "Dios No Está Muerto",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "año": 2014,
       "genero": "cristiana",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FqgcoPSP51XWN4i5KuXpkYM1fryn.jpg&w=256&q=75",
@@ -66,7 +63,7 @@
     {
       "titulo": "Dios No Está Muerto 2",
       "disponible": true, 
-      "nuevo": true,
+      "nuevo": false,
       "año": 2016,
       "genero": "cristiana",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FVPJGWbHC4OR0SP4YDsMNg6kWBJ.jpg&w=256&q=75",
@@ -76,7 +73,7 @@
     {
       "titulo": "Dios No Está Muerto 3: Una Luz en la Oscuridad",
       "disponible": true,
-      "nuevo": true, 
+      "nuevo": false, 
       "año": 2018,
       "genero": "cristiana",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7dRJo48oFLQsNs4DtCrR4onp09d.jpg&w=256&q=75",
@@ -86,7 +83,7 @@
     {
       "titulo": "Dios No Está Muerto 4: Nos, El Pueblo",
       "disponible": false,
-      "nuevo": true,
+      "nuevo": false,
       "año": 2021,
       "genero": "cristiana",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FapaFJ4MlhAC4QNlMKk9cgKNE8wE.jpg&w=256&q=75",
@@ -118,7 +115,7 @@
       "disponible": true,
       "nuevo": false,
       "año": 2012,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://pics.filmaffinity.com/Elf_Man-879900270-mmed.jpg",
       "enlace": "https://www.youtube.com/embed/-b7Vjc5zlgo",
       "descripcion": "Un elfo mágico ayuda a una familia durante la temporada navideña."
@@ -137,7 +134,7 @@
       "titulo": "Santa Claus 2",
       "disponible": true,
       "año": 2002,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://es.web.img3.acsta.net/medias/nmedia/18/82/96/87/20199304.jpg", 
       "enlace": "https://drive.google.com/file/d/1g4C-koSYINkVv4B9MW2WvIZYCvHSLZcR/preview",
       "nuevo": false,
@@ -147,7 +144,7 @@
       "titulo": "Santa Claus 3",
       "disponible": true,
       "año": 2006,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://es.web.img3.acsta.net/pictures/15/01/05/15/05/424480.jpg",
       "enlace": "https://drive.google.com/file/d/1Ir7lsbWah4r1Kje2EaHrZzKyisVd-Xyx/preview", 
       "nuevo": false,
@@ -167,7 +164,7 @@
       "titulo": "Mi pobre y dulce angelito",
       "disponible": true,
       "año": 2021,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://pics.filmaffinity.com/home_sweet_home_alone-872888087-large.jpg",
       "enlace": "https://drive.google.com/file/d/1gpoJTZvu8sx6vMQ5a0bJnvohTPUKw_3Q/preview",
       "nuevo": false,
@@ -177,7 +174,7 @@
       "titulo": "Una Navidad muy Prendida",
       "disponible": true,
       "año": 2022,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://m.media-amazon.com/images/S/pv-target-images/8d2f4db249ea1eb1d50862345c2cfbb0a7f018fbb8e2541c80bd21494d982727.jpg",
       "enlace": "https://drive.google.com/file/d/1KUHyoKq931HT2kOzL3-MxBQI6Hn6-Oqf/preview",
       "nuevo": false,
@@ -187,7 +184,7 @@
       "titulo": "Genie",
       "disponible": true,
       "año": 2023,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://pics.filmaffinity.com/Genie-138388806-large.jpg",
       "enlace": "https://drive.google.com/file/d/1wGGJFyv83-qTld12-tTu7vMQynQcTYvO/preview",
       "nuevo": false,
@@ -197,7 +194,7 @@
       "titulo": "Mi Pobre Angelito 1",
       "disponible": true,
       "año": 1990,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://pics.filmaffinity.com/home_alone-163260879-large.jpg",
       "enlace": "https://drive.google.com/file/d/1CagmtZmCgS5X132pdz70pugxWOnmc71Y/preview",
       "nuevo": false,
@@ -207,7 +204,7 @@
       "titulo": "Mi Pobre Angelito 2",
       "disponible": true,
       "año": 1992,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://image.tmdb.org/t/p/original/48Wa6L2QzY47nWqtRCgiqYlecc9.jpg",
       "enlace": "https://drive.google.com/file/d/1ZStdjNhTEKs1DnT8b7-QgrJNyecLQh3Q/preview",
       "nuevo": false,
@@ -217,7 +214,7 @@
       "titulo": "Mi Pobre Angelito 3",
       "disponible": true,
       "año": 1997,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://image.tmdb.org/t/p/original/eyGhwPTLYTKpCi5c9OvtKNS4zB7.jpg",
       "enlace": "https://drive.google.com/file/d/18FZon3d_EZBsByFgK18iyIJ_XYC99vBO/preview",
       "nuevo": false,
@@ -227,7 +224,7 @@
       "titulo": "Las Crónicas de Navidad",
       "disponible": true,
       "año": 2018,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://es.web.img3.acsta.net/pictures/18/10/10/16/04/5479886.jpg",
       "enlace": "https://drive.google.com/file/d/10R6fkumlnJSVCDaKmHtXIoNrZkSPud6l/preview",
       "nuevo": false,
@@ -237,7 +234,7 @@
       "titulo": "Las Crónicas de Navidad 2",
       "disponible": true,
       "año": 2020,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://es.web.img2.acsta.net/pictures/20/10/20/08/59/0323500.jpg",
       "enlace": "https://drive.google.com/file/d/1G4ojr6PrMop9UkbszlekhJFbFTioms5v/preview",
       "nuevo": false,
@@ -247,7 +244,7 @@
       "titulo": "El Regalo Prometido",
       "disponible": true,
       "año": 1996,
-      "genero": "infantil",
+      "genero": "navidad",
       "imagen": "https://mx.web.img2.acsta.net/pictures/18/11/09/02/47/1757410.jpg",
       "enlace": "https://drive.google.com/file/d/14mgzLgkKVuGirawp5i_aAysoIWFajMux/preview",
       "nuevo": false,
@@ -257,7 +254,7 @@
       "titulo": "La Forja",
       "disponible": true,
       "año": 2024,
-      "genero": "accion",
+      "genero": "cristiana",
       "imagen": "https://laforja.canzionfilms.com/images/about-poster.jpg",
       "enlace": "https://drive.google.com/file/d/1qGA8-6kEpjvzTXi_ww2RD9-Ax3cvRGTO/preview",
       "nuevo": false,
@@ -276,7 +273,7 @@
       "titulo": "Toy Story",
       "disponible": true,
       "año": 1995,
-      "genero": "familiar",
+      "genero": "infantil",
       "imagen": "https://m.media-amazon.com/images/I/71aBLaC4TzL._AC_UF894,1000_QL80_.jpg",
       "enlace": "https://drive.google.com/file/d/1peXqF9w8NFHXcF2dBNfoHMn29GSawven/preview",
       "descripcion": "Los juguetes de Andy cobran vida cuando nadie los ve. Woody, un vaquero que ha sido siempre el favorito de Andy, ve amenazada su posición con la llegada de Buzz Lightyear, un moderno guardián espacial. Su rivalidad inicial se transforma en una gran amistad."
@@ -357,7 +354,7 @@
       "titulo": "Volver al Futuro",
       "disponible": true,
       "año": 1985,
-      "genero": "infantil",
+      "genero": "familiar",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut1.jpg",
       "enlace": "https://drive.google.com/file/d/1lAW6VeuTHNQp1PUiEaVaXVp5mssEq072/preview",
       "descripcion": "Marty McFly, un adolescente de los años 80, viaja accidentalmente al pasado en un DeLorean modificado por su amigo científico Doc Brown. En 1955, debe asegurarse de que sus padres se enamoren para garantizar su propia existencia."
@@ -366,7 +363,7 @@
       "titulo": "Volver al Futuro II",
       "disponible": true,
       "año": 1989,
-      "genero": "infantil",
+      "genero": "familiar",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut2.jpg", 
       "enlace": "https://drive.google.com/file/d/1peRBdi6Zm38xoKzjNRSnlU-_vVEift4s/preview",
       "descripcion": "Marty y Doc viajan al futuro para evitar un desastre familiar, pero sus acciones causan una reacción en cadena que altera la línea temporal. Deberán corregir los errores mientras enfrentan una versión alternativa y distópica de su presente."
@@ -375,7 +372,7 @@
       "titulo": "Volver al Futuro III",
       "disponible": true,
       "año": 1990,
-      "genero": "infantil",
+      "genero": "familiar",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut3.jpg",
       "enlace": "https://drive.google.com/file/d/1djpDf36EP-aCX3s1cU2z-86PkMw4XuQE/preview",
       "descripcion": "Marty viaja al Viejo Oeste de 1885 para rescatar a Doc Brown, quien está atrapado en el pasado y amenazado de muerte. Juntos deberán encontrar la manera de regresar al presente mientras se enfrentan a los peligros del salvaje oeste."
@@ -384,7 +381,7 @@
       "titulo": "X-Men",
       "disponible": true,
       "año": 2000,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-Men.jpg",
       "enlace": "https://drive.google.com/file/d/13ECXfnUTHpg3ZJVBOWSf-ri8nsbiH94A/preview",
       "descripcion": "En un mundo donde los mutantes son temidos y perseguidos, el Profesor Charles Xavier lidera un grupo de superhéroes mutantes que luchan por la coexistencia pacífica entre humanos y mutantes, mientras se enfrentan a Magneto y su Hermandad."
@@ -393,7 +390,7 @@
       "titulo": "X-Men 2",
       "disponible": true,
       "año": 2003,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-Men2.png",
       "enlace": "https://drive.google.com/file/d/10mgRsk787did59eCbuukODWIRt6TzMON/preview",
       "descripcion": "Los X-Men deben unir fuerzas con sus enemigos cuando un exmilitar fanático amenaza a todos los mutantes. La lucha por la supervivencia los llevará a descubrir secretos sobre el origen de los mutantes."
@@ -402,7 +399,7 @@
       "titulo": "X-Men: La decisión final",
       "disponible": true,
       "año": 2006,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-Men3.jpg",
       "enlace": "https://drive.google.com/file/d/1prfhUoPkEA5xYHvdpcFwWUWVEPxq4knA/preview",
       "descripcion": "Cuando se descubre una 'cura' para la mutación, la comunidad mutante se divide. Los X-Men deben enfrentarse a una Jean Grey resucitada y más poderosa que nunca, mientras luchan por preservar su identidad mutante."
@@ -411,7 +408,7 @@
       "titulo": "X-Men Orígenes: Wolverine",
       "disponible": true,
       "año": 2009,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/X-MEN1.jpg",
       "enlace": "https://drive.google.com/file/d/151Kwlcmw1Xm_Y_3F_sulIKhEUQCThbJU/preview",
       "descripcion": "La historia del origen de Wolverine, desde su infancia en el siglo XIX hasta convertirse en el feroz guerrero que conocemos. Su relación con su hermano Sabretooth y su participación en el programa Arma X marcarán su destino."
@@ -420,7 +417,7 @@
       "titulo": "X-Men: Primera generación",
       "disponible": true,
       "año": 2011,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1gqPbslGDHAJDvqD8HmnXNpM726-JR6tNw&s",
       "enlace": "https://drive.google.com/file/d/1mFrkmwgflkqrEYUyM_U3wd4Om04y4Lj7/preview",
       "descripcion": "La historia del origen de los X-Men en los años 60, centrándose en la amistad entre Charles Xavier y Erik Lehnsherr antes de convertirse en el Profesor X y Magneto, mientras forman el primer equipo de mutantes."
@@ -429,7 +426,7 @@
       "titulo": "Wolverine: Inmortal",
       "disponible": true,
       "año": 2013,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://i.pinimg.com/originals/d0/47/57/d04757a75659b6a24accef9aaedc606b.jpg",
       "enlace": "https://drive.google.com/file/d/1ZBD4ZHxVAyudpTNTQL9g1Tbh-sdy3X3Z/preview",
       "descripcion": "Logan viaja a Japón donde se enfrenta a su pasado y a un enemigo que amenaza no solo su inmortalidad sino también su humanidad. En el proceso, debe redescubrir al héroe que lleva dentro."
@@ -438,7 +435,7 @@
       "titulo": "X-Men: Días del futuro pasado",
       "disponible": true,
       "año": 2014,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDOFP.jpg",
       "enlace": "https://drive.google.com/file/d/ID_XMEN_DOFP/preview",
       "descripcion": "Los X-Men envían a Wolverine al pasado para cambiar un evento histórico que podría resultar en la destrucción tanto de humanos como de mutantes. Una misión que unirá a las versiones jóvenes y mayores de los X-Men."
@@ -447,7 +444,7 @@
       "titulo": "X-Men: Apocalipsis",
       "disponible": true,
       "año": 2016,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenApocalipsis.jpg",
       "enlace": "https://drive.google.com/file/d/ID_XMEN_APOCALIPSIS/preview",
       "descripcion": "El primer y más poderoso mutante, Apocalipsis, despierta tras miles de años y busca destruir la civilización moderna. Los X-Men deben unirse para detener sus planes de extinción global."
@@ -456,7 +453,7 @@
       "titulo": "Logan",
       "disponible": true,
       "año": 2017,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Logan.jpg",
       "enlace": "https://drive.google.com/file/d/ID_LOGAN/preview",
       "descripcion": "En un futuro cercano, un Logan envejecido cuida de un enfermo Profesor X mientras protege a una joven mutante con poderes similares a los suyos. Una última aventura que pondrá a prueba su legado como Wolverine."
@@ -465,7 +462,7 @@
       "titulo": "Deadpool",
       "disponible": true,
       "año": 2016,
-      "genero": "accion",
+      "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool.jpg",
       "enlace": "https://drive.google.com/file/d/ID_DEADPOOL/preview",
       "descripcion": "Wade Wilson, un mercenario, es sometido a un experimento que lo deja desfigurado pero con poderes de curación acelerada. Adoptando el alter ego de Deadpool, busca venganza contra quienes lo transformaron."
@@ -474,7 +471,7 @@
       "titulo": "Deadpool 2",
       "disponible": true,
       "año": 2018,
-      "genero": "accion",
+      "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool2.jpg",
       "enlace": "https://drive.google.com/file/d/ID_DEADPOOL_2/preview",
       "descripcion": "Deadpool forma un equipo de mutantes llamado Fuerza-X para proteger a un joven mutante de Cable, un soldado cibernético del futuro. Una aventura llena de acción y humor irreverente."
@@ -483,7 +480,7 @@
       "titulo": "X-Men: Fénix Oscura",
       "disponible": true,
       "año": 2019,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDarkPhoenix.jpg",
       "enlace": "https://drive.google.com/file/d/ID_XMEN_DARK_PHOENIX/preview",
       "descripcion": "Jean Grey desarrolla increíbles poderes que la corrompen y la transforman en Fénix Oscura. Los X-Men deberán decidir si la vida de un miembro del equipo vale más que toda la humanidad."
@@ -492,7 +489,7 @@
       "titulo": "Los Nuevos Mutantes",
       "disponible": true,
       "año": 2020,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NewMutants.jpg",
       "enlace": "https://drive.google.com/file/d/ID_NEW_MUTANTS/preview",
       "descripcion": "Cinco jóvenes mutantes descubren sus habilidades mientras están retenidos en una instalación secreta contra su voluntad. Luchan por escapar de su pasado y salvarse a sí mismos."
@@ -501,18 +498,20 @@
       "titulo": "Capitán América: El primer vengador",
       "disponible": true,
       "año": 2011,
-      "genero": "superheroes",
+      "genero": "marvel",
       "imagen": "https://m.media-amazon.com/images/I/81y9W+06QrL._AC_UF894,1000_QL80_.jpg",
       "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_1/preview",
       "descripcion": "Steve Rogers se somete a un experimento que lo transforma en el super soldado Capitán América durante la Segunda Guerra Mundial. Debe enfrentarse a la organización HYDRA y su líder, Red Skull."
     },
     {
+      "id": 1,
       "titulo": "Capitana Marvel",
       "disponible": true,
       "año": 2019,
-      "genero": "superheroes",
-      "imagen": "https://m.media-amazon.com/images/I/71NnJU9liHL.jpg",
-      "enlace": "https://m.media-amazon.com/images/I/71NnJU9liHL.jpg",
+      "nuevo": true,
+      "genero": "marvel",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1pfYPtZuf1Mf6DiUg_Gmi7RCcqgIBN5yGOw&s",
+      "enlace": "https://drive.google.com/file/d/1vj_e0twwfCCBmT7AAjP2AfROUZBY6R8J/preview",
       "descripcion": "Carol Danvers se convierte en una de las heroínas más poderosas del universo cuando la Tierra se ve atrapada en medio de una guerra galáctica entre dos razas alienígenas."
     },
     {
@@ -534,12 +533,14 @@
       "descripcion": "Tony Stark enfrenta presiones del gobierno, nuevos villanos y su propia mortalidad mientras lidia con las consecuencias de revelar su identidad como Iron Man al mundo."
     },
     {
+      "id": 2,
       "titulo": "El increíble Hulk",
       "disponible": true,
       "año": 2008,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/increible-hulk.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_INCREIBLE_HULK/preview",
+      "nuevo": true,
+      "genero": "marvel", 
+      "imagen": "https://es.web.img3.acsta.net/medias/nmedia/18/66/73/18/20350674.jpg",
+      "enlace": "https://drive.google.com/file/d/15oY5PZsa2axHZHjF8VDLk9bF0GWW-x2F/preview",
       "descripcion": "Bruce Banner busca una cura para la radiación gamma que lo convierte en Hulk mientras es perseguido por el ejército. Debe enfrentarse a un enemigo que ha abusado del mismo poder que él intenta curar."
     },
     {
@@ -602,15 +603,17 @@
       "año": 2017,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/guardianes-galaxia-2.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_2/preview"
+      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_2/preview",
+      "descripcion": "Los Guardianes continúan sus aventuras mientras Peter Quill descubre la verdad sobre su padre y deben salvar la galaxia una vez más."
     },
     {
       "titulo": "Yo soy Groot",
       "disponible": true,
       "año": 2022,
-      "genero": "infantil",
+      "genero": "marvel",
       "imagen": "https://ejemplo.com/yo-soy-groot.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_YO_SOY_GROOT/preview"
+      "enlace": "https://drive.google.com/file/d/ID_YO_SOY_GROOT/preview",
+      "descripcion": "Una serie de cortos que siguen las aventuras del pequeño Groot mientras crece y se mete en problemas entre las misiones de los Guardianes."
     },
     {
       "titulo": "Vengadores: La era de Ultrón",
@@ -618,7 +621,8 @@
       "año": 2015,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/vengadores-era-ultron.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_ULTRON/preview"
+      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_ULTRON/preview",
+      "descripcion": "Los Vengadores deben unirse para detener a Ultrón, una inteligencia artificial creada por Tony Stark que amenaza con exterminar a la humanidad."
     },
     {
       "titulo": "Ant-Man",
@@ -626,7 +630,8 @@
       "año": 2015,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/ant-man.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN/preview"
+      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN/preview",
+      "descripcion": "Scott Lang debe ayudar a su mentor Dr. Hank Pym a proteger el secreto de su traje de Ant-Man, que otorga la capacidad de encogerse mientras aumenta la fuerza."
     },
     {
       "titulo": "Capitán América: Civil War",
@@ -634,7 +639,8 @@
       "año": 2016,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/capitan-america-civil-war.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_3/preview"
+      "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_3/preview",
+      "descripcion": "Una disputa entre el Capitán América y Iron Man divide a los Vengadores en dos bandos mientras enfrentan una nueva amenaza."
     },
     {
       "titulo": "Spider-Man: Homecoming",
@@ -642,15 +648,19 @@
       "año": 2017,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/spiderman-homecoming.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_HOMECOMING/preview"
+      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_HOMECOMING/preview",
+      "descripcion": "Peter Parker intenta equilibrar su vida escolar con ser Spider-Man mientras enfrenta al Buitre, bajo la mentoría de Tony Stark."
     },
     {
-      "titulo": "Doctor Extraño",
+      "id": 3,
+      "titulo": "Doctor Strange",
       "disponible": true,
       "año": 2016,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/doctor-extrano.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DOCTOR_EXTRANO/preview"
+      "nuevo": true,
+      "genero": "marvel", 
+      "imagen": "https://i.ebayimg.com/images/g/3iYAAOSwO7haCROU/s-l1200.jpg",
+      "enlace": "https://drive.google.com/file/d/1eE2gAfY2fz02381xJmIVmtg3xQMs7m8g/preview",
+      "descripcion": "El Dr. Stephen Strange descubre las artes místicas después de un accidente que arruina su carrera como cirujano."
     },
     {
       "titulo": "Viuda Negra",
@@ -658,7 +668,8 @@
       "año": 2020,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/viuda-negra.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_VIUDA_NEGRA/preview"
+      "enlace": "https://drive.google.com/file/d/ID_VIUDA_NEGRA/preview",
+      "deripcion": "Natasha Romanoff se enfrenta a su pasado oscuro cuando surge una peligrosa conspiración vinculada a su historia como espía."
     },
     {
       "titulo": "Black Panther",
@@ -666,7 +677,8 @@
       "año": 2018,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/black-panther.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER/preview"
+      "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER/preview",
+      "descripcion": "T'Challa regresa a Wakanda para tomar su lugar como rey, pero debe defender su nación de antiguos enemigos y nuevas amenazas."
     },
     {
       "titulo": "Thor: Ragnarok",
@@ -674,7 +686,8 @@
       "año": 2017,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/thor-ragnarok.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_THOR_RAGNAROK/preview"
+      "enlace": "https://drive.google.com/file/d/ID_THOR_RAGNAROK/preview",
+      "descripcion": "Thor debe escapar del planeta Sakaar y regresar a Asgard para detener a Hela y prevenir el Ragnarök."
     },
     {
       "titulo": "Ant-Man y la Avispa",
@@ -682,7 +695,8 @@
       "año": 2018,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/ant-man-avispa.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN_AVISPA/preview"
+      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN_AVISPA/preview",
+      "descripcion": "Scott Lang y Hope van Dyne trabajan juntos en una nueva misión urgente para descubrir secretos del pasado."
     },
     {
       "titulo": "Vengadores: Infinity War",
@@ -690,15 +704,17 @@
       "año": 2018,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/vengadores-infinity-war.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_INFINITY_WAR/preview"
+      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_INFINITY_WAR/preview",
+      "descripcion": "Los Vengadores y sus aliados deben estar dispuestos a sacrificarlo todo para derrotar a Thanos antes de que destruya el universo."
     },
     {
       "titulo": "Vengadores: Endgame",
-      "disponible": true,
+      "discsponible": true,
       "año": 2019,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/vengadores-endgame.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_ENDGAME/preview"
+      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_ENDGAME/preview",
+      "descripcion": "Los Vengadores restantes deben encontrar una manera de revertir las acciones de Thanos y restaurar el orden en el universo."
     },
     {
       "titulo": "Loki",
@@ -706,7 +722,8 @@
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/loki.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_LOKI/preview"
+      "enlace": "https://drive.google.com/file/d/ID_LOKI/preview",
+      "descripcion": "Loki es reclutado por la Autoridad de Variación Temporal para ayudar a arreglar las líneas temporales que él mismo ayudó a crear."
     },
     {
       "titulo": "Bruja Escarlata y Visión",
@@ -714,7 +731,8 @@
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/bruja-escarlata-vision.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_BRUJA_ESCARLATA_VISION/preview"
+      "enlace": "https://drive.google.com/file/d/ID_BRUJA_ESCARLATA_VISION/preview",
+      "descripcion": "Wanda Maximoff y Visión viven una vida suburbana ideal que comienza a sospechar que no todo es lo que parece."
     },
     {
       "titulo": "Shang-Chi y la leyenda de los diez anillos",
@@ -722,7 +740,8 @@
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/shang-chi.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_SHANG_CHI/preview"
+      "enlace": "https://drive.google.com/file/d/ID_SHANG_CHI/preview",
+      "descripcion": "Shang-Chi debe enfrentarse al pasado que pensó que había dejado atrás cuando se ve envuelto en la red de la misteriosa organización de los Diez Anillos."
     },
     {
       "titulo": "Falcon y el Soldado de Invierno",
@@ -730,7 +749,8 @@
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/falcon-soldado-invierno.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_FALCON_SOLDADO_INVIERNO/preview"
+      "enlace": "https://drive.google.com/file/d/ID_FALCON_SOLDADO_INVIERNO/preview",
+      "descripcion": "Sam Wilson y Bucky Barnes se unen en una aventura global que pone a prueba sus habilidades y su paciencia."
     },
     {
       "titulo": "Spider-Man: Lejos de casa",
@@ -738,7 +758,8 @@
       "año": 2019,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/spiderman-lejos-casa.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_LEJOS_CASA/preview"
+      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_LEJOS_CASA/preview",
+      "descripcion": "Peter Parker va de vacaciones a Europa con sus amigos, pero Nick Fury aparece para reclutarlo en una misión para enfrentar a las amenazas elementales."
     },
     {
       "titulo": "Spider-Man: No Way Home",
@@ -746,7 +767,8 @@
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/spiderman-no-way-home.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_NO_WAY_HOME/preview"
+      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_NO_WAY_HOME/preview",
+      "descripcion": "Con la identidad de Spider-Man revelada, Peter Parker pide ayuda al Doctor Strange, pero las cosas se complican cuando el multiverso se abre."
     },
     {
       "titulo": "Eternals",
@@ -754,7 +776,8 @@
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/eternals.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_ETERNALS/preview"
+      "enlace": "https://drive.google.com/file/d/ID_ETERNALS/preview",
+      "descripcion": "Los Eternos, una raza de seres inmortales, emergen de las sombras para reunirse contra los más antiguos enemigos de la humanidad, los Desviantes."
     },
     {
       "titulo": "Ojo de Halcón",
@@ -762,7 +785,8 @@
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/ojo-halcon.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_OJO_HALCON/preview"
+      "enlace": "https://drive.google.com/file/d/ID_OJO_HALCON/preview",
+      "descripcion": "Clint Barton debe asociarse con la joven Kate Bishop para enfrentar enemigos de su pasado como Ronin en una aventura navideña."
     },
     {
       "titulo": "Echo",
@@ -770,7 +794,8 @@
       "año": 2024,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/echo.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_ECHO/preview"
+      "enlace": "https://drive.google.com/file/d/ID_ECHO/preview",
+      "descripcion": "Maya Lopez debe enfrentar su pasado, reconectar con sus raíces nativas americanas y abrazar su familia y legado."
     },
     {
       "titulo": "Doctor Strange en el multiverso de la locura",
@@ -778,7 +803,8 @@
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/doctor-strange-multiverso.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DOCTOR_STRANGE_MULTIVERSO/preview"
+      "enlace": "https://drive.google.com/file/d/ID_DOCTOR_STRANGE_MULTIVERSO/preview",
+      "descripcion": "El Doctor Strange viaja a través del multiverso y enfrenta una amenaza que podría destruir todas las realidades."
     },
     {
       "titulo": "Caballero Luna",
@@ -786,7 +812,8 @@
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/caballero-luna.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_CABALLERO_LUNA/preview"
+      "enlace": "https://drive.google.com/file/d/ID_CABALLERO_LUNA/preview",
+      "descripcion": "Steven Grant descubre que tiene un trastorno de identidad disociativo y comparte cuerpo con el mercenario Marc Spector."
     },
     {
       "titulo": "She-Hulk: Abogada Hulka",
@@ -794,7 +821,8 @@
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/she-hulk.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_SHE_HULK/preview"
+      "enlace": "https://drive.google.com/file/d/ID_SHE_HULK/preview",
+      "descripcion": "Jennifer Walters navega la complicada vida de una abogada soltera de 30 y tantos años que también resulta ser una Hulk verde de 2 metros."
     },
     {
       "titulo": "Ms. Marvel",
@@ -802,7 +830,8 @@
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/ms-marvel.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_MS_MARVEL/preview"
+      "enlace": "https://drive.google.com/file/d/ID_MS_MARVEL/preview",
+      "descripcion": "Kamala Khan, una adolescente fan de los superhéroes, descubre que tiene poderes propios y debe aprender a usarlos mientras protege su comunidad."
     },
     {
       "titulo": "Thor: Love and Thunder",
@@ -810,7 +839,8 @@
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/thor-love-thunder.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_THOR_LOVE_THUNDER/preview"
+      "enlace": "https://drive.google.com/file/d/ID_THOR_LOVE_THUNDER/preview",
+      "descripcion": "Thor se embarca en un viaje diferente a todo lo que ha enfrentado: una búsqueda de la paz interior. Pero su retiro es interrumpido por Gorr, el Carnicero de Dioses."
     },
     {
       "titulo": "Black Panther: Wakanda Forever",
@@ -818,7 +848,8 @@
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/black-panther-wakanda-forever.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER_WAKANDA_FOREVER/preview"
+      "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER_WAKANDA_FOREVER/preview",
+      "descripcion": "La nación de Wakanda lucha por proteger su hogar de las potencias mundiales intervencionistas tras la muerte del Rey T'Challa."
     },
     {
       "titulo": "Guardianes de la Galaxia: Especial Felices Fiestas",
@@ -826,7 +857,8 @@
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/guardianes-galaxia-felices-fiestas.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_FELICES_FIESTAS/preview"
+      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_FELICES_FIESTAS/preview",
+      "descripcion": "Los Guardianes celebran la Navidad y buscan el regalo perfecto para Peter Quill en la Tierra."
     },
     {
       "titulo": "Ant-Man y la Avispa: Quantumania",
@@ -834,7 +866,8 @@
       "año": 2023,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/ant-man-avispa-quantumania.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN_AVISPA_QUANTUMANIA/preview"
+      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN_AVISPA_QUANTUMANIA/preview",
+      "descripcion": "Scott Lang y Hope van Dyne exploran el Reino Cuántico, donde se encuentran con extrañas criaturas y el peligroso Kang el Conquistador."
     },
     {
       "titulo": "Guardianes de la Galaxia Vol. 3",
@@ -842,7 +875,8 @@
       "año": 2023,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/guardianes-galaxia-3.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_3/preview"
+      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_3/preview",
+      "descripcion": "Los Guardianes se embarcan en una última misión para proteger a uno de los suyos y salvar el universo una vez más."
     },
     {
       "titulo": "Invasión secreta",
@@ -850,7 +884,8 @@
       "año": 2023,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/invasion-secreta.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_INVASION_SECRETA/preview"
+      "enlace": "https://drive.google.com/file/d/ID_INVASION_SECRETA/preview",
+      "descripcion": "Nick Fury descubre una conspiración de Skrulls que han estado infiltrándose en la Tierra durante años."
     },
     {
       "titulo": "Loki T2",
@@ -858,7 +893,8 @@
       "año": 2023,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/loki-t2.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_LOKI_T2/preview"
+      "enlace": "https://drive.google.com/file/d/ID_LOKI_T2/preview",
+      "descripcion": "Loki continúa su aventura a través del tiempo y el espacio, enfrentando nuevas amenazas y descubriendo más secretos sobre la TVA."
     },
     {
       "titulo": "The Marvels",
@@ -866,7 +902,8 @@
       "año": 2023,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/the-marvels.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_THE_MARVELS/preview"
+      "enlace": "https://drive.google.com/file/d/ID_THE_MARVELS/preview",
+      "descripcion": "Carol Danvers, Monica Rambeau y Kamala Khan deben unir fuerzas cuando sus poderes se entrelazan misteriosamente."
     },
     {
       "titulo": "Deadpool y Lobezno",
@@ -874,7 +911,8 @@
       "año": 2024,
       "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool%203.jpg",
-      "enlace": "https://drive.google.com/file/d/1yA-A8IBfcWAn8eA_fEh860NxPp2P_oFw/preview"
+      "enlace": "https://drive.google.com/file/d/1yA-A8IBfcWAn8eA_fEh860NxPp2P_oFw/preview",
+      "descripcion": "Wade Wilson se une a Logan en una aventura que promete ser tan violenta como hilarante, mezclando el humor característico de Deadpool con la actitud gruñona de Wolverine."
     }
   ]
 }

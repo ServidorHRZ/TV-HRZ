@@ -3452,7 +3452,7 @@
               "numero": 25,
               "titulo": "La Expedición",
               "descripcion": "Realizan una expedición al centro de la Tierra",
-              "duracion": "22:00",
+              "duracion": "22:00", 
               "url": "https://drive.google.com/file/d/1pvRyPEq8kkJtlpdxoYv-C1GlnT_rVUG-/preview"
             },
             {
@@ -3461,6 +3461,277 @@
               "descripcion": "El episodio final de la temporada con una gran aventura",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1xchkeUuDRYtYqgG2wgcg0xpLXUPqWV-j/preview"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "El Lago Nariz",
+              "descripcion": "Phineas y Ferb buscan al monstruo del Lago Nariz",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1j6LqQNbPrxNeX4pgeR9Pw0YgLdKRGs6m/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Entrevista con un Ornitorrinco",
+              "descripcion": "Perry el ornitorrinco es entrevistado",
+              "duracion": "22:00", 
+              "url": "https://drive.google.com/file/d/1HBuLFCIK9Em_eF-y2shnfQ0HW5yPlppx/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Tip de la Punta",
+              "descripcion": "Los chicos construyen una montaña rusa de agua",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/10RXKvByTMqP4dYBXqPuIyVCrsGHwN_VT/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "El Ataque de los 50 Pies de Hermana",
+              "descripcion": "Candace crece hasta tener 50 pies de altura",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1_Te0YqUbvqdoShlLkGNKEoc6c1f-fmTJ/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Viaje al Centro de Candace",
+              "descripcion": "Los chicos viajan dentro del cuerpo de Candace",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1dqtnv9lMKx2TjaFxbv36eQu_zCfrTchE/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "La Montaña Rusa: El Musical",
+              "descripcion": "Versión musical del episodio de la montaña rusa",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Fkp4De8lU1lAPRehWylTXZlCi48RlqZY/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Phineas y Ferb: Especial de Navidad",
+              "descripcion": "Especial navideño con villancicos y diversión",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ZeUBAfbDk70a4VsgUpDqlWmATPqWyx7a/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Juego de Gemelos",
+              "descripcion": "Los chicos intercambian identidades",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1MINe-3iW_6BXgG2pT85NxvSV-84NiVFG/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Haz lo que Doof",
+              "descripcion": "Doofenshmirtz crea un imitador",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1FrtILZ19f8Xo3_K_X1J6TnJQMo0ZX-cj/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "El Código del Bravucón",
+              "descripcion": "Buford revela el código de los bravucones",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1hMeVsqRZXo5exmgZFzlWbaYQwVtVQ5bX/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "No Más Conejos",
+              "descripcion": "Los chicos ayudan a un mago",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1QgGDrEDIAXClgXv_0iHjggQsFpaAXttF/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Divididos por el Tiempo",
+              "descripcion": "Los chicos viajan en el tiempo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Oa_uwfSYya935vwvE_VoVO3r6H56Z0JF/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "El Último Tren a Villa Aventura",
+              "descripcion": "Aventuras en un tren misterioso",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1BIPs1ZI-Wjy33nSfymZ64zBqL4rdHxLz/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "El Circo del Ornitorrinco",
+              "descripcion": "Perry se une a un circo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1VP0ONqQCTW7z7lMfpUP2NG134CW_J2hu/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "El Mago de Ocasión",
+              "descripcion": "Los chicos crean magia real",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1roCV8Er93XtIuHT6NZ4W3-lOB7aPfP4j/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Viva Halloween",
+              "descripcion": "Especial de Halloween",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1SD9soAkR-SvHFmvrA3ze-w-TTAQ-BeIF/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "La Máquina del Tiempo",
+              "descripcion": "Viajan a diferentes épocas",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1EWEcV94E-EOnECGdiAo5GkpN3rHcCnNQ/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "El Mejor Día Para No Hacer Nada",
+              "descripcion": "Los chicos intentan no hacer nada",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1oUZHeBvW6AyzDy8pONFQlh8HkCsmu0x5/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "El Regreso de los Malvados Conejos",
+              "descripcion": "Los conejos malvados regresan",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/16weush-Z3ORXfuLbVMLmqhVbQO4tRHEi/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "El Platillo Volador",
+              "descripcion": "Construyen una nave espacial",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1gQl8oHOJRDBGfJEzofTZ23Cl1JxvXvz1/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "La Feria de Ciencias",
+              "descripcion": "Participan en una feria de ciencias",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1bFg4CueFKKVtCX_LD66c7zb7QIAvwWOb/preview"
+            },
+            {
+              "numero": 22,
+              "titulo": "El Crucero",
+              "descripcion": "Aventuras en un crucero",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1wz5Bsgb95hlN07vLCJo50uRjIGzRCzBF/preview"
+            },
+            {
+              "numero": 23,
+              "titulo": "El Torneo de Miniatura",
+              "descripcion": "Compiten en un torneo de golf en miniatura",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1cE1SYPw8w6JtyYsH2zGgWdVZMzBeYt5E/preview"
+            },
+            {
+              "numero": 24,
+              "titulo": "La Casa del Terror",
+              "descripcion": "Construyen una casa embrujada",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1hI1Nelx2Jco2nn-dCxhwm-myA57WdU4F/preview"
+            },
+            {
+              "numero": 25,
+              "titulo": "El Día de Campo",
+              "descripcion": "Organizan un día de campo extremo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1l06JGzbLa0ffXuUm-F_DqMydhTNAnHQG/preview"
+            },
+            {
+              "numero": 26,
+              "titulo": "La Máquina de Helados",
+              "descripcion": "Crean una máquina de helados gigante",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1MscXw10i3WkX9A74ZYYwTM9gUFrY_4Qk/preview"
+            },
+            {
+              "numero": 27,
+              "titulo": "El Parque Acuático",
+              "descripcion": "Construyen un parque acuático",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1rmN3d5MrWIZ5y-vKiJRdYXOwQpWFiRNp/preview"
+            },
+            {
+              "numero": 28,
+              "titulo": "El Robot Gigante",
+              "descripcion": "Construyen un robot gigante",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ksZwxW5D1lU_f7PAKeub4nupz0R9b4FK/preview"
+            },
+            {
+              "numero": 29,
+              "titulo": "La Carrera de Autos",
+              "descripcion": "Organizan una carrera de autos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1zrltNAzpfBJNJg3guOMUzIncPtpKNLr_/preview"
+            },
+            {
+              "numero": 30,
+              "titulo": "El Museo de Cera",
+              "descripcion": "Crean figuras de cera vivientes",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/19fSkySfiFonJxGuv7ZaEf__p88NIFt-W/preview"
+            },
+            {
+              "numero": 31,
+              "titulo": "El Zoológico Prehistórico",
+              "descripcion": "Crean un zoológico con animales prehistóricos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1yUqdgS-sXUwuyTJU77t9SYrmjINzcamG/preview"
+            },
+            {
+              "numero": 32,
+              "titulo": "La Máquina del Tiempo 2",
+              "descripcion": "Nueva aventura en el tiempo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1xghmBbq26lnz8_gQJHhrpg22y4gJxdCP/preview"
+            },
+            {
+              "numero": 33,
+              "titulo": "El Circo",
+              "descripcion": "Montan su propio circo",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1XGm5M5atPNpIGSjKBfxWDKjrtHv_1iAJ/preview"
+            },
+            {
+              "numero": 34,
+              "titulo": "La Fábrica de Juguetes",
+              "descripcion": "Crean juguetes mágicos",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1-GozsEuAT2cArEaDfXdmti-HHzqU7UZg/preview"
+            },
+            {
+              "numero": 35,
+              "titulo": "El Parque de Diversiones",
+              "descripcion": "Construyen un parque de diversiones",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/17cJKhFIRWtC8yg5GNUeMl3hTv30txPuB/preview"
+            },
+            {
+              "numero": 36,
+              "titulo": "La Máquina de Sueños",
+              "descripcion": "Crean una máquina para entrar en los sueños",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1I0NCA0XleXt5m5RUC1q60eqvxP4qv4Ke/preview"
+            },
+            {
+              "numero": "37-38",
+              "titulo": "El verano tuyo es",
+              "descripcion": "Phineas y Ferb organizan el día más largo del verano con una serie de aventuras épicas y musicales para celebrar la temporada",
+              "duracion": "22:00", 
+              "url": "https://drive.google.com/file/d/1o49tn9lhnSprb77AD1Kvu0PCFfUwF5TT/preview"
+            },
+            {
+              "numero": 39,
+              "titulo": "La Montaña Rusa: El Musical",
+              "descripcion": "Los chicos recrean su primera gran aventura del verano, esta vez como un espectacular musical lleno de canciones y coreografías",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1HT0zxT2fsQuEBYBOcWNvvNkEhIQoZMTx/preview"
             }
           ]
         }
