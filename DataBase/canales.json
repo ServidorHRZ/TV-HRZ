@@ -4,7 +4,7 @@
       "id": 3,
       "nombre": "Cartoon Network",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/1200px-Cartoon_Network_2010_logo.svg.png",
-      "categoria": "Infantil",
+      "categoria": "Infantil", 
       "descripcion": "Canal de televisión infantil con dibujos animados y series para niños.",
       "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=cartoon-op2"
     },
@@ -35,10 +35,90 @@
     {
       "id": 5,
       "nombre": "Nickelodeon",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/1200px-Nickelodeon_2009_logo.svg.png",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/1200px-Nickelodeon_2009_logo.svg.png", 
       "categoria": "Infantil",
       "descripcion": "Canal de televisión infantil con series animadas y programas para niños.",
       "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=nick-op2"
+    },
+    {
+      "id": 6,
+      "nombre": "ESPN",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/1200px-ESPN_wordmark.svg.png",
+      "categoria": "Deportes", 
+      "descripcion": "Canal de deportes líder mundial con cobertura de eventos deportivos, noticias y análisis.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn-op2"
+    },
+    {
+      "id": 7,
+      "nombre": "Warner Channel",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Warner2018LA.png/1200px-Warner2018LA.png", 
+      "categoria": "Entretenimiento",
+      "descripcion": "Canal de entretenimiento con series, películas y programas originales de Warner Bros.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=warner-op2"
+    },
+    {
+      "id": 8,
+      "nombre": "History Channel",
+      "logo": "https://www.telelibre.net/img/history.webp",
+      "categoria": "Documentales",
+      "descripcion": "Canal dedicado a la historia, documentales y programas sobre eventos históricos.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=history-op2"
+    },
+    {
+      "id": 9,
+      "nombre": "History 2",
+      "logo": "https://www.telelibre.net/img/history2.webp",
+      "categoria": "Documentales", 
+      "descripcion": "Canal hermano de History Channel con documentales y programas sobre ciencia, tecnología e historia.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=history2-op2"
+    },
+    {
+      "id": 10,
+      "nombre": "National Geographic",
+      "logo": "https://www.telelibre.net/img/natgeo.webp",
+      "categoria": "Documentales",
+      "descripcion": "Canal de documentales sobre naturaleza, ciencia, cultura y exploración del mundo.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=natgeo-op2"
+    },
+    {
+      "id": 11,
+      "nombre": "Space",
+      "logo": "https://www.telelibre.net/img/space.webp",
+      "categoria": "Películas",
+      "descripcion": "Canal de películas con lo mejor del cine de acción, suspenso y entretenimiento.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=space-op2"
+    },
+    {
+      "id": 12,
+      "nombre": "Telemundo",
+      "logo": "https://www.telelibre.net/img/telemundo.png",
+      "categoria": "Entretenimiento", 
+      "descripcion": "Canal de entretenimiento con telenovelas, series y programación variada en español.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=telemundo-pr"
+    },
+    {
+      "id": 13,
+      "nombre": "Studio Universal",
+      "logo": "https://cdn.mitvstatic.com/channels/fd8cde27-1fa8-46f4-a2ff-96436bbe6912_m.jpg",
+      "categoria": "Películas",
+      "descripcion": "Canal de películas clásicas y contemporáneas del estudio Universal.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=studiouniversal-op2"
+    },
+    {
+      "id": 14,
+      "nombre": "Canal 1",
+      "logo": "https://www.telelibre.net/img/canal1.png", 
+      "categoria": "Entretenimiento",
+      "descripcion": "Canal de entretenimiento con programación variada para toda la familia.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=canal1-co"
+    },
+    {
+      "id": 15,
+      "nombre": "Sony Channel",
+      "logo": "https://www.telelibre.net/img/sony.webp",
+      "categoria": "Entretenimiento",
+      "descripcion": "Canal de entretenimiento con series, películas y programación variada de Sony.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=sony-op2"
     }
   ]
 }
