@@ -328,11 +328,37 @@
                 
                 iframe.addEventListener('load', function() {
                     try {
-                        iframe.contentWindow.onbeforeunload = function() {
+                        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                        
+                        // Prevenir redirecciones dentro del iframe
+                        iframeDoc.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            e.stopPropagation();
                             return false;
-                        };
+                        }, true);
+
+                        // Bloquear popups y anuncios
+                        iframeDoc.addEventListener('beforeunload', function(e) {
+                            e.preventDefault();
+                            return false;
+                        });
+
+                        // Deshabilitar scripts maliciosos
+                        const scripts = iframeDoc.getElementsByTagName('script');
+                        for (let script of scripts) {
+                            if (script.src && !script.src.includes('HRZ')) {
+                                script.remove();
+                            }
+                        }
+
+                        // Bloquear ventanas emergentes
+                        iframeDoc.window.open = function() { return null; };
+                        iframeDoc.window.alert = function() { return null; };
+                        iframeDoc.window._blank = null;
+
                     } catch (e) {
                         // Error esperado por cross-origin
+                        console.log("Error de acceso al iframe por cross-origin");
                     }
                 });
             }
