@@ -1,16 +1,6 @@
 {
   "peliculas": [
     {
-      "titulo": "Hitman: Agente 47",
-      "disponible": true,
-      "nuevo": true,
-      "año": 2015,
-      "genero": "accion",
-      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F2sQtHZ7m3eFYQWzbouiBLlVaAmy.jpg&w=256&q=75",
-      "enlace": "https://www.youtube.com/embed/sHSFVOhYp5w",
-      "descripcion": "Un asesino genéticamente mejorado conocido solo como Agente 47, creado como un asesino de élite superior, se une a una joven mujer que puede contener el secreto de su origen mientras enfrenta revelaciones impactantes sobre sus propios orígenes."
-    },
-    {
       "titulo": "Sonic La Película",
       "disponible": true,
       "nuevo": false,
