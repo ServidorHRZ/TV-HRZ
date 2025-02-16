@@ -363,11 +363,15 @@
                     </div>
                     <div class="iframe-container">
                         <iframe 
-                            src="${peliculaSeleccionada.enlace}" 
+                            src="${peliculaSeleccionada.enlace}"
                             allowfullscreen
                             allow="autoplay; fullscreen; encrypted-media"
-                            webkitallowfullscreen
-                            mozallowfullscreen>
+                            webkitallowfullscreen 
+                            mozallowfullscreen
+                            sandbox="allow-same-origin allow-scripts"
+                            scrolling="no"
+                            frameborder="0"
+                            style="pointer-events: auto;">
                         </iframe>
                     </div>
                 `;

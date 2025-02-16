@@ -140,6 +140,12 @@
             left: 0;
             width: 100%;
             height: 100%;
+            border: none;
+            allowfullscreen: true;
+            webkitallowfullscreen: true;
+            mozallowfullscreen: true;
+            allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+            sandbox: "allow-scripts allow-same-origin allow-forms";
         }
         .temporadas-container {
             margin-top: 20px;
@@ -288,7 +294,7 @@
             </div>
         </div>
         <div class="video-container">
-            <iframe id="video-player" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video-player" src="" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
         </div>
         <div class="temporadas-container" id="temporadas-container"></div>
     </div>

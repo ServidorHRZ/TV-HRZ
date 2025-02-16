@@ -1,11 +1,21 @@
 {
   "peliculas": [
     {
+      "titulo": "Spider-Man: No Way Home",
+      "disponible": true,
+      "nuevo": true,
+      "año": 2021,
+      "genero": "accion",
+      "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/osYbtvqjMUhEXgkuFJOsRYVpq6N.jpg",
+      "enlace": "https://pelicinehd.com/?trembed=0&trid=54878&trtype=2",
+      "descripcion": "Por primera vez en la historia cinematográfica de Spider-Man, nuestro héroe, vecino y amigo es desenmascarado y ya no puede separar su vida normal de los enormes riesgos que conlleva ser un Superhéroe. Cuando pide ayuda al Doctor Strange, los riesgos pasan a ser aún más peligrosos, obligándole a descubrir lo que realmente significa ser Spider-Man."
+    },
+    {
       "titulo": "Sonic La Película",
       "disponible": true,
       "nuevo": false,
       "año": 2020,
-      "genero": "accion",
+      "genero": "accion", 
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/eOC0FSGqyzcnnx7XFgLazI9nACT.jpg",
       "enlace": "https://drive.google.com/file/d/15MacOfy7AKLqcujdt5ckiieaazTHHp05/preview",
       "descripcion": "Sonic, el veloz erizo azul basado en la famosa serie de videojuegos de Sega, vivirá aventuras y desafíos cuando él y su nuevo mejor amigo Tom unan sus fuerzas para evitar que el malvado Dr. Robotnik capture a Sonic y use sus inmensos poderes para dominar el mundo."
