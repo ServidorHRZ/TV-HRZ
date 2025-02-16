@@ -1,14 +1,14 @@
 {
   "peliculas": [
     {
-      "titulo": "Spider-Man: No Way Home",
+      "titulo": "Hitman: Agente 47",
       "disponible": true,
-      "nuevo": true,
-      "año": 2021,
+      "nuevo": false,
+      "año": 2015,
       "genero": "accion",
-      "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/osYbtvqjMUhEXgkuFJOsRYVpq6N.jpg",
-      "enlace": "https://pelicinehd.com/?trembed=0&trid=54878&trtype=2",
-      "descripcion": "Por primera vez en la historia cinematográfica de Spider-Man, nuestro héroe, vecino y amigo es desenmascarado y ya no puede separar su vida normal de los enormes riesgos que conlleva ser un Superhéroe. Cuando pide ayuda al Doctor Strange, los riesgos pasan a ser aún más peligrosos, obligándole a descubrir lo que realmente significa ser Spider-Man."
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F2sQtHZ7m3eFYQWzbouiBLlVaAmy.jpg&w=256&q=75",
+      "enlace": "https://ghbrisk.com/e/7uykm3el7hoj",
+      "descripcion": "Un asesino genéticamente mejorado conocido solo como Agente 47, creado como un asesino de élite superior, se une a una joven mujer que puede contener el secreto de su origen mientras enfrenta revelaciones impactantes sobre sus propios orígenes."
     },
     {
       "titulo": "Sonic La Película",
