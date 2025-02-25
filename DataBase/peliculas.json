@@ -1,5 +1,26 @@
 {
   "peliculas": [
+    
+    {
+      "titulo": "Los 4 Fantásticos",
+      "disponible": true,
+      "nuevo": true,
+      "año": 2005,
+      "genero": "marvel",
+      "imagen": "https://image.tmdb.org/t/p/w185/349fSE2Zd4fztRKK5BQ08A9rIMI.jpg",
+      "enlace": "https://pelicinehd.com/?trembed=1&trid=15678&trtype=1",
+      "descripcion": "Cuatro jóvenes astronautas adquieren superpoderes tras un accidente cósmico y deben aprender a usar sus nuevas habilidades para proteger la Tierra de amenazas extraordinarias."
+    },
+    {
+      "titulo": "Flash",
+      "disponible": true,
+      "nuevo": false,
+      "año": 2023,
+      "genero": "dc",
+      "imagen": "https://es.web.img2.acsta.net/pictures/23/05/25/12/46/5404738.jpg", 
+      "enlace": "https://pelicinehd.com/?trembed=0&trid=3171&trtype=1",
+      "descripcion": "Los mundos chocan cuando Barry Allen usa sus superpoderes para viajar en el tiempo y cambiar los eventos del pasado. Pero cuando intenta salvar a su familia se altera inadvertidamente el futuro y queda atrapado en una realidad en la que el General Zod ha regresado y no hay superhéroes a los que recurrir."
+    },
     {
       "titulo": "Sonic La Película",
       "disponible": true,
@@ -508,7 +529,7 @@
       "titulo": "Capitana Marvel",
       "disponible": true,
       "año": 2019,
-      "nuevo": true,
+      "nuevo": false,
       "genero": "marvel",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1pfYPtZuf1Mf6DiUg_Gmi7RCcqgIBN5yGOw&s",
       "enlace": "https://drive.google.com/file/d/1vj_e0twwfCCBmT7AAjP2AfROUZBY6R8J/preview",
@@ -537,7 +558,7 @@
       "titulo": "El increíble Hulk",
       "disponible": true,
       "año": 2008,
-      "nuevo": true,
+      "nuevo": false,
       "genero": "marvel", 
       "imagen": "https://es.web.img3.acsta.net/medias/nmedia/18/66/73/18/20350674.jpg",
       "enlace": "https://drive.google.com/file/d/15oY5PZsa2axHZHjF8VDLk9bF0GWW-x2F/preview",
@@ -656,7 +677,7 @@
       "titulo": "Doctor Strange",
       "disponible": true,
       "año": 2016,
-      "nuevo": true,
+      "nuevo": false,
       "genero": "marvel", 
       "imagen": "https://i.ebayimg.com/images/g/3iYAAOSwO7haCROU/s-l1200.jpg",
       "enlace": "https://drive.google.com/file/d/1eE2gAfY2fz02381xJmIVmtg3xQMs7m8g/preview",

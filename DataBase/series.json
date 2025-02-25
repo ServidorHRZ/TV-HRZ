@@ -1,10 +1,72 @@
 {
   "series": [
+    
+    {
+      "id": 33,
+      "titulo": "Tu amigo y vecino Spider-Man",
+      "miniatura_episodios": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FaSe4aB8tiPQMoQt9B4SKFgIymwL.jpg&w=256&q=75",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": false,
+      "descripcion": "Peter Parker, un estudiante de secundaria, adquiere increíbles poderes arácnidos después de ser mordido por una araña radiactiva. Ahora debe aprender a equilibrar su vida normal con su rol como el superhéroe Spider-Man mientras protege Nueva York.",
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FaSe4aB8tiPQMoQt9B4SKFgIymwL.jpg&w=256&q=75",
+      "año": 2025,
+      "genero": ["marvel", "accion", "aventura"],
+      "director": "Bob Richardson",
+      "actores": ["Christopher Daniel Barnes", "Sara Ballantine", "Edward Asner", "Linda Gary"],
+      "trailer": "https://www.youtube.com/embed/DZGN9fZvQhc", 
+      "temporadas": []
+    },
+    {
+      "id": 32,
+      "titulo": "MacGyver",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": false,
+      "descripcion": "Un joven Angus MacGyver trabaja para una organización gubernamental secreta, utilizando su extraordinario talento para resolver problemas y su vasto conocimiento científico para salvar vidas.",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BYTlkNWFiMmYtYjNhYS00Yjk0LWJmZDQtZDUzMzg0MmUzYmU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "año": 2016,
+      "genero": ["accion", "aventura", "drama"],
+      "director": "Peter M. Lenkov",
+      "actores": ["Lucas Till", "Tristin Mays", "Justin Hires", "George Eads"],
+      "trailer": "https://www.youtube.com/embed/PjOtIY6-Wys",
+      "temporadas": []
+    },
+    {
+      "id": 31,
+      "titulo": "Berlin",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Antes de los eventos de La Casa de Papel, Berlin y un grupo de expertos ladrones planean uno de los atracos más ambiciosos de su carrera en París.",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BYjEwNjFmNjMtMGYzNy00MzBiLWJlYjAtMGJjNTEwZGFhMjNlXkEyXkFqcGc@._V1_QL75_UY281_CR18,0,190,281_.jpg",
+      "año": 2023,
+      "genero": ["Crimen", "Drama", "Suspenso"],
+      "director": "Álex Pina",
+      "actores": ["Pedro Alonso", "Michelle Jenner", "Tristán Ulloa", "Begoña Vargas"],
+      "trailer": "https://www.youtube.com/embed/Ef7GtAe_jbw",
+      "temporadas": []
+    },
+    {
+      "id": 30,
+      "titulo": "La Casa de Papel",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Un grupo de criminales liderados por El Profesor planean los mayores atracos de la historia, primero en la Fábrica Nacional de Moneda y Timbre y luego en el Banco de España.",
+      "imagen": "https://www.aceprensa.com/wp-content/uploads/2019/08/71446-1-683x1024.jpg",
+      "año": 2017,
+      "genero": ["Crimen", "Drama", "Suspenso"],
+      "director": "Álex Pina",
+      "actores": ["Úrsula Corberó", "Álvaro Morte", "Itziar Ituño", "Pedro Alonso"],
+      "trailer": "https://www.youtube.com/embed/3y-6iaveY6c",
+      "temporadas": []
+    },
     {
       "id": 25,
       "titulo": "El Juego del Calamar",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": false,
       "descripcion": "Cientos de jugadores con problemas económicos aceptan una extraña invitación para competir en juegos infantiles. Dentro les esperan un premio tentador y desafíos letales.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg",
@@ -142,7 +204,7 @@
       "id": 24,
       "titulo": "Lupin",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": false,
       "descripcion": "Un ladrón profesional y maestro del disfraz que sigue los pasos de su abuelo, realizando elaborados atracos mientras es perseguido por un tenaz detective.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sgxawbFB5Vi5OkPWQLNfl3dvkNJ.jpg",
@@ -178,6 +240,7 @@
             },
             {
               "numero": 4, 
+              "titulo": "Capítulo 4",
               "descripcion": "Para proteger a su hijo, Assane debe encontrar a Raoul antes que sus enemigos. Claire confronta a Assane sobre sus mentiras.",
               "duracion": "42:00",
               "url": "https://drive.google.com/file/d/1cM1uJotJI2p7_EWTJ0vJDFCGbv9Ru015/preview"
@@ -301,7 +364,7 @@
       "id": 22,
       "titulo": "Dexter: New Blood", 
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": false,
       "descripcion": "Ambientada 10 años después de que Dexter desapareciera en el ojo del huracán Laura, la serie lo encuentra viviendo con un nombre falso en la pequeña ciudad de Iron Lake, Nueva York.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9EBKgrFIsCFSV1RZKWhYUdbtGiv.jpg&w=256&q=75",
@@ -455,7 +518,7 @@
       "id": 20,
       "titulo": "Doctor House",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "El Dr. Gregory House, un genio de la medicina poco convencional y antisocial, lidera un equipo de diagnóstico en el hospital universitario Princeton-Plainsboro. A pesar de su actitud sarcástica y sus métodos poco ortodoxos, House resuelve los casos médicos más complejos y misteriosos.",
       "imagen": "https://image.tmdb.org/t/p/original/lW7MvZ4m49IUj2UrUu4z0xVVl81.jpg",
@@ -630,7 +693,7 @@
       "id": 19,
       "titulo": "Silicon Valley",
       "disponible": true,
-      "nuevo": true ,
+      "nuevo": false ,
       "enProceso": true,
       "descripcion": "La serie sigue a Richard Hendricks, un programador que crea una aplicación de compresión de datos, y las aventuras y desventuras que él y su startup Pied Piper enfrentan en el competitivo mundo de Silicon Valley.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BM2Q5YjNjZWMtYThmYy00N2ZjLWE2NDctNmZjMmZjYWE2NjEwXkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_.jpg",
@@ -821,6 +884,197 @@
           ]
         }
       ]
+    },
+    {
+      "id": 27,
+      "titulo": "Arrow",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Después de un naufragio que lo dejó varado en una isla durante cinco años, Oliver Queen regresa a casa convertido en un experto arquero para luchar contra el crimen y la corrupción en Ciudad Starling.",
+      "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gKG5QGz5Ngf8fgWpBsWtlg5L2SF.jpg",
+      "año": 2012,
+      "genero": ["Acción", "Aventura", "Drama", "Superhéroes"],
+      "director": "Greg Berlanti",
+      "actores": ["Stephen Amell", "Katie Cassidy", "David Ramsey"],
+      "trailer": "https://www.youtube.com/embed/hTv13EjlLNg",
+      "temporadas": []
+    },
+    {
+      "id": 28,
+      "titulo": "Supergirl",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Las aventuras de Kara Zor-El, la prima de Superman, quien después de 12 años ocultando sus poderes debe aprender a aceptar sus habilidades para convertirse en una heroína.",
+      "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vqBsgL9nd2v04ZvCqPzwtckDdFD.jpg",
+      "año": 2015,
+      "genero": ["Acción", "Aventura", "Drama", "Ciencia ficción"],
+      "director": "Greg Berlanti",
+      "actores": ["Melissa Benoist", "Chyler Leigh", "David Harewood"],
+      "trailer": "https://www.youtube.com/embed/Lm46-envrHo",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Piloto",
+              "descripcion": "Kara Zor-El decide finalmente abrazar sus poderes sobrehumanos y ser la heroína que siempre estuvo destinada a ser.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1abc123xyz/preview"
+            },
+            {
+              "numero": 2, 
+              "titulo": "Más fuerte juntos",
+              "descripcion": "Mientras Kara se ajusta a su nuevo rol como Supergirl, debe enfrentar a un alienígena escapado.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1def456xyz/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Lucha o huida",
+              "descripcion": "Supergirl se enfrenta a Reactron, uno de los enemigos más peligrosos de Superman.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1ghi789xyz/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Cómo ella lo hace",
+              "descripcion": "Kara debe equilibrar su vida personal con sus deberes como Supergirl.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1jkl012xyz/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Livewire",
+              "descripcion": "Una ex empleada de CatCo obtiene poderes eléctricos y busca venganza contra Cat Grant.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1mno345xyz/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Red Tornado",
+              "descripcion": "Supergirl se enfrenta a un androide militar diseñado por el gobierno.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1pqr678xyz/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Humana por un día",
+              "descripcion": "Kara pierde temporalmente sus poderes y debe enfrentar una crisis sin ellos.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1stu901xyz/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Vínculos hostiles",
+              "descripcion": "La tía de Kara, Astra, revela sus planes para la Tierra.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1vwx234xyz/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Sangre y lazos",
+              "descripcion": "Kara debe enfrentarse a la verdad sobre su familia y su pasado.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1yza567xyz/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Niños perdidos",
+              "descripcion": "Supergirl investiga una serie de desapariciones misteriosas.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1bcd890xyz/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Extraños visitantes de otro planeta",
+              "descripcion": "La llegada de un Marciano Blanco amenaza la identidad de J'onn J'onzz.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1efg123xyz/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Bizarro",
+              "descripcion": "Maxwell Lord crea una versión malvada de Supergirl.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1hij456xyz/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Para la chica que lo tiene todo",
+              "descripcion": "Un parásito alienígena atrapa a Kara en un sueño perfecto.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1klm789xyz/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "Verdad, justicia y el camino americano",
+              "descripcion": "Supergirl se enfrenta a un vigilante mortal.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1nop012xyz/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "Soledad",
+              "descripcion": "Indigo, una alienígena cibernética, amenaza National City.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1qrs345xyz/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Cayendo",
+              "descripcion": "Kara es expuesta a kryptonita roja y se vuelve malvada.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1tuv678xyz/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "Manhunter",
+              "descripcion": "Se revela el pasado de J'onn J'onzz en la Tierra.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1wxy901xyz/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "Mundos Mejores",
+              "descripcion": "Flash visita National City y ayuda a Supergirl.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1zab234xyz/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "Myriad",
+              "descripcion": "Non activa Myriad, controlando mentalmente a toda la ciudad.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1cde567xyz/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "Mejor ángeles",
+              "descripcion": "Supergirl debe salvar la Tierra del plan final de Non y Indigo.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1fgh890xyz/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "titulo": "Legends of Tomorrow",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": true,
+      "descripcion": "Un grupo de héroes y villanos deben trabajar juntos cuando son reclutados por el Maestro del Tiempo para viajar a través del tiempo y evitar una catástrofe que podría afectar no solo a la Tierra, sino a todo el tiempo en sí.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfpogpu-W-S62wyIUE2fQ9W3cFtt71v9vk0A&s",
+      "año": 2016,
+      "genero": ["Acción", "Aventura", "Ciencia ficción"],
+      "director": "Greg Berlanti",
+      "actores": ["Caity Lotz", "Brandon Routh", "Dominic Purcell"],
+      "trailer": "https://www.youtube.com/embed/9yxGd_X11pU",
+      "temporadas": []
     },
     {
       "id": 1,
@@ -1321,7 +1575,7 @@
       "id": 4,
       "titulo": "Ed, Edd y Eddy",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Las aventuras de tres amigos preadolescentes que viven en un callejón suburbano. Ed, Edd (Double D) y Eddy pasan sus días inventando estafas para conseguir dinero y comprar sus adorados caramelos, mientras lidian con los otros niños del vecindario.",
       "imagen": "https://es.web.img3.acsta.net/r_1280_720/pictures/18/04/25/10/15/5039486.png",
@@ -1629,7 +1883,7 @@
       "id": 6,
       "titulo": "El Laboratorio de Dexter",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Dexter es un niño genio que tiene un laboratorio secreto en su habitación donde realiza experimentos científicos. Su hermana mayor Dee Dee constantemente interfiere con sus inventos, causando caos y destrucción.",
       "imagen": "https://pics.filmaffinity.com/dexter_s_laboratory-784708242-large.jpg",
@@ -2018,10 +2272,598 @@
       ]
     },
     {
+      "id": 25,
+      "titulo": "Drama Total",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": false,
+      "descripcion": "Un reality show animado donde 22 adolescentes compiten en desafíos extremos por un gran premio en efectivo, mientras lidian con las manipulaciones del anfitrión Chris McLean.",
+      "imagen": "https://pics.filmaffinity.com/total_drama_island-451380430-large.jpg",
+      "año": 2007,
+      "genero": ["Animación", "Comedia", "Reality"],
+      "director": "Jennifer Pertsch",
+      "actores": ["Christian Potenza", "Drew Nelson", "Carter Hayden"],
+      "trailer": "https://www.youtube.com/embed/QhzdNrc4N4Q",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "¡No tan feliz campamento! - Parte 1",
+              "descripcion": "22 campistas llegan a la Isla del Drama para competir por $100,000.",
+              "duracion": "22:00", 
+              "url": "https://drive.google.com/file/d/1bKX5dvr9Yl8Zt8RU_ezvyqSOt6dwSGb7/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "¡No tan feliz campamento! - Parte 2", 
+              "descripcion": "Los equipos compiten en su primer desafío: saltar desde un acantilado.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/18186KqTWhE2GE8Hz8DkeTn_WYbjDBW0u/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "El gran sueño",
+              "descripcion": "Los campistas deben mantenerse despiertos el mayor tiempo posible.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1MCC-mV00uaPayj740Q8dm9j5juiyq9Qw/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "La búsqueda del tesoro",
+              "descripcion": "Los equipos participan en una búsqueda del tesoro por la isla.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Et1yDtKbS-EVahL5HRnTDYiPy7F8_N9B/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "El talento no tan escondido",
+              "descripcion": "Los campistas muestran sus talentos en un show.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1LgqaXLX-7v7fEVOekyKF3kK6S0sk5mi_/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "El desafío del miedo",
+              "descripcion": "Los campistas enfrentan sus peores miedos.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/19-rmudBssE8Xgq4ocw5BXKdVaSK-jCRY/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "La caza del ciervo",
+              "descripcion": "Los equipos participan en una cacería simulada.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1Z4VKMqiQRSqV8wRzlA42TiM0SgK6Xv_i/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "La playa peligrosa",
+              "descripcion": "Los campistas compiten en desafíos playeros.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1lRhJeql9Gfoz5S40Ae8XyfsZray8-goH/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Paintball extremo", 
+              "descripcion": "Los equipos se enfrentan en un juego de paintball.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1zpm6w0fXv1VnUuliashbi2FLcHp-61Zg/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "La carrera imposible",
+              "descripcion": "Los campistas participan en una carrera de obstáculos.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1guhigohWUIKQRyG4CcS2CbSVBNgCGqpr/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Cocina del terror",
+              "descripcion": "Los equipos deben preparar un banquete para el Chef.",
+              "duracion": "22:00", 
+              "url": "https://drive.google.com/file/d/1IkiSmaNjnMbDLTGq2bONdNfA-RQoaVND/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Supervivencia extrema",
+              "descripcion": "Los campistas deben sobrevivir una noche en el bosque.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1QsbRLArfNcDP6be0Vub3AGpNG0b27DnD/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "El desafío acuático",
+              "descripcion": "Competencia de natación y pruebas en el agua.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1pvzsXeUlwAynTWbXNwsyI-37h3y5zbcX/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "La alianza secreta",
+              "descripcion": "Se forman alianzas entre los campistas.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1jVSCzcJxpUWOrb11HXHDaNdqPK1V55xJ/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "El tesoro perdido",
+              "descripcion": "Búsqueda de un tesoro oculto en la isla.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/13aSyVZvuTP2p0sBZyFovCwgOqIdA2nxf/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Desafío musical",
+              "descripcion": "Los campistas crean y presentan canciones originales.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1lyHi6ph0aBFO-jafoC1-yk0KMRpxKKAj/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "La prueba de confianza",
+              "descripcion": "Los campistas ponen a prueba su confianza mutua.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1nhK_UA9Dp61XDMXqfJYmaOYMNXVwhv35/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "El laberinto",
+              "descripcion": "Los campistas deben escapar de un laberinto gigante.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1V-CSuWpq2eajaFC2AROD7L1mSAS46zEl/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "Desafío culinario",
+              "descripcion": "Competencia de cocina entre los equipos.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1wWzwyqJhyp-C7aG5aHCBMRDPeSRlEmk9/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "La carrera final",
+              "descripcion": "Los campistas compiten en una carrera definitiva.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1uOGMdJzduYpcoJAZS2vq9sJb_vDqdxyi/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "El reto deportivo",
+              "descripcion": "Serie de competencias deportivas entre equipos.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1RCmIO2mpXZSvlGORNdn7mkzS_09xTPAd/preview"
+            },
+            {
+              "numero": 22,
+              "titulo": "La prueba de resistencia",
+              "descripcion": "Los campistas deben superar pruebas de resistencia.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ig94Grn4YUYHnI6W94af5HY8FtVj4CqB/preview"
+            },
+            {
+              "numero": 23,
+              "titulo": "El desafío nocturno",
+              "descripcion": "Pruebas especiales durante la noche.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/13T4zgjhoJuYBa7hxIssjTj5npMzrcZ6V/preview"
+            },
+            {
+              "numero": 24,
+              "titulo": "La última eliminación",
+              "descripcion": "Los campistas enfrentan la eliminación final.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1nxARHOiukoRpf3vQYwz_4ErNbC9J1NuT/preview"
+            },
+            {
+              "numero": 25,
+              "titulo": "El gran desafío",
+              "descripcion": "Los finalistas compiten por el premio mayor.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1abZW4u5lM3DMBoyNJkmkup_N4kibD5ye/preview"
+            },
+            {
+              "numero": 26,
+              "titulo": "La final - Parte 1",
+              "descripcion": "Primera parte de la gran final.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1ucQ7GxEA0QiXnektpjIHvPJnmGbuxeL8/preview"
+            },
+            {
+              "numero": 27,
+              "titulo": "La final - Parte 2",
+              "descripcion": "Segunda parte de la gran final.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/13jHw_ogwRij0VNb775l7UBg531KEBmws/preview"
+            },
+            {
+              "numero": 28,
+              "titulo": "Especial reunión",
+              "descripcion": "Los campistas se reúnen para recordar los mejores momentos.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/15xNHrd5we0ZJXY5tAg6MfCrI2tuy7y-2/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "titulo": "Clarence",
+      "disponible": false,
+      "nuevo": true,
+      "enProceso": false,
+      "descripcion": "Clarence es un niño optimista que ve lo bueno en todo y en todos. Junto a sus mejores amigos Jeff y Sumo, vive aventuras cotidianas en su vecindario.",
+      "imagen": "https://www.formulatv.com/images/series/posters/1600/1618/dest_1.jpg",
+      "año": 2014,
+      "genero": ["Animación", "Comedia", "Infantil"],
+      "director": "Skyler Page",
+      "actores": ["Spencer Rothbell", "Sean Giambrone", "Tom Kenny"],
+      "trailer": "https://www.youtube.com/embed/wo4ae_FNvWw",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Piloto",
+              "descripcion": "Clarence conoce a sus nuevos amigos Jeff y Sumo en la escuela.",
+              "duracion": "11:00", 
+              "url": "https://drive.google.com/file/d/1V6X9aE76mzJGmFbdyS8tPgpZxV8YOS6y/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Diversión con Sumo",
+              "descripcion": "Clarence y Sumo pasan un día juntos haciendo travesuras.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1_raChqM0w8dCt4BuWyxu4pTx-HdwhNfG/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "El Dólar",
+              "descripcion": "Clarence encuentra un dólar y decide cómo gastarlo.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1XrZtS2QVIrQmAmr1XogPgEQxzMxBxeBQ/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "La Cena",
+              "descripcion": "Clarence es invitado a cenar a casa de Jeff.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1tXcGX5rUv9zNMggyFvR7o-joUZGnB67K/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Jeff el Nuevo",
+              "descripcion": "Jeff intenta hacer nuevos amigos en la escuela.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1HMKKNFck617koHlk4nzBPUHBa0dSCTnS/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "El Zoológico",
+              "descripcion": "La clase hace un viaje al zoológico.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1ISem5dtwJ-oJz7R8xbUGffnCdFmItnCB/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "La Fiesta de Pijamas",
+              "descripcion": "Clarence organiza una fiesta de pijamas.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1Xq7XHS_sG9q_xksY06aKCio7nP2kvLGM/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "El Parque",
+              "descripcion": "Los chicos pasan un día en el parque.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1Jfo7RZGJfgY-q9Dipg2l_Ftn3pd4iUA-/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "La Biblioteca",
+              "descripcion": "Clarence y sus amigos visitan la biblioteca.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/13_EBSwS0auZvQ-8LxuwQWHBI_Bx1egtr/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "El Cumpleaños",
+              "descripcion": "Es el cumpleaños de Clarence.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1tG8ySv1dJfxCczvrCx1l_OPu8-3oy5eA/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "El Concurso",
+              "descripcion": "Los chicos participan en un concurso escolar.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1lgsj1l_ayOXyfiQCi2wSpRkGO2RiAezd/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "El Campamento",
+              "descripcion": "Clarence y sus amigos van de campamento.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1vb9rouMQVzfxG0k29pBCzWUR_3D_KDr_/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "El Proyecto",
+              "descripcion": "Los chicos trabajan en un proyecto escolar.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1XZFn9SHMbMPb_a6lACTEAHjOdqKt5SVG/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "La Mascota",
+              "descripcion": "Clarence adopta una mascota.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1MzU-tlrQFygIQgg7HbZQmxeg7oOBShyz/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "El Tesoro",
+              "descripcion": "Los chicos buscan un tesoro escondido.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1krebCTrdWIsXWaeogCpPdmhGO9gGjL3q/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "El Juego",
+              "descripcion": "Clarence inventa un nuevo juego.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1KznBCmJrQF_fwJI9XDcst43TJkVO2JYU/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "La Competencia",
+              "descripcion": "Los chicos compiten en los juegos escolares.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1l6UTPirEzUJAjkv-eZ0701s5PsortLNy/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "El Secreto",
+              "descripcion": "Clarence guarda un secreto de sus amigos.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1HH_oMfehlutEHC4ZW4J2BLgSwbSaxM5J/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "La Aventura",
+              "descripcion": "Los chicos viven una gran aventura.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1UHq1Ox0Laf8Gcds8xSf9HPflO3k6G4wT/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "El Viaje",
+              "descripcion": "La clase hace un viaje escolar.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1-YKfkl6kUvl-pS1XVElJAzHQDj9F01Ev/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "El Regalo",
+              "descripcion": "Clarence busca el regalo perfecto.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1Aocw-__mZNh0hDOb5uA0mrtXVfUmc5jU/preview"
+            },
+            {
+              "numero": 22,
+              "titulo": "La Sorpresa",
+              "descripcion": "Los chicos preparan una sorpresa.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1g5iZ6TM4uHlF46N3YqJ61ThFR-E046ap/preview"
+            },
+            {
+              "numero": 23,
+              "titulo": "El Misterio",
+              "descripcion": "Clarence y sus amigos resuelven un misterio.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1jJ89shRZ48SHo2YR2OBIgYEDsImiMu45/preview"
+            },
+            {
+              "numero": 24,
+              "titulo": "La Búsqueda",
+              "descripcion": "Los chicos buscan algo importante.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1tIPGEN1t9uHhKVCx-xqyPFaMJouTbdMN/preview"
+            },
+            {
+              "numero": 25,
+              "titulo": "El Desafío",
+              "descripcion": "Clarence enfrenta un nuevo desafío.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/159LA0X57E--P8fLf6t5FWRJulKe5mCQt/preview"
+            },
+            {
+              "numero": 26,
+              "titulo": "La Misión",
+              "descripcion": "Los chicos tienen una misión importante.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1BhaEug9N9J-RAoGia-etAiUskFX6LFn3/preview"
+            },
+            {
+              "numero": 27,
+              "titulo": "El Problema",
+              "descripcion": "Clarence debe resolver un problema.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1gPuJDF4aF1r92-DHCnbnGQECf4PWYCLv/preview"
+            },
+            {
+              "numero": 28,
+              "titulo": "La Decisión",
+              "descripcion": "Clarence debe tomar una decisión importante.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1-EKSaRfo0O9mlHtIceHxFPix7MzfKN66/preview"
+            },
+            {
+              "numero": 29,
+              "titulo": "El Cambio",
+              "descripcion": "Las cosas cambian en la vida de Clarence.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/13RlhrQcMLkacza1vmxW869khdXQyff6C/preview"
+            },
+            {
+              "numero": 30,
+              "titulo": "La Promesa",
+              "descripcion": "Clarence hace una promesa importante.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/19zGnIsyGG0voA5B8cB2EQSY6t75X2MBd/preview"
+            },
+            {
+              "numero": 31,
+              "titulo": "El Descubrimiento",
+              "descripcion": "Los chicos hacen un descubrimiento sorprendente.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1sH7We64Z24U_QxnY0jLdHg38AHw8vF1m/preview"
+            },
+            {
+              "numero": 32,
+              "titulo": "La Lección",
+              "descripcion": "Clarence aprende una valiosa lección.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/12_ue81sytPi07G1zxa2gPha3GNiO26FH/preview"
+            },
+            {
+              "numero": 33,
+              "titulo": "El Reto",
+              "descripcion": "Los chicos enfrentan un nuevo reto.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1bLauqMQYsG_o2t8YpKqz0RQjZBCWBkLX/preview"
+            },
+            {
+              "numero": 34,
+              "titulo": "La Oportunidad",
+              "descripcion": "Clarence tiene una oportunidad única.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1yazYxx1V8bpuJxOs4xx6XBYZGoUbl3u0/preview"
+            },
+            {
+              "numero": 35,
+              "titulo": "El Plan",
+              "descripcion": "Los chicos elaboran un plan.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1RGz8aYv3IvVpdb_bdG-yC--UtS2gqynk/preview"
+            },
+            {
+              "numero": 36,
+              "titulo": "La Aventura Continúa",
+              "descripcion": "Una nueva aventura comienza.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1TN9SVXdAuzG7sPkLx5bkBuerg6LGiYAc/preview"
+            },
+            {
+              "numero": 37,
+              "titulo": "El Equipo",
+              "descripcion": "Los chicos trabajan en equipo.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/18NJqXAElV6GsF-ccDpurPK0BSF6VDCvS/preview"
+            },
+            {
+              "numero": 38,
+              "titulo": "La Prueba",
+              "descripcion": "Clarence enfrenta una prueba difícil.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1b2-eBTQ0u0ui3_VgIX_yow41_UrI1xpo/preview"
+            },
+            {
+              "numero": 39,
+              "titulo": "El Sueño",
+              "descripcion": "Clarence persigue su sueño.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1MkDxqhdVhOgc4ebWM38LbnkpPOU-MI8D/preview"
+            },
+            {
+              "numero": 40,
+              "titulo": "La Meta",
+              "descripcion": "Los chicos intentan alcanzar una meta.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1pwTPDQwM97ZPIDSweE0cQ1W7vsbeEOZL/preview"
+            },
+            {
+              "numero": 41,
+              "titulo": "El Momento",
+              "descripcion": "Un momento especial para Clarence.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1Em9iXSk04bYvIjPC75jIfuY_0AAts7Kg/preview"
+            },
+            {
+              "numero": 42,
+              "titulo": "La Verdad",
+              "descripcion": "Clarence descubre una verdad importante.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1AUymDAxaYIB4JRqTW0bXWNH7C1Aoikij/preview"
+            },
+            {
+              "numero": 43,
+              "titulo": "El Camino",
+              "descripcion": "Los chicos emprenden un nuevo camino.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1TYUxFgGwP_QcrMJHjk3VLtsa_yKL8nQr/preview"
+            },
+            {
+              "numero": 44,
+              "titulo": "La Esperanza",
+              "descripcion": "Clarence mantiene la esperanza.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1SxVGRYiCNjXhhZSyOPZaLb0RjbHjqOx1/preview"
+            },
+            {
+              "numero": 45,
+              "titulo": "El Futuro",
+              "descripcion": "Los chicos piensan en el futuro.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1-Q4hhl5hMy5YzJ-YGtLIWzFpeCatdcQw/preview"
+            },
+            {
+              "numero": 46,
+              "titulo": "La Amistad",
+              "descripcion": "Una prueba de amistad para los chicos.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1u0CN9tQGLFrnG7DI5VJZZFalFXYoKuNQ/preview"
+            },
+            {
+              "numero": 47,
+              "titulo": "El Valor",
+              "descripcion": "Clarence demuestra su valor.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/15wbLXSyXVn_GPFmEvponZC1coSbTfGzx/preview"
+            },
+            {
+              "numero": 48,
+              "titulo": "La Unión",
+              "descripcion": "Los amigos se unen ante la adversidad.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1VEDLTZC37HqlsitO_rqeqnwLIKziSvKE/preview"
+            },
+            {
+              "numero": 49,
+              "titulo": "El Final",
+              "descripcion": "Una aventura llega a su fin.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/1CboAeoNaYgK4oeteVdcofLN_z6JRcnbZ/preview"
+            },
+            {
+              "numero": 50,
+              "titulo": "Nuevo Comienzo",
+              "descripcion": "El inicio de una nueva etapa.",
+              "duracion": "11:00",
+              "url": "https://drive.google.com/file/d/17TrPHdVWzQndrNRQY-b8275B9tCwEUwR/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 9,
       "titulo": "Ben 10",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": false,
       "descripcion": "Ben Tennyson descubre un misterioso dispositivo alienígena llamado Omnitrix durante sus vacaciones de verano. Este dispositivo le permite transformarse en diferentes alienígenas, cada uno con poderes únicos, que utiliza para combatir el mal junto a su prima Gwen y su abuelo Max.",
       "imagen": "https://image.tmdb.org/t/p/original/qVBQynX6J9gtYWVwqbfNKVe0kYU.jpg",
@@ -2408,7 +3250,7 @@
       "id": 10,
       "titulo": "Ben 10: Fuerza Alienígena",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Cinco años después de la serie original, Ben Tennyson vuelve a usar el Omnitrix para salvar al universo con nuevos alienígenas.",
       "imagen": "https://preview.redd.it/p9k9u5uusruc1.jpeg?auto=webp&s=4c75279be2d367688e5dc6c59482afd5a63c8a99",
@@ -3078,7 +3920,7 @@
       "id": 15,
       "titulo": "Kid vs Kat",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Coop Burtonburger descubre que el nuevo gato de su hermana, el Sr. Gato, es en realidad un alienígena malvado que planea conquistar la Tierra. Mientras intenta exponer la verdadera identidad del gato, Coop debe proteger a su familia y al mundo de los planes diabólicos del Sr. Gato.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BZmY5NWNhNWEtNmVmZC00Yzg4LTk3ZGUtNzViZWE3N2E5NmUwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
@@ -3289,7 +4131,7 @@
       "genero": ["Animación", "Comedia", "Familiar"],
       "director": "Dan Povenmire, Jeff 'Swampy' Marsh",
       "actores": ["Vincent Martella", "Thomas Sangster", "Ashley Tisdale"],
-      "trailer": "https://www.youtube.com/embed/DX6QNxGQ_QA",
+      "trailer": "https://www.youtube.com/embed/NkQrKxTFARM",
       "temporadas": [
         {
           "numero": 1,

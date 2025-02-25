@@ -942,7 +942,14 @@
             const seriesContainer = document.getElementById('series-container');
             seriesContainer.innerHTML = '';
 
-            seriesFiltradas.forEach(serie => {
+            // Ordenar las series: primero las nuevas, luego el resto
+            const seriesOrdenadas = [...seriesFiltradas].sort((a, b) => {
+                if (a.nuevo && !b.nuevo) return -1;
+                if (!a.nuevo && b.nuevo) return 1;
+                return 0;
+            });
+
+            seriesOrdenadas.forEach(serie => {
                 const seriesCard = document.createElement('div');
                 seriesCard.className = 'series-card';
                 

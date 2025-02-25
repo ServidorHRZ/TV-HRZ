@@ -185,7 +185,7 @@
             padding: 15px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             display: grid;
-            grid-template-columns: auto 1fr auto;
+            grid-template-columns: auto 200px 1fr auto;
             gap: 15px;
             align-items: center;
         }
@@ -193,6 +193,38 @@
             color: rgba(255, 255, 255, 0.5);
             font-size: 1.2em;
             width: 30px;
+        }
+        .episodio-thumbnail {
+            width: 200px;
+            height: 112px;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .episodio-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .episodio-thumbnail .play-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .episodio-thumbnail .play-overlay i {
+            color: white;
+            font-size: 2em;
+        }
+        .episodio:hover .play-overlay {
+            opacity: 1;
         }
         .episodio-contenido {
             flex: 1;
@@ -254,15 +286,162 @@
         @media (max-width: 768px) {
             .serie-info {
                 grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 15px;
             }
             
             .serie-poster {
-                max-width: 250px;
+                max-width: 200px;
                 margin: 0 auto;
+            }
+
+            .serie-details h2 {
+                font-size: 1.8em;
+                text-align: center;
+            }
+
+            .serie-metadata {
+                justify-content: center;
+            }
+
+            .genero-tags {
+                justify-content: center;
             }
 
             .serie-info-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .episodio {
+                grid-template-columns: 160px 1fr;
+                grid-template-areas: 
+                    "thumbnail contenido";
+                min-height: 90px;
+                height: auto;
+                padding: 10px;
+                position: relative;
+            }
+
+            .episodio-thumbnail {
+                width: 160px;
+                height: 90px;
+            }
+
+            .episodio-contenido {
+                max-height: 90px;
+            }
+
+            .episodio-descripcion {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-height: 2.8em;
+            }
+
+            .episodio-numero {
+                position: absolute;
+                left: 15px;
+                top: 15px;
+                color: #fff;
+                font-size: 1.2em;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+                z-index: 3;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 2px 8px;
+                border-radius: 4px;
+                width: auto;
+            }
+
+            .play-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.4);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                z-index: 2;
+            }
+
+            .play-overlay i {
+                color: white;
+                font-size: 2em;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .episodio:hover {
+                transform: translateX(5px);
+            }
+
+            .episodio:hover .play-overlay {
+                opacity: 1;
+            }
+
+            .episodio:hover .episodio-thumbnail img {
+                transform: scale(1.05);
+            }
+
+            .episodio.playing {
+                background: rgba(255, 255, 255, 0.1);
+                border-left: 4px solid var(--primary-color);
+            }
+
+            .temporada-titulo {
+                padding: 15px 20px;
+                font-size: 1.1em;
+            }
+
+            .bottom-nav {
+                padding: 10px 0;
+            }
+
+            .nav-item i {
+                font-size: 1.5rem;
+                margin-bottom: 5px;
+            }
+
+            .nav-item span {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .episodio {
+                grid-template-columns: 140px 1fr;
+                min-height: 80px;
+            }
+
+            .episodio-thumbnail {
+                width: 140px;
+                height: 80px;
+            }
+
+            .episodio-contenido {
+                max-height: 80px;
+            }
+
+            .episodio-titulo {
+                font-size: 1em;
+            }
+
+            .episodio-descripcion {
+                font-size: 0.85em;
+            }
+
+            .serie-details h2 {
+                font-size: 1.5em;
+            }
+
+            .genero-tag {
+                font-size: 0.8em;
+                padding: 4px 12px;
             }
         }
     </style>
@@ -451,6 +630,9 @@
         }
 
         function crearElementoTemporada(temporada) {
+            const serieSeleccionada = JSON.parse(localStorage.getItem('serieSeleccionada'));
+            const miniaturaDefault = serieSeleccionada.miniatura_episodios || serieSeleccionada.imagen;
+            
             const temporadaDiv = document.createElement('div');
             temporadaDiv.className = 'temporada';
             temporadaDiv.innerHTML = `
@@ -461,6 +643,12 @@
                     ${temporada.episodios.map((episodio, index) => `
                         <div class="episodio" data-url="${episodio.url}">
                             <div class="episodio-numero">${episodio.numero}</div>
+                            <div class="episodio-thumbnail">
+                                <img src="${miniaturaDefault}" alt="Miniatura episodio ${episodio.numero}">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
                             <div class="episodio-contenido">
                                 <div class="episodio-titulo">${episodio.titulo}</div>
                                 <div class="episodio-descripcion">${episodio.descripcion}</div>
