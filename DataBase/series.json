@@ -912,7 +912,7 @@
       "genero": ["Acción", "Aventura", "Drama", "Ciencia ficción"],
       "director": "Greg Berlanti",
       "actores": ["Melissa Benoist", "Chyler Leigh", "David Harewood"],
-      "trailer": "https://www.youtube.com/embed/Lm46-envrHo",
+      "trailer": "https://www.youtube.com/embed/VxfFBr-GoJI",
       "temporadas": [
         {
           "numero": 1,
@@ -2274,7 +2274,7 @@
     {
       "id": 25,
       "titulo": "Drama Total",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "enProceso": false,
       "descripcion": "Un reality show animado donde 22 adolescentes compiten en desafíos extremos por un gran premio en efectivo, mientras lidian con las manipulaciones del anfitrión Chris McLean.",
@@ -2491,7 +2491,7 @@
     {
       "id": 26,
       "titulo": "Clarence",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "enProceso": false,
       "descripcion": "Clarence es un niño optimista que ve lo bueno en todo y en todos. Junto a sus mejores amigos Jeff y Sumo, vive aventuras cotidianas en su vecindario.",
