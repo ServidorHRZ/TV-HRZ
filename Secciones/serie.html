@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <script src="https://www.youtube.com/iframe_api"></script>
     <style>
         :root {
             --primary-color: #00ffff;
@@ -23,10 +24,11 @@
             padding-bottom: 70px;
         }
         .container {
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0px;
-            margin-bottom: 0;
+            padding: 15px;
+            box-sizing: border-box;
         }
         h1, h2, h3 {
             font-family: 'Orbitron', sans-serif;
@@ -35,44 +37,34 @@
         .serie-info {
             display: grid;
             grid-template-columns: 300px 1fr;
-            gap: 40px;
-            margin: 0px 0;
-            background: rgba(0, 0, 0, 0.5);
+            gap: 30px;
             padding: 20px;
-            border-radius: 15px;
-            position: relative;
-            overflow: hidden;
-        }
-        .serie-info::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
-            z-index: 1;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin-top: 20px;
         }
         .serie-poster {
-            position: relative;
-            z-index: 2;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
         .serie-poster img {
             width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease;
-        }
-        .serie-poster img:hover {
-            transform: scale(1.02);
+            height: auto;
+            display: block;
         }
         .serie-details {
             position: relative;
             z-index: 2;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
         }
         .serie-details h2 {
-            font-size: 2.5em;
-            margin: 0 0 20px 0;
+            font-size: 1.8em;
+            margin-bottom: 15px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .serie-metadata {
@@ -286,194 +278,453 @@
         @media (max-width: 768px) {
             .serie-info {
                 grid-template-columns: 1fr;
-                gap: 20px;
-                padding: 15px;
+                text-align: center;
             }
-            
+
             .serie-poster {
-                max-width: 200px;
+                width: 200px;
                 margin: 0 auto;
+            }
+
+            .serie-details {
+                padding: 15px;
             }
 
             .serie-details h2 {
                 font-size: 1.8em;
-                text-align: center;
+                margin-bottom: 15px;
             }
 
             .serie-metadata {
                 justify-content: center;
+                gap: 15px;
+            }
+
+            .serie-descripcion {
+                font-size: 1em;
+                line-height: 1.5;
+                margin: 15px 0;
             }
 
             .genero-tags {
                 justify-content: center;
+                gap: 8px;
             }
 
             .serie-info-grid {
                 grid-template-columns: 1fr;
+                gap: 15px;
             }
 
             .episodio {
-                grid-template-columns: 160px 1fr;
-                grid-template-areas: 
-                    "thumbnail contenido";
-                min-height: 90px;
-                height: auto;
+                display: grid;
+                grid-template-columns: 120px 1fr;
+                grid-template-areas:
+                    "numero numero"
+                    "thumbnail contenido"
+                    "duracion duracion";
+                gap: 8px;
                 padding: 10px;
-                position: relative;
+            }
+
+            .episodio-numero {
+                grid-area: numero;
+                font-size: 1em;
+                color: rgba(255, 255, 255, 0.7);
+                margin-bottom: 4px;
             }
 
             .episodio-thumbnail {
-                width: 160px;
-                height: 90px;
+                grid-area: thumbnail;
+                width: 120px;
+                height: 67px;
+                border-radius: 6px;
             }
 
             .episodio-contenido {
-                max-height: 90px;
+                grid-area: contenido;
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .episodio-titulo {
+                font-size: 1em;
+                margin: 0;
             }
 
             .episodio-descripcion {
+                font-size: 0.9em;
+                line-height: 1.3;
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                max-height: 2.8em;
             }
 
-            .episodio-numero {
-                position: absolute;
-                left: 15px;
-                top: 15px;
-                color: #fff;
-                font-size: 1.2em;
-                font-weight: bold;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-                z-index: 3;
-                background: rgba(0, 0, 0, 0.5);
-                padding: 2px 8px;
-                border-radius: 4px;
-                width: auto;
-            }
-
-            .play-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.4);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                opacity: 0;
-                transition: opacity 0.3s ease;
-                z-index: 2;
-            }
-
-            .play-overlay i {
-                color: white;
-                font-size: 2em;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            }
-
-            .episodio:hover {
-                transform: translateX(5px);
-            }
-
-            .episodio:hover .play-overlay {
-                opacity: 1;
-            }
-
-            .episodio:hover .episodio-thumbnail img {
-                transform: scale(1.05);
-            }
-
-            .episodio.playing {
-                background: rgba(255, 255, 255, 0.1);
-                border-left: 4px solid var(--primary-color);
+            .episodio-duracion {
+                grid-area: duracion;
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 0.9em;
+                text-align: right;
+                padding-top: 4px;
             }
 
             .temporada-titulo {
-                padding: 15px 20px;
-                font-size: 1.1em;
+                font-size: 1em;
+                padding: 12px 15px;
             }
 
-            .bottom-nav {
-                padding: 10px 0;
+            .episodios-player {
+                padding: 0;
+                margin: 15px auto;
+                width: 95%;
             }
 
-            .nav-item i {
-                font-size: 1.5rem;
-                margin-bottom: 5px;
+            .episodios-player iframe {
+                border-radius: 8px;
+                width: 100%;
+                aspect-ratio: 16/9;
+                margin: 0 auto;
+                display: block;
             }
 
-            .nav-item span {
-                font-size: 0.8rem;
+            .container {
+                padding: 10px;
             }
         }
 
         @media (max-width: 480px) {
-            .episodio {
-                grid-template-columns: 140px 1fr;
-                min-height: 80px;
+            .serie-info {
+                padding: 10px;
+                margin-top: 10px;
             }
 
-            .episodio-thumbnail {
-                width: 140px;
-                height: 80px;
-            }
-
-            .episodio-contenido {
-                max-height: 80px;
-            }
-
-            .episodio-titulo {
-                font-size: 1em;
-            }
-
-            .episodio-descripcion {
-                font-size: 0.85em;
+            .serie-poster {
+                width: 150px;
             }
 
             .serie-details h2 {
                 font-size: 1.5em;
             }
 
+            .serie-metadata {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .serie-descripcion {
+                font-size: 0.9em;
+            }
+
+            .info-item {
+                padding: 10px;
+            }
+
             .genero-tag {
                 font-size: 0.8em;
-                padding: 4px 12px;
+                padding: 4px 10px;
+            }
+
+            .episodio-thumbnail {
+                width: 100px;
+                height: 56px;
+            }
+
+            .episodio-descripcion {
+                font-size: 0.8em;
+            }
+
+            .episodios-player {
+                width: 98%;
+            }
+        }
+
+        .hero-section {
+            position: relative;
+            height: 80vh;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .hero-video iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 1) 0%,
+                rgba(0, 0, 0, 0.5) 60%,
+                rgba(0, 0, 0, 0.3) 100%
+            );
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            z-index: 3;
+            color: white;
+            display: flex;
+            align-items: flex-end;
+            gap: 30px;
+            width: 90%;
+        }
+
+        .hero-poster {
+            width: 300px;
+            flex-shrink: 0;
+        }
+
+        .hero-poster img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-info {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .hero-info h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .serie-imagen {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+            display: block;
+        }
+
+        .sound-toggle {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 4;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .sound-toggle:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        .sound-toggle i {
+            font-size: 1.2em;
+        }
+
+        .episodios-player {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: none;
+        }
+
+        .episodios-player.active {
+            display: block;
+        }
+
+        .episodios-player iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 10px;
+            background: #000;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 40vh;
+            }
+
+            .hero-content {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 70%, transparent 100%);
+            }
+
+            .hero-poster {
+                display: block;
+                width: 80px;
+                margin: 0;
+            }
+
+            .hero-info {
+                max-width: 60%;
+            }
+
+            .serie-metadata,
+            .genero-tags,
+            .serie-descripcion,
+            .serie-info-grid {
+                display: none;
+            }
+
+            .hero-info h1 {
+                font-size: 1.3em;
+                margin: 0;
+                text-align: left;
+            }
+
+            .episodios-player {
+                padding: 0;
+                margin: 15px auto;
+                width: 95%;
+            }
+
+            .episodios-player iframe {
+                border-radius: 8px;
+                width: 100%;
+                aspect-ratio: 16/9;
+                margin: 0 auto;
+                display: block;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section {
+                height: 50vh;
+            }
+
+            .hero-poster {
+                width: 150px;
+            }
+
+            .hero-info h1 {
+                font-size: 1.5em;
+            }
+
+            .serie-descripcion {
+                font-size: 0.9em;
+                -webkit-line-clamp: 3;
+            }
+
+            .sound-toggle {
+                width: 30px;
+                height: 30px;
+            }
+
+            .sound-toggle i {
+                font-size: 1em;
+            }
+
+            .episodios-player {
+                width: 98%;
+            }
+        }
+
+        /* Ajustes adicionales para orientación landscape en móviles */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hero-section {
+                height: 100vh;
+            }
+
+            .hero-content {
+                flex-direction: row;
+                align-items: flex-end;
+                padding: 20px;
+            }
+
+            .hero-poster {
+                width: 120px;
+            }
+
+            .hero-info {
+                padding-left: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="serie-info">
-            <div class="serie-poster">
-                <img id="serie-imagen" src="" alt="Poster de la serie">
+    <div class="hero-section">
+        <div class="hero-video">
+            <iframe id="trailer-player" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="hero-overlay"></div>
+        <button class="sound-toggle" id="sound-toggle">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        <div class="hero-content">
+            <div class="hero-poster">
+                <img id="serie-imagen-hero" src="" alt="Poster de la serie">
             </div>
-            <div class="serie-details">
-                <h2 id="serie-titulo"></h2>
+            <div class="hero-info">
+                <h1 id="serie-titulo-hero"></h1>
                 <div class="serie-metadata">
-                    <span id="serie-año"></span>
-                    <span id="serie-duracion"></span>
+                    <span id="serie-año-hero"></span>
+                    <span id="serie-duracion-hero"></span>
                 </div>
-                <div class="genero-tags" id="genero-tags"></div>
-                <p class="serie-descripcion" id="serie-descripcion"></p>
+                <div class="genero-tags" id="genero-tags-hero"></div>
+                <p class="serie-descripcion" id="serie-descripcion-hero"></p>
                 <div class="serie-info-grid">
                     <div class="info-item">
                         <strong>Director</strong>
-                        <span id="serie-director"></span>
+                        <span id="serie-director-hero"></span>
                     </div>
                     <div class="info-item">
                         <strong>Reparto Principal</strong>
-                        <span id="serie-actores"></span>
+                        <span id="serie-actores-hero"></span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="video-container">
-            <iframe id="video-player" src="" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+    </div>
+
+    <div class="container">
+        <div class="episodios-player" id="episodios-player">
+            <iframe id="episodio-player" src="" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="temporadas-container" id="temporadas-container"></div>
     </div>
@@ -498,7 +749,9 @@
     </nav>
 
     <script>
-        // Función para prevenir redirecciones y anuncios
+        let isMuted = false;
+        let youtubePlayer = null;
+
         function prevenirRedirecciones() {
             // Prevenir redirecciones en iframes
             const iframes = document.getElementsByTagName('iframe');
@@ -578,7 +831,6 @@
             const serieSeleccionada = JSON.parse(localStorage.getItem('serieSeleccionada'));
             if (serieSeleccionada) {
                 cargarInformacionSerie(serieSeleccionada);
-                cargarTemporadas(serieSeleccionada.temporadas);
                 if (serieSeleccionada.enProceso) {
                     mostrarModalEnProceso(serieSeleccionada);
                 }
@@ -601,22 +853,61 @@
         });
 
         function cargarInformacionSerie(serie) {
-            document.getElementById('serie-imagen').src = serie.imagen;
-            document.getElementById('serie-titulo').textContent = serie.titulo;
-            document.getElementById('serie-descripcion').textContent = serie.descripcion;
-            document.getElementById('serie-año').textContent = serie.año;
-            document.getElementById('serie-director').textContent = serie.director;
-            document.getElementById('serie-actores').textContent = serie.actores.join(', ');
+            const trailerPlayer = document.getElementById('trailer-player');
+            const soundToggle = document.getElementById('sound-toggle');
+            const soundIcon = soundToggle.querySelector('i');
+            
+            // Procesar la URL del trailer
+            let trailerUrl = serie.trailer;
+            if (trailerUrl.includes('youtube.com')) {
+                // Extraer el ID del video de YouTube
+                const videoId = trailerUrl.split('/').pop();
+                // Construir la URL con sonido activo por defecto (sin mute=1)
+                trailerUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&showinfo=0&rel=0&loop=1&playlist=${videoId}&enablejsapi=1`;
+            }
+            
+            trailerPlayer.src = trailerUrl;
+
+            // Inicializar el estado del sonido como activo
+            let isMuted = false;
+            // Actualizar el ícono inicial para mostrar sonido activo
+            soundIcon.className = 'fas fa-volume-up';
+
+            soundToggle.addEventListener('click', function() {
+                let currentUrl = trailerPlayer.src;
+                if (isMuted) {
+                    // Activar sonido
+                    currentUrl = currentUrl.replace('&mute=1', '');
+                    soundIcon.className = 'fas fa-volume-up';
+                } else {
+                    // Silenciar
+                    if (!currentUrl.includes('&mute=1')) {
+                        currentUrl += '&mute=1';
+                    }
+                    soundIcon.className = 'fas fa-volume-mute';
+                }
+                trailerPlayer.src = currentUrl;
+                isMuted = !isMuted;
+            });
+
+            // Cargar toda la información solo en la sección hero
+            document.getElementById('serie-imagen-hero').src = serie.imagen;
+            document.getElementById('serie-titulo-hero').textContent = serie.titulo;
+            document.getElementById('serie-descripcion-hero').textContent = serie.descripcion;
+            document.getElementById('serie-año-hero').textContent = serie.año;
+            document.getElementById('serie-director-hero').textContent = serie.director;
+            document.getElementById('serie-actores-hero').textContent = serie.actores.join(', ');
 
             // Generar tags de géneros
-            const generoTags = document.getElementById('genero-tags');
-            generoTags.innerHTML = serie.genero.map(gen => 
+            const generoTagsHero = document.getElementById('genero-tags-hero');
+            generoTagsHero.innerHTML = serie.genero.map(gen => 
                 `<span class="genero-tag">${gen}</span>`
             ).join('');
 
-            // Cargar el tráiler
-            const videoPlayer = document.getElementById('video-player');
-            videoPlayer.src = serie.trailer;
+            // Cargar las temporadas
+            if (serie.temporadas) {
+                cargarTemporadas(serie.temporadas);
+            }
         }
 
         function cargarTemporadas(temporadas) {
@@ -680,11 +971,33 @@
             return temporadaDiv;
         }
 
+        // Función para silenciar el trailer
+        function silenciarTrailer() {
+            const trailerPlayer = document.getElementById('trailer-player');
+            const soundToggle = document.getElementById('sound-toggle');
+            const soundIcon = soundToggle.querySelector('i');
+            
+            // Agregar mute=1 a la URL del trailer
+            let currentUrl = trailerPlayer.src;
+            if (!currentUrl.includes('&mute=1')) {
+                currentUrl += '&mute=1';
+                trailerPlayer.src = currentUrl;
+            }
+            
+            // Actualizar el ícono y el estado
+            soundIcon.className = 'fas fa-volume-mute';
+            isMuted = true;
+        }
+
         document.addEventListener('click', function(e) {
             if (e.target.closest('.episodio')) {
                 const episodio = e.target.closest('.episodio');
                 const videoUrl = episodio.getAttribute('data-url');
-                const videoPlayer = document.getElementById('video-player');
+                const episodioPlayer = document.getElementById('episodio-player');
+                const episodiosPlayer = document.getElementById('episodios-player');
+                
+                // Silenciar el trailer cuando se selecciona un episodio
+                silenciarTrailer();
                 
                 // Remover la clase 'playing' de todos los episodios
                 document.querySelectorAll('.episodio').forEach(ep => ep.classList.remove('playing'));
@@ -692,10 +1005,14 @@
                 // Agregar la clase 'playing' al episodio actual
                 episodio.classList.add('playing');
                 
-                videoPlayer.src = videoUrl;
+                // Mostrar el reproductor
+                episodiosPlayer.classList.add('active');
                 
-                // Desplazar la página hacia el reproductor
-                videoPlayer.scrollIntoView({ behavior: 'smooth' });
+                // Actualizar el src del reproductor de episodios
+                episodioPlayer.src = videoUrl;
+                
+                // Desplazar la página hacia el reproductor de episodios
+                episodiosPlayer.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
         });
 
@@ -885,6 +1202,24 @@
                 modal.style.animation = 'fadeOut 0.3s ease';
                 setTimeout(() => modal.remove(), 300);
             });
+        }
+
+        // Modificar la URL del video para incluir la API de YouTube
+        function getYouTubeEmbedUrl(url) {
+            if (url.includes('youtube.com')) {
+                // Agregar enablejsapi=1 para permitir el control mediante la API
+                return url + '?enablejsapi=1&autoplay=1&controls=0&showinfo=0&rel=0&loop=1&playlist=' + 
+                    url.split('/').pop();
+            }
+            return url;
+        }
+
+        // Cargar la API de YouTube
+        if (!document.querySelector('script[src*="youtube.com/iframe_api"]')) {
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         }
     </script>
 </body>
