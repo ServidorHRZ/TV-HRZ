@@ -201,14 +201,6 @@
       "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=foxsports3-op2"
     },
     {
-      "id": 51,
-      "nombre": "24 Hour Free Movies",
-      "logo": "https://i.imgur.com/iSVnzR1.png",
-      "categoria": "Películas",
-      "descripcion": "Canal con películas gratuitas las 24 horas del día.",
-      "url_stream": "https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8"
-    },
-    {
       "id": 52,
       "nombre": "Yahoo Finance",
       "logo": "https://i.imgur.com/43oHsHL.png",
