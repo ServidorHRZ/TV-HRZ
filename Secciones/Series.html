@@ -11,6 +11,7 @@
             --primary-color: #00ffff;
             --secondary-color: #ffffff;
             --background-color: #000000;
+            --boton-color: #00ffff; /* Nuevo color para el botón */
         }
         body {
             font-family: 'Roboto', sans-serif;
@@ -82,6 +83,21 @@
             color: var(--primary-color);
         }
 
+        /* Estilos para el botón */
+        .boton-tv-online {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--boton-color);
+            color: var(--background-color);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+            margin-top: 1rem;
+            font-weight: bold; /* Añadido para negrita */
+        }
+        
+
+
         /* Media Queries para dispositivos móviles */
         @media screen and (max-width: 480px) {
             body {
@@ -151,6 +167,7 @@
             <p><i class="fas fa-wrench"></i>Actualizando nuestros sistemas para ti.</p>
         </div>
         <p>Gracias por tu comprensión y paciencia.</p>
+        <a href="TV-Online.html" class="boton-tv-online">Ver TV Online (Disponible ahora)</a>
     </div>
 </body>
 </html>
