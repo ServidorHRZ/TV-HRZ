@@ -1,5 +1,32 @@
 {
   "peliculas": [
+    {
+      "titulo": "Mini Espías",
+      "disponible": true,
+      "año": 2001,
+      "genero": "familiar",
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FjWIsfU9NXiOBsGy0WUx8T3Kiaw.jpg&w=256&q=75",
+      "enlace": "https://drive.google.com/file/d/1234567890/preview",
+      "descripcion": "Carmen y Juni Cortez descubren que sus padres son espías secretos y deben rescatarlos cuando son capturados en una misión. Los niños se embarcan en una aventura utilizando increíbles gadgets y tecnología de espionaje."
+    },
+    {
+      "titulo": "Mini Espías 2: La Isla de los Sueños Perdidos",
+      "disponible": true, 
+      "año": 2002,
+      "genero": "familiar",
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FdYmLViA5AWUb5MGH2UzhUwEcN0m.jpg&w=256&q=75",
+      "enlace": "https://drive.google.com/file/d/0987654321/preview",
+      "descripcion": "Los hermanos Cortez viajan a una misteriosa isla donde deben enfrentarse a una serie de criaturas genéticamente modificadas mientras buscan un poderoso dispositivo que podría poner en peligro al mundo."
+    },
+    {
+      "titulo": "Mini Espías 3D: Game Over",
+      "disponible": true,
+      "año": 2003, 
+      "genero": "familiar",
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fid7FzzvO4GnTCNvT74TjS1doxkb.jpg&w=256&q=75",
+      "enlace": "https://drive.google.com/file/d/1122334455/preview",
+      "descripcion": "Juni debe entrar en un videojuego virtual para rescatar a su hermana Carmen, quien ha quedado atrapada dentro. Con la ayuda de nuevos amigos y tecnología avanzada, deberá superar niveles cada vez más peligrosos."
+    },
     
     {
       "titulo": "Los 4 Fantásticos",
@@ -26,7 +53,7 @@
       "disponible": true,
       "nuevo": false,
       "año": 2020,
-      "genero": "accion", 
+      "genero": "familiar", 
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/eOC0FSGqyzcnnx7XFgLazI9nACT.jpg",
       "enlace": "https://drive.google.com/file/d/15MacOfy7AKLqcujdt5ckiieaazTHHp05/preview",
       "descripcion": "Sonic, el veloz erizo azul basado en la famosa serie de videojuegos de Sega, vivirá aventuras y desafíos cuando él y su nuevo mejor amigo Tom unan sus fuerzas para evitar que el malvado Dr. Robotnik capture a Sonic y use sus inmensos poderes para dominar el mundo."
@@ -36,7 +63,7 @@
       "disponible": true,
       "nuevo": false,
       "año": 2022,
-      "genero": "accion",
+      "genero": "familiar",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sJiHVM0A3OXDVxl4Z6a7ihMPHfm.jpg",
       "enlace": "https://drive.google.com/file/d/1Hv6yt5xOb8i5XX_R21TYJwvJ743Ov4Sf/preview",
       "descripcion": "Después de establecerse en Green Hills, Sonic está listo para más libertad e independencia, y Tom y Maddie acuerdan dejarlo en casa mientras van de vacaciones. Pero, tan pronto como se van, el Dr. Robotnik regresa con un nuevo compañero, Knuckles, en busca de una esmeralda que tiene el poder de destruir civilizaciones."
@@ -46,7 +73,7 @@
       "disponible": true,
       "nuevo": false,
       "año": 2024,
-      "genero": "accion",
+      "genero": "familiar",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrqvtiGmHubDElsKxlCWPuCTkwPI.jpg&w=256&q=75",
       "enlace": "https://drive.google.com/file/d/18zecchw5jf2HvVTvYKGoP-JB4GyN41yI/preview",
       "descripcion": "La tercera entrega de las aventuras cinematográficas de Sonic, donde el erizo azul se enfrentará a nuevos desafíos y enemigos mientras continúa protegiendo su nuevo hogar."
@@ -66,8 +93,8 @@
       "disponible": true,
       "nuevo": false,
       "año": 2007,
-      "genero": "infantil",
-      "imagen": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/4fa79426-2fd4-4ae8-9ba4-fe12db24b04f/1dea915a-6ec1-11ef-a510-023929f9f003?host=wbd-images.prod-vod.h264.io&partner=beamcom",
+      "genero": "animacion",
+      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/286b6b04b7ad18ca1e66277169f99fe18e5ef7cc604db89f5000e6035b0e45ec.jpg",
       "enlace": "https://drive.google.com/file/d/1zpBW75QRxT-6B1KZTeiKxtZoBJVaGySc/preview",
       "descripcion": "Ben Tennyson debe emprender una aventura épica para salvar al universo cuando el Omnitrix comienza una cuenta regresiva de autodestrucción."
     },
@@ -294,7 +321,7 @@
       "titulo": "Toy Story",
       "disponible": true,
       "año": 1995,
-      "genero": "infantil",
+      "genero": "animacion",
       "imagen": "https://m.media-amazon.com/images/I/71aBLaC4TzL._AC_UF894,1000_QL80_.jpg",
       "enlace": "https://drive.google.com/file/d/1peXqF9w8NFHXcF2dBNfoHMn29GSawven/preview",
       "descripcion": "Los juguetes de Andy cobran vida cuando nadie los ve. Woody, un vaquero que ha sido siempre el favorito de Andy, ve amenazada su posición con la llegada de Buzz Lightyear, un moderno guardián espacial. Su rivalidad inicial se transforma en una gran amistad."
@@ -303,7 +330,7 @@
       "titulo": "Toy Story 2",
       "disponible": true,
       "año": 1999,
-      "genero": "infantil",
+      "genero": "animacion",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNmi6gmFlX3-Qf-ukyotjtiq_ODkhNMsazKw&s",
       "enlace": "https://drive.google.com/file/d/1MnY-PuI21kJhq8NuZVweK0kUn3BWcNPu/preview",
       "descripcion": "Cuando Woody es robado por un coleccionista de juguetes, Buzz Lightyear y el resto de los juguetes de Andy emprenden una misión de rescate. En el camino, Woody descubre su verdadero origen y debe decidir entre regresar con Andy o quedarse con su 'familia' original."
@@ -312,7 +339,7 @@
       "titulo": "Toy Story 3",
       "disponible": true,
       "año": 2010,
-      "genero": "infantil",
+      "genero": "animacion",
       "imagen": "https://pecime.com.mx/wp-content/uploads/2020/08/Toy-Story-3-poster-683x1024.jpg",
       "enlace": "https://drive.google.com/file/d/18zddOcQdtYhjBvM30IljvG-sV_r1yjrw/preview",
       "descripcion": "Andy se prepara para ir a la universidad y sus juguetes terminan por accidente en una guardería. Allí descubren que no todo es tan idílico como parece y deben planear un arriesgado escape para volver a casa."
@@ -321,7 +348,7 @@
       "titulo": "Toy Story 4",
       "disponible": true,
       "año": 2019,
-      "genero": "infantil",
+      "genero": "animacion",
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FyF1vPDuHVrAUMX5dy1tVMbAjkEL.jpg&w=256&q=75",
       "enlace": "https://drive.google.com/file/d/1ZF8rHpWopwkRGcniZoJ-dEi9vaOVVsmb/preview",
       "descripcion": "Woody, Buzz y el resto de la pandilla se embarcan en un viaje por carretera con Bonnie y un nuevo juguete llamado Forky. La aventura se convierte en una reunión inesperada cuando Woody se encuentra con su vieja amiga Bo Peep."
@@ -330,7 +357,7 @@
       "titulo": "La red social",
       "disponible": true,
       "año": 2010,
-      "genero": "drama",
+      "genero": "programacion",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/RedSocial.jpg",
       "enlace": "https://drive.google.com/file/d/13dvFl4C8MK48UDfF8MvjStjsORDXvTp1/preview",
       "descripcion": "La historia de Mark Zuckerberg y la creación de Facebook, desde sus inicios en la Universidad de Harvard hasta convertirse en una de las redes sociales más influyentes del mundo, atravesando conflictos legales y personales en el proceso."
@@ -339,7 +366,7 @@
       "titulo": "Anonymous",
       "disponible": true,
       "año": 2016,
-      "genero": "drama",
+      "genero": "programacion",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Anonymus.jpg",
       "enlace": "https://drive.google.com/file/d/ID_DE_ANONYMOUS/preview",
       "descripcion": "Un talentoso hacker se une al grupo activista Anonymous para luchar contra la injusticia y la corrupción. Sin embargo, pronto se encuentra atrapado en una red de conspiraciones que ponen en riesgo su vida y sus ideales."
@@ -348,7 +375,7 @@
       "titulo": "Hackers: Ningún sistema es seguro",
       "disponible": true,
       "año": 2014,
-      "genero": "drama",
+      "genero": "programacion",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NingunSistem.jpg",
       "enlace": "https://drive.google.com/file/d/1T90gWXegYWZtUfDsSsZzqLlmuCGwCtbt/preview",
       "descripcion": "Un joven hacker alemán descubre una conspiración global mientras busca reconocimiento en la comunidad underground de hackers. Su habilidad para infiltrarse en sistemas de alta seguridad lo convierte en objetivo de agencias gubernamentales y criminales."
@@ -357,7 +384,7 @@
       "titulo": "Hackers",
       "disponible": true,
       "año": 1995,
-      "genero": "drama",
+      "genero": "programacion",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Hackers.jpg",
       "enlace": "https://drive.google.com/file/d/1o7vY1ELaOV5-nLAer2aArmrbO0s4ZrS7/preview",
       "descripcion": "Un grupo de jóvenes hackers descubre un plan criminal que podría causar un desastre ambiental global. Deberán usar sus habilidades informáticas para exponer la verdad mientras son perseguidos por el FBI y los verdaderos criminales."
@@ -366,7 +393,7 @@
       "titulo": "Hacker",
       "disponible": true,
       "año": 2019,
-      "genero": "drama",
+      "genero": "programacion",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/HACKER.jpg",
       "enlace": "https://drive.google.com/file/d/1VKYgBWnk2tND991LpT0WzZz9Md21d7DF/preview",
       "descripcion": "Un joven inmigrante descubre que sus habilidades de programación pueden ser la clave para ayudar a su familia a escapar de la pobreza. Sin embargo, sus actividades de hacking lo llevan a un peligroso mundo criminal del que no podrá escapar fácilmente."
@@ -375,7 +402,7 @@
       "titulo": "Volver al Futuro",
       "disponible": true,
       "año": 1985,
-      "genero": "familiar",
+      "genero": "clasicos",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut1.jpg",
       "enlace": "https://drive.google.com/file/d/1lAW6VeuTHNQp1PUiEaVaXVp5mssEq072/preview",
       "descripcion": "Marty McFly, un adolescente de los años 80, viaja accidentalmente al pasado en un DeLorean modificado por su amigo científico Doc Brown. En 1955, debe asegurarse de que sus padres se enamoren para garantizar su propia existencia."
@@ -384,7 +411,7 @@
       "titulo": "Volver al Futuro II",
       "disponible": true,
       "año": 1989,
-      "genero": "familiar",
+      "genero": "clasicos",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut2.jpg", 
       "enlace": "https://drive.google.com/file/d/1peRBdi6Zm38xoKzjNRSnlU-_vVEift4s/preview",
       "descripcion": "Marty y Doc viajan al futuro para evitar un desastre familiar, pero sus acciones causan una reacción en cadena que altera la línea temporal. Deberán corregir los errores mientras enfrentan una versión alternativa y distópica de su presente."
@@ -393,7 +420,8 @@
       "titulo": "Volver al Futuro III",
       "disponible": true,
       "año": 1990,
-      "genero": "familiar",
+      "nuevo": false,
+      "genero": "clasicos",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/VolFut3.jpg",
       "enlace": "https://drive.google.com/file/d/1djpDf36EP-aCX3s1cU2z-86PkMw4XuQE/preview",
       "descripcion": "Marty viaja al Viejo Oeste de 1885 para rescatar a Doc Brown, quien está atrapado en el pasado y amenazado de muerte. Juntos deberán encontrar la manera de regresar al presente mientras se enfrentan a los peligros del salvaje oeste."
