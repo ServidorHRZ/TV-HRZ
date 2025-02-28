@@ -1402,9 +1402,11 @@
                 let isDown = false;
                 let startX;
                 let scrollLeft;
+                let momentumID;
+                let velocity = 0;
+                let lastPageX = 0;
                 let timeoutId;
 
-                // Función para manejar clicks en películas
                 const handleMovieClick = (e) => {
                     if (e.target.closest('.movie-card')) {
                         const card = e.target.closest('.movie-card');
@@ -1414,74 +1416,85 @@
                     }
                 };
 
-                // Inicio del arrastre
-                slider.addEventListener('mousedown', (e) => {
+                function startDragging(e) {
                     isDown = true;
-                    startX = e.pageX;
+                    slider.style.scrollBehavior = 'auto';
+                    startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
+                    lastPageX = startX;
                     scrollLeft = slider.scrollLeft;
+                    cancelMomentumTracking();
                     clearTimeout(timeoutId);
-                });
+                }
 
-                // Fin del arrastre
-                slider.addEventListener('mouseup', (e) => {
+                function stopDragging(e) {
+                    if (!isDown) return;
                     isDown = false;
-                    // Si no hubo movimiento significativo, considerar como click
-                    if (Math.abs(slider.scrollLeft - scrollLeft) < 5) {
+                    slider.style.scrollBehavior = 'smooth';
+                    
+                    // Iniciar momentum si hay velocidad significativa
+                    if (Math.abs(velocity) > 0.5) {
+                        beginMomentumTracking();
+                    } else if (Math.abs(slider.scrollLeft - scrollLeft) < 5) {
                         handleMovieClick(e);
                     }
-                });
+                }
 
-                // Salir del elemento
-                slider.addEventListener('mouseleave', () => {
-                    isDown = false;
-                });
-
-                // Movimiento
-                slider.addEventListener('mousemove', (e) => {
+                function drag(e) {
                     if (!isDown) return;
                     e.preventDefault();
-                    const x = e.pageX;
-                    const walk = (x - startX) * 2;
-                    slider.scrollLeft = scrollLeft - walk;
-                });
+                    
+                    const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+                    const deltaX = x - lastPageX;
+                    lastPageX = x;
+                    
+                    // Calcular velocidad
+                    velocity = deltaX * 0.8; // Factor de velocidad ajustable
+                    
+                    // Aplicar movimiento con sensibilidad ajustada
+                    const sensitivity = 1.2; // Factor de sensibilidad ajustable
+                    slider.scrollLeft = slider.scrollLeft - (deltaX * sensitivity);
+                }
 
-                // Manejo táctil
-                slider.addEventListener('touchstart', (e) => {
-                    isDown = true;
-                    startX = e.touches[0].pageX;
-                    scrollLeft = slider.scrollLeft;
-                    clearTimeout(timeoutId);
-                }, { passive: true });
+                function beginMomentumTracking() {
+                    cancelMomentumTracking();
+                    momentumID = requestAnimationFrame(momentumLoop);
+                }
 
-                slider.addEventListener('touchend', (e) => {
-                    isDown = false;
-                    // Pequeño retraso para distinguir entre tap y scroll
-                    timeoutId = setTimeout(() => {
-                        if (Math.abs(slider.scrollLeft - scrollLeft) < 5) {
-                            handleMovieClick(e);
-                        }
-                    }, 100);
-                });
+                function cancelMomentumTracking() {
+                    cancelAnimationFrame(momentumID);
+                }
 
-                slider.addEventListener('touchmove', (e) => {
-                    if (!isDown) return;
-                    const x = e.touches[0].pageX;
-                    const walk = (x - startX) * 2;
-                    slider.scrollLeft = scrollLeft - walk;
-                }, { passive: true });
+                function momentumLoop() {
+                    slider.scrollLeft = slider.scrollLeft - velocity;
+                    velocity *= 0.95; // Factor de fricción
+                    
+                    if (Math.abs(velocity) > 0.5) {
+                        momentumID = requestAnimationFrame(momentumLoop);
+                    }
+                }
 
-                // Desactivar el scroll horizontal con la rueda del mouse
+                // Eventos de mouse
+                slider.addEventListener('mousedown', startDragging);
+                slider.addEventListener('mousemove', drag);
+                slider.addEventListener('mouseup', stopDragging);
+                slider.addEventListener('mouseleave', stopDragging);
+
+                // Eventos táctiles
+                slider.addEventListener('touchstart', startDragging, { passive: true });
+                slider.addEventListener('touchmove', drag, { passive: false });
+                slider.addEventListener('touchend', stopDragging);
+
+                // Desactivar scroll horizontal con rueda
                 slider.addEventListener('wheel', (e) => {
                     e.stopPropagation();
                 }, { passive: true });
             });
         }
 
-        // Actualizar los estilos CSS relacionados
+        // Actualizar estilos CSS
         const styles = `
             .categoria-contenedor {
                 -webkit-overflow-scrolling: touch;
-                scroll-behavior: smooth;
                 overflow-x: auto;
                 overflow-y: hidden;
                 white-space: nowrap;
@@ -1490,6 +1503,10 @@
                 scrollbar-width: none;
                 -ms-overflow-style: none;
                 touch-action: pan-x pan-y;
+                will-change: transform, scroll-position;
+                transform: translateZ(0);
+                backface-visibility: hidden;
+                scroll-behavior: smooth;
             }
 
             .categoria-contenedor::-webkit-scrollbar {
@@ -1501,10 +1518,12 @@
                 -webkit-user-select: none;
                 -moz-user-select: none;
                 -ms-user-select: none;
+                transform: translateZ(0);
+                will-change: transform;
             }
         `;
 
-        // Agregar los estilos al documento
+        // Agregar estilos
         const styleSheet = document.createElement("style");
         styleSheet.textContent = styles;
         document.head.appendChild(styleSheet);
