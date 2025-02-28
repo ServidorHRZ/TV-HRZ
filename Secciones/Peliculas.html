@@ -1406,7 +1406,7 @@
                 let momentumID;
                 let velocity = 0;
                 let lastPageX = 0;
-                let timeoutId;
+                let lastTime = 0;
                 let isHorizontalScroll = false;
                 let hasMovedEnough = false;
 
@@ -1425,14 +1425,13 @@
                     isHorizontalScroll = false;
                     slider.style.scrollBehavior = 'auto';
                     
-                    // Capturar posición inicial X e Y
                     startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
                     startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
                     lastPageX = startX;
                     scrollLeft = slider.scrollLeft;
+                    lastTime = Date.now();
                     
                     cancelMomentumTracking();
-                    clearTimeout(timeoutId);
                 }
 
                 function stopDragging(e) {
@@ -1440,10 +1439,13 @@
                     isDown = false;
                     slider.style.scrollBehavior = 'smooth';
                     
-                    if (isHorizontalScroll && Math.abs(velocity) > 0.5) {
+                    if (isHorizontalScroll && Math.abs(velocity) > 1.5) {
                         beginMomentumTracking();
-                    } else if (!hasMovedEnough) {
-                        handleMovieClick(e);
+                    } else {
+                        velocity = 0;
+                        if (!hasMovedEnough) {
+                            handleMovieClick(e);
+                        }
                     }
                 }
 
@@ -1456,16 +1458,13 @@
                     const deltaX = Math.abs(x - startX);
                     const deltaY = Math.abs(y - startY);
 
-                    // Determinar dirección del scroll solo al inicio del movimiento
+                    // Determinar dirección del scroll
                     if (!isHorizontalScroll && !hasMovedEnough) {
-                        // Si el movimiento es más horizontal que vertical (con un margen)
                         if (deltaX > deltaY && deltaX > 10) {
                             isHorizontalScroll = true;
                             hasMovedEnough = true;
                             e.preventDefault();
-                        } 
-                        // Si el movimiento es más vertical
-                        else if (deltaY > deltaX && deltaY > 10) {
+                        } else if (deltaY > deltaX && deltaY > 10) {
                             isDown = false;
                             hasMovedEnough = true;
                             return;
@@ -1474,12 +1473,21 @@
 
                     if (isHorizontalScroll) {
                         e.preventDefault();
+                        const currentTime = Date.now();
+                        const deltaTime = currentTime - lastTime;
                         const deltaX = x - lastPageX;
-                        lastPageX = x;
-                        velocity = deltaX * 0.8;
                         
-                        const sensitivity = 1.2;
+                        // Calcular velocidad con tiempo para mayor precisión
+                        if (deltaTime > 0) {
+                            velocity = (deltaX / deltaTime) * 15;
+                        }
+                        
+                        // Aplicar movimiento con menor sensibilidad para movimientos lentos
+                        const sensitivity = Math.abs(deltaX) < 2 ? 1 : 1.2;
                         slider.scrollLeft = slider.scrollLeft - (deltaX * sensitivity);
+                        
+                        lastPageX = x;
+                        lastTime = currentTime;
                     }
                 }
 
@@ -1493,26 +1501,27 @@
                 }
 
                 function momentumLoop() {
-                    slider.scrollLeft = slider.scrollLeft - velocity;
-                    velocity *= 0.95;
+                    // Reducir la velocidad más rápidamente para movimientos lentos
+                    velocity *= Math.abs(velocity) < 2 ? 0.85 : 0.95;
                     
+                    // Aplicar el movimiento solo si la velocidad es significativa
                     if (Math.abs(velocity) > 0.5) {
+                        slider.scrollLeft = slider.scrollLeft - velocity;
                         momentumID = requestAnimationFrame(momentumLoop);
+                    } else {
+                        velocity = 0;
                     }
                 }
 
-                // Eventos de mouse
+                // Event Listeners
                 slider.addEventListener('mousedown', startDragging);
                 slider.addEventListener('mousemove', drag);
                 slider.addEventListener('mouseup', stopDragging);
                 slider.addEventListener('mouseleave', stopDragging);
-
-                // Eventos táctiles con opciones passive apropiadas
                 slider.addEventListener('touchstart', startDragging, { passive: true });
                 slider.addEventListener('touchmove', drag, { passive: false });
                 slider.addEventListener('touchend', stopDragging);
-
-                // Permitir scroll vertical normal
+                
                 slider.addEventListener('wheel', (e) => {
                     isHorizontalScroll = false;
                     return true;
