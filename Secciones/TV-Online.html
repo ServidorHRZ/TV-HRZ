@@ -104,12 +104,19 @@
             flex-direction: column;
             gap: 15px;
             margin-bottom: 15px;
+            position: sticky;
+            top: 30vh;
+            background: #1a1a1a;
+            z-index: 10;
+            padding: 10px 0;
         }
 
         .menu-opciones {
             display: flex;
             gap: 15px;
             margin-bottom: 10px;
+            position: sticky;
+            top: 0;
         }
 
         .menu-btn {
@@ -135,6 +142,9 @@
             padding: 10px 0;
             scrollbar-width: none;
             -ms-overflow-style: none;
+            position: sticky;
+            top: 50px;
+            background: inherit;
         }
 
         .categorias-scroll::-webkit-scrollbar {
@@ -199,6 +209,7 @@
             overflow-y: auto;
             padding-right: 10px;
             flex: 1;
+            margin-top: 20px;
         }
 
         .canales-scroll::-webkit-scrollbar {
