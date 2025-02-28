@@ -1401,52 +1401,90 @@
             sliders.forEach(slider => {
                 let mouseDown = false;
                 let startX;
+                let startY;
                 let scrollLeft;
+                let isScrollingHorizontally = false;
+                let touchStartTime;
+                const touchThreshold = 5; // píxeles mínimos para determinar la dirección
 
-                // Eventos táctiles y de mouse
                 const startDragging = function(e) {
                     mouseDown = true;
-                    slider.style.cursor = 'grabbing';
-                    startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
-                    scrollLeft = slider.scrollLeft;
+                    touchStartTime = Date.now();
                     
-                    // Prevenir comportamiento por defecto
-                    e.preventDefault();
+                    if (e.type === 'touchstart') {
+                        startX = e.touches[0].pageX;
+                        startY = e.touches[0].pageY;
+                    } else {
+                        startX = e.pageX;
+                        startY = e.pageY;
+                    }
+                    
+                    scrollLeft = slider.scrollLeft;
+                    isScrollingHorizontally = false;
                 };
 
                 const stopDragging = function() {
                     mouseDown = false;
-                    slider.style.cursor = 'grab';
+                    isScrollingHorizontally = false;
                 };
 
                 const move = function(e) {
                     if (!mouseDown) return;
 
-                    e.preventDefault();
-                    const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
-                    const dist = (x - startX);
-                    slider.scrollLeft = scrollLeft - dist;
+                    let currentX, currentY;
+                    if (e.type === 'touchmove') {
+                        currentX = e.touches[0].pageX;
+                        currentY = e.touches[0].pageY;
+                    } else {
+                        currentX = e.pageX;
+                        currentY = e.pageY;
+                    }
+
+                    const deltaX = Math.abs(currentX - startX);
+                    const deltaY = Math.abs(currentY - startY);
+
+                    // Determinar la dirección del scroll en el inicio del movimiento
+                    if (!isScrollingHorizontally && (deltaX > touchThreshold || deltaY > touchThreshold)) {
+                        isScrollingHorizontally = deltaX > deltaY;
+                        
+                        // Si es scroll vertical, liberar el evento
+                        if (!isScrollingHorizontally) {
+                            mouseDown = false;
+                            return;
+                        }
+                    }
+
+                    // Solo prevenir el comportamiento por defecto si es scroll horizontal
+                    if (isScrollingHorizontally) {
+                        e.preventDefault();
+                        const dist = currentX - startX;
+                        slider.scrollLeft = scrollLeft - dist;
+                    }
                 };
 
-                // Event Listeners
-                slider.addEventListener('mousedown', startDragging);
-                slider.addEventListener('touchstart', startDragging);
-
-                slider.addEventListener('mousemove', move);
-                slider.addEventListener('touchmove', move);
-
-                slider.addEventListener('mouseleave', stopDragging);
-                slider.addEventListener('mouseup', stopDragging);
+                // Event Listeners para dispositivos táctiles
+                slider.addEventListener('touchstart', startDragging, { passive: true });
+                slider.addEventListener('touchmove', move, { passive: false });
                 slider.addEventListener('touchend', stopDragging);
 
-                // Remover el evento wheel para evitar el scroll horizontal con la rueda del mouse
+                // Event Listeners para mouse
+                slider.addEventListener('mousedown', startDragging);
+                slider.addEventListener('mousemove', move);
+                slider.addEventListener('mouseleave', stopDragging);
+                slider.addEventListener('mouseup', stopDragging);
+
+                // Manejar el scroll vertical con la rueda del mouse
                 slider.addEventListener('wheel', (e) => {
-                    e.preventDefault();
-                    window.scrollBy({
-                        top: e.deltaY,
-                        behavior: 'smooth'
-                    });
-                });
+                    const isScrollingVertically = Math.abs(e.deltaY) > Math.abs(e.deltaX);
+                    
+                    if (isScrollingVertically) {
+                        // Permitir el scroll vertical natural
+                        return true;
+                    } else {
+                        // Prevenir solo el scroll horizontal con la rueda
+                        e.preventDefault();
+                    }
+                }, { passive: false });
             });
         }
 
