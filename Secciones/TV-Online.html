@@ -101,11 +101,60 @@
 
         .lista-header {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 10px;
+            flex-direction: column;
+            gap: 15px;
             margin-bottom: 15px;
+        }
+
+        .menu-opciones {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .menu-btn {
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid var(--primary-color);
+            border-radius: 8px;
+            color: var(--secondary-color);
+            padding: 8px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex: 1;
+        }
+
+        .menu-btn.activo {
+            background: var(--primary-color);
+            color: var(--background-color);
+        }
+
+        .categorias-scroll {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 10px 0;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .categorias-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .categoria-btn {
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid var(--primary-color);
+            border-radius: 20px;
+            color: var(--secondary-color);
+            padding: 5px 15px;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .categoria-btn.activa {
+            background: var(--primary-color);
+            color: var(--background-color);
         }
 
         .lista-canales h3 {
@@ -298,6 +347,26 @@
             border-color: var(--secondary-color);
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
         }
+
+        .favorito-icon {
+            background: transparent;
+            border: none;
+            color: var(--secondary-color);
+            cursor: pointer;
+            padding: 10px;
+            font-size: 1.2rem;
+            opacity: 0.5;
+            transition: all 0.3s ease;
+        }
+
+        .favorito-icon.activo {
+            color: var(--primary-color);
+            opacity: 1;
+        }
+
+        .favorito-icon:hover {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -344,10 +413,13 @@
 
             <div class="lista-canales">
                 <div class="lista-header">
-                    <h3>Canales Disponibles</h3>
-                    <div class="buscador-container">
-                        <i class="fas fa-search"></i>
-                        <input type="text" class="buscador-input" placeholder="Buscar canal...">
+                    <div class="menu-opciones">
+                        <button class="menu-btn activo" onclick="mostrarTodo()">Todo</button>
+                        <button class="menu-btn" onclick="mostrarCategorias()">Categorías</button>
+                        <button class="menu-btn" onclick="mostrarFavoritos()">Favoritos</button>
+                    </div>
+                    <div class="categorias-scroll" style="display: none;">
+                        <!-- Las categorías se cargarán dinámicamente -->
                     </div>
                 </div>
                 <div class="canales-scroll" id="canales-container">
@@ -381,6 +453,8 @@
         let todosLosCanales = [];
         let canalActual = null;
         let hls = null;
+        let categoriasUnicas = [];
+        let canalesFavoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
 
         async function cargarCanales() {
             try {
@@ -397,10 +471,14 @@
                 // Combinar canales
                 todosLosCanales = [...todosLosCanales, ...canalesIPTV];
                 
-                mostrarCanales(todosLosCanales);
-                // Reproducir un canal aleatorio al inicio
-                const canalAleatorio = todosLosCanales[Math.floor(Math.random() * todosLosCanales.length)];
-                reproducirCanal(canalAleatorio);
+                // Inicializar la interfaz
+                crearBotonesCategorias();
+                mostrarTodo();
+                
+                // Reproducir el primer canal automáticamente solo al inicio
+                if (todosLosCanales.length > 0 && !canalActual) {
+                    reproducirCanal(todosLosCanales[0]);
+                }
             } catch (error) {
                 console.error('Error cargando los canales:', error);
                 document.getElementById('canales-container').innerHTML = 
@@ -410,6 +488,7 @@
 
         function parseM3U(contenido) {
             const lineas = contenido.split('\n');
+            
             const canales = [];
             let canalActual = null;
 
@@ -468,30 +547,28 @@
             cargarCanales();
         });
 
-        function mostrarCanales(canales) {
-            const contenedor = document.getElementById('canales-container');
+        function mostrarCanales(canalesAMostrar) {
+            const contenedor = document.querySelector('.canales-scroll');
             contenedor.innerHTML = '';
-
-            if (canales.length === 0) {
-                contenedor.innerHTML = '<p style="color: white; text-align: center;">No se encontraron canales</p>';
-                return;
-            }
-
-            canales.forEach(canal => {
+            
+            canalesAMostrar.forEach(canal => {
                 const canalElement = document.createElement('div');
                 canalElement.className = 'canal-item';
-                if (canalActual && canal.id === canalActual.id) {
-                    canalElement.classList.add('activo');
-                }
+                canalElement.dataset.canalId = canal.id;
+                
                 canalElement.innerHTML = `
-                    <img src="${canal.logo}" alt="${canal.nombre}" onerror="this.src='https://www.telelibre.net/img/default.webp'">
+                    <img src="${canal.logo}" alt="${canal.nombre}">
                     <div class="canal-info">
                         <h4>${canal.nombre}</h4>
-                        <p>${canal.categoria}</p>
+                        <p>${canal.descripcion}</p>
                     </div>
+                    <button class="favorito-icon ${canalesFavoritos.includes(canal.id) ? 'activo' : ''}" 
+                            onclick="event.stopPropagation(); toggleFavorito(${canal.id})">
+                        <i class="fas fa-heart"></i>
+                    </button>
                 `;
                 
-                canalElement.addEventListener('click', () => reproducirCanal(canal));
+                canalElement.onclick = () => reproducirCanal(canal);
                 contenedor.appendChild(canalElement);
             });
         }
@@ -571,6 +648,98 @@
                 canalActivo.classList.add('activo');
             }
         }
+
+        function obtenerCategorias() {
+            const categorias = new Set();
+            todosLosCanales.forEach(canal => {
+                if (canal.categoria) {
+                    categorias.add(canal.categoria);
+                }
+            });
+            categoriasUnicas = Array.from(categorias);
+            return categoriasUnicas;
+        }
+
+        function crearBotonesCategorias() {
+            const categoriasContainer = document.querySelector('.categorias-scroll');
+            if (!categoriasContainer) return;
+            
+            categoriasContainer.innerHTML = '';
+            
+            obtenerCategorias().forEach(categoria => {
+                const btn = document.createElement('button');
+                btn.className = 'categoria-btn';
+                btn.textContent = categoria;
+                btn.onclick = () => filtrarPorCategoria(categoria);
+                categoriasContainer.appendChild(btn);
+            });
+        }
+
+        function mostrarTodo() {
+            actualizarBotonesMenu('Todo');
+            document.querySelector('.categorias-scroll').style.display = 'none';
+            mostrarCanales(todosLosCanales);
+        }
+
+        function mostrarCategorias() {
+            actualizarBotonesMenu('Categorías');
+            document.querySelector('.categorias-scroll').style.display = 'flex';
+            crearBotonesCategorias();
+            mostrarCanales(todosLosCanales);
+        }
+
+        function mostrarFavoritos() {
+            actualizarBotonesMenu('Favoritos');
+            document.querySelector('.categorias-scroll').style.display = 'none';
+            const canalesFav = todosLosCanales.filter(canal => 
+                canalesFavoritos.includes(canal.id)
+            );
+            mostrarCanales(canalesFav);
+        }
+
+        function filtrarPorCategoria(categoria) {
+            const canalesFiltrados = todosLosCanales.filter(canal => 
+                canal.categoria === categoria
+            );
+            mostrarCanales(canalesFiltrados);
+            
+            // Actualizar botones de categoría
+            document.querySelectorAll('.categoria-btn').forEach(btn => {
+                btn.classList.toggle('activa', btn.textContent === categoria);
+            });
+        }
+
+        function actualizarBotonesMenu(opcionActiva) {
+            document.querySelectorAll('.menu-btn').forEach(btn => {
+                btn.classList.toggle('activo', btn.textContent === opcionActiva);
+            });
+        }
+
+        function toggleFavorito(canalId) {
+            const index = canalesFavoritos.indexOf(canalId);
+            if (index === -1) {
+                canalesFavoritos.push(canalId);
+            } else {
+                canalesFavoritos.splice(index, 1);
+            }
+            localStorage.setItem('favoritos', JSON.stringify(canalesFavoritos));
+            actualizarIconosFavoritos();
+        }
+
+        function actualizarIconosFavoritos() {
+            document.querySelectorAll('.canal-item').forEach(item => {
+                const canalId = parseInt(item.dataset.canalId);
+                const iconoFav = item.querySelector('.favorito-icon');
+                if (iconoFav) {
+                    iconoFav.classList.toggle('activo', canalesFavoritos.includes(canalId));
+                }
+            });
+        }
+
+        // Inicializar al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            cargarCanales();
+        });
     </script>
 </body>
 </html>
