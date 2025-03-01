@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRZ TV - Reproducir Película</title>
+    <title>HRZ TV - Reproducir</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
@@ -11,161 +11,35 @@
         :root {
             --primary-color: #00ffff;
             --secondary-color: #ffffff;
-            --background-color: #000000;
+            --background-color: #141414;
+            --overlay-color: rgba(20, 20, 20, 0.9);
         }
+
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background: linear-gradient(45deg, var(--background-color), #1a1a1a);
+            padding: 0 0 80px 0;
+            background-color: var(--background-color);
             color: var(--secondary-color);
-            padding-bottom: 70px;
-            overflow-y: auto;
-        }
-        .main-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-            min-height: calc(100vh - 70px);
-            overflow-y: auto;
-        }
-        .header {
-            text-align: center;
-            color: var(--primary-color);
-            padding: 1rem 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
-        }
-        .header h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color);
-            }
-            to {
-                text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 30px var(--primary-color);
-            }
-        }
-        .header p {
-            font-size: 1.2rem;
-            opacity: 0.8;
-        }
-        .movie-container {
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            padding: 0;
-            width: 100%;
-            max-width: 1400px;
-            margin: 0 auto;
-            box-sizing: border-box;
         }
-        .movie-info {
-            display: grid;
-            grid-template-columns: 300px 1fr;
-            gap: 40px;
-            margin: 20px 0;
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(20, 20, 20, 0.8));
-            padding: 30px;
-            border-radius: 20px;
+
+        .player-container {
             position: relative;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(0, 255, 255, 0.1);
-        }
-        .movie-info::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(to right, 
-                rgba(0, 0, 0, 0.9) 0%,
-                rgba(0, 0, 0, 0.7) 50%,
-                rgba(0, 0, 0, 0.4) 100%
-            );
-            z-index: 1;
-        }
-        .movie-poster {
-            position: relative;
-            z-index: 2;
             width: 100%;
-            transition: transform 0.3s ease;
-        }
-        .movie-poster img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-            transition: all 0.3s ease;
-        }
-        .movie-poster:hover img {
-            transform: scale(1.03);
-            box-shadow: 0 12px 30px rgba(0, 255, 255, 0.2);
-        }
-        .movie-details {
-            position: relative;
-            z-index: 2;
-            padding: 10px 0;
-        }
-        .movie-details h2 {
-            font-size: 2.8em;
-            margin: 0 0 20px 0;
-            background: linear-gradient(45deg, var(--primary-color), #fff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-        .movie-metadata {
-            display: flex;
-            gap: 25px;
-            margin-bottom: 25px;
-            color: var(--primary-color);
-            font-size: 1.1em;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        .movie-metadata span {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .movie-metadata span::before {
-            content: '•';
-            color: var(--primary-color);
-            font-size: 1.5em;
-        }
-        .movie-metadata span:first-child::before {
-            display: none;
-        }
-        .movie-description {
-            font-size: 1.15em;
-            line-height: 1.8;
-            margin-bottom: 30px;
-            color: rgba(255, 255, 255, 0.9);
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-        }
-        .iframe-container {
-            margin: 30px auto;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
             background: #000;
-            position: relative;
-            width: 100%;
-            max-width: 1400px;
+            margin-bottom: 20px;
         }
-        .iframe-container iframe {
+
+        .player-wrapper {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background: #000;
+        }
+
+        .player-wrapper iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -173,208 +47,407 @@
             height: 100%;
             border: none;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
+
+        .content-info {
+            position: relative;
+            padding: 20px 30px;
+            max-width: 1200px;
+            margin: 20px auto;
+            width: 100%;
+            box-sizing: border-box;
+            background: var(--overlay-color);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .movie-header {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .movie-poster-container {
+            flex-shrink: 0;
+            width: 200px;
+        }
+
+        .movie-poster {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .movie-poster:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-title-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .movie-details {
+            margin-top: 20px;
+        }
+
+        .movie-title {
+            font-size: 2.5em;
+            margin: 0;
             color: var(--primary-color);
-            margin-bottom: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 1.2;
         }
-        .back-button {
-            display: none;
+
+        .movie-metadata {
+            margin-top: 15px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            color: #999;
         }
+
+        .movie-description-section {
+            margin-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+        }
+
+        .movie-description {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #ccc;
+            margin: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .expand-description {
+            color: var(--primary-color);
+            background: none;
+            border: none;
+            padding: 5px 0;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .expand-description:hover {
+            text-decoration: underline;
+        }
+
+        .movie-description.expanded {
+            -webkit-line-clamp: unset;
+        }
+
+        .movie-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .action-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(0, 255, 255, 0.1);
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+        }
+
+        .action-button.like {
+            background: var(--primary-color);
+            color: var(--background-color);
+            padding: 8px 16px;
+            font-size: 0.9em;
+            margin-left: auto;
+        }
+
+        .action-button.like:hover {
+            background: #00e6e6;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+        }
+
+        .action-button.liked {
+            background: #ff4081;
+            color: white;
+        }
+
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .action-button.like i {
+            transition: transform 0.3s ease;
+        }
+
+        .action-button.like:active i {
+            animation: heartBeat 0.3s ease-in-out;
+        }
+
+        .action-button.share {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .action-button.share:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .action-button.download.downloading {
+            background: #45a049;
+            pointer-events: none; /* Prevenir múltiples clicks durante la descarga */
+        }
+
+        .action-button.download.downloading i {
+            animation: downloadingAnimation 1s infinite;
+        }
+
+        @keyframes downloadingAnimation {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(3px); }
+            100% { transform: translateY(0); }
+        }
+
         .bottom-nav {
+            margin-top: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px 0;
             position: fixed;
             bottom: 0;
             left: 0;
-            right: 0;
-            height: 70px;
-            background-color: rgba(0, 0, 0, 0.9);
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-around;
-            padding: 10px 0;
-            box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.2);
-            z-index: 1000;
+            align-items: center;
         }
+
         .nav-item {
             display: flex;
             flex-direction: column;
             align-items: center;
             color: var(--secondary-color);
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: color 0.3s ease;
+            gap: 5px;
         }
+
         .nav-item.active {
             color: var(--primary-color);
         }
+
         .nav-item i {
-            font-size: 1.5rem;
-            margin-bottom: 5px;
+            font-size: 1.5em;
         }
-        .nav-item span {
-            font-size: 0.8rem;
-        }
+
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2.5rem;
-            }
-            .movie-container {
-                padding: 15px;
-            }
-            .movie-info {
-                grid-template-columns: 1fr;
-                padding: 20px;
-                gap: 25px;
-            }
-            .movie-poster {
-                max-width: 220px;
-                margin: 0 auto;
-            }
-            .movie-details {
-                text-align: left;
-            }
-            .movie-info h2 {
-                font-size: 2em;
-                text-align: center;
-            }
-            .movie-info p {
-                font-size: 1.1em;
-                text-align: center;
-            }
-            .iframe-container {
-                width: 95%;
-                margin-bottom: 30px;
-                padding-top: 56.25%;
-            }
-            .movie-poster {
-                max-width: 160px;
-            }
-            .movie-metadata {
-                justify-content: center;
-            }
-        }
-        @media (max-width: 480px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-            .header p {
-                font-size: 0.9rem;
-            }
-            .movie-container {
-                padding: 10px;
-            }
-            .movie-info h2 {
-                font-size: 1.5rem;
-            }
-            .movie-info p {
-                font-size: 0.9rem;
-            }
-            .iframe-container {
-                width: 100%;
-                padding-top: 60%;
-                margin-bottom: 25px;
-            }
-            .movie-poster {
-                max-width: 140px;
-            }
-        }
-        @media (max-width: 320px) {
-            .header h1 {
-                font-size: 1.5rem;
-            }
-            .header p {
-                font-size: 0.8rem;
-            }
-            .movie-info h2 {
-                font-size: 1rem;
-            }
-            .movie-info p {
-                font-size: 0.8rem;
-            }
-            .back-button {
-                padding: 4px 8px;
-                font-size: 10px;
-            }
-        }
-        @media (min-width: 769px) {
-            .iframe-container {
-                width: 90%;
-                height: 600px;
-                padding-top: 0;
+            .movie-header {
+                gap: 20px;
             }
 
-            .iframe-container iframe {
-                height: 100%;
+            .movie-poster-container {
+                width: 140px;
+            }
+
+            .movie-title {
+                font-size: 2em;
+            }
+
+            body {
+                padding-bottom: 100px;
+            }
+
+            .movie-actions {
+                flex-wrap: wrap;
+            }
+
+            .action-button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            .movie-metadata {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .action-button.like {
+                margin-left: 0;
             }
         }
-        @media (min-width: 1200px) {
-            .iframe-container {
-                width: 90%;
-                height: 700px;
+
+        @media (max-width: 480px) {
+            .movie-header {
+                gap: 15px;
+            }
+
+            .movie-poster-container {
+                width: 120px;
+            }
+
+            .movie-title {
+                font-size: 1.8em;
             }
         }
     </style>
 </head>
 <body>
-    <div class="main-content">
-        <div class="movie-container" id="movie-container">
-            <!-- La información de la película y el iframe se cargarán aquí dinámicamente -->
+    <div class="player-container">
+        <div class="player-wrapper" id="player-wrapper">
+            <!-- El iframe se insertará aquí -->
         </div>
     </div>
+
+    <div class="content-info">
+        <div class="movie-header">
+            <div class="movie-poster-container">
+                <img id="movie-poster" class="movie-poster" src="" alt="">
+            </div>
+            <div class="movie-title-section">
+                <h1 class="movie-title" id="movie-title"></h1>
+                <div class="movie-metadata">
+                    <span class="movie-year" id="movie-year"></span>
+                    <span id="movie-genre"></span>
+                    <button class="action-button like" id="likeButton">
+                        <i class="fas fa-heart"></i>
+                        <span>Me gusta</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="movie-description-section">
+            <p class="movie-description" id="movie-description"></p>
+        </div>
+    </div>
+
     <nav class="bottom-nav">
-        <a href="Peliculas.html" class="nav-item active">
-            <i class="fas fa-film"></i>
-            <span>Películas</span>
-        </a>
-        <a href="Series.html" class="nav-item">
-            <i class="fas fa-tv"></i>
-            <span>Series</span>
-        </a>
-        <a href="TV-Online.html" class="nav-item">
-            <i class="fas fa-broadcast-tower"></i>
-            <span>TV Online</span>
-        </a>
-        <a href="Proximos.html" class="nav-item">
-            <i class="fas fa-calendar-alt"></i>
-            <span>Próximos</span>
-        </a>
+        <div class="nav-content">
+            <a href="Peliculas.html" class="nav-item active">
+                <i class="fas fa-film"></i>
+                <span>Películas</span>
+            </a>
+            <a href="Series.html" class="nav-item">
+                <i class="fas fa-tv"></i>
+                <span>Series</span>
+            </a>
+            <a href="TV-Online.html" class="nav-item">
+                <i class="fas fa-broadcast-tower"></i>
+                <span>TV Online</span>
+            </a>
+            <a href="Proximos.html" class="nav-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Próximos</span>
+            </a>
+        </div>
     </nav>
-    <footer>
-        <p>&copy; 2024 Tecnologia HRZ. Todos los derechos reservados.</p>
-    </footer>
 
     <script>
         window.addEventListener('load', () => {
             const peliculaSeleccionada = JSON.parse(localStorage.getItem('peliculaSeleccionada'));
+            
             if (peliculaSeleccionada) {
-                const movieContainer = document.getElementById('movie-container');
-                movieContainer.innerHTML = `
-                    <div class="movie-info">
-                        <div class="movie-poster">
-                            <img src="${peliculaSeleccionada.imagen}" alt="${peliculaSeleccionada.titulo}">
-                        </div>
-                        <div class="movie-details">
-                            <h2>${peliculaSeleccionada.titulo}</h2>
-                            <div class="movie-metadata">
-                                <span>${peliculaSeleccionada.año}</span>
-                            </div>
-                            <p class="movie-description">${peliculaSeleccionada.descripcion || 'Descripción no disponible.'}</p>
-                        </div>
-                    </div>
-                    <div class="iframe-container">
-                        <iframe 
-                            src="${peliculaSeleccionada.enlace}"
-                            allowfullscreen
-                            allow="autoplay; fullscreen; encrypted-media"
-                            webkitallowfullscreen 
-                            mozallowfullscreen
-                            sandbox="allow-same-origin allow-scripts"
-                            scrolling="no"
-                            frameborder="0"
-                            style="pointer-events: auto;">
-                        </iframe>
-                    </div>
+                // Actualizar la información de la película
+                document.getElementById('movie-title').textContent = peliculaSeleccionada.titulo;
+                document.getElementById('movie-year').textContent = peliculaSeleccionada.año;
+                document.getElementById('movie-description').textContent = peliculaSeleccionada.descripcion || 'Descripción no disponible.';
+                document.getElementById('movie-poster').src = peliculaSeleccionada.imagen;
+                document.getElementById('movie-poster').alt = peliculaSeleccionada.titulo;
+
+                // Insertar el reproductor
+                const playerWrapper = document.getElementById('player-wrapper');
+                playerWrapper.innerHTML = `
+                    <iframe 
+                        src="${peliculaSeleccionada.enlace}"
+                        allowfullscreen
+                        allow="autoplay; fullscreen; encrypted-media"
+                        webkitallowfullscreen 
+                        mozallowfullscreen
+                        sandbox="allow-same-origin allow-scripts"
+                        scrolling="no"
+                        style="border: none;">
+                    </iframe>
                 `;
+
+                // Añadir funcionalidad para expandir/contraer descripción
+                const descripcion = document.getElementById('movie-description');
+                const textoCompleto = peliculaSeleccionada.descripcion || 'Descripción no disponible.';
+                descripcion.textContent = textoCompleto;
+
+                // Crear botón expandir solo si el texto es largo
+                if (descripcion.scrollHeight > descripcion.clientHeight) {
+                    const expandButton = document.createElement('button');
+                    expandButton.className = 'expand-description';
+                    expandButton.textContent = 'Mostrar más';
+                    descripcion.parentNode.insertBefore(expandButton, descripcion.nextSibling);
+
+                    expandButton.addEventListener('click', () => {
+                        if (descripcion.classList.contains('expanded')) {
+                            descripcion.classList.remove('expanded');
+                            expandButton.textContent = 'Mostrar más';
+                            // Scroll suave hacia arriba si es necesario
+                            descripcion.scrollIntoView({ behavior: 'smooth' });
+                        } else {
+                            descripcion.classList.add('expanded');
+                            expandButton.textContent = 'Mostrar menos';
+                        }
+                    });
+                }
+
+                // Sistema de Me gusta
+                const likeButton = document.getElementById('likeButton');
+                const peliculasLiked = JSON.parse(localStorage.getItem('peliculasLiked') || '[]');
+                
+                // Verificar si la película ya está en favoritos
+                if (peliculasLiked.includes(peliculaSeleccionada.titulo)) {
+                    likeButton.classList.add('liked');
+                }
+
+                // Manejar clicks en el botón Me gusta
+                likeButton.addEventListener('click', () => {
+                    const isLiked = likeButton.classList.toggle('liked');
+                    const peliculasLiked = JSON.parse(localStorage.getItem('peliculasLiked') || '[]');
+                    
+                    if (isLiked) {
+                        if (!peliculasLiked.includes(peliculaSeleccionada.titulo)) {
+                            peliculasLiked.push(peliculaSeleccionada.titulo);
+                        }
+                    } else {
+                        const index = peliculasLiked.indexOf(peliculaSeleccionada.titulo);
+                        if (index > -1) {
+                            peliculasLiked.splice(index, 1);
+                        }
+                    }
+                    
+                    localStorage.setItem('peliculasLiked', JSON.stringify(peliculasLiked));
+                });
             } else {
                 alert('No se ha seleccionado ninguna película');
                 window.location.href = 'Peliculas.html';

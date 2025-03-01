@@ -791,19 +791,19 @@
         }
 
         .categoria-titulo {
-            color: var(--secondary-color);
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-color);
+            margin: 20px 0;
+            font-size: 1.8em;
             padding-left: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            background: linear-gradient(45deg, var(--primary-color), #fff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
             text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-            font-family: 'Orbitron', sans-serif;
+        }
+
+        .categoria-titulo i {
+            font-size: 0.9em;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
         }
 
         .categoria-contenedor {
@@ -984,6 +984,24 @@
                 display: none !important; /* Ocultar en móviles */
             }
         }
+
+        /* Estilo especial para la sección de favoritos */
+        .categoria:first-child {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(0, 255, 255, 0.1);
+        }
+
+        .categoria:first-child .categoria-titulo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .categoria:first-child .categoria-titulo::before {
+            content: '❤️';
+            font-size: 0.8em;
+        }
     </style>
 </head>
 <body>
@@ -1081,6 +1099,40 @@
             const categoriasWrapper = document.querySelector('.categorias-wrapper');
             categoriasWrapper.innerHTML = '';
             
+            // Primero mostrar sección de favoritos si hay películas favoritas
+            const peliculasLiked = JSON.parse(localStorage.getItem('peliculasLiked') || '[]');
+            if (peliculasLiked.length > 0) {
+                const peliculasFavoritas = peliculas.filter(pelicula => 
+                    peliculasLiked.includes(pelicula.titulo)
+                );
+                
+                if (peliculasFavoritas.length > 0) {
+                    const seccionFavoritos = document.createElement('div');
+                    seccionFavoritos.className = 'categoria-seccion';
+                    
+                    seccionFavoritos.innerHTML = `
+                        <h2 class="categoria-titulo">
+                            Mis Favoritas <i class="fas fa-heart" style="color: var(--primary-color);"></i>
+                        </h2>
+                        <div class="categoria-contenedor">
+                            ${peliculasFavoritas.map(pelicula => `
+                                <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
+                                    ${pelicula.nuevo ? '<div class="new-badge">NUEVO</div>' : ''}
+                                    <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
+                                    <div class="movie-info">
+                                        <h3>${pelicula.titulo}</h3>
+                                        <p>Año: ${pelicula.año}</p>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                    
+                    categoriasWrapper.appendChild(seccionFavoritos);
+                }
+            }
+            
+            // Luego mostrar el resto de categorías
             const categorias = organizarPorCategorias(peliculas);
 
             for (const [key, categoria] of Object.entries(categorias)) {
@@ -1108,7 +1160,7 @@
                 }
             }
 
-            // Agregar event listeners para las tarjetas de películas
+            // Agregar event listeners y configurar navegación
             document.querySelectorAll('.movie-card').forEach(card => {
                 card.addEventListener('click', () => {
                     const peliculaData = JSON.parse(card.dataset.pelicula);
@@ -1549,6 +1601,45 @@
                 updateArrowsVisibility();
             });
         }
+
+        function cargarCategorias() {
+            // Añadir sección de favoritos al principio
+            const peliculasLiked = JSON.parse(localStorage.getItem('peliculasLiked') || '[]');
+            
+            if (peliculasLiked.length > 0) {
+                const favoritosHTML = `
+                    <div class="categoria">
+                        <h2 class="categoria-titulo">Mis Favoritas</h2>
+                        <div class="categoria-contenedor">
+                            ${todasLasPeliculas
+                                .filter(pelicula => peliculasLiked.includes(pelicula.titulo))
+                                .map(pelicula => `
+                                    <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
+                                        <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
+                                        <div class="movie-info">
+                                            <h3>${pelicula.titulo}</h3>
+                                            <span>${pelicula.año}</span>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                        </div>
+                    </div>
+                `;
+
+                const mainContent = document.querySelector('.main-content');
+                mainContent.insertAdjacentHTML('afterbegin', favoritosHTML);
+            }
+
+            // Resto del código de categorías...
+        }
+
+        // Actualizar la lista de favoritos cuando se modifica
+        window.addEventListener('storage', (e) => {
+            if (e.key === 'peliculasLiked') {
+                // Recargar la página para actualizar favoritos
+                location.reload();
+            }
+        });
     </script>
 </body>
 </html>

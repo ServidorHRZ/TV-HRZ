@@ -2,7 +2,7 @@
   "peliculas": [
     {
       "titulo": "Mini Espías",
-      "disponible": true,
+      "disponible": false,
       "año": 2001,
       "genero": "familiar",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FjWIsfU9NXiOBsGy0WUx8T3Kiaw.jpg&w=256&q=75",
@@ -11,7 +11,7 @@
     },
     {
       "titulo": "Mini Espías 2: La Isla de los Sueños Perdidos",
-      "disponible": true, 
+      "disponible": false, 
       "año": 2002,
       "genero": "familiar",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FdYmLViA5AWUb5MGH2UzhUwEcN0m.jpg&w=256&q=75",
@@ -20,7 +20,7 @@
     },
     {
       "titulo": "Mini Espías 3D: Game Over",
-      "disponible": true,
+      "disponible": false,
       "año": 2003, 
       "genero": "familiar",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fid7FzzvO4GnTCNvT74TjS1doxkb.jpg&w=256&q=75",
@@ -361,15 +361,6 @@
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/RedSocial.jpg",
       "enlace": "https://drive.google.com/file/d/13dvFl4C8MK48UDfF8MvjStjsORDXvTp1/preview",
       "descripcion": "La historia de Mark Zuckerberg y la creación de Facebook, desde sus inicios en la Universidad de Harvard hasta convertirse en una de las redes sociales más influyentes del mundo, atravesando conflictos legales y personales en el proceso."
-    },
-    {
-      "titulo": "Anonymous",
-      "disponible": true,
-      "año": 2016,
-      "genero": "programacion",
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Anonymus.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DE_ANONYMOUS/preview",
-      "descripcion": "Un talentoso hacker se une al grupo activista Anonymous para luchar contra la injusticia y la corrupción. Sin embargo, pronto se encuentra atrapado en una red de conspiraciones que ponen en riesgo su vida y sus ideales."
     },
     {
       "titulo": "Hackers: Ningún sistema es seguro",
