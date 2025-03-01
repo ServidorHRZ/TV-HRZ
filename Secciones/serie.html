@@ -146,51 +146,52 @@
             padding: 15px;
         }
         .temporada {
-            margin-bottom: 15px;
-            background: rgba(20, 20, 20, 0.8);
+            background: #1a1a1a;
             border-radius: 8px;
-            transition: all 0.3s ease;
+            margin-bottom: 8px;
+            overflow: hidden;
         }
         .temporada-titulo {
-            background: transparent;
-            color: var(--secondary-color);
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            background: #242424;
+            color: #00ffff;
             font-size: 1.1em;
-            font-weight: 500;
-        }
-        .temporada-titulo::after {
-            content: '\f107';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            transition: transform 0.3s ease;
-        }
-        .temporada.active .temporada-titulo::after {
-            transform: rotate(180deg);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
         }
         .episodios {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         .episodio {
-            padding: 15px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             display: grid;
-            grid-template-columns: auto 200px 1fr auto;
             gap: 15px;
             align-items: center;
+            background: #212121;
+            margin-bottom: 1px;
+            transition: background 0.3s ease;
+        }
+        .episodio-thumbnail-container {
+            position: relative;
+            width: 140px;
+            height: 90px;
         }
         .episodio-numero {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 1.2em;
-            width: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 4px 8px;
+            font-size: 0.9em;
+            z-index: 1;
+            border-radius: 4px 0 4px 0;
         }
         .episodio-thumbnail {
-            width: 200px;
-            height: 112px;
-            position: relative;
-            border-radius: 8px;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
             overflow: hidden;
         }
         .episodio-thumbnail img {
@@ -198,45 +199,45 @@
             height: 100%;
             object-fit: cover;
         }
-        .episodio-thumbnail .play-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4);
+        .episodio-contenido {
+            padding-right: 20px;
+        }
+        .episodio-titulo {
+            font-size: 1em;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 4px;
+        }
+        .episodio-descripcion {
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.6);
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+        .episodio-visto {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(0, 0, 0, 0.3);
         }
-        .episodio-thumbnail .play-overlay i {
-            color: white;
-            font-size: 2em;
+        .episodio-visto i {
+            font-size: 12px;
+            color: transparent;
+            transition: all 0.3s ease;
         }
-        .episodio:hover .play-overlay {
-            opacity: 1;
+        .episodio-visto.visto {
+            border-color: var(--primary-color);
+            background: var(--primary-color);
         }
-        .episodio-contenido {
-            flex: 1;
-        }
-        .episodio-titulo {
-            font-size: 1.1em;
-            margin-bottom: 8px;
-            color: var(--secondary-color);
-        }
-        .episodio-descripcion {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9em;
-            line-height: 1.4;
-        }
-        .episodio-duracion {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.9em;
-        }
-        .episodio:hover {
-            background: rgba(255, 255, 255, 0.1);
+        .episodio-visto.visto i {
+            color: #000;
         }
         .episodio.playing {
             background: rgba(0, 255, 255, 0.1);
@@ -317,58 +318,42 @@
             }
 
             .episodio {
-                display: grid;
-                grid-template-columns: 120px 1fr;
-                grid-template-areas:
-                    "numero numero"
-                    "thumbnail contenido"
-                    "duracion duracion";
-                gap: 8px;
-                padding: 10px;
+                grid-template-columns: 100px 1fr 35px;
+                padding: 8px;
+                gap: 10px;
+            }
+
+            .episodio-thumbnail-container {
+                width: 100px;
+                height: 65px;
             }
 
             .episodio-numero {
-                grid-area: numero;
-                font-size: 1em;
-                color: rgba(255, 255, 255, 0.7);
-                margin-bottom: 4px;
-            }
-
-            .episodio-thumbnail {
-                grid-area: thumbnail;
-                width: 120px;
-                height: 67px;
-                border-radius: 6px;
-            }
-
-            .episodio-contenido {
-                grid-area: contenido;
-                display: flex;
-                flex-direction: column;
-                gap: 4px;
+                padding: 2px 6px;
+                font-size: 0.8em;
             }
 
             .episodio-titulo {
-                font-size: 1em;
-                margin: 0;
+                font-size: 0.9em;
+                margin-bottom: 2px;
             }
 
             .episodio-descripcion {
-                font-size: 0.9em;
-                line-height: 1.3;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                font-size: 0.8em;
+                -webkit-line-clamp: 1;
+            }
+
+            .episodio-visto {
+                width: 16px;
+                height: 16px;
+            }
+
+            .episodio-visto i {
+                font-size: 10px;
             }
 
             .episodio-duracion {
-                grid-area: duracion;
-                color: rgba(255, 255, 255, 0.5);
-                font-size: 0.9em;
-                text-align: right;
-                padding-top: 4px;
+                font-size: 0.8em;
             }
 
             .temporada-titulo {
@@ -427,13 +412,24 @@
                 padding: 4px 10px;
             }
 
-            .episodio-thumbnail {
-                width: 100px;
-                height: 56px;
+            .episodio {
+                grid-template-columns: 90px 1fr 30px;
+                padding: 6px;
+                gap: 8px;
             }
 
-            .episodio-descripcion {
-                font-size: 0.8em;
+            .episodio-thumbnail-container {
+                width: 90px;
+                height: 60px;
+            }
+
+            .episodio-visto {
+                width: 14px;
+                height: 14px;
+            }
+
+            .episodio-visto i {
+                font-size: 8px;
             }
 
             .episodios-player {
@@ -685,6 +681,91 @@
                 padding-left: 20px;
             }
         }
+
+        /* Ajuste para el fondo general */
+        .contenedor-serie {
+            background: #000;
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        /* Estilos específicos para PC */
+        @media (min-width: 769px) {
+            .episodio {
+                grid-template-columns: 180px 1fr 40px;
+                padding: 15px 20px;
+                gap: 20px;
+            }
+
+            .episodio-thumbnail-container {
+                position: relative;
+                width: 180px;
+                height: 100px;
+            }
+
+            .episodio-numero {
+                position: absolute;
+                top: 8px;
+                left: 8px;
+                background: rgba(0, 0, 0, 0.8);
+                color: #fff;
+                padding: 5px 10px;
+                font-size: 1em;
+                z-index: 1;
+                border-radius: 4px;
+            }
+
+            .episodio-thumbnail {
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+                overflow: hidden;
+            }
+
+            .episodio-thumbnail img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .episodio-contenido {
+                padding-right: 20px;
+            }
+
+            .episodio-titulo {
+                font-size: 1.1em;
+                color: #fff;
+                margin-bottom: 8px;
+            }
+
+            .episodio-descripcion {
+                font-size: 0.9em;
+                color: rgba(255, 255, 255, 0.7);
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+
+            .episodio:hover {
+                background: #2a2a2a;
+            }
+
+            .temporada {
+                background: #1a1a1a;
+                margin-bottom: 15px;
+                border-radius: 6px;
+                overflow: hidden;
+            }
+
+            .temporada-titulo {
+                padding: 18px 20px;
+                font-size: 1.2em;
+                background: #1a1a1a;
+                color: var(--primary-color);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
     </style>
 </head>
 <body>
@@ -751,6 +832,41 @@
     <script>
         let isMuted = false;
         let youtubePlayer = null;
+
+        // Función para silenciar el trailer
+        function muteTrailer() {
+            const trailerFrame = document.getElementById('trailer-player');
+            const soundToggle = document.getElementById('sound-toggle');
+            const soundIcon = soundToggle.querySelector('i');
+            
+            if (!isMuted) {
+                let currentSrc = trailerFrame.src;
+                trailerFrame.src = currentSrc + '&mute=1';
+                soundIcon.className = 'fas fa-volume-mute';
+                isMuted = true;
+            }
+        }
+
+        // Función para controlar el sonido del trailer
+        function toggleTrailerSound() {
+            const trailerFrame = document.getElementById('trailer-player');
+            const soundToggle = document.getElementById('sound-toggle');
+            const soundIcon = soundToggle.querySelector('i');
+            
+            let currentSrc = trailerFrame.src;
+            let newSrc = '';
+
+            if (isMuted) {
+                newSrc = currentSrc.replace('&mute=1', '');
+                soundIcon.className = 'fas fa-volume-up';
+            } else {
+                newSrc = currentSrc + '&mute=1';
+                soundIcon.className = 'fas fa-volume-mute';
+            }
+
+            isMuted = !isMuted;
+            trailerFrame.src = newSrc;
+        }
 
         function prevenirRedirecciones() {
             // Prevenir redirecciones en iframes
@@ -852,45 +968,58 @@
             subtree: true
         });
 
-        function cargarInformacionSerie(serie) {
-            const trailerPlayer = document.getElementById('trailer-player');
-            const soundToggle = document.getElementById('sound-toggle');
-            const soundIcon = soundToggle.querySelector('i');
+        // Función para manejar el estado de capítulos vistos
+        function inicializarSistemaVistas() {
+            // Crear objeto para almacenar vistas si no existe
+            if (!localStorage.getItem('capitulosVistos')) {
+                localStorage.setItem('capitulosVistos', JSON.stringify({}));
+            }
+        }
+
+        // Función para marcar/desmarcar capítulo como visto
+        function toggleCapituloVisto(serieId, temporada, episodio) {
+            const capitulosVistos = JSON.parse(localStorage.getItem('capitulosVistos'));
+            const key = `${serieId}-${temporada}-${episodio}`;
             
-            // Procesar la URL del trailer
-            let trailerUrl = serie.trailer;
-            if (trailerUrl.includes('youtube.com')) {
-                // Extraer el ID del video de YouTube
-                const videoId = trailerUrl.split('/').pop();
-                // Construir la URL con sonido activo por defecto (sin mute=1)
-                trailerUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&showinfo=0&rel=0&loop=1&playlist=${videoId}&enablejsapi=1`;
+            if (!capitulosVistos[key]) {
+                capitulosVistos[key] = {
+                    fecha: new Date().toISOString(),
+                    visto: true
+                };
+            } else {
+                capitulosVistos[key].visto = !capitulosVistos[key].visto;
             }
             
-            trailerPlayer.src = trailerUrl;
+            localStorage.setItem('capitulosVistos', JSON.stringify(capitulosVistos));
+            return capitulosVistos[key].visto;
+        }
 
-            // Inicializar el estado del sonido como activo
-            let isMuted = false;
-            // Actualizar el ícono inicial para mostrar sonido activo
-            soundIcon.className = 'fas fa-volume-up';
+        // Función para verificar si un capítulo está visto
+        function esCapituloVisto(serieId, temporada, episodio) {
+            const capitulosVistos = JSON.parse(localStorage.getItem('capitulosVistos'));
+            const key = `${serieId}-${temporada}-${episodio}`;
+            return capitulosVistos[key]?.visto || false;
+        }
 
-            soundToggle.addEventListener('click', function() {
-                let currentUrl = trailerPlayer.src;
-                if (isMuted) {
-                    // Activar sonido
-                    currentUrl = currentUrl.replace('&mute=1', '');
-                    soundIcon.className = 'fas fa-volume-up';
-                } else {
-                    // Silenciar
-                    if (!currentUrl.includes('&mute=1')) {
-                        currentUrl += '&mute=1';
-                    }
-                    soundIcon.className = 'fas fa-volume-mute';
-                }
-                trailerPlayer.src = currentUrl;
-                isMuted = !isMuted;
-            });
+        // Modificar la función de cargar información de serie
+        function cargarInformacionSerie(serie) {
+            // Verificar si la serie tiene temporadas
+            if (!serie.temporadas || serie.temporadas.length === 0) {
+                mostrarModalEnProceso(serie);
+                return;
+            }
 
-            // Cargar toda la información solo en la sección hero
+            // Cargar el trailer con sonido activado
+            const trailerPlayer = document.getElementById('trailer-player');
+            if (serie.trailer) {
+                trailerPlayer.src = `${serie.trailer}?autoplay=1&controls=0&showinfo=0&rel=0&loop=1&playlist=${serie.trailer.split('/').pop()}`;
+            }
+
+            // Configurar el botón de sonido
+            const soundToggle = document.getElementById('sound-toggle');
+            soundToggle.onclick = toggleTrailerSound;
+
+            // Resto de la carga de información
             document.getElementById('serie-imagen-hero').src = serie.imagen;
             document.getElementById('serie-titulo-hero').textContent = serie.titulo;
             document.getElementById('serie-descripcion-hero').textContent = serie.descripcion;
@@ -898,121 +1027,126 @@
             document.getElementById('serie-director-hero').textContent = serie.director;
             document.getElementById('serie-actores-hero').textContent = serie.actores.join(', ');
 
-            // Generar tags de géneros
-            const generoTagsHero = document.getElementById('genero-tags-hero');
-            generoTagsHero.innerHTML = serie.genero.map(gen => 
-                `<span class="genero-tag">${gen}</span>`
-            ).join('');
-
-            // Cargar las temporadas
-            if (serie.temporadas) {
-                cargarTemporadas(serie.temporadas);
-            }
-        }
-
-        function cargarTemporadas(temporadas) {
+            // Cargar temporadas
             const temporadasContainer = document.getElementById('temporadas-container');
-            temporadasContainer.innerHTML = ''; // Limpiar el contenedor
+            temporadasContainer.innerHTML = ''; // Limpiar contenedor
 
-            temporadas.forEach(temporada => {
-                const temporadaElement = crearElementoTemporada(temporada);
-                temporadasContainer.appendChild(temporadaElement);
-            });
-        }
-
-        function crearElementoTemporada(temporada) {
-            const serieSeleccionada = JSON.parse(localStorage.getItem('serieSeleccionada'));
-            const miniaturaDefault = serieSeleccionada.miniatura_episodios || serieSeleccionada.imagen;
-            
-            const temporadaDiv = document.createElement('div');
-            temporadaDiv.className = 'temporada';
-            temporadaDiv.innerHTML = `
-                <div class="temporada-titulo">
-                    Temporada ${temporada.numero}
-                </div>
-                <div class="episodios" style="display: none;">
-                    ${temporada.episodios.map((episodio, index) => `
-                        <div class="episodio" data-url="${episodio.url}">
-                            <div class="episodio-numero">${episodio.numero}</div>
-                            <div class="episodio-thumbnail">
-                                <img src="${miniaturaDefault}" alt="Miniatura episodio ${episodio.numero}">
-                                <div class="play-overlay">
-                                    <i class="fas fa-play"></i>
-                                </div>
-                            </div>
-                            <div class="episodio-contenido">
-                                <div class="episodio-titulo">${episodio.titulo}</div>
-                                <div class="episodio-descripcion">${episodio.descripcion}</div>
-                            </div>
-                            <div class="episodio-duracion">${episodio.duracion}</div>
-                        </div>
-                    `).join('')}
-                </div>
-            `;
-
-            const tituloTemporada = temporadaDiv.querySelector('.temporada-titulo');
-            tituloTemporada.addEventListener('click', () => {
-                const episodios = temporadaDiv.querySelector('.episodios');
-                const estaActivo = temporadaDiv.classList.contains('active');
+            serie.temporadas.forEach(temporada => {
+                const temporadaElement = document.createElement('div');
+                temporadaElement.className = 'temporada';
                 
-                // Cerrar todas las temporadas
-                document.querySelectorAll('.temporada').forEach(t => {
-                    t.classList.remove('active');
-                    t.querySelector('.episodios').style.display = 'none';
+                temporadaElement.innerHTML = `
+                    <div class="temporada-titulo">
+                        Temporada ${temporada.numero}
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="episodios" style="display: none;">
+                        ${temporada.episodios.map(episodio => {
+                            const estaVisto = esCapituloVisto(serie.id, temporada.numero, episodio.numero);
+                            return `
+                                <div class="episodio ${estaVisto ? 'visto' : ''}" data-url="${episodio.url}" 
+                                     data-serie="${serie.id}" 
+                                     data-temporada="${temporada.numero}" 
+                                     data-episodio="${episodio.numero}">
+                                    <div class="episodio-thumbnail-container">
+                                        <div class="episodio-numero">${episodio.numero}</div>
+                                        <div class="episodio-thumbnail">
+                                            <img src="${episodio.imagen || serie.imagen}" alt="Episodio ${episodio.numero}">
+                                        </div>
+                                    </div>
+                                    <div class="episodio-contenido">
+                                        <div class="episodio-titulo">${episodio.titulo}</div>
+                                        <div class="episodio-descripcion">${episodio.descripcion}</div>
+                                    </div>
+                                    <div class="episodio-visto ${estaVisto ? 'visto' : ''}" 
+                                         title="Marcar como visto">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                `;
+
+                // Agregar eventos para marcar como visto
+                temporadaElement.addEventListener('click', (e) => {
+                    const episodioVisto = e.target.closest('.episodio-visto');
+                    if (episodioVisto) {
+                        e.stopPropagation();
+                        const episodio = episodioVisto.closest('.episodio');
+                        const serieId = episodio.dataset.serie;
+                        const temporadaNum = episodio.dataset.temporada;
+                        const episodioNum = episodio.dataset.episodio;
+                        
+                        const estaVisto = toggleCapituloVisto(serieId, temporadaNum, episodioNum);
+                        episodio.classList.toggle('visto', estaVisto);
+                        episodioVisto.classList.toggle('visto', estaVisto);
+                    }
                 });
 
-                // Abrir/cerrar la temporada actual
-                if (!estaActivo) {
-                    temporadaDiv.classList.add('active');
-                    episodios.style.display = 'block';
-                }
+                // Agregar evento click para expandir/colapsar temporada
+                const tituloTemporada = temporadaElement.querySelector('.temporada-titulo');
+                tituloTemporada.addEventListener('click', () => {
+                    const episodios = temporadaElement.querySelector('.episodios');
+                    const estaActivo = temporadaElement.classList.contains('active');
+                    
+                    // Cerrar todas las temporadas
+                    document.querySelectorAll('.temporada').forEach(t => {
+                        t.classList.remove('active');
+                        t.querySelector('.episodios').style.display = 'none';
+                    });
+
+                    // Abrir/cerrar la temporada actual
+                    if (!estaActivo) {
+                        temporadaElement.classList.add('active');
+                        episodios.style.display = 'block';
+                    }
+                });
+
+                temporadasContainer.appendChild(temporadaElement);
             });
 
-            return temporadaDiv;
+            // Modificar el manejo de click en episodios
+            document.querySelectorAll('.episodio').forEach(episodio => {
+                episodio.addEventListener('click', (e) => {
+                    if (!e.target.closest('.episodio-visto')) {
+                        const videoUrl = episodio.getAttribute('data-url');
+                        const episodioPlayer = document.getElementById('episodio-player');
+                        const episodiosPlayer = document.getElementById('episodios-player');
+
+                        // Silenciar el trailer cuando se reproduce un episodio
+                        muteTrailer();
+
+                        episodioPlayer.src = videoUrl;
+                        episodiosPlayer.classList.add('active');
+
+                        // Marcar como visto después de 30 segundos
+                        setTimeout(() => {
+                            const serieId = episodio.dataset.serie;
+                            const temporadaNum = episodio.dataset.temporada;
+                            const episodioNum = episodio.dataset.episodio;
+                            
+                            const estaVisto = toggleCapituloVisto(serieId, temporadaNum, episodioNum);
+                            episodio.classList.add('visto');
+                            episodio.querySelector('.episodio-visto').classList.add('visto');
+                        }, 30000);
+
+                        // Remover la clase 'playing' de todos los episodios
+                        document.querySelectorAll('.episodio').forEach(ep => ep.classList.remove('playing'));
+                        
+                        // Agregar la clase 'playing' al episodio actual
+                        episodio.classList.add('playing');
+                    }
+                });
+            });
         }
 
-        // Función para silenciar el trailer
-        function silenciarTrailer() {
-            const trailerPlayer = document.getElementById('trailer-player');
-            const soundToggle = document.getElementById('sound-toggle');
-            const soundIcon = soundToggle.querySelector('i');
-            
-            // Agregar mute=1 a la URL del trailer
-            let currentUrl = trailerPlayer.src;
-            if (!currentUrl.includes('&mute=1')) {
-                currentUrl += '&mute=1';
-                trailerPlayer.src = currentUrl;
-            }
-            
-            // Actualizar el ícono y el estado
-            soundIcon.className = 'fas fa-volume-mute';
-            isMuted = true;
-        }
-
-        document.addEventListener('click', function(e) {
-            if (e.target.closest('.episodio')) {
-                const episodio = e.target.closest('.episodio');
-                const videoUrl = episodio.getAttribute('data-url');
-                const episodioPlayer = document.getElementById('episodio-player');
-                const episodiosPlayer = document.getElementById('episodios-player');
-                
-                // Silenciar el trailer cuando se selecciona un episodio
-                silenciarTrailer();
-                
-                // Remover la clase 'playing' de todos los episodios
-                document.querySelectorAll('.episodio').forEach(ep => ep.classList.remove('playing'));
-                
-                // Agregar la clase 'playing' al episodio actual
-                episodio.classList.add('playing');
-                
-                // Mostrar el reproductor
-                episodiosPlayer.classList.add('active');
-                
-                // Actualizar el src del reproductor de episodios
-                episodioPlayer.src = videoUrl;
-                
-                // Desplazar la página hacia el reproductor de episodios
-                episodiosPlayer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Inicializar cuando se carga la página
+        document.addEventListener('DOMContentLoaded', () => {
+            inicializarSistemaVistas();
+            const serieSeleccionada = JSON.parse(localStorage.getItem('serieSeleccionada'));
+            if (serieSeleccionada) {
+                cargarInformacionSerie(serieSeleccionada);
             }
         });
 
