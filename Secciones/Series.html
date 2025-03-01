@@ -1070,6 +1070,7 @@
         // Función para organizar series por categorías
         function organizarPorCategorias(series) {
             const categorias = {
+                'mi_lista': { titulo: 'Mi Lista', series: [], mantenerOrden: false },
                 'accion': { titulo: 'Acción', series: [], mantenerOrden: false },
                 'crimen': { titulo: 'Robos y Asesinatos', series: [], mantenerOrden: false },
                 'suspenso': { titulo: 'Suspenso', series: [], mantenerOrden: false },
@@ -1123,40 +1124,34 @@
         // Función para mostrar series por categorías
         function mostrarSeriesPorCategorias(series) {
             const categoriasWrapper = document.querySelector('.categorias-wrapper');
+            if (!categoriasWrapper) return;
+
+            // Limpiar categorías existentes
             categoriasWrapper.innerHTML = '';
             
-            // Primero mostrar sección de favoritos si hay series favoritas
-            const seriesLiked = JSON.parse(localStorage.getItem('seriesLiked') || '[]');
+            // Mostrar Mi Lista primero
+            const miLista = JSON.parse(localStorage.getItem('miLista') || '[]');
             
-            if (seriesLiked.length > 0) {
-                const seriesFavoritas = series.filter(serie => 
-                    seriesLiked.includes(serie.titulo)
-                );
+            if (miLista.length > 0) {
+                const seccionMiLista = document.createElement('div');
+                seccionMiLista.className = 'categoria-seccion';
                 
-                if (seriesFavoritas.length > 0) {
-                    const seccionFavoritos = document.createElement('div');
-                    seccionFavoritos.className = 'categoria-seccion';
-                    
-                    seccionFavoritos.innerHTML = `
-                        <h2 class="categoria-titulo">
-                            Mis Favoritas <i class="fas fa-heart" style="color: var(--primary-color);"></i>
-                        </h2>
-                        <div class="categoria-contenedor">
-                            ${seriesFavoritas.map(serie => `
-                                <div class="movie-card" data-serie='${JSON.stringify(serie)}'>
-                                    ${serie.nuevo ? '<div class="new-badge">NUEVO</div>' : ''}
-                                    <img src="${serie.imagen}" alt="${serie.titulo}">
-                                    <div class="movie-info">
-                                        <h3>${serie.titulo}</h3>
-                                        <p>Año: ${serie.año}</p>
-                                    </div>
+                seccionMiLista.innerHTML = `
+                    <h2 class="categoria-titulo">Mi Lista <i class="fas fa-heart" style="color: #00ffff;"></i></h2>
+                    <div class="categoria-contenedor">
+                        ${miLista.map(serie => `
+                            <div class="movie-card" onclick="abrirSerie(${serie.id})">
+                                <img src="${serie.imagen || serie.miniatura_episodios}" alt="${serie.titulo}">
+                                <div class="movie-info">
+                                    <h3>${serie.titulo}</h3>
+                                    <p>${serie.año || ''}</p>
                                 </div>
-                            `).join('')}
-                        </div>
-                    `;
-                    
-                    categoriasWrapper.appendChild(seccionFavoritos);
-                }
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                
+                categoriasWrapper.insertBefore(seccionMiLista, categoriasWrapper.firstChild);
             }
             
             const categorias = organizarPorCategorias(series);
@@ -1170,7 +1165,7 @@
                         <h2 class="categoria-titulo">${categoria.titulo}</h2>
                         <div class="categoria-contenedor">
                             ${categoria.series.map(serie => `
-                                <div class="movie-card" data-serie='${JSON.stringify(serie)}'>
+                                <div class="movie-card" onclick="abrirSerie(${serie.id})">
                                     ${serie.nuevo ? '<div class="new-badge">NUEVO</div>' : ''}
                                     <img src="${serie.imagen}" alt="${serie.titulo}">
                                     <div class="movie-info">
@@ -1611,43 +1606,63 @@
         }
 
         function cargarCategorias() {
-            // Añadir sección de favoritos al principio
+            const mainContent = document.querySelector('.main-content');
+            mainContent.innerHTML = ''; // Limpiar contenido existente
+            
+            // Cargar Mi Lista primero
             const seriesLiked = JSON.parse(localStorage.getItem('seriesLiked') || '[]');
             
             if (seriesLiked.length > 0) {
-                const favoritosHTML = `
-                    <div class="categoria">
-                        <h2 class="categoria-titulo">Mis Favoritas</h2>
+                const miListaHTML = `
+                    <div class="categoria-seccion">
+                        <h2 class="categoria-titulo">Mi Lista</h2>
                         <div class="categoria-contenedor">
-                            ${todasLasSeries
-                                .filter(serie => seriesLiked.includes(serie.titulo))
-                                .map(serie => `
-                                    <div class="movie-card" data-serie='${JSON.stringify(serie)}'>
-                                        <img src="${serie.imagen}" alt="${serie.titulo}">
-                                        <div class="movie-info">
-                                            <h3>${serie.titulo}</h3>
-                                            <span>${serie.año}</span>
-                                        </div>
+                            ${seriesLiked.map(serie => `
+                                <div class="movie-card" onclick="mostrarSerie(${JSON.stringify(serie)})">
+                                    <img src="${serie.imagen}" alt="${serie.titulo}">
+                                    <div class="movie-info">
+                                        <h3>${serie.titulo}</h3>
+                                        <p>${serie.año || ''}</p>
                                     </div>
-                                `).join('')}
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
                 `;
-
-                const mainContent = document.querySelector('.main-content');
-                mainContent.insertAdjacentHTML('afterbegin', favoritosHTML);
+                mainContent.insertAdjacentHTML('beforeend', miListaHTML);
             }
 
-            // Resto del código de categorías...
+            // ... resto del código de categorías ...
         }
 
-        // Actualizar la lista de favoritos cuando se modifica
-        window.addEventListener('storage', (e) => {
-            if (e.key === 'seriesLiked') {
-                // Recargar la página para actualizar favoritos
-                location.reload();
+        // Escuchar cambios en Mi Lista
+        window.addEventListener('seriesListaActualizada', () => {
+            cargarCategorias();
+        });
+
+        // Recargar categorías cuando se actualiza Mi Lista
+        window.addEventListener('storage', function(e) {
+            if (e.key === 'miLista') {
+                console.log("Actualizando Mi Lista");
+                mostrarSeriesPorCategorias(series);
             }
         });
+
+        // Agregar esta nueva función para manejar la apertura de series
+        function abrirSerie(serieId) {
+            fetch('../DataBase/series.json')
+                .then(response => response.json())
+                .then(data => {
+                    const serie = data.series.find(s => s.id === serieId);
+                    if (serie) {
+                        localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
+                        window.location.href = 'serie.html';
+                    } else {
+                        console.error('Serie no encontrada');
+                    }
+                })
+                .catch(error => console.error('Error al cargar la serie:', error));
+        }
     </script>
 </body>
 </html>

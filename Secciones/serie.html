@@ -766,6 +766,47 @@
                 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             }
         }
+
+        .agregar-lista-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .agregar-lista-btn:hover {
+            background: var(--primary-color);
+            color: black;
+        }
+
+        .agregar-lista-btn i {
+            font-size: 1.2rem;
+        }
+
+        .agregar-lista-btn.en-lista {
+            background: var(--primary-color);
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .agregar-lista-btn {
+                top: 10px;
+                right: 10px;
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -804,6 +845,10 @@
     </div>
 
     <div class="container">
+        <button class="agregar-lista-btn" id="agregarLista">
+            <i class="fas fa-plus"></i>
+            <span>Mi Lista</span>
+        </button>
         <div class="episodios-player" id="episodios-player">
             <iframe id="episodio-player" src="" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -1003,6 +1048,89 @@
 
         // Modificar la función de cargar información de serie
         function cargarInformacionSerie(serie) {
+            console.log("Cargando serie:", serie); // Debug
+
+            // Verificar si la serie es válida
+            if (!serie || !serie.titulo) {
+                console.error("Serie no válida:", serie);
+                return;
+            }
+
+            // Asegurarse de que el contenedor existe
+            const container = document.querySelector('.container');
+            if (!container) {
+                console.error("No se encontró el contenedor");
+                return;
+            }
+
+            // Crear o actualizar el botón de Mi Lista
+            let btnAgregarLista = document.getElementById('agregarLista');
+            if (!btnAgregarLista) {
+                btnAgregarLista = document.createElement('button');
+                btnAgregarLista.id = 'agregarLista';
+                btnAgregarLista.className = 'agregar-lista-btn';
+                container.insertBefore(btnAgregarLista, container.firstChild);
+            }
+
+            // Función para verificar si la serie está en Mi Lista
+            function estaEnMiLista(serie) {
+                const miLista = JSON.parse(localStorage.getItem('miLista') || '[]');
+                return miLista.some(item => 
+                    item.id === serie.id || 
+                    item.titulo === serie.titulo
+                );
+            }
+
+            // Función para actualizar el botón
+            function actualizarBoton() {
+                const enLista = estaEnMiLista(serie);
+                btnAgregarLista.className = `agregar-lista-btn ${enLista ? 'en-lista' : ''}`;
+                btnAgregarLista.innerHTML = enLista ? 
+                    `<i class="fas fa-check"></i><span>En Mi Lista</span>` :
+                    `<i class="fas fa-plus"></i><span>Mi Lista</span>`;
+            }
+
+            // Manejar clic en el botón
+            btnAgregarLista.onclick = function() {
+                let miLista = JSON.parse(localStorage.getItem('miLista') || '[]');
+                const enLista = estaEnMiLista(serie);
+
+                if (!enLista) {
+                    // Crear objeto de serie limpio
+                    const serieLimpia = {
+                        id: serie.id || Date.now(), // Usar timestamp como ID si no existe
+                        titulo: serie.titulo,
+                        imagen: serie.imagen || serie.miniatura_episodios,
+                        año: serie.año,
+                        genero: serie.genero,
+                        descripcion: serie.descripcion
+                    };
+
+                    miLista.push(serieLimpia);
+                    console.log("Serie agregada:", serieLimpia);
+                } else {
+                    miLista = miLista.filter(item => 
+                        item.id !== serie.id && 
+                        item.titulo !== serie.titulo
+                    );
+                    console.log("Serie eliminada:", serie.titulo);
+                }
+
+                localStorage.setItem('miLista', JSON.stringify(miLista));
+                actualizarBoton();
+
+                // Notificar cambio
+                const evento = new Event('storage');
+                evento.key = 'miLista';
+                window.dispatchEvent(evento);
+
+                // Mostrar feedback
+                alert(enLista ? 'Eliminado de Mi Lista' : 'Agregado a Mi Lista');
+            };
+
+            // Actualizar estado inicial del botón
+            actualizarBoton();
+
             // Verificar si la serie tiene temporadas
             if (!serie.temporadas || serie.temporadas.length === 0) {
                 mostrarModalEnProceso(serie);
