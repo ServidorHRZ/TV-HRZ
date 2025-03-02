@@ -1,12 +1,30 @@
 {
   "series": [
+    {
+      "id": 999,
+      "titulo": "Yo Soy Betty, la Fea",
+      "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iEBOiXiDGaxVR6w8aKgG5MEusuO.jpg",
+      "disponible": false,
+      "nuevo": true,
+      "badge": "Recién agregada",
+      "enProceso": false,
+      "descripcion": "Betty Pinzón es una economista brillante pero poco agraciada que consigue trabajo como secretaria en Ecomoda, una prestigiosa empresa de moda. A pesar de su inteligencia y dedicación, debe enfrentarse diariamente a las burlas y el rechazo por su apariencia, mientras se enamora secretamente de su jefe Armando Mendoza.",
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FiEBOiXiDGaxVR6w8aKgG5MEusuO.jpg&w=256&q=75",
+      "año": 1999,
+      "genero": "novelas",
+      "director": "Mario Ribero Ferreira",
+      "actores": ["Ana María Orozco", "Jorge Enrique Abello", "Natalia Ramírez", "Lorna Paz", "Luis Mesa", "Julián Arango", "Mario Duarte"],
+      "trailer": "https://www.youtube.com/embed/JNKt_GQkHfg",
+      "temporadas": []
+    },
     
     {
       "id": 33,
       "titulo": "Tu amigo y vecino Spider-Man",
       "miniatura_episodios": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FaSe4aB8tiPQMoQt9B4SKFgIymwL.jpg&w=256&q=75",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
+      "badge": "Recien agregado",
       "enProceso": false,
       "descripcion": "Peter Parker, un estudiante de secundaria, adquiere increíbles poderes arácnidos después de ser mordido por una araña radiactiva. Ahora debe aprender a equilibrar su vida normal con su rol como el superhéroe Spider-Man mientras protege Nueva York.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FaSe4aB8tiPQMoQt9B4SKFgIymwL.jpg&w=256&q=75",
@@ -22,6 +40,7 @@
       "titulo": "MacGyver",
       "disponible": false,
       "nuevo": true,
+      "badge": "Recien agregado", 
       "enProceso": false,
       "descripcion": "Un joven Angus MacGyver trabaja para una organización gubernamental secreta, utilizando su extraordinario talento para resolver problemas y su vasto conocimiento científico para salvar vidas.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BYTlkNWFiMmYtYjNhYS00Yjk0LWJmZDQtZDUzMzg0MmUzYmU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
@@ -30,13 +49,167 @@
       "director": "Peter M. Lenkov",
       "actores": ["Lucas Till", "Tristin Mays", "Justin Hires", "George Eads"],
       "trailer": "https://www.youtube.com/embed/PjOtIY6-Wys",
-      "temporadas": []
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "El Renacimiento",
+              "descripcion": "MacGyver es reclutado por una organización secreta para usar sus extraordinarias habilidades de resolución de problemas para salvar vidas.",
+              "duracion": "45:00",
+              "url": "https://nuuuppp.biz/wathcpremium/FZee06f2m7vRVJZDPCq3A3jz3gT0N7kz7EOf9c07kz7rIr7Yzr4Q?h="
+            },
+            {
+              "numero": 2,
+              "titulo": "Metal Afilado",
+              "descripcion": "MacGyver debe recuperar un arma peligrosa de un grupo terrorista.",
+              "duracion": "45:00",
+              "url": "https://nuuuppp.biz/watchpremium/Ks67kz7BTQC5FoerQar7kz7iI6bKpZ3iK0fRAN77kz71V2Tb8zTs?h="
+            },
+            {
+              "numero": 3,
+              "titulo": "Destornillador",
+              "descripcion": "El equipo intenta evitar un ataque biológico en un laboratorio.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1ghi789xyz/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Alambre",
+              "descripcion": "MacGyver debe rescatar a un científico secuestrado.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1jkl012xyz/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Pinza",
+              "descripcion": "El equipo investiga el robo de tecnología militar.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1mno345xyz/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Llave Inglesa",
+              "descripcion": "MacGyver se infiltra en una organización criminal.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1pqr678xyz/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Puede de Aerosol",
+              "descripcion": "El equipo debe detener un ciberataque masivo.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1stu901xyz/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Cinta Adhesiva",
+              "descripcion": "MacGyver persigue a un asesino en serie.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1vwx234xyz/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Chisel",
+              "descripcion": "El equipo protege a un testigo clave.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1yza567xyz/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Martillo",
+              "descripcion": "MacGyver debe desactivar una bomba en un edificio.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1bcd890xyz/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Sierra",
+              "descripcion": "El equipo investiga una serie de explosiones.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1efg123xyz/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Tijeras",
+              "descripcion": "MacGyver se enfrenta a un antiguo enemigo.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1hij456xyz/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Navaja",
+              "descripcion": "El equipo debe proteger un convoy militar.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1klm789xyz/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "Alicates",
+              "descripcion": "MacGyver se infiltra en una base enemiga.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1nop012xyz/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "Clip",
+              "descripcion": "El equipo persigue a un ladrón de datos.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1qrs345xyz/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Goma Elástica",
+              "descripcion": "MacGyver debe rescatar rehenes.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1tuv678xyz/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "Brújula",
+              "descripcion": "El equipo busca un arma robada.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1wxy901xyz/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "Batería",
+              "descripcion": "MacGyver enfrenta una amenaza nuclear.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1zab234xyz/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "Encendedor",
+              "descripcion": "El equipo persigue a un traficante de armas.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1cde567xyz/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "Linterna",
+              "descripcion": "MacGyver debe detener un ataque terrorista.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1fgh890xyz/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "Caja de Herramientas",
+              "descripcion": "El equipo enfrenta su misión más peligrosa hasta ahora.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1ijk123xyz/preview"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 31,
       "titulo": "Berlin",
       "disponible": false,
       "nuevo": true,
+      "badge": "Recien agregado",
       "enProceso": true,
       "descripcion": "Antes de los eventos de La Casa de Papel, Berlin y un grupo de expertos ladrones planean uno de los atracos más ambiciosos de su carrera en París.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BYjEwNjFmNjMtMGYzNy00MzBiLWJlYjAtMGJjNTEwZGFhMjNlXkEyXkFqcGc@._V1_QL75_UY281_CR18,0,190,281_.jpg",
@@ -50,17 +223,115 @@
     {
       "id": 30,
       "titulo": "La Casa de Papel",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
+      "badge": "Recien agregado", 
       "enProceso": true,
       "descripcion": "Un grupo de criminales liderados por El Profesor planean los mayores atracos de la historia, primero en la Fábrica Nacional de Moneda y Timbre y luego en el Banco de España.",
       "imagen": "https://www.aceprensa.com/wp-content/uploads/2019/08/71446-1-683x1024.jpg",
       "año": 2017,
-      "genero": ["Crimen", "Drama", "Suspenso"],
+      "genero": "accion",
       "director": "Álex Pina",
       "actores": ["Úrsula Corberó", "Álvaro Morte", "Itziar Ituño", "Pedro Alonso"],
       "trailer": "https://www.youtube.com/embed/3y-6iaveY6c",
-      "temporadas": []
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Efectuar lo acordado",
+              "descripcion": "El Profesor recluta a ocho personas con ciertas habilidades para llevar a cabo un gran atraco a la Fábrica Nacional de Moneda y Timbre.",
+              "duracion": "47:00",
+              "url": "https://drive.google.com/file/d/167fUZrKuUwc39TLgWRB4HJoxQ62asFpQ/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Imprudencias letales", 
+              "descripcion": "Los atracadores toman el control de la Fábrica y mantienen a los rehenes mientras el Profesor manipula a la policía.",
+              "duracion": "41:00",
+              "url": "https://drive.google.com/file/d/1zh1Rndl4eXyYKG7zDFOtRLBW4MXf4vtW/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Errar al disparar",
+              "descripcion": "Tokio y Berlín discuten sobre el liderazgo mientras la inspectora Raquel Murillo busca pistas sobre el Profesor.",
+              "duracion": "51:00", 
+              "url": "https://drive.google.com/file/d/1fbiz7VJXKQxkhwC0yeyEo_3vbxtlg-93/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Caballo de Troya",
+              "descripcion": "La policía identifica a uno de los atracadores. Denver lucha con un dilema personal dentro de la Fábrica.",
+              "duracion": "51:00",
+              "url": "https://drive.google.com/file/d/1qmxy6LvCwatwiTYF9MCz3occ-zsSrKwm/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "El día de la marmota",
+              "descripcion": "El Profesor enfrenta su primer gran desafío mientras los atracadores se preparan para la llegada de un grupo especial de la policía.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1OPfWbSheNrvhhh8Z364KcuCs6C7LmlCN/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "La cálida Guerra Fría",
+              "descripcion": "Raquel entra en el juego del gato y el ratón con el Profesor mientras la tensión aumenta dentro de la Fábrica.",
+              "duracion": "44:00",
+              "url": "https://drive.google.com/file/d/1RAU8Av2UdHpPHFtFyezDF_bjTT6qs8cM/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Refrigerada inestabilidad",
+              "descripcion": "La relación entre Berlín y Río se vuelve violenta, mientras Mónica toma una decisión que lo cambia todo.",
+              "duracion": "48:00",
+              "url": "https://drive.google.com/file/d/1JE_cpha5Rqkc-uxAWb4YSAhZYTx4W3Jr/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Tú lo has buscado",
+              "descripcion": "La policía descubre un punto débil en el plan del Profesor mientras los atracadores lidian con problemas personales.",
+              "duracion": "44:00",
+              "url": "https://drive.google.com/file/d/1-F_ls3wz7bFlL9gg_YvD30TNwxo2dV28/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "El que la sigue la consigue",
+              "descripcion": "El Profesor revela detalles de su pasado mientras los atracadores preparan su siguiente movimiento.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1ca8A7WZHVZYsLlEcg7EILNQxBDAM3zcp/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Se acabaron las máscaras",
+              "descripcion": "Raquel hace un descubrimiento impactante mientras los atracadores enfrentan una crisis interna.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1L2STQLvac132JuvksZWF4R445gMNd6-5/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "La cabeza del plan",
+              "descripcion": "El plan del Profesor enfrenta su mayor amenaza mientras los atracadores luchan por mantener el control.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1QvUUt-v223IGMrAirN4pNLvLn042TrFh/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Cuestión de eficacia",
+              "descripcion": "La tensión llega a su punto máximo cuando los atracadores deben tomar decisiones cruciales.",
+              "duracion": "44:00",
+              "url": "https://drive.google.com/file/d/1Kv4JYG0q0AYs95SAIfuslkxA9ifJpULI/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "¿Qué hemos hecho?",
+              "descripcion": "El atraco llega a su momento decisivo mientras secretos y traiciones salen a la luz.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/167fUZrKuUwc39TLgWRB4HJoxQ62asFpQ/preview"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 233,
@@ -354,7 +625,7 @@
       "descripcion": "Dexter Morgan, un experto forense en sangre para el departamento de policía de Miami, lleva una vida secreta como asesino en serie, pero con un giro: solo mata a otros asesinos que han eludido la justicia.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fq8dWfc4JwQuv3HayIZeO84jAXED.jpg&w=256&q=75",
       "año": 2006,
-      "genero": "crimen",
+      "genero": "accion",
       "director": "James Manos Jr.",
       "actores": ["Michael C. Hall", "Jennifer Carpenter", "David Zayas", "James Remar", "Julie Benz"],
       "trailer": "https://www.youtube.com/embed/YQeUmSD1c3g",
@@ -369,7 +640,7 @@
       "descripcion": "Ambientada 10 años después de que Dexter desapareciera en el ojo del huracán Laura, la serie lo encuentra viviendo con un nombre falso en la pequeña ciudad de Iron Lake, Nueva York.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9EBKgrFIsCFSV1RZKWhYUdbtGiv.jpg&w=256&q=75",
       "año": 2021,
-      "genero": "crimen",
+      "genero": "accion",
       "director": "Clyde Phillips",
       "actores": ["Michael C. Hall", "Jack Alcott", "Julia Jones", "Johnny Sequoyah", "Alano Miller"],
       "trailer": "https://www.youtube.com/embed/M9Ymon5YFgk",
@@ -394,7 +665,7 @@
             {
               "numero": 3,
               "titulo": "Señales de humo",
-              "descripcion": "Dexter lucha por reconectarse con Harrison mientras investiga otro desaparecido. Angela y Molly se unen para investigar un caso sin resolver.", 
+              "descripcion": "Dexter lucha por reconectarse con Harrison mientras investiga otro desaparecido. Angela y Molly se unen para investigar un caso sin resolver.",
               "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1Emb4bnE0o3CMqGDupwg-34fwlIcjzsdV/preview"
             },
@@ -460,7 +731,7 @@
       "descripcion": "En 1991, Miami. Dexter Morgan pasa de ser estudiante a ser un asesino en serie vengador, ya que sus impulsos sanguinarios no pueden ignorarse y debe aprender a canalizar su oscuridad interior. Un desafío particular para el joven Dexter, que comienza una pasantía forense en el Departamento de Policía Metropolitana de Miami.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9XLULEZTkeLwRytTUQtgmx2HH4o.jpg&w=256&q=75",
       "año": 2024,
-      "genero": "crimen",
+      "genero": "accion",
       "director": "Marcos Siega",
       "actores": ["Michael C. Hall", "Jack Alcott", "Julia Jones", "Johnny Sequoyah", "Alano Miller"],
       "trailer": "https://www.youtube.com/embed/S7U8e2TiwYU",
@@ -523,7 +794,7 @@
       "descripcion": "El Dr. Gregory House, un genio de la medicina poco convencional y antisocial, lidera un equipo de diagnóstico en el hospital universitario Princeton-Plainsboro. A pesar de su actitud sarcástica y sus métodos poco ortodoxos, House resuelve los casos médicos más complejos y misteriosos.",
       "imagen": "https://image.tmdb.org/t/p/original/lW7MvZ4m49IUj2UrUu4z0xVVl81.jpg",
       "año": 2004,
-      "genero": "drama",
+      "genero": "suspenso",
       "director": "David Shore",
       "actores": ["Hugh Laurie", "Lisa Edelstein", "Omar Epps", "Robert Sean Leonard", "Jennifer Morrison"],
       "trailer": "https://www.youtube.com/embed/1nqW4g_S0wo",
@@ -885,34 +1156,204 @@
         }
       ]
     },
+
     {
       "id": 27,
       "titulo": "Arrow",
-      "disponible": false,
+      "badge": "Recien agregado",
+      "disponible": true,
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Después de un naufragio que lo dejó varado en una isla durante cinco años, Oliver Queen regresa a casa convertido en un experto arquero para luchar contra el crimen y la corrupción en Ciudad Starling.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gKG5QGz5Ngf8fgWpBsWtlg5L2SF.jpg",
       "año": 2012,
-      "genero": "dc",
+      "genero": "superheroes",
       "director": "Greg Berlanti",
       "actores": ["Stephen Amell", "Katie Cassidy", "David Ramsey"],
-      "trailer": "https://www.youtube.com/embed/hTv13EjlLNg",
-      "temporadas": []
+      "trailer": "https://www.youtube.com/embed/uFdqDMxlx88",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Piloto",
+              "descripcion": "Oliver Queen regresa a Starling City después de estar perdido en una isla durante 5 años.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1GesLGwnUq_OU0se7WobpxX6dCtSOj2jq/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Honor Thy Father",
+              "descripcion": "Oliver se enfrenta a Martin Somers mientras intenta reconectar con su familia.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1NhzPGP5b7yAqk0Sn4t-p_FV1d8dAh0Me/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Lone Gunmen",
+              "descripcion": "Oliver enfrenta a un asesino misterioso que está eliminando a sus objetivos.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1d5ylCl_sUDgwtJMpETArqinsNbct-EsD/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "An Innocent Man",
+              "descripcion": "Oliver ayuda a un hombre inocente condenado por asesinato.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/155Ude8pgBLYVgffxHZ05oST6bC8WAfvW/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Damaged",
+              "descripcion": "Oliver es arrestado por sospecha de ser el vigilante.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1MZ7EtgrS3pBT-sd8vhyZb8aoKDTnviE7/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Legacies",
+              "descripcion": "Una familia de ladrones de bancos pone a prueba la determinación de Oliver.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1Bm9Q1rgSiiQoycFNAbvhH-LXEdkokAVZ/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Muse of Fire",
+              "descripcion": "Oliver conoce a Helena Bertinelli y descubre su misión de venganza.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1VZewefxyyHzlvOBMDKVEdWmbfwHKGvVb/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Vendetta",
+              "descripcion": "Oliver entrena a Helena en el arte de la venganza controlada.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1QikO_uTnNe9C4vCYcIn5NJFsmv28avID/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Year's End",
+              "descripcion": "Un nuevo arquero aparece en la ciudad imitando los crímenes de Oliver.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1iWA9ipoIniiZBQSL3XUN0DOEfsZ_Shsi/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Burned",
+              "descripcion": "Oliver enfrenta a un bombero vengativo mientras recupera su confianza.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1ZqTSdR8IHb7tYflY_gSjPlXJpJQE_eTa/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "Trust but Verify",
+              "descripcion": "Oliver investiga a un ex militar conectado con Diggle.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1m6XyhhWIaRETp0iB6cRacB159eRivs5x/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Vertigo",
+              "descripcion": "Oliver busca al distribuidor de una nueva droga peligrosa.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1XJ-rymRBVoGWL_B2KEZvGvdxSFDuETCm/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Betrayal",
+              "descripcion": "Oliver descubre una conspiración que involucra a Moira.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1b-rUMLJGajoSjL86k7y56YF125Rgq7ev/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "The Odyssey",
+              "descripcion": "Felicity descubre el secreto de Oliver mientras él lucha por su vida.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1K1UlyXbNFSyqSukfYzh06NSW1tIzNFqp/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "Dodger",
+              "descripcion": "Oliver persigue a un ladrón de joyas que usa collares explosivos.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1laDs4_SZLc3t9obPmlXqLdWnv4N6K9Hh/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Dead to Rights",
+              "descripcion": "Malcolm Merlyn es el objetivo de un asesino profesional.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1NE_9wW1yCtxFazrUbW6ubDIvKLgZ8KdA/preview"
+            },
+            {
+              "numero": 17,
+              "titulo": "The Huntress Returns",
+              "descripcion": "Helena regresa a Starling City en busca de venganza.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/16RBqVED3GJnYn6wEwhzmaZ1kr96mnUfO/preview"
+            },
+            {
+              "numero": 18,
+              "titulo": "Salvation",
+              "descripcion": "Un justiciero vigilante comienza a ejecutar criminales en vivo por internet.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1-vCSyiM3uT7wS5wqO3sZCFfFWUXgjepl/preview"
+            },
+            {
+              "numero": 19,
+              "titulo": "Unfinished Business",
+              "descripcion": "El Conde Vertigo regresa mientras Tommy enfrenta problemas en el club.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/16JuiBH7qwRwgCu2KB93yYbXiVip9iDfd/preview"
+            },
+            {
+              "numero": 20,
+              "titulo": "Home Invasion",
+              "descripcion": "Oliver debe elegir entre ayudar a Laurel o detener a un asesino.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1Wxw4iQKAtXl6S440rEvaHiJLNymONplD/preview"
+            },
+            {
+              "numero": 21,
+              "titulo": "The Undertaking",
+              "descripcion": "Oliver descubre la verdad sobre la desaparición de su padre.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1U2GVdJ_OxtrBPFFghXlbXai6Fnrf7fLS/preview"
+            },
+            {
+              "numero": 22,
+              "titulo": "Darkness on the Edge of Town",
+              "descripcion": "Oliver y Diggle intentan descubrir el plan maestro de Malcolm.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/10avTMQfJqkxiV_SoQ1bQTHDJWd_CKa3O/preview"
+            },
+            {
+              "numero": 23,
+              "titulo": "Sacrifice",
+              "descripcion": "Oliver enfrenta a Malcolm Merlyn en una batalla final por Starling City.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1V16BOUHB3HSU-HljJaTutRP-tfdgqYkJ/preview"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 28,
       "titulo": "Supergirl",
-      "disponible": false,
+      "badge": "Recien agregado",
+      "disponible": true,
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Las aventuras de Kara Zor-El, la prima de Superman, quien después de 12 años ocultando sus poderes debe aprender a aceptar sus habilidades para convertirse en una heroína.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vqBsgL9nd2v04ZvCqPzwtckDdFD.jpg",
       "año": 2015,
-      "genero": "dc",
+      "genero": "superheroes",
       "director": "Greg Berlanti",
       "actores": ["Melissa Benoist", "Chyler Leigh", "David Harewood"],
-      "trailer": "https://www.youtube.com/embed/VxfFBr-GoJI",
+      "trailer": "https://www.youtube.com/embed/NXAWqPKXG4E",
       "temporadas": [
         {
           "numero": 1,
@@ -1064,17 +1505,136 @@
     {
       "id": 29,
       "titulo": "Legends of Tomorrow",
-      "disponible": false,
+      "badge": "Recien agregado", 
+      "disponible": true,
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Un grupo de héroes y villanos deben trabajar juntos cuando son reclutados por el Maestro del Tiempo para viajar a través del tiempo y evitar una catástrofe que podría afectar no solo a la Tierra, sino a todo el tiempo en sí.",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfpogpu-W-S62wyIUE2fQ9W3cFtt71v9vk0A&s",
       "año": 2016,
-      "genero": "dc",
+      "genero": "superheroes",
       "director": "Greg Berlanti",
       "actores": ["Caity Lotz", "Brandon Routh", "Dominic Purcell"],
-      "trailer": "https://www.youtube.com/embed/9yxGd_X11pU",
-      "temporadas": []
+      "trailer": "https://www.youtube.com/embed/H_G6yyibN9g",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Piloto, Parte 1",
+              "descripcion": "Rip Hunter recluta a un equipo de héroes y villanos para salvar el mundo.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1abc123xyz/preview"
+            },
+            {
+              "numero": 2, 
+              "titulo": "Piloto, Parte 2",
+              "descripcion": "El equipo viaja a 1975 para encontrar al Dr. Aldus Boardman.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1def456xyz/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Sangre y Vínculos",
+              "descripcion": "El equipo persigue a Vandal Savage en Noruega.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1ghi789xyz/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Guerreros Blancos",
+              "descripcion": "El equipo viaja a la URSS durante la Guerra Fría.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1jkl012xyz/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Fracaso es una Opción",
+              "descripcion": "Ray y Sara se infiltran en un banco en los años 50.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1mno345xyz/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Star City 2046",
+              "descripcion": "El equipo llega a una versión post-apocalíptica de Star City.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1pqr678xyz/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Marooned",
+              "descripcion": "La Waverider es atacada por piratas espaciales.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1stu901xyz/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Noche de los Halcones",
+              "descripcion": "El equipo viaja al Antiguo Egipto.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1vwx234xyz/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Left Behind",
+              "descripcion": "Ray, Sara y Kendra quedan varados en 1958.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1yza567xyz/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Progenie",
+              "descripcion": "El equipo protege a una joven Per Degaton.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1bcd890xyz/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "El Magnífico Ocho",
+              "descripcion": "Las Leyendas se encuentran en el Viejo Oeste.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1efg123xyz/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Último Refugio",
+              "descripcion": "El equipo es perseguido por los Cazadores del Tiempo.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1hij456xyz/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Leviathan",
+              "descripcion": "El equipo llega a un Londres futurista controlado por Savage.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1klm789xyz/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "Río del Tiempo",
+              "descripcion": "Rip lleva al equipo a un lugar seguro en el flujo temporal.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1nop012xyz/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "Destino",
+              "descripcion": "El equipo descubre la verdad sobre los Maestros del Tiempo.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1qrs345xyz/preview"
+            },
+            {
+              "numero": 16,
+              "titulo": "Leyendas",
+              "descripcion": "El equipo tiene su confrontación final con Vandal Savage.",
+              "duracion": "42:00",
+              "url": "https://drive.google.com/file/d/1tuv678xyz/preview"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 1,
@@ -1085,7 +1645,7 @@
       "descripcion": "Barry Allen es un investigador forense que adquiere super velocidad después de que un rayo lo alcanza durante un accidente en un acelerador de partículas.",
       "imagen": "https://www.themoviedb.org/t/p/original/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg",
       "año": 2014,
-      "genero": "dc",
+      "genero": "superheroes",
       "director": "Greg Berlanti, Geoff Johns, Andrew Kreisberg",
       "actores": ["Grant Gustin", "Candice Patton", "Danielle Panabaker"],
       "trailer": "https://www.youtube.com/embed/y3-fSjatd8s",
@@ -1263,6 +1823,7 @@
       "titulo": "Mr. Robot",
       "nuevo": false,
       "disponible": true,
+      "badge": "Nuevos Capitulos",
       "enProceso": true,
       "descripcion": "Un joven programador que trabaja como ingeniero de seguridad informática de día y como hacker vigilante de noche se ve envuelto en una compleja trama de ciberterrorismo.",
       "imagen": "https://www.themoviedb.org/t/p/original/oKIBhzZzDX07SoE2bOLhq2EE8rf.jpg",
@@ -1433,6 +1994,81 @@
               "descripcion": "El plan de la Dark Army llega a su clímax con consecuencias devastadoras.",
               "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1kJ1luP75r9rmcbwqexmHuad547M8wT6t/preview"
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "eps3.0_power-saver-mode.h",
+              "descripcion": "Elliot intenta recuperarse después de recibir un disparo mientras Mr. Robot desaparece.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1Q4wwwNrR8fz3ZkTUFmZmouc2IJHxLkon/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "eps3.1_undo.gz",
+              "descripcion": "Darlene se enfrenta a sus demonios mientras Elliot sigue una pista sobre la Fase 2.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/144rIReuFWmJUBfjl7NEVk-MWZJ3UF1co/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "eps3.2_legacy.so",
+              "descripcion": "El pasado de Tyrell Wellick es revelado mientras la Fase 2 toma forma.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1GntnkdmdDgnlgxXJ5XYRStG1dNO-Jz4_/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "eps3.3_m3tadata.chk",
+              "descripcion": "Dom y la FBI se acercan mientras Elliot intenta salvar a E Corp.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1wP4VTG89qfzHXjZ3dngz47pbXalEb8yH/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "eps3.4_runtime-err0r.r00",
+              "descripcion": "Elliot corre contra el tiempo para evitar un desastre en E Corp.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1vWtZ3mQQSoW1U_LbUBDmRm4PIeVMJHG9/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "eps3.5_kill-pr0cess.inc",
+              "descripcion": "Elliot intenta detener la Fase 2 mientras Mr. Robot toma el control.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1ahlcASJYle2EooC4Inji3P7Fj3VB1HEA/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "eps3.6_fredrick+tanya.chk",
+              "descripcion": "Un nuevo plan emerge mientras Elliot lucha por recuperar el control.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1V6dCTuKe9tm-D7IXyZA7uOuTFQwd8kSF/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "eps3.7_dont-delete-me.ko",
+              "descripcion": "Elliot intenta hacer las paces con su pasado mientras enfrenta su futuro.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1urw21u1TudE-q2WyIsuUWbqnP9mfV8Uh/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "eps3.8_stage3.torrent",
+              "descripcion": "La verdad sobre la Fase 2 es revelada mientras nuevos secretos salen a la luz.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1l7cuuSL452JOHy1jl0zIHgEhYAEXOBjs/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "eps3.9_shutdown-r",
+              "descripcion": "Elliot y Mr. Robot enfrentan las consecuencias de sus acciones.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1XSFnOI3E6g6xfh6eD9SLmpbKfgdIahf3/preview"
             }
           ]
         }
@@ -1786,7 +2422,7 @@
       "genero": "animacion",
       "director": "Van Partible",
       "actores": ["Jeff Bennett", "Brenda Vaccaro", "Mae Whitman"],
-      "trailer": "https://drive.google.com/file/d/1Kzs3WckpuFRHxtY7BNu7nn2pR63srIAs/preview",
+      "trailer": "https://drive.google.com/file/d/1Kzs3WckpuFRHxtY7BNu7nn2pR63srIAs/view",
       "temporadas": [
         {
           "numero": 1,

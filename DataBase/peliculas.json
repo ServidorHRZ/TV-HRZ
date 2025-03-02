@@ -1,8 +1,42 @@
 {
   "peliculas": [
     {
+      "titulo": "Mi Vecino es un Espía",
+      "disponible": true,
+      "badge": "Recién agregado",
+      "año": 2010,
+      "genero": "familiar",
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FzNWvZMPg7DcRDfn53nwFEevMhI1.jpg&w=256&q=75",
+      "enlace": "https://drive.google.com/file/d/1E2y73JHXgVAF2AND27YJCdqjJ_yAhPVe/preview",
+      "nuevo": true,
+      "descripcion": "Un agente secreto retirado debe proteger a los hijos de su novia mientras lidia con criminales peligrosos que lo buscan por un dispositivo secreto. Entre pañales y villanos, deberá demostrar que puede ser un buen padre y espía al mismo tiempo."
+    },
+    {
+      "titulo": "Mi Abuela es un Peligro",
+      "disponible": true,
+      "badge": "Recién agregado",
+      "año": 2000,
+      "genero": "familiar",
+      "imagen": "https://images.justwatch.com/poster/239970523/s718/big-mommas-house.jpg",
+      "enlace": "https://drive.google.com/file/d/1ENaxdeC0zBWEEKhFbkGZUyFL1YyoGemP/preview",
+      "nuevo": true,
+      "descripcion": "Un agente del FBI se disfraza como una abuela corpulenta para atrapar a un peligroso criminal. Mientras mantiene su tapadera, deberá cuidar una casa y ganarse la confianza de la familia, lo que lleva a situaciones hilarantes."
+    },
+    {
+      "titulo": "Niñera a Prueba de Balas",
+      "disponible": true,
+      "badge": "Recien agregado",
+      "año": 1998,
+      "genero": "familiar",
+      "imagen": "https://play-lh.googleusercontent.com/Eom98-fdV0ehMXL0rlooRxwBC5PyAY9Ge5BIubSRB0CAUex-z4F3KTNL309gm8xFapMJ",
+      "enlace": "https://drive.google.com/file/d/1-ejemplo-enlace/preview",
+      "nuevo": true,
+      "descripcion": "Un miembro de las Fuerzas Especiales debe cuidar a cinco niños traviesos mientras protege a su familia de una amenaza desconocida."
+    },
+    {
       "titulo": "Equipaje de Mano",
       "disponible": true,
+      "badge": "Recien agregado",
       "año": 2024,
       "genero": "accion",
       "imagen": "https://m.media-amazon.com/images/M/MV5BMDMyZWYwYTEtMmUwNy00NTE4LTkxNmUtY2Y1YzllYTUwYTQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
@@ -12,11 +46,12 @@
     },
     {
       "titulo": "Rápidos y Furiosos",
-      "disponible": false,
+      "disponible": true,
+      "badge": "Recien agregado",
       "año": 2001,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrCdEN70nBLJfrzE7NwPtCSxjjrA.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1Hs_Ys2jFEbWEh9BzXq_5VxR7O-TN-Ywx/preview",
+      "enlace": "https://drive.google.com/file/d/18IpwJ4_jxq7yrF0d8qz0YJEITQHqw0o6/preview",
       "descripcion": "Un policía encubierto se infiltra en una banda de carreras callejeras ilegales para investigar una serie de robos. Sin embargo, se encuentra dividido entre su deber y la lealtad que desarrolla con el líder de la banda."
     },
     {
@@ -103,6 +138,8 @@
     {
       "titulo": "Mini Espías",
       "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado",
       "año": 2001,
       "genero": "familiar",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FjWIsfU9NXiOBsGy0WUx8T3Kiaw.jpg&w=256&q=75",
@@ -112,6 +149,8 @@
     {
       "titulo": "Mini Espías 2: La Isla de los Sueños Perdidos",
       "disponible": true, 
+      "nuevo": true,
+      "badge": "Recien agregado",
       "año": 2002,
       "genero": "familiar",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FdYmLViA5AWUb5MGH2UzhUwEcN0m.jpg&w=256&q=75",
@@ -573,7 +612,7 @@
     },
     {
       "titulo": "X-Men: Días del futuro pasado",
-      "disponible": true,
+      "disponible": false,
       "año": 2014,
       "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDOFP.jpg",
@@ -582,7 +621,7 @@
     },
     {
       "titulo": "X-Men: Apocalipsis",
-      "disponible": true,
+      "disponible": false,
       "año": 2016,
       "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenApocalipsis.jpg",
@@ -591,7 +630,7 @@
     },
     {
       "titulo": "Logan",
-      "disponible": true,
+      "disponible": false,
       "año": 2017,
       "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Logan.jpg",
@@ -600,7 +639,7 @@
     },
     {
       "titulo": "Deadpool",
-      "disponible": true,
+      "disponible": false,
       "año": 2016,
       "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool.jpg",
@@ -609,7 +648,7 @@
     },
     {
       "titulo": "Deadpool 2",
-      "disponible": true,
+      "disponible": false,
       "año": 2018,
       "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool2.jpg",
@@ -618,7 +657,7 @@
     },
     {
       "titulo": "X-Men: Fénix Oscura",
-      "disponible": true,
+      "disponible": false,
       "año": 2019,
       "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDarkPhoenix.jpg",
@@ -627,7 +666,7 @@
     },
     {
       "titulo": "Los Nuevos Mutantes",
-      "disponible": true,
+      "disponible": false,
       "año": 2020,
       "genero": "marvel",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NewMutants.jpg",
@@ -636,7 +675,7 @@
     },
     {
       "titulo": "Capitán América: El primer vengador",
-      "disponible": true,
+      "disponible": false,
       "año": 2011,
       "genero": "marvel",
       "imagen": "https://m.media-amazon.com/images/I/81y9W+06QrL._AC_UF894,1000_QL80_.jpg",
@@ -685,7 +724,7 @@
     },
     {
       "titulo": "Thor",
-      "disponible": true,
+      "disponible": false,
       "año": 2011,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/thor.jpg",
@@ -712,7 +751,7 @@
     },
     {
       "titulo": "Thor: El mundo oscuro",
-      "disponible": true,
+      "disponible": false,
       "año": 2013,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/thor-mundo-oscuro.jpg",
@@ -730,7 +769,7 @@
     },
     {
       "titulo": "Guardianes de la Galaxia",
-      "disponible": true,
+      "disponible": false,
       "año": 2014,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/guardianes-galaxia.jpg",
@@ -739,7 +778,7 @@
     },
     {
       "titulo": "Guardianes de la Galaxia Vol. 2",
-      "disponible": true,
+      "disponible": false,
       "año": 2017,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/guardianes-galaxia-2.jpg",
@@ -748,7 +787,7 @@
     },
     {
       "titulo": "Yo soy Groot",
-      "disponible": true,
+      "disponible": false,
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/yo-soy-groot.jpg",
@@ -757,7 +796,7 @@
     },
     {
       "titulo": "Vengadores: La era de Ultrón",
-      "disponible": true,
+      "disponible": false,
       "año": 2015,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/vengadores-era-ultron.jpg",
@@ -766,7 +805,7 @@
     },
     {
       "titulo": "Ant-Man",
-      "disponible": true,
+      "disponible": false,
       "año": 2015,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/ant-man.jpg",
@@ -775,7 +814,7 @@
     },
     {
       "titulo": "Capitán América: Civil War",
-      "disponible": true,
+      "disponible": false,
       "año": 2016,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/capitan-america-civil-war.jpg",
@@ -784,7 +823,7 @@
     },
     {
       "titulo": "Spider-Man: Homecoming",
-      "disponible": true,
+      "disponible": false,
       "año": 2017,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/spiderman-homecoming.jpg",
@@ -804,7 +843,7 @@
     },
     {
       "titulo": "Viuda Negra",
-      "disponible": true,
+      "disponible": false,
       "año": 2020,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/viuda-negra.jpg",
@@ -813,7 +852,7 @@
     },
     {
       "titulo": "Black Panther",
-      "disponible": true,
+      "disponible": false,
       "año": 2018,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/black-panther.jpg",
@@ -822,7 +861,7 @@
     },
     {
       "titulo": "Thor: Ragnarok",
-      "disponible": true,
+      "disponible": false,
       "año": 2017,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/thor-ragnarok.jpg",
@@ -831,7 +870,7 @@
     },
     {
       "titulo": "Ant-Man y la Avispa",
-      "disponible": true,
+      "disponible": false,
       "año": 2018,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/ant-man-avispa.jpg",
@@ -840,7 +879,7 @@
     },
     {
       "titulo": "Vengadores: Infinity War",
-      "disponible": true,
+      "disponible": false,
       "año": 2018,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/vengadores-infinity-war.jpg",
@@ -849,7 +888,7 @@
     },
     {
       "titulo": "Vengadores: Endgame",
-      "discsponible": true,
+      "disponible": false,
       "año": 2019,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/vengadores-endgame.jpg",
@@ -858,7 +897,7 @@
     },
     {
       "titulo": "Loki",
-      "disponible": true,
+      "disponible": false,
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/loki.jpg",
@@ -867,7 +906,7 @@
     },
     {
       "titulo": "Bruja Escarlata y Visión",
-      "disponible": true,
+      "disponible": false,
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/bruja-escarlata-vision.jpg",
@@ -876,7 +915,7 @@
     },
     {
       "titulo": "Shang-Chi y la leyenda de los diez anillos",
-      "disponible": true,
+      "disponible": false,
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/shang-chi.jpg",
@@ -885,7 +924,7 @@
     },
     {
       "titulo": "Falcon y el Soldado de Invierno",
-      "disponible": true,
+      "disponible": false,
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/falcon-soldado-invierno.jpg",
@@ -894,7 +933,7 @@
     },
     {
       "titulo": "Spider-Man: Lejos de casa",
-      "disponible": true,
+      "disponible": false,
       "año": 2019,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/spiderman-lejos-casa.jpg",
@@ -903,7 +942,7 @@
     },
     {
       "titulo": "Spider-Man: No Way Home",
-      "disponible": true,
+      "disponible": false,
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/spiderman-no-way-home.jpg",
@@ -912,7 +951,7 @@
     },
     {
       "titulo": "Eternals",
-      "disponible": true,
+      "disponible": false,
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/eternals.jpg",
@@ -921,7 +960,7 @@
     },
     {
       "titulo": "Ojo de Halcón",
-      "disponible": true,
+      "disponible": false,
       "año": 2021,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/ojo-halcon.jpg",
@@ -930,7 +969,7 @@
     },
     {
       "titulo": "Echo",
-      "disponible": true,
+      "disponible": false,  
       "año": 2024,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/echo.jpg",
@@ -939,7 +978,7 @@
     },
     {
       "titulo": "Doctor Strange en el multiverso de la locura",
-      "disponible": true,
+      "disponible": false,
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/doctor-strange-multiverso.jpg",
@@ -948,7 +987,7 @@
     },
     {
       "titulo": "Caballero Luna",
-      "disponible": true,
+      "disponible": false,
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/caballero-luna.jpg",
@@ -957,7 +996,7 @@
     },
     {
       "titulo": "She-Hulk: Abogada Hulka",
-      "disponible": true,
+      "disponible": false,
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/she-hulk.jpg",
@@ -966,7 +1005,7 @@
     },
     {
       "titulo": "Ms. Marvel",
-      "disponible": true,
+      "disponible": false,
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/ms-marvel.jpg",
@@ -975,7 +1014,7 @@
     },
     {
       "titulo": "Thor: Love and Thunder",
-      "disponible": true,
+      "disponible": false,
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/thor-love-thunder.jpg",
@@ -984,7 +1023,7 @@
     },
     {
       "titulo": "Black Panther: Wakanda Forever",
-      "disponible": true,
+      "disponible": false,
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/black-panther-wakanda-forever.jpg",
@@ -993,7 +1032,7 @@
     },
     {
       "titulo": "Guardianes de la Galaxia: Especial Felices Fiestas",
-      "disponible": true,
+      "disponible": false,
       "año": 2022,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/guardianes-galaxia-felices-fiestas.jpg",
@@ -1002,7 +1041,7 @@
     },
     {
       "titulo": "Ant-Man y la Avispa: Quantumania",
-      "disponible": true,
+      "disponible": false,
       "año": 2023,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/ant-man-avispa-quantumania.jpg",
@@ -1011,7 +1050,7 @@
     },
     {
       "titulo": "Guardianes de la Galaxia Vol. 3",
-      "disponible": true,
+      "disponible": false,
       "año": 2023,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/guardianes-galaxia-3.jpg",
@@ -1020,7 +1059,7 @@
     },
     {
       "titulo": "Invasión secreta",
-      "disponible": true,
+      "disponible": false,
       "año": 2023,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/invasion-secreta.jpg",
@@ -1029,7 +1068,7 @@
     },
     {
       "titulo": "Loki T2",
-      "disponible": true,
+      "disponible": false,
       "año": 2023,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/loki-t2.jpg",
@@ -1038,7 +1077,7 @@
     },
     {
       "titulo": "The Marvels",
-      "disponible": true,
+      "disponible": false,
       "año": 2023,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/the-marvels.jpg",

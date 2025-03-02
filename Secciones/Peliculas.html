@@ -870,75 +870,38 @@
             margin: 5px 0 0;
         }
 
-        .new-badge {
+        .badge {
             position: absolute;
-            top: 10px;
-            right: 10px;
-            background: linear-gradient(135deg, #ff0000, #990000);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff0000;
             color: #fff;
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.7rem;
+            padding: 6px 8px;
+            font-size: 0.8rem;
             font-weight: bold;
-            z-index: 1;
+            z-index: 2;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5),
-                        inset 0 0 5px rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 0, 0, 0.3);
-            text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-            animation: glowPulse 2s infinite;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            text-align: center;
+            white-space: nowrap;
+            width: auto;
+            min-width: auto;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
         }
 
-        @keyframes glowPulse {
-            0% {
-                box-shadow: 0 0 10px rgba(255, 0, 0, 0.5),
-                            inset 0 0 5px rgba(255, 255, 255, 0.2);
-            }
-            50% {
-                box-shadow: 0 0 15px rgba(255, 0, 0, 0.7),
-                            inset 0 0 8px rgba(255, 255, 255, 0.3);
-            }
-            100% {
-                box-shadow: 0 0 10px rgba(255, 0, 0, 0.5),
-                            inset 0 0 5px rgba(255, 255, 255, 0.2);
-            }
-        }
-
-        /* Ajustes responsive */
         @media (max-width: 768px) {
-            .movie-card {
-                width: 130px;
-            }
-            
-            .movie-card img {
-                height: 195px;
-            }
-            
-            .categoria-titulo {
-                font-size: 1.4rem;
-            }
-            
-            .movie-info h3 {
-                font-size: 0.8rem;
-            }
-            
-            .movie-info p {
+            .badge {
+                padding: 4px 6px;
                 font-size: 0.7rem;
             }
         }
 
         @media (max-width: 480px) {
-            .movie-card {
-                width: 110px;
-            }
-            
-            .movie-card img {
-                height: 165px;
-            }
-            
-            .categoria-titulo {
-                font-size: 1.2rem;
+            .badge {
+                padding: 3px 5px;
+                font-size: 0.65rem;
             }
         }
 
@@ -1001,6 +964,69 @@
         .categoria:first-child .categoria-titulo::before {
             content: '❤️';
             font-size: 0.8em;
+        }
+
+        /* Ajustes responsive mejorados */
+        @media (max-width: 768px) {
+            .movie-container {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 8px;
+                padding: 8px;
+            }
+
+            .movie-card {
+                width: 100%;
+                aspect-ratio: 2/3;
+            }
+
+            .movie-info h3 {
+                font-size: 0.75rem;
+            }
+
+            .movie-info p {
+                font-size: 0.65rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .movie-container {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 6px;
+                padding: 6px;
+            }
+
+            .categoria-contenedor .movie-card {
+                width: 110px; /* Tamaño fijo más pequeño */
+                min-width: 110px; /* Asegura el tamaño mínimo */
+            }
+
+            .movie-card img {
+                height: 165px; /* Altura proporcional al nuevo ancho */
+            }
+
+            .movie-info {
+                padding: 4px;
+            }
+
+            .movie-info h3 {
+                font-size: 0.7rem;
+            }
+
+            .movie-info p {
+                font-size: 0.6rem;
+                margin-top: 2px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .categoria-contenedor .movie-card {
+                width: 100px; /* Aún más pequeño para pantallas muy pequeñas */
+                min-width: 100px;
+            }
+
+            .movie-card img {
+                height: 150px;
+            }
         }
     </style>
 </head>
@@ -1133,7 +1159,7 @@
             const categoriasWrapper = document.querySelector('.categorias-wrapper');
             categoriasWrapper.innerHTML = '';
             
-            // Primero mostrar sección de favoritos si hay películas favoritas
+            // Mostrar sección de favoritos
             const peliculasLiked = JSON.parse(localStorage.getItem('peliculasLiked') || '[]');
             if (peliculasLiked.length > 0) {
                 const peliculasFavoritas = peliculas.filter(pelicula => 
@@ -1151,7 +1177,7 @@
                         <div class="categoria-contenedor">
                             ${peliculasFavoritas.map(pelicula => `
                                 <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
-                                    ${pelicula.nuevo ? '<div class="new-badge">NUEVO</div>' : ''}
+                                    ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
                                     <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
                                     <div class="movie-info">
                                         <h3>${pelicula.titulo}</h3>
@@ -1166,7 +1192,7 @@
                 }
             }
             
-            // Luego mostrar el resto de categorías
+            // Mostrar resto de categorías
             const categorias = organizarPorCategorias(peliculas);
 
             for (const [key, categoria] of Object.entries(categorias)) {
@@ -1179,7 +1205,7 @@
                         <div class="categoria-contenedor">
                             ${categoria.peliculas.map(pelicula => `
                                 <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
-                                    ${pelicula.nuevo ? '<div class="new-badge">NUEVO</div>' : ''}
+                                    ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
                                     <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
                                     <div class="movie-info">
                                         <h3>${pelicula.titulo}</h3>
