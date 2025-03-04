@@ -56,7 +56,8 @@
     },
     {
       "titulo": "Rápidos y Furiosos 2",
-      "disponible": false,
+      "disponible": true,
+      "badge": "Recien agregado",
       "año": 2003,
       "genero": ["rapidosyfuriosos", "accion"], 
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FfZtSG5a6i5Ca39WQylLVmvWI5b.jpg&w=256&q=75",
@@ -138,7 +139,6 @@
     {
       "titulo": "Mini Espías",
       "disponible": true,
-      "nuevo": true,
       "badge": "Recien agregado",
       "año": 2001,
       "genero": "familiar",
@@ -149,7 +149,6 @@
     {
       "titulo": "Mini Espías 2: La Isla de los Sueños Perdidos",
       "disponible": true, 
-      "nuevo": true,
       "badge": "Recien agregado",
       "año": 2002,
       "genero": "familiar",
@@ -159,14 +158,24 @@
     },
     {
       "titulo": "Mini Espías 3D: Game Over",
-      "disponible": false,
+      "disponible": true,
+      "badge": "Recien agregado",
       "año": 2003, 
       "genero": "familiar",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fid7FzzvO4GnTCNvT74TjS1doxkb.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1122334455/preview",
+      "enlace": "https://drive.google.com/file/d/15BBjDYtw37gCKfK7b8tGMR9tZz2lCPHf/preview",
       "descripcion": "Juni debe entrar en un videojuego virtual para rescatar a su hermana Carmen, quien ha quedado atrapada dentro. Con la ayuda de nuevos amigos y tecnología avanzada, deberá superar niveles cada vez más peligrosos."
     },
-    
+    {
+      "titulo": "Mini Espías 4",
+      "disponible": true,
+      "badge": "Recien agregado", 
+      "año": 2011,
+      "genero": "familiar",
+      "imagen": "https://play-lh.googleusercontent.com/SqMCjjNDxqsUf_Ve9YIzNfTe5LcTONZjC4MhvENMeayli04TnculF4Yc22JTm3_5H6dK",
+      "enlace": "https://drive.google.com/file/d/1scKqnpKUPX-Iw1dpDu7OD-oF6W34ON--/preview",
+      "descripcion": "Una nueva generación de espías debe salvar al mundo cuando unos villanos roban un artefacto que puede controlar el tiempo. Con la ayuda de gadgets de alta tecnología y el entrenamiento de los Cortez, estos jóvenes agentes tendrán que demostrar que están a la altura del desafío."
+    },    
     {
       "titulo": "Los 4 Fantásticos",
       "disponible": true,
