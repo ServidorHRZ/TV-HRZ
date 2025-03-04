@@ -1312,6 +1312,9 @@
                         Ver ahora <i class="fas fa-play-circle"></i>
                     </button>` : '';
                 
+                const fechaHTML = announcement.disponible ? '' : 
+                    `<div class="announcement-date">${announcement.fecha}</div>`;
+                
                 slide.innerHTML = `
                     <img src="${announcement.imagen}" alt="${announcement.titulo}" class="announcement-image">
                     <div class="announcement-content">
@@ -1319,7 +1322,7 @@
                         <h3 class="announcement-subtitle">${announcement.subtitulo}</h3>
                         <p class="announcement-description">${announcement.descripcion}</p>
                         <div class="announcement-info">
-                            <div class="announcement-date">${announcement.fecha}</div>
+                            ${fechaHTML}
                             ${botonHTML}
                         </div>
                     </div>
