@@ -1,6 +1,28 @@
 {
   "peliculas": [
     {
+      "titulo": "Alerta Roja",
+      "disponible": true,
+      "badge": "Recién agregado",
+      "año": 2021,
+      "nuevo" : true,
+      "genero": "accion",
+      "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/odBUpjZGxY3y7FBo5NBtEYGJf5r.jpg",
+      "enlace": "https://drive.google.com/file/d/1AEofRLRjOARlxvStp-RsmnFQ3axLGbnz/preview",
+      "descripcion": "Un agente de la FBI se ve forzado a formar equipo con el ladrón de arte más buscado del mundo para atrapar a una escurridiza criminal que siempre está un paso por delante."
+    },
+    {
+      "titulo": "Henry Danger: La Película",
+      "disponible": true,
+      "badge": "Recién agregado",
+      "año": 2020,
+      "nuevo" : true,
+      "genero": "accion",
+      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FdTHEq2PIRAIq4COayxraiGiaajX.jpg&w=256&q=75",
+      "enlace": "https://drive.google.com/file/d/14vyy0LSSSfSbJhXu1Qdp-rs0fUip8kq7/preview",
+      "descripcion": "Henry Hart debe enfrentar su mayor desafío como Kid Danger cuando una amenaza llega a Swellview y pone en peligro todo lo que le importa. Con la ayuda del Capitán Man, deberá salvar la ciudad una vez más."
+    },
+    {
       "titulo": "Mi Vecino es un Espía",
       "disponible": true,
       "badge": "Recién agregado",
