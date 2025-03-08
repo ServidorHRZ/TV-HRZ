@@ -812,11 +812,7 @@
 <body>
     <div class="hero-section">
         <div class="hero-video">
-            <iframe id="trailer-player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
+            <iframe id="trailer-player" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="hero-overlay"></div>
         <button class="sound-toggle" id="sound-toggle">
@@ -854,11 +850,7 @@
             <span>Mi Lista</span>
         </button>
         <div class="episodios-player" id="episodios-player">
-            <iframe id="episodio-player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
+            <iframe id="episodio-player" src="" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="temporadas-container" id="temporadas-container"></div>
     </div>
@@ -922,17 +914,78 @@
         }
 
         function prevenirRedirecciones() {
-            // Solo prevenir redirecciones de la ventana principal
+            // Prevenir redirecciones en iframes
+            const iframes = document.getElementsByTagName('iframe');
+            for (let iframe of iframes) {
+                iframe.sandbox = "allow-scripts allow-same-origin allow-forms";
+                
+                iframe.addEventListener('load', function() {
+                    try {
+                        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                        
+                        // Prevenir redirecciones dentro del iframe
+                        iframeDoc.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            return false;
+                        }, true);
+
+                        // Bloquear popups y anuncios
+                        iframeDoc.addEventListener('beforeunload', function(e) {
+                            e.preventDefault();
+                            return false;
+                        });
+
+                        // Deshabilitar scripts maliciosos
+                        const scripts = iframeDoc.getElementsByTagName('script');
+                        for (let script of scripts) {
+                            if (script.src && !script.src.includes('HRZ')) {
+                                script.remove();
+                            }
+                        }
+
+                        // Bloquear ventanas emergentes
+                        iframeDoc.window.open = function() { return null; };
+                        iframeDoc.window.alert = function() { return null; };
+                        iframeDoc.window._blank = null;
+
+                    } catch (e) {
+                        // Error esperado por cross-origin
+                        console.log("Error de acceso al iframe por cross-origin");
+                    }
+                });
+            }
+
+            // Prevenir redirecciones de ventana principal
             window.onbeforeunload = function(e) {
-                const target = e.target || e.srcElement;
-                if (target && target.activeElement && 
-                    (target.activeElement.tagName === 'IFRAME' || 
-                     target.activeElement.closest('.episodios-player'))) {
-                    return;
+                const currentTime = new Date().getTime();
+                const timeSinceLoad = currentTime - window.performance.timing.navigationStart;
+                
+                if (e && e.target && e.target.location && e.target.location.href) {
+                    const newUrl = e.target.location.href;
+                    if (newUrl.includes('HRZ') || newUrl.includes('Secciones')) {
+                        return;
+                    }
                 }
-                e.preventDefault();
-                return false;
+                
+                if (timeSinceLoad > 1000) {
+                    e.preventDefault();
+                    return false;
+                }
             };
+
+            // Bloquear popups
+            window.addEventListener('click', function(e) {
+                window.onbeforeunload = null;
+                setTimeout(function() {
+                    window.onbeforeunload = function() { return false; };
+                }, 0);
+            }, true);
+
+            // Sobrescribir funciones de redirección
+            window.open = function() { return null; };
+            window.alert = function() { return null; };
+            window._blank = null;
         }
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -1087,7 +1140,7 @@
             // Cargar el trailer con sonido activado
             const trailerPlayer = document.getElementById('trailer-player');
             if (serie.trailer) {
-                cargarVideo(`${serie.trailer}?autoplay=1&controls=0&showinfo=0&rel=0&loop=1&playlist=${serie.trailer.split('/').pop()}`, 'trailer-player');
+                trailerPlayer.src = `${serie.trailer}?autoplay=1&controls=0&showinfo=0&rel=0&loop=1&playlist=${serie.trailer.split('/').pop()}`;
             }
 
             // Configurar el botón de sonido
@@ -1186,8 +1239,15 @@
                 episodio.addEventListener('click', (e) => {
                     if (!e.target.closest('.episodio-visto')) {
                         const videoUrl = episodio.getAttribute('data-url');
-                        cargarVideo(videoUrl, 'episodio-player');
-                        document.getElementById('episodios-player').classList.add('active');
+                        const episodioPlayer = document.getElementById('episodio-player');
+                        const episodiosPlayer = document.getElementById('episodios-player');
+
+                        // Silenciar el trailer cuando se reproduce un episodio
+                        muteTrailer();
+
+                        episodioPlayer.src = videoUrl;
+                        episodiosPlayer.classList.add('active');
+
                         // Marcar como visto después de 30 segundos
                         setTimeout(() => {
                             const serieId = episodio.dataset.serie;
@@ -1406,13 +1466,22 @@
             });
         }
 
-        // Modificar la función que carga el video
-        function cargarVideo(url, iframeId) {
-            const iframe = document.getElementById(iframeId);
-            // Remover el atributo sandbox si existe
-            iframe.removeAttribute('sandbox');
-            // Establecer la URL
-            iframe.src = url;
+        // Modificar la URL del video para incluir la API de YouTube
+        function getYouTubeEmbedUrl(url) {
+            if (url.includes('youtube.com')) {
+                // Agregar enablejsapi=1 para permitir el control mediante la API
+                return url + '?enablejsapi=1&autoplay=1&controls=0&showinfo=0&rel=0&loop=1&playlist=' + 
+                    url.split('/').pop();
+            }
+            return url;
+        }
+
+        // Cargar la API de YouTube
+        if (!document.querySelector('script[src*="youtube.com/iframe_api"]')) {
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            const firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         }
     </script>
 </body>
