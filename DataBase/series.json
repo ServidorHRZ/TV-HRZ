@@ -1,36 +1,6 @@
 {
   "series": [
     {
-      "id": 998,
-      "titulo": "Bajoterra",
-      "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8UkWqDQFH9YGvKDQRtLyDrHtaqu.jpg",
-      "disponible": true,
-      "nuevo": true, 
-      "badge": "Recién agregada",
-      "enProceso": false,
-      "descripcion": "Eli Shane viaja a un extraordinario mundo subterráneo donde las batallas épicas dependen de las misteriosas babosas que se transforman en poderosas criaturas. Junto a sus amigos, Eli deberá proteger las 99 cavernas de las fuerzas del mal.",
-      "imagen": "data:image/jpeg;base64,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",
-      "año": 2012,
-      "genero": "animacion",
-      "director": "Johnny Darrell",
-      "actores": ["Sam Vincent", "Shannon Chan-Kent", "Lee Tockar", "Andrew Francis"],
-      "trailer": "https://www.youtube.com/embed/GEPXQHQn5_w",
-      "temporadas": [
-        {
-          "numero": 1,
-          "episodios": [
-            {
-              "numero": 1,
-              "titulo": "El Mundo Bajo Nuestros Pies - Parte 1",
-              "descripcion": "Eli Shane llega a Bajoterra para seguir los pasos de su padre como lanzador de babosas.",
-              "duracion": "22:00",
-              "url": "https://cybervynx.com/e/25h3b0vyf3l0"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": 999,
       "titulo": "Yo Soy Betty, la Fea",
       "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iEBOiXiDGaxVR6w8aKgG5MEusuO.jpg", 
@@ -277,18 +247,80 @@
     {
       "id": 31,
       "titulo": "Berlin",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "badge": "Recien agregado",
       "enProceso": true,
       "descripcion": "Antes de los eventos de La Casa de Papel, Berlin y un grupo de expertos ladrones planean uno de los atracos más ambiciosos de su carrera en París.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BYjEwNjFmNjMtMGYzNy00MzBiLWJlYjAtMGJjNTEwZGFhMjNlXkEyXkFqcGc@._V1_QL75_UY281_CR18,0,190,281_.jpg",
       "año": 2023,
-      "genero": "crimen",
+      "genero": "crimen", 
       "director": "Álex Pina",
       "actores": ["Pedro Alonso", "Michelle Jenner", "Tristán Ulloa", "Begoña Vargas"],
-      "trailer": "https://www.youtube.com/embed/Ef7GtAe_jbw",
-      "temporadas": []
+      "trailer": "https://www.youtube.com/embed/zw8eFypaCOo",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "En París",
+              "descripcion": "Berlín llega a París con un ambicioso plan para robar joyas valoradas en 44 millones de euros.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1OtdW3X8jJ51cc-NhPJ6zteskYEY2L8C0/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Como si fuera la última vez",
+              "descripcion": "El equipo comienza los preparativos mientras Berlín se enamora de una misteriosa mujer.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1Dvk-DcLKZreovntQ2BjcbJoxtiLgdHzj/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Lo que nos une",
+              "descripcion": "Las tensiones aumentan cuando un miembro del equipo amenaza con abandonar el plan.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1BBH1c0pPr_8JK7H67M8zV37GhkISk8NQ/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Un paso en falso",
+              "descripcion": "Un error inesperado pone en peligro toda la operación.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/14CEoHYWA2ITYw9W9W28xNjk0iO0vLyDK/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "El precio del amor",
+              "descripcion": "Berlín debe elegir entre el amor y la lealtad a su equipo.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1yltBen5K5o6JHBzWi3acZBqBEqBGnq26/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "El momento de la verdad",
+              "descripcion": "El equipo se prepara para ejecutar la fase final del robo.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1aPeFDdT5-eNvX8n0MpQsHmyZx4VveXtU/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Todo o nada",
+              "descripcion": "La policía se acerca mientras el equipo intenta completar el robo.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1h_5yPrLFH3nYa-E8bQucJDO2q8TKh-6M/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "El último baile",
+              "descripcion": "Berlín y su equipo enfrentan las consecuencias finales de su ambicioso plan.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/15S_Jid94FPANq5lHo3YPoBqImZsSz8yp/preview"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 30,
