@@ -1,6 +1,17 @@
 {
   "peliculas": [
     {
+      "titulo": "G.I. Joe: La venganza",
+      "disponible": true,
+      "badge": "Recién agregado", 
+      "año": 2013,
+      "nuevo": true,
+      "genero": "accion",
+      "imagen": "https://image.tmdb.org/t/p/w185/toOEolDF0plAqR2gxbYkYdH44z3.jpg",
+      "enlace": "https://fastream.to/embed-p9u0as17mv1r.html",
+      "descripcion": "Los G.I. Joes no solo deberán enfrentarse a su enemigo mortal, Cobra, sino también a las amenazas del gobierno que ponen en peligro su existencia. El equipo se enfrenta a Zartan, quien ha reemplazado al Presidente de los Estados Unidos."
+    },
+    {
       "titulo": "Alerta Roja",
       "disponible": true,
       "badge": "Recién agregado",
@@ -45,7 +56,6 @@
     {
       "titulo": "Niñera a Prueba de Balas",
       "disponible": true,
-      "badge": "Recien agregado",
       "año": 1998,
       "genero": "familiar",
       "imagen": "https://play-lh.googleusercontent.com/Eom98-fdV0ehMXL0rlooRxwBC5PyAY9Ge5BIubSRB0CAUex-z4F3KTNL309gm8xFapMJ",
@@ -55,7 +65,6 @@
     {
       "titulo": "Equipaje de Mano",
       "disponible": true,
-      "badge": "Recien agregado",
       "año": 2024,
       "genero": "accion",
       "imagen": "https://m.media-amazon.com/images/M/MV5BMDMyZWYwYTEtMmUwNy00NTE4LTkxNmUtY2Y1YzllYTUwYTQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
@@ -65,7 +74,6 @@
     {
       "titulo": "Rápidos y Furiosos",
       "disponible": true,
-      "badge": "Recien agregado",
       "año": 2001,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrCdEN70nBLJfrzE7NwPtCSxjjrA.jpg&w=256&q=75",
@@ -75,83 +83,90 @@
     {
       "titulo": "Rápidos y Furiosos 2",
       "disponible": true,
-      "badge": "Recien agregado",
       "año": 2003,
       "genero": ["rapidosyfuriosos", "accion"], 
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FfZtSG5a6i5Ca39WQylLVmvWI5b.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1kXXwJ9wFEQXQr_9KqvqB5E0q_vhxI2Xt/preview",
-      "descripcion": "Brian O'Conner se une a su amigo Roman Pearce para infiltrarse en una organización criminal en Miami. Deberán usar sus habilidades de conducción para desmantelar un peligroso cartel."
+      "enlace": "https://fastream.to/embed-eaxmrzzqq76m.html",
+      "descripcion": "Brian OConner se une a su amigo Roman Pearce para infiltrarse en una organización criminal en Miami. Deberán usar sus habilidades de conducción para desmantelar un peligroso cartel."
     },
     {
       "titulo": "Rápidos y Furiosos: Reto Tokio",
-      "disponible": false,
+      "disponible": true,
+      "badge": "Recién agregado",
       "año": 2006,
       "genero": ["rapidosyfuriosos", "accion"], 
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9OYC68a3NH5ySyTBjLQDzxhApMi.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1VRWLVBpL8TDJS_cV2QaVGxjk_4ZPgwWH/preview",
+      "enlace": "https://fastream.to/embed-vvv7p1l8znyd.html",
       "descripcion": "Un adolescente problemático se muda a Tokio y se adentra en el mundo del drift racing. Deberá perfeccionar sus habilidades de conducción mientras enfrenta los peligros de la escena de carreras underground."
     },
     {
       "titulo": "Rápidos y Furiosos 4",
-      "disponible": false,
+      "disponible": true,
+      "badge": "Recién agregado",
       "año": 2009,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fb4oE1Bw6KmON4qNIfjgJbVYkOWZ.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1kGvyHxULs5AOYqBVyWXkM_8AZuXn_8Aq/preview",
+      "enlace": "https://fastream.to/embed-19q5gkaqjphe.html",
       "descripcion": "Dominic Toretto y Brian O'Conner vuelven a unir fuerzas para enfrentarse a un traficante de drogas mientras buscan venganza por la muerte de un ser querido."
     },
     {
       "titulo": "Rápidos y Furiosos 5",
-      "disponible": false,
+      "disponible": true,
+      "badge": "Recién agregado",
       "año": 2011,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FmtRhCiT4hZzaP6c3DJqec1Jjm0i.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1QEwGxR5k5Csn_OqvqkK5eqK_ZFPfBHwc/preview",
+      "enlace": "https://fastream.to/embed-c83w0vh5tt7s.html",
       "descripcion": "Dom y su equipo planean un último gran robo en Río de Janeiro mientras son perseguidos por un implacable agente federal y un poderoso señor del crimen."
     },
     {
       "titulo": "Rápidos y Furiosos 6",
-      "disponible": false,
+      "disponible": true,
+      "badge": "Recién agregado",
       "año": 2013,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F6zUkjB5OtiFhN2DiqdT1IllNJTa.jpg&w=256&q=75g",
-      "enlace": "https://drive.google.com/file/d/1QEwGxR5k5Csn_OqvqkK5eqK_ZFPfBHwc/preview",
+      "enlace": "https://fastream.to/embed-mmwr1ibs3jzh.html",
       "descripcion": "Hobbs recluta a Dom y su equipo para ayudar a detener una organización de mercenarios letales. A cambio, recibirán el perdón total por sus crímenes pasados."
     },
     {
       "titulo": "Rápidos y Furiosos 7",
-      "disponible": false,
+      "disponible": true,
+      "badge": "Recién agregado",
       "año": 2015,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F4eU34MXsBECZPU52BpjMiUMIwBR.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1QEwGxR5k5Csn_OqvqkK5eqK_ZFPfBHwc/preview",
+      "enlace": "https://fastream.to/embed-lkpnq954rvrb.html",
       "descripcion": "El equipo enfrenta a Deckard Shaw, quien busca venganza por su hermano. La familia deberá unirse una vez más para protegerse mutuamente."
     },
     {
       "titulo": "Rápidos y Furiosos 8",
-      "disponible": false,
+      "disponible": true,
+      "badge": "Recién agregado",
       "año": 2017,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://m.media-amazon.com/images/M/MV5BNDVlNmZkMjAtNGUwNy00MGYzLWJiNjYtZDdhZDRlMjNkMGZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      "enlace": "https://drive.google.com/file/d/1QEwGxR5k5Csn_OqvqkK5eqK_ZFPfBHwc/preview",
+      "enlace": "https://fastream.to/embed-rej1pp12u706.html",
       "descripcion": "Una misteriosa mujer seduce a Dom para adentrarse en el mundo del terrorismo y traicionar a su familia. El equipo deberá enfrentarse a pruebas como nunca antes."
     },
     {
       "titulo": "Rápidos y Furiosos 9",
-      "disponible": false,
+      "disponible": true,
+      "badge": "Recién agregado",
       "año": 2021,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://m.media-amazon.com/images/M/MV5BNWEwNWExNWUtODI1OC00NzYzLTk4ZTctYmY4ZTBjMWQzMjMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      "enlace": "https://drive.google.com/file/d/1QEwGxR5k5Csn_OqvqkK5eqK_ZFPfBHwc/preview",
+      "enlace": "https://fastream.to/embed-5wom9u21hmo9.html",
       "descripcion": "Dom debe enfrentarse a su hermano Jakob, un asesino mortal que trabaja con una antigua enemiga. La familia se reúne para detener un complot que podría destruir el mundo."
     },
     {
       "titulo": "Rápidos y Furiosos 10",
-      "disponible": false,
+      "disponible": true,
+      "badge": "Recién agregado",
       "año": 2023,
       "genero": ["rapidosyfuriosos", "accion"], 
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FlZRRxutZIXQSAq0mXNHdM7kPfBP.jpg&w=256&q=75",
-      "enlace": "https://drive.google.com/file/d/1QEwGxR5k5Csn_OqvqkK5eqK_ZFPfBHwc/preview",
+      "enlace": "https://fastream.to/embed-xpeyon4vo7si.html",
       "descripcion": "La familia Toretto enfrenta su enemigo más letal: un vengativo hijo que culpa a Dom por la muerte de su padre. Con nuevos y viejos aliados, deberán detener una amenaza que podría destruirlo todo."
     },
     {
@@ -915,11 +930,11 @@
     },
     {
       "titulo": "Vengadores: Endgame",
-      "disponible": false,
+      "disponible": true,
       "año": 2019,
       "genero": "marvel",
-      "imagen": "https://ejemplo.com/vengadores-endgame.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_ENDGAME/preview",
+      "imagen": "https://image.tmdb.org/t/p/w185/rDLmMzkaFMFWF1UnnlboMfifVXM.jpg",
+      "enlace": "https://fastream.to/embed-p1opf3bx6tdh.html",
       "descripcion": "Los Vengadores restantes deben encontrar una manera de revertir las acciones de Thanos y restaurar el orden en el universo."
     },
     {
