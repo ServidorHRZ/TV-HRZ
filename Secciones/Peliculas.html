@@ -1093,6 +1093,154 @@
         let currentTranslate = 0;
         let isDragging = false;
 
+        // Constantes para el manejo de caché
+        const CACHE_VERSION = '1.0';
+        const CACHE_KEYS = {
+            SERIES: 'hrztv_series_cache',
+            PELICULAS: 'hrztv_peliculas_cache',
+            ANUNCIOS: 'hrztv_anuncios_cache',
+            TIMESTAMP: 'hrztv_cache_timestamp',
+            VERSION: 'hrztv_cache_version'
+        };
+
+        // Función para manejar el caché
+        function gestionarCache() {
+            const cacheVersion = localStorage.getItem(CACHE_KEYS.VERSION);
+            
+            if (cacheVersion !== CACHE_VERSION) {
+                Object.values(CACHE_KEYS).forEach(key => localStorage.removeItem(key));
+                localStorage.setItem(CACHE_KEYS.VERSION, CACHE_VERSION);
+            }
+        }
+
+        // Función para verificar si el caché está actualizado
+        function esCacheActualizado() {
+            const ultimaActualizacion = localStorage.getItem(CACHE_KEYS.TIMESTAMP);
+            if (!ultimaActualizacion) return false;
+            
+            const TIEMPO_CACHE = 24 * 60 * 60 * 1000;
+            return (Date.now() - parseInt(ultimaActualizacion)) < TIEMPO_CACHE;
+        }
+
+        // Función para cargar contenido con caché
+        async function cargarContenidoConCache(tipo) {
+            const cacheKey = CACHE_KEYS[tipo.toUpperCase()];
+            const contenidoCache = localStorage.getItem(cacheKey);
+            
+            try {
+                if (contenidoCache && esCacheActualizado()) {
+                    const datosCache = JSON.parse(contenidoCache);
+                    actualizarInterfaz(tipo, datosCache);
+                    actualizarContenidoEnSegundoPlano(tipo);
+                } else {
+                    await cargarContenidoDesdeServidor(tipo);
+                }
+            } catch (error) {
+                console.error(`Error cargando ${tipo}:`, error);
+                if (contenidoCache) {
+                    actualizarInterfaz(tipo, JSON.parse(contenidoCache));
+                }
+            }
+        }
+
+        // Función para cargar contenido desde el servidor
+        async function cargarContenidoDesdeServidor(tipo) {
+            const urls = {
+                series: '../DataBase/series.json',
+                peliculas: '../DataBase/peliculas.json',
+                anuncios: '../DataBase/movie_announcements.json'
+            };
+
+            try {
+                const response = await fetch(urls[tipo]);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const datos = await response.json();
+                
+                localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datos));
+                localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
+                
+                actualizarInterfaz(tipo, datos);
+                return datos;
+            } catch (error) {
+                throw error;
+            }
+        }
+
+        // Función para actualizar contenido en segundo plano
+        async function actualizarContenidoEnSegundoPlano(tipo) {
+            try {
+                const datosNuevos = await cargarContenidoDesdeServidor(tipo);
+                const datosCache = JSON.parse(localStorage.getItem(CACHE_KEYS[tipo.toUpperCase()]));
+                
+                if (JSON.stringify(datosNuevos) !== JSON.stringify(datosCache)) {
+                    localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datosNuevos));
+                    localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
+                    actualizarInterfaz(tipo, datosNuevos);
+                }
+            } catch (error) {
+                console.error(`Error actualizando ${tipo} en segundo plano:`, error);
+            }
+        }
+
+        // Función para actualizar la interfaz según el tipo de contenido
+        function actualizarInterfaz(tipo, datos) {
+            switch (tipo) {
+                case 'peliculas':
+                    todasLasPeliculas = datos.peliculas.filter(pelicula => pelicula.disponible);
+                    mostrarPeliculasPorCategorias(todasLasPeliculas);
+                    break;
+                case 'anuncios':
+                    announcements = datos.announcements;
+                    mostrarAnuncios();
+                    setupIndicators();
+                    break;
+            }
+        }
+
+        // Función para precargar imágenes
+        function precargarImagenes(datos) {
+            const imagenes = [];
+            
+            datos.forEach(item => {
+                if (item.imagen) {
+                    const img = new Image();
+                    img.src = item.imagen;
+                    imagenes.push(img);
+                }
+                if (item.miniatura) {
+                    const img = new Image();
+                    img.src = item.miniatura;
+                    imagenes.push(img);
+                }
+            });
+        }
+
+        // Reemplazar la función cargarPeliculas existente
+        function cargarPeliculas() {
+            cargarContenidoConCache('peliculas');
+        }
+
+        // Reemplazar la función cargarAnuncios existente
+        function cargarAnuncios() {
+            cargarContenidoConCache('anuncios');
+        }
+
+        // Modificar el evento DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', () => {
+            gestionarCache();
+            
+            cargarContenidoConCache('peliculas');
+            cargarContenidoConCache('anuncios');
+            
+            setupCarouselTouch();
+            
+            const carousel = document.querySelector('.announcements-carousel');
+            if (carousel) {
+                carousel.addEventListener('mouseenter', stopAutoSlide);
+                carousel.addEventListener('mouseleave', startAutoSlide);
+            }
+        });
+
         // Función para organizar películas por categorías
         function organizarPorCategorias(peliculas) {
             const categorias = {
@@ -1233,72 +1381,7 @@
             setupNavArrows();
         }
 
-        // Modificar la función cargarPeliculas
-        function cargarPeliculas() {
-            fetch('../DataBase/peliculas.json')
-                .then(response => response.json())
-                .then(data => {
-                    todasLasPeliculas = data.peliculas.filter(pelicula => pelicula.disponible);
-                    todasLasPeliculas.sort((a, b) => {
-                        if (a.nuevo && !b.nuevo) return -1;
-                        if (!a.nuevo && b.nuevo) return 1;
-                        return 0;
-                    });
-                    mostrarPeliculasPorCategorias(todasLasPeliculas);
-                })
-                .catch(error => console.error('Error cargando las películas:', error));
-        }
-
-        // Modificar la función de búsqueda
-        function searchMovies(searchTerm) {
-            searchTerm = searchTerm.toLowerCase().trim();
-            
-            if (searchTerm === '') {
-                mostrarPeliculasPorCategorias(todasLasPeliculas);
-                return;
-            }
-
-            const peliculasFiltradas = todasLasPeliculas.filter(pelicula => {
-                const titulo = pelicula.titulo.toLowerCase();
-                const año = pelicula.año.toString();
-                return titulo.includes(searchTerm) || año.includes(searchTerm);
-            });
-
-            mostrarPeliculasPorCategorias(peliculasFiltradas);
-        }
-
         // Funciones para el carrusel de anuncios
-        function cargarAnuncios() {
-            fetch('../DataBase/movie_announcements.json')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Error al cargar los anuncios');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    if (!data || !data.announcements) {
-                        throw new Error('Formato de datos inválido');
-                    }
-                    announcements = data.announcements;
-                    mostrarAnuncios();
-                    setupIndicators();
-                    startAutoSlide();
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    const container = document.getElementById('announcementsContainer');
-                    container.innerHTML = `
-                        <div class="announcement-slide">
-                            <div class="announcement-content">
-                                <h2 class="announcement-title">Error al cargar los anuncios</h2>
-                                <p class="announcement-description">Por favor, intente más tarde.</p>
-                            </div>
-                        </div>
-                    `;
-                });
-        }
-
         function mostrarAnuncios() {
             const container = document.getElementById('announcementsContainer');
             container.innerHTML = '';

@@ -467,33 +467,115 @@
         let categoriasUnicas = [];
         let canalesFavoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
 
+        // Constantes para el manejo de caché
+        const CACHE_VERSION = '1.0';
+        const CACHE_KEYS = {
+            CANALES: 'hrztv_canales_cache',
+            CANALES_IPTV: 'hrztv_canales_iptv_cache',
+            TIMESTAMP: 'hrztv_cache_timestamp',
+            VERSION: 'hrztv_cache_version'
+        };
+
+        // Función para manejar el caché
+        function gestionarCache() {
+            const cacheVersion = localStorage.getItem(CACHE_KEYS.VERSION);
+            
+            if (cacheVersion !== CACHE_VERSION) {
+                Object.values(CACHE_KEYS).forEach(key => localStorage.removeItem(key));
+                localStorage.setItem(CACHE_KEYS.VERSION, CACHE_VERSION);
+            }
+        }
+
+        // Función para verificar si el caché está actualizado
+        function esCacheActualizado() {
+            const ultimaActualizacion = localStorage.getItem(CACHE_KEYS.TIMESTAMP);
+            if (!ultimaActualizacion) return false;
+            
+            const TIEMPO_CACHE = 6 * 60 * 60 * 1000; // 6 horas para canales de TV
+            return (Date.now() - parseInt(ultimaActualizacion)) < TIEMPO_CACHE;
+        }
+
+        // Función modificada para cargar canales con caché
         async function cargarCanales() {
+            try {
+                // Intentar cargar desde caché primero
+                const canalesCache = localStorage.getItem(CACHE_KEYS.CANALES);
+                const canalesIPTVCache = localStorage.getItem(CACHE_KEYS.CANALES_IPTV);
+                
+                if (canalesCache && canalesIPTVCache && esCacheActualizado()) {
+                    todosLosCanales = [
+                        ...JSON.parse(canalesCache),
+                        ...JSON.parse(canalesIPTVCache)
+                    ];
+                    inicializarInterfaz();
+                    actualizarCanalesEnSegundoPlano();
+                } else {
+                    await cargarCanalesDesdeServidor();
+                }
+            } catch (error) {
+                console.error('Error cargando los canales:', error);
+                // Si hay error y existe caché, usar caché aunque esté desactualizado
+                if (canalesCache && canalesIPTVCache) {
+                    todosLosCanales = [
+                        ...JSON.parse(canalesCache),
+                        ...JSON.parse(canalesIPTVCache)
+                    ];
+                    inicializarInterfaz();
+                } else {
+                    document.getElementById('canales-container').innerHTML = 
+                        '<p style="color: white; text-align: center;">Error al cargar los canales. Por favor, intenta más tarde.</p>';
+                }
+            }
+        }
+
+        // Función para cargar canales desde el servidor
+        async function cargarCanalesDesdeServidor() {
             try {
                 // Cargar canales locales
                 const respuestaLocal = await fetch('../DataBase/canales.json');
                 const dataLocal = await respuestaLocal.json();
-                todosLosCanales = dataLocal.canales;
-
+                const canalesLocales = dataLocal.canales;
+                
+                // Guardar canales locales en caché
+                localStorage.setItem(CACHE_KEYS.CANALES, JSON.stringify(canalesLocales));
+                
                 // Cargar lista IPTV
                 const respuestaIPTV = await fetch('https://iptv-org.github.io/iptv/countries/us.m3u');
                 const textoM3U = await respuestaIPTV.text();
                 const canalesIPTV = parseM3U(textoM3U);
                 
+                // Guardar canales IPTV en caché
+                localStorage.setItem(CACHE_KEYS.CANALES_IPTV, JSON.stringify(canalesIPTV));
+                
+                // Actualizar timestamp
+                localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
+                
                 // Combinar canales
-                todosLosCanales = [...todosLosCanales, ...canalesIPTV];
+                todosLosCanales = [...canalesLocales, ...canalesIPTV];
                 
-                // Inicializar la interfaz
-                crearBotonesCategorias();
-                mostrarTodo();
-                
-                // Reproducir el primer canal automáticamente solo al inicio
-                if (todosLosCanales.length > 0 && !canalActual) {
-                    reproducirCanal(todosLosCanales[0]);
-                }
+                inicializarInterfaz();
             } catch (error) {
-                console.error('Error cargando los canales:', error);
-                document.getElementById('canales-container').innerHTML = 
-                    '<p style="color: white; text-align: center;">Error al cargar los canales. Por favor, intenta más tarde.</p>';
+                throw error;
+            }
+        }
+
+        // Función para actualizar canales en segundo plano
+        async function actualizarCanalesEnSegundoPlano() {
+            try {
+                await cargarCanalesDesdeServidor();
+            } catch (error) {
+                console.error('Error actualizando canales en segundo plano:', error);
+            }
+        }
+
+        // Función para inicializar la interfaz
+        function inicializarInterfaz() {
+            crearBotonesCategorias();
+            mostrarTodo();
+            
+            // Reproducir el primer canal automáticamente solo al inicio
+            if (todosLosCanales.length > 0 && !canalActual) {
+                reproducirCanal(todosLosCanales[0]);
             }
         }
 
@@ -543,8 +625,11 @@
             mostrarCanales(canalesFiltrados);
         }
 
-        // Agregar evento de búsqueda
+        // Modificar el evento DOMContentLoaded
         document.addEventListener('DOMContentLoaded', () => {
+            gestionarCache();
+            cargarCanales();
+            
             const buscadorInput = document.querySelector('.buscador-input');
             let timeoutId;
 
@@ -554,8 +639,6 @@
                     buscarCanales(e.target.value);
                 }, 300);
             });
-
-            cargarCanales();
         });
 
         function mostrarCanales(canalesAMostrar) {
@@ -746,11 +829,6 @@
                 }
             });
         }
-
-        // Inicializar al cargar la página
-        document.addEventListener('DOMContentLoaded', () => {
-            cargarCanales();
-        });
     </script>
 </body>
 </html>
