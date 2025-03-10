@@ -1293,7 +1293,13 @@
 
                         episodioPlayer.src = videoUrl;
                         episodiosPlayer.classList.add('active');
-                        btnReconectar.style.display = 'flex'; // Mostrar el botón cuando se reproduce un episodio
+                        btnReconectar.style.display = 'flex';
+
+                        // Desplazamiento suave hacia el reproductor
+                        episodiosPlayer.scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'start'
+                        });
 
                         // Configurar el botón de reconexión
                         btnReconectar.onclick = () => {
