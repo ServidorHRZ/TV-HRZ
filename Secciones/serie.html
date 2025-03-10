@@ -807,6 +807,45 @@
                 font-size: 0.9rem;
             }
         }
+
+        .action-button.reconectar {
+            margin: 15px auto;
+            display: flex;
+            background: rgba(0, 255, 255, 0.15);
+            border: 1px solid var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            color: var(--secondary-color);
+            cursor: pointer;
+            font-size: 0.9em;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .action-button.reconectar:hover {
+            background: rgba(0, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .action-button.reconectar i {
+            transition: transform 0.3s ease;
+        }
+
+        .action-button.reconectar:active i {
+            animation: girar 0.5s linear;
+        }
+
+        @keyframes girar {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .episodios-player-container {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -850,7 +889,13 @@
             <span>Mi Lista</span>
         </button>
         <div class="episodios-player" id="episodios-player">
-            <iframe id="episodio-player" src="" frameborder="0" allowfullscreen></iframe>
+            <div class="episodios-player-container">
+                <iframe id="episodio-player" src="" frameborder="0" allowfullscreen></iframe>
+                <button class="action-button reconectar" id="btnReconectar" style="display: none;">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Reintentar conexión</span>
+                </button>
+            </div>
         </div>
         <div class="temporadas-container" id="temporadas-container"></div>
     </div>
@@ -1241,12 +1286,23 @@
                         const videoUrl = episodio.getAttribute('data-url');
                         const episodioPlayer = document.getElementById('episodio-player');
                         const episodiosPlayer = document.getElementById('episodios-player');
+                        const btnReconectar = document.getElementById('btnReconectar');
 
                         // Silenciar el trailer cuando se reproduce un episodio
                         muteTrailer();
 
                         episodioPlayer.src = videoUrl;
                         episodiosPlayer.classList.add('active');
+                        btnReconectar.style.display = 'flex'; // Mostrar el botón cuando se reproduce un episodio
+
+                        // Configurar el botón de reconexión
+                        btnReconectar.onclick = () => {
+                            const srcActual = episodioPlayer.src;
+                            episodioPlayer.src = '';
+                            setTimeout(() => {
+                                episodioPlayer.src = srcActual;
+                            }, 100);
+                        };
 
                         // Marcar como visto después de 30 segundos
                         setTimeout(() => {
