@@ -316,6 +316,30 @@
                 font-size: 1.8em;
             }
         }
+
+        .action-button.reconectar {
+            margin: 15px auto;
+            display: flex;
+            background: rgba(0, 255, 255, 0.15);
+            border: 1px solid var(--primary-color);
+        }
+
+        .action-button.reconectar:hover {
+            background: rgba(0, 255, 255, 0.3);
+        }
+
+        .action-button.reconectar i {
+            transition: transform 0.3s ease;
+        }
+
+        .action-button.reconectar:active i {
+            animation: girar 0.5s linear;
+        }
+
+        @keyframes girar {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
@@ -323,6 +347,10 @@
         <div class="player-wrapper" id="player-wrapper">
             <!-- El iframe se insertará aquí -->
         </div>
+        <button class="action-button reconectar" id="btnReconectar">
+            <i class="fas fa-sync-alt"></i>
+            <span>Reintentar conexión</span>
+        </button>
     </div>
 
     <div class="content-info">
@@ -451,6 +479,18 @@
             } else {
                 alert('No se ha seleccionado ninguna película');
                 window.location.href = 'Peliculas.html';
+            }
+        });
+
+        // Agregar el evento para recargar el video
+        document.getElementById('btnReconectar').addEventListener('click', () => {
+            const iframe = document.querySelector('#player-wrapper iframe');
+            if (iframe) {
+                const srcActual = iframe.src;
+                iframe.src = '';
+                setTimeout(() => {
+                    iframe.src = srcActual;
+                }, 100);
             }
         });
     </script>
