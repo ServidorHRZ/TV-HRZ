@@ -1,7 +1,7 @@
 {
   "series": [
     {
-      "id": 98,
+      "id": 1,
       "titulo": "Maxton Hall",
       "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7Zz2Sw8SkFKJOZZtFPKnGXtGZ3s.jpg",
       "disponible": true,
@@ -13,7 +13,12 @@
       "año": 2023,
       "genero": "suspenso",
       "director": "Anika Decker",
-      "actores": ["Mimi Fiedler", "Damian Hardung", "Tijan Marei", "Lucien Laviscount"],
+      "actores": [
+        "Mimi Fiedler",
+        "Damian Hardung",
+        "Tijan Marei",
+        "Lucien Laviscount"
+      ],
       "trailer": "https://www.youtube.com/embed/SeNl_Upmc_8",
       "temporadas": [
         {
@@ -28,7 +33,7 @@
             },
             {
               "numero": 2,
-              "titulo": "Secretos y Mentiras", 
+              "titulo": "Secretos y Mentiras",
               "descripcion": "Ruby descubre los secretos que esconde la familia Beaufort mientras su atracción por James crece.",
               "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1o5DZO7pR-kNhiMr78AbtwRhUmZBkcvEe/preview"
@@ -49,7 +54,7 @@
             },
             {
               "numero": 5,
-              "titulo": "Verdades Ocultas", 
+              "titulo": "Verdades Ocultas",
               "descripcion": "Secretos del pasado salen a la luz y amenazan con destruir todo lo que Ruby ha construido.",
               "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1EhStcoIMUr5hgkXVaC-GRNB20DbPWW7M/preview"
@@ -66,9 +71,9 @@
       ]
     },
     {
-      "id": 999,
+      "id": 2,
       "titulo": "Yo Soy Betty, la Fea",
-      "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iEBOiXiDGaxVR6w8aKgG5MEusuO.jpg", 
+      "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iEBOiXiDGaxVR6w8aKgG5MEusuO.jpg",
       "disponible": true,
       "nuevo": true,
       "badge": "Recién agregada",
@@ -78,7 +83,15 @@
       "año": 1999,
       "genero": "novelas",
       "director": "Mario Ribero Ferreira",
-      "actores": ["Ana María Orozco", "Jorge Enrique Abello", "Natalia Ramírez", "Lorna Paz", "Luis Mesa", "Julián Arango", "Mario Duarte"],
+      "actores": [
+        "Ana María Orozco",
+        "Jorge Enrique Abello",
+        "Natalia Ramírez",
+        "Lorna Paz",
+        "Luis Mesa",
+        "Julián Arango",
+        "Mario Duarte"
+      ],
       "trailer": "https://www.youtube.com/embed/dtSWNd0zWeI",
       "temporadas": [
         {
@@ -124,7 +137,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": 3,
       "titulo": "Tu amigo y vecino Spider-Man",
       "miniatura_episodios": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FaSe4aB8tiPQMoQt9B4SKFgIymwL.jpg&w=256&q=75",
       "disponible": false,
@@ -136,23 +149,33 @@
       "año": 2025,
       "genero": "animacion",
       "director": "Bob Richardson",
-      "actores": ["Christopher Daniel Barnes", "Sara Ballantine", "Edward Asner", "Linda Gary"],
-      "trailer": "https://www.youtube.com/embed/DZGN9fZvQhc", 
+      "actores": [
+        "Christopher Daniel Barnes",
+        "Sara Ballantine",
+        "Edward Asner",
+        "Linda Gary"
+      ],
+      "trailer": "https://www.youtube.com/embed/DZGN9fZvQhc",
       "temporadas": []
     },
     {
-      "id": 32,
+      "id": 4,
       "titulo": "MacGyver",
       "disponible": false,
       "nuevo": true,
-      "badge": "Recien agregado", 
+      "badge": "Recien agregado",
       "enProceso": false,
       "descripcion": "Un joven Angus MacGyver trabaja para una organización gubernamental secreta, utilizando su extraordinario talento para resolver problemas y su vasto conocimiento científico para salvar vidas.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BYTlkNWFiMmYtYjNhYS00Yjk0LWJmZDQtZDUzMzg0MmUzYmU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "año": 2016,
       "genero": "accion",
       "director": "Peter M. Lenkov",
-      "actores": ["Lucas Till", "Tristin Mays", "Justin Hires", "George Eads"],
+      "actores": [
+        "Lucas Till",
+        "Tristin Mays",
+        "Justin Hires",
+        "George Eads"
+      ],
       "trailer": "https://www.youtube.com/embed/PjOtIY6-Wys",
       "temporadas": [
         {
@@ -310,7 +333,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": 5,
       "titulo": "Berlin",
       "disponible": true,
       "nuevo": true,
@@ -319,9 +342,14 @@
       "descripcion": "Antes de los eventos de La Casa de Papel, Berlin y un grupo de expertos ladrones planean uno de los atracos más ambiciosos de su carrera en París.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BYjEwNjFmNjMtMGYzNy00MzBiLWJlYjAtMGJjNTEwZGFhMjNlXkEyXkFqcGc@._V1_QL75_UY281_CR18,0,190,281_.jpg",
       "año": 2023,
-      "genero": "accion", 
+      "genero": "accion",
       "director": "Álex Pina",
-      "actores": ["Pedro Alonso", "Michelle Jenner", "Tristán Ulloa", "Begoña Vargas"],
+      "actores": [
+        "Pedro Alonso",
+        "Michelle Jenner",
+        "Tristán Ulloa",
+        "Begoña Vargas"
+      ],
       "trailer": "https://www.youtube.com/embed/zw8eFypaCOo",
       "temporadas": [
         {
@@ -388,18 +416,23 @@
       ]
     },
     {
-      "id": 30,
+      "id": 6,
       "titulo": "La Casa de Papel",
       "disponible": true,
       "nuevo": true,
-      "badge": "Recien agregado", 
+      "badge": "Recien agregado",
       "enProceso": true,
       "descripcion": "Un grupo de criminales liderados por El Profesor planean los mayores atracos de la historia, primero en la Fábrica Nacional de Moneda y Timbre y luego en el Banco de España.",
       "imagen": "https://www.aceprensa.com/wp-content/uploads/2019/08/71446-1-683x1024.jpg",
       "año": 2017,
       "genero": "accion",
       "director": "Álex Pina",
-      "actores": ["Úrsula Corberó", "Álvaro Morte", "Itziar Ituño", "Pedro Alonso"],
+      "actores": [
+        "Úrsula Corberó",
+        "Álvaro Morte",
+        "Itziar Ituño",
+        "Pedro Alonso"
+      ],
       "trailer": "https://www.youtube.com/embed/3y-6iaveY6c",
       "temporadas": [
         {
@@ -414,7 +447,7 @@
             },
             {
               "numero": 2,
-              "titulo": "Imprudencias letales", 
+              "titulo": "Imprudencias letales",
               "descripcion": "Los atracadores toman el control de la Fábrica y mantienen a los rehenes mientras el Profesor manipula a la policía.",
               "duracion": "41:00",
               "url": "https://drive.google.com/file/d/1zh1Rndl4eXyYKG7zDFOtRLBW4MXf4vtW/preview"
@@ -423,7 +456,7 @@
               "numero": 3,
               "titulo": "Errar al disparar",
               "descripcion": "Tokio y Berlín discuten sobre el liderazgo mientras la inspectora Raquel Murillo busca pistas sobre el Profesor.",
-              "duracion": "51:00", 
+              "duracion": "51:00",
               "url": "https://drive.google.com/file/d/1fbiz7VJXKQxkhwC0yeyEo_3vbxtlg-93/preview"
             },
             {
@@ -501,7 +534,7 @@
       ]
     },
     {
-      "id": 233,
+      "id": 7,
       "titulo": "El Juego del Calamar",
       "disponible": true,
       "nuevo": false,
@@ -511,7 +544,12 @@
       "año": 2021,
       "genero": "accion",
       "director": "Hwang Dong-hyuk",
-      "actores": ["Lee Jung-jae", "Park Hae-soo", "Wi Ha-jun", "Jung Ho-yeon"],
+      "actores": [
+        "Lee Jung-jae",
+        "Park Hae-soo",
+        "Wi Ha-jun",
+        "Jung Ho-yeon"
+      ],
       "trailer": "https://www.youtube.com/embed/oqxAJKy0ii4",
       "temporadas": [
         {
@@ -602,7 +640,7 @@
             {
               "numero": 3,
               "titulo": "Capitulo 3",
-              "descripcion": "Disponible", 
+              "descripcion": "Disponible",
               "duracion": "55:00",
               "url": "https://drive.google.com/file/d/1JbQ5i1vsrdjUPPMxxvl0vttTKtJgIicP/preview"
             },
@@ -639,7 +677,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": 8,
       "titulo": "Lupin",
       "disponible": true,
       "nuevo": false,
@@ -649,7 +687,12 @@
       "año": 2021,
       "genero": "accion",
       "director": "George Kay",
-      "actores": ["Omar Sy", "Ludivine Sagnier", "Clotilde Hesme", "Vincent Londez"],
+      "actores": [
+        "Omar Sy",
+        "Ludivine Sagnier",
+        "Clotilde Hesme",
+        "Vincent Londez"
+      ],
       "trailer": "https://www.youtube.com/embed/yX5Py7lL5dw",
       "temporadas": [
         {
@@ -677,7 +720,7 @@
               "url": "https://drive.google.com/file/d/1muxommfV3u_r4o2BVA9xl_OZ2bZu-n_F/preview"
             },
             {
-              "numero": 4, 
+              "numero": 4,
               "titulo": "Capítulo 4",
               "descripcion": "Para proteger a su hijo, Assane debe encontrar a Raoul antes que sus enemigos. Claire confronta a Assane sobre sus mentiras.",
               "duracion": "42:00",
@@ -784,7 +827,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": 9,
       "titulo": "Dexter",
       "disponible": false,
       "nuevo": false,
@@ -794,13 +837,19 @@
       "año": 2006,
       "genero": "accion",
       "director": "James Manos Jr.",
-      "actores": ["Michael C. Hall", "Jennifer Carpenter", "David Zayas", "James Remar", "Julie Benz"],
+      "actores": [
+        "Michael C. Hall",
+        "Jennifer Carpenter",
+        "David Zayas",
+        "James Remar",
+        "Julie Benz"
+      ],
       "trailer": "https://www.youtube.com/embed/YQeUmSD1c3g",
       "temporadas": []
     },
     {
-      "id": 22,
-      "titulo": "Dexter: New Blood", 
+      "id": 10,
+      "titulo": "Dexter: New Blood",
       "disponible": true,
       "nuevo": false,
       "enProceso": false,
@@ -809,7 +858,13 @@
       "año": 2021,
       "genero": "accion",
       "director": "Clyde Phillips",
-      "actores": ["Michael C. Hall", "Jack Alcott", "Julia Jones", "Johnny Sequoyah", "Alano Miller"],
+      "actores": [
+        "Michael C. Hall",
+        "Jack Alcott",
+        "Julia Jones",
+        "Johnny Sequoyah",
+        "Alano Miller"
+      ],
       "trailer": "https://www.youtube.com/embed/M9Ymon5YFgk",
       "temporadas": [
         {
@@ -823,7 +878,7 @@
               "url": "https://drive.google.com/file/d/1CtT3vdmtnsbcLv0Y8Nopa_rfVskNDw4r/preview"
             },
             {
-              "numero": 2, 
+              "numero": 2,
               "titulo": "Las peores circunstancias",
               "descripcion": "Mientras la búsqueda de Matt Caldwell se intensifica, Dexter se ve obligado a tomar medidas para proteger su secreto. Harrison aparece inesperadamente en Iron Lake.",
               "duracion": "45:00",
@@ -890,7 +945,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": 11,
       "titulo": "Dexter: Pecado Original",
       "disponible": true,
       "nuevo": true,
@@ -900,7 +955,13 @@
       "año": 2024,
       "genero": "accion",
       "director": "Marcos Siega",
-      "actores": ["Michael C. Hall", "Jack Alcott", "Julia Jones", "Johnny Sequoyah", "Alano Miller"],
+      "actores": [
+        "Michael C. Hall",
+        "Jack Alcott",
+        "Julia Jones",
+        "Johnny Sequoyah",
+        "Alano Miller"
+      ],
       "trailer": "https://www.youtube.com/embed/S7U8e2TiwYU",
       "temporadas": [
         {
@@ -915,7 +976,7 @@
             },
             {
               "numero": 2,
-              "titulo": "Un niño en una tienda de dulces", 
+              "titulo": "Un niño en una tienda de dulces",
               "descripcion": "Dexter se adapta a su nueva vida en el departamento de policía mientras intenta mantener sus impulsos bajo control.",
               "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1p0X47kcHkLRAm_F-T3S6fRJu6r6ZGofK/preview"
@@ -931,7 +992,7 @@
               "numero": 4,
               "titulo": "Un ligero choque",
               "descripcion": "Dexter tiene como objetivo a un sicario de la mafia retirado (que podría seguir matando). Harry trabaja en el espantoso caso del asesinato de un niño de 10 años. Deb se cuela en un club nocturno con Sofia y conoce a un nuevo y emocionante amigo.",
-              "duracion": "45:00", 
+              "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1-zd8SIiCjBeHvoO4QgxuBdhpulhBSU0w/preview"
             },
             {
@@ -953,7 +1014,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 12,
       "titulo": "Doctor House",
       "disponible": true,
       "nuevo": false,
@@ -963,7 +1024,13 @@
       "año": 2004,
       "genero": "suspenso",
       "director": "David Shore",
-      "actores": ["Hugh Laurie", "Lisa Edelstein", "Omar Epps", "Robert Sean Leonard", "Jennifer Morrison"],
+      "actores": [
+        "Hugh Laurie",
+        "Lisa Edelstein",
+        "Omar Epps",
+        "Robert Sean Leonard",
+        "Jennifer Morrison"
+      ],
       "trailer": "https://www.youtube.com/embed/1nqW4g_S0wo",
       "temporadas": [
         {
@@ -1128,10 +1195,10 @@
       ]
     },
     {
-      "id": 19,
+      "id": 13,
       "titulo": "Silicon Valley",
       "disponible": true,
-      "nuevo": true ,
+      "nuevo": true,
       "badge": "Recien agregado",
       "enProceso": true,
       "descripcion": "La serie sigue a Richard Hendricks, un programador que crea una aplicación de compresión de datos, y las aventuras y desventuras que él y su startup Pied Piper enfrentan en el competitivo mundo de Silicon Valley.",
@@ -1139,7 +1206,13 @@
       "año": 2014,
       "genero": "suspenso",
       "director": "Mike Judge",
-      "actores": ["Thomas Middleditch", "T.J. Miller", "Josh Brener", "Martin Starr", "Kumail Nanjiani"],
+      "actores": [
+        "Thomas Middleditch",
+        "T.J. Miller",
+        "Josh Brener",
+        "Martin Starr",
+        "Kumail Nanjiani"
+      ],
       "trailer": "https://www.youtube.com/embed/dGs_0b2SeX0",
       "temporadas": [
         {
@@ -1154,7 +1227,7 @@
             },
             {
               "numero": 2,
-              "titulo": "La capitalización", 
+              "titulo": "La capitalización",
               "descripcion": "Mientras Richard intenta definir el rumbo de Pied Piper, se encuentra atrapado entre las diferentes visiones de Peter Gregory y Erlich.",
               "duracion": "30:00",
               "url": "https://drive.google.com/file/d/1VBMDH6sU0JS__RZuHjH2FTWLkbNvueXg/preview"
@@ -1206,7 +1279,7 @@
       ]
     },
     {
-      "id": 210,
+      "id": 14,
       "titulo": "Sherlock",
       "disponible": true,
       "nuevo": false,
@@ -1215,7 +1288,11 @@
       "año": 2010,
       "genero": "suspenso",
       "director": "Mark Gatiss, Steven Moffat",
-      "actores": ["Benedict Cumberbatch", "Martin Freeman", "Una Stubbs"],
+      "actores": [
+        "Benedict Cumberbatch",
+        "Martin Freeman",
+        "Una Stubbs"
+      ],
       "trailer": "https://www.youtube.com/embed/WSOfMYXal_M",
       "temporadas": [
         {
@@ -1324,9 +1401,8 @@
         }
       ]
     },
-
     {
-      "id": 27,
+      "id": 15,
       "titulo": "Arrow",
       "badge": "Recien agregado",
       "disponible": true,
@@ -1337,7 +1413,11 @@
       "año": 2012,
       "genero": "superheroes",
       "director": "Greg Berlanti",
-      "actores": ["Stephen Amell", "Katie Cassidy", "David Ramsey"],
+      "actores": [
+        "Stephen Amell",
+        "Katie Cassidy",
+        "David Ramsey"
+      ],
       "trailer": "https://www.youtube.com/embed/uFdqDMxlx88",
       "temporadas": [
         {
@@ -1509,7 +1589,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": 16,
       "titulo": "Supergirl",
       "badge": "Recien agregado",
       "disponible": true,
@@ -1520,7 +1600,11 @@
       "año": 2015,
       "genero": "superheroes",
       "director": "Greg Berlanti",
-      "actores": ["Melissa Benoist", "Chyler Leigh", "David Harewood"],
+      "actores": [
+        "Melissa Benoist",
+        "Chyler Leigh",
+        "David Harewood"
+      ],
       "trailer": "https://www.youtube.com/embed/NXAWqPKXG4E",
       "temporadas": [
         {
@@ -1534,7 +1618,7 @@
               "url": "https://drive.google.com/file/d/1Uudfxda2SD8oGJNiokrc_QyLrmcu1k_Q/preview"
             },
             {
-              "numero": 2, 
+              "numero": 2,
               "titulo": "Más fuerte juntos",
               "descripcion": "Mientras Kara se ajusta a su nuevo rol como Supergirl, debe enfrentar a un alienígena escapado.",
               "duracion": "45:00",
@@ -1671,9 +1755,9 @@
       ]
     },
     {
-      "id": 29,
+      "id": 17,
       "titulo": "Legends of Tomorrow",
-      "badge": "Recien agregado", 
+      "badge": "Recien agregado",
       "disponible": false,
       "nuevo": true,
       "enProceso": true,
@@ -1682,7 +1766,11 @@
       "año": 2016,
       "genero": "superheroes",
       "director": "Greg Berlanti",
-      "actores": ["Caity Lotz", "Brandon Routh", "Dominic Purcell"],
+      "actores": [
+        "Caity Lotz",
+        "Brandon Routh",
+        "Dominic Purcell"
+      ],
       "trailer": "https://www.youtube.com/embed/H_G6yyibN9g",
       "temporadas": [
         {
@@ -1696,7 +1784,7 @@
               "url": "https://drive.google.com/file/d/1abc123xyz/preview"
             },
             {
-              "numero": 2, 
+              "numero": 2,
               "titulo": "Piloto, Parte 2",
               "descripcion": "El equipo viaja a 1975 para encontrar al Dr. Aldus Boardman.",
               "duracion": "42:00",
@@ -1805,7 +1893,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 18,
       "titulo": "The Flash",
       "disponible": true,
       "nuevo": false,
@@ -1815,7 +1903,11 @@
       "año": 2014,
       "genero": "superheroes",
       "director": "Greg Berlanti, Geoff Johns, Andrew Kreisberg",
-      "actores": ["Grant Gustin", "Candice Patton", "Danielle Panabaker"],
+      "actores": [
+        "Grant Gustin",
+        "Candice Patton",
+        "Danielle Panabaker"
+      ],
       "trailer": "https://www.youtube.com/embed/y3-fSjatd8s",
       "temporadas": [
         {
@@ -1987,7 +2079,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 19,
       "titulo": "Mr. Robot",
       "nuevo": true,
       "disponible": true,
@@ -1998,7 +2090,11 @@
       "año": 2015,
       "genero": "accion",
       "director": "Sam Esmail",
-      "actores": ["Rami Malek", "Christian Slater", "Carly Chaikin"],
+      "actores": [
+        "Rami Malek",
+        "Christian Slater",
+        "Carly Chaikin"
+      ],
       "trailer": "https://www.youtube.com/embed/xIBiJ_SzJTA",
       "temporadas": [
         {
@@ -2069,7 +2165,7 @@
             },
             {
               "numero": 10,
-              "titulo": "zer0-day.avi", 
+              "titulo": "zer0-day.avi",
               "descripcion": "El plan de fsociety llega a su clímax mientras el mundo financiero se desmorona.",
               "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1nxJsDr8XZDrlcURYZ8XOs51ij8H9Maa3/preview"
@@ -2090,7 +2186,7 @@
               "numero": 2,
               "titulo": "unm4sk-pt2.tc",
               "descripcion": "Mientras el FBI investiga el hack de 5/9, Elliot se despierta sin recordar los últimos tres días.",
-              "duracion": "45:00", 
+              "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1hDH07PNR_lCb2KkyBXMte14z7MBIwpcF/preview"
             },
             {
@@ -2130,7 +2226,7 @@
             },
             {
               "numero": 8,
-              "titulo": "h1dden-pr0cess.axx", 
+              "titulo": "h1dden-pr0cess.axx",
               "descripcion": "Elliot sigue el rastro de un misterioso poder detrás de E Corp.",
               "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1Q_CAJXyVXinyT70bMVNF0WQh_W-eSikp/preview"
@@ -2139,7 +2235,7 @@
               "numero": 9,
               "titulo": "pyth0n-pt1.p7z",
               "descripcion": "Angela acepta ayudar a Elliot mientras la Dark Army revela sus verdaderas intenciones.",
-              "duracion": "45:00", 
+              "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1fA7__SLzcvtWCWEV-RvEygAZ4ZYoXq3C/preview"
             },
             {
@@ -2151,7 +2247,7 @@
             },
             {
               "numero": 11,
-              "titulo": "pyth0n-pt3.p7z", 
+              "titulo": "pyth0n-pt3.p7z",
               "descripcion": "La verdad sobre la Fase 2 sale a la luz mientras Elliot intenta detener el plan.",
               "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1RpHNuk63_zGfQ_lbZKNbSk5Ghf0NIsAu/preview"
@@ -2243,7 +2339,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 20,
       "titulo": "Las Sombrías Aventuras de Billy y Mandy",
       "disponible": true,
       "nuevo": false,
@@ -2253,7 +2349,11 @@
       "año": 2001,
       "genero": "animacion",
       "director": "Maxwell Atoms",
-      "actores": ["Richard Steven Horvitz", "Grey DeLisle", "Greg Eagles"],
+      "actores": [
+        "Richard Steven Horvitz",
+        "Grey DeLisle",
+        "Greg Eagles"
+      ],
       "trailer": "https://www.youtube.com/embed/4Iqe9-zPDQY",
       "temporadas": [
         {
@@ -2376,7 +2476,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 21,
       "titulo": "Ed, Edd y Eddy",
       "disponible": true,
       "nuevo": false,
@@ -2386,7 +2486,11 @@
       "año": 1999,
       "genero": "animacion",
       "director": "Danny Antonucci",
-      "actores": ["Matt Hill", "Samuel Vincent", "Tony Sampson"],
+      "actores": [
+        "Matt Hill",
+        "Samuel Vincent",
+        "Tony Sampson"
+      ],
       "trailer": "https://www.youtube.com/embed/6KZZQJf8BzM",
       "temporadas": [
         {
@@ -2401,7 +2505,7 @@
             },
             {
               "numero": 2,
-              "titulo": "Más de un Ed / Ed y Seekers / Si no puedes con un Ed", 
+              "titulo": "Más de un Ed / Ed y Seekers / Si no puedes con un Ed",
               "descripcion": "Double D intenta organizar todo / Los Eds juegan al escondite / Los Eds intentan impresionar a las hermanas Kanker",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1AYdNhWHcne7iSEq07k-iC5zUapW4yEHQ/preview"
@@ -2579,7 +2683,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 22,
       "titulo": "Johnny Bravo",
       "disponible": true,
       "nuevo": false,
@@ -2589,7 +2693,11 @@
       "año": 1997,
       "genero": "animacion",
       "director": "Van Partible",
-      "actores": ["Jeff Bennett", "Brenda Vaccaro", "Mae Whitman"],
+      "actores": [
+        "Jeff Bennett",
+        "Brenda Vaccaro",
+        "Mae Whitman"
+      ],
       "trailer": "https://drive.google.com/file/d/1Kzs3WckpuFRHxtY7BNu7nn2pR63srIAs/view",
       "temporadas": [
         {
@@ -2684,7 +2792,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 23,
       "titulo": "El Laboratorio de Dexter",
       "disponible": true,
       "nuevo": false,
@@ -2694,7 +2802,11 @@
       "año": 1996,
       "genero": "animacion",
       "director": "Genndy Tartakovsky",
-      "actores": ["Christine Cavanaugh", "Allison Moore", "Kath Soucie"],
+      "actores": [
+        "Christine Cavanaugh",
+        "Allison Moore",
+        "Kath Soucie"
+      ],
       "trailer": "https://www.youtube.com/embed/QbZxvwki_rA",
       "temporadas": [
         {
@@ -2711,7 +2823,7 @@
               "numero": 2,
               "titulo": "Dexter Dodgeball / Rasslor / Dexter's Assistant",
               "descripcion": "Dexter enfrenta el dodgeball / Un luchador intergaláctico desafía a Dexter / Dexter busca un asistente de laboratorio",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1DayZiu0e_JxvE5v1K4V3suMpPNFM8Hga/preview"
             },
             {
@@ -2852,7 +2964,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 24,
       "titulo": "Johnny Test",
       "disponible": true,
       "nuevo": false,
@@ -2862,7 +2974,11 @@
       "año": 2005,
       "genero": "animacion",
       "director": "Scott Fellows",
-      "actores": ["James Arnold Taylor", "Louis Chirillo", "Maryke Hendrikse"],
+      "actores": [
+        "James Arnold Taylor",
+        "Louis Chirillo",
+        "Maryke Hendrikse"
+      ],
       "trailer": "https://www.youtube.com/embed/4Iqe9-zPDQY",
       "temporadas": [
         {
@@ -2964,7 +3080,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 25,
       "titulo": "Un Show Más",
       "disponible": true,
       "nuevo": false,
@@ -2974,7 +3090,11 @@
       "año": 2010,
       "genero": "animacion",
       "director": "J.G. Quintel",
-      "actores": ["J.G. Quintel", "William Salyers", "Sam Marin"],
+      "actores": [
+        "J.G. Quintel",
+        "William Salyers",
+        "Sam Marin"
+      ],
       "trailer": "https://www.youtube.com/embed/y894QNtX0VA",
       "temporadas": [
         {
@@ -3076,7 +3196,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": 26,
       "titulo": "Drama Total",
       "disponible": true,
       "nuevo": false,
@@ -3087,7 +3207,11 @@
       "año": 2007,
       "genero": "animacion",
       "director": "Jennifer Pertsch",
-      "actores": ["Christian Potenza", "Drew Nelson", "Carter Hayden"],
+      "actores": [
+        "Christian Potenza",
+        "Drew Nelson",
+        "Carter Hayden"
+      ],
       "trailer": "https://www.youtube.com/embed/QhzdNrc4N4Q",
       "temporadas": [
         {
@@ -3097,12 +3221,12 @@
               "numero": 1,
               "titulo": "¡No tan feliz campamento! - Parte 1",
               "descripcion": "22 campistas llegan a la Isla del Drama para competir por $100,000.",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1bKX5dvr9Yl8Zt8RU_ezvyqSOt6dwSGb7/preview"
             },
             {
               "numero": 2,
-              "titulo": "¡No tan feliz campamento! - Parte 2", 
+              "titulo": "¡No tan feliz campamento! - Parte 2",
               "descripcion": "Los equipos compiten en su primer desafío: saltar desde un acantilado.",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/18186KqTWhE2GE8Hz8DkeTn_WYbjDBW0u/preview"
@@ -3151,7 +3275,7 @@
             },
             {
               "numero": 9,
-              "titulo": "Paintball extremo", 
+              "titulo": "Paintball extremo",
               "descripcion": "Los equipos se enfrentan en un juego de paintball.",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1zpm6w0fXv1VnUuliashbi2FLcHp-61Zg/preview"
@@ -3167,7 +3291,7 @@
               "numero": 11,
               "titulo": "Cocina del terror",
               "descripcion": "Los equipos deben preparar un banquete para el Chef.",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1IkiSmaNjnMbDLTGq2bONdNfA-RQoaVND/preview"
             },
             {
@@ -3294,7 +3418,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": 27,
       "titulo": "Clarence",
       "disponible": true,
       "badge": "Recien agregado",
@@ -3305,7 +3429,11 @@
       "año": 2014,
       "genero": "animacion",
       "director": "Skyler Page",
-      "actores": ["Spencer Rothbell", "Sean Giambrone", "Tom Kenny"],
+      "actores": [
+        "Spencer Rothbell",
+        "Sean Giambrone",
+        "Tom Kenny"
+      ],
       "trailer": "https://www.youtube.com/embed/wo4ae_FNvWw",
       "temporadas": [
         {
@@ -3315,7 +3443,7 @@
               "numero": 1,
               "titulo": "Piloto",
               "descripcion": "Clarence conoce a sus nuevos amigos Jeff y Sumo en la escuela.",
-              "duracion": "11:00", 
+              "duracion": "11:00",
               "url": "https://drive.google.com/file/d/1V6X9aE76mzJGmFbdyS8tPgpZxV8YOS6y/preview"
             },
             {
@@ -3666,7 +3794,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 28,
       "titulo": "Ben 10",
       "disponible": true,
       "nuevo": false,
@@ -3676,7 +3804,11 @@
       "año": 2005,
       "genero": "animacion",
       "director": "Man of Action",
-      "actores": ["Tara Strong", "Paul Eiding", "Meagan Smith"],
+      "actores": [
+        "Tara Strong",
+        "Paul Eiding",
+        "Meagan Smith"
+      ],
       "trailer": "https://www.youtube.com/embed/odV3DJnmWF8",
       "temporadas": [
         {
@@ -3693,7 +3825,7 @@
               "numero": 2,
               "titulo": "Washington A.C.",
               "descripcion": "Ben debe detener a un villano que planea congelar Washington D.C.",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1N3q3L2cGMYdSeGLbb0QLyfU07PUfX4Bk/preview"
             },
             {
@@ -3747,7 +3879,7 @@
             },
             {
               "numero": 10,
-              "titulo": "La Chica Con Suerte", 
+              "titulo": "La Chica Con Suerte",
               "descripcion": "Gwen parece tener una suerte extraordinaria, pero pronto descubre que hay algo más detrás de su aparente fortuna.",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1S4mx4pvYlpDuynHD0fPpLsEGZ_Nm3Npi/preview"
@@ -3883,7 +4015,7 @@
             },
             {
               "numero": 2,
-              "titulo": "Locura a la Medianoche", 
+              "titulo": "Locura a la Medianoche",
               "descripcion": "Ben enfrenta extraños eventos durante la noche.",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1MKq8SF8vWD2F2hB_2Y_6FpLHq3McO2hI/preview"
@@ -3962,7 +4094,7 @@
               "numero": 13,
               "titulo": "La visitante",
               "descripcion": "Una misteriosa visitante llega buscando ayuda.",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1UbKC3Mhl_2awaMcH_R1L_cQ_ZUdCSsTz/preview"
             }
           ]
@@ -4038,7 +4170,7 @@
               "numero": "10-11-12",
               "titulo": "El secreto del Omnitrix",
               "descripcion": "Ben descubre un secreto importante sobre el Omnitrix que cambiará todo.",
-              "duracion": "66:00", 
+              "duracion": "66:00",
               "url": "https://drive.google.com/file/d/1zpBW75QRxT-6B1KZTeiKxtZoBJVaGySc/preview"
             },
             {
@@ -4053,7 +4185,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 29,
       "titulo": "Ben 10: Fuerza Alienígena",
       "disponible": true,
       "nuevo": false,
@@ -4063,7 +4195,11 @@
       "año": 2008,
       "genero": "animacion",
       "director": "Glen Murakami",
-      "actores": ["Yuri Lowenthal", "Ashley Johnson", "Greg Cipes"],
+      "actores": [
+        "Yuri Lowenthal",
+        "Ashley Johnson",
+        "Greg Cipes"
+      ],
       "trailer": "https://www.youtube.com/embed/WBc9ZmOtHtw",
       "temporadas": [
         {
@@ -4173,7 +4309,7 @@
               "url": "https://drive.google.com/file/d/1G3yxZ_TWdgZ1vsUn71v4yIsMUYmTxQcm/preview"
             },
             {
-              "numero": 2, 
+              "numero": 2,
               "titulo": "A solas con el enemigo",
               "descripcion": "Ben debe enfrentarse a un enemigo en solitario.",
               "duracion": "22:00",
@@ -4261,7 +4397,7 @@
       ]
     },
     {
-      "id": 11, 
+      "id": 30,
       "titulo": "Ben 10: Supremacía Alienígena",
       "disponible": false,
       "nuevo": true,
@@ -4285,7 +4421,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 31,
       "titulo": "Ben 10: Omniverse",
       "disponible": false,
       "nuevo": true,
@@ -4309,7 +4445,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 32,
       "titulo": "Ben 10 Reboot",
       "disponible": false,
       "nuevo": true,
@@ -4333,7 +4469,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 33,
       "titulo": "Kick Buttowski",
       "disponible": true,
       "nuevo": false,
@@ -4343,7 +4479,11 @@
       "año": 2010,
       "genero": "animacion",
       "director": "Sandro Corsaro",
-      "actores": ["Charlie Schlatter", "Matt L. Jones", "Danny Cooksey"],
+      "actores": [
+        "Charlie Schlatter",
+        "Matt L. Jones",
+        "Danny Cooksey"
+      ],
       "trailer": "https://www.youtube.com/embed/T5F_hTJKcu4",
       "temporadas": [
         {
@@ -4715,7 +4855,7 @@
               "numero": 32,
               "titulo": "Sólo Quienes Tienen Un Préstamo / Inversión De Rollos",
               "descripcion": "Problemas con un préstamo / Una inversión arriesgada",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/18RjN7L7AyQ8ZG2uH_pEVWJvPhvSihKoO/preview"
             }
           ]
@@ -4723,7 +4863,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": 34,
       "titulo": "Kid vs Kat",
       "disponible": true,
       "nuevo": false,
@@ -4731,9 +4871,17 @@
       "descripcion": "Coop Burtonburger descubre que el nuevo gato de su hermana, el Sr. Gato, es en realidad un alienígena malvado que planea conquistar la Tierra. Mientras intenta exponer la verdadera identidad del gato, Coop debe proteger a su familia y al mundo de los planes diabólicos del Sr. Gato.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BZmY5NWNhNWEtNmVmZC00Yzg4LTk3ZGUtNzViZWE3N2E5NmUwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "año": 2008,
-      "genero": ["Acción", "animación", "Ciencia ficción"],
+      "genero": [
+        "Acción",
+        "animación",
+        "Ciencia ficción"
+      ],
       "director": "Rob Boutilier",
-      "actores": ["Erin Mathews", "Kathleen Barr", "Trevor Devall"],
+      "actores": [
+        "Erin Mathews",
+        "Kathleen Barr",
+        "Trevor Devall"
+      ],
       "trailer": "https://www.youtube.com/embed/TmY_pounds6w",
       "temporadas": [
         {
@@ -4897,7 +5045,7 @@
               "numero": 23,
               "titulo": "En El Perro Confiamos / Carrera En La Nieve",
               "descripcion": "Más aventuras con el perro / Nueva carrera invernal",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1B6Xsy59U_q7IqUuemx7OuFMK_y7HpYBo/preview"
             },
             {
@@ -4909,7 +5057,7 @@
             },
             {
               "numero": 25,
-              "titulo": "Captura Al Gato / Desde El Espacio Exterior", 
+              "titulo": "Captura Al Gato / Desde El Espacio Exterior",
               "descripcion": "Última captura / Revelaciones espaciales finales",
               "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1k65cIPW_5Nax1cjnQMG5R1umIGdJOy_T/preview"
@@ -4926,7 +5074,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": 35,
       "titulo": "Phineas y Ferb",
       "disponible": true,
       "nuevo": true,
@@ -4936,7 +5084,11 @@
       "año": 2007,
       "genero": "animacion",
       "director": "Dan Povenmire, Jeff 'Swampy' Marsh",
-      "actores": ["Vincent Martella", "Thomas Sangster", "Ashley Tisdale"],
+      "actores": [
+        "Vincent Martella",
+        "Thomas Sangster",
+        "Ashley Tisdale"
+      ],
       "trailer": "https://www.youtube.com/embed/9sfNSkMYJQY",
       "temporadas": [
         {
@@ -5114,7 +5266,7 @@
               "numero": 25,
               "titulo": "La Expedición",
               "descripcion": "Realizan una expedición al centro de la Tierra",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1pvRyPEq8kkJtlpdxoYv-C1GlnT_rVUG-/preview"
             },
             {
@@ -5140,7 +5292,7 @@
               "numero": 2,
               "titulo": "Entrevista con un Ornitorrinco",
               "descripcion": "Perry el ornitorrinco es entrevistado",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1HBuLFCIK9Em_eF-y2shnfQ0HW5yPlppx/preview"
             },
             {
@@ -5385,7 +5537,7 @@
               "numero": "37-38",
               "titulo": "El verano tuyo es",
               "descripcion": "Phineas y Ferb organizan el día más largo del verano con una serie de aventuras épicas y musicales para celebrar la temporada",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://drive.google.com/file/d/1o49tn9lhnSprb77AD1Kvu0PCFfUwF5TT/preview"
             },
             {
