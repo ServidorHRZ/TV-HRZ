@@ -1,6 +1,71 @@
 {
   "series": [
     {
+      "id": 98,
+      "titulo": "Maxton Hall",
+      "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7Zz2Sw8SkFKJOZZtFPKnGXtGZ3s.jpg",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregada",
+      "enProceso": false,
+      "descripcion": "Ruby Bell es una estudiante becada que ingresa a la prestigiosa escuela Maxton Hall, donde conoce a James Beaufort, el chico más popular y rico del instituto. A pesar de sus diferencias sociales y económicas, surge una atracción entre ellos que deberán mantener en secreto.",
+      "imagen": "https://i.ebayimg.com/00/s/MTYwMFgxMDgw/z/XrEAAOSwTzFmNDmU/$_57.JPG?set_id=8800005007",
+      "año": 2023,
+      "genero": "suspenso",
+      "director": "Anika Decker",
+      "actores": ["Mimi Fiedler", "Damian Hardung", "Tijan Marei", "Lucien Laviscount"],
+      "trailer": "https://www.youtube.com/embed/SeNl_Upmc_8",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Bienvenida a Maxton Hall",
+              "descripcion": "Ruby Bell llega como estudiante becada a la prestigiosa escuela Maxton Hall, donde conoce a James Beaufort.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1XIwFYJyhad5RPuBPHBvs43S03VJksUIQ/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Secretos y Mentiras", 
+              "descripcion": "Ruby descubre los secretos que esconde la familia Beaufort mientras su atracción por James crece.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1o5DZO7pR-kNhiMr78AbtwRhUmZBkcvEe/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Diferencias Sociales",
+              "descripcion": "Las diferencias sociales entre Ruby y James comienzan a causar conflictos en su relación.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1Yw5HaZHj6OwKj2Hj6OwKj2H/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Decisiones Difíciles",
+              "descripcion": "Ruby debe tomar decisiones importantes que afectarán su futuro en Maxton Hall.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1bgtrpj8QBmMLEO5vp7rReVUCCz6p-nPk/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Verdades Ocultas", 
+              "descripcion": "Secretos del pasado salen a la luz y amenazan con destruir todo lo que Ruby ha construido.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1EhStcoIMUr5hgkXVaC-GRNB20DbPWW7M/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "El Precio del Amor",
+              "descripcion": "Ruby y James enfrentan las consecuencias de su relación prohibida.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1IijH7gz0Afih7HUpZrJqhJvhz8XlxbjM/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 999,
       "titulo": "Yo Soy Betty, la Fea",
       "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iEBOiXiDGaxVR6w8aKgG5MEusuO.jpg", 
