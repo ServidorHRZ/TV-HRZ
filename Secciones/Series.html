@@ -801,9 +801,25 @@
             text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
         }
 
-        .categoria-titulo i {
-            font-size: 0.9em;
-            text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        .categoria-logo {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            margin-left: 10px;
+            border-radius: 8px;
+            padding: 2px;
+            background: rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .categoria-logo:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .categoria-logo {
+                height: 30px;
+            }
         }
 
         .categoria-contenedor {
@@ -1234,12 +1250,18 @@
         function organizarPorCategorias(series) {
             const categorias = {
                 'mi_lista': { titulo: 'Mi Lista', series: [], mantenerOrden: false },
+                'neflix': { titulo: 'Netflix', series: [], mantenerOrden: false },
+                'amazon': { titulo: 'Amazon Prime', series: [], mantenerOrden: false },
+                'hbo': { titulo: 'HBO Max', series: [], mantenerOrden: false },
                 'accion': { titulo: 'Accion y Mucho Mas', series: [], mantenerOrden: false },
                 'suspenso': { titulo: 'Suspenso y Drama', series: [], mantenerOrden: false },
                 'marvel': { titulo: 'Marvel', series: [], mantenerOrden: false },
-                'superheroes': { titulo: 'Superheroes', series: [], mantenerOrden: false },
-                'animacion': { titulo: 'Animación', series: [], mantenerOrden: false },
+                'dc': { titulo: 'DC Comics', series: [], mantenerOrden: false },
+                'cartoon': { titulo: 'Cartoon Network', series: [], mantenerOrden: false },
+                'disney': { titulo: 'Disney+', series: [], mantenerOrden: false },
+                'nick': { titulo: 'Nickelodeon', series: [], mantenerOrden: false },
                 'novelas': { titulo: 'Novelas', series: [], mantenerOrden: false },
+                'anime': { titulo: 'Anime', series: [], mantenerOrden: false },
             };
 
             // Función para mezclar array
@@ -1288,6 +1310,17 @@
             const categoriasWrapper = document.querySelector('.categorias-wrapper');
             if (!categoriasWrapper) return;
 
+            const logosCategoria = {
+                'neflix': '../logos/1.png',
+                'amazon': '../logos/amazon.png',
+                'hbo': '../logos/hbo.png',
+                'disney': '../logos/disney.png',
+                'marvel': '../logos/marvel.png',
+                'dc': '../logos/dc.png',
+                'cartoon': '../logos/cartoon.png',
+                'nick': '../logos/nick.png'
+            };
+
             categoriasWrapper.innerHTML = '';
             
             // Mostrar Mi Lista primero
@@ -1322,8 +1355,14 @@
                     const seccion = document.createElement('div');
                     seccion.className = 'categoria-seccion';
                     
+                    const logoHTML = logosCategoria[key] ? 
+                        `<img src="${logosCategoria[key]}" alt="${categoria.titulo} logo" class="categoria-logo">` : '';
+                    
                     seccion.innerHTML = `
-                        <h2 class="categoria-titulo">${categoria.titulo}</h2>
+                        <h2 class="categoria-titulo">
+                            ${categoria.titulo}
+                            ${logoHTML}
+                        </h2>
                         <div class="categoria-contenedor">
                             ${categoria.series.map(serie => `
                                 <div class="movie-card" onclick="abrirSerie(${serie.id})">
