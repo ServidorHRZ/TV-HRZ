@@ -1044,6 +1044,24 @@
                 height: 150px;
             }
         }
+
+        .logos-container {
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Espacio entre logos */
+        }
+
+        .categoria-titulo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: var(--primary-color);
+            margin: 20px 0;
+            font-size: 1.8em;
+            padding-left: 20px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+            flex-wrap: wrap; /* Para que los logos pasen a la siguiente línea si no hay espacio */
+        }
     </style>
 </head>
 <body>
@@ -1252,7 +1270,6 @@
                 'mi_lista': { titulo: 'Mi Lista', series: [], mantenerOrden: false },
                 'neflix': { titulo: 'Netflix', series: [], mantenerOrden: false },
                 'amazon': { titulo: 'Amazon Prime', series: [], mantenerOrden: false },
-                'hbo': { titulo: 'HBO Max', series: [], mantenerOrden: false },
                 'accion': { titulo: 'Accion y Mucho Mas', series: [], mantenerOrden: false },
                 'suspenso': { titulo: 'Suspenso y Drama', series: [], mantenerOrden: false },
                 'marvel': { titulo: 'Marvel', series: [], mantenerOrden: false },
@@ -1311,14 +1328,13 @@
             if (!categoriasWrapper) return;
 
             const logosCategoria = {
-                'neflix': '../logos/1.jpeg',
-                'amazon': '../logos/amazon.png',
-                'hbo': '../logos/hbo.png',
-                'disney': '../logos/disney.png',
-                'marvel': '../logos/marvel.png',
-                'dc': '../logos/dc.png',
-                'cartoon': '../logos/cartoon.png',
-                'nick': '../logos/nick.png'
+                'neflix': ['../logos/1.jpeg'],
+                'amazon': ['../logos/2.jpeg'], // ejemplo con dos logos
+                'disney': ['../logos/3.jpg'], // ejemplo con dos logos
+                'marvel': ['../logos/4.jpeg'], // ejemplo con dos logos
+                'dc': ['../logos/5.jpeg'],
+                'cartoon': ['../logos/6.jpeg'],
+                'nick': ['../logos/7.jpeg']
             };
 
             categoriasWrapper.innerHTML = '';
@@ -1355,13 +1371,17 @@
                     const seccion = document.createElement('div');
                     seccion.className = 'categoria-seccion';
                     
-                    const logoHTML = logosCategoria[key] ? 
-                        `<img src="${logosCategoria[key]}" alt="${categoria.titulo} logo" class="categoria-logo">` : '';
+                    const logosHTML = logosCategoria[key] ? 
+                        logosCategoria[key].map(logo => 
+                            `<img src="${logo}" alt="${categoria.titulo} logo" class="categoria-logo">`
+                        ).join('') : '';
                     
                     seccion.innerHTML = `
                         <h2 class="categoria-titulo">
                             ${categoria.titulo}
-                            ${logoHTML}
+                            <div class="logos-container">
+                                ${logosHTML}
+                            </div>
                         </h2>
                         <div class="categoria-contenedor">
                             ${categoria.series.map(serie => `
