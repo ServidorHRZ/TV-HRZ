@@ -1751,7 +1751,8 @@
                     const isScrollable = contenedor.scrollWidth > contenedor.clientWidth;
                     const isAtStart = contenedor.scrollLeft <= 0;
                     const isAtEnd = contenedor.scrollLeft >= contenedor.scrollWidth - contenedor.clientWidth;
-
+                 
+                    console.log(isScrollable, isAtStart, isAtEnd);
                     if (isScrollable) {
                         prevBtn.style.display = isAtStart ? 'none' : 'block';
                         nextBtn.style.display = isAtEnd ? 'none' : 'block';

@@ -173,36 +173,92 @@
         }
 
         .action-button.like {
-            background: var(--primary-color);
-            color: var(--background-color);
-            padding: 8px 16px;
+            background: rgba(0, 255, 255, 0.1);
+            color: var(--secondary-color);
+            padding: 12px 16px;
             font-size: 0.9em;
             margin-left: auto;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .action-button.like i {
+            font-size: 1.1em;
         }
 
         .action-button.like:hover {
-            background: #00e6e6;
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+            box-shadow: 0 5px 15px rgba(255, 64, 129, 0.3);
         }
 
         .action-button.liked {
             background: #ff4081;
             color: white;
+            animation: likeAnimation 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .action-button.liked i {
+            animation: heartBeat 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            color: white;
+        }
+
+        @keyframes likeAnimation {
+            0% {
+                transform: scale(1);
+                background: rgba(0, 255, 255, 0.1);
+            }
+            50% {
+                transform: scale(1.1);
+                background: #ff4081;
+            }
+            100% {
+                transform: scale(1);
+                background: #ff4081;
+            }
         }
 
         @keyframes heartBeat {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.4);
+            }
+            50% {
+                transform: scale(1);
+            }
+            75% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
 
-        .action-button.like i {
-            transition: transform 0.3s ease;
+        /* Efecto de ripple al hacer clic */
+        .action-button.like::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 64, 129, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s ease-out, height 0.3s ease-out;
         }
 
-        .action-button.like:active i {
-            animation: heartBeat 0.3s ease-in-out;
+        .action-button.like:active::after {
+            width: 200%;
+            height: 200%;
+            opacity: 0;
         }
 
         .action-button.share {
@@ -299,7 +355,8 @@
             }
 
             .action-button.like {
-                margin-left: 0;
+                height: 40px;
+                padding: 10px 14px;
             }
         }
 
@@ -449,32 +506,38 @@
                     });
                 }
 
-                // Sistema de Me gusta
+                // Sistema de Me gusta para películas específicamente
                 const likeButton = document.getElementById('likeButton');
-                const peliculasLiked = JSON.parse(localStorage.getItem('peliculasLiked') || '[]');
+                const miListaPeliculas = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
                 
                 // Verificar si la película ya está en favoritos
-                if (peliculasLiked.includes(peliculaSeleccionada.titulo)) {
+                const peliculaEstaEnLista = miListaPeliculas.some(p => p.titulo === peliculaSeleccionada.titulo);
+                if (peliculaEstaEnLista) {
                     likeButton.classList.add('liked');
                 }
 
                 // Manejar clicks en el botón Me gusta
                 likeButton.addEventListener('click', () => {
-                    const isLiked = likeButton.classList.toggle('liked');
-                    const peliculasLiked = JSON.parse(localStorage.getItem('peliculasLiked') || '[]');
+                    const miListaPeliculas = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
+                    const isLiked = !likeButton.classList.contains('liked');
                     
                     if (isLiked) {
-                        if (!peliculasLiked.includes(peliculaSeleccionada.titulo)) {
-                            peliculasLiked.push(peliculaSeleccionada.titulo);
+                        likeButton.classList.add('liked');
+                        // Agregar al inicio de Mi Lista si no está
+                        if (!miListaPeliculas.some(p => p.titulo === peliculaSeleccionada.titulo)) {
+                            miListaPeliculas.unshift(peliculaSeleccionada);
                         }
                     } else {
-                        const index = peliculasLiked.indexOf(peliculaSeleccionada.titulo);
+                        likeButton.classList.remove('liked');
+                        // Remover de Mi Lista
+                        const index = miListaPeliculas.findIndex(p => p.titulo === peliculaSeleccionada.titulo);
                         if (index > -1) {
-                            peliculasLiked.splice(index, 1);
+                            miListaPeliculas.splice(index, 1);
                         }
                     }
                     
-                    localStorage.setItem('peliculasLiked', JSON.stringify(peliculasLiked));
+                    localStorage.setItem('miListaPeliculas', JSON.stringify(miListaPeliculas));
+                    window.dispatchEvent(new Event('miListaPeliculasActualizada'));
                 });
             } else {
                 alert('No se ha seleccionado ninguna película');

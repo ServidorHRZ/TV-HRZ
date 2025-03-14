@@ -1,11 +1,42 @@
 {
   "peliculas": [
     {
+      "titulo": "The Batman",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado", 
+      "año": 2022,
+      "genero": "dc",
+      "imagen": "https://image.tmdb.org/t/p/w185/pOaKyhMwALpCTg07eQQu0SQCbL9.jpg",
+      "enlace": "https://fastream.to/embed-rq2dfme0wmbx.html",
+      "descripcion": "En su segundo año luchando contra el crimen, Batman explora la corrupción existente en Gotham City y el vínculo de esta con su propia familia. Además, entrará en conflicto con un asesino en serie conocido como El Acertijo, que ha iniciado una caza contra las élites de Gotham."
+    },
+    {
+      "titulo": "Batman vs Superman: El amanecer de la justicia",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado",
+      "año": 2016,
+      "genero": "dc",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfqQFZGtSYX9MJLqAAiNYdgl3rMQwDxKn0KA&s",
+      "enlace": "https://fastream.to/embed-l34746crdk1m.html",
+      "descripcion": "Temiendo las acciones de un superhéroe con poderes divinos sin control, el formidable y contundente vigilante de Gotham City se enfrenta al más venerado salvador de Metrópolis, mientras el mundo debate qué tipo de héroe necesita realmente. Y con Batman y Superman en guerra entre sí, una nueva amenaza surge rápidamente, poniendo a la humanidad en el mayor peligro que jamás haya conocido."
+    },
+    {
+      "titulo": "Liga de la Justicia",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado",
+      "año": 2017,
+      "genero": "dc",
+      "imagen": "https://image.tmdb.org/t/p/w185/wUWqnavD8iGZ5F4xXhWlrtEzKjV.jpg",
+      "enlace": "https://fastream.to/embed-ad8hsb7rbfh1.html",
+      "descripcion": "Motivado por su renovada fe en la humanidad e inspirado por el acto de sacrificio de Superman, Bruce Wayne busca la ayuda de su nueva aliada, Diana Prince, para enfrentarse a un enemigo aún mayor. Juntos, Batman y Wonder Woman trabajan rápidamente para encontrar y reclutar a un equipo de metahumanos para hacer frente a esta nueva amenaza."
+    },
+    {
       "titulo": "G.I. Joe: La venganza",
       "disponible": true,
-      "badge": "Recién agregado", 
       "año": 2013,
-      "nuevo": true,
       "genero": "accion",
       "imagen": "https://image.tmdb.org/t/p/w185/toOEolDF0plAqR2gxbYkYdH44z3.jpg",
       "enlace": "https://fastream.to/embed-p9u0as17mv1r.html",
@@ -14,9 +45,7 @@
     {
       "titulo": "Alerta Roja",
       "disponible": true,
-      "badge": "Recién agregado",
       "año": 2021,
-      "nuevo" : true,
       "genero": "accion",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/odBUpjZGxY3y7FBo5NBtEYGJf5r.jpg",
       "enlace": "https://drive.google.com/file/d/1AEofRLRjOARlxvStp-RsmnFQ3axLGbnz/preview",
@@ -25,9 +54,7 @@
     {
       "titulo": "Henry Danger: La Película",
       "disponible": true,
-      "badge": "Recién agregado",
       "año": 2020,
-      "nuevo" : true,
       "genero": "accion",
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FdTHEq2PIRAIq4COayxraiGiaajX.jpg&w=256&q=75",
       "enlace": "https://drive.google.com/file/d/14vyy0LSSSfSbJhXu1Qdp-rs0fUip8kq7/preview",
@@ -36,7 +63,7 @@
     {
       "titulo": "Mi Vecino es un Espía",
       "disponible": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2010,
       "genero": "familiar",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FzNWvZMPg7DcRDfn53nwFEevMhI1.jpg&w=256&q=75",
@@ -46,7 +73,7 @@
     {
       "titulo": "Mi Abuela es un Peligro",
       "disponible": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2000,
       "genero": "familiar",
       "imagen": "https://images.justwatch.com/poster/239970523/s718/big-mommas-house.jpg",
@@ -92,7 +119,7 @@
     {
       "titulo": "Rápidos y Furiosos: Reto Tokio",
       "disponible": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2006,
       "genero": ["rapidosyfuriosos", "accion"], 
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9OYC68a3NH5ySyTBjLQDzxhApMi.jpg&w=256&q=75",
@@ -102,7 +129,7 @@
     {
       "titulo": "Rápidos y Furiosos 4",
       "disponible": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2009,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fb4oE1Bw6KmON4qNIfjgJbVYkOWZ.jpg&w=256&q=75",
@@ -112,7 +139,7 @@
     {
       "titulo": "Rápidos y Furiosos 5",
       "disponible": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2011,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FmtRhCiT4hZzaP6c3DJqec1Jjm0i.jpg&w=256&q=75",
@@ -122,7 +149,7 @@
     {
       "titulo": "Rápidos y Furiosos 6",
       "disponible": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2013,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F6zUkjB5OtiFhN2DiqdT1IllNJTa.jpg&w=256&q=75g",
@@ -132,7 +159,7 @@
     {
       "titulo": "Rápidos y Furiosos 7",
       "disponible": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2015,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F4eU34MXsBECZPU52BpjMiUMIwBR.jpg&w=256&q=75",
@@ -142,7 +169,7 @@
     {
       "titulo": "Rápidos y Furiosos 8",
       "disponible": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2017,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://m.media-amazon.com/images/M/MV5BNDVlNmZkMjAtNGUwNy00MGYzLWJiNjYtZDdhZDRlMjNkMGZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
@@ -152,7 +179,7 @@
     {
       "titulo": "Rápidos y Furiosos 9",
       "disponible": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2021,
       "genero": ["rapidosyfuriosos", "accion"],
       "imagen": "https://m.media-amazon.com/images/M/MV5BNWEwNWExNWUtODI1OC00NzYzLTk4ZTctYmY4ZTBjMWQzMjMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
@@ -162,7 +189,7 @@
     {
       "titulo": "Rápidos y Furiosos 10",
       "disponible": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2023,
       "genero": ["rapidosyfuriosos", "accion"], 
       "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FlZRRxutZIXQSAq0mXNHdM7kPfBP.jpg&w=256&q=75",
@@ -172,7 +199,7 @@
     {
       "titulo": "Mini Espías",
       "disponible": true,
-      "badge": "Recien agregado",
+      "nuevo": false,
       "año": 2001,
       "genero": "familiar",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FjWIsfU9NXiOBsGy0WUx8T3Kiaw.jpg&w=256&q=75",
@@ -182,7 +209,7 @@
     {
       "titulo": "Mini Espías 2: La Isla de los Sueños Perdidos",
       "disponible": true, 
-      "badge": "Recien agregado",
+      "nuevo": false,
       "año": 2002,
       "genero": "familiar",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FdYmLViA5AWUb5MGH2UzhUwEcN0m.jpg&w=256&q=75",
@@ -192,7 +219,7 @@
     {
       "titulo": "Mini Espías 3D: Game Over",
       "disponible": true,
-      "badge": "Recien agregado",
+      "nuevo": false,
       "año": 2003, 
       "genero": "familiar",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fid7FzzvO4GnTCNvT74TjS1doxkb.jpg&w=256&q=75",
@@ -882,6 +909,17 @@
       "imagen": "https://i.ebayimg.com/images/g/3iYAAOSwO7haCROU/s-l1200.jpg",
       "enlace": "https://drive.google.com/file/d/1eE2gAfY2fz02381xJmIVmtg3xQMs7m8g/preview",
       "descripcion": "El Dr. Stephen Strange descubre las artes místicas después de un accidente que arruina su carrera como cirujano."
+    },
+    {
+      "titulo": "Spider-Man: Homecoming",
+      "disponible": true,
+      "año": 2017,
+      "nuevo": true,
+      "badge": "Recien agregado",
+      "genero": ["accion", "marvel"],
+      "imagen": "https://image.tmdb.org/t/p/w185/bRl6C6FwzTndk0MBGZZ68nRFlw3.jpg",
+      "enlace": "https://fastream.to/embed-u5hjjysefshc.html",
+      "descripcion": "Peter Parker intenta equilibrar su vida como estudiante de secundaria con ser Spider-Man mientras enfrenta al villano Vulture, todo bajo la mentoría de Tony Stark."
     },
     {
       "titulo": "Viuda Negra",

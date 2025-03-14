@@ -801,9 +801,25 @@
             text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
         }
 
-        .categoria-titulo i {
-            font-size: 0.9em;
-            text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        .categoria-logo {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            margin-left: 10px;
+            border-radius: 8px;
+            padding: 2px;
+            background: rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .categoria-logo:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .categoria-logo {
+                height: 45px;
+            }
         }
 
         .categoria-contenedor {
@@ -1028,6 +1044,24 @@
                 height: 150px;
             }
         }
+
+        .logos-container {
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Espacio entre logos */
+        }
+
+        .categoria-titulo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: var(--primary-color);
+            margin: 20px 0;
+            font-size: 1.8em;
+            padding-left: 20px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+            flex-wrap: wrap; /* Para que los logos pasen a la siguiente línea si no hay espacio */
+        }
     </style>
 </head>
 <body>
@@ -1084,15 +1118,6 @@
     </nav>
 
     <script>
-        // Variables globales
-        let todasLasPeliculas = []; // Para las películas
-        let currentSlide = 0;       // Para el carrusel
-        let announcements = [];     // Para los anuncios
-        let autoSlideInterval;      // Para el control del carrusel
-        let startX;
-        let currentTranslate = 0;
-        let isDragging = false;
-
         // Constantes para el manejo de caché
         const CACHE_VERSION = '1.0';
         const CACHE_KEYS = {
@@ -1107,6 +1132,7 @@
         function gestionarCache() {
             const cacheVersion = localStorage.getItem(CACHE_KEYS.VERSION);
             
+            // Si la versión del caché es diferente o no existe, limpiar todo el caché
             if (cacheVersion !== CACHE_VERSION) {
                 Object.values(CACHE_KEYS).forEach(key => localStorage.removeItem(key));
                 localStorage.setItem(CACHE_KEYS.VERSION, CACHE_VERSION);
@@ -1118,7 +1144,8 @@
             const ultimaActualizacion = localStorage.getItem(CACHE_KEYS.TIMESTAMP);
             if (!ultimaActualizacion) return false;
             
-            const TIEMPO_CACHE = 24 * 60 * 60 * 1000;
+            // Verificar si han pasado más de 24 horas desde la última actualización
+            const TIEMPO_CACHE = 24 * 60 * 60 * 1000; // 24 horas en milisegundos
             return (Date.now() - parseInt(ultimaActualizacion)) < TIEMPO_CACHE;
         }
 
@@ -1128,15 +1155,20 @@
             const contenidoCache = localStorage.getItem(cacheKey);
             
             try {
+                // Si hay caché válido, usarlo primero
                 if (contenidoCache && esCacheActualizado()) {
                     const datosCache = JSON.parse(contenidoCache);
                     actualizarInterfaz(tipo, datosCache);
+                    
+                    // Actualizar en segundo plano
                     actualizarContenidoEnSegundoPlano(tipo);
                 } else {
+                    // Si no hay caché o está desactualizado, cargar desde el servidor
                     await cargarContenidoDesdeServidor(tipo);
                 }
             } catch (error) {
                 console.error(`Error cargando ${tipo}:`, error);
+                // Si hay error, usar caché aunque esté desactualizado
                 if (contenidoCache) {
                     actualizarInterfaz(tipo, JSON.parse(contenidoCache));
                 }
@@ -1148,7 +1180,7 @@
             const urls = {
                 series: '../DataBase/series.json',
                 peliculas: '../DataBase/peliculas.json',
-                anuncios: '../DataBase/movie_announcements.json'
+                anuncios: '../DataBase/announcements.json'
             };
 
             try {
@@ -1156,10 +1188,13 @@
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const datos = await response.json();
                 
+                // Guardar en caché
                 localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datos));
                 localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
                 
+                // Actualizar interfaz
                 actualizarInterfaz(tipo, datos);
+                
                 return datos;
             } catch (error) {
                 throw error;
@@ -1172,6 +1207,7 @@
                 const datosNuevos = await cargarContenidoDesdeServidor(tipo);
                 const datosCache = JSON.parse(localStorage.getItem(CACHE_KEYS[tipo.toUpperCase()]));
                 
+                // Comparar y actualizar solo si hay cambios
                 if (JSON.stringify(datosNuevos) !== JSON.stringify(datosCache)) {
                     localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datosNuevos));
                     localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
@@ -1185,6 +1221,10 @@
         // Función para actualizar la interfaz según el tipo de contenido
         function actualizarInterfaz(tipo, datos) {
             switch (tipo) {
+                case 'series':
+                    todasLasSeries = datos.series.filter(serie => serie.disponible);
+                    mostrarSeriesPorCategorias(todasLasSeries);
+                    break;
                 case 'peliculas':
                     todasLasPeliculas = datos.peliculas.filter(pelicula => pelicula.disponible);
                     mostrarPeliculasPorCategorias(todasLasPeliculas);
@@ -1215,49 +1255,31 @@
             });
         }
 
-        // Reemplazar la función cargarPeliculas existente
-        function cargarPeliculas() {
-            cargarContenidoConCache('peliculas');
-        }
-
-        // Reemplazar la función cargarAnuncios existente
-        function cargarAnuncios() {
-            cargarContenidoConCache('anuncios');
-        }
-
-        // Modificar el evento DOMContentLoaded
-        document.addEventListener('DOMContentLoaded', () => {
-            gestionarCache();
-            
-            cargarContenidoConCache('peliculas');
-            cargarContenidoConCache('anuncios');
-            
-            setupCarouselTouch();
-            
-            const carousel = document.querySelector('.announcements-carousel');
-            if (carousel) {
-                carousel.addEventListener('mouseenter', stopAutoSlide);
-                carousel.addEventListener('mouseleave', startAutoSlide);
-            }
-        });
+        // Variables globales
+        let todasLasPeliculas = [];
+        let currentSlide = 0;
+        let announcements = [];
+        let autoSlideInterval;
+        let startX;
+        let currentTranslate = 0;
+        let isDragging = false;
 
         // Función para organizar películas por categorías
         function organizarPorCategorias(peliculas) {
             const categorias = {
+                'mi_lista': { titulo: 'Mi Lista', peliculas: [], mantenerOrden: false },
+                'neflix': { titulo: 'Netflix', peliculas: [], mantenerOrden: false },
+                'amazon': { titulo: 'Amazon Prime', peliculas: [], mantenerOrden: false },
                 'programacion': { titulo: 'Programación', peliculas: [], mantenerOrden: false },
-                'familiar': { titulo: 'Familiar', peliculas: [], mantenerOrden: false },
-                'accion': { titulo: 'Acción', peliculas: [], mantenerOrden: false },
-                'drama': { titulo: 'Drama', peliculas: [], mantenerOrden: false },
-                'clasicos': { titulo: 'Clasicos', peliculas: [], mantenerOrden: false },
+                'accion': { titulo: 'Acción y Mucho Más', peliculas: [], mantenerOrden: false },
+                'familiar': { titulo: 'Películas Familiares', peliculas: [], mantenerOrden: false },
+                'suspenso': { titulo: 'Suspenso y Drama', peliculas: [], mantenerOrden: false },
                 'marvel': { titulo: 'Marvel', peliculas: [], mantenerOrden: false },
                 'dc': { titulo: 'DC Comics', peliculas: [], mantenerOrden: false },
                 'animacion': { titulo: 'Animación', peliculas: [], mantenerOrden: false },
-                'cristiana': { titulo: 'Cristiana', peliculas: [], mantenerOrden: false },
-                'comedia': { titulo: 'Comedia', peliculas: [], mantenerOrden: false },
-                'navidad': { titulo: 'Navidad', peliculas: [], mantenerOrden: false },
-                'rapidosyfuriosos': { titulo: 'Rápidos y Furiosos', peliculas: [], mantenerOrden: true },
-                'ciencia-ficcion': { titulo: 'Ciencia Ficción', peliculas: [], mantenerOrden: false },
-                'terror': { titulo: 'Terror', peliculas: [], mantenerOrden: false },
+                'clasicos': { titulo: 'Clásicos', peliculas: [], mantenerOrden: false },
+                'cristiana': { titulo: 'Películas Cristianas', peliculas: [], mantenerOrden: false },
+                'rapidosyfuriosos': { titulo: 'Rápidos y Furiosos', peliculas: [], mantenerOrden: false }
             };
 
             // Función para mezclar array
@@ -1273,29 +1295,28 @@
             peliculas.forEach(pelicula => {
                 if (Array.isArray(pelicula.genero)) {
                     pelicula.genero.forEach(gen => {
-                        if (categorias[gen]) {
-                            categorias[gen].peliculas.push(pelicula);
+                        const generoLower = gen.toLowerCase();
+                        if (categorias[generoLower]) {
+                            categorias[generoLower].peliculas.push(pelicula);
                         }
                     });
                 } else {
-                    if (categorias[pelicula.genero]) {
-                        categorias[pelicula.genero].peliculas.push(pelicula);
+                    const generoLower = pelicula.genero.toLowerCase();
+                    if (categorias[generoLower]) {
+                        categorias[generoLower].peliculas.push(pelicula);
                     }
                 }
             });
 
             // Ordenar películas en cada categoría
             for (const categoria of Object.values(categorias)) {
-                // Separar películas nuevas y no nuevas
                 const nuevas = categoria.peliculas.filter(p => p.nuevo);
                 const noNuevas = categoria.peliculas.filter(p => !p.nuevo);
 
-                // Mezclar solo las películas no nuevas si la categoría no requiere mantener orden
                 if (!categoria.mantenerOrden) {
                     shuffleArray(noNuevas);
                 }
 
-                // Recombinar con las nuevas primero
                 categoria.peliculas = [...nuevas, ...noNuevas];
             }
 
@@ -1305,42 +1326,44 @@
         // Función para mostrar películas por categorías
         function mostrarPeliculasPorCategorias(peliculas) {
             const categoriasWrapper = document.querySelector('.categorias-wrapper');
+            if (!categoriasWrapper) return;
+
+            const logosCategoria = {
+                'neflix': ['../logos/1.jpeg'],
+                'amazon': ['../logos/2.jpeg'],
+                'animacion': ['../logos/3.jpeg'],
+                'marvel': ['../logos/7.png'],
+                'dc': ['../logos/4.jpeg']
+            };
+
             categoriasWrapper.innerHTML = '';
             
-            // Mostrar sección de favoritos
-            const peliculasLiked = JSON.parse(localStorage.getItem('peliculasLiked') || '[]');
-            if (peliculasLiked.length > 0) {
-                const peliculasFavoritas = peliculas.filter(pelicula => 
-                    peliculasLiked.includes(pelicula.titulo)
-                );
+            // Mostrar Mi Lista de Películas primero
+            const miListaPeliculas = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
+            
+            if (miListaPeliculas.length > 0) {
+                const seccionMiLista = document.createElement('div');
+                seccionMiLista.className = 'categoria-seccion';
                 
-                if (peliculasFavoritas.length > 0) {
-                    const seccionFavoritos = document.createElement('div');
-                    seccionFavoritos.className = 'categoria-seccion';
-                    
-                    seccionFavoritos.innerHTML = `
-                        <h2 class="categoria-titulo">
-                            Mis Favoritas <i class="fas fa-heart" style="color: var(--primary-color);"></i>
-                        </h2>
-                        <div class="categoria-contenedor">
-                            ${peliculasFavoritas.map(pelicula => `
-                                <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
-                                    ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
-                                    <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
-                                    <div class="movie-info">
-                                        <h3>${pelicula.titulo}</h3>
-                                        <p>Año: ${pelicula.año}</p>
-                                    </div>
+                seccionMiLista.innerHTML = `
+                    <h2 class="categoria-titulo">Mi Lista <i class="fas fa-heart" style="color: #00ffff;"></i></h2>
+                    <div class="categoria-contenedor">
+                        ${miListaPeliculas.map(pelicula => `
+                            <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
+                                ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
+                                <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
+                                <div class="movie-info">
+                                    <h3>${pelicula.titulo}</h3>
+                                    <p>${pelicula.año || ''}</p>
                                 </div>
-                            `).join('')}
-                        </div>
-                    `;
-                    
-                    categoriasWrapper.appendChild(seccionFavoritos);
-                }
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                
+                categoriasWrapper.appendChild(seccionMiLista);
             }
             
-            // Mostrar resto de categorías
             const categorias = organizarPorCategorias(peliculas);
 
             for (const [key, categoria] of Object.entries(categorias)) {
@@ -1348,8 +1371,18 @@
                     const seccion = document.createElement('div');
                     seccion.className = 'categoria-seccion';
                     
+                    const logosHTML = logosCategoria[key] ? 
+                        logosCategoria[key].map(logo => 
+                            `<img src="${logo}" alt="${categoria.titulo} logo" class="categoria-logo">`
+                        ).join('') : '';
+                    
                     seccion.innerHTML = `
-                        <h2 class="categoria-titulo">${categoria.titulo}</h2>
+                        <h2 class="categoria-titulo">
+                            ${categoria.titulo}
+                            <div class="logos-container">
+                                ${logosHTML}
+                            </div>
+                        </h2>
                         <div class="categoria-contenedor">
                             ${categoria.peliculas.map(pelicula => `
                                 <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
@@ -1357,7 +1390,7 @@
                                     <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
                                     <div class="movie-info">
                                         <h3>${pelicula.titulo}</h3>
-                                        <p>Año: ${pelicula.año}</p>
+                                        <p>${pelicula.año || ''}</p>
                                     </div>
                                 </div>
                             `).join('')}
@@ -1368,17 +1401,18 @@
                 }
             }
 
-            // Agregar event listeners y configurar navegación
+            // Agregar event listeners a todas las movie-cards
             document.querySelectorAll('.movie-card').forEach(card => {
                 card.addEventListener('click', () => {
-                    const peliculaData = JSON.parse(card.dataset.pelicula);
-                    localStorage.setItem('peliculaSeleccionada', JSON.stringify(peliculaData));
-                    window.location.href = 'movie.html';
+                    const peliculaData = card.getAttribute('data-pelicula');
+                    abrirPelicula(peliculaData);
                 });
             });
 
-            enableDragScroll();
-            setupNavArrows();
+            // Agregar listener para actualizar la interfaz cuando cambie Mi Lista
+            window.addEventListener('miListaPeliculasActualizada', () => {
+                mostrarPeliculasPorCategorias(todasLasPeliculas);
+            });
         }
 
         // Funciones para el carrusel de anuncios
@@ -1391,7 +1425,7 @@
                 slide.className = 'announcement-slide';
                 
                 const botonHTML = announcement.disponible ? 
-                    `<button class="ver-ahora-btn" onclick="verPelicula(${announcement.peliculaId})">
+                    `<button class="ver-ahora-btn" onclick="verSerie(${announcement.serieId})">
                         Ver ahora <i class="fas fa-play-circle"></i>
                     </button>` : '';
                 
@@ -1481,15 +1515,15 @@
             });
         }
 
-        // Función para ver película
-        function verPelicula(peliculaId) {
+        // Función para ver serie
+        function verSerie(serieId) {
             fetch('../DataBase/peliculas.json')
                 .then(response => response.json())
                 .then(data => {
-                    const pelicula = data.peliculas.find(p => p.id === peliculaId);
-                    if (pelicula) {
-                        localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
-                        window.location.href = 'movie.html';
+                    const serie = data.series.find(s => s.id === serieId);
+                    if (serie) {
+                        localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
+                        window.location.href = 'serie.html';
                     }
                 })
                 .catch(error => console.error('Error:', error));
@@ -1497,8 +1531,12 @@
 
         // Event Listeners
         document.addEventListener('DOMContentLoaded', () => {
-            cargarPeliculas();
-            cargarAnuncios();
+            gestionarCache();
+            
+            // Cargar contenido con caché
+            cargarContenidoConCache('peliculas');
+            cargarContenidoConCache('anuncios');
+            
             setupCarouselTouch();
             
             const carousel = document.querySelector('.announcements-carousel');
@@ -1713,7 +1751,8 @@
                     const isScrollable = contenedor.scrollWidth > contenedor.clientWidth;
                     const isAtStart = contenedor.scrollLeft <= 0;
                     const isAtEnd = contenedor.scrollLeft >= contenedor.scrollWidth - contenedor.clientWidth;
-
+                 
+                    console.log(isScrollable, isAtStart, isAtEnd);
                     if (isScrollable) {
                         prevBtn.style.display = isAtStart ? 'none' : 'block';
                         nextBtn.style.display = isAtEnd ? 'none' : 'block';
@@ -1749,43 +1788,60 @@
         }
 
         function cargarCategorias() {
-            // Añadir sección de favoritos al principio
-            const peliculasLiked = JSON.parse(localStorage.getItem('peliculasLiked') || '[]');
+            const mainContent = document.querySelector('.main-content');
+            mainContent.innerHTML = ''; // Limpiar contenido existente
             
-            if (peliculasLiked.length > 0) {
-                const favoritosHTML = `
-                    <div class="categoria">
-                        <h2 class="categoria-titulo">Mis Favoritas</h2>
+            // Cargar Mi Lista de Películas primero
+            const miListaPeliculas = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
+            
+            if (miListaPeliculas.length > 0) {
+                const miListaHTML = `
+                    <div class="categoria-seccion">
+                        <h2 class="categoria-titulo">Mi Lista de Películas <i class="fas fa-heart" style="color: #00ffff;"></i></h2>
                         <div class="categoria-contenedor">
-                            ${todasLasPeliculas
-                                .filter(pelicula => peliculasLiked.includes(pelicula.titulo))
-                                .map(pelicula => `
-                                    <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
-                                        <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
-                                        <div class="movie-info">
-                                            <h3>${pelicula.titulo}</h3>
-                                            <span>${pelicula.año}</span>
-                                        </div>
+                            ${miListaPeliculas.map(pelicula => `
+                                <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
+                                    ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
+                                    <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
+                                    <div class="movie-info">
+                                        <h3>${pelicula.titulo}</h3>
+                                        <p>${pelicula.año || ''}</p>
                                     </div>
-                                `).join('')}
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
                 `;
-
-                const mainContent = document.querySelector('.main-content');
-                mainContent.insertAdjacentHTML('afterbegin', favoritosHTML);
+                mainContent.insertAdjacentHTML('beforeend', miListaHTML);
             }
 
-            // Resto del código de categorías...
+            // ... resto del código de categorías ...
         }
 
-        // Actualizar la lista de favoritos cuando se modifica
-        window.addEventListener('storage', (e) => {
-            if (e.key === 'peliculasLiked') {
-                // Recargar la página para actualizar favoritos
-                location.reload();
+        // Escuchar cambios en Mi Lista de Películas
+        window.addEventListener('miListaPeliculasActualizada', () => {
+            cargarCategorias();
+        });
+
+        // Recargar categorías cuando se actualiza Mi Lista de Películas
+        window.addEventListener('storage', function(e) {
+            if (e.key === 'miListaPeliculas') {
+                console.log("Actualizando Mi Lista de Películas");
+                mostrarPeliculasPorCategorias(peliculas);
             }
         });
+
+        // Agregar esta nueva función para manejar la apertura de películas
+        function abrirPelicula(peliculaData) {
+            try {
+                const pelicula = JSON.parse(peliculaData);
+                localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
+                window.location.href = 'movie.html';
+            } catch (error) {
+                console.error('Error al procesar la película:', error);
+                console.log('Datos de película recibidos:', peliculaData);
+            }
+        }
     </script>
 </body>
 </html>
