@@ -5550,6 +5550,102 @@
           ]
         }
       ]
+    },
+    {
+      "id": 36,
+      "titulo": "Soy Luna",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado",
+      "enProceso": true,
+      "descripcion": "Luna es una adolescente mexicana que vive en Cancún con sus padres. Su vida da un giro inesperado cuando la familia se muda a Buenos Aires por el trabajo de sus padres. En su nueva vida, Luna descubre su pasión por el patinaje y encuentra el amor mientras enfrenta nuevos desafíos.",
+      "imagen": "https://image.tmdb.org/t/p/original/78CUmir4MDINMKdkUt4TmW5d7k4.jpg",
+      "año": 2016,
+      "genero": "disney",
+      "director": "Jorge Nisco, Martín Saban",
+      "actores": [
+        "Karol Sevilla",
+        "Ruggero Pasquarelli",
+        "Valentina Zenere"
+      ],
+      "trailer": "https://www.youtube.com/embed/ALu4hC0JM6Q",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Un Nuevo Comienzo",
+              "descripcion": "Luna llega a Buenos Aires y comienza su nueva vida, descubriendo el Jam & Roller",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-khgzrt4o04n1.html"
+            },
+            {
+              "numero": 2,
+              "titulo": "El Primer Día",
+              "descripcion": "Luna enfrenta su primer día en la escuela y conoce nuevos amigos",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-4ej7cy3ecmbv.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "Secretos y Patines",
+              "descripcion": "Luna descubre más sobre su pasado mientras mejora en el patinaje",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-fb5a83xf7x0k.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "Competencia y Rivalidad",
+              "descripcion": "Ámbar se siente amenazada por la presencia de Luna",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-lmm9x87cnt2j.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "Música y Patinaje",
+              "descripcion": "Luna descubre su talento para cantar mientras patina",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-iw1pccg5tslw.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "Nuevos Desafíos",
+              "descripcion": "Luna enfrenta nuevos retos en el Jam & Roller",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-6zeqmhchotm0.html"
+            },
+            {
+              "numero": 7,
+              "titulo": "Amistades y Traiciones",
+              "descripcion": "Las relaciones entre los chicos se complican",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-5xwoe5etlbuk.html"
+            },
+            {
+              "numero": 8,
+              "titulo": "El Gran Show",
+              "descripcion": "Luna participa en su primera presentación importante",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-596tgcy4t852.html"
+            },
+            {
+              "numero": 9,
+              "titulo": "Secretos Revelados",
+              "descripcion": "Nuevas verdades salen a la luz sobre el pasado de Luna",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-xxymqfmk0s8n.html"
+            },
+            {
+              "numero": 10,
+              "titulo": "Decisiones Importantes",
+              "descripcion": "Luna debe tomar decisiones que afectarán su futuro",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-z63hy408klo4.html"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
