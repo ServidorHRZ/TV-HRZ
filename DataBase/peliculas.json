@@ -1,6 +1,44 @@
 {
   "peliculas": [
     {
+      "titulo": "Ben 10 vs el Universo: La película",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado",
+      "año": 2020,
+      "genero": "animacion",
+      "imagen": "https://image.tmdb.org/t/p/w185/34KSOJVowmkeh6G0HZJMxqdHq6s.jpg",
+      "enlace": "https://fastream.to/embed-6ixru6lqrt5x.html",
+      "descripcion": "Cuando una amenaza alienígena llega a la Tierra en busca de un poderoso arma, Ben debe ir al espacio para salvar el planeta. Mientras tanto, Vilgax regresa para conquistar la Tierra y eliminar a Ben 10 de una vez por todas."
+    },
+    {
+      "titulo": "Mi Villano Favorito",
+      "disponible": true,
+      "año": 2010,
+      "genero": ["animacion", "familiar"],
+      "imagen": "https://image.tmdb.org/t/p/w185/7ml02WwUzz4jlZJdiEI4ZIYHj1J.jpg",
+      "enlace": "https://fastream.to/embed-b89vwqhe2ahx.html", 
+      "descripcion": "Gru, un supervillano, ha adoptado a tres niñas huérfanas para llevar a cabo su plan maestro: robar la Luna. Sin embargo, las pequeñas comenzarán a ver en él algo que nadie más ha visto: un padre potencial."
+    },
+    {
+      "titulo": "Mi Villano Favorito 2",
+      "disponible": true,
+      "año": 2013,
+      "genero": ["animacion", "familiar"],
+      "imagen": "https://image.tmdb.org/t/p/w185/hhksXOBVJ6Mu2BwAFgPJwZxNisd.jpg",
+      "enlace": "https://fastream.to/embed-ej0zdnywhwkv.html",
+      "descripcion": "Gru ha dejado atrás una vida de supervillano para dedicarse a criar a Margo, Edith y Agnes. Pero cuando es reclutado por la Liga Anti-Villanos para ayudar a lidiar con una nueva amenaza, deberá equilibrar su vida familiar con salvar al mundo."
+    },
+    {
+      "titulo": "Mi Villano Favorito 3",
+      "disponible": true,
+      "año": 2017,
+      "genero": ["animacion", "familiar"],
+      "imagen": "https://image.tmdb.org/t/p/w185/bPI2Wcmyxmc17qqiIi1Ww7HU6nS.jpg",
+      "enlace": "https://fastream.to/embed-bhp7dlatsa82.html",
+      "descripcion": "Gru se entera de que tiene un hermano gemelo perdido, Dru, quien desea seguir los pasos de su padre como supervillano. Mientras tanto, un nuevo enemigo surge amenazando a la humanidad."
+    },
+    {
       "titulo": "The Batman",
       "disponible": true,
       "nuevo": true,

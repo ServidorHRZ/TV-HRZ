@@ -1359,6 +1359,8 @@
                             </div>
                         `).join('')}
                     </div>
+                    <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
                 `;
                 
                 categoriasWrapper.appendChild(seccionMiLista);
@@ -1395,6 +1397,8 @@
                                 </div>
                             `).join('')}
                         </div>
+                        <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
                     `;
                     
                     categoriasWrapper.appendChild(seccion);
@@ -1413,6 +1417,9 @@
             window.addEventListener('miListaPeliculasActualizada', () => {
                 mostrarPeliculasPorCategorias(todasLasPeliculas);
             });
+
+            // Configurar las flechas de navegación después de crear las secciones
+            setupNavArrows();
         }
 
         // Funciones para el carrusel de anuncios
@@ -1810,6 +1817,8 @@
                                 </div>
                             `).join('')}
                         </div>
+                        <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
                     </div>
                 `;
                 mainContent.insertAdjacentHTML('beforeend', miListaHTML);
