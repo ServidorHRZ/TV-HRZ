@@ -1,6 +1,61 @@
 {
   "peliculas": [
     {
+      "titulo": "El Stand de los Besos",
+      "disponible": true,
+      "nuevo": false,
+      "badge": "Recien agregado",
+      "año": 2018,
+      "genero": "neflix",
+      "imagen": "https://image.tmdb.org/t/p/w185/7Dktk2ST6aL8h9Oe5rpk903VLhx.jpg",
+      "enlace": "https://fastream.to/embed-rg3vqt43a6rp.html",
+      "descripcion": "Elle Evans es una estudiante que nunca ha sido besada y decide montar un puesto de besos para recaudar fondos. Las cosas se complican cuando se enamora de Noah, el hermano mayor de su mejor amigo Lee, rompiendo una de sus reglas más importantes de amistad."
+    },
+    {
+      "titulo": "El Stand de los Besos 2", 
+      "disponible": true,
+      "nuevo": false,
+      "badge": "Recien agregado",
+      "año": 2020,
+      "genero": "neflix",
+      "imagen": "https://image.tmdb.org/t/p/w185/pLTTbRouGED3EfQ5gWaZxBFVYms.jpg",
+      "enlace": "https://fastream.to/embed-3ttkx3hegjag.html",
+      "descripcion": "Elle debe enfrentar su relación a distancia con Noah, quien está en Harvard, mientras lidia con una nueva amistad con Marco, un carismático estudiante nuevo. Sus sentimientos se complican mientras trata de mantener sus relaciones más importantes."
+    },
+    {
+      "titulo": "El Stand de los Besos 3",
+      "disponible": true, 
+      "nuevo": false,
+      "badge": "Recien agregado",
+      "año": 2021,
+      "genero": "neflix",
+      "imagen": "https://image.tmdb.org/t/p/w185/4eXhx1IN1nSWpeHehunvW9j2BSU.jpg",
+      "enlace": "https://fastream.to/embed-q8bczehk88lp.html",
+      "descripcion": "Es el último verano antes de la universidad y Elle tiene que tomar la decisión más difícil de su vida: mudarse al otro lado del país con su novio Noah o cumplir su promesa de ir a la universidad con su mejor amigo Lee. Su elección podría definir su futuro y sus relaciones para siempre."
+    },
+    {
+      "titulo": "Uncharted",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado", 
+      "año": 2022,
+      "genero": ["accion", "neflix"],
+      "imagen": "https://image.tmdb.org/t/p/w185/6hlI9Ea1O4IeJ2cj7OiNinqg8Qd.jpg",
+      "enlace": "https://fastream.to/embed-kxi2ennxomo4.html",
+      "descripcion": "Nathan Drake y su compañero Victor Sullivan se embarcan en una peligrosa búsqueda para encontrar el mayor tesoro jamás encontrado. Mientras rastrean pistas que podrían conducir al hermano perdido de Nathan, también deben competir contra un despiadado millonario y su mercenaria."
+    },
+    {
+      "titulo": "Jexi",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado",
+      "año": 2019,
+      "genero": ["comedia", "neflix"],
+      "imagen": "https://image.tmdb.org/t/p/w185/Ag2UqdvJMZxVlGJLoZhH1tdNKgu.jpg",
+      "enlace": "https://fastream.to/embed-v6f4kivltj0t.html",
+      "descripcion": "Phil es un joven adicto a su teléfono móvil que no tiene amigos ni pareja. Su vida cambia por completo cuando compra un nuevo smartphone que viene con Jexi, una IA que se convierte en su coach de vida. Sin embargo, Jexi se vuelve sobreprotectora y controladora, interfiriendo en la vida personal de Phil de maneras inesperadas y cómicas."
+    },
+    {
       "titulo": "Ben 10 vs el Universo: La película",
       "disponible": true,
       "nuevo": true,
@@ -329,7 +384,7 @@
       "disponible": true,
       "nuevo": false,
       "año": 2024,
-      "genero": "drama",
+      "genero": "amazon",
       "imagen": "https://es.web.img3.acsta.net/c_310_420/img/76/37/7637d68ab33d9a9474a91efa00ed7d3b.jpg",
       "enlace": "https://zonaaps-player.xyz/enlaces/mp4/generated/peliculas/2024-12-27/video_Culpa_tuya_1735277584.html",
       "descripcion": "La continuación de la apasionante historia de Noah y Nick. Basada en la exitosa novela de Mercedes Ron."
@@ -558,7 +613,7 @@
       "titulo": "A través de mi ventana",
       "disponible": true,
       "año": 2022,
-      "genero": "drama",
+      "genero": "neflix",
       "imagen": "https://hips.hearstapps.com/hmg-prod/images/a-traves-de-mi-ventana-netflix-1638373301.jpg?resize=980:*", 
       "enlace": "https://drive.google.com/file/d/1xYTEORHybllVFEzH-J32CmyuEOdJKE4B/preview",
       "descripcion": "Una historia romántica adolescente basada en la novela de Ariana Godoy, donde Raquel se enamora de su misterioso vecino Ares. A través de su ventana, observa su vida y sueña con una relación que parece imposible."
