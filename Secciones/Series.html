@@ -2067,13 +2067,21 @@
             localStorage.setItem('notificacionesAceptadas', 'true');
             ocultarModalNotificaciones();
             
-            // Solicitar permisos del navegador para notificaciones
+            // Solicitar permisos y configurar notificaciones
             if (Notification.permission !== 'granted') {
                 Notification.requestPermission().then(permission => {
                     if (permission === 'granted') {
                         console.log('Notificaciones activadas');
+                        // Verificar notificaciones inmediatamente
+                        verificarNuevasNotificaciones();
+                        // Configurar verificación periódica
+                        setInterval(verificarNuevasNotificaciones, 60 * 1000);
                     }
                 });
+            } else {
+                // Si ya teníamos permiso, iniciar verificaciones
+                verificarNuevasNotificaciones();
+                setInterval(verificarNuevasNotificaciones, 60 * 1000);
             }
         }
 
@@ -2105,6 +2113,72 @@
             }
 
             mostrarModalNotificaciones();
+        }
+
+        // Función para verificar nuevas notificaciones
+        async function verificarNuevasNotificaciones() {
+            if (Notification.permission !== 'granted' || !localStorage.getItem('notificacionesAceptadas')) {
+                return;
+            }
+
+            try {
+                const response = await fetch('../DataBase/notificaciones.json');
+                const data = await response.json();
+                
+                // Obtener notificaciones ya mostradas
+                const notificacionesMostradas = JSON.parse(localStorage.getItem('notificacionesMostradas') || '[]');
+                
+                // Filtrar solo las nuevas notificaciones
+                const nuevasNotificaciones = data.notificaciones.filter(notif => 
+                    !notificacionesMostradas.includes(notif.id)
+                );
+
+                // Mostrar las nuevas notificaciones
+                nuevasNotificaciones.forEach(notif => {
+                    mostrarNotificacion(notif);
+                    notificacionesMostradas.push(notif.id);
+                });
+
+                // Actualizar el registro de notificaciones mostradas
+                localStorage.setItem('notificacionesMostradas', JSON.stringify(notificacionesMostradas));
+            } catch (error) {
+                console.error('Error al verificar notificaciones:', error);
+            }
+        }
+
+        // Función para mostrar una notificación
+        function mostrarNotificacion(notif) {
+            // Crear y mostrar la notificación del navegador
+            const notification = new Notification(notif.titulo, {
+                body: notif.mensaje,
+                icon: notif.imagen,
+                badge: '../img/logo.png', // Agrega el path a tu logo
+                tag: `notificacion-${notif.id}`,
+                requireInteraction: true // La notificación permanece hasta que el usuario interactúe
+            });
+
+            // Manejar el clic en la notificación
+            notification.onclick = function() {
+                // Cerrar la notificación
+                notification.close();
+                
+                // Guardar la serie seleccionada y redirigir
+                if (notif.serieId) {
+                    fetch('../DataBase/series.json')
+                        .then(response => response.json())
+                        .then(data => {
+                            const serie = data.series.find(s => s.id === notif.serieId);
+                            if (serie) {
+                                localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
+                                window.location.href = 'serie.html';
+                            }
+                        })
+                        .catch(error => console.error('Error:', error));
+                }
+                
+                // Enfocar la ventana
+                window.focus();
+            };
         }
     </script>
 </body>
