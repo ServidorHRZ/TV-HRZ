@@ -52,6 +52,230 @@
         .nav-item span {
             font-size: 0.8rem;
         }
+
+        /* Actualización de estilos tipográficos y de movimiento */
+        .lenguaje-titulo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin: 25px 0;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .curso-card {
+            flex: 0 0 auto;
+            width: 320px;
+            height: 280px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            margin: 10px;
+            background: linear-gradient(165deg, rgba(20, 20, 20, 0.95), rgba(10, 10, 10, 0.98));
+            border: 1px solid rgba(0, 255, 255, 0.15);
+        }
+
+        .curso-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.15);
+            border-color: var(--primary-color);
+        }
+
+        .curso-card:hover .curso-thumbnail img {
+            transform: scale(1.1);
+        }
+
+        .curso-thumbnail {
+            width: 100%;
+            height: 60%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .curso-thumbnail::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 70%;
+            background: linear-gradient(to top, 
+                rgba(0, 0, 0, 1) 10%,
+                rgba(0, 0, 0, 0.8) 30%,
+                rgba(0, 0, 0, 0) 100%
+            );
+            z-index: 1;
+        }
+
+        .curso-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        .curso-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            z-index: 2;
+            background: linear-gradient(180deg, 
+                transparent,
+                rgba(0, 0, 0, 0.9) 20%
+            );
+        }
+
+        .curso-info h3 {
+            font-family: 'Roboto', sans-serif;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin: 0 0 15px 0;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .curso-detalles {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+
+        .curso-duracion {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            background: rgba(0, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .curso-duracion i {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+        }
+
+        .curso-nivel {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, 
+                rgba(0, 255, 255, 1),
+                rgba(0, 200, 200, 1)
+            );
+            color: rgba(0, 0, 0, 0.9);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 10px rgba(0, 255, 255, 0.3);
+        }
+
+        /* Estilos para las secciones de lenguajes */
+        .lenguaje-seccion {
+            position: relative;
+            margin: 40px 0;
+            padding: 0;
+        }
+
+        .lenguaje-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .cursos-contenedor {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            gap: 10px;
+            padding: 15px;
+            margin: 0 30px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            position: relative;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x proximity;
+        }
+
+        .cursos-contenedor::-webkit-scrollbar {
+            display: none;
+        }
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.7);
+            border: none;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .nav-arrow.prev {
+            left: 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .nav-arrow.next {
+            right: 0;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .lenguaje-seccion:hover .nav-arrow {
+            opacity: 1;
+        }
+
+        .nav-arrow:hover {
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            width: 50px;
+        }
+
+        /* Ajustes responsive */
+        @media (max-width: 768px) {
+            .curso-card {
+                width: 260px;
+                height: 200px;
+            }
+
+            .lenguaje-titulo {
+                font-size: 1.5rem;
+                margin: 20px 0;
+            }
+
+            .curso-info h3 {
+                font-size: 1.1rem;
+            }
+
+            .nav-arrow {
+                display: none;
+            }
+
+            .cursos-contenedor {
+                margin: 0 10px;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -73,5 +297,182 @@
             <span>Cursos</span>
         </a>
     </nav>
+
+    <script>
+        async function cargarCursos() {
+            try {
+                const response = await fetch('../DataBase/cursos.json');
+                const data = await response.json();
+                // Crear una copia del array de lenguajes y mezclarlos aleatoriamente
+                const lenguajesAleatorios = [...data.lenguajes].sort(() => Math.random() - 0.5);
+                mostrarCursos(lenguajesAleatorios);
+                setupNavegacion();
+            } catch (error) {
+                console.error('Error cargando los cursos:', error);
+            }
+        }
+
+        function mostrarCursos(lenguajes) {
+            const contenedor = document.createElement('div');
+            contenedor.className = 'main-content';
+            document.body.insertBefore(contenedor, document.querySelector('.bottom-nav'));
+
+            lenguajes.forEach(seccion => {
+                // Crear una copia del array de cursos y mezclarlos aleatoriamente
+                const cursosAleatorios = [...seccion.cursos].sort(() => Math.random() - 0.5);
+                
+                const seccionHTML = `
+                    <div class="lenguaje-seccion">
+                        <h2 class="lenguaje-titulo">
+                            <img src="${seccion.logo}" alt="${seccion.titulo}" class="lenguaje-logo">
+                            ${seccion.titulo}
+                        </h2>
+                        <div class="cursos-contenedor">
+                            ${cursosAleatorios.map(curso => `
+                                <div class="curso-card" onclick="abrirCurso(${curso.id})">
+                                    <div class="curso-thumbnail">
+                                        <img src="${curso.imagen}" alt="${curso.titulo}">
+                                    </div>
+                                    <div class="curso-info">
+                                        <h3>${curso.titulo}</h3>
+                                        <div class="curso-detalles">
+                                            <span class="curso-nivel">${curso.nivel}</span>
+                                            <span class="curso-duracion">
+                                                <i class="fas fa-clock"></i>
+                                                ${curso.duracion}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <button class="nav-arrow prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="nav-arrow next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                `;
+                contenedor.innerHTML += seccionHTML;
+            });
+        }
+
+        function setupNavegacion() {
+            const secciones = document.querySelectorAll('.lenguaje-seccion');
+            
+            secciones.forEach(seccion => {
+                const contenedor = seccion.querySelector('.cursos-contenedor');
+                const prevBtn = seccion.querySelector('.nav-arrow.prev');
+                const nextBtn = seccion.querySelector('.nav-arrow.next');
+                
+                let startX;
+                let scrollLeft;
+                let isDragging = false;
+                let startTime;
+                let momentumID;
+
+                function startDragging(e) {
+                    isDragging = true;
+                    startTime = Date.now();
+                    startX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+                    scrollLeft = contenedor.scrollLeft;
+                    
+                    // Cancelar cualquier momentum previo
+                    if (momentumID) {
+                        cancelAnimationFrame(momentumID);
+                    }
+
+                    contenedor.style.scrollBehavior = 'auto';
+                    contenedor.style.cursor = 'grabbing';
+                }
+
+                function stopDragging() {
+                    if (!isDragging) return;
+                    
+                    isDragging = false;
+                    const endTime = Date.now();
+                    const timeElapsed = endTime - startTime;
+                    
+                    contenedor.style.cursor = 'grab';
+                    contenedor.style.scrollBehavior = 'smooth';
+
+                    // Aplicar momentum si el movimiento fue rápido
+                    if (timeElapsed < 100) {
+                        const velocity = (contenedor.scrollLeft - scrollLeft) / timeElapsed;
+                        applyMomentum(velocity);
+                    }
+                }
+
+                function applyMomentum(velocity) {
+                    let currentVelocity = velocity * 15; // Factor de momentum
+                    
+                    function momentum() {
+                        if (Math.abs(currentVelocity) > 0.1) {
+                            contenedor.scrollLeft += currentVelocity;
+                            currentVelocity *= 0.95; // Fricción
+                            momentumID = requestAnimationFrame(momentum);
+                        }
+                    }
+                    
+                    momentum();
+                }
+
+                function drag(e) {
+                    if (!isDragging) return;
+                    
+                    e.preventDefault();
+                    const x = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+                    const walk = (x - startX) * 1.5;
+                    contenedor.scrollLeft = scrollLeft - walk;
+                }
+
+                // Event Listeners para mouse
+                contenedor.addEventListener('mousedown', startDragging);
+                contenedor.addEventListener('mousemove', drag);
+                contenedor.addEventListener('mouseup', stopDragging);
+                contenedor.addEventListener('mouseleave', stopDragging);
+
+                // Event Listeners para touch
+                contenedor.addEventListener('touchstart', startDragging, { passive: true });
+                contenedor.addEventListener('touchmove', drag, { passive: false });
+                contenedor.addEventListener('touchend', stopDragging);
+
+                // Navegación con flechas
+                prevBtn?.addEventListener('click', () => scroll(contenedor, 'prev'));
+                nextBtn?.addEventListener('click', () => scroll(contenedor, 'next'));
+
+                // Actualizar visibilidad de flechas
+                contenedor.addEventListener('scroll', () => {
+                    updateArrowsVisibility(contenedor, prevBtn, nextBtn);
+                });
+                
+                // Verificar visibilidad inicial
+                updateArrowsVisibility(contenedor, prevBtn, nextBtn);
+            });
+        }
+
+        function scroll(contenedor, direction) {
+            const scrollAmount = contenedor.clientWidth * 0.8;
+            contenedor.scrollBy({
+                left: direction === 'prev' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        function updateArrowsVisibility(contenedor, prevBtn, nextBtn) {
+            const isAtStart = contenedor.scrollLeft <= 0;
+            const isAtEnd = contenedor.scrollLeft >= contenedor.scrollWidth - contenedor.clientWidth;
+
+            prevBtn.style.display = isAtStart ? 'none' : 'block';
+            nextBtn.style.display = isAtEnd ? 'none' : 'block';
+        }
+
+        function abrirCurso(cursoId) {
+            window.location.href = `cursoView.html?id=${cursoId}`;
+        }
+
+        document.addEventListener('DOMContentLoaded', cargarCursos);
+    </script>
 </body>
 </html>
