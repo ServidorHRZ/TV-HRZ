@@ -80,6 +80,7 @@
             margin: 10px;
             background: linear-gradient(165deg, rgba(20, 20, 20, 0.95), rgba(10, 10, 10, 0.98));
             border: 1px solid rgba(0, 255, 255, 0.15);
+            touch-action: pan-y pinch-zoom;
         }
 
         .curso-card:hover {
@@ -209,6 +210,8 @@
             position: relative;
             -webkit-overflow-scrolling: touch;
             scroll-snap-type: x proximity;
+            touch-action: pan-y pinch-zoom;
+            overscroll-behavior-x: contain;
         }
 
         .cursos-contenedor::-webkit-scrollbar {
@@ -366,25 +369,68 @@
                 const prevBtn = seccion.querySelector('.nav-arrow.prev');
                 const nextBtn = seccion.querySelector('.nav-arrow.next');
                 
-                let startX;
+                let startX, startY;
                 let scrollLeft;
                 let isDragging = false;
                 let startTime;
                 let momentumID;
+                let isScrollingHorizontally = false;
 
                 function startDragging(e) {
                     isDragging = true;
                     startTime = Date.now();
-                    startX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+                    if (e.type === 'mousedown') {
+                        startX = e.pageX;
+                        startY = e.pageY;
+                    } else {
+                        startX = e.touches[0].pageX;
+                        startY = e.touches[0].pageY;
+                    }
                     scrollLeft = contenedor.scrollLeft;
-                    
-                    // Cancelar cualquier momentum previo
+                    isScrollingHorizontally = false;
+
                     if (momentumID) {
                         cancelAnimationFrame(momentumID);
                     }
 
                     contenedor.style.scrollBehavior = 'auto';
                     contenedor.style.cursor = 'grabbing';
+                }
+
+                function drag(e) {
+                    if (!isDragging) return;
+
+                    let currentX, currentY;
+                    if (e.type === 'mousemove') {
+                        currentX = e.pageX;
+                        currentY = e.pageY;
+                    } else {
+                        currentX = e.touches[0].pageX;
+                        currentY = e.touches[0].pageY;
+                    }
+
+                    // Calcular la diferencia en X e Y
+                    const diffX = Math.abs(currentX - startX);
+                    const diffY = Math.abs(currentY - startY);
+
+                    // Si aún no se ha determinado la dirección del scroll
+                    if (!isScrollingHorizontally && (diffX > 5 || diffY > 5)) {
+                        // Si el movimiento horizontal es mayor que el vertical
+                        isScrollingHorizontally = diffX > diffY;
+                        
+                        // Si es scroll vertical, detener el manejo del evento
+                        if (!isScrollingHorizontally) {
+                            isDragging = false;
+                            return;
+                        }
+                    }
+
+                    // Solo prevenir el comportamiento por defecto si es scroll horizontal
+                    if (isScrollingHorizontally) {
+                        e.preventDefault();
+                        const walk = (currentX - startX) * 1.5;
+                        contenedor.scrollLeft = scrollLeft - walk;
+                    }
                 }
 
                 function stopDragging() {
@@ -416,15 +462,6 @@
                     }
                     
                     momentum();
-                }
-
-                function drag(e) {
-                    if (!isDragging) return;
-                    
-                    e.preventDefault();
-                    const x = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
-                    const walk = (x - startX) * 1.5;
-                    contenedor.scrollLeft = scrollLeft - walk;
                 }
 
                 // Event Listeners para mouse
