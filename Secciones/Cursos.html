@@ -281,7 +281,13 @@
         }
 
         .main-content {
-            padding-bottom: 20px; /* Espacio para el menú inferior */
+            padding-bottom: 20px; /* Espacio para el menú inferior en escritorio */
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding-bottom: 20px; /* Espacio para el menú inferior en móviles */
+            }
         }
     </style>
 </head>
