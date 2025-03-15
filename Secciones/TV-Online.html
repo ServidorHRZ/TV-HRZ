@@ -497,42 +497,61 @@
             const ultimaActualizacion = localStorage.getItem(CACHE_KEYS.TIMESTAMP);
             if (!ultimaActualizacion) return false;
             
-            const TIEMPO_CACHE = 6 * 60 * 60 * 1000; // 6 horas para canales de TV
-            return (Date.now() - parseInt(ultimaActualizacion)) < TIEMPO_CACHE;
+            const TIEMPO_CACHE = 6 * 60 * 60 * 1000; // 6 horas
+            const tiempoTranscurrido = Date.now() - parseInt(ultimaActualizacion);
+            return tiempoTranscurrido < TIEMPO_CACHE;
         }
 
-        // Función modificada para cargar canales con caché
+        // Función modificada para cargar canales
         async function cargarCanales() {
             try {
-                // Cargar inmediatamente desde caché si existe
+                // Mostrar indicador de carga inicial
+                const contenedor = document.getElementById('canales-container');
+                contenedor.innerHTML = '<p class="carga-mensaje">Cargando canales...</p>';
+
+                // Intentar cargar desde caché primero
                 const canalesCache = localStorage.getItem(CACHE_KEYS.CANALES);
-                if (canalesCache) {
+                
+                if (canalesCache && esCacheActualizado()) {
                     todosLosCanales = JSON.parse(canalesCache);
                     inicializarInterfaz();
+                    return;
                 }
 
-                // Solo cargar canales IPTV si es necesario
-                if (!esCacheActualizado()) {
-                    // Mostrar indicador de carga
-                    const contenedor = document.getElementById('canales-container');
-                    contenedor.innerHTML += '<p class="carga-mensaje">Actualizando lista de canales...</p>';
-                    
-                    // Cargar solo canales locales primero
-                    const respuestaLocal = await fetch('../DataBase/canales.json');
-                    const dataLocal = await respuestaLocal.json();
-                    const canalesLocales = dataLocal.canales;
-                    
-                    // Actualizar la interfaz con canales locales
-                    todosLosCanales = canalesLocales;
-                    localStorage.setItem(CACHE_KEYS.CANALES, JSON.stringify(canalesLocales));
+                // Si no hay caché o está desactualizado, cargar canales locales
+                const respuestaLocal = await fetch('../DataBase/canales.json');
+                if (!respuestaLocal.ok) {
+                    throw new Error('No se pudieron cargar los canales locales');
+                }
+                
+                const dataLocal = await respuestaLocal.json();
+                todosLosCanales = dataLocal.canales || [];
+                
+                // Actualizar interfaz con canales locales
+                if (todosLosCanales.length > 0) {
+                    localStorage.setItem(CACHE_KEYS.CANALES, JSON.stringify(todosLosCanales));
                     inicializarInterfaz();
-
-                    // Cargar canales IPTV en segundo plano
-                    cargarCanalesIPTVEnSegundoPlano();
                 }
+
+                // Cargar canales IPTV en segundo plano
+                cargarCanalesIPTVEnSegundoPlano();
+
             } catch (error) {
-                console.error('Error cargando los canales:', error);
-                mostrarMensajeError();
+                console.error('Error al cargar los canales:', error);
+                const contenedor = document.getElementById('canales-container');
+                contenedor.innerHTML = `
+                    <div style="text-align: center; padding: 20px;">
+                        <p>Error al cargar los canales. Por favor, intenta recargar la página.</p>
+                        <button onclick="location.reload()" style="
+                            padding: 10px 20px;
+                            background: var(--primary-color);
+                            border: none;
+                            border-radius: 5px;
+                            color: var(--background-color);
+                            cursor: pointer;
+                        ">Recargar página</button>
+                    </div>
+                `;
             }
         }
 
@@ -563,12 +582,24 @@
 
         // Función para inicializar la interfaz
         function inicializarInterfaz() {
+            if (!todosLosCanales || todosLosCanales.length === 0) {
+                const contenedor = document.getElementById('canales-container');
+                contenedor.innerHTML = '<p>No hay canales disponibles</p>';
+                return;
+            }
+
             crearBotonesCategorias();
             mostrarTodo();
             
             // Reproducir el primer canal automáticamente solo al inicio
             if (todosLosCanales.length > 0 && !canalActual) {
                 reproducirCanal(todosLosCanales[0]);
+            }
+
+            // Remover mensaje de carga si existe
+            const mensajeCarga = document.querySelector('.carga-mensaje');
+            if (mensajeCarga) {
+                mensajeCarga.remove();
             }
         }
 
@@ -618,7 +649,7 @@
             mostrarCanales(canalesFiltrados);
         }
 
-        // Modificar el evento DOMContentLoaded
+        // Asegurarse de que el DOM esté cargado antes de iniciar
         document.addEventListener('DOMContentLoaded', () => {
             gestionarCache();
             cargarCanales();
