@@ -63,10 +63,11 @@
         }
 
         .contenedor-scroll {
-            margin-top: 50vh;
+            margin-top: 60vh;
             flex: 1;
             display: flex;
             flex-direction: column;
+            position: relative;
         }
 
         .info-canal-actual {
@@ -105,18 +106,20 @@
             gap: 10px;
             margin-bottom: 10px;
             position: sticky;
-            top: 30vh;
-            background: #1a1a1a;
-            z-index: 10;
-            padding: 5px 0;
+            top: 60vh;
+            background: rgba(26, 26, 26, 0.95);
+            z-index: 100;
+            padding: 10px 0;
+            backdrop-filter: blur(10px);
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .menu-opciones {
             display: flex;
             gap: 15px;
             margin-bottom: 5px;
-            position: sticky;
-            top: 0;
+            width: 100%;
         }
 
         .menu-btn {
@@ -142,8 +145,7 @@
             padding: 10px 0;
             scrollbar-width: none;
             -ms-overflow-style: none;
-            position: sticky;
-            top: 50px;
+            width: 100%;
             background: inherit;
         }
 
@@ -351,6 +353,10 @@
             .lista-canales h3 {
                 text-align: center;
             }
+
+            .lista-header {
+                top: 30vh;
+            }
         }
 
         .canal-item.activo {
@@ -453,9 +459,9 @@
             <i class="fas fa-broadcast-tower"></i>
             <span>TV Online</span>
         </a>
-        <a href="Proximos.html" class="nav-item">
-            <i class="fas fa-calendar-alt"></i>
-            <span>Próximos</span>
+        <a href="Cursos.html" class="nav-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Cursos</span>
         </a>
     </nav>
 
@@ -498,73 +504,60 @@
         // Función modificada para cargar canales con caché
         async function cargarCanales() {
             try {
-                // Intentar cargar desde caché primero
+                // Cargar inmediatamente desde caché si existe
                 const canalesCache = localStorage.getItem(CACHE_KEYS.CANALES);
-                const canalesIPTVCache = localStorage.getItem(CACHE_KEYS.CANALES_IPTV);
-                
-                if (canalesCache && canalesIPTVCache && esCacheActualizado()) {
-                    todosLosCanales = [
-                        ...JSON.parse(canalesCache),
-                        ...JSON.parse(canalesIPTVCache)
-                    ];
+                if (canalesCache) {
+                    todosLosCanales = JSON.parse(canalesCache);
                     inicializarInterfaz();
-                    actualizarCanalesEnSegundoPlano();
-                } else {
-                    await cargarCanalesDesdeServidor();
+                }
+
+                // Solo cargar canales IPTV si es necesario
+                if (!esCacheActualizado()) {
+                    // Mostrar indicador de carga
+                    const contenedor = document.getElementById('canales-container');
+                    contenedor.innerHTML += '<p class="carga-mensaje">Actualizando lista de canales...</p>';
+                    
+                    // Cargar solo canales locales primero
+                    const respuestaLocal = await fetch('../DataBase/canales.json');
+                    const dataLocal = await respuestaLocal.json();
+                    const canalesLocales = dataLocal.canales;
+                    
+                    // Actualizar la interfaz con canales locales
+                    todosLosCanales = canalesLocales;
+                    localStorage.setItem(CACHE_KEYS.CANALES, JSON.stringify(canalesLocales));
+                    inicializarInterfaz();
+
+                    // Cargar canales IPTV en segundo plano
+                    cargarCanalesIPTVEnSegundoPlano();
                 }
             } catch (error) {
                 console.error('Error cargando los canales:', error);
-                // Si hay error y existe caché, usar caché aunque esté desactualizado
-                if (canalesCache && canalesIPTVCache) {
-                    todosLosCanales = [
-                        ...JSON.parse(canalesCache),
-                        ...JSON.parse(canalesIPTVCache)
-                    ];
-                    inicializarInterfaz();
-                } else {
-                    document.getElementById('canales-container').innerHTML = 
-                        '<p style="color: white; text-align: center;">Error al cargar los canales. Por favor, intenta más tarde.</p>';
-                }
+                mostrarMensajeError();
             }
         }
 
-        // Función para cargar canales desde el servidor
-        async function cargarCanalesDesdeServidor() {
+        // Nueva función para cargar IPTV en segundo plano
+        async function cargarCanalesIPTVEnSegundoPlano() {
             try {
-                // Cargar canales locales
-                const respuestaLocal = await fetch('../DataBase/canales.json');
-                const dataLocal = await respuestaLocal.json();
-                const canalesLocales = dataLocal.canales;
-                
-                // Guardar canales locales en caché
-                localStorage.setItem(CACHE_KEYS.CANALES, JSON.stringify(canalesLocales));
-                
-                // Cargar lista IPTV
                 const respuestaIPTV = await fetch('https://iptv-org.github.io/iptv/countries/us.m3u');
                 const textoM3U = await respuestaIPTV.text();
                 const canalesIPTV = parseM3U(textoM3U);
                 
-                // Guardar canales IPTV en caché
-                localStorage.setItem(CACHE_KEYS.CANALES_IPTV, JSON.stringify(canalesIPTV));
+                // Combinar con canales existentes
+                todosLosCanales = [...todosLosCanales, ...canalesIPTV];
                 
-                // Actualizar timestamp
+                // Actualizar caché
+                localStorage.setItem(CACHE_KEYS.CANALES, JSON.stringify(todosLosCanales));
                 localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
                 
-                // Combinar canales
-                todosLosCanales = [...canalesLocales, ...canalesIPTV];
-                
+                // Actualizar interfaz
                 inicializarInterfaz();
+                
+                // Remover mensaje de carga si existe
+                const mensajeCarga = document.querySelector('.carga-mensaje');
+                if (mensajeCarga) mensajeCarga.remove();
             } catch (error) {
-                throw error;
-            }
-        }
-
-        // Función para actualizar canales en segundo plano
-        async function actualizarCanalesEnSegundoPlano() {
-            try {
-                await cargarCanalesDesdeServidor();
-            } catch (error) {
-                console.error('Error actualizando canales en segundo plano:', error);
+                console.error('Error cargando canales IPTV:', error);
             }
         }
 
@@ -643,7 +636,7 @@
 
         function mostrarCanales(canalesAMostrar) {
             const contenedor = document.querySelector('.canales-scroll');
-            contenedor.innerHTML = '';
+            const fragment = document.createDocumentFragment();
             
             canalesAMostrar.forEach(canal => {
                 const canalElement = document.createElement('div');
@@ -651,10 +644,10 @@
                 canalElement.dataset.canalId = canal.id;
                 
                 canalElement.innerHTML = `
-                    <img src="${canal.logo}" alt="${canal.nombre}">
+                    <img src="${canal.logo}" alt="${canal.nombre}" loading="lazy">
                     <div class="canal-info">
                         <h4>${canal.nombre}</h4>
-                        <p>${canal.descripcion}</p>
+                        <p>${canal.descripcion || ''}</p>
                     </div>
                     <button class="favorito-icon ${canalesFavoritos.includes(canal.id) ? 'activo' : ''}" 
                             onclick="event.stopPropagation(); toggleFavorito(${canal.id})">
@@ -663,8 +656,11 @@
                 `;
                 
                 canalElement.onclick = () => reproducirCanal(canal);
-                contenedor.appendChild(canalElement);
+                fragment.appendChild(canalElement);
             });
+            
+            contenedor.innerHTML = '';
+            contenedor.appendChild(fragment);
         }
 
         function reproducirCanal(canal) {
