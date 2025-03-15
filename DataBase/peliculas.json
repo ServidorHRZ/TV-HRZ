@@ -1,6 +1,17 @@
 {
   "peliculas": [
     {
+      "titulo": "Encanto",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado",
+      "año": 2021,
+      "genero": ["animacion", "disney"],
+      "imagen": "https://image.tmdb.org/t/p/w185/pZc0GpA8jPTwqHuABnSW6XwvWAi.jpg", 
+      "enlace": "https://fastream.to/embed-q8bczehk88lp.html",
+      "descripcion": "Los Madrigal son una familia extraordinaria que vive en las montañas de Colombia, en una casa mágica, en un pueblo vibrante, en un lugar maravilloso conocido como Encanto. La magia de Encanto ha bendecido a cada niño de la familia con un don único, desde la superfuerza hasta el poder de sanar. A todos, excepto a Mirabel. Pero cuando descubre que la magia que rodea a Encanto está en peligro, Mirabel decide que ella, la única Madrigal sin poderes mágicos, podría ser la última esperanza de su excepcional familia."
+    },
+    {
       "titulo": "El Stand de los Besos",
       "disponible": true,
       "nuevo": false,
