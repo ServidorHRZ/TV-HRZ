@@ -73,6 +73,14 @@
       "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn-op2"
     },
     {
+      "id": 42,
+      "nombre": "ESPN 2",
+      "logo": "https://www.telelibre.net/img/espn2.webp",
+      "categoria": "Deportes",
+      "descripcion": "Segundo canal de ESPN con más deportes en vivo.",
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn2-op2"
+    },
+    {
       "id": 7,
       "nombre": "Warner Channel",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Warner2018LA.png/1200px-Warner2018LA.png", 
