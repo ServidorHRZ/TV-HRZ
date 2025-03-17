@@ -9,6 +9,14 @@
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/caracol.html"
     },
     {
+      "id": 74,
+      "nombre": "RCN",
+      "logo": "https://logowik.com/content/uploads/images/rcn-television-y-radio7292.logowik.com.webp",
+      "categoria": "Nacional",
+      "descripcion": "Canal de televisión colombiano con programación variada incluyendo noticias, telenovelas y entretenimiento.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/rcn.html"
+    },
+    {
       "id": 3,
       "nombre": "Cartoon Network",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/1200px-Cartoon_Network_2010_logo.svg.png",
@@ -233,14 +241,6 @@
       "url_stream": "http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5d14fc31252d35decbc4080b/master.m3u8"
     },
     {
-      "id": 54,
-      "nombre": "Yu-Gi-Oh!",
-      "logo": "https://i.imgur.com/Tl6aW2u.png",
-      "categoria": "Infantil",
-      "descripcion": "Canal dedicado a la serie de anime Yu-Gi-Oh! y sus diferentes temporadas.",
-      "url_stream": "http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f4ec10ed9636f00089b8c89/master.m3u8"
-    },
-    {
       "id": 55,
       "nombre": "Young Hollywood",
       "logo": "https://i.imgur.com/X27MGHd.png",
@@ -251,7 +251,7 @@
     {
       "id": 70,
       "nombre": "ESPN 4",
-      "logo": "",
+      "logo": "https://television-libre.tv//img/espn4.webp",
       "categoria": "Deportes",
       "descripcion": "Cuarto canal de ESPN con cobertura deportiva adicional.",
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn4.html"
@@ -259,7 +259,7 @@
     {
       "id": 71,
       "nombre": "ESPN 5",
-      "logo": "",
+      "logo": "https://www.cablevisionhd.com/imge/espn5.png",
       "categoria": "Deportes",
       "descripcion": "Quinto canal de ESPN con cobertura deportiva adicional.",
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn5.html"
@@ -267,7 +267,7 @@
     {
       "id": 72,
       "nombre": "ESPN 6",
-      "logo": "",
+      "logo": "https://www.cablevisionhd.com/imge/espn6.png",
       "categoria": "Deportes",
       "descripcion": "Sexto canal de ESPN con cobertura deportiva adicional.",
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn6.html"
@@ -275,18 +275,10 @@
     {
       "id": 73,
       "nombre": "ESPN 7",
-      "logo": "",
+      "logo": "https://www.cablevisionhd.com/imge/espn7.png",
       "categoria": "Deportes",
       "descripcion": "Séptimo canal de ESPN con cobertura deportiva adicional.",
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn7.html"
-    },
-    {
-      "id": 74,
-      "nombre": "RCN",
-      "logo": "https://logowik.com/content/uploads/images/rcn-television-y-radio7292.logowik.com.webp",
-      "categoria": "Entretenimiento",
-      "descripcion": "Canal de televisión colombiano con programación variada incluyendo noticias, telenovelas y entretenimiento.",
-      "url_stream": "https://embed.sdfgnksbounce.com/embed2/rcn.html"
     }
   ]
 }
