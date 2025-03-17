@@ -6,7 +6,7 @@
       "logo": "https://television-libre.tv/img/caracoltv.webp",
       "categoria": "Nacional",
       "descripcion": "Canal de televisión colombiano con programación variada incluyendo noticias, telenovelas y entretenimiento.",
-      "url_stream": "https://television-libre.tv/html/hls.html?get=Ly9tZHN0cm0uY29tL2xpdmUtc3RyZWFtLXBsYXlsaXN0LzYzMjM5MTczNGJlOTJhNzkxZTI3NTBlNi5tM3U4"
+      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=caracol-co"
     },
     {
       "id": 299, 
@@ -14,7 +14,7 @@
       "logo": "https://www.rcn.com.co/themes/custom/rcn/logo.svg",
       "categoria": "Nacional",
       "descripcion": "Canal de televisión colombiano que transmite noticias, telenovelas, series y entretenimiento.",
-      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=rcn-co"
+      "url_stream": "https://television-libre.tv/html/hls.html?get=Ly9tZHN0cm0uY29tL2xpdmUtc3RyZWFtLXBsYXlsaXN0LzYzMjM5MTczNGJlOTJhNzkxZTI3NTBlNi5tM3U4"
     },
     {
       "id": 3,

@@ -485,19 +485,33 @@
         // Función para manejar el caché
         function gestionarCache() {
             const cacheVersion = localStorage.getItem(CACHE_KEYS.VERSION);
+            const ultimaActualizacion = localStorage.getItem(CACHE_KEYS.TIMESTAMP);
             
-            if (cacheVersion !== CACHE_VERSION) {
+            // Forzar actualización si:
+            // 1. La versión del caché es diferente
+            // 2. Han pasado más de 1 hora desde la última actualización
+            // 3. No hay timestamp guardado
+            if (cacheVersion !== CACHE_VERSION || 
+                !ultimaActualizacion || 
+                Date.now() - parseInt(ultimaActualizacion) > 1 * 60 * 60 * 1000) { // 1 hora en lugar de 6
+                
+                // Limpiar todo el caché
                 Object.values(CACHE_KEYS).forEach(key => localStorage.removeItem(key));
                 localStorage.setItem(CACHE_KEYS.VERSION, CACHE_VERSION);
+                
+                // Forzar nueva carga de canales
+                return false;
             }
+            
+            return true;
         }
 
-        // Función para verificar si el caché está actualizado
+        // Función para verificar caché
         function esCacheActualizado() {
             const ultimaActualizacion = localStorage.getItem(CACHE_KEYS.TIMESTAMP);
             if (!ultimaActualizacion) return false;
             
-            const TIEMPO_CACHE = 6 * 60 * 60 * 1000; // 6 horas
+            const TIEMPO_CACHE = 1 * 60 * 60 * 1000; // 1 hora en lugar de 6
             const tiempoTranscurrido = Date.now() - parseInt(ultimaActualizacion);
             return tiempoTranscurrido < TIEMPO_CACHE;
         }
@@ -861,23 +875,27 @@
             const reproductorIframe = document.querySelector('.reproductor-iframe');
             const infoCanal = document.querySelector('.info-canal-actual');
             
-            // Extraer el parámetro 'get' si existe
-            let urlStream = canal.url_stream;
-            if (urlStream.includes('hls.html?get=')) {
-                const params = new URLSearchParams(urlStream.split('?')[1]);
-                const streamUrl = atob(params.get('get')); // Decodifica el parámetro base64
-                // Crear un reproductor HLS personalizado
-                reproductorIframe.src = `https://television-libre.tv/html/hls.html?get=${params.get('get')}`;
-            } else {
-                // URL normal, usar directamente
-                reproductorIframe.src = urlStream;
-            }
-
-            // Actualizar información del canal
-            infoCanal.innerHTML = `
-                <h2>${canal.nombre}</h2>
-                <p>${canal.descripcion}</p>
-            `;
+            // Asegurarse de que el iframe esté limpio antes de cargar nuevo contenido
+            reproductorIframe.src = '';
+            
+            setTimeout(() => {
+                if (canal.url_stream.includes('hls.html?get=')) {
+                    // Si es una URL de HLS, usarla directamente
+                    reproductorIframe.src = canal.url_stream;
+                } else if (canal.url_stream.includes('embed.php')) {
+                    // Si es una URL de embed, usarla directamente
+                    reproductorIframe.src = canal.url_stream;
+                } else {
+                    // Para otras URLs, crear un reproductor personalizado
+                    reproductorIframe.src = `https://television-libre.tv/html/hls.html?get=${btoa(canal.url_stream)}`;
+                }
+                
+                // Actualizar información del canal
+                infoCanal.innerHTML = `
+                    <h2>${canal.nombre}</h2>
+                    <p>${canal.descripcion}</p>
+                `;
+            }, 100);
         }
     </script>
 </body>
