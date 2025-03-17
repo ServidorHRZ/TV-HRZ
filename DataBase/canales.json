@@ -279,6 +279,62 @@
       "categoria": "Deportes",
       "descripcion": "Séptimo canal de ESPN con cobertura deportiva adicional.",
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn7.html"
+    },
+    {
+      "id": 74,
+      "nombre": "ESPN México",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/1200px-ESPN_wordmark.svg.png", 
+      "categoria": "Deportes",
+      "descripcion": "Canal deportivo de ESPN dedicado a la cobertura del deporte mexicano.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/espnmexico.html"
+    },
+    {
+      "id": 75,
+      "nombre": "ESPN 2 México",
+      "logo": "https://television-libre.tv//img/espn2.webp",
+      "categoria": "Deportes", 
+      "descripcion": "Segundo canal de ESPN México con más cobertura deportiva nacional.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn2mexico.html"
+    },
+    {
+      "id": 76,
+      "nombre": "ESPN 3 México",
+      "logo": "https://television-libre.tv//img/espn3.webp",
+      "categoria": "Deportes",
+      "descripcion": "Tercer canal de ESPN México con programación deportiva adicional.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn3mexico.html"
+    },
+    {
+      "id": 77,
+      "nombre": "Movistar Deportes",
+      "logo": "https://www.cablevisionhd.com/imge/movistardeportes.png", 
+      "categoria": "Deportes",
+      "descripcion": "Canal deportivo de Movistar con cobertura de eventos deportivos.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/movistardeportes.html"
+    },
+    {
+      "id": 78,
+      "nombre": "Movistar La Liga",
+      "logo": "https://www.cablevisionhd.com/imge/movistarlaliga.png",
+      "categoria": "Deportes",
+      "descripcion": "Canal dedicado a la transmisión de partidos de La Liga española.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/movistarlaliga.html"
+    },
+    {
+      "id": 79,
+      "nombre": "DAZN F1",
+      "logo": "https://www.cablevisionhd.com/imge/daznf1.png",
+      "categoria": "Deportes",
+      "descripcion": "Canal especializado en la Fórmula 1 y deportes de motor.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/daznf1.html"
+    },
+    {
+      "id": 80,
+      "nombre": "DAZN La Liga",
+      "logo": "https://www.cablevisionhd.com/imge/daznlaliga.png",
+      "categoria": "Deportes", 
+      "descripcion": "Canal de DAZN dedicado a la transmisión de partidos de La Liga española.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/daznlaliga.html"
     }
   ]
 }
