@@ -856,6 +856,29 @@
                 }
             });
         }
+
+        function cargarCanal(canal) {
+            const reproductorIframe = document.querySelector('.reproductor-iframe');
+            const infoCanal = document.querySelector('.info-canal-actual');
+            
+            // Extraer el parámetro 'get' si existe
+            let urlStream = canal.url_stream;
+            if (urlStream.includes('hls.html?get=')) {
+                const params = new URLSearchParams(urlStream.split('?')[1]);
+                const streamUrl = atob(params.get('get')); // Decodifica el parámetro base64
+                // Crear un reproductor HLS personalizado
+                reproductorIframe.src = `https://television-libre.tv/html/hls.html?get=${params.get('get')}`;
+            } else {
+                // URL normal, usar directamente
+                reproductorIframe.src = urlStream;
+            }
+
+            // Actualizar información del canal
+            infoCanal.innerHTML = `
+                <h2>${canal.nombre}</h2>
+                <p>${canal.descripcion}</p>
+            `;
+        }
     </script>
 </body>
 </html>
