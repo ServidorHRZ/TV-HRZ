@@ -335,6 +335,38 @@
       "categoria": "Deportes", 
       "descripcion": "Canal de DAZN dedicado a la transmisión de partidos de La Liga española.",
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/daznlaliga.html"
+    },
+    {
+      "id": 81,
+      "nombre": "Bein La Liga",
+      "logo": "https://www.cablevisionhd.com/imge/beinlaliga.png",
+      "categoria": "Deportes",
+      "descripcion": "Canal deportivo especializado en la transmisión de partidos de La Liga española.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/beinlaliga.html"
+    },
+    {
+      "id": 82, 
+      "nombre": "DirecTV Sports",
+      "logo": "https://www.cablevisionhd.com/imge/directvsports.png",
+      "categoria": "Deportes",
+      "descripcion": "Canal deportivo con cobertura de fútbol sudamericano y eventos deportivos internacionales.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/directvsports.html"
+    },
+    {
+      "id": 83,
+      "nombre": "DirecTV Sports 2",
+      "logo": "https://www.cablevisionhd.com/imge/directvsports2.png", 
+      "categoria": "Deportes",
+      "descripcion": "Segundo canal de DirecTV Sports con más eventos deportivos en vivo.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/directvsports2.html"
+    },
+    {
+      "id": 84,
+      "nombre": "DirecTV Sports Plus",
+      "logo": "https://www.cablevisionhd.com/imge/directvsportsplus.png",
+      "categoria": "Deportes",
+      "descripcion": "Canal adicional de DirecTV Sports con programación deportiva complementaria.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/directvsportsplus.html"
     }
   ]
 }
