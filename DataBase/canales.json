@@ -411,7 +411,7 @@
     {
       "id": 90,
       "nombre": "Disney Junior",
-      "logo": "https://www.cablevisionhd.com/imge/disneyjr.png", 
+      "logo": "https://television-libre.tv//img/disneyjr.webp", 
       "categoria": "Infantil",
       "descripcion": "Canal preescolar de Disney con programación educativa y entretenimiento para niños pequeños.",
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/disneyjr.html"
@@ -422,7 +422,7 @@
       "logo": "https://www.cablevisionhd.com/imge/discoverykids.png",
       "categoria": "Infantil", 
       "descripcion": "Canal infantil educativo con programas que estimulan el aprendizaje y la diversión.",
-      "url_stream": "https://embed.sdfgnksbounce.com/embed2/discoverykids.html"
+      "url_stream": "https://embed.sdfgnksbounce.com/embed5/discoverykids.html"
     }
   ]
 }
