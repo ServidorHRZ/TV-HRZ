@@ -723,8 +723,15 @@
                 hls = null;
             }
 
-            // Determinar qué reproductor usar según la URL
-            if (canal.url_stream.includes('telelibre.net')) {
+            // Manejar específicamente la URL de Caracol TV y otros canales similares
+            if (canal.url_stream.includes('mdstrm.com')) {
+                reproductorIframe.style.display = 'block';
+                reproductorHtml5.style.display = 'none';
+                // Crear URL con el reproductor personalizado para streams de mdstrm.com
+                reproductorIframe.src = `https://television-libre.tv/html/hls.html?get=${encodeURIComponent(canal.url_stream)}`;
+            } 
+            // Resto del código existente para otros tipos de URLs
+            else if (canal.url_stream.includes('telelibre.net')) {
                 reproductorIframe.style.display = 'block';
                 reproductorHtml5.style.display = 'none';
                 reproductorIframe.src = canal.url_stream;
@@ -774,14 +781,14 @@
             }
 
             // Actualizar el estado visual de los canales
-            const canalesItems = document.querySelectorAll('.canal-item');
-            canalesItems.forEach(item => item.classList.remove('activo'));
-            const canalActivo = Array.from(canalesItems).find(item => 
-                item.querySelector('h4').textContent === canal.nombre
-            );
-            if (canalActivo) {
-                canalActivo.classList.add('activo');
-            }
+            const canales = document.querySelectorAll('.canal-item');
+            canales.forEach(item => {
+                if (item.dataset.canalId === canal.id.toString()) {
+                    item.classList.add('activo');
+                } else {
+                    item.classList.remove('activo');
+                }
+            });
         }
 
         function obtenerCategorias() {
