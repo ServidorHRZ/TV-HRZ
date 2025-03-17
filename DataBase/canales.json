@@ -367,6 +367,62 @@
       "categoria": "Deportes",
       "descripcion": "Canal adicional de DirecTV Sports con programación deportiva complementaria.",
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/directvsportsplus.html"
+    },
+    {
+      "id": 85,
+      "nombre": "GolTV",
+      "logo": "https://www.cablevisionhd.com/imge/goltv.png",
+      "categoria": "Deportes",
+      "descripcion": "Canal especializado en fútbol con transmisiones de ligas internacionales.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/goltv.html"
+    },
+    {
+      "id": 86,
+      "nombre": "TNT Sports",
+      "logo": "https://www.cablevisionhd.com/imge/tntsports.png",
+      "categoria": "Deportes", 
+      "descripcion": "Canal deportivo con cobertura de fútbol argentino y eventos deportivos.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/tntsports.html"
+    },
+    {
+      "id": 87,
+      "nombre": "Fox Sports Premium",
+      "logo": "https://www.cablevisionhd.com/imge/foxsportspremium.png",
+      "categoria": "Deportes",
+      "descripcion": "Canal premium de Fox Sports con eventos deportivos exclusivos.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/foxsportspremium.html"
+    },
+    {
+      "id": 88,
+      "nombre": "TyC Sports",
+      "logo": "https://www.cablevisionhd.com/imge/tycsports.png",
+      "categoria": "Deportes",
+      "descripcion": "Canal deportivo argentino con fútbol local e internacional.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/tycsports.html"
+    },
+    {
+      "id": 89,
+      "nombre": "Canal 5",
+      "logo": "https://www.cablevisionhd.com/imge/canal5.png",
+      "categoria": "Infantil",
+      "descripcion": "Canal de televisión infantil con programación educativa y entretenimiento para niños.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/canal5.html"
+    },
+    {
+      "id": 90,
+      "nombre": "Disney Junior",
+      "logo": "https://www.cablevisionhd.com/imge/disneyjr.png", 
+      "categoria": "Infantil",
+      "descripcion": "Canal preescolar de Disney con programación educativa y entretenimiento para niños pequeños.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/disneyjr.html"
+    },
+    {
+      "id": 91,
+      "nombre": "Discovery Kids",
+      "logo": "https://www.cablevisionhd.com/imge/discoverykids.png",
+      "categoria": "Infantil", 
+      "descripcion": "Canal infantil educativo con programas que estimulan el aprendizaje y la diversión.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/discoverykids.html"
     }
   ]
 }
