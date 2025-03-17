@@ -49,6 +49,22 @@
       "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=nick-op2"
     },
     {
+      "id": 59,
+      "nombre": "Dragon Ball 24/7",
+      "logo": "https://www.cablevisionhd.com/imge/dragonballsuper.png",
+      "categoria": "Infantil",
+      "descripcion": "Canal dedicado a transmitir Dragon Ball, Dragon Ball Z y Dragon Ball Super las 24 horas del día.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/dragonballsuper.html"
+    },
+    {
+      "id": 60,
+      "nombre": "Los Padrinos Mágicos 24/7", 
+      "logo": "https://www.cablevisionhd.com/imge/padrinosmagicos.png",
+      "categoria": "Infantil",
+      "descripcion": "Canal que transmite la serie Los Padrinos Mágicos de forma continua las 24 horas.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/padrinosmagicos.html"
+    },
+    {
       "id": 6,
       "nombre": "ESPN",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/1200px-ESPN_wordmark.svg.png",
