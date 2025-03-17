@@ -5,7 +5,7 @@
       "nombre": "Caracol TV",
       "logo": "https://television-libre.tv/img/caracoltv.webp",
       "categoria": "Nacional",
-      "descripcion": "Canal de televisión colombiano con programación variada incluyendo noticias, telenovelas y entretenimiento.",
+      "descripcion": "Canal de televisión colombiano con programación variada",
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/caracol.html"
     },
     {
@@ -249,28 +249,44 @@
       "url_stream": "https://amg00143-younghollywoodfast-amg00143c1-cineverse-us-946.playouts.now.amagi.tv/playlist/amg00143-younghollywoodfast-younghollywood-cineverseus/playlist.m3u8"
     },
     {
-      "id": 56,
-      "nombre": "30A Music",
-      "logo": "https://i.imgur.com/gNWg9tl.png",
-      "categoria": "Música",
-      "descripcion": "Canal de música con variedad de géneros y artistas.",
-      "url_stream": "https://30a-tv.com/feeds/ceftech/30atvmusic.m3u8"
-    },
-    {
-      "id": 57,
-      "nombre": "4K Travel TV",
-      "logo": "https://i.imgur.com/WaGRlFO.png",
-      "categoria": "Viajes",
-      "descripcion": "Canal de viajes en alta definición con los mejores destinos del mundo.",
-      "url_stream": "https://streams2.sofast.tv/sofastplayout/33c31ac4-51fa-46ae-afd0-0d1fe5e60a80_0_HLS/master.m3u8"
-    },
-    {
-      "id": 58,
-      "nombre": "30A Darcizzle Offshore",
-      "logo": "https://i.imgur.com/Q4l2uao.png",
+      "id": 70,
+      "nombre": "ESPN 4",
+      "logo": "",
       "categoria": "Deportes",
-      "descripcion": "Canal dedicado a la pesca deportiva y actividades marítimas.",
-      "url_stream": "https://30a-tv.com/darcizzle.m3u8"
+      "descripcion": "Cuarto canal de ESPN con cobertura deportiva adicional.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn4.html"
+    },
+    {
+      "id": 71,
+      "nombre": "ESPN 5",
+      "logo": "",
+      "categoria": "Deportes",
+      "descripcion": "Quinto canal de ESPN con cobertura deportiva adicional.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn5.html"
+    },
+    {
+      "id": 72,
+      "nombre": "ESPN 6",
+      "logo": "",
+      "categoria": "Deportes",
+      "descripcion": "Sexto canal de ESPN con cobertura deportiva adicional.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn6.html"
+    },
+    {
+      "id": 73,
+      "nombre": "ESPN 7",
+      "logo": "",
+      "categoria": "Deportes",
+      "descripcion": "Séptimo canal de ESPN con cobertura deportiva adicional.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn7.html"
+    },
+    {
+      "id": 74,
+      "nombre": "RCN",
+      "logo": "https://logowik.com/content/uploads/images/rcn-television-y-radio7292.logowik.com.webp",
+      "categoria": "Entretenimiento",
+      "descripcion": "Canal de televisión colombiano con programación variada incluyendo noticias, telenovelas y entretenimiento.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/rcn.html"
     }
   ]
 }

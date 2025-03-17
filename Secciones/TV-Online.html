@@ -818,9 +818,24 @@
         }
 
         function filtrarPorCategoria(categoria) {
-            const canalesFiltrados = todosLosCanales.filter(canal => 
-                canal.categoria === categoria
-            );
+            const canalesFiltrados = todosLosCanales
+                .filter(canal => canal.categoria === categoria)
+                .sort((a, b) => {
+                    // Ordenar primero por nombre del canal
+                    if (a.nombre.startsWith('ESPN') && b.nombre.startsWith('ESPN')) {
+                        // Si ambos son ESPN, ordenar por número
+                        const numA = parseInt(a.nombre.replace('ESPN', '')) || 1;
+                        const numB = parseInt(b.nombre.replace('ESPN', '')) || 1;
+                        return numA - numB;
+                    } else if (a.nombre.startsWith('Fox Sports') && b.nombre.startsWith('Fox Sports')) {
+                        // Si ambos son Fox Sports, ordenar por número
+                        const numA = parseInt(a.nombre.replace('Fox Sports', '')) || 1;
+                        const numB = parseInt(b.nombre.replace('Fox Sports', '')) || 1;
+                        return numA - numB;
+                    }
+                    return a.nombre.localeCompare(b.nombre);
+                });
+            
             mostrarCanales(canalesFiltrados);
             
             // Actualizar botones de categoría
