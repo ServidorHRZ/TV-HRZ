@@ -65,14 +65,6 @@
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/dragonballsuper.html"
     },
     {
-      "id": 60,
-      "nombre": "Los Padrinos Mágicos 24/7", 
-      "logo": "https://www.cablevisionhd.com/imge/padrinosmagicos.png",
-      "categoria": "Infantil",
-      "descripcion": "Canal que transmite la serie Los Padrinos Mágicos de forma continua las 24 horas.",
-      "url_stream": "https://embed.sdfgnksbounce.com/embed2/padrinosmagicos.html"
-    },
-    {
       "id": 6,
       "nombre": "ESPN",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/1200px-ESPN_wordmark.svg.png",
@@ -419,18 +411,10 @@
     {
       "id": 91,
       "nombre": "Discovery Kids",
-      "logo": "https://television-libre.tv//img/diskids.webp",
+      "logo": "https://television-libre.tv/img/discoverykids.webp",
       "categoria": "Infantil", 
-      "descripcion": "Canal infantil educativo con programas que estimulan el aprendizaje y la diversión.",
-      "url_stream": "https://embed.sdfgnksbounce.com/embed2/discoverykids.html"
-    },
-    {
-      "id": 92,
-      "nombre": "Los Pitufos 24/7",
-      "logo": "https://television-libre.tv//img/pitufos.webp",
-      "categoria": "Infantil",
-      "descripcion": "Canal dedicado a transmitir las aventuras de Los Pitufos las 24 horas del día.",
-      "url_stream": "https://embed.sdfgnksbounce.com/embed2/pitufos.html"
+      "descripcion": "Canal educativo para niños preescolares con programación que combina entretenimiento y aprendizaje.",
+      "url_stream": "https://www.televisiongratishd2.com/live5/discoverykids.php"
     }
   ]
 }
