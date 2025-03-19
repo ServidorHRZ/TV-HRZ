@@ -415,6 +415,14 @@
       "categoria": "Infantil", 
       "descripcion": "Canal educativo para niños preescolares con programación que combina entretenimiento y aprendizaje.",
       "url_stream": "https://www.televisiongratishd2.com/live5/discoverykids.php"
+    },
+    {
+      "id": 92,
+      "nombre": "Win Sports +",
+      "logo": "https://television-libre.tv/img/winsports.webp",
+      "categoria": "Deportes",
+      "descripcion": "Canal deportivo colombiano especializado en fútbol y otros deportes nacionales.",
+      "url_stream": "https://tele-libre.org/en-vivo-online/win-sports-premium/embed.php"
     }
   ]
 }
