@@ -424,5 +424,37 @@
       "descripcion": "Canal deportivo colombiano especializado en fútbol y otros deportes nacionales.",
       "url_stream": "https://tele-libre.org/en-vivo-online/win-sports-premium/embed.php"
     }
+    ,{
+      "id": 93,
+      "nombre": "La Rosa de Guadalupe 24/7",
+      "logo": "https://www.cablevisionhd.com/imge/larosa.png",
+      "categoria": "Entretenimiento",
+      "descripcion": "Canal dedicado a transmitir episodios de La Rosa de Guadalupe las 24 horas.",
+      "url_stream": "https://tele-libre.org/en-vivo-online/la-rosa-de-guadalupe/embed.php"
+    },
+    {
+      "id": 94, 
+      "nombre": "Terror 24/7",
+      "logo": "https://www.cablevisionhd.com/imge/terror.png",
+      "categoria": "Películas",
+      "descripcion": "Canal especializado en películas y series de terror transmitiendo 24 horas al día.",
+      "url_stream": "https://tele-libre.org/en-vivo-online/terror/embed.php"
+    },
+    {
+      "id": 95,
+      "nombre": "Los Pitufos 24/7",
+      "logo": "https://www.cablevisionhd.com/imge/pitufos.png", 
+      "categoria": "Infantil",
+      "descripcion": "Canal que transmite episodios de Los Pitufos las 24 horas del día.",
+      "url_stream": "https://tele-libre.org/en-vivo-online/pitufos/embed.php"
+    }
+  ,{
+      "id": 96,
+      "nombre": "Padrinos Mágicos 24/7",
+      "logo": "https://www.cablevisionhd.com/imge/padrinos.png",
+      "categoria": "Infantil",
+      "descripcion": "Canal que transmite episodios de Los Padrinos Mágicos las 24 horas del día.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/padrinosmagicos.html"
+    }
   ]
 }
