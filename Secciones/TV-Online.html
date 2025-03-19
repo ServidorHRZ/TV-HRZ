@@ -930,8 +930,16 @@
             reproductorIframe.style.display = 'none';
             reproductorHtml5.style.display = 'none';
 
-            // Manejar específicamente Caracol TV y otros canales con embed
-            if (canal.url_stream.includes('embed.sdfgnks') || canal.url_stream.includes('embed.php')) {
+            // Manejar específicamente Win Sports+ y otros canales con embed especial
+            if (canal.nombre === "Win Sports +") {
+                reproductorIframe.style.display = 'block';
+                reproductorIframe.src = canal.url_stream;
+                // Asegurar que el iframe tenga los permisos necesarios
+                reproductorIframe.setAttribute('allow', 'autoplay; fullscreen; encrypted-media');
+                reproductorIframe.setAttribute('allowfullscreen', 'true');
+            }
+            // Manejar otros canales con embed
+            else if (canal.url_stream.includes('embed.sdfgnks') || canal.url_stream.includes('embed.php')) {
                 reproductorIframe.style.display = 'block';
                 reproductorIframe.src = canal.url_stream;
             }
