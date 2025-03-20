@@ -7,8 +7,7 @@
       "subtitulo": "¡Próximamente!",
       "descripcion": "Después de un naufragio que lo dejó varado en una isla durante cinco años, Oliver Queen regresa a casa convertido en un experto arquero para luchar contra el crimen y la corrupción en Ciudad Starling.",
       "imagen": "https://wallpapers.com/images/featured/flecha-verde-7fxabozek6nvsry9.jpg",
-      "fecha": "Muy Pronto",
-      "destacado": true,
+      "destacado": false,
       "link": "serie.html",
       "serieId": 27,
       "disponible": false

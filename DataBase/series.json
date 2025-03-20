@@ -5640,6 +5640,112 @@
               "url": "https://fastream.to/embed-z63hy408klo4.html"
             }
           ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1, 
+              "titulo": "Nuevos Comienzos",
+              "descripcion": "Luna comienza una nueva etapa en el Jam & Roller",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-xxymqfmk0s8n.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "titulo": "El Mentalista",
+      "disponible": false,
+      "enProceso": false,
+      "descripcion": "Patrick Jane es un consultor independiente para el Buró de Investigación de California (CBI) con un notable historial resolviendo casos graves gracias a sus extraordinarias habilidades de observación.",
+      "imagen": "https://image.tmdb.org/t/p/original/d1ZcT5tHzUeQ7zgYecOVoWxH9FL.jpg",
+      "año": 2008,
+      "genero": "suspenso",
+      "director": "Bruno Heller",
+      "actores": [
+        "Simon Baker",
+        "Robin Tunney",
+        "Tim Kang"
+      ],
+      "trailer": "https://www.youtube.com/embed/YQsC0Z9uEqM",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Piloto",
+              "descripcion": "Patrick Jane ayuda al CBI a resolver el caso de una doble homicidio que podría estar relacionado con Red John",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1CNmr9LMkcbt-lkFr_67XvhCiIdJ-G2wz/preview"
+            },
+            {
+              "numero": 2,
+              "titulo": "Mancha Roja", 
+              "descripcion": "El equipo investiga el asesinato de una estudiante universitaria",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1X9FDyqJ0rApeOTY6KY40HbsiqpTpawhg/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Marea Roja",
+              "descripcion": "Jane y Lisbon investigan la muerte de un buzo",
+              "duracion": "43:00", 
+              "url": "https://drive.google.com/file/d/1Zl5I9yY6_mitmXFgg1_Ak3tGS-UMH1OV/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Damas de Rojo",
+              "descripcion": "El equipo investiga el asesinato de una mujer rica en un club exclusivo",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1mE0PO4esHzU5rGelU70E0mgZyPRx7O4_/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Llamas Rojas",
+              "descripcion": "Jane y el equipo investigan un incendio mortal en una iglesia",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1mV-T75e-mlG90nedrdyc3v6sTqjMvorR/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Mano Roja",
+              "descripcion": "El CBI investiga el asesinato de un jugador de póquer profesional",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1mV-T75e-mlG90nedrdyc3v6sTqjMvorR/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Ver Rojo",
+              "descripcion": "Jane ayuda a resolver el asesinato de un médico en un hospital",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1mV-T75e-mlG90nedrdyc3v6sTqjMvorR/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "La Delgada Línea Roja",
+              "descripcion": "El equipo investiga el asesinato de un oficial de policía",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1mV-T75e-mlG90nedrdyc3v6sTqjMvorR/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Flama Roja",
+              "descripcion": "Jane y Lisbon investigan la muerte de un bombero",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1mV-T75e-mlG90nedrdyc3v6sTqjMvorR/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "Rojo Brillante",
+              "descripcion": "El CBI investiga el asesinato de un famoso chef",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1mV-T75e-mlG90nedrdyc3v6sTqjMvorR/preview"
+            }
+          ]
         }
       ]
     }
