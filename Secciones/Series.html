@@ -537,43 +537,13 @@
         /* Estilos mejorados para el carrusel de anuncios */
         .announcements-carousel {
             position: relative;
-            width: 100%; /* Ancho completo para PC */
-            max-width: none; /* Eliminamos el max-width para PC */
-            margin: 65px 0 20px; /* Quitamos margen lateral en PC */
-            overflow: hidden;
-            border-radius: 0; /* Sin bordes redondeados en PC */
-            z-index: 1;
-            height: 450px;
-            background: #111;
-        }
-
-        @media (max-width: 768px) {
-            .announcements-carousel {
-                width: 100%; /* Ancho completo en móviles */
-                height: 420px;
-                margin: 70px 0 20px; /* Sin márgenes laterales en móviles */
-                border-radius: 0; /* Sin bordes redondeados en móviles */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .announcements-carousel {
-                height: 400px;
-                margin: 65px 0 20px;
-                width: 100%; /* Mantener ancho completo en móviles pequeños */
-            }
-        }
-
-        /* Asegurar que las imágenes cubran todo el ancho */
-        .announcement-slide {
-            border-radius: 0; /* Quitar bordes redondeados de los slides */
-            overflow: hidden;
-        }
-
-        .announcement-image {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            max-width: 1400px;
+            margin: 0 auto 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            z-index: 1;
+            height: 400px;
         }
 
         .announcements-container {
@@ -587,6 +557,16 @@
             position: relative;
             height: 100%;
             overflow: hidden;
+        }
+
+        .announcement-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 6s ease;
         }
 
         .announcement-content {
@@ -651,7 +631,27 @@
         }
 
         .carousel-indicators {
-            display: none; /* Esto ocultará completamente los puntos de navegación */
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            display: flex;
+            gap: 10px;
+            z-index: 3;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+        }
+
+        .indicator.active {
+            background: var(--primary-color);
+            transform: scale(1.2);
         }
 
         .ver-ahora-btn {
@@ -680,7 +680,6 @@
         .ver-ahora-btn i {
             font-size: 1.2rem;
         }
-        
 
         /* Animación de entrada para los slides */
         @keyframes fadeIn {
@@ -698,77 +697,42 @@
 
         /* Media queries para el carrusel */
         @media (max-width: 768px) {
+            .announcements-carousel {
+                height: 300px;
+                margin-top: 0;
+            }
+
             .announcement-content {
-                padding: 16px;
-                background: linear-gradient(
-                    to top,
-                    rgba(0, 0, 0, 0.95) 0%,
-                    rgba(0, 0, 0, 0.8) 60%,
-                    rgba(0, 0, 0, 0.4) 85%,
-                    transparent 100%
-                );
-            }
-
-            .announcement-buttons {
-                display: flex;
-                gap: 8px;
-                margin-top: 12px;
-                padding: 0 4px;
-            }
-
-            .announcement-btn {
-                flex: 1;
-                padding: 10px;
-                border-radius: 4px;
-                font-weight: bold;
-                font-size: 13px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 6px;
-            }
-
-            .btn-reproducir {
-                background: var(--primary-color);
-                color: black;
-            }
-
-            .btn-mi-lista {
-                background: rgba(255, 255, 255, 0.2);
-                color: white;
-                border: none;
+                padding: 20px;
             }
 
             .announcement-title {
-                font-size: 1.8rem;
-                margin-bottom: 6px;
+                font-size: 2rem;
             }
 
             .announcement-subtitle {
-                font-size: 1rem;
-                margin-bottom: 6px;
-                color: var(--primary-color);
+                font-size: 1.2rem;
             }
 
             .announcement-description {
-                font-size: 0.85rem;
-                -webkit-line-clamp: 2; /* Limitar a 2 líneas */
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                margin-bottom: 8px;
-                opacity: 0.9;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .announcement-title {
-                font-size: 1.5rem;
+                font-size: 0.9rem;
+                margin-bottom: 15px;
             }
 
-            .announcement-btn {
-                font-size: 12px;
-                padding: 8px;
+            .announcement-date {
+                font-size: 1rem;
+                padding: 5px 10px;
+            }
+
+            .ver-ahora-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .announcement-info {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
             }
         }
 
@@ -1125,6 +1089,9 @@
         <div class="announcements-container" id="announcementsContainer">
             <!-- Los anuncios se cargarán aquí dinámicamente -->
         </div>
+        <div class="carousel-indicators" id="carouselIndicators">
+            <!-- Los indicadores se generarán dinámicamente -->
+        </div>
     </div>
 
     <div class="categorias-wrapper">
@@ -1265,6 +1232,7 @@
                 case 'anuncios':
                     announcements = datos.announcements;
                     mostrarAnuncios();
+                    setupIndicators();
                     break;
             }
         }
@@ -1288,7 +1256,7 @@
         }
 
         // Variables globales
-        let todasLasSeries = []; 
+        let todasLasSeries = []; // Cambio de películas a series
         let currentSlide = 0;
         let announcements = [];
         let autoSlideInterval;
@@ -1456,23 +1424,13 @@
                 const slide = document.createElement('div');
                 slide.className = 'announcement-slide';
                 
-                // Determinar si se debe mostrar la fecha
-                const mostrarFecha = announcement.fecha && announcement.fecha !== "Muy Pronto";
+                const botonHTML = announcement.disponible ? 
+                    `<button class="ver-ahora-btn" onclick="verSerie(${announcement.serieId})">
+                        Ver ahora <i class="fas fa-play-circle"></i>
+                    </button>` : '';
                 
-                const botonesHTML = announcement.disponible ? `
-                    <div class="announcement-buttons">
-                        <button class="announcement-btn btn-reproducir" onclick="verSerie(${announcement.serieId})">
-                            <i class="fas fa-play"></i>
-                            Reproducir
-                        </button>
-                        <button class="announcement-btn btn-mi-lista" onclick="agregarAMiLista(${announcement.serieId})">
-                            <i class="fas fa-plus"></i>
-                            Mi lista
-                        </button>
-                    </div>
-                ` : (mostrarFecha ? `
-                    <div class="announcement-date">${announcement.fecha}</div>
-                ` : '');
+                const fechaHTML = announcement.disponible ? '' : 
+                    `<div class="announcement-date">${announcement.fecha}</div>`;
                 
                 slide.innerHTML = `
                     <img src="${announcement.imagen}" alt="${announcement.titulo}" class="announcement-image">
@@ -1480,7 +1438,10 @@
                         <h2 class="announcement-title">${announcement.titulo}</h2>
                         <h3 class="announcement-subtitle">${announcement.subtitulo}</h3>
                         <p class="announcement-description">${announcement.descripcion}</p>
-                        ${botonesHTML}
+                        <div class="announcement-info">
+                            ${fechaHTML}
+                            ${botonHTML}
+                        </div>
                     </div>
                 `;
                 container.appendChild(slide);
@@ -1489,26 +1450,19 @@
             updateSlidePosition();
         }
 
-        // Función para agregar a Mi Lista
-        function agregarAMiLista(serieId) {
-            fetch('../DataBase/series.json')
-                .then(response => response.json())
-                .then(data => {
-                    const serie = data.series.find(s => s.id === serieId);
-                    if (serie) {
-                        const miLista = JSON.parse(localStorage.getItem('miLista') || '[]');
-                        if (!miLista.some(item => item.id === serie.id)) {
-                            miLista.push(serie);
-                            localStorage.setItem('miLista', JSON.stringify(miLista));
-                            // Opcional: Mostrar mensaje de confirmación
-                            alert('Serie agregada a Mi Lista');
-                        }
-                    }
-                })
-                .catch(error => console.error('Error:', error));
+        // Funciones auxiliares del carrusel
+        function setupIndicators() {
+            const indicators = document.getElementById('carouselIndicators');
+            indicators.innerHTML = '';
+            
+            announcements.forEach((_, index) => {
+                const indicator = document.createElement('div');
+                indicator.className = `indicator ${index === currentSlide ? 'active' : ''}`;
+                indicator.addEventListener('click', () => goToSlide(index));
+                indicators.appendChild(indicator);
+            });
         }
 
-        // Funciones auxiliares del carrusel
         function updateSlidePosition() {
             const container = document.getElementById('announcementsContainer');
             const slides = document.querySelectorAll('.announcement-slide');
@@ -1523,6 +1477,12 @@
             
             // Añadir la clase active al slide actual
             slides[currentSlide].classList.add('active');
+            
+            // Actualizar los indicadores
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
         }
 
         function startAutoSlide() {
@@ -1546,6 +1506,13 @@
         function goToSlide(index) {
             currentSlide = index;
             updateSlidePosition();
+        }
+
+        function updateIndicators() {
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
         }
 
         // Función para ver serie
