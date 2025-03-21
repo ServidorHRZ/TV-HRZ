@@ -1280,7 +1280,10 @@
                 'clasicos': { titulo: 'Clásicos', peliculas: [], mantenerOrden: false },
                 'cristiana': { titulo: 'Películas Cristianas', peliculas: [], mantenerOrden: false },
                 'comedia': { titulo: 'Comedia', peliculas: [], mantenerOrden: false },
-                'rapidosyfuriosos': { titulo: 'Rápidos y Furiosos', peliculas: [], mantenerOrden: false }
+                'rapidosyfuriosos': { titulo: 'Rápidos y Furiosos', peliculas: [], mantenerOrden: false },
+                'anime': { titulo: 'Anime', peliculas: [], mantenerOrden: false },
+                'ciencia ficcion': { titulo: 'Ciencia Ficcion', peliculas: [], mantenerOrden: false },
+                'terror': { titulo: 'Terror', peliculas: [], mantenerOrden: false }
             };
 
             // Función para mezclar array
@@ -1433,7 +1436,7 @@
                 slide.className = 'announcement-slide';
                 
                 const botonHTML = announcement.disponible ? 
-                    `<button class="ver-ahora-btn" onclick="verSerie(${announcement.serieId})">
+                    `<button class="ver-ahora-btn" onclick="verPelicula(${announcement.peliculaId})">
                         Ver ahora <i class="fas fa-play-circle"></i>
                     </button>` : '';
                 
@@ -1524,14 +1527,14 @@
         }
 
         // Función para ver serie
-        function verSerie(serieId) {
+        function verPelicula(peliculaId) {
             fetch('../DataBase/peliculas.json')
                 .then(response => response.json())
                 .then(data => {
-                    const serie = data.series.find(s => s.id === serieId);
-                    if (serie) {
-                        localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
-                        window.location.href = 'serie.html';
+                    const pelicula = data.peliculas.find(p => p.id === peliculaId);
+                    if (pelicula) {
+                        localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
+                        window.location.href = 'movie.html';
                     }
                 })
                 .catch(error => console.error('Error:', error));

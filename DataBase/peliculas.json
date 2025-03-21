@@ -1,10 +1,110 @@
 {
   "peliculas": [
     {
-      "titulo": "Misión de Rescate",
+      "titulo": "Dragon Ball Super: Super Hero",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado", 
+      "año": 2022,
+      "genero": ["anime", "accion"],
+      "imagen": "https://image.tmdb.org/t/p/w185/dZH9gp0XQnjzYRYMGSwateGIXlB.jpg",
+      "enlace": "https://fastream.to/embed-uz7k1qd33blr.html",
+      "descripcion": "La malvada organización Red Ribbon Army se reforma con nuevos y más poderosos androides, Gamma 1 y Gamma 2, para buscar venganza. Piccolo y Gohan tendrán que pelear contra este nuevo enemigo que amenaza la paz en la Tierra."
+    },
+    {
+      "id": 52,
+      "titulo": "Interstellar",
       "disponible": true,
       "nuevo": true,
       "badge": "Recién agregado",
+      "año": 2014,
+      "genero": ["accion", "ciencia ficcion"],
+      "imagen": "https://image.tmdb.org/t/p/w185/nrSaXF39nDfAAeLKksRCyvSzI2a.jpg",
+      "enlace": "https://fastream.to/embed-qxa04wo8oj35.html",
+      "descripcion": "En un futuro donde la Tierra se está volviendo inhabitable, un grupo de astronautas viaja a través de un agujero de gusano cerca de Saturno en busca de un nuevo hogar para la humanidad. La misión los llevará más allá del espacio y tiempo conocidos, poniendo a prueba los límites del amor entre un padre y su hija."
+    },
+    {
+      "id": 50,
+      "titulo": "Su único hijo",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2020,
+      "genero": ["cristiana"],
+      "imagen": "https://image.tmdb.org/t/p/w185/1MvQXCBJtC34yI16QS276ZjWKY1.jpg",
+      "enlace": "https://fastream.to/embed-w6jtvfx91ess.html",
+      "descripcion": "Después de ser llamado por el Señor, la fe de Abraham se pone a prueba en su viaje de tres días para sacrificar a su hijo."
+    },
+    {
+      "titulo": "El Gato con Botas: El último deseo",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2022,
+      "genero": ["familiar", "animacion", "dreamworks"],
+      "imagen": "https://peliplay.xyz/wp-content/uploads/2023/03/lyP4WNmUiiOgl4g2z7ywE0z6SGF-193x288.jpg",
+      "enlace": "https://fastream.to/embed-z1vizafcnd5z.html",
+      "descripcion": "El Gato con Botas descubre que su pasión por la aventura le ha pasado factura: ha consumido ocho de sus nueve vidas. Por ello, emprende un viaje épico para encontrar el mítico Último Deseo y restaurar sus nueve vidas."
+    },
+    {
+      "titulo": "Wish: El poder de los deseos",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2023,
+      "genero": ["familiar","animacion", "disney"],
+      "imagen": "https://image.tmdb.org/t/p/w185/1VXMrUioKfPAPSsezHKexx77Dbz.jpg",
+      "enlace": "https://fastream.to/embed-8czcse9qrrxt.html", 
+      "descripcion": "Asha, una joven brillante y optimista de 17 años que vive en Rosas, el reino de los deseos, donde los deseos pueden literalmente hacerse realidad, hace un deseo tan poderoso que es respondido por una fuerza cósmica: una pequeña bola de energía ilimitada llamada Estrella. Juntas, Asha y Estrella se enfrentan a un enemigo formidable: el gobernante de Rosas, el Rey Magnífico, para salvar a su comunidad y demostrar que cuando la voluntad de un humano valiente se conecta con la magia de las estrellas, pueden suceder cosas maravillosas."
+    },
+    {
+      "titulo": "Aquaman y el Reino Perdido",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2023,
+      "genero": ["accion", "aventura", "dc"],
+      "imagen": "https://image.tmdb.org/t/p/w185/7lTnXOy0iNtBAdRP3TZvaKJ77F6.jpg",
+      "enlace": "https://fastream.to/embed-nn7ar700715x.html",
+      "descripcion": "Al no poder derrotar a Aquaman la primera vez, Black Manta, todavía impulsado por la necesidad de vengar la muerte de su padre, no se detendrá ante nada para derrotar a Aquaman de una vez por todas. Esta vez Black Manta es más formidable que nunca y ejerce el poder del mítico Tridente Negro, que desata una fuerza antigua y malévola. Para derrotarlo, Aquaman recurrirá a su hermano encarcelado Orm, el ex rey de la Atlántida, para forjar una alianza improbable. Juntos, deben dejar de lado sus diferencias para proteger su reino y salvar a la familia de Aquaman, y al mundo, de una destrucción irreversible."
+    },
+    {
+      "titulo": "Deadpool 2",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado", 
+      "año": 2018,
+      "genero": ["accion", "comedia", "marvel"],
+      "imagen": "https://image.tmdb.org/t/p/w185/oFERAu87Vg3fEZSKX0oqsRAgbc0.jpg",
+      "enlace": "https://fastream.to/embed-0b21zvmi4pxr.html",
+      "descripcion": "Wade Wilson (Deadpool) se une a un grupo de mutantes para proteger a un joven con habilidades sobrenaturales de Cable, un peligroso cyborg que viaja desde el futuro. Mientras intenta cumplir su misión, Deadpool deberá aprender el valor del trabajo en equipo y la amistad, todo ello sin perder su característico sentido del humor."
+    },
+    {
+      "titulo": "Deadpool",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2016,
+      "genero": ["accion", "comedia", "marvel"],
+      "imagen": "https://image.tmdb.org/t/p/w185/pcZT1Ouq99dY6J2iGXjMxw16x6o.jpg",
+      "enlace": "https://fastream.to/embed-fl14jrigevvr.html",
+      "descripcion": "Wade Wilson, tras ser sometido a un cruel experimento científico, adquiere poderes especiales de regeneración y se convierte en Deadpool. Armado con sus nuevas habilidades y un retorcido sentido del humor, Deadpool persigue al hombre que casi destruye su vida."
+    },
+    {
+      "titulo": "Kung Fu Panda 4",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2024,
+      "genero": ["animacion", "familiar", "comedia"],
+      "imagen": "https://image.tmdb.org/t/p/w185/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg",
+      "enlace": "https://fastream.to/embed-5wkzecx6qpwq.html",
+      "descripcion": "Po debe entrenar a una nueva guerrera para que se convierta en la nueva Guerrera Dragón mientras se enfrenta a una poderosa hechicera que ha convocado a todos los villanos que Po ha derrotado de vuelta al Reino de los Espíritus."
+    },
+    {
+      "titulo": "Misión de Rescate",
+      "disponible": true,
+      "nuevo": false,
       "año": 2020,
       "genero": ["accion", "neflix"],
       "imagen": "https://image.tmdb.org/t/p/w185/fKaP5Z0cloniKAhUcH7DbsDP6O4.jpg",
@@ -14,8 +114,7 @@
     {
       "titulo": "Misión de Rescate 2",
       "disponible": true,
-      "nuevo": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2023,
       "genero": ["accion", "neflix"],
       "imagen": "https://image.tmdb.org/t/p/w185/dMaTLnHf4GfWoQwfplh5u54YSDb.jpg", 
@@ -25,8 +124,7 @@
     {
       "titulo": "La Aventura de A.R.I.: Mi Amigo Robot",
       "disponible": true,
-      "nuevo": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2020,
       "genero": ["familiar", "ciencia ficcion"],
       "imagen": "https://image.tmdb.org/t/p/w185/dmXQl7HRAPLwMcDva8QogAMAsBp.jpg",
@@ -36,8 +134,7 @@
     {
       "titulo": "El Retorno de los Thundermans",
       "disponible": true,
-      "nuevo": true,
-      "badge": "Recién agregado", 
+      "nuevo": false,
       "año": 2024,
       "genero": ["familiar", "comedia"],
       "imagen": "https://image.tmdb.org/t/p/w185/u9F0QlZwwecGE9eHaaGKzx3pSS0.jpg",
@@ -47,8 +144,7 @@
     {
       "titulo": "Ratatouille",
       "disponible": true,
-      "nuevo": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
       "año": 2007,
       "genero": ["animacion", "disney"],
       "imagen": "https://image.tmdb.org/t/p/w185/t3vaWRPSf6WjDSamIkKDs1iQWna.jpg",
@@ -59,7 +155,6 @@
       "titulo": "No Manches Frida",
       "disponible": true,
       "nuevo": false,
-      "badge": "Recien agregado",
       "año": 2016,
       "genero": ["comedia"],
       "imagen": "https://image.tmdb.org/t/p/w185/6HfyXfIEywLa2HvcswKi44dDKxL.jpg",
@@ -77,6 +172,7 @@
       "descripcion": "Los Madrigal son una familia extraordinaria que vive en las montañas de Colombia, en una casa mágica, en un pueblo vibrante, en un lugar maravilloso conocido como Encanto. La magia de Encanto ha bendecido a cada niño de la familia con un don único, desde la superfuerza hasta el poder de sanar. A todos, excepto a Mirabel. Pero cuando descubre que la magia que rodea a Encanto está en peligro, Mirabel decide que ella, la única Madrigal sin poderes mágicos, podría ser la última esperanza de su excepcional familia."
     },
     {
+      "id":51,
       "titulo": "El Stand de los Besos",
       "disponible": true,
       "nuevo": false,
@@ -1074,8 +1170,7 @@
       "titulo": "Spider-Man: Homecoming",
       "disponible": true,
       "año": 2017,
-      "nuevo": true,
-      "badge": "Recien agregado",
+      "nuevo": false,
       "genero": ["accion", "marvel"],
       "imagen": "https://image.tmdb.org/t/p/w185/bRl6C6FwzTndk0MBGZZ68nRFlw3.jpg",
       "enlace": "https://fastream.to/embed-u5hjjysefshc.html",
