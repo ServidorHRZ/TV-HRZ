@@ -2335,6 +2335,102 @@
               "url": "https://drive.google.com/file/d/1XSFnOI3E6g6xfh6eD9SLmpbKfgdIahf3/preview"
             }
           ]
+        },
+        {
+          "numero": 4,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "401 Unauthorized",
+              "descripcion": "Elliot despierta en un mundo alternativo donde todo parece perfecto.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-wx89hl1cmhx5.html"
+            },
+            {
+              "numero": 2, 
+              "titulo": "402 Payment Required",
+              "descripcion": "Darlene lidia con la pérdida mientras Elliot enfrenta su pasado.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-tihy52aiu3qh.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "403 Forbidden",
+              "descripcion": "Whiterose revela sus verdaderas intenciones mientras Elliot busca respuestas.",
+              "duracion": "45:00", 
+              "url": "https://fastream.to/embed-i272aye6h3bx.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "404 Not Found",
+              "descripcion": "La verdad sobre el proyecto de Whiterose sale a la luz.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-2i3arpp4xjvi.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "405 Method Not Allowed",
+              "descripcion": "Elliot y Mr. Robot trabajan juntos para detener a Whiterose.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-xc6gpek29kxl.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "406 Not Acceptable",
+              "descripcion": "Dom y Darlene intentan escapar mientras Elliot se acerca a su objetivo.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-4e806t6tptdl.htm"
+            },
+            {
+              "numero": 7,
+              "titulo": "407 Proxy Authentication Required",
+              "descripcion": "Una revelación impactante cambia todo lo que Elliot creía saber.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-qpmyu8ay3ajw.html"
+            },
+            {
+              "numero": 8,
+              "titulo": "408 Request Timeout",
+              "descripcion": "Elliot corre contra el tiempo para detener el proyecto de Whiterose.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-82k4bezp2j2r.html"
+            },
+            {
+              "numero": 9,
+              "titulo": "409 Conflict",
+              "descripcion": "El enfrentamiento final entre Elliot y Whiterose comienza.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-kx4u5mfsf81d.html"
+            },
+            {
+              "numero": 10,
+              "titulo": "410 Gone",
+              "descripcion": "La verdad sobre Elliot finalmente es revelada.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-rx6kklqxwt21.html"
+            },
+            {
+              "numero": 11,
+              "titulo": "eXit",
+              "descripcion": "Todo llega a su fin mientras Elliot enfrenta su realidad.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-3ak01j1way8r.html"
+            },
+            {
+              "numero": 12,
+              "titulo": "whoami",
+              "descripcion": "La serie concluye con una revelación final.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-f6tu4z0an2q4.html"
+            },
+            {
+              "numero": 13,
+              "titulo": "Hello, Elliot",
+              "descripcion": "El capítulo final revela toda la verdad.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-uzsjkqprs6gj.html"
+            }
+          ]
         }
       ]
     },
