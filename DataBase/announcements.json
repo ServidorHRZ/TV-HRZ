@@ -3,15 +3,15 @@
     {
       "id": 1,
       "tipo": "nuevo_episodio",
-      "titulo": "Arrow",
-      "subtitulo": "¡Próximamente!",
-      "descripcion": "Después de un naufragio que lo dejó varado en una isla durante cinco años, Oliver Queen regresa a casa convertido en un experto arquero para luchar contra el crimen y la corrupción en Ciudad Starling.",
-      "imagen": "https://wallpapers.com/images/featured/flecha-verde-7fxabozek6nvsry9.jpg",
+      "titulo": "Chica Vampiro",
+      "subtitulo": "Disponible Ahora",
+      "descripcion": "Daisy es una adolescente normal hasta que en su cumpleaños número 16 es mordida por un vampiro.",
+      "imagen": "https://www.lavanguardia.com/peliculas-series/images/serie/poster/2013/5/w1280/mWpTjJO99SMusPHdV12UuMwtoNc.jpg",
       "destacado": false,
-      "fecha": "Muy Pronto",
+      "fecha": "Disponible Ahora",
       "link": "serie.html",
-      "serieId": 27,
-      "disponible": false
+      "serieId": 39,
+      "disponible": true
     },
     {
       "id": 2,

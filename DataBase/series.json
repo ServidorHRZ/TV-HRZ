@@ -336,8 +336,7 @@
       "id": 5,
       "titulo": "Berlin",
       "disponible": true,
-      "nuevo": true,
-      "badge": "Recien agregado",
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Antes de los eventos de La Casa de Papel, Berlin y un grupo de expertos ladrones planean uno de los atracos más ambiciosos de su carrera en París.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BYjEwNjFmNjMtMGYzNy00MzBiLWJlYjAtMGJjNTEwZGFhMjNlXkEyXkFqcGc@._V1_QL75_UY281_CR18,0,190,281_.jpg",
@@ -419,8 +418,7 @@
       "id": 6,
       "titulo": "La Casa de Papel",
       "disponible": true,
-      "nuevo": true,
-      "badge": "Recien agregado",
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Un grupo de criminales liderados por El Profesor planean los mayores atracos de la historia, primero en la Fábrica Nacional de Moneda y Timbre y luego en el Banco de España.",
       "imagen": "https://www.aceprensa.com/wp-content/uploads/2019/08/71446-1-683x1024.jpg",
@@ -1198,8 +1196,7 @@
       "id": 13,
       "titulo": "Silicon Valley",
       "disponible": true,
-      "nuevo": true,
-      "badge": "Recien agregado",
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "La serie sigue a Richard Hendricks, un programador que crea una aplicación de compresión de datos, y las aventuras y desventuras que él y su startup Pied Piper enfrentan en el competitivo mundo de Silicon Valley.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BM2Q5YjNjZWMtYThmYy00N2ZjLWE2NDctNmZjMmZjYWE2NjEwXkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_.jpg",
@@ -1404,9 +1401,8 @@
     {
       "id": 15,
       "titulo": "Arrow",
-      "badge": "Recien agregado",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Después de un naufragio que lo dejó varado en una isla durante cinco años, Oliver Queen regresa a casa convertido en un experto arquero para luchar contra el crimen y la corrupción en Ciudad Starling.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gKG5QGz5Ngf8fgWpBsWtlg5L2SF.jpg",
@@ -1591,9 +1587,8 @@
     {
       "id": 16,
       "titulo": "Supergirl",
-      "badge": "Recien agregado",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Las aventuras de Kara Zor-El, la prima de Superman, quien después de 12 años ocultando sus poderes debe aprender a aceptar sus habilidades para convertirse en una heroína.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vqBsgL9nd2v04ZvCqPzwtckDdFD.jpg",
@@ -3517,8 +3512,7 @@
       "id": 27,
       "titulo": "Clarence",
       "disponible": true,
-      "badge": "Recien agregado",
-      "nuevo": true,
+      "nuevo": false,
       "enProceso": false,
       "descripcion": "Clarence es un niño optimista que ve lo bueno en todo y en todos. Junto a sus mejores amigos Jeff y Sumo, vive aventuras cotidianas en su vecindario.",
       "imagen": "https://www.formulatv.com/images/series/posters/1600/1618/dest_1.jpg",
@@ -5163,8 +5157,7 @@
             }
           ]
         }
-      ],
-      "badge": "Recién agregado"
+      ]
     },
     {
       "id": 35,
@@ -5647,8 +5640,8 @@
       "id": 36,
       "titulo": "Soy Luna",
       "disponible": true,
-      "nuevo": true,
       "badge": "Recien agregado",
+      "nuevo": false,
       "enProceso": true,
       "descripcion": "Luna es una adolescente mexicana que vive en Cancún con sus padres. Su vida da un giro inesperado cuando la familia se muda a Buenos Aires por el trabajo de sus padres. En su nueva vida, Luna descubre su pasión por el patinaje y encuentra el amor mientras enfrenta nuevos desafíos.",
       "imagen": "https://image.tmdb.org/t/p/original/78CUmir4MDINMKdkUt4TmW5d7k4.jpg",
@@ -5899,6 +5892,101 @@
               "descripcion": "Jorge se embarca en una emocionante aventura de exploración por la ciudad",
               "duracion": "11:00",
               "url": "https://drive.google.com/file/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "titulo": "Chica Vampiro",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "descripcion": "Daisy es una adolescente normal hasta que en su cumpleaños número 16 es mordida por un vampiro. Ahora debe adaptarse a su nueva vida como vampiro mientras mantiene el secreto y lidia con el amor, la escuela y su familia.",
+      "imagen": "https://www.lavanguardia.com/peliculas-series/images/serie/poster/2013/5/w1280/mWpTjJO99SMusPHdV12UuMwtoNc.jpg",
+      "año": 2013,
+      "genero": "neflix",
+      "director": "William Barragán",
+      "actores": [
+        "Greeicy Rendón",
+        "Santiago Talledo",
+        "Eduardo Pérez"
+      ],
+      "trailer": "https://www.youtube.com/embed/qFgh71wXu5M",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "El Cumpleaños de Daisy",
+              "descripcion": "Daisy celebra su cumpleaños 16 pero un evento inesperado cambia su vida para siempre",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-qiyl14s4gxh2.html"
+            },
+            {
+              "numero": 2,
+              "titulo": "Una Nueva Vida",
+              "descripcion": "Daisy debe adaptarse a su nueva vida como vampiro mientras mantiene el secreto",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-nr0fqhwwyt5c.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "Primer Día de Escuela",
+              "descripcion": "Daisy regresa a la escuela intentando ocultar su nueva naturaleza",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-4pdsao4jh7ng.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "El Baile Escolar",
+              "descripcion": "Un baile escolar pone a prueba el autocontrol de Daisy",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-qz7kwt27uk2o.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "Secretos Familiares",
+              "descripcion": "Daisy descubre secretos sobre su familia y su nueva condición",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-nreszpb9ngte.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "El Primer Amor",
+              "descripcion": "Daisy lucha con sus sentimientos por un compañero de clase",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-nu28bl2srfkr.html"
+            },
+            {
+              "numero": 7,
+              "titulo": "La Rival",
+              "descripcion": "Una nueva estudiante amenaza con descubrir el secreto de Daisy",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-j8ihivo93qhe.html"
+            },
+            {
+              "numero": 8,
+              "titulo": "Poderes Vampíricos",
+              "descripcion": "Daisy aprende a controlar sus nuevos poderes vampíricos",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-hrcalti4oq83.html"
+            },
+            {
+              "numero": 9,
+              "titulo": "La Verdad Sale a la Luz",
+              "descripcion": "El secreto de Daisy corre peligro de ser revelado",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-l7pil37fb4ip.html"
+            },
+            {
+              "numero": 10,
+              "titulo": "Decisiones Difíciles",
+              "descripcion": "Daisy debe tomar decisiones importantes sobre su futuro",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-7cmn2msok0qs.html"
             }
           ]
         }
