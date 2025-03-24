@@ -1600,7 +1600,7 @@
         "Chyler Leigh",
         "David Harewood"
       ],
-      "trailer": "https://www.youtube.com/embed/NXAWqPKXG4E",
+      "trailer": "https://www.youtube.com/embed/y6JXTX4uc1c",
       "temporadas": [
         {
           "numero": 1,
@@ -1892,6 +1892,7 @@
       "titulo": "The Flash",
       "disponible": true,
       "nuevo": false,
+      "badge": "Nueva temporada",
       "enProceso": true,
       "descripcion": "Barry Allen es un investigador forense que adquiere super velocidad después de que un rayo lo alcanza durante un accidente en un acelerador de partículas.",
       "imagen": "https://www.themoviedb.org/t/p/original/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg",
@@ -3236,7 +3237,7 @@
         "Louis Chirillo",
         "Maryke Hendrikse"
       ],
-      "trailer": "https://www.youtube.com/embed/4Iqe9-zPDQY",
+      "trailer": "https://www.youtube.com/embed/GuDbbh-SgjA",
       "temporadas": [
         {
           "numero": 1,
@@ -5340,7 +5341,7 @@
         "Thomas Sangster",
         "Ashley Tisdale"
       ],
-      "trailer": "https://www.youtube.com/embed/9sfNSkMYJQY",
+      "trailer": "https://www.youtube.com/embed/faCb2jqXCG4",
       "temporadas": [
         {
           "numero": 1,
@@ -6009,7 +6010,7 @@
       "titulo": "Jorge el Curioso",
       "descripcion": "Jorge es un mono muy curioso que vive increíbles aventuras junto a su amigo Ted, el hombre del sombrero amarillo.",
       "imagen": "https://www.commonsensemedia.org/sites/default/files/styles/ratio_2_3_medium/public/product-images/csm-tv/curious-poster.jpg",
-      "trailer": "https://www.youtube.com/embed/hM2Vo_EKMvg?si=hq1rYBr8I6K_xbk0",
+      "trailer": "https://www.youtube.com/embed/hM2Vo_EKMvg",
       "nuevo": true,
       "disponible": true,
       "badge": "Recien agregado",
@@ -6079,7 +6080,7 @@
         "Santiago Talledo",
         "Eduardo Pérez"
       ],
-      "trailer": "https://www.youtube.com/embed/AfITMvYZfcY?si=FfcHLmhW87JT4yfr",
+      "trailer": "https://www.youtube.com/embed/UkWhLcHBPWg",
       "temporadas": [
         {
           "numero": 1,
@@ -6249,6 +6250,101 @@
               "descripcion": "Henry debe estar en dos lugares al mismo tiempo",
               "duracion": "23:00",
               "url": "https://fastream.to/embed-henry10.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "titulo": "Capitán Tsubasa",
+      "disponible": true,
+      "nuevo": false,
+      "enProceso": true,
+      "descripcion": "La historia sigue a Tsubasa Ozora, un joven y talentoso futbolista que sueña con llevar a Japón a ganar la Copa Mundial.",
+      "imagen": "https://i.pinimg.com/736x/2b/d8/7f/2bd87ff3418b94fa610cba787aa28c70.jpg",
+      "año": 1983,
+      "genero": "anime",
+      "director": "Yōichi Takahashi",
+      "actores": [
+        "Akari Hibino",
+        "Yōko Ogai",
+        "Nobuo Tobita"
+      ],
+      "trailer": "https://www.youtube.com/embed/HNJ9wJ_e0Ag",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "El Balón es mi Amigo",
+              "descripcion": "Tsubasa llega a la ciudad de Nankatsu y conoce a su rival Genzo Wakabayashi.",
+              "duracion": "25:00",
+              "url": "https://fastream.to/embed-tsubasa1.html"
+            },
+            {
+              "numero": 2,
+              "titulo": "El Desafío",
+              "descripcion": "Tsubasa acepta el reto de Wakabayashi para demostrar sus habilidades.",
+              "duracion": "25:00",
+              "url": "https://fastream.to/embed-tsubasa2.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "El Tiro del Águila",
+              "descripcion": "Tsubasa desarrolla su famosa técnica durante un partido importante.",
+              "duracion": "25:00",
+              "url": "https://fastream.to/embed-tsubasa3.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "Un Nuevo Equipo",
+              "descripcion": "Tsubasa se une al equipo de la escuela Nankatsu.",
+              "duracion": "25:00",
+              "url": "https://fastream.to/embed-tsubasa4.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "El Primer Partido",
+              "descripcion": "El equipo de Nankatsu juega su primer partido oficial.",
+              "duracion": "25:00",
+              "url": "https://fastream.to/embed-tsubasa5.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "Un Rival Formidable",
+              "descripcion": "Tsubasa se enfrenta a un talentoso delantero rival.",
+              "duracion": "25:00",
+              "url": "https://fastream.to/embed-tsubasa6.html"
+            },
+            {
+              "numero": 7,
+              "titulo": "La Técnica Secreta",
+              "descripcion": "Tsubasa aprende una nueva técnica para superar a sus oponentes.",
+              "duracion": "25:00",
+              "url": "https://fastream.to/embed-tsubasa7.html"
+            },
+            {
+              "numero": 8,
+              "titulo": "El Gran Torneo",
+              "descripcion": "Comienza el torneo regional de fútbol escolar.",
+              "duracion": "25:00",
+              "url": "https://fastream.to/embed-tsubasa8.html"
+            },
+            {
+              "numero": 9,
+              "titulo": "La Lesión",
+              "descripcion": "Tsubasa debe jugar lesionado un importante partido.",
+              "duracion": "25:00",
+              "url": "https://fastream.to/embed-tsubasa9.html"
+            },
+            {
+              "numero": 10,
+              "titulo": "El Espíritu del Fútbol",
+              "descripcion": "Tsubasa demuestra su pasión por el fútbol en un momento crucial.",
+              "duracion": "25:00",
+              "url": "https://fastream.to/embed-tsubasa10.html"
             }
           ]
         }
