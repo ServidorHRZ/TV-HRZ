@@ -758,6 +758,31 @@
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
+
+        /* Ajuste específico para móviles */
+        @media (max-width: 768px) {
+            .hero-overlay {
+                background: linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.9) 0%,
+                    rgba(0, 0, 0, 0.2) 50%,
+                    rgba(0, 0, 0, 0.1) 100%
+                );
+            }
+
+            .hero-section {
+                height: 40vh;
+            }
+
+            .hero-content {
+                background: linear-gradient(
+                    to top, 
+                    rgba(0,0,0,0.95) 0%, 
+                    rgba(0,0,0,0.5) 70%, 
+                    transparent 100%
+                );
+            }
+        }
     </style>
 </head>
 <body>
