@@ -378,6 +378,20 @@
             .container {
                 padding: 10px;
             }
+
+            .agregar-lista-btn {
+                position: absolute;
+                top: 2px;
+                right: 2px;
+                padding: 4px 10px;
+                font-size: 0.8rem;
+                background: rgba(0, 255, 255, 0.3);
+                transform: scale(0.85);
+            }
+
+            .agregar-lista-btn i {
+                font-size: 0.9rem;
+            }
         }
 
         @media (max-width: 480px) {
@@ -435,6 +449,14 @@
             .episodios-player {
                 width: 98%;
             }
+
+            .agregar-lista-btn {
+                top: 2px;
+                right: 2px;
+                padding: 4px 8px;
+                font-size: 0.75rem;
+                transform: scale(0.8);
+            }
         }
 
         .hero-section {
@@ -453,6 +475,7 @@
             height: 100%;
             transform: translateY(-50%);
             z-index: 1;
+            filter: brightness(0.9);
         }
 
         .hero-video iframe {
@@ -470,9 +493,9 @@
             height: 100%;
             background: linear-gradient(
                 to top,
-                rgba(0, 0, 0, 1) 0%,
-                rgba(0, 0, 0, 0.5) 60%,
-                rgba(0, 0, 0, 0.3) 100%
+                rgba(0, 0, 0, 0.9) 0%,
+                rgba(0, 0, 0, 0.3) 60%,
+                rgba(0, 0, 0, 0.2) 100%
             );
             z-index: 2;
         }
@@ -506,9 +529,15 @@
         }
 
         .hero-info h1 {
-            font-size: 3em;
+            font-size: 2.8em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(45deg, #00ffff, #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .serie-imagen {
@@ -572,7 +601,7 @@
         /* Estilos responsivos */
         @media (max-width: 768px) {
             .hero-section {
-                height: 40vh;
+                height: 50vh;
             }
 
             .hero-content {
@@ -768,43 +797,30 @@
 
         .agregar-lista-btn {
             position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(0, 0, 0, 0.7);
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 255, 255, 0.2);
             border: 2px solid var(--primary-color);
             color: var(--primary-color);
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-size: 1rem;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
             cursor: pointer;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             transition: all 0.3s ease;
-            z-index: 10;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
         }
 
         .agregar-lista-btn:hover {
             background: var(--primary-color);
             color: black;
-        }
-
-        .agregar-lista-btn i {
-            font-size: 1.2rem;
-        }
-
-        .agregar-lista-btn.en-lista {
-            background: var(--primary-color);
-            color: black;
-        }
-
-        @media (max-width: 768px) {
-            .agregar-lista-btn {
-                top: 10px;
-                right: 10px;
-                padding: 8px 15px;
-                font-size: 0.9rem;
-            }
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 255, 255, 0.4);
         }
 
         .action-button.reconectar {
