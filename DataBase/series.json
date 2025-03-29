@@ -2601,7 +2601,7 @@
       "titulo": "Las Sombrías Aventuras de Billy y Mandy",
       "disponible": true,
       "nuevo": false,
-      "enProceso": true,
+      "enProceso": false,
       "descripcion": "Billy y Mandy son dos niños que ganan la amistad de la Muerte (alias Calavera) en una apuesta. Ahora viven aventuras sobrenaturales junto a él, enfrentándose a todo tipo de criaturas y situaciones paranormales.",
       "imagen": "https://image.tmdb.org/t/p/original/gxdTn5UwvriN1EzDSNnWr5AAQN7.jpg",
       "año": 2001,
@@ -2612,7 +2612,7 @@
         "Grey DeLisle",
         "Greg Eagles"
       ],
-      "trailer": "https://www.youtube.com/embed/4Iqe9-zPDQY",
+      "trailer": "https://www.youtube.com/embed/Mpn1FDqPyy8",
       "temporadas": [
         {
           "numero": 1,
@@ -2738,7 +2738,7 @@
       "titulo": "Ed, Edd y Eddy",
       "disponible": true,
       "nuevo": false,
-      "enProceso": true,
+      "enProceso": false,
       "descripcion": "Las aventuras de tres amigos preadolescentes que viven en un callejón suburbano. Ed, Edd (Double D) y Eddy pasan sus días inventando estafas para conseguir dinero y comprar sus adorados caramelos, mientras lidian con los otros niños del vecindario.",
       "imagen": "https://es.web.img3.acsta.net/r_1280_720/pictures/18/04/25/10/15/5039486.png",
       "año": 1999,
@@ -2749,7 +2749,7 @@
         "Samuel Vincent",
         "Tony Sampson"
       ],
-      "trailer": "https://www.youtube.com/embed/6KZZQJf8BzM",
+      "trailer": "https://www.youtube.com/embed/fGYXNxRqUmE",
       "temporadas": [
         {
           "numero": 1,
@@ -2945,7 +2945,7 @@
       "titulo": "Johnny Bravo",
       "disponible": true,
       "nuevo": false,
-      "enProceso": true,
+      "enProceso": false,
       "descripcion": "Johnny Bravo es un joven musculoso y narcisista que vive con su madre y constantemente intenta conquistar mujeres, aunque siempre fracasa. Sus aventuras están llenas de humor y situaciones absurdas mientras intenta impresionar a las chicas con sus movimientos de karate y su peculiar personalidad.",
       "imagen": "https://pics.filmaffinity.com/johnny_bravo-502318534-large.jpg",
       "año": 1997,
@@ -2956,7 +2956,7 @@
         "Brenda Vaccaro",
         "Mae Whitman"
       ],
-      "trailer": "https://drive.google.com/file/d/1Kzs3WckpuFRHxtY7BNu7nn2pR63srIAs/view",
+      "trailer": "https://www.youtube.com/embed/0xsdgf5SGZI",
       "temporadas": [
         {
           "numero": 1,
@@ -3054,7 +3054,7 @@
       "titulo": "El Laboratorio de Dexter",
       "disponible": true,
       "nuevo": false,
-      "enProceso": true,
+      "enProceso": false,
       "descripcion": "Dexter es un niño genio que tiene un laboratorio secreto en su habitación donde realiza experimentos científicos. Su hermana mayor Dee Dee constantemente interfiere con sus inventos, causando caos y destrucción.",
       "imagen": "https://pics.filmaffinity.com/dexter_s_laboratory-784708242-large.jpg",
       "año": 1996,
@@ -3226,7 +3226,7 @@
       "titulo": "Johnny Test",
       "disponible": true,
       "nuevo": false,
-      "enProceso": true,
+      "enProceso": false,
       "descripcion": "Johnny Test es un niño de 11 años que sirve como sujeto de prueba para los experimentos científicos de sus hermanas gemelas superdotadas, Susan y Mary. Junto con su perro parlante Dukey, Johnny vive increíbles aventuras mientras prueba los inventos que frecuentemente salen mal.",
       "imagen": "https://image.tmdb.org/t/p/original/cGceNrHpUl3utUzE502xSY8l9ST.jpg",
       "año": 2005,
@@ -3342,7 +3342,7 @@
       "titulo": "Un Show Más",
       "disponible": true,
       "nuevo": false,
-      "enProceso": true,
+      "enProceso": false,
       "descripcion": "Las aventuras de Mordecai y Rigby, dos amigos que trabajan como jardineros en un parque y harán todo lo posible para evitar trabajar.",
       "imagen": "https://pics.filmaffinity.com/regular_show-478201443-large.jpg",
       "año": 2010,
@@ -6013,7 +6013,6 @@
       "trailer": "https://www.youtube.com/embed/hM2Vo_EKMvg",
       "nuevo": true,
       "disponible": true,
-      "badge": "Recien agregado",
       "genero": "discoverykids",
       "director": "Hank Scanlon",
       "actores": [
@@ -6262,7 +6261,7 @@
       "disponible": true,
       "nuevo": true,
       "badge": "Recién agregado",
-      "enProceso": true,
+      "enProceso": false,
       "descripcion": "La historia sigue a Tsubasa Ozora, un joven y talentoso futbolista que sueña con llevar a Japón a ganar la Copa Mundial.",
       "imagen": "https://i.pinimg.com/736x/2b/d8/7f/2bd87ff3418b94fa610cba787aa28c70.jpg",
       "año": 1983,
@@ -6347,6 +6346,101 @@
               "descripcion": "Tsubasa demuestra su pasión por el fútbol en un momento crucial.",
               "duracion": "25:00",
               "url": "https://fastream.to/embed-e1bnpu14tqh8.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "titulo": "Dragon Ball Z",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "descripcion": "Goku y sus amigos defienden la Tierra contra poderosos enemigos extraterrestres y otras amenazas mientras exploran el poder de las Esferas del Dragón.",
+      "imagen": "https://image.tmdb.org/t/p/original/jB9l4mp0bzBgzE5y4tvBH6AMeMk.jpg",
+      "año": 1989,
+      "genero": ["anime", "cartoon"],
+      "director": "Akira Toriyama",
+      "actores": [
+        "Masako Nozawa",
+        "Ryo Horikawa",
+        "Toshio Furukawa"
+      ],
+      "trailer": "https://www.youtube.com/embed/xhk7WxyU_Sw",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "La Llegada de Raditz",
+              "descripcion": "Un misterioso guerrero llamado Raditz llega a la Tierra buscando a Goku",
+              "duracion": "23:00",
+              "url": "https://fastream.to/embed-dkvn2j3cwu7r.html"
+            },
+            {
+              "numero": 2,
+              "titulo": "El Equipo más Fuerte de la Tierra",
+              "descripcion": "Piccolo y Goku forman una alianza para enfrentar a Raditz",
+              "duracion": "23:00",
+              "url": "https://fastream.to/embed-uru8j6atlv1w.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "La Estrategia de Piccolo",
+              "descripcion": "Piccolo comienza a entrenar a Gohan para la llegada de los Saiyajin",
+              "duracion": "23:00",
+              "url": "https://fastream.to/embed-aj6ki3bahcdk.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "El Entrenamiento de Gohan",
+              "descripcion": "Gohan sobrevive solo en el desierto como parte de su entrenamiento",
+              "duracion": "23:00",
+              "url": "https://fastream.to/embed-80c6o5rcka72.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "Goku en el Camino de la Serpiente",
+              "descripcion": "Goku viaja por el Camino de la Serpiente para entrenar con Kaio-sama",
+              "duracion": "23:00",
+              "url": "https://fastream.to/embed-g5ltpwpv37es.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "El Planeta de Kaio",
+              "descripcion": "Goku llega al planeta de Kaio-sama para comenzar su entrenamiento",
+              "duracion": "23:00",
+              "url": "https://fastream.to/embed-s6a7k8naeht4.html"
+            },
+            {
+              "numero": 7,
+              "titulo": "La Gravedad Aumentada",
+              "descripcion": "Goku se adapta a la intensa gravedad del planeta de Kaio-sama",
+              "duracion": "23:00",
+              "url": "https://fastream.to/embed-imgbrsvsajri.html"
+            },
+            {
+              "numero": 8,
+              "titulo": "Los Saiyajin se Acercan",
+              "descripcion": "Los guerreros Z se preparan para la llegada de los Saiyajin",
+              "duracion": "23:00",
+              "url": "https://fastream.to/embed-m5h1s4b4jna3.html"
+            },
+            {
+              "numero": 9,
+              "titulo": "La Llegada de Nappa y Vegeta",
+              "descripcion": "Los temibles Saiyajin finalmente llegan a la Tierra",
+              "duracion": "23:00",
+              "url": "https://fastream.to/embed-sre29kks72f9.html"
+            },
+            {
+              "numero": 10,
+              "titulo": "La Batalla Comienza",
+              "descripcion": "Los guerreros Z enfrentan a los Saibaman creados por Nappa",
+              "duracion": "23:00",
+              "url": "https://fastream.to/embed-201h9xlawdn9.html"
             }
           ]
         }
