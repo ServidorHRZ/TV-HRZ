@@ -776,49 +776,49 @@
               "titulo": "Capítulo 1",
               "descripcion": "Assane debe idear un nuevo plan mientras lidia con las consecuencias de sus acciones anteriores.",
               "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://fastream.to/embed-8jefejnlvura.html"
             },
             {
               "numero": 2,
-              "titulo": "Capítulo 2",
+              "titulo": "Capítulo 2", 
               "descripcion": "Una nueva amenaza emerge mientras Assane intenta mantener a su familia a salvo.",
               "duracion": "42:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://fastream.to/embed-z0i5826oywc5.html"
             },
             {
               "numero": 3,
               "titulo": "Capítulo 3",
               "descripcion": "Assane descubre una conspiración más profunda que lo obliga a replantearse su estrategia.",
               "duracion": "44:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://fastream.to/embed-un7i1a3rokgt.html"
             },
             {
               "numero": 4,
               "titulo": "Capítulo 4",
               "descripcion": "Los secretos del pasado salen a la luz mientras Assane busca nuevos aliados.",
               "duracion": "43:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://fastream.to/embed-3u3scw27uv2m.html"
             },
             {
               "numero": 5,
               "titulo": "Capítulo 5",
               "descripcion": "Assane se ve obligado a tomar decisiones difíciles que afectarán a todos sus seres queridos.",
               "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://fastream.to/embed-o1gyy8kayvow.html"
             },
             {
               "numero": 6,
               "titulo": "Capítulo 6",
               "descripcion": "La tensión aumenta mientras Assane prepara su jugada final.",
               "duracion": "44:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://fastream.to/embed-030am9jozz0n.html"
             },
             {
               "numero": 7,
               "titulo": "Capítulo 7",
               "descripcion": "En el episodio final, Assane enfrenta su destino en un enfrentamiento que cambiará todo.",
               "duracion": "50:00",
-              "url": "https://drive.google.com/file/d/1nfiLmgg8Ko6CN_MfdBKgQQ4S0eKY5P8f/preview"
+              "url": "https://fastream.to/embed-y86sfhpik912.html"
             }
           ]
         }
@@ -6162,11 +6162,12 @@
     {
       "id": 40,
       "titulo": "Henry Danger",
-      "disponible": false,
-      "nuevo": false,
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
       "enProceso": false,
       "descripcion": "Henry Hart es un chico de 13 años que consigue un trabajo a tiempo parcial como Kid Danger, el compañero superhéroe del Capitán Man, mientras intenta mantener su identidad secreta.",
-      "imagen": "https://m.media-amazon.com/images/M/MV5BMTk0NjQxMjQxNF5BMl5BanBnXkFtZTgwODk2NjY2NjE@._V1_.jpg",
+      "imagen": "data:image/jpeg;base64,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",
       "año": 2014,
       "genero": "nick",
       "director": "Dan Schneider",
@@ -6176,7 +6177,7 @@
         "Riele Downs",
         "Sean Ryan Fox"
       ],
-      "trailer": "https://www.youtube.com/embed/qLGz1tF4Qc4",
+      "trailer": "https://www.youtube.com/embed/yi-XK6Ey9B4",
       "temporadas": [
         {
           "numero": 1,
@@ -6186,70 +6187,70 @@
               "titulo": "El Comienzo",
               "descripcion": "Henry Hart consigue un trabajo como asistente del superhéroe Capitán Man",
               "duracion": "23:00",
-              "url": "https://fastream.to/embed-henry1.html"
+              "url": "https://fastream.to/embed-pusgdrkey31d.html"
             },
             {
               "numero": 2,
               "titulo": "Mo' Danger, Mo' Problems",
               "descripcion": "Henry lucha por mantener su identidad secreta mientras ayuda al Capitán Man",
               "duracion": "23:00",
-              "url": "https://fastream.to/embed-henry2.html"
+              "url": "https://fastream.to/embed-7eayrl2obvvo.html"
             },
             {
               "numero": 3,
-              "titulo": "El Secreto Sale a la Luz",
+              "titulo": "El Secreto Sale a la Luz", 
               "descripcion": "Charlotte descubre el secreto de Henry como Kid Danger",
               "duracion": "23:00",
-              "url": "https://fastream.to/embed-henry3.html"
+              "url": "https://fastream.to/embed-lxgkupanckf1.html"
             },
             {
               "numero": 4,
               "titulo": "Peligro en la Tienda",
               "descripcion": "Henry y el Capitán Man deben proteger una tienda de dulces",
               "duracion": "23:00",
-              "url": "https://fastream.to/embed-henry4.html"
+              "url": "https://fastream.to/embed-yr7f7lnce2yp.html"
             },
             {
               "numero": 5,
               "titulo": "El Cumpleaños de Henry",
               "descripcion": "Henry intenta celebrar su cumpleaños mientras combate el crimen",
               "duracion": "23:00",
-              "url": "https://fastream.to/embed-henry5.html"
+              "url": "https://fastream.to/embed-f977ipw4o6rw.html"
             },
             {
               "numero": 6,
               "titulo": "Kid Danger en Acción",
               "descripcion": "Henry enfrenta su primera misión importante como Kid Danger",
               "duracion": "23:00",
-              "url": "https://fastream.to/embed-henry6.html"
+              "url": "https://fastream.to/embed-09hhskcomwt7.html"
             },
             {
               "numero": 7,
               "titulo": "Problemas en la Escuela",
               "descripcion": "Henry debe equilibrar su vida escolar con sus deberes de superhéroe",
               "duracion": "23:00",
-              "url": "https://fastream.to/embed-henry7.html"
+              "url": "https://fastream.to/embed-dedp400adl49.html"
             },
             {
               "numero": 8,
               "titulo": "Hora de Entrenar",
               "descripcion": "El Capitán Man entrena a Henry para mejorar sus habilidades",
               "duracion": "23:00",
-              "url": "https://fastream.to/embed-henry8.html"
+              "url": "https://fastream.to/embed-jrd8jt7rlsos.html"
             },
             {
               "numero": 9,
               "titulo": "Un Nuevo Villano",
               "descripcion": "Henry y el Capitán Man enfrentan a un nuevo supervillano",
               "duracion": "23:00",
-              "url": "https://fastream.to/embed-henry9.html"
+              "url": "https://fastream.to/embed-ob2t0sxwwzof.html"
             },
             {
               "numero": 10,
               "titulo": "Doble Problema",
               "descripcion": "Henry debe estar en dos lugares al mismo tiempo",
               "duracion": "23:00",
-              "url": "https://fastream.to/embed-henry10.html"
+              "url": "https://fastream.to/embed-yzb0r5j6il4q.html"
             }
           ]
         }
