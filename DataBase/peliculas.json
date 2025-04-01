@@ -1,6 +1,7 @@
 {
   "peliculas": [
     {
+      "id": 1,
       "titulo": "Flamin Hot",
       "disponible": true,
       "nuevo": true,
@@ -12,6 +13,7 @@
       "descripcion": "La inspiradora historia de Richard Montañez, el conserje de Frito Lay que utilizó su herencia y sabiduría mexicana para convertir los Flamin Hot Cheetos en un fenómeno de la comida que revolucionó la industria alimentaria."
     },
     {
+      "id": 2,
       "titulo": "300",
       "disponible": true,
       "nuevo": true, 
@@ -23,6 +25,7 @@
       "descripcion": "El Rey Leónidas de Esparta y sus 300 guerreros luchan hasta la muerte contra el masivo ejército persa del Rey Jerjes en la batalla de las Termópilas."
     },
     {
+      "id": 3,
       "titulo": "300: El origen de un imperio",
       "disponible": true,
       "nuevo": true,
@@ -34,6 +37,7 @@
       "descripcion": "El general griego Temístocles lucha contra las fuerzas invasoras persas lideradas por el dios mortal Jerjes y la comandante naval Artemisia."
     },
     {
+      "id": 4,
       "titulo": "Garfield: Fuera de casa",
       "disponible": true,
       "nuevo": true,
@@ -45,6 +49,7 @@
       "descripcion": "Garfield, el gato amante de la lasaña y que odia los lunes, debe abandonar su cómoda vida en la ciudad cuando se ve envuelto en una aventura inesperada lejos de casa."
     },
     {
+      "id": 5,
       "titulo": "Jumanji: Bienvenidos a la jungla",
       "disponible": true,
       "nuevo": true,
@@ -56,6 +61,7 @@
       "descripcion": "Cuatro adolescentes son absorbidos por un videojuego mágico, y la única manera de escapar es trabajar juntos para terminar el juego."
     },
     {
+      "id": 6,
       "titulo": "Jumanji: El siguiente nivel",
       "disponible": true,
       "nuevo": true,
@@ -67,6 +73,7 @@
       "descripcion": "La pandilla regresa pero el juego ha cambiado. Al regresar a Jumanji para rescatar a uno de los suyos, los jugadores descubren que nada es como esperaban."
     },
     {
+      "id": 7,
       "titulo": "Una esposa de mentira",
       "disponible": true,
       "nuevo": true,
@@ -78,6 +85,7 @@
       "descripcion": "Un cirujano plástico le pide a su asistente que se haga pasar por su futura ex-esposa para cubrir una mentira, pero las cosas se complican cuando su familia se involucra."
     },
     {
+      "id": 8,
       "titulo": "Dragon Ball Super: Super Hero",
       "disponible": true,
       "nuevo": false,
@@ -88,7 +96,7 @@
       "descripcion": "La malvada organización Red Ribbon Army se reforma con nuevos y más poderosos androides, Gamma 1 y Gamma 2, para buscar venganza. Piccolo y Gohan tendrán que pelear contra este nuevo enemigo que amenaza la paz en la Tierra."
     },
     {
-      "id": 52,
+      "id": 9,
       "titulo": "Interstellar",
       "disponible": true,
       "nuevo": false,
@@ -99,7 +107,7 @@
       "descripcion": "En un futuro donde la Tierra se está volviendo inhabitable, un grupo de astronautas viaja a través de un agujero de gusano cerca de Saturno en busca de un nuevo hogar para la humanidad. La misión los llevará más allá del espacio y tiempo conocidos, poniendo a prueba los límites del amor entre un padre y su hija."
     },
     {
-      "id": 50,
+      "id": 10,
       "titulo": "Su único hijo",
       "disponible": true,
       "nuevo": false,
@@ -110,6 +118,7 @@
       "descripcion": "Después de ser llamado por el Señor, la fe de Abraham se pone a prueba en su viaje de tres días para sacrificar a su hijo."
     },
     {
+      "id": 11,
       "titulo": "El Gato con Botas: El último deseo",
       "disponible": true,
       "nuevo": false,
@@ -120,6 +129,7 @@
       "descripcion": "El Gato con Botas descubre que su pasión por la aventura le ha pasado factura: ha consumido ocho de sus nueve vidas. Por ello, emprende un viaje épico para encontrar el mítico Último Deseo y restaurar sus nueve vidas."
     },
     {
+      "id": 12,
       "titulo": "Wish: El poder de los deseos",
       "disponible": true,
       "nuevo": false,
@@ -130,6 +140,7 @@
       "descripcion": "Asha, una joven brillante y optimista de 17 años que vive en Rosas, el reino de los deseos, donde los deseos pueden literalmente hacerse realidad, hace un deseo tan poderoso que es respondido por una fuerza cósmica: una pequeña bola de energía ilimitada llamada Estrella. Juntas, Asha y Estrella se enfrentan a un enemigo formidable: el gobernante de Rosas, el Rey Magnífico, para salvar a su comunidad y demostrar que cuando la voluntad de un humano valiente se conecta con la magia de las estrellas, pueden suceder cosas maravillosas."
     },
     {
+      "id": 13,
       "titulo": "Aquaman y el Reino Perdido",
       "disponible": true,
       "nuevo": false,
@@ -140,6 +151,7 @@
       "descripcion": "Al no poder derrotar a Aquaman la primera vez, Black Manta, todavía impulsado por la necesidad de vengar la muerte de su padre, no se detendrá ante nada para derrotar a Aquaman de una vez por todas. Esta vez Black Manta es más formidable que nunca y ejerce el poder del mítico Tridente Negro, que desata una fuerza antigua y malévola. Para derrotarlo, Aquaman recurrirá a su hermano encarcelado Orm, el ex rey de la Atlántida, para forjar una alianza improbable. Juntos, deben dejar de lado sus diferencias para proteger su reino y salvar a la familia de Aquaman, y al mundo, de una destrucción irreversible."
     },
     {
+      "id": 14,
       "titulo": "Deadpool 2",
       "disponible": true,
       "nuevo": false,
@@ -150,6 +162,7 @@
       "descripcion": "Wade Wilson (Deadpool) se une a un grupo de mutantes para proteger a un joven con habilidades sobrenaturales de Cable, un peligroso cyborg que viaja desde el futuro. Mientras intenta cumplir su misión, Deadpool deberá aprender el valor del trabajo en equipo y la amistad, todo ello sin perder su característico sentido del humor."
     },
     {
+      "id": 15,
       "titulo": "Deadpool",
       "disponible": true,
       "nuevo": false,
@@ -160,6 +173,7 @@
       "descripcion": "Wade Wilson, tras ser sometido a un cruel experimento científico, adquiere poderes especiales de regeneración y se convierte en Deadpool. Armado con sus nuevas habilidades y un retorcido sentido del humor, Deadpool persigue al hombre que casi destruye su vida."
     },
     {
+      "id": 16,
       "titulo": "Kung Fu Panda 4",
       "disponible": true,
       "nuevo": false,
@@ -170,6 +184,7 @@
       "descripcion": "Po debe entrenar a una nueva guerrera para que se convierta en la nueva Guerrera Dragón mientras se enfrenta a una poderosa hechicera que ha convocado a todos los villanos que Po ha derrotado de vuelta al Reino de los Espíritus."
     },
     {
+      "id": 17,
       "titulo": "Misión de Rescate",
       "disponible": true,
       "nuevo": false,
@@ -180,6 +195,7 @@
       "descripcion": "Tyler Rake es un mercenario que trabaja en el mercado negro y al que se contrata para rescatar al hijo secuestrado de un señor del crimen internacional. Pero en el turbio submundo de los traficantes de armas y narcotraficantes, una misión mortal casi imposible cambiará las vidas de Tyler y del niño para siempre."
     },
     {
+      "id": 18,
       "titulo": "Misión de Rescate 2",
       "disponible": true,
       "nuevo": false,
@@ -190,6 +206,7 @@
       "descripcion": "Después de sobrevivir a todo lo que le sucedió en la primera película, Rake regresa como mercenario australiano de operaciones encubiertas al que se le encarga otra misión mortífera: rescatar a la maltratada familia de un despiadado gángster georgiano de la prisión donde se encuentra recluida."
     },
     {
+      "id": 19,
       "titulo": "La Aventura de A.R.I.: Mi Amigo Robot",
       "disponible": true,
       "nuevo": false,
@@ -200,6 +217,7 @@
       "descripcion": "Un adolescente descubre un robot amigable llamado A.R.I. y desarrolla una relación única con él. Cuando A.R.I. es secuestrado por una corporación malvada que quiere recrear el prototipo para sus propios fines, Noah y sus amigos deben embarcarse en una aventura para rescatar a A.R.I. y exponer los oscuros secretos de la compañía."
     },
     {
+      "id": 20,
       "titulo": "El Retorno de los Thundermans",
       "disponible": true,
       "nuevo": false,
@@ -210,6 +228,7 @@
       "descripcion": "Los Thundermans regresan a Hiddenville después de años. Cuando un nuevo villano amenaza la ciudad, Phoebe y Max deben reunir a su familia para salvar su hogar y el mundo una vez más."
     },
     {
+      "id": 21,
       "titulo": "Ratatouille",
       "disponible": true,
       "nuevo": false,
@@ -220,6 +239,7 @@
       "descripcion": "Remy es una rata que sueña con convertirse en un gran chef francés a pesar de la oposición de su familia y del problema evidente que supone ser una rata en una profesión que detesta a los roedores. El destino lleva a Remy a las alcantarillas de París, donde su situación no podría ser mejor, ya que se encuentra justo debajo de un restaurante que se ha hecho famoso gracias a Auguste Gusteau, una estrella de la cuisine. A pesar del peligro que representa ser un visitante poco común en los fogones de un exquisito restaurante francés, la pasión de Remy por la cocina pone patas arriba el mundo culinario parisino en una divertidísima y emocionante aventura."
     },
     {
+      "id": 22,
       "titulo": "No Manches Frida",
       "disponible": true,
       "nuevo": false,
@@ -230,6 +250,7 @@
       "descripcion": "Un ex convicto consigue trabajo como profesor sustituto en una escuela preparatoria. Para recuperar el dinero que escondió antes de ir a prisión, deberá lidiar primero con un grupo de estudiantes rebeldes y una atractiva maestra que le robará el corazón."
     },
     {
+      "id": 23,
       "titulo": "Encanto",
       "disponible": true,
       "nuevo": false,
@@ -240,7 +261,7 @@
       "descripcion": "Los Madrigal son una familia extraordinaria que vive en las montañas de Colombia, en una casa mágica, en un pueblo vibrante, en un lugar maravilloso conocido como Encanto. La magia de Encanto ha bendecido a cada niño de la familia con un don único, desde la superfuerza hasta el poder de sanar. A todos, excepto a Mirabel. Pero cuando descubre que la magia que rodea a Encanto está en peligro, Mirabel decide que ella, la única Madrigal sin poderes mágicos, podría ser la última esperanza de su excepcional familia."
     },
     {
-      "id":51,
+      "id": 24,
       "titulo": "El Stand de los Besos",
       "disponible": true,
       "nuevo": false,
@@ -251,6 +272,7 @@
       "descripcion": "Elle Evans es una estudiante que nunca ha sido besada y decide montar un puesto de besos para recaudar fondos. Las cosas se complican cuando se enamora de Noah, el hermano mayor de su mejor amigo Lee, rompiendo una de sus reglas más importantes de amistad."
     },
     {
+      "id": 25,
       "titulo": "El Stand de los Besos 2", 
       "disponible": true,
       "nuevo": false,
@@ -261,6 +283,7 @@
       "descripcion": "Elle debe enfrentar su relación a distancia con Noah, quien está en Harvard, mientras lidia con una nueva amistad con Marco, un carismático estudiante nuevo. Sus sentimientos se complican mientras trata de mantener sus relaciones más importantes."
     },
     {
+      "id": 26,
       "titulo": "El Stand de los Besos 3",
       "disponible": true, 
       "nuevo": false,
@@ -271,6 +294,7 @@
       "descripcion": "Es el último verano antes de la universidad y Elle tiene que tomar la decisión más difícil de su vida: mudarse al otro lado del país con su novio Noah o cumplir su promesa de ir a la universidad con su mejor amigo Lee. Su elección podría definir su futuro y sus relaciones para siempre."
     },
     {
+      "id": 27,
       "titulo": "Uncharted",
       "disponible": true,
       "nuevo": true,
@@ -281,6 +305,7 @@
       "descripcion": "Nathan Drake y su compañero Victor Sullivan se embarcan en una peligrosa búsqueda para encontrar el mayor tesoro jamás encontrado. Mientras rastrean pistas que podrían conducir al hermano perdido de Nathan, también deben competir contra un despiadado millonario y su mercenaria."
     },
     {
+      "id": 28,
       "titulo": "Jexi",
       "disponible": true,
       "nuevo": false,
@@ -291,6 +316,7 @@
       "descripcion": "Phil es un joven adicto a su teléfono móvil que no tiene amigos ni pareja. Su vida cambia por completo cuando compra un nuevo smartphone que viene con Jexi, una IA que se convierte en su coach de vida. Sin embargo, Jexi se vuelve sobreprotectora y controladora, interfiriendo en la vida personal de Phil de maneras inesperadas y cómicas."
     },
     {
+      "id": 29,
       "titulo": "Ben 10 vs el Universo: La película",
       "disponible": true,
       "nuevo": false,
@@ -301,6 +327,7 @@
       "descripcion": "Cuando una amenaza alienígena llega a la Tierra en busca de un poderoso arma, Ben debe ir al espacio para salvar el planeta. Mientras tanto, Vilgax regresa para conquistar la Tierra y eliminar a Ben 10 de una vez por todas."
     },
     {
+      "id": 30,
       "titulo": "Mi Villano Favorito",
       "disponible": true,
       "año": 2010,
@@ -310,6 +337,7 @@
       "descripcion": "Gru, un supervillano, ha adoptado a tres niñas huérfanas para llevar a cabo su plan maestro: robar la Luna. Sin embargo, las pequeñas comenzarán a ver en él algo que nadie más ha visto: un padre potencial."
     },
     {
+      "id": 31,
       "titulo": "Mi Villano Favorito 2",
       "disponible": true,
       "año": 2013,
@@ -319,6 +347,7 @@
       "descripcion": "Gru ha dejado atrás una vida de supervillano para dedicarse a criar a Margo, Edith y Agnes. Pero cuando es reclutado por la Liga Anti-Villanos para ayudar a lidiar con una nueva amenaza, deberá equilibrar su vida familiar con salvar al mundo."
     },
     {
+      "id": 32,
       "titulo": "Mi Villano Favorito 3",
       "disponible": true,
       "año": 2017,
@@ -328,6 +357,7 @@
       "descripcion": "Gru se entera de que tiene un hermano gemelo perdido, Dru, quien desea seguir los pasos de su padre como supervillano. Mientras tanto, un nuevo enemigo surge amenazando a la humanidad."
     },
     {
+      "id": 33,
       "titulo": "The Batman",
       "disponible": true,
       "nuevo": false,
@@ -338,6 +368,7 @@
       "descripcion": "En su segundo año luchando contra el crimen, Batman explora la corrupción existente en Gotham City y el vínculo de esta con su propia familia. Además, entrará en conflicto con un asesino en serie conocido como El Acertijo, que ha iniciado una caza contra las élites de Gotham."
     },
     {
+      "id": 34,
       "titulo": "Batman vs Superman: El amanecer de la justicia",
       "disponible": true,
       "nuevo": false,
@@ -348,6 +379,7 @@
       "descripcion": "Temiendo las acciones de un superhéroe con poderes divinos sin control, el formidable y contundente vigilante de Gotham City se enfrenta al más venerado salvador de Metrópolis, mientras el mundo debate qué tipo de héroe necesita realmente. Y con Batman y Superman en guerra entre sí, una nueva amenaza surge rápidamente, poniendo a la humanidad en el mayor peligro que jamás haya conocido."
     },
     {
+      "id": 35,
       "titulo": "Liga de la Justicia",
       "disponible": true,
       "nuevo": false,
@@ -358,6 +390,7 @@
       "descripcion": "Motivado por su renovada fe en la humanidad e inspirado por el acto de sacrificio de Superman, Bruce Wayne busca la ayuda de su nueva aliada, Diana Prince, para enfrentarse a un enemigo aún mayor. Juntos, Batman y Wonder Woman trabajan rápidamente para encontrar y reclutar a un equipo de metahumanos para hacer frente a esta nueva amenaza."
     },
     {
+      "id": 36,
       "titulo": "G.I. Joe: La venganza",
       "disponible": true,
       "año": 2013,
@@ -367,6 +400,7 @@
       "descripcion": "Los G.I. Joes no solo deberán enfrentarse a su enemigo mortal, Cobra, sino también a las amenazas del gobierno que ponen en peligro su existencia. El equipo se enfrenta a Zartan, quien ha reemplazado al Presidente de los Estados Unidos."
     },
     {
+      "id": 37,
       "titulo": "Alerta Roja",
       "disponible": true,
       "año": 2021,
@@ -376,6 +410,7 @@
       "descripcion": "Un agente de la FBI se ve forzado a formar equipo con el ladrón de arte más buscado del mundo para atrapar a una escurridiza criminal que siempre está un paso por delante."
     },
     {
+      "id": 38,
       "titulo": "Henry Danger: La Película",
       "disponible": true,
       "año": 2020,
@@ -385,6 +420,7 @@
       "descripcion": "Henry Hart debe enfrentar su mayor desafío como Kid Danger cuando una amenaza llega a Swellview y pone en peligro todo lo que le importa. Con la ayuda del Capitán Man, deberá salvar la ciudad una vez más."
     },
     {
+      "id": 39,
       "titulo": "Mi Vecino es un Espía",
       "disponible": true,
       "nuevo": false,
@@ -395,6 +431,7 @@
       "descripcion": "Un agente secreto retirado debe proteger a los hijos de su novia mientras lidia con criminales peligrosos que lo buscan por un dispositivo secreto. Entre pañales y villanos, deberá demostrar que puede ser un buen padre y espía al mismo tiempo."
     },
     {
+      "id": 40,
       "titulo": "Mi Abuela es un Peligro",
       "disponible": true,
       "nuevo": false,
@@ -405,6 +442,7 @@
       "descripcion": "Un agente del FBI se disfraza como una abuela corpulenta para atrapar a un peligroso criminal. Mientras mantiene su tapadera, deberá cuidar una casa y ganarse la confianza de la familia, lo que lleva a situaciones hilarantes."
     },
     {
+      "id": 41,
       "titulo": "Niñera a Prueba de Balas",
       "disponible": true,
       "año": 1998,
@@ -414,6 +452,7 @@
       "descripcion": "Un miembro de las Fuerzas Especiales debe cuidar a cinco niños traviesos mientras protege a su familia de una amenaza desconocida."
     },
     {
+      "id": 42,
       "titulo": "Equipaje de Mano",
       "disponible": true,
       "año": 2024,
@@ -423,6 +462,7 @@
       "descripcion": "Un joven agente de aduanas es chantajeado por un pasajero que amenaza con introducir de contrabando un peligroso paquete en un avión en Nochebuena."
     },
     {
+      "id": 43,
       "titulo": "Rápidos y Furiosos",
       "disponible": true,
       "año": 2001,
@@ -432,6 +472,7 @@
       "descripcion": "Un policía encubierto se infiltra en una banda de carreras callejeras ilegales para investigar una serie de robos. Sin embargo, se encuentra dividido entre su deber y la lealtad que desarrolla con el líder de la banda."
     },
     {
+      "id": 44,
       "titulo": "Rápidos y Furiosos 2",
       "disponible": true,
       "año": 2003,
@@ -441,6 +482,7 @@
       "descripcion": "Brian OConner se une a su amigo Roman Pearce para infiltrarse en una organización criminal en Miami. Deberán usar sus habilidades de conducción para desmantelar un peligroso cartel."
     },
     {
+      "id": 45,
       "titulo": "Rápidos y Furiosos: Reto Tokio",
       "disponible": true,
       "nuevo": false,
@@ -451,6 +493,7 @@
       "descripcion": "Un adolescente problemático se muda a Tokio y se adentra en el mundo del drift racing. Deberá perfeccionar sus habilidades de conducción mientras enfrenta los peligros de la escena de carreras underground."
     },
     {
+      "id": 46,
       "titulo": "Rápidos y Furiosos 4",
       "disponible": true,
       "nuevo": false,
@@ -461,6 +504,7 @@
       "descripcion": "Dominic Toretto y Brian O'Conner vuelven a unir fuerzas para enfrentarse a un traficante de drogas mientras buscan venganza por la muerte de un ser querido."
     },
     {
+      "id": 47,
       "titulo": "Rápidos y Furiosos 5",
       "disponible": true,
       "nuevo": false,
@@ -471,6 +515,7 @@
       "descripcion": "Dom y su equipo planean un último gran robo en Río de Janeiro mientras son perseguidos por un implacable agente federal y un poderoso señor del crimen."
     },
     {
+      "id": 48,
       "titulo": "Rápidos y Furiosos 6",
       "disponible": true,
       "nuevo": false,
@@ -481,6 +526,7 @@
       "descripcion": "Hobbs recluta a Dom y su equipo para ayudar a detener una organización de mercenarios letales. A cambio, recibirán el perdón total por sus crímenes pasados."
     },
     {
+      "id": 49,
       "titulo": "Rápidos y Furiosos 7",
       "disponible": true,
       "nuevo": false,
@@ -491,6 +537,7 @@
       "descripcion": "El equipo enfrenta a Deckard Shaw, quien busca venganza por su hermano. La familia deberá unirse una vez más para protegerse mutuamente."
     },
     {
+      "id": 50,
       "titulo": "Rápidos y Furiosos 8",
       "disponible": true,
       "nuevo": false,
@@ -501,6 +548,7 @@
       "descripcion": "Una misteriosa mujer seduce a Dom para adentrarse en el mundo del terrorismo y traicionar a su familia. El equipo deberá enfrentarse a pruebas como nunca antes."
     },
     {
+      "id": 51,
       "titulo": "Rápidos y Furiosos 9",
       "disponible": true,
       "nuevo": false,
@@ -511,6 +559,7 @@
       "descripcion": "Dom debe enfrentarse a su hermano Jakob, un asesino mortal que trabaja con una antigua enemiga. La familia se reúne para detener un complot que podría destruir el mundo."
     },
     {
+      "id": 52,
       "titulo": "Rápidos y Furiosos 10",
       "disponible": true,
       "nuevo": false,
@@ -521,6 +570,7 @@
       "descripcion": "La familia Toretto enfrenta su enemigo más letal: un vengativo hijo que culpa a Dom por la muerte de su padre. Con nuevos y viejos aliados, deberán detener una amenaza que podría destruirlo todo."
     },
     {
+      "id": 53,
       "titulo": "Mini Espías",
       "disponible": true,
       "nuevo": false,
@@ -531,6 +581,7 @@
       "descripcion": "Carmen y Juni Cortez descubren que sus padres son espías secretos y deben rescatarlos cuando son capturados en una misión. Los niños se embarcan en una aventura utilizando increíbles gadgets y tecnología de espionaje."
     },
     {
+      "id": 54,
       "titulo": "Mini Espías 2: La Isla de los Sueños Perdidos",
       "disponible": true, 
       "nuevo": false,
@@ -541,6 +592,7 @@
       "descripcion": "Los hermanos Cortez viajan a una misteriosa isla donde deben enfrentarse a una serie de criaturas genéticamente modificadas mientras buscan un poderoso dispositivo que podría poner en peligro al mundo."
     },
     {
+      "id": 55,
       "titulo": "Mini Espías 3D: Game Over",
       "disponible": true,
       "nuevo": false,
@@ -551,6 +603,7 @@
       "descripcion": "Juni debe entrar en un videojuego virtual para rescatar a su hermana Carmen, quien ha quedado atrapada dentro. Con la ayuda de nuevos amigos y tecnología avanzada, deberá superar niveles cada vez más peligrosos."
     },
     {
+      "id": 56,
       "titulo": "Mini Espías 4",
       "disponible": true,
       "badge": "Recien agregado", 
@@ -561,6 +614,7 @@
       "descripcion": "Una nueva generación de espías debe salvar al mundo cuando unos villanos roban un artefacto que puede controlar el tiempo. Con la ayuda de gadgets de alta tecnología y el entrenamiento de los Cortez, estos jóvenes agentes tendrán que demostrar que están a la altura del desafío."
     },    
     {
+      "id": 57,
       "titulo": "Los 4 Fantásticos",
       "disponible": true,
       "nuevo": false,
@@ -571,6 +625,7 @@
       "descripcion": "Cuatro jóvenes astronautas adquieren superpoderes tras un accidente cósmico y deben aprender a usar sus nuevas habilidades para proteger la Tierra de amenazas extraordinarias."
     },
     {
+      "id": 58,
       "titulo": "Flash",
       "disponible": true,
       "nuevo": false,
@@ -581,6 +636,7 @@
       "descripcion": "Los mundos chocan cuando Barry Allen usa sus superpoderes para viajar en el tiempo y cambiar los eventos del pasado. Pero cuando intenta salvar a su familia se altera inadvertidamente el futuro y queda atrapado en una realidad en la que el General Zod ha regresado y no hay superhéroes a los que recurrir."
     },
     {
+      "id": 59,
       "titulo": "Sonic La Película",
       "disponible": true,
       "nuevo": false,
@@ -591,6 +647,7 @@
       "descripcion": "Sonic, el veloz erizo azul basado en la famosa serie de videojuegos de Sega, vivirá aventuras y desafíos cuando él y su nuevo mejor amigo Tom unan sus fuerzas para evitar que el malvado Dr. Robotnik capture a Sonic y use sus inmensos poderes para dominar el mundo."
     },
     {
+      "id": 60,
       "titulo": "Sonic 2: La Película",
       "disponible": true,
       "nuevo": false,
@@ -601,6 +658,7 @@
       "descripcion": "Después de establecerse en Green Hills, Sonic está listo para más libertad e independencia, y Tom y Maddie acuerdan dejarlo en casa mientras van de vacaciones. Pero, tan pronto como se van, el Dr. Robotnik regresa con un nuevo compañero, Knuckles, en busca de una esmeralda que tiene el poder de destruir civilizaciones."
     },
     {
+      "id": 61,
       "titulo": "Sonic 3: La Película",
       "disponible": true,
       "nuevo": false,
@@ -611,6 +669,7 @@
       "descripcion": "La tercera entrega de las aventuras cinematográficas de Sonic, donde el erizo azul se enfrentará a nuevos desafíos y enemigos mientras continúa protegiendo su nuevo hogar."
     },
     {
+      "id": 62,
       "titulo": "Culpa Tuya",
       "disponible": true,
       "nuevo": false,
@@ -621,6 +680,7 @@
       "descripcion": "La continuación de la apasionante historia de Noah y Nick. Basada en la exitosa novela de Mercedes Ron."
     },
     {
+      "id": 63,
       "titulo": "Ben 10: El Secreto del Omnitrix",
       "disponible": true,
       "nuevo": false,
@@ -631,6 +691,7 @@
       "descripcion": "Ben Tennyson debe emprender una aventura épica para salvar al universo cuando el Omnitrix comienza una cuenta regresiva de autodestrucción."
     },
     {
+      "id": 64,
       "titulo": "Dios No Está Muerto",
       "disponible": true,
       "nuevo": false,
@@ -641,6 +702,7 @@
       "descripcion": "Un estudiante universitario cristiano se enfrenta a su profesor de filosofía ateo cuando este declara que Dios está muerto y exige que sus estudiantes firmen una declaración confirmando la muerte de Dios."
     },
     {
+      "id": 65,
       "titulo": "Dios No Está Muerto 2",
       "disponible": true, 
       "nuevo": false,
@@ -651,6 +713,7 @@
       "descripcion": "Una profesora cristiana de secundaria se enfrenta a un juicio cuando responde la pregunta de un estudiante sobre Jesús en clase."
     },
     {
+      "id": 66,
       "titulo": "Dios No Está Muerto 3: Una Luz en la Oscuridad",
       "disponible": true,
       "nuevo": false, 
@@ -661,6 +724,7 @@
       "descripcion": "El pastor Dave debe defender su iglesia universitaria de la demolición mientras lidia con una tragedia personal y busca reconciliación."
     },
     {
+      "id": 67,
       "titulo": "Dios No Está Muerto 4: Nos, El Pueblo",
       "disponible": false,
       "nuevo": false,
@@ -671,6 +735,7 @@
       "descripcion": "Una familia que educa a sus hijos en casa se enfrenta a una batalla legal cuando las autoridades cuestionan su método de educación y su fe."
     },
     {
+      "id": 68,
       "titulo": "Billy y Mandy Salvan la Navidad",
       "disponible": true,
       "nuevo": false,
@@ -681,6 +746,7 @@
       "descripcion": "Billy y Mandy deben salvar la Navidad cuando Santa Claus es secuestrado. Con la ayuda de Puro Hueso, emprenderán una aventura para rescatar a Santa y asegurar que los regalos lleguen a tiempo."
     },
     {
+      "id": 69,
       "titulo": "Deseo navideño cumplido", 
       "disponible": true,
       "nuevo": false,
@@ -691,6 +757,7 @@
       "descripcion": "Una conmovedora historia navideña sobre esperanza, familia y el verdadero significado de los deseos en esta época especial del año."
     },
     {
+      "id": 70,
       "titulo": "Elf Man",
       "disponible": true,
       "nuevo": false,
@@ -701,6 +768,7 @@
       "descripcion": "Un elfo mágico ayuda a una familia durante la temporada navideña."
     },
     {
+      "id": 71,
       "titulo": "Santa Claus 1",
       "disponible": true,
       "año": 1994,
@@ -711,6 +779,7 @@
       "descripcion": "Scott Calvin, un padre divorciado, se convierte accidentalmente en Santa Claus después de que el verdadero Santa se cae de su tejado en Nochebuena. Scott debe aceptar su nuevo rol mientras intenta mantener su relación con su hijo."
     },
     {
+      "id": 72,
       "titulo": "Santa Claus 2",
       "disponible": true,
       "año": 2002,
@@ -721,6 +790,7 @@
       "descripcion": "Scott Calvin ha sido Santa Claus durante ocho años, pero ahora debe encontrar una Sra. Claus antes de la próxima Navidad o dejará de ser Santa para siempre."
     },
     {
+      "id": 73,
       "titulo": "Santa Claus 3",
       "disponible": true,
       "año": 2006,
@@ -731,6 +801,7 @@
       "descripcion": "Santa/Scott Calvin debe enfrentarse a Jack Frost, quien está intentando tomar el control de la Navidad. Mientras tanto, debe lidiar con problemas familiares y mantener la magia navideña viva."
     },
     {
+      "id": 74,
       "titulo": "Noche sin paz",
       "disponible": true,
       "año": 2023,
@@ -741,6 +812,7 @@
       "descripcion": "Cuando un grupo de mercenarios ataca la propiedad de una familia adinerada en Nochebuena, Santa Claus debe intervenir para salvar el día y la Navidad, demostrando por qué es mejor no estar en su lista de traviesos."
     },
     {
+      "id": 75,
       "titulo": "Mi pobre y dulce angelito",
       "disponible": true,
       "año": 2021,
@@ -751,6 +823,7 @@
       "descripcion": "Un niño ingenioso debe proteger su hogar de una pareja casada que intenta recuperar una reliquia familiar invaluable durante la temporada navideña."
     },
     {
+      "id": 76,
       "titulo": "Una Navidad muy Prendida",
       "disponible": true,
       "año": 2022,
@@ -761,6 +834,7 @@
       "descripcion": "Un padre de familia decide hacer la mejor fiesta de Navidad en su oficina para impresionar a un cliente importante, pero la celebración se sale de control y amenaza con arruinar su carrera."
     },
     {
+      "id": 77,
       "titulo": "Genie",
       "disponible": true,
       "año": 2023,
@@ -771,6 +845,7 @@
       "descripcion": "Un genio atrapado en una caja de música durante 2000 años ayuda a un padre a reconectar con su hija durante la temporada navideña, enseñándoles el verdadero significado de la magia y el amor familiar."
     },
     {
+      "id": 78,
       "titulo": "Mi Pobre Angelito 1",
       "disponible": true,
       "año": 1990,
@@ -781,6 +856,7 @@
       "descripcion": "Kevin McCallister, un niño de 8 años, es accidentalmente olvidado cuando su familia se va de vacaciones navideñas a París. Kevin debe defender su casa de dos torpes ladrones usando una serie de ingeniosas trampas."
     },
     {
+      "id": 79,
       "titulo": "Mi Pobre Angelito 2",
       "disponible": true,
       "año": 1992,
@@ -791,6 +867,7 @@
       "descripcion": "Kevin McCallister se pierde en Nueva York y debe enfrentarse nuevamente a los mismos ladrones, quienes buscan venganza después de su encuentro anterior. Esta vez, Kevin usa el ambiente urbano para crear elaboradas trampas."
     },
     {
+      "id": 80,
       "titulo": "Mi Pobre Angelito 3",
       "disponible": true,
       "año": 1997,
@@ -801,6 +878,7 @@
       "descripcion": "Un nuevo niño protagonista debe proteger un microchip experimental de unos espías internacionales que han invadido su hogar. Utilizando tecnología avanzada y trampas ingeniosas, deberá defender la valiosa información."
     },
     {
+      "id": 81,
       "titulo": "Las Crónicas de Navidad",
       "disponible": true,
       "año": 2018,
@@ -811,6 +889,7 @@
       "descripcion": "Dos hermanos planean atrapar a Santa Claus en Nochebuena, pero terminan embarcándose en una aventura mágica con él para salvar la Navidad. Durante su viaje, descubren el verdadero significado del espíritu navideño."
     },
     {
+      "id": 82,
       "titulo": "Las Crónicas de Navidad 2",
       "disponible": true,
       "año": 2020,
@@ -821,6 +900,7 @@
       "descripcion": "Kate Pierce, ahora una adolescente cínica, se reúne inesperadamente con Santa Claus cuando un misterioso alborotador amenaza con cancelar la Navidad para siempre. Una nueva aventura mágica comienza para salvar las fiestas."
     },
     {
+      "id": 83,
       "titulo": "El Regalo Prometido",
       "disponible": true,
       "año": 1996,
@@ -831,6 +911,7 @@
       "descripcion": "Un padre ocupado promete a su hijo conseguir el juguete más popular de la temporada navideña: Turbo-Man. Sin embargo, al dejarlo para último momento, se embarca en una frenética búsqueda el día de Nochebuena, compitiendo con otros padres desesperados."
     },
     {
+      "id": 84,
       "titulo": "La Forja",
       "disponible": true,
       "año": 2024,
@@ -841,6 +922,7 @@
       "descripcion": "Un thriller sobrenatural que sigue a una familia que se muda a una antigua herrería con un oscuro pasado. Pronto descubren que el lugar está maldito y deben enfrentarse a fuerzas sobrenaturales para sobrevivir."
     },
     {
+      "id": 85,
       "titulo": "A través de mi ventana",
       "disponible": true,
       "año": 2022,
@@ -850,6 +932,7 @@
       "descripcion": "Una historia romántica adolescente basada en la novela de Ariana Godoy, donde Raquel se enamora de su misterioso vecino Ares. A través de su ventana, observa su vida y sueña con una relación que parece imposible."
     },
     {
+      "id": 86,
       "titulo": "Toy Story",
       "disponible": true,
       "año": 1995,
@@ -859,6 +942,7 @@
       "descripcion": "Los juguetes de Andy cobran vida cuando nadie los ve. Woody, un vaquero que ha sido siempre el favorito de Andy, ve amenazada su posición con la llegada de Buzz Lightyear, un moderno guardián espacial. Su rivalidad inicial se transforma en una gran amistad."
     },
     {
+      "id": 87,
       "titulo": "Toy Story 2",
       "disponible": true,
       "año": 1999,
@@ -868,6 +952,7 @@
       "descripcion": "Woody es robado por un coleccionista de juguetes, lo que lleva a Buzz y sus amigos a una misión de rescate. Mientras tanto, Woody descubre su verdadero origen y debe decidir si quedarse en un museo o regresar con Andy."
     },
     {
+      "id": 88,
       "titulo": "Toy Story 3",
       "disponible": true,
       "año": 2010,
@@ -877,6 +962,7 @@
       "descripcion": "Andy se prepara para ir a la universidad y sus juguetes terminan por accidente en una guardería. Allí descubren que no todo es tan idílico como parece y deben planear un arriesgado escape para volver a casa."
     },
     {
+      "id": 89,
       "titulo": "Toy Story 4",
       "disponible": true,
       "año": 2019,
@@ -886,6 +972,7 @@
       "descripcion": "Woody, Buzz y el resto de la pandilla se embarcan en un viaje por carretera con Bonnie y un nuevo juguete llamado Forky. La aventura se convierte en una reunión inesperada cuando Woody se encuentra con su vieja amiga Bo Peep."
     },
     {
+      "id": 90,
       "titulo": "La red social",
       "disponible": true,
       "año": 2010,
@@ -895,6 +982,7 @@
       "descripcion": "La historia de Mark Zuckerberg y la creación de Facebook, desde sus inicios en la Universidad de Harvard hasta convertirse en una de las redes sociales más influyentes del mundo, atravesando conflictos legales y personales en el proceso."
     },
     {
+      "id": 91,
       "titulo": "Hackers: Ningún sistema es seguro",
       "disponible": true,
       "año": 2014,
@@ -904,6 +992,7 @@
       "descripcion": "Un joven hacker alemán descubre una conspiración global mientras busca reconocimiento en la comunidad underground de hackers. Su habilidad para infiltrarse en sistemas de alta seguridad lo convierte en objetivo de agencias gubernamentales y criminales."
     },
     {
+      "id": 92,
       "titulo": "Hackers",
       "disponible": true,
       "año": 1995,
@@ -913,6 +1002,7 @@
       "descripcion": "Un grupo de jóvenes hackers descubre un plan criminal que podría causar un desastre ambiental global. Deberán usar sus habilidades informáticas para exponer la verdad mientras son perseguidos por el FBI y los verdaderos criminales."
     },
     {
+      "id": 93,
       "titulo": "Hacker",
       "disponible": true,
       "año": 2019,
@@ -922,6 +1012,7 @@
       "descripcion": "Un joven inmigrante descubre que sus habilidades de programación pueden ser la clave para ayudar a su familia a escapar de la pobreza. Sin embargo, sus actividades de hacking lo llevan a un peligroso mundo criminal del que no podrá escapar fácilmente."
     },
     {
+      "id": 94,
       "titulo": "Volver al Futuro",
       "disponible": true,
       "año": 1985,
@@ -931,6 +1022,7 @@
       "descripcion": "Marty McFly, un adolescente de los años 80, viaja accidentalmente al pasado en un DeLorean modificado por su amigo científico Doc Brown. En 1955, debe asegurarse de que sus padres se enamoren para garantizar su propia existencia."
     },
     {
+      "id": 95,
       "titulo": "Volver al Futuro II",
       "disponible": true,
       "año": 1989,
@@ -940,6 +1032,7 @@
       "descripcion": "Marty y Doc viajan al futuro para evitar un desastre familiar, pero sus acciones causan una reacción en cadena que altera la línea temporal. Deberán corregir los errores mientras enfrentan una versión alternativa y distópica de su presente."
     },
     {
+      "id": 96,
       "titulo": "Volver al Futuro III",
       "disponible": true,
       "año": 1990,
@@ -950,6 +1043,7 @@
       "descripcion": "Marty viaja al Viejo Oeste de 1885 para rescatar a Doc Brown, quien está atrapado en el pasado y amenazado de muerte. Juntos deberán encontrar la manera de regresar al presente mientras se enfrentan a los peligros del salvaje oeste."
     },
     {
+      "id": 97,
       "titulo": "X-Men",
       "disponible": true,
       "año": 2000,
@@ -959,6 +1053,7 @@
       "descripcion": "En un mundo donde los mutantes son temidos y perseguidos, el Profesor Charles Xavier lidera un grupo de superhéroes mutantes que luchan por la coexistencia pacífica entre humanos y mutantes, mientras se enfrentan a Magneto y su Hermandad."
     },
     {
+      "id": 98,
       "titulo": "X-Men 2",
       "disponible": true,
       "año": 2003,
@@ -968,6 +1063,7 @@
       "descripcion": "Los X-Men deben unir fuerzas con sus enemigos cuando un exmilitar fanático amenaza a todos los mutantes. La lucha por la supervivencia los llevará a descubrir secretos sobre el origen de los mutantes."
     },
     {
+      "id": 99,
       "titulo": "X-Men: La decisión final",
       "disponible": true,
       "año": 2006,
@@ -977,6 +1073,7 @@
       "descripcion": "Cuando se descubre una 'cura' para la mutación, la comunidad mutante se divide. Los X-Men deben enfrentarse a una Jean Grey resucitada y más poderosa que nunca, mientras luchan por preservar su identidad mutante."
     },
     {
+      "id": 100,
       "titulo": "X-Men Orígenes: Wolverine",
       "disponible": true,
       "año": 2009,
@@ -986,6 +1083,7 @@
       "descripcion": "La historia del origen de Wolverine, desde su infancia en el siglo XIX hasta convertirse en el feroz guerrero que conocemos. Su relación con su hermano Sabretooth y su participación en el programa Arma X marcarán su destino."
     },
     {
+      "id": 101,
       "titulo": "X-Men: Primera generación",
       "disponible": true,
       "año": 2011,
@@ -995,6 +1093,7 @@
       "descripcion": "La historia del origen de los X-Men en los años 60, centrándose en la amistad entre Charles Xavier y Erik Lehnsherr antes de convertirse en el Profesor X y Magneto, mientras forman el primer equipo de mutantes."
     },
     {
+      "id": 102,
       "titulo": "Wolverine: Inmortal",
       "disponible": true,
       "año": 2013,
@@ -1004,6 +1103,7 @@
       "descripcion": "Logan viaja a Japón donde se enfrenta a su pasado y a un enemigo que amenaza no solo su inmortalidad sino también su humanidad. En el proceso, debe redescubrir al héroe que lleva dentro."
     },
     {
+      "id": 103,
       "titulo": "X-Men: Días del futuro pasado",
       "disponible": false,
       "año": 2014,
@@ -1013,6 +1113,7 @@
       "descripcion": "Los X-Men envían a Wolverine al pasado para cambiar un evento histórico que podría resultar en la destrucción tanto de humanos como de mutantes. Una misión que unirá a las versiones jóvenes y mayores de los X-Men."
     },
     {
+      "id": 104,
       "titulo": "X-Men: Apocalipsis",
       "disponible": false,
       "año": 2016,
@@ -1022,6 +1123,7 @@
       "descripcion": "El primer y más poderoso mutante, Apocalipsis, despierta tras miles de años y busca destruir la civilización moderna. Los X-Men deben unirse para detener sus planes de extinción global."
     },
     {
+      "id": 105,
       "titulo": "Logan",
       "disponible": false,
       "año": 2017,
@@ -1031,6 +1133,7 @@
       "descripcion": "En un futuro cercano, un Logan envejecido cuida de un enfermo Profesor X mientras protege a una joven mutante con poderes similares a los suyos. Una última aventura que pondrá a prueba su legado como Wolverine."
     },
     {
+      "id": 106,
       "titulo": "Deadpool",
       "disponible": false,
       "año": 2016,
@@ -1040,6 +1143,7 @@
       "descripcion": "Wade Wilson, un mercenario, es sometido a un experimento que lo deja desfigurado pero con poderes de curación acelerada. Adoptando el alter ego de Deadpool, busca venganza contra quienes lo transformaron."
     },
     {
+      "id": 107,
       "titulo": "Deadpool 2",
       "disponible": false,
       "año": 2018,
@@ -1049,6 +1153,7 @@
       "descripcion": "Deadpool forma un equipo de mutantes llamado Fuerza-X para proteger a un joven mutante de Cable, un soldado cibernético del futuro. Una aventura llena de acción y humor irreverente."
     },
     {
+      "id": 108,
       "titulo": "X-Men: Fénix Oscura",
       "disponible": false,
       "año": 2019,
@@ -1058,6 +1163,7 @@
       "descripcion": "Jean Grey desarrolla increíbles poderes que la corrompen y la transforman en Fénix Oscura. Los X-Men deberán decidir si la vida de un miembro del equipo vale más que toda la humanidad."
     },
     {
+      "id": 109,
       "titulo": "Los Nuevos Mutantes",
       "disponible": false,
       "año": 2020,
@@ -1067,6 +1173,481 @@
       "descripcion": "Cinco jóvenes mutantes descubren sus habilidades mientras están retenidos en una instalación secreta contra su voluntad. Luchan por escapar de su pasado y salvarse a sí mismos."
     },
     {
+      "id": 110,
+      "titulo": "Capitán América: El primer vengador",
+      "disponible": false,
+      "año": 2011,
+      "genero": "marvel",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BMDMyZWYwYTEtMmUwNy00NTE4LTkxNmUtY2Y1YzllYTUwYTQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_1/preview",
+      "descripcion": "Steve Rogers se somete a un experimento que lo transforma en el super soldado Capitán América durante la Segunda Guerra Mundial. Debe enfrentarse a la organización HYDRA y su líder, Red Skull."
+    },
+    {
+      "id": 111,
+      "titulo": "Capitana Marvel",
+      "disponible": true,
+      "año": 2019,
+      "nuevo": false,
+      "genero": "marvel",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1pfYPtZuf1Mf6DiUg_Gmi7RCcqgIBN5yGOw&s",
+      "enlace": "https://drive.google.com/file/d/1vj_e0twwfCCBmT7AAjP2AfROUZBY6R8J/preview",
+      "descripcion": "Carol Danvers se convierte en una de las heroínas más poderosas del universo cuando la Tierra se ve atrapada en medio de una guerra galáctica entre dos razas alienígenas."
+    },
+    {
+      "id": 112,
+      "titulo": "Iron Man",
+      "disponible": true,
+      "año": 2008,
+      "genero": "marvel",
+      "imagen": "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/0/d/d/small-spos8825-poster-iron-man-1-a-official-sticker-sl-9829-wall-original-imaghs5pygznwxu9.jpeg?q=20&crop=false",
+      "enlace": "https://drive.google.com/file/d/1SN5p9h38gXNL2kKEuqUogODVOhnOxmsF/preview",
+      "descripcion": "Tony Stark, un genio millonario, construye una armadura de alta tecnología después de un incidente que casi le cuesta la vida. Como Iron Man, debe enfrentarse a las consecuencias de su pasado como fabricante de armas."
+    },
+    {
+      "id": 113,
+      "titulo": "Iron Man 2",
+      "disponible": true,
+      "año": 2010,
+      "genero": "marvel",
+      "imagen": "https://static.posters.cz/image/750/posters/iron-man-2-one-sheet-i7902.jpg",
+      "enlace": "https://drive.google.com/file/d/1QbC6edJkiQ3qaGZ-hH_TWK_gF8fnVba4/preview",
+      "descripcion": "Tony Stark enfrenta presiones del gobierno, nuevos villanos y su propia mortalidad mientras lidia con las consecuencias de revelar su identidad como Iron Man al mundo."
+    },
+    {
+      "id": 114,
+      "titulo": "El increíble Hulk",
+      "disponible": true,
+      "año": 2008,
+      "nuevo": false,
+      "genero": "marvel", 
+      "imagen": "https://es.web.img3.acsta.net/medias/nmedia/18/66/73/18/20350674.jpg",
+      "enlace": "https://drive.google.com/file/d/15oY5PZsa2axHZHjF8VDLk9bF0GWW-x2F/preview",
+      "descripcion": "Bruce Banner busca una cura para la radiación gamma que lo convierte en Hulk mientras es perseguido por el ejército. Debe enfrentarse a un enemigo que ha abusado del mismo poder que él intenta curar."
+    },
+    {
+      "id": 115,
+      "titulo": "Thor",
+      "disponible": false,
+      "año": 2011,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/thor.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_THOR/preview",
+      "descripcion": "El poderoso Thor es desterrado de Asgard a la Tierra, donde debe aprender humildad mientras su hermano Loki planea usurpar el trono. Su encuentro con Jane Foster cambiará su perspectiva sobre la humanidad."
+    },
+    {
+      "id": 116,
+      "titulo": "Los Vengadores",
+      "disponible": true,
+      "año": 2012,
+      "genero": "marvel",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "enlace": "https://drive.google.com/file/d/1juUhD1wkvZG4Ve4pX9cHjSmxreKnN4B-/preview",
+      "descripcion": "Nick Fury reúne a un equipo de superhéroes para formar Los Vengadores y combatir a Loki y su ejército alienígena que amenaza con conquistar la Tierra."
+    },
+    {
+      "id": 117,
+      "titulo": "Iron Man 3",
+      "disponible": true,
+      "año": 2013,
+      "genero": "marvel",
+      "imagen": "https://static.posters.cz/image/750/posters/iron-man-3-one-sheet-i16526.jpg",
+      "enlace": "https://drive.google.com/file/d/1XS2avxLTV6T7WeSRz1XHQzQQCUhm9Sk8/preview",
+      "descripcion": "Después de los eventos de Los Vengadores, Tony Stark lucha contra el insomnio y ataques de ansiedad mientras enfrenta a un nuevo enemigo, el Mandarín, que amenaza con destruir todo lo que ama."
+    },
+    {
+      "id": 118,
+      "titulo": "Thor: El mundo oscuro",
+      "disponible": false,
+      "año": 2013,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/thor-mundo-oscuro.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_THOR_MUNDO_OSCURO/preview",
+      "descripcion": "Thor debe unir fuerzas con Loki para salvar los Nueve Reinos de los Elfos Oscuros liderados por Malekith, quien busca sumir al universo en la oscuridad eterna."
+    },
+    {
+      "id": 119,
+      "titulo": "Capitán América: El Soldado de Invierno",
+      "disponible": true,
+      "año": 2014,
+      "genero": "marvel",
+      "imagen": "https://es.web.img3.acsta.net/pictures/14/01/31/16/12/220933.jpg",
+      "enlace": "https://drive.google.com/file/d/1-m3NjNYPmN5A2yK8HNJJ5mmf7JYK2l6o/preview",
+      "descripcion": "Steve Rogers se une a Viuda Negra y Falcon para descubrir una conspiración dentro de S.H.I.E.L.D. mientras se enfrenta a un nuevo enemigo, el misterioso Soldado de Invierno."
+    },
+    {
+      "id": 120,
+      "titulo": "Guardianes de la Galaxia",
+      "disponible": false,
+      "año": 2014,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/guardianes-galaxia.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA/preview",
+      "descripcion": "Un grupo de inadaptados intergalácticos debe unirse para salvar la galaxia cuando un poderoso villano amenaza con destruirla. Una aventura espacial llena de humor y acción."
+    },
+    {
+      "id": 121,
+      "titulo": "Guardianes de la Galaxia Vol. 2",
+      "disponible": false,
+      "año": 2017,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/guardianes-galaxia-2.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_2/preview",
+      "descripcion": "Los Guardianes continúan sus aventuras mientras Peter Quill descubre la verdad sobre su padre y deben salvar la galaxia una vez más."
+    },
+    {
+      "id": 122,
+      "titulo": "Yo soy Groot",
+      "disponible": false,
+      "año": 2022,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/yo-soy-groot.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_YO_SOY_GROOT/preview",
+      "descripcion": "Una serie de cortos que siguen las aventuras del pequeño Groot mientras crece y se mete en problemas entre las misiones de los Guardianes."
+    },
+    {
+      "id": 123,
+      "titulo": "Vengadores: La era de Ultrón",
+      "disponible": false,
+      "año": 2015,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/vengadores-era-ultron.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_ULTRON/preview",
+      "descripcion": "Los Vengadores deben unirse para detener a Ultrón, una inteligencia artificial creada por Tony Stark que amenaza con exterminar a la humanidad."
+    },
+    {
+      "id": 124,
+      "titulo": "Ant-Man",
+      "disponible": false,
+      "año": 2015,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/ant-man.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN/preview",
+      "descripcion": "Scott Lang debe ayudar a su mentor Dr. Hank Pym a proteger el secreto de su traje de Ant-Man, que otorga la capacidad de encogerse mientras aumenta la fuerza."
+    },
+    {
+      "id": 125,
+      "titulo": "Capitán América: Civil War",
+      "disponible": false,
+      "año": 2016,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/capitan-america-civil-war.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_3/preview",
+      "descripcion": "Una disputa entre el Capitán América y Iron Man divide a los Vengadores en dos bandos mientras enfrentan una nueva amenaza."
+    },
+    {
+      "id": 126,
+      "titulo": "Spider-Man: Homecoming",
+      "disponible": false,
+      "año": 2017,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/spiderman-homecoming.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_HOMECOMING/preview",
+      "descripcion": "Peter Parker intenta equilibrar su vida escolar con ser Spider-Man mientras enfrenta al Buitre, bajo la mentoría de Tony Stark."
+    },
+    {
+      "id": 127,
+      "titulo": "Doctor Strange",
+      "disponible": true,
+      "año": 2016,
+      "nuevo": false,
+      "genero": "marvel", 
+      "imagen": "https://i.ebayimg.com/images/g/3iYAAOSwO7haCROU/s-l1200.jpg",
+      "enlace": "https://drive.google.com/file/d/1eE2gAfY2fz02381xJmIVmtg3xQMs7m8g/preview",
+      "descripcion": "El Dr. Stephen Strange descubre las artes místicas después de un accidente que arruina su carrera como cirujano."
+    },
+    {
+      "id": 128,
+      "titulo": "Spider-Man: Homecoming",
+      "disponible": true,
+      "año": 2017,
+      "nuevo": false,
+      "genero": ["accion", "marvel"],
+      "imagen": "https://image.tmdb.org/t/p/w185/bRl6C6FwzTndk0MBGZZ68nRFlw3.jpg",
+      "enlace": "https://fastream.to/embed-u5hjjysefshc.html",
+      "descripcion": "Peter Parker intenta equilibrar su vida como estudiante de secundaria con ser Spider-Man mientras enfrenta al villano Vulture, todo bajo la mentoría de Tony Stark."
+    },
+    {
+      "id": 129,
+      "titulo": "Viuda Negra",
+      "disponible": false,
+      "año": 2020,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/viuda-negra.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_VIUDA_NEGRA/preview",
+      "deripcion": "Natasha Romanoff se enfrenta a su pasado oscuro cuando surge una peligrosa conspiración vinculada a su historia como espía."
+    },
+    {
+      "id": 130,
+      "titulo": "Black Panther",
+      "disponible": false,
+      "año": 2018,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/black-panther.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER/preview",
+      "descripcion": "T'Challa regresa a Wakanda para tomar su lugar como rey, pero debe defender su nación de antiguos enemigos y nuevas amenazas."
+    },
+    {
+      "id": 131,
+      "titulo": "Thor: Ragnarok",
+      "disponible": false,
+      "año": 2017,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/thor-ragnarok.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_THOR_RAGNAROK/preview",
+      "descripcion": "Thor debe escapar del planeta Sakaar y regresar a Asgard para detener a Hela y prevenir el Ragnarök."
+    },
+    {
+      "id": 132,
+      "titulo": "Ant-Man y la Avispa",
+      "disponible": false,
+      "año": 2018,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/ant-man-avispa.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN_AVISPA/preview",
+      "descripcion": "Scott Lang y Hope van Dyne trabajan juntos en una nueva misión urgente para descubrir secretos del pasado."
+    },
+    {
+      "id": 133,
+      "titulo": "Vengadores: Infinity War",
+      "disponible": false,
+      "año": 2018,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/vengadores-infinity-war.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_INFINITY_WAR/preview",
+      "descripcion": "Los Vengadores y sus aliados deben estar dispuestos a sacrificarlo todo para derrotar a Thanos antes de que destruya el universo."
+    },
+    {
+      "id": 134,
+      "titulo": "Vengadores: Endgame",
+      "disponible": true,
+      "año": 2019,
+      "genero": "marvel",
+      "imagen": "https://image.tmdb.org/t/p/w185/rDLmMzkaFMFWF1UnnlboMfifVXM.jpg",
+      "enlace": "https://fastream.to/embed-p1opf3bx6tdh.html",
+      "descripcion": "Los Vengadores restantes deben encontrar una manera de revertir las acciones de Thanos y restaurar el orden en el universo."
+    },
+    {
+      "id": 135,
+      "titulo": "Loki",
+      "disponible": false,
+      "año": 2021,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/loki.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_LOKI/preview",
+      "descripcion": "Loki es reclutado por la Autoridad de Variación Temporal para ayudar a arreglar las líneas temporales que él mismo ayudó a crear."
+    },
+    {
+      "id": 136,
+      "titulo": "Bruja Escarlata y Visión",
+      "disponible": false,
+      "año": 2021,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/bruja-escarlata-vision.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_BRUJA_ESCARLATA_VISION/preview",
+      "descripcion": "Wanda Maximoff y Visión viven una vida suburbana ideal que comienza a sospechar que no todo es lo que parece."
+    },
+    {
+      "id": 137,
+      "titulo": "Shang-Chi y la leyenda de los diez anillos",
+      "disponible": false,
+      "año": 2021,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/shang-chi.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_SHANG_CHI/preview",
+      "descripcion": "Shang-Chi debe enfrentarse al pasado que pensó que había dejado atrás cuando se ve envuelto en la red de la misteriosa organización de los Diez Anillos."
+    },
+    {
+      "id": 138,
+      "titulo": "Falcon y el Soldado de Invierno",
+      "disponible": false,
+      "año": 2021,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/falcon-soldado-invierno.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_FALCON_SOLDADO_INVIERNO/preview",
+      "descripcion": "Sam Wilson y Bucky Barnes se unen en una aventura global que pone a prueba sus habilidades y su paciencia."
+    },
+    {
+      "id": 139,
+      "titulo": "Spider-Man: Lejos de casa",
+      "disponible": false,
+      "año": 2019,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/spiderman-lejos-casa.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_LEJOS_CASA/preview",
+      "descripcion": "Peter Parker va de vacaciones a Europa con sus amigos, pero Nick Fury aparece para reclutarlo en una misión para enfrentar a las amenazas elementales."
+    },
+    {
+      "id": 140,
+      "titulo": "Spider-Man: No Way Home",
+      "disponible": false,
+      "año": 2021,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/spiderman-no-way-home.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_NO_WAY_HOME/preview",
+      "descripcion": "Con la identidad de Spider-Man revelada, Peter Parker pide ayuda al Doctor Strange, pero las cosas se complican cuando el multiverso se abre."
+    },
+    {
+      "id": 141,
+      "titulo": "Eternals",
+      "disponible": false,
+      "año": 2021,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/eternals.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_ETERNALS/preview",
+      "descripcion": "Los Eternos, una raza de seres inmortales, emergen de las sombras para reunirse contra los más antiguos enemigos de la humanidad, los Desviantes."
+    },
+    {
+      "id": 142,
+      "titulo": "Ojo de Halcón",
+      "disponible": false,
+      "año": 2021,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/ojo-halcon.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_OJO_HALCON/preview",
+      "descripcion": "Clint Barton debe asociarse con la joven Kate Bishop para enfrentar enemigos de su pasado como Ronin en una aventura navideña."
+    },
+    {
+      "id": 143,
+      "titulo": "Echo",
+      "disponible": false,  
+      "año": 2024,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/echo.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_ECHO/preview",
+      "descripcion": "Maya Lopez debe enfrentar su pasado, reconectar con sus raíces nativas americanas y abrazar su familia y legado."
+    },
+    {
+      "id": 144,
+      "titulo": "Doctor Strange en el multiverso de la locura",
+      "disponible": false,
+      "año": 2022,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/doctor-strange-multiverso.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DOCTOR_STRANGE_MULTIVERSO/preview",
+      "descripcion": "El Doctor Strange viaja a través del multiverso y enfrenta una amenaza que podría destruir todas las realidades."
+    },
+    {
+      "id": 145,
+      "titulo": "Caballero Luna",
+      "disponible": false,
+      "año": 2022,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/caballero-luna.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_CABALLERO_LUNA/preview",
+      "descripcion": "Steven Grant descubre que tiene un trastorno de identidad disociativo y comparte cuerpo con el mercenario Marc Spector."
+    },
+    {
+      "id": 146,
+      "titulo": "She-Hulk: Abogada Hulka",
+      "disponible": false,
+      "año": 2022,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/she-hulk.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_SHE_HULK/preview",
+      "descripcion": "Jennifer Walters navega la complicada vida de una abogada soltera de 30 y tantos años que también resulta ser una Hulk verde de 2 metros."
+    },
+    {
+      "id": 147,
+      "titulo": "Ms. Marvel",
+      "disponible": false,
+      "año": 2022,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/ms-marvel.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_MS_MARVEL/preview",
+      "descripcion": "Kamala Khan, una adolescente fan de los superhéroes, descubre que tiene poderes propios y debe aprender a usarlos mientras protege su comunidad."
+    },
+    {
+      "id": 148,
+      "titulo": "Thor: Love and Thunder",
+      "disponible": false,
+      "año": 2022,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/thor-love-thunder.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_THOR_LOVE_THUNDER/preview",
+      "descripcion": "Thor se embarca en un viaje diferente a todo lo que ha enfrentado: una búsqueda de la paz interior. Pero su retiro es interrumpido por Gorr, el Carnicero de Dioses."
+    },
+    {
+      "id": 149,
+      "titulo": "Black Panther: Wakanda Forever",
+      "disponible": false,
+      "año": 2022,
+      "genero": "marvel",
+      "imagen": "https://ejemplo.com/black-panther-wakanda-forever.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER_WAKANDA_FOREVER/preview",
+      "descripcion": "Tras la muerte del rey T'Challa, la nación de Wakanda debe defender su hogar de las potencias mundiales que intentan aprovechar la ausencia del Black Panther para acceder al vibranium."
+    },
+    {
+      "id": 103,
+      "titulo": "X-Men: Días del futuro pasado",
+      "disponible": false,
+      "año": 2014,
+      "genero": "marvel",
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDOFP.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_DOFP/preview",
+      "descripcion": "Los X-Men envían a Wolverine al pasado para cambiar un evento histórico que podría resultar en la destrucción tanto de humanos como de mutantes. Una misión que unirá a las versiones jóvenes y mayores de los X-Men."
+    },
+    {
+      "id": 104,
+      "titulo": "X-Men: Apocalipsis",
+      "disponible": false,
+      "año": 2016,
+      "genero": "marvel",
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenApocalipsis.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_APOCALIPSIS/preview",
+      "descripcion": "El primer y más poderoso mutante, Apocalipsis, despierta tras miles de años y busca destruir la civilización moderna. Los X-Men deben unirse para detener sus planes de extinción global."
+    },
+    {
+      "id": 105,
+      "titulo": "Logan",
+      "disponible": false,
+      "año": 2017,
+      "genero": "marvel",
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Logan.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_LOGAN/preview",
+      "descripcion": "En un futuro cercano, un Logan envejecido cuida de un enfermo Profesor X mientras protege a una joven mutante con poderes similares a los suyos. Una última aventura que pondrá a prueba su legado como Wolverine."
+    },
+    {
+      "id": 106,
+      "titulo": "Deadpool",
+      "disponible": false,
+      "año": 2016,
+      "genero": "marvel",
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DEADPOOL/preview",
+      "descripcion": "Wade Wilson, un mercenario, es sometido a un experimento que lo deja desfigurado pero con poderes de curación acelerada. Adoptando el alter ego de Deadpool, busca venganza contra quienes lo transformaron."
+    },
+    {
+      "id": 107,
+      "titulo": "Deadpool 2",
+      "disponible": false,
+      "año": 2018,
+      "genero": "marvel",
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool2.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_DEADPOOL_2/preview",
+      "descripcion": "Deadpool forma un equipo de mutantes llamado Fuerza-X para proteger a un joven mutante de Cable, un soldado cibernético del futuro. Una aventura llena de acción y humor irreverente."
+    },
+    {
+      "id": 108,
+      "titulo": "X-Men: Fénix Oscura",
+      "disponible": false,
+      "año": 2019,
+      "genero": "marvel",
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDarkPhoenix.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_XMEN_DARK_PHOENIX/preview",
+      "descripcion": "Jean Grey desarrolla increíbles poderes que la corrompen y la transforman en Fénix Oscura. Los X-Men deberán decidir si la vida de un miembro del equipo vale más que toda la humanidad."
+    },
+    {
+      "id": 109,
+      "titulo": "Los Nuevos Mutantes",
+      "disponible": false,
+      "año": 2020,
+      "genero": "marvel",
+      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NewMutants.jpg",
+      "enlace": "https://drive.google.com/file/d/ID_NEW_MUTANTS/preview",
+      "descripcion": "Cinco jóvenes mutantes descubren sus habilidades mientras están retenidos en una instalación secreta contra su voluntad. Luchan por escapar de su pasado y salvarse a sí mismos."
+    },
+    {
+      "id": 110,
       "titulo": "Capitán América: El primer vengador",
       "disponible": false,
       "año": 2011,
@@ -1087,6 +1668,7 @@
       "descripcion": "Carol Danvers se convierte en una de las heroínas más poderosas del universo cuando la Tierra se ve atrapada en medio de una guerra galáctica entre dos razas alienígenas."
     },
     {
+      "id": 111,
       "titulo": "Iron Man",
       "disponible": true,
       "año": 2008,
@@ -1096,6 +1678,7 @@
       "descripcion": "Tony Stark, un genio millonario, construye una armadura de alta tecnología después de un incidente que casi le cuesta la vida. Como Iron Man, debe enfrentarse a las consecuencias de su pasado como fabricante de armas."
     },
     {
+      "id": 112,
       "titulo": "Iron Man 2",
       "disponible": true,
       "año": 2010,
@@ -1116,6 +1699,7 @@
       "descripcion": "Bruce Banner busca una cura para la radiación gamma que lo convierte en Hulk mientras es perseguido por el ejército. Debe enfrentarse a un enemigo que ha abusado del mismo poder que él intenta curar."
     },
     {
+      "id": 113,
       "titulo": "Thor",
       "disponible": false,
       "año": 2011,
@@ -1125,6 +1709,7 @@
       "descripcion": "El poderoso Thor es desterrado de Asgard a la Tierra, donde debe aprender humildad mientras su hermano Loki planea usurpar el trono. Su encuentro con Jane Foster cambiará su perspectiva sobre la humanidad."
     },
     {
+      "id": 114,
       "titulo": "Los Vengadores",
       "disponible": true,
       "año": 2012,
@@ -1134,6 +1719,7 @@
       "descripcion": "Nick Fury reúne a un equipo de superhéroes para formar Los Vengadores y combatir a Loki y su ejército alienígena que amenaza con conquistar la Tierra."
     },
     {
+      "id": 115,
       "titulo": "Iron Man 3",
       "disponible": true,
       "año": 2013,
@@ -1143,6 +1729,7 @@
       "descripcion": "Después de los eventos de Los Vengadores, Tony Stark lucha contra el insomnio y ataques de ansiedad mientras enfrenta a un nuevo enemigo, el Mandarín, que amenaza con destruir todo lo que ama."
     },
     {
+      "id": 116,
       "titulo": "Thor: El mundo oscuro",
       "disponible": false,
       "año": 2013,
@@ -1152,6 +1739,7 @@
       "descripcion": "Thor debe unir fuerzas con Loki para salvar los Nueve Reinos de los Elfos Oscuros liderados por Malekith, quien busca sumir al universo en la oscuridad eterna."
     },
     {
+      "id": 117,
       "titulo": "Capitán América: El Soldado de Invierno",
       "disponible": true,
       "año": 2014,
@@ -1161,6 +1749,7 @@
       "descripcion": "Steve Rogers se une a Viuda Negra y Falcon para descubrir una conspiración dentro de S.H.I.E.L.D. mientras se enfrenta a un nuevo enemigo, el misterioso Soldado de Invierno."
     },
     {
+      "id": 118,
       "titulo": "Guardianes de la Galaxia",
       "disponible": false,
       "año": 2014,
@@ -1170,6 +1759,7 @@
       "descripcion": "Un grupo de inadaptados intergalácticos debe unirse para salvar la galaxia cuando un poderoso villano amenaza con destruirla. Una aventura espacial llena de humor y acción."
     },
     {
+      "id": 119,
       "titulo": "Guardianes de la Galaxia Vol. 2",
       "disponible": false,
       "año": 2017,
@@ -1179,6 +1769,7 @@
       "descripcion": "Los Guardianes continúan sus aventuras mientras Peter Quill descubre la verdad sobre su padre y deben salvar la galaxia una vez más."
     },
     {
+      "id": 120,
       "titulo": "Yo soy Groot",
       "disponible": false,
       "año": 2022,
@@ -1188,6 +1779,7 @@
       "descripcion": "Una serie de cortos que siguen las aventuras del pequeño Groot mientras crece y se mete en problemas entre las misiones de los Guardianes."
     },
     {
+      "id": 121,
       "titulo": "Vengadores: La era de Ultrón",
       "disponible": false,
       "año": 2015,
@@ -1197,6 +1789,7 @@
       "descripcion": "Los Vengadores deben unirse para detener a Ultrón, una inteligencia artificial creada por Tony Stark que amenaza con exterminar a la humanidad."
     },
     {
+      "id": 122,
       "titulo": "Ant-Man",
       "disponible": false,
       "año": 2015,
@@ -1206,25 +1799,17 @@
       "descripcion": "Scott Lang debe ayudar a su mentor Dr. Hank Pym a proteger el secreto de su traje de Ant-Man, que otorga la capacidad de encogerse mientras aumenta la fuerza."
     },
     {
+      "id": 123,
       "titulo": "Capitán América: Civil War",
       "disponible": false,
       "año": 2016,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/capitan-america-civil-war.jpg",
       "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_3/preview",
-      "descripcion": "Una disputa entre el Capitán América y Iron Man divide a los Vengadores en dos bandos mientras enfrentan una nueva amenaza."
+      "descripcion": "Una disputa entre el Capitán América y Iron Mark divide a los Vengadores en dos bandos mientras enfrentan una nueva amenaza."
     },
     {
-      "titulo": "Spider-Man: Homecoming",
-      "disponible": false,
-      "año": 2017,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/spiderman-homecoming.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_HOMECOMING/preview",
-      "descripcion": "Peter Parker intenta equilibrar su vida escolar con ser Spider-Man mientras enfrenta al Buitre, bajo la mentoría de Tony Stark."
-    },
-    {
-      "id": 3,
+      "id": 124,
       "titulo": "Doctor Strange",
       "disponible": true,
       "año": 2016,
@@ -1235,6 +1820,7 @@
       "descripcion": "El Dr. Stephen Strange descubre las artes místicas después de un accidente que arruina su carrera como cirujano."
     },
     {
+      "id": 125,
       "titulo": "Spider-Man: Homecoming",
       "disponible": true,
       "año": 2017,
@@ -1245,15 +1831,17 @@
       "descripcion": "Peter Parker intenta equilibrar su vida como estudiante de secundaria con ser Spider-Man mientras enfrenta al villano Vulture, todo bajo la mentoría de Tony Stark."
     },
     {
+      "id": 126,
       "titulo": "Viuda Negra",
       "disponible": false,
       "año": 2020,
       "genero": "marvel",
       "imagen": "https://ejemplo.com/viuda-negra.jpg",
       "enlace": "https://drive.google.com/file/d/ID_VIUDA_NEGRA/preview",
-      "deripcion": "Natasha Romanoff se enfrenta a su pasado oscuro cuando surge una peligrosa conspiración vinculada a su historia como espía."
+      "descripcion": "Natasha Romanoff se enfrenta a su pasado oscuro cuando surge una peligrosa conspiración vinculada a su historia como espía."
     },
     {
+      "id": 127,
       "titulo": "Black Panther",
       "disponible": false,
       "año": 2018,
@@ -1263,6 +1851,7 @@
       "descripcion": "T'Challa regresa a Wakanda para tomar su lugar como rey, pero debe defender su nación de antiguos enemigos y nuevas amenazas."
     },
     {
+      "id": 128,
       "titulo": "Thor: Ragnarok",
       "disponible": false,
       "año": 2017,
@@ -1272,6 +1861,7 @@
       "descripcion": "Thor debe escapar del planeta Sakaar y regresar a Asgard para detener a Hela y prevenir el Ragnarök."
     },
     {
+      "id": 129,
       "titulo": "Ant-Man y la Avispa",
       "disponible": false,
       "año": 2018,
@@ -1281,6 +1871,7 @@
       "descripcion": "Scott Lang y Hope van Dyne trabajan juntos en una nueva misión urgente para descubrir secretos del pasado."
     },
     {
+      "id": 130,
       "titulo": "Vengadores: Infinity War",
       "disponible": false,
       "año": 2018,
@@ -1290,6 +1881,7 @@
       "descripcion": "Los Vengadores y sus aliados deben estar dispuestos a sacrificarlo todo para derrotar a Thanos antes de que destruya el universo."
     },
     {
+      "id": 131,
       "titulo": "Vengadores: Endgame",
       "disponible": true,
       "año": 2019,
@@ -1299,6 +1891,7 @@
       "descripcion": "Los Vengadores restantes deben encontrar una manera de revertir las acciones de Thanos y restaurar el orden en el universo."
     },
     {
+      "id": 132,
       "titulo": "Loki",
       "disponible": false,
       "año": 2021,
@@ -1308,6 +1901,7 @@
       "descripcion": "Loki es reclutado por la Autoridad de Variación Temporal para ayudar a arreglar las líneas temporales que él mismo ayudó a crear."
     },
     {
+      "id": 133,
       "titulo": "Bruja Escarlata y Visión",
       "disponible": false,
       "año": 2021,
@@ -1317,6 +1911,7 @@
       "descripcion": "Wanda Maximoff y Visión viven una vida suburbana ideal que comienza a sospechar que no todo es lo que parece."
     },
     {
+      "id": 134,
       "titulo": "Shang-Chi y la leyenda de los diez anillos",
       "disponible": false,
       "año": 2021,
@@ -1326,6 +1921,7 @@
       "descripcion": "Shang-Chi debe enfrentarse al pasado que pensó que había dejado atrás cuando se ve envuelto en la red de la misteriosa organización de los Diez Anillos."
     },
     {
+      "id": 135,
       "titulo": "Falcon y el Soldado de Invierno",
       "disponible": false,
       "año": 2021,
@@ -1335,6 +1931,7 @@
       "descripcion": "Sam Wilson y Bucky Barnes se unen en una aventura global que pone a prueba sus habilidades y su paciencia."
     },
     {
+      "id": 136,
       "titulo": "Spider-Man: Lejos de casa",
       "disponible": false,
       "año": 2019,
@@ -1344,6 +1941,7 @@
       "descripcion": "Peter Parker va de vacaciones a Europa con sus amigos, pero Nick Fury aparece para reclutarlo en una misión para enfrentar a las amenazas elementales."
     },
     {
+      "id": 137,
       "titulo": "Spider-Man: No Way Home",
       "disponible": false,
       "año": 2021,
@@ -1353,6 +1951,7 @@
       "descripcion": "Con la identidad de Spider-Man revelada, Peter Parker pide ayuda al Doctor Strange, pero las cosas se complican cuando el multiverso se abre."
     },
     {
+      "id": 138,
       "titulo": "Eternals",
       "disponible": false,
       "año": 2021,
@@ -1362,6 +1961,7 @@
       "descripcion": "Los Eternos, una raza de seres inmortales, emergen de las sombras para reunirse contra los más antiguos enemigos de la humanidad, los Desviantes."
     },
     {
+      "id": 139,
       "titulo": "Ojo de Halcón",
       "disponible": false,
       "año": 2021,
@@ -1371,6 +1971,7 @@
       "descripcion": "Clint Barton debe asociarse con la joven Kate Bishop para enfrentar enemigos de su pasado como Ronin en una aventura navideña."
     },
     {
+      "id": 140,
       "titulo": "Echo",
       "disponible": false,  
       "año": 2024,
@@ -1380,6 +1981,7 @@
       "descripcion": "Maya Lopez debe enfrentar su pasado, reconectar con sus raíces nativas americanas y abrazar su familia y legado."
     },
     {
+      "id": 141,
       "titulo": "Doctor Strange en el multiverso de la locura",
       "disponible": false,
       "año": 2022,
@@ -1389,6 +1991,7 @@
       "descripcion": "El Doctor Strange viaja a través del multiverso y enfrenta una amenaza que podría destruir todas las realidades."
     },
     {
+      "id": 142,
       "titulo": "Caballero Luna",
       "disponible": false,
       "año": 2022,
@@ -1398,6 +2001,7 @@
       "descripcion": "Steven Grant descubre que tiene un trastorno de identidad disociativo y comparte cuerpo con el mercenario Marc Spector."
     },
     {
+      "id": 143,
       "titulo": "She-Hulk: Abogada Hulka",
       "disponible": false,
       "año": 2022,
@@ -1407,6 +2011,7 @@
       "descripcion": "Jennifer Walters navega la complicada vida de una abogada soltera de 30 y tantos años que también resulta ser una Hulk verde de 2 metros."
     },
     {
+      "id": 144,
       "titulo": "Ms. Marvel",
       "disponible": false,
       "año": 2022,
@@ -1416,6 +2021,7 @@
       "descripcion": "Kamala Khan, una adolescente fan de los superhéroes, descubre que tiene poderes propios y debe aprender a usarlos mientras protege su comunidad."
     },
     {
+      "id": 145,
       "titulo": "Thor: Love and Thunder",
       "disponible": false,
       "año": 2022,
@@ -1425,6 +2031,7 @@
       "descripcion": "Thor se embarca en un viaje diferente a todo lo que ha enfrentado: una búsqueda de la paz interior. Pero su retiro es interrumpido por Gorr, el Carnicero de Dioses."
     },
     {
+      "id": 146,
       "titulo": "Black Panther: Wakanda Forever",
       "disponible": false,
       "año": 2022,
@@ -1434,6 +2041,7 @@
       "descripcion": "La nación de Wakanda lucha por proteger su hogar de las potencias mundiales intervencionistas tras la muerte del Rey T'Challa."
     },
     {
+      "id": 147,
       "titulo": "Guardianes de la Galaxia: Especial Felices Fiestas",
       "disponible": false,
       "año": 2022,
@@ -1443,6 +2051,7 @@
       "descripcion": "Los Guardianes celebran la Navidad y buscan el regalo perfecto para Peter Quill en la Tierra."
     },
     {
+      "id": 148,
       "titulo": "Ant-Man y la Avispa: Quantumania",
       "disponible": false,
       "año": 2023,
@@ -1452,6 +2061,7 @@
       "descripcion": "Scott Lang y Hope van Dyne exploran el Reino Cuántico, donde se encuentran con extrañas criaturas y el peligroso Kang el Conquistador."
     },
     {
+      "id": 149,
       "titulo": "Guardianes de la Galaxia Vol. 3",
       "disponible": false,
       "año": 2023,
@@ -1461,6 +2071,7 @@
       "descripcion": "Los Guardianes se embarcan en una última misión para proteger a uno de los suyos y salvar el universo una vez más."
     },
     {
+      "id": 150,
       "titulo": "Invasión secreta",
       "disponible": false,
       "año": 2023,
@@ -1470,6 +2081,7 @@
       "descripcion": "Nick Fury descubre una conspiración de Skrulls que han estado infiltrándose en la Tierra durante años."
     },
     {
+      "id": 151,
       "titulo": "Loki T2",
       "disponible": false,
       "año": 2023,
@@ -1479,6 +2091,7 @@
       "descripcion": "Loki continúa su aventura a través del tiempo y el espacio, enfrentando nuevas amenazas y descubriendo más secretos sobre la TVA."
     },
     {
+      "id": 152,
       "titulo": "The Marvels",
       "disponible": false,
       "año": 2023,
@@ -1488,6 +2101,7 @@
       "descripcion": "Carol Danvers, Monica Rambeau y Kamala Khan deben unir fuerzas cuando sus poderes se entrelazan misteriosamente."
     },
     {
+      "id": 153,
       "titulo": "Deadpool y Lobezno",
       "disponible": true,
       "año": 2024,

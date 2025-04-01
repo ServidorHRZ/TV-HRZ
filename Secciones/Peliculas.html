@@ -1957,6 +1957,22 @@
             contenedor.style.display = 'block';
         }
 
+        // Agregar esta función para manejar la apertura de películas
+        function abrirPelicula(peliculaId) {
+            fetch('../DataBase/peliculas.json')
+                .then(response => response.json())
+                .then(data => {
+                    const pelicula = data.peliculas.find(p => p.id === peliculaId);
+                    if (pelicula) {
+                        localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
+                        window.location.href = 'movie.html';
+                    } else {
+                        console.error('Película no encontrada');
+                    }
+                })
+                .catch(error => console.error('Error al cargar la película:', error));
+        }
+
         // Modificar la función setupBuscador
         function setupBuscador() {
             const searchInput = document.getElementById('search-input');
@@ -1987,5 +2003,6 @@
     </script>
 </body>
 </html>
+
 
 
