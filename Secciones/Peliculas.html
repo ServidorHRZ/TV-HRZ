@@ -1581,18 +1581,59 @@
             });
         }
 
-        // Función para ver serie
-        function verPelicula(peliculaId) {
-            fetch('../DataBase/peliculas.json')
-                .then(response => response.json())
-                .then(data => {
-                    const pelicula = data.peliculas.find(p => p.id === peliculaId);
-                    if (pelicula) {
-                        localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
-                        window.location.href = 'movie.html';
-                    }
-                })
-                .catch(error => console.error('Error:', error));
+        // Función unificada para abrir películas
+        function abrirPelicula(peliculaData) {
+            let pelicula;
+            
+            // Si recibimos un ID (desde el buscador)
+            if (typeof peliculaData === 'number') {
+                pelicula = todasLasPeliculas.find(p => p.id === peliculaData);
+            } 
+            // Si recibimos un string JSON (desde las tarjetas de película)
+            else if (typeof peliculaData === 'string') {
+                try {
+                    pelicula = JSON.parse(peliculaData);
+                } catch (error) {
+                    console.error('Error al procesar datos de película:', error);
+                    return;
+                }
+            }
+            // Si recibimos un objeto (desde otras partes)
+            else if (typeof peliculaData === 'object') {
+                pelicula = peliculaData;
+            }
+
+            if (pelicula) {
+                localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
+                window.location.href = 'movie.html';
+            } else {
+                console.error('No se pudo encontrar la información de la película');
+            }
+        }
+
+        // Modificar la función de mostrar resultados de búsqueda
+        function mostrarResultadosBusqueda(resultados, contenedor) {
+            if (resultados.length === 0) {
+                contenedor.innerHTML = '<div class="resultado-item">No se encontraron resultados</div>';
+            } else {
+                contenedor.innerHTML = resultados.map(pelicula => `
+                    <div class="resultado-item" onclick="abrirPelicula(${JSON.stringify(pelicula).replace(/"/g, '&quot;')})">
+                        <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="resultado-imagen">
+                        <div class="resultado-info">
+                            <div class="resultado-titulo">${pelicula.titulo}</div>
+                            <div class="resultado-instructor">
+                                ${pelicula.año || 'Año no disponible'} • 
+                                <span style="color: var(--primary-color)">${
+                                    Array.isArray(pelicula.genero) 
+                                        ? pelicula.genero.join(', ') 
+                                        : pelicula.genero || 'Género no especificado'
+                                }</span>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+            contenedor.style.display = 'block';
         }
 
         // Event Listeners
@@ -1899,18 +1940,6 @@
             }
         });
 
-        // Agregar esta nueva función para manejar la apertura de películas
-        function abrirPelicula(peliculaData) {
-            try {
-                const pelicula = JSON.parse(peliculaData);
-                localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
-                window.location.href = 'movie.html';
-            } catch (error) {
-                console.error('Error al procesar la película:', error);
-                console.log('Datos de película recibidos:', peliculaData);
-            }
-        }
-
         // Modificar la función de búsqueda
         function searchMovies(query) {
             const resultadosContainer = document.getElementById('resultadosBusqueda');
@@ -1931,74 +1960,6 @@
             ).slice(0, 10); // Limitar a 10 resultados
 
             mostrarResultadosBusqueda(resultados, resultadosContainer);
-        }
-
-        function mostrarResultadosBusqueda(resultados, contenedor) {
-            if (resultados.length === 0) {
-                contenedor.innerHTML = '<div class="resultado-item">No se encontraron resultados</div>';
-            } else {
-                contenedor.innerHTML = resultados.map(pelicula => `
-                    <div class="resultado-item" onclick="abrirPelicula(${pelicula.id})">
-                        <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="resultado-imagen">
-                        <div class="resultado-info">
-                            <div class="resultado-titulo">${pelicula.titulo}</div>
-                            <div class="resultado-instructor">
-                                ${pelicula.año || 'Año no disponible'} • 
-                                <span style="color: var(--primary-color)">${
-                                    Array.isArray(pelicula.genero) 
-                                        ? pelicula.genero.join(', ') 
-                                        : pelicula.genero || 'Género no especificado'
-                                }</span>
-                            </div>
-                        </div>
-                    </div>
-                `).join('');
-            }
-            contenedor.style.display = 'block';
-        }
-
-        // Agregar esta función para manejar la apertura de películas
-        function abrirPelicula(peliculaId) {
-            fetch('../DataBase/peliculas.json')
-                .then(response => response.json())
-                .then(data => {
-                    const pelicula = data.peliculas.find(p => p.id === peliculaId);
-                    if (pelicula) {
-                        localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
-                        window.location.href = 'movie.html';
-                    } else {
-                        console.error('Película no encontrada');
-                    }
-                })
-                .catch(error => console.error('Error al cargar la película:', error));
-        }
-
-        // Modificar la función setupBuscador
-        function setupBuscador() {
-            const searchInput = document.getElementById('search-input');
-            const resultadosContainer = document.getElementById('resultadosBusqueda');
-            const headerSearch = document.getElementById('headerSearch');
-
-            searchInput.addEventListener('input', (e) => {
-                searchMovies(e.target.value);
-            });
-
-            // Cerrar resultados al hacer clic fuera
-            document.addEventListener('click', (e) => {
-                if (!headerSearch.contains(e.target)) {
-                    resultadosContainer.style.display = 'none';
-                }
-            });
-
-            // Agregar manejo de la tecla Escape
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    headerSearch.classList.remove('active');
-                    searchInput.value = '';
-                    resultadosContainer.style.display = 'none';
-                    mostrarPeliculasPorCategorias(todasLasPeliculas);
-                }
-            });
         }
     </script>
 </body>
