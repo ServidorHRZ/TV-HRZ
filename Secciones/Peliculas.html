@@ -534,6 +534,60 @@
             }
         }
 
+        /* Estilos para los resultados de búsqueda */
+        .resultados-busqueda {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.95);
+            border-radius: 0 0 10px 10px;
+            max-height: 70vh;
+            overflow-y: auto;
+            display: none;
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+            z-index: 1000;
+        }
+
+        .resultado-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .resultado-item:hover {
+            background: rgba(0, 255, 255, 0.1);
+        }
+
+        .resultado-imagen {
+            width: 100px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .resultado-info {
+            flex: 1;
+        }
+
+        .resultado-titulo {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .resultado-instructor {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
         /* Estilos mejorados para el carrusel de anuncios */
         .announcements-carousel {
             position: relative;
@@ -1077,10 +1131,11 @@
             </div>
         </div>
         <div class="header-search-container" id="headerSearch">
-            <input type="text" id="search-input" placeholder="Buscar películas, series y más...">
+            <input type="text" id="search-input" placeholder="Buscar películas...">
             <button class="search-toggle" id="searchClose">
                 <i class="fas fa-times"></i>
             </button>
+            <div id="resultadosBusqueda" class="resultados-busqueda"></div>
         </div>
     </div>
 
@@ -1578,27 +1633,27 @@
         const headerSearch = document.getElementById('headerSearch');
         const searchInput = document.getElementById('search-input');
 
+        // Función para limpiar y cerrar la búsqueda
+        function limpiarYCerrarBusqueda() {
+            headerSearch.classList.remove('active');
+            searchInput.value = ''; // Limpiar el input
+            document.getElementById('resultadosBusqueda').style.display = 'none';
+            mostrarPeliculasPorCategorias(todasLasPeliculas);
+        }
+
+        // Event listener para el botón de cerrar
+        searchClose.addEventListener('click', limpiarYCerrarBusqueda);
+
+        // Event listener para el botón de abrir búsqueda
         searchToggle.addEventListener('click', () => {
             headerSearch.classList.add('active');
             searchInput.focus();
         });
 
-        searchClose.addEventListener('click', () => {
-            headerSearch.classList.remove('active');
-            searchInput.value = '';
-            mostrarPeliculasPorCategorias(todasLasPeliculas);
-        });
-
-        // Agregar la funcionalidad del botón cerrar
-        document.getElementById('searchClearBtn').addEventListener('click', () => {
-            document.getElementById('search-input').value = '';
-            mostrarPeliculasPorCategorias(todasLasPeliculas);
-        });
-
-        document.getElementById('search-input').addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                e.preventDefault(); // Previene el comportamiento por defecto del Enter
-                searchMovies(e.target.value);
+        // Event listener para la tecla Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                limpiarYCerrarBusqueda();
             }
         });
 
@@ -1854,6 +1909,80 @@
                 console.error('Error al procesar la película:', error);
                 console.log('Datos de película recibidos:', peliculaData);
             }
+        }
+
+        // Modificar la función de búsqueda
+        function searchMovies(query) {
+            const resultadosContainer = document.getElementById('resultadosBusqueda');
+            
+            if (!query.trim()) {
+                resultadosContainer.style.display = 'none';
+                return;
+            }
+
+            const busqueda = query.toLowerCase().trim();
+            const resultados = todasLasPeliculas.filter(pelicula => 
+                pelicula.titulo.toLowerCase().includes(busqueda) ||
+                (pelicula.genero && (
+                    Array.isArray(pelicula.genero) 
+                        ? pelicula.genero.some(g => g.toLowerCase().includes(busqueda))
+                        : pelicula.genero.toLowerCase().includes(busqueda)
+                ))
+            ).slice(0, 10); // Limitar a 10 resultados
+
+            mostrarResultadosBusqueda(resultados, resultadosContainer);
+        }
+
+        function mostrarResultadosBusqueda(resultados, contenedor) {
+            if (resultados.length === 0) {
+                contenedor.innerHTML = '<div class="resultado-item">No se encontraron resultados</div>';
+            } else {
+                contenedor.innerHTML = resultados.map(pelicula => `
+                    <div class="resultado-item" onclick="abrirPelicula(${pelicula.id})">
+                        <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="resultado-imagen">
+                        <div class="resultado-info">
+                            <div class="resultado-titulo">${pelicula.titulo}</div>
+                            <div class="resultado-instructor">
+                                ${pelicula.año || 'Año no disponible'} • 
+                                <span style="color: var(--primary-color)">${
+                                    Array.isArray(pelicula.genero) 
+                                        ? pelicula.genero.join(', ') 
+                                        : pelicula.genero || 'Género no especificado'
+                                }</span>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+            contenedor.style.display = 'block';
+        }
+
+        // Modificar la función setupBuscador
+        function setupBuscador() {
+            const searchInput = document.getElementById('search-input');
+            const resultadosContainer = document.getElementById('resultadosBusqueda');
+            const headerSearch = document.getElementById('headerSearch');
+
+            searchInput.addEventListener('input', (e) => {
+                searchMovies(e.target.value);
+            });
+
+            // Cerrar resultados al hacer clic fuera
+            document.addEventListener('click', (e) => {
+                if (!headerSearch.contains(e.target)) {
+                    resultadosContainer.style.display = 'none';
+                }
+            });
+
+            // Agregar manejo de la tecla Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    headerSearch.classList.remove('active');
+                    searchInput.value = '';
+                    resultadosContainer.style.display = 'none';
+                    mostrarPeliculasPorCategorias(todasLasPeliculas);
+                }
+            });
         }
     </script>
 </body>

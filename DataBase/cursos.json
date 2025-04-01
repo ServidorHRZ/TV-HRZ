@@ -44,6 +44,56 @@
           "duracion": "4h", 
           "instructor": "Fazt",
           "descripcion": "Desarrollo web con Django Framework. Aprenderás a crear aplicaciones web completas, gestión de bases de datos, autenticación y más."
+        },
+        {
+          "id": 5,
+          "titulo": "Aprende Python ahora! curso completo e intensivo desde cero",
+          "imagen": "https://i.ytimg.com/vi/tQZy0U8s9LY/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/tQZy0U8s9LY",
+          "nivel": "Basico",
+          "duracion": "4h",
+          "instructor": "Hola Mundo",
+          "descripcion": "Curso intensivo y completo de Python desde cero. Aprenderás los fundamentos del lenguaje de manera práctica y efectiva, con ejemplos y ejercicios para principiantes."
+        },
+        {
+          "id": 6,
+          "titulo": "Curso Completo de Python para Principiantes (2023)",
+          "imagen": "https://i.ytimg.com/vi/swdcD6OPMlk/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/swdcD6OPMlk",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "Mouredev by Brais Moure",
+          "descripcion": "Curso completo y actualizado de Python para principiantes. Aprenderás desde los conceptos básicos hasta temas más avanzados con ejemplos prácticos y ejercicios."
+        },
+        {
+          "id": 7,
+          "titulo": "Curso COMPLETO de Python DESDE CERO para Principiantes 2025",
+          "imagen": "https://i.ytimg.com/vi/TkN2i-_4N4g/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/TkN2i-_4N4g",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "Mouredev by Brais Moure",
+          "descripcion": "Curso completo y actualizado de Python para principiantes. Aprenderás desde los conceptos básicos hasta temas más avanzados con ejemplos prácticos y ejercicios."
+        },
+        {
+          "id": 8,
+          "titulo": "Curso de PYTHON desde CERO para BACKEND",
+          "imagen": "https://i.ytimg.com/vi/_y9qQZXE24A/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/_y9qQZXE24A?si=pRDdzgmP7W7HfZF1",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "Mouredev by Brais Moure",
+          "descripcion": "Curso completo de Python enfocado en desarrollo backend. Aprenderás desde los fundamentos del lenguaje hasta conceptos avanzados de desarrollo del lado del servidor."
+        },
+        {
+          "id": 9,
+          "titulo": "CURSO COMPLETO DE PYTHON - 11 HORAS",
+          "imagen": "https://i.ytimg.com/vi/jRwW7WCCkIo/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/jRwW7WCCkIo?si=ry9EuoFb10u0ze5Z",
+          "nivel": "Basico",
+          "duracion": "11h",
+          "instructor": "Soy Dalto",
+          "descripcion": "Curso completo de Python que cubre todos los conceptos fundamentales del lenguaje. A lo largo de 11 horas, aprenderás desde lo más básico hasta temas más avanzados con ejemplos prácticos y ejercicios."
         }
       ]
     },
@@ -61,6 +111,46 @@
           "duracion": "3h",
           "instructor": "Programando en Java",
           "descripcion": "Aprende Java desde cero con este curso introductorio. Dominarás los conceptos básicos de programación, incluyendo sintaxis, operadores, bucles, arrays y funciones. Curso ideal para dar tus primeros pasos en el desarrollo con Java."
+        },
+        {
+          "id": 22,
+          "titulo": "Aprende Java Ahora! curso completo desde cero para principiantes",
+          "imagen": "https://i.ytimg.com/vi/b0NHh8RNWK4/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/b0NHh8RNWK4?si=X68lV4qQIbuvRv-a",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "Píldoras Informáticas",
+          "descripcion": "Curso completo de Java para principiantes. Aprenderás los fundamentos del lenguaje, programación orientada a objetos, estructuras de datos, interfaces gráficas y más. Un curso práctico con ejemplos y ejercicios paso a paso."
+        },
+        {
+          "id": 23,
+          "titulo": "Aprende Java en 2025: El curso definitivo para principiantes",
+          "imagen": "https://i.ytimg.com/vi/Bi9AmOBDJGY/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/Bi9AmOBDJGY?si=dZ7-JIJlYo2GfWON",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "Píldoras Informáticas",
+          "descripcion": "Curso completo y actualizado de Java para principiantes. Aprenderás los fundamentos del lenguaje, programación orientada a objetos, estructuras de datos y desarrollo de aplicaciones prácticas."
+        },
+        {
+          "id": 24,
+          "titulo": "JAVA desde cero | Curso tutorial completo gratis con Spring, Hibernate, PostgreSQL, Docker y más",
+          "imagen": "https://i.ytimg.com/vi/BdNqW63ZaB0/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/BdNqW63ZaB0?si=xMhot0AM791Jc6qV",
+          "nivel": "Basico",
+          "duracion": "12h",
+          "instructor": "Programación en Español",
+          "descripcion": "Curso completo de Java que cubre desde los fundamentos hasta tecnologías avanzadas como Spring, Hibernate, PostgreSQL y Docker. Aprenderás desarrollo backend profesional con Java y las herramientas más demandadas en la industria."
+        },
+        {
+          "id": 25,
+          "titulo": "Curso Completo de Java para Principiantes (2021)",
+          "imagen": "https://i.ytimg.com/vi/Z8zAKYLZBqc/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/Z8zAKYLZBqc?si=zN_Gn5vx0pcIdQF4",
+          "nivel": "Basico",
+          "duracion": "8h",
+          "instructor": "TodoCode",
+          "descripcion": "Curso completo de Java para principiantes actualizado a 2021. Aprenderás los fundamentos del lenguaje, programación orientada a objetos, manejo de excepciones, colecciones y más. Un curso práctico con ejemplos y ejercicios para dominar Java desde cero."
         }   
       ]
     },
@@ -88,6 +178,26 @@
           "duracion": "6h",
           "instructor": "MoureDev by Brais Moure",
           "descripcion": "Curso introductorio de JavaScript. Aprenderás los conceptos fundamentales del lenguaje a través de ejemplos prácticos y ejercicios básicos."
+        },
+        {
+          "id": 33,
+          "titulo": "Aprende JavaScript Ahora! curso completo desde cero",
+          "imagen": "https://i.ytimg.com/vi/QoC4RxNIs5M/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/QoC4RxNIs5M?si=8BFRzPyETlzJpyzK",
+          "nivel": "Basico", 
+          "duracion": "4h",
+          "instructor": "HolaMundo",
+          "descripcion": "Curso completo de JavaScript desde cero. Aprenderás los fundamentos del lenguaje, manipulación del DOM, eventos, funciones, objetos y todo lo necesario para comenzar a programar en JavaScript. Un curso práctico con ejemplos y ejercicios para principiantes."
+        },
+        {
+          "id": 34,
+          "titulo": "Fundamentos de Programação com JavaScript Curso Completo",
+          "imagen": "https://i.ytimg.com/vi/aA31cVca_hI/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/aA31cVca_hI?si=Ft_n7p155iQzFITG",
+          "nivel": "Basico",
+          "duracion": "8h",
+          "instructor": "Programador Espartano",
+          "descripcion": "Curso completo de JavaScript con más de 8 horas de contenido. Aprenderás los fundamentos de programación usando JavaScript, incluyendo variables, funciones, objetos, arrays y más. Un curso exhaustivo ideal para principiantes que quieren aprender a programar."
         }
       ]
     },
@@ -105,6 +215,169 @@
           "duracion": "10h",
           "instructor": "Programación Android by AristiDevs",
           "descripcion": "Curso completo de Flutter y Dart desde cero. Aprenderás a desarrollar aplicaciones móviles multiplataforma, incluyendo widgets, gestión de estado, navegación, consumo de APIs y bases de datos. Curso práctico con ejemplos reales y código fuente disponible en GitHub. Link: https://github.com/ArisGuimera/Flutter-Expert"
+        },
+        {
+          "id": 42,
+          "titulo": "Cómo Crear Apps Para Ganar Dinero | Curso Flutter",
+          "imagen": "https://i.ytimg.com/vi/YtqmGxskJ9k/maxresdefault.jpg", 
+          "videoUrl": "https://www.youtube.com/embed/YtqmGxskJ9k?si=erQwTEvbztHMqh9U",
+          "nivel": "Intermedio",
+          "duracion": "2h",
+          "instructor": "HolaMundo",
+          "descripcion": "Aprende a crear aplicaciones móviles rentables con Flutter. Este curso te enseñará cómo desarrollar apps que puedas monetizar, incluyendo estrategias de monetización, publicidad in-app y modelos de negocio para aplicaciones móviles."
+        },
+        {
+          "id": 43,
+          "titulo": "CURSO de FLUTTERFLOW gratis 2024 | DESDE CERO para PRINCIPIANTES",
+          "imagen": "https://i.ytimg.com/vi/1WS6DHUFfxk/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/1WS6DHUFfxk?si=HJsqR4GwE7XF_aZv", 
+          "nivel": "Basico",
+          "duracion": "2h",
+          "instructor": "HolaMundo",
+          "descripcion": "Curso completo de FlutterFlow desde cero para principiantes. Aprenderás a crear aplicaciones móviles sin código utilizando FlutterFlow, una herramienta visual para desarrollo de apps con Flutter. Ideal para quienes quieren comenzar en el desarrollo de aplicaciones móviles sin experiencia previa en programación."
+        },
+        {
+          "id": 44,
+          "titulo": "Aprende FLUTTER! con 3 proyectos incluidos",
+          "imagen": "https://i.ytimg.com/vi/IRLLVmN7nQI/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/IRLLVmN7nQI?si=4XuiiQzJyqOpyVdQ",
+          "nivel": "Basico",
+          "duracion": "4h",
+          "instructor": "HolaMundo",
+          "descripcion": "Curso práctico de Flutter donde aprenderás desarrollando 3 proyectos reales. Perfecto para principiantes que quieren aprender Flutter mediante ejemplos prácticos y aplicaciones completas."
+        }
+      ]
+    },
+    {
+      "id": "docker",
+      "titulo": "Docker",
+      "logo": "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
+      "cursos": [
+        {
+          "id": 51,
+          "titulo": "Docker desde Cero",
+          "imagen": "https://i.ytimg.com/vi/4Dko5W96WHg/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/4Dko5W96WHg?si=94hLmCniMjg3pNBx",
+          "nivel": "Basico", 
+          "duracion": "2h",
+          "instructor": "Pelado Nerd",
+          "descripcion": "Curso completo de Docker desde cero. Aprenderás los conceptos fundamentales de contenedores, imágenes, redes, volúmenes y docker-compose. Un curso práctico con ejemplos reales para dominar Docker."
+        }
+      ,
+      {
+        "id": 52,
+        "titulo": "Docker desde Cero 🐋",
+        "imagen": "https://i.ytimg.com/vi/rmty_WNvJvA/sddefault.jpg",
+        "videoUrl": "https://www.youtube.com/embed/rmty_WNvJvA?si=dacILk3G2qpAZshx",
+        "nivel": "Basico",
+        "duracion": "1h",
+        "instructor": "HolaMundo",
+        "descripcion": "Curso completo de Docker desde cero. Aprenderás los conceptos fundamentales de contenedores, imágenes, redes y todo lo necesario para empezar a utilizar Docker en tus proyectos. Un curso práctico con ejemplos reales."
+      }
+      ,
+      {
+        "id": 53,
+        "titulo": "EL MEJOR CURSO DE DOCKER EN TIEMPO RECORD",
+        "imagen": "https://i.ytimg.com/vi/ZvF6yKHPVRE/maxresdefault.jpg",
+        "videoUrl": "https://www.youtube.com/embed/ZvF6yKHPVRE?si=A8nxxvf7lP8jjYtp",
+        "nivel": "Basico",
+        "duracion": "2h",
+        "instructor": "MoureDev by Brais Moure",
+        "descripcion": "Curso intensivo de Docker que cubre los conceptos fundamentales en tiempo récord. Aprenderás lo esencial sobre contenedores, imágenes y comandos básicos de Docker de forma rápida y efectiva."
+      },
+      {
+        "id": 54,
+        "titulo": "DOCKER De NOVATO a PRO",
+        "imagen": "https://i.ytimg.com/vi/CV_Uf3Dq-EU/maxresdefault.jpg",
+        "videoUrl": "https://www.youtube.com/embed/CV_Uf3Dq-EU?si=pI8P_8zG33_8sBX7",
+        "nivel": "Basico",
+        "duracion": "4h",
+        "instructor": "Pelado Nerd",
+        "descripcion": "Curso completo de Docker que te llevará desde los conceptos más básicos hasta un nivel profesional. Aprenderás sobre contenedores, imágenes, redes, volúmenes, docker-compose y las mejores prácticas para implementar Docker en entornos de producción."
+      },
+      {
+        "id": 55,
+        "titulo": "CURSO COMPLETO DE DOCKER",
+        "imagen": "https://i.ytimg.com/vi/6wbfODetPbE/maxresdefault.jpg",
+        "videoUrl": "https://www.youtube.com/embed/6wbfODetPbE?si=GYHge_YNUdZ6ZJvM",
+        "nivel": "Basico",
+        "duracion": "2h",
+        "instructor": "Fazt",
+        "descripcion": "Curso completo de Docker que cubre todos los conceptos fundamentales. Aprenderás sobre contenedores, imágenes, redes, volúmenes y cómo utilizar Docker en tus proyectos de desarrollo. Incluye ejemplos prácticos y explicaciones detalladas."
+      }
+      ]
+    },
+    {
+      "id": "csharp",
+      "titulo": "C#",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png", 
+      "cursos": [
+        {
+          "id": 56,
+          "titulo": "Curso de C# / .NET Para Iniciantes",
+          "imagen": "https://i.ytimg.com/vi/oTivhgjbhIg/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/oTivhgjbhIg?si=qEsrMjic2sH2I1dM",
+          "nivel": "Basico",
+          "duracion": "2h", 
+          "instructor": "Código Estudiante",
+          "descripcion": "Curso completo de C# y .NET para principiantes. Aprenderás los fundamentos del lenguaje C#, programación orientada a objetos, y cómo desarrollar aplicaciones con el framework .NET. Incluye ejemplos prácticos y explicaciones paso a paso."
+        },
+        {
+          "id": 57,
+          "titulo": "Curso Completo de C# para Principiantes (2021) 🚀",
+          "imagen": "https://i.ytimg.com/vi/TqiysLEBZo4/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/TqiysLEBZo4?si=xQdvu4opnbh4QZlQ",
+          "nivel": "Basico", 
+          "duracion": "4h",
+          "instructor": "HolaMundo",
+          "descripcion": "Curso completo de C# desde cero. Aprenderás los conceptos fundamentales del lenguaje, tipos de datos, estructuras de control, programación orientada a objetos y más. Un curso práctico con ejemplos reales para dominar C#."
+        },
+        {
+          "id": 58,
+          "titulo": "Aprende lo Básico de C# - Tutorial Completo para Principiantes",
+          "imagen": "https://i.ytimg.com/vi/6W2wYwHQNT4/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/6W2wYwHQNT4?si=PNU0ngPUjgwn8qyo",
+          "nivel": "Basico",
+          "duracion": "3h",
+          "instructor": "Fazt",
+          "descripcion": "Tutorial completo de C# para principiantes donde aprenderás los conceptos básicos del lenguaje. Incluye tipos de datos, variables, funciones, clases, objetos y todo lo necesario para comenzar a programar en C#."
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "titulo": "Git y GitHub",
+      "logo": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+      "cursos": [
+        {
+          "id": 59,
+          "titulo": "Curso de GIT y GITHUB desde CERO para PRINCIPIANTES",
+          "imagen": "https://i.ytimg.com/vi/HiXLkL42tMU/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/HiXLkL42tMU?si=abcdefghijk",
+          "nivel": "Basico",
+          "duracion": "3h",
+          "instructor": "Fazt",
+          "descripcion": "Curso completo de Git y GitHub desde cero. Aprenderás control de versiones, comandos básicos de Git, trabajo con repositorios, ramas, fusiones y colaboración en proyectos usando GitHub. Perfecto para principiantes que quieren aprender las mejores prácticas de control de versiones."
+        },
+        {
+          "id": 60,
+          "titulo": "Curso de GIT desde CERO (Completo)",
+          "imagen": "https://i.ytimg.com/vi/9ZJ-K-zk_Go/maxresdefault.jpg", 
+          "videoUrl": "https://www.youtube.com/embed/9ZJ-K-zk_Go?si=BFOUdr711HrS_IoM",
+          "nivel": "Basico",
+          "duracion": "4h",
+          "instructor": "Soy Dalto",
+          "descripcion": "Curso completo de Git desde cero. Aprenderás los conceptos fundamentales del control de versiones, comandos básicos, manejo de ramas, resolución de conflictos y flujos de trabajo profesionales con Git."
+        },
+        {
+          "id": 61,
+          "titulo": "Curso Git & GitHub",
+          "imagen": "https://i.ytimg.com/vi/suzMNqDQiyU/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/suzMNqDQiyU?si=fZ2SdJN7c47fZORi",
+          "nivel": "Basico",
+          "duracion": "4h",
+          "instructor": "jonmircha",
+          "descripcion": "Curso completo de Git y GitHub. Aprenderás desde los conceptos básicos hasta técnicas avanzadas de control de versiones, trabajo colaborativo, gestión de repositorios y flujos de trabajo profesionales."
         }
       ]
     }
