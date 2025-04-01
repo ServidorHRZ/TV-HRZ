@@ -6067,7 +6067,7 @@
       "id": 39,
       "titulo": "Chica Vampiro",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "badge": "Recién agregado",
       "descripcion": "Daisy es una adolescente normal hasta que en su cumpleaños número 16 es mordida por un vampiro. Ahora debe adaptarse a su nueva vida como vampiro mientras mantiene el secreto y lidia con el amor, la escuela y su familia.",
       "imagen": "https://www.lavanguardia.com/peliculas-series/images/serie/poster/2013/5/w1280/mWpTjJO99SMusPHdV12UuMwtoNc.jpg",
@@ -6360,7 +6360,7 @@
       "descripcion": "Goku y sus amigos defienden la Tierra contra poderosos enemigos extraterrestres y otras amenazas mientras exploran el poder de las Esferas del Dragón.",
       "imagen": "https://image.tmdb.org/t/p/original/jB9l4mp0bzBgzE5y4tvBH6AMeMk.jpg",
       "año": 1989,
-      "genero": ["anime", "cartoon"],
+      "genero": ["anime", "cartoon", "nick"],
       "director": "Akira Toriyama",
       "actores": [
         "Masako Nozawa",
@@ -6441,6 +6441,102 @@
               "descripcion": "Los guerreros Z enfrentan a los Saibaman creados por Nappa",
               "duracion": "23:00",
               "url": "https://fastream.to/embed-201h9xlawdn9.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "titulo": "Suits",
+      "disponible": false,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "enProceso": false,
+      "descripcion": "Mike Ross, un joven brillante pero sin título de abogado, consigue un trabajo en uno de los mejores bufetes de Nueva York junto a Harvey Specter, uno de los mejores abogados de la ciudad. Juntos resuelven casos mientras mantienen el secreto de que Mike nunca se graduó de la facultad de derecho.",
+      "imagen": "https://image.tmdb.org/t/p/original/nZsdLWlvZgA5waLpKl9koRg1VbJ.jpg", 
+      "año": 2011,
+      "genero": "neflix",
+      "director": "Aaron Korsh",
+      "actores": [
+        "Gabriel Macht",
+        "Patrick J. Adams",
+        "Meghan Markle"
+      ],
+      "trailer": "https://www.youtube.com/embed/85z53bAebsI",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Piloto",
+              "descripcion": "Harvey Specter contrata a Mike Ross como asociado a pesar de que no tiene título en derecho.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1dB1X4y2r21RPs85o-c0I2XxV9hxC5yoS/preview"
+            },
+            {
+              "numero": 2, 
+              "titulo": "Errores y Omisiones",
+              "descripcion": "Mike debe lidiar con su primer caso en solitario mientras Harvey maneja un delicado asunto con un viejo cliente.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1e_0zyjCriOFjcGMV8km2PBx8_tU_QEzP/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "Dentro del Juego",
+              "descripcion": "Harvey y Mike trabajan en un caso de fusión corporativa mientras Louis sospecha del pasado de Mike.",
+              "duracion": "45:00", 
+              "url": "https://drive.google.com/file/d/1fujXiJgBqI6r6SAs6BHp-hvqdqSWmki2/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Sucio Pequeño Secreto",
+              "descripcion": "Mike ayuda a un amigo de la infancia con problemas legales que podrían exponer su secreto.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1CgQxDgXxwU7f5x2Z9y7X3LLeZPrT6uB2/preview"
+            },
+            {
+              "numero": 5,
+              "titulo": "Culpa",
+              "descripcion": "Harvey defiende a una vieja amiga acusada de homicidio mientras Mike lidia con un caso pro bono.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1w3ykksu09LJbS-ztl8yLP88vWe3rddDs/preview"
+            },
+            {
+              "numero": 6,
+              "titulo": "Reglas del Juego",
+              "descripcion": "Mike aprende una dura lección sobre lealtad cuando Louis y Harvey se enfrentan en un caso.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1laDYiDd50KGzqIxRajd53CqreIJbIuxf/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "Jugar con Fuego",
+              "descripcion": "Harvey debe elegir entre lealtad a la firma o ayudar a su hermano con problemas legales.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1FQqlmhl7X57FqHtArn_aR87UIGrl685H/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Identidad",
+              "descripcion": "Mike se enfrenta a un abogado que podría descubrir su secreto mientras Rachel cuestiona su relación.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1jVeQCS5wWAG49XLQkA35dGVV1mkKigak/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "Sin Filtro",
+              "descripcion": "Harvey debe lidiar con un cliente problemático mientras Mike enfrenta un dilema moral.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1-x7otQJv1j6TpkyfPlmESdan-mhTrOIu/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "El Momento de la Verdad",
+              "descripcion": "Un caso importante pone en riesgo el secreto de Mike y el futuro de la firma.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1jjaGW_cjwdgrA0I9mdL0ZnOr2TsjSq2p/preview"
             }
           ]
         }
