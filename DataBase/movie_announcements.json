@@ -1,7 +1,7 @@
 {
   "announcements": [
     {
-      "id": 50,
+      "id": 1,
       "tipo": "nuevo_estreno", 
       "titulo": "Su único hijo",
       "subtitulo": "¡Nueva película familiar!",
@@ -9,7 +9,7 @@
       "imagen": "https://image.tmdb.org/t/p/w185/1MvQXCBJtC34yI16QS276ZjWKY1.jpg",
       "destacado": true,
       "link": "movie.html",
-      "peliculaId": 50,
+      "peliculaId": 11,
       "disponible": true
     },
     {
