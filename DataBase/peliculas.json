@@ -1477,16 +1477,6 @@
       "descripcion": "Peter Parker va de vacaciones a Europa con sus amigos, pero Nick Fury aparece para reclutarlo en una misión para enfrentar a las amenazas elementales."
     },
     {
-      "id": 140,
-      "titulo": "Spider-Man: No Way Home",
-      "disponible": false,
-      "año": 2021,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/spiderman-no-way-home.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_NO_WAY_HOME/preview",
-      "descripcion": "Con la identidad de Spider-Man revelada, Peter Parker pide ayuda al Doctor Strange, pero las cosas se complican cuando el multiverso se abre."
-    },
-    {
       "id": 141,
       "titulo": "Eternals",
       "disponible": false,
@@ -1577,471 +1567,7 @@
       "descripcion": "Tras la muerte del rey T'Challa, la nación de Wakanda debe defender su hogar de las potencias mundiales que intentan aprovechar la ausencia del Black Panther para acceder al vibranium."
     },
     {
-      "id": 103,
-      "titulo": "X-Men: Días del futuro pasado",
-      "disponible": false,
-      "año": 2014,
-      "genero": "marvel",
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDOFP.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_XMEN_DOFP/preview",
-      "descripcion": "Los X-Men envían a Wolverine al pasado para cambiar un evento histórico que podría resultar en la destrucción tanto de humanos como de mutantes. Una misión que unirá a las versiones jóvenes y mayores de los X-Men."
-    },
-    {
-      "id": 104,
-      "titulo": "X-Men: Apocalipsis",
-      "disponible": false,
-      "año": 2016,
-      "genero": "marvel",
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenApocalipsis.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_XMEN_APOCALIPSIS/preview",
-      "descripcion": "El primer y más poderoso mutante, Apocalipsis, despierta tras miles de años y busca destruir la civilización moderna. Los X-Men deben unirse para detener sus planes de extinción global."
-    },
-    {
-      "id": 105,
-      "titulo": "Logan",
-      "disponible": false,
-      "año": 2017,
-      "genero": "marvel",
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Logan.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_LOGAN/preview",
-      "descripcion": "En un futuro cercano, un Logan envejecido cuida de un enfermo Profesor X mientras protege a una joven mutante con poderes similares a los suyos. Una última aventura que pondrá a prueba su legado como Wolverine."
-    },
-    {
-      "id": 106,
-      "titulo": "Deadpool",
-      "disponible": false,
-      "año": 2016,
-      "genero": "marvel",
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DEADPOOL/preview",
-      "descripcion": "Wade Wilson, un mercenario, es sometido a un experimento que lo deja desfigurado pero con poderes de curación acelerada. Adoptando el alter ego de Deadpool, busca venganza contra quienes lo transformaron."
-    },
-    {
-      "id": 107,
-      "titulo": "Deadpool 2",
-      "disponible": false,
-      "año": 2018,
-      "genero": "marvel",
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool2.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DEADPOOL_2/preview",
-      "descripcion": "Deadpool forma un equipo de mutantes llamado Fuerza-X para proteger a un joven mutante de Cable, un soldado cibernético del futuro. Una aventura llena de acción y humor irreverente."
-    },
-    {
-      "id": 108,
-      "titulo": "X-Men: Fénix Oscura",
-      "disponible": false,
-      "año": 2019,
-      "genero": "marvel",
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDarkPhoenix.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_XMEN_DARK_PHOENIX/preview",
-      "descripcion": "Jean Grey desarrolla increíbles poderes que la corrompen y la transforman en Fénix Oscura. Los X-Men deberán decidir si la vida de un miembro del equipo vale más que toda la humanidad."
-    },
-    {
-      "id": 109,
-      "titulo": "Los Nuevos Mutantes",
-      "disponible": false,
-      "año": 2020,
-      "genero": "marvel",
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/NewMutants.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_NEW_MUTANTS/preview",
-      "descripcion": "Cinco jóvenes mutantes descubren sus habilidades mientras están retenidos en una instalación secreta contra su voluntad. Luchan por escapar de su pasado y salvarse a sí mismos."
-    },
-    {
-      "id": 110,
-      "titulo": "Capitán América: El primer vengador",
-      "disponible": false,
-      "año": 2011,
-      "genero": "marvel",
-      "imagen": "https://m.media-amazon.com/images/I/81y9W+06QrL._AC_UF894,1000_QL80_.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_1/preview",
-      "descripcion": "Steve Rogers se somete a un experimento que lo transforma en el super soldado Capitán América durante la Segunda Guerra Mundial. Debe enfrentarse a la organización HYDRA y su líder, Red Skull."
-    },
-    {
-      "id": 1,
-      "titulo": "Capitana Marvel",
-      "disponible": true,
-      "año": 2019,
-      "nuevo": false,
-      "genero": "marvel",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1pfYPtZuf1Mf6DiUg_Gmi7RCcqgIBN5yGOw&s",
-      "enlace": "https://drive.google.com/file/d/1vj_e0twwfCCBmT7AAjP2AfROUZBY6R8J/preview",
-      "descripcion": "Carol Danvers se convierte en una de las heroínas más poderosas del universo cuando la Tierra se ve atrapada en medio de una guerra galáctica entre dos razas alienígenas."
-    },
-    {
-      "id": 111,
-      "titulo": "Iron Man",
-      "disponible": true,
-      "año": 2008,
-      "genero": "marvel",
-      "imagen": "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/0/d/d/small-spos8825-poster-iron-man-1-a-official-sticker-sl-9829-wall-original-imaghs5pygznwxu9.jpeg?q=20&crop=false",
-      "enlace": "https://drive.google.com/file/d/1SN5p9h38gXNL2kKEuqUogODVOhnOxmsF/preview",
-      "descripcion": "Tony Stark, un genio millonario, construye una armadura de alta tecnología después de un incidente que casi le cuesta la vida. Como Iron Man, debe enfrentarse a las consecuencias de su pasado como fabricante de armas."
-    },
-    {
-      "id": 112,
-      "titulo": "Iron Man 2",
-      "disponible": true,
-      "año": 2010,
-      "genero": "marvel",
-      "imagen": "https://static.posters.cz/image/750/posters/iron-man-2-one-sheet-i7902.jpg",
-      "enlace": "https://drive.google.com/file/d/1QbC6edJkiQ3qaGZ-hH_TWK_gF8fnVba4/preview",
-      "descripcion": "Tony Stark enfrenta presiones del gobierno, nuevos villanos y su propia mortalidad mientras lidia con las consecuencias de revelar su identidad como Iron Man al mundo."
-    },
-    {
-      "id": 2,
-      "titulo": "El increíble Hulk",
-      "disponible": true,
-      "año": 2008,
-      "nuevo": false,
-      "genero": "marvel", 
-      "imagen": "https://es.web.img3.acsta.net/medias/nmedia/18/66/73/18/20350674.jpg",
-      "enlace": "https://drive.google.com/file/d/15oY5PZsa2axHZHjF8VDLk9bF0GWW-x2F/preview",
-      "descripcion": "Bruce Banner busca una cura para la radiación gamma que lo convierte en Hulk mientras es perseguido por el ejército. Debe enfrentarse a un enemigo que ha abusado del mismo poder que él intenta curar."
-    },
-    {
-      "id": 113,
-      "titulo": "Thor",
-      "disponible": false,
-      "año": 2011,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/thor.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_THOR/preview",
-      "descripcion": "El poderoso Thor es desterrado de Asgard a la Tierra, donde debe aprender humildad mientras su hermano Loki planea usurpar el trono. Su encuentro con Jane Foster cambiará su perspectiva sobre la humanidad."
-    },
-    {
-      "id": 114,
-      "titulo": "Los Vengadores",
-      "disponible": true,
-      "año": 2012,
-      "genero": "marvel",
-      "imagen": "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      "enlace": "https://drive.google.com/file/d/1juUhD1wkvZG4Ve4pX9cHjSmxreKnN4B-/preview",
-      "descripcion": "Nick Fury reúne a un equipo de superhéroes para formar Los Vengadores y combatir a Loki y su ejército alienígena que amenaza con conquistar la Tierra."
-    },
-    {
-      "id": 115,
-      "titulo": "Iron Man 3",
-      "disponible": true,
-      "año": 2013,
-      "genero": "marvel",
-      "imagen": "https://static.posters.cz/image/750/posters/iron-man-3-one-sheet-i16526.jpg",
-      "enlace": "https://drive.google.com/file/d/1XS2avxLTV6T7WeSRz1XHQzQQCUhm9Sk8/preview",
-      "descripcion": "Después de los eventos de Los Vengadores, Tony Stark lucha contra el insomnio y ataques de ansiedad mientras enfrenta a un nuevo enemigo, el Mandarín, que amenaza con destruir todo lo que ama."
-    },
-    {
-      "id": 116,
-      "titulo": "Thor: El mundo oscuro",
-      "disponible": false,
-      "año": 2013,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/thor-mundo-oscuro.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_THOR_MUNDO_OSCURO/preview",
-      "descripcion": "Thor debe unir fuerzas con Loki para salvar los Nueve Reinos de los Elfos Oscuros liderados por Malekith, quien busca sumir al universo en la oscuridad eterna."
-    },
-    {
-      "id": 117,
-      "titulo": "Capitán América: El Soldado de Invierno",
-      "disponible": true,
-      "año": 2014,
-      "genero": "marvel",
-      "imagen": "https://es.web.img3.acsta.net/pictures/14/01/31/16/12/220933.jpg",
-      "enlace": "https://drive.google.com/file/d/1-m3NjNYPmN5A2yK8HNJJ5mmf7JYK2l6o/preview",
-      "descripcion": "Steve Rogers se une a Viuda Negra y Falcon para descubrir una conspiración dentro de S.H.I.E.L.D. mientras se enfrenta a un nuevo enemigo, el misterioso Soldado de Invierno."
-    },
-    {
-      "id": 118,
-      "titulo": "Guardianes de la Galaxia",
-      "disponible": false,
-      "año": 2014,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/guardianes-galaxia.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA/preview",
-      "descripcion": "Un grupo de inadaptados intergalácticos debe unirse para salvar la galaxia cuando un poderoso villano amenaza con destruirla. Una aventura espacial llena de humor y acción."
-    },
-    {
-      "id": 119,
-      "titulo": "Guardianes de la Galaxia Vol. 2",
-      "disponible": false,
-      "año": 2017,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/guardianes-galaxia-2.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_GUARDIANES_GALAXIA_2/preview",
-      "descripcion": "Los Guardianes continúan sus aventuras mientras Peter Quill descubre la verdad sobre su padre y deben salvar la galaxia una vez más."
-    },
-    {
-      "id": 120,
-      "titulo": "Yo soy Groot",
-      "disponible": false,
-      "año": 2022,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/yo-soy-groot.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_YO_SOY_GROOT/preview",
-      "descripcion": "Una serie de cortos que siguen las aventuras del pequeño Groot mientras crece y se mete en problemas entre las misiones de los Guardianes."
-    },
-    {
-      "id": 121,
-      "titulo": "Vengadores: La era de Ultrón",
-      "disponible": false,
-      "año": 2015,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/vengadores-era-ultron.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_ULTRON/preview",
-      "descripcion": "Los Vengadores deben unirse para detener a Ultrón, una inteligencia artificial creada por Tony Stark que amenaza con exterminar a la humanidad."
-    },
-    {
-      "id": 122,
-      "titulo": "Ant-Man",
-      "disponible": false,
-      "año": 2015,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/ant-man.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN/preview",
-      "descripcion": "Scott Lang debe ayudar a su mentor Dr. Hank Pym a proteger el secreto de su traje de Ant-Man, que otorga la capacidad de encogerse mientras aumenta la fuerza."
-    },
-    {
-      "id": 123,
-      "titulo": "Capitán América: Civil War",
-      "disponible": false,
-      "año": 2016,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/capitan-america-civil-war.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_CAPITAN_AMERICA_3/preview",
-      "descripcion": "Una disputa entre el Capitán América y Iron Mark divide a los Vengadores en dos bandos mientras enfrentan una nueva amenaza."
-    },
-    {
-      "id": 124,
-      "titulo": "Doctor Strange",
-      "disponible": true,
-      "año": 2016,
-      "nuevo": false,
-      "genero": "marvel", 
-      "imagen": "https://i.ebayimg.com/images/g/3iYAAOSwO7haCROU/s-l1200.jpg",
-      "enlace": "https://drive.google.com/file/d/1eE2gAfY2fz02381xJmIVmtg3xQMs7m8g/preview",
-      "descripcion": "El Dr. Stephen Strange descubre las artes místicas después de un accidente que arruina su carrera como cirujano."
-    },
-    {
-      "id": 125,
-      "titulo": "Spider-Man: Homecoming",
-      "disponible": true,
-      "año": 2017,
-      "nuevo": false,
-      "genero": ["accion", "marvel"],
-      "imagen": "https://image.tmdb.org/t/p/w185/bRl6C6FwzTndk0MBGZZ68nRFlw3.jpg",
-      "enlace": "https://fastream.to/embed-u5hjjysefshc.html",
-      "descripcion": "Peter Parker intenta equilibrar su vida como estudiante de secundaria con ser Spider-Man mientras enfrenta al villano Vulture, todo bajo la mentoría de Tony Stark."
-    },
-    {
-      "id": 126,
-      "titulo": "Viuda Negra",
-      "disponible": false,
-      "año": 2020,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/viuda-negra.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_VIUDA_NEGRA/preview",
-      "descripcion": "Natasha Romanoff se enfrenta a su pasado oscuro cuando surge una peligrosa conspiración vinculada a su historia como espía."
-    },
-    {
-      "id": 127,
-      "titulo": "Black Panther",
-      "disponible": false,
-      "año": 2018,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/black-panther.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER/preview",
-      "descripcion": "T'Challa regresa a Wakanda para tomar su lugar como rey, pero debe defender su nación de antiguos enemigos y nuevas amenazas."
-    },
-    {
-      "id": 128,
-      "titulo": "Thor: Ragnarok",
-      "disponible": false,
-      "año": 2017,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/thor-ragnarok.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_THOR_RAGNAROK/preview",
-      "descripcion": "Thor debe escapar del planeta Sakaar y regresar a Asgard para detener a Hela y prevenir el Ragnarök."
-    },
-    {
-      "id": 129,
-      "titulo": "Ant-Man y la Avispa",
-      "disponible": false,
-      "año": 2018,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/ant-man-avispa.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_ANT_MAN_AVISPA/preview",
-      "descripcion": "Scott Lang y Hope van Dyne trabajan juntos en una nueva misión urgente para descubrir secretos del pasado."
-    },
-    {
-      "id": 130,
-      "titulo": "Vengadores: Infinity War",
-      "disponible": false,
-      "año": 2018,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/vengadores-infinity-war.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_VENGADORES_INFINITY_WAR/preview",
-      "descripcion": "Los Vengadores y sus aliados deben estar dispuestos a sacrificarlo todo para derrotar a Thanos antes de que destruya el universo."
-    },
-    {
-      "id": 131,
-      "titulo": "Vengadores: Endgame",
-      "disponible": true,
-      "año": 2019,
-      "genero": "marvel",
-      "imagen": "https://image.tmdb.org/t/p/w185/rDLmMzkaFMFWF1UnnlboMfifVXM.jpg",
-      "enlace": "https://fastream.to/embed-p1opf3bx6tdh.html",
-      "descripcion": "Los Vengadores restantes deben encontrar una manera de revertir las acciones de Thanos y restaurar el orden en el universo."
-    },
-    {
-      "id": 132,
-      "titulo": "Loki",
-      "disponible": false,
-      "año": 2021,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/loki.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_LOKI/preview",
-      "descripcion": "Loki es reclutado por la Autoridad de Variación Temporal para ayudar a arreglar las líneas temporales que él mismo ayudó a crear."
-    },
-    {
-      "id": 133,
-      "titulo": "Bruja Escarlata y Visión",
-      "disponible": false,
-      "año": 2021,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/bruja-escarlata-vision.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_BRUJA_ESCARLATA_VISION/preview",
-      "descripcion": "Wanda Maximoff y Visión viven una vida suburbana ideal que comienza a sospechar que no todo es lo que parece."
-    },
-    {
-      "id": 134,
-      "titulo": "Shang-Chi y la leyenda de los diez anillos",
-      "disponible": false,
-      "año": 2021,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/shang-chi.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_SHANG_CHI/preview",
-      "descripcion": "Shang-Chi debe enfrentarse al pasado que pensó que había dejado atrás cuando se ve envuelto en la red de la misteriosa organización de los Diez Anillos."
-    },
-    {
-      "id": 135,
-      "titulo": "Falcon y el Soldado de Invierno",
-      "disponible": false,
-      "año": 2021,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/falcon-soldado-invierno.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_FALCON_SOLDADO_INVIERNO/preview",
-      "descripcion": "Sam Wilson y Bucky Barnes se unen en una aventura global que pone a prueba sus habilidades y su paciencia."
-    },
-    {
-      "id": 136,
-      "titulo": "Spider-Man: Lejos de casa",
-      "disponible": false,
-      "año": 2019,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/spiderman-lejos-casa.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_LEJOS_CASA/preview",
-      "descripcion": "Peter Parker va de vacaciones a Europa con sus amigos, pero Nick Fury aparece para reclutarlo en una misión para enfrentar a las amenazas elementales."
-    },
-    {
-      "id": 137,
-      "titulo": "Spider-Man: No Way Home",
-      "disponible": false,
-      "año": 2021,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/spiderman-no-way-home.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_SPIDERMAN_NO_WAY_HOME/preview",
-      "descripcion": "Con la identidad de Spider-Man revelada, Peter Parker pide ayuda al Doctor Strange, pero las cosas se complican cuando el multiverso se abre."
-    },
-    {
-      "id": 138,
-      "titulo": "Eternals",
-      "disponible": false,
-      "año": 2021,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/eternals.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_ETERNALS/preview",
-      "descripcion": "Los Eternos, una raza de seres inmortales, emergen de las sombras para reunirse contra los más antiguos enemigos de la humanidad, los Desviantes."
-    },
-    {
-      "id": 139,
-      "titulo": "Ojo de Halcón",
-      "disponible": false,
-      "año": 2021,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/ojo-halcon.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_OJO_HALCON/preview",
-      "descripcion": "Clint Barton debe asociarse con la joven Kate Bishop para enfrentar enemigos de su pasado como Ronin en una aventura navideña."
-    },
-    {
-      "id": 140,
-      "titulo": "Echo",
-      "disponible": false,  
-      "año": 2024,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/echo.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_ECHO/preview",
-      "descripcion": "Maya Lopez debe enfrentar su pasado, reconectar con sus raíces nativas americanas y abrazar su familia y legado."
-    },
-    {
-      "id": 141,
-      "titulo": "Doctor Strange en el multiverso de la locura",
-      "disponible": false,
-      "año": 2022,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/doctor-strange-multiverso.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_DOCTOR_STRANGE_MULTIVERSO/preview",
-      "descripcion": "El Doctor Strange viaja a través del multiverso y enfrenta una amenaza que podría destruir todas las realidades."
-    },
-    {
-      "id": 142,
-      "titulo": "Caballero Luna",
-      "disponible": false,
-      "año": 2022,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/caballero-luna.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_CABALLERO_LUNA/preview",
-      "descripcion": "Steven Grant descubre que tiene un trastorno de identidad disociativo y comparte cuerpo con el mercenario Marc Spector."
-    },
-    {
-      "id": 143,
-      "titulo": "She-Hulk: Abogada Hulka",
-      "disponible": false,
-      "año": 2022,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/she-hulk.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_SHE_HULK/preview",
-      "descripcion": "Jennifer Walters navega la complicada vida de una abogada soltera de 30 y tantos años que también resulta ser una Hulk verde de 2 metros."
-    },
-    {
-      "id": 144,
-      "titulo": "Ms. Marvel",
-      "disponible": false,
-      "año": 2022,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/ms-marvel.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_MS_MARVEL/preview",
-      "descripcion": "Kamala Khan, una adolescente fan de los superhéroes, descubre que tiene poderes propios y debe aprender a usarlos mientras protege su comunidad."
-    },
-    {
-      "id": 145,
-      "titulo": "Thor: Love and Thunder",
-      "disponible": false,
-      "año": 2022,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/thor-love-thunder.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_THOR_LOVE_THUNDER/preview",
-      "descripcion": "Thor se embarca en un viaje diferente a todo lo que ha enfrentado: una búsqueda de la paz interior. Pero su retiro es interrumpido por Gorr, el Carnicero de Dioses."
-    },
-    {
-      "id": 146,
-      "titulo": "Black Panther: Wakanda Forever",
-      "disponible": false,
-      "año": 2022,
-      "genero": "marvel",
-      "imagen": "https://ejemplo.com/black-panther-wakanda-forever.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_BLACK_PANTHER_WAKANDA_FOREVER/preview",
-      "descripcion": "La nación de Wakanda lucha por proteger su hogar de las potencias mundiales intervencionistas tras la muerte del Rey T'Challa."
-    },
-    {
-      "id": 147,
+      "id": 150,
       "titulo": "Guardianes de la Galaxia: Especial Felices Fiestas",
       "disponible": false,
       "año": 2022,
@@ -2051,7 +1577,7 @@
       "descripcion": "Los Guardianes celebran la Navidad y buscan el regalo perfecto para Peter Quill en la Tierra."
     },
     {
-      "id": 148,
+      "id": 151,
       "titulo": "Ant-Man y la Avispa: Quantumania",
       "disponible": false,
       "año": 2023,
@@ -2061,7 +1587,7 @@
       "descripcion": "Scott Lang y Hope van Dyne exploran el Reino Cuántico, donde se encuentran con extrañas criaturas y el peligroso Kang el Conquistador."
     },
     {
-      "id": 149,
+      "id": 152,
       "titulo": "Guardianes de la Galaxia Vol. 3",
       "disponible": false,
       "año": 2023,
@@ -2071,7 +1597,7 @@
       "descripcion": "Los Guardianes se embarcan en una última misión para proteger a uno de los suyos y salvar el universo una vez más."
     },
     {
-      "id": 150,
+      "id": 153,
       "titulo": "Invasión secreta",
       "disponible": false,
       "año": 2023,
@@ -2081,7 +1607,7 @@
       "descripcion": "Nick Fury descubre una conspiración de Skrulls que han estado infiltrándose en la Tierra durante años."
     },
     {
-      "id": 151,
+      "id": 154,
       "titulo": "Loki T2",
       "disponible": false,
       "año": 2023,
@@ -2091,7 +1617,7 @@
       "descripcion": "Loki continúa su aventura a través del tiempo y el espacio, enfrentando nuevas amenazas y descubriendo más secretos sobre la TVA."
     },
     {
-      "id": 152,
+      "id": 155,
       "titulo": "The Marvels",
       "disponible": false,
       "año": 2023,
@@ -2101,7 +1627,7 @@
       "descripcion": "Carol Danvers, Monica Rambeau y Kamala Khan deben unir fuerzas cuando sus poderes se entrelazan misteriosamente."
     },
     {
-      "id": 153,
+      "id": 156,
       "titulo": "Deadpool y Lobezno",
       "disponible": true,
       "año": 2024,
