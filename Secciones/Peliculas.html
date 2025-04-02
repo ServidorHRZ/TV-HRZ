@@ -588,46 +588,39 @@
             opacity: 0.8;
         }
 
-        /* Estilos actualizados para el carrusel */
+        /* Estilos mejorados para el carrusel de anuncios */
         .announcements-carousel {
             position: relative;
-            width: 85%; /* Reducido de 90% para dar más espacio lateral */
-            max-width: 750px; /* Ajustado de 800px para mantener la proporción */
-            margin: 100px auto 20px auto;
-            border-radius: 15px;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto 10px;
             overflow: hidden;
-            height: 90vh;
-            max-height: 550px;
+            border-radius: 10px;
+            z-index: 1;
+            height: 400px;
         }
 
         .announcements-container {
-            position: absolute;
-            width: 100%;
-            height: 100%;
             display: flex;
-            overflow: hidden;
+            transition: transform 0.5s ease;
+            height: 100%;
         }
 
         .announcement-slide {
-            position: absolute;
-            width: 100%;
+            min-width: 100%;
+            position: relative;
             height: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .announcement-slide.active {
-            opacity: 1;
+            overflow: hidden;
         }
 
         .announcement-image {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 6s ease;
         }
 
         .announcement-content {
@@ -635,94 +628,192 @@
             bottom: 0;
             left: 0;
             right: 0;
+            padding: 20px;
             background: linear-gradient(
                 to top,
-                rgba(0, 0, 0, 0.95) 0%,
-                rgba(0, 0, 0, 0.7) 70%,
-                transparent 100%
+                rgba(0, 0, 0, 0.95) 0%,    /* Más oscuro en la base */
+                rgba(0, 0, 0, 0.8) 40%,    /* Transición suave */
+                rgba(0, 0, 0, 0.6) 60%,    /* Se va haciendo más transparente */
+                rgba(0, 0, 0, 0.2) 80%,    /* Casi transparente */
+                transparent 100%           /* Completamente transparente */
             );
-            padding: 20px;
+            text-align: center;
         }
 
         .announcement-title {
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil para el texto */
+            color: #00ffff;
+            font-size: 1.8em;
+            margin-bottom: 15px;
             font-family: 'Orbitron', sans-serif;
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            text-align: center;
-            text-transform: uppercase;
+            font-weight: 700;
             letter-spacing: 2px;
-            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5),
-                         0 0 20px rgba(0, 255, 255, 0.3);
-            animation: titleGlow 2s ease-in-out infinite alternate;
+            text-transform: uppercase;
+            animation: glow 2s ease-in-out infinite alternate;
+            text-align: center;
         }
 
-        @keyframes titleGlow {
-            from {
-                text-shadow: 0 0 10px rgba(0, 255, 255, 0.5),
-                             0 0 20px rgba(0, 255, 255, 0.3);
-            }
-            to {
-                text-shadow: 0 0 15px rgba(0, 255, 255, 0.7),
-                             0 0 30px rgba(0, 255, 255, 0.5),
-                             0 0 40px rgba(0, 255, 255, 0.3);
-            }
-        }
-
-        .netflix-buttons {
+        .announcement-info {
+            position: relative;
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 10px;
-            margin-bottom: 0px;
+            margin: 15px auto;
+            width: 100%;
+            max-width: 300px;
         }
 
-        .netflix-button {
-            padding: 10px 25px;
-            border-radius: 5px;
-            font-size: 1rem;
-            font-weight: 600;
+        .ver-ahora-btn,
+        .mi-lista-btn {
+            flex: 0 1 auto;
+            min-width: 120px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
             display: flex;
+            justify-content: center;
             align-items: center;
             gap: 8px;
-            cursor: pointer;
             border: none;
+            outline: none;
             transition: all 0.3s ease;
         }
 
-        .netflix-button.reproducir {
-            background: white;
+        .ver-ahora-btn {
+            background: rgba(255, 255, 255, 0.9);
             color: black;
+            box-shadow: none;
         }
 
-        .netflix-button.mi-lista {
+        .mi-lista-btn {
             background: rgba(109, 109, 110, 0.7);
             color: white;
+            box-shadow: none;
+        }
+
+        .ver-ahora-btn:focus,
+        .mi-lista-btn:focus {
+            outline: none;
+            border: none;
+        }
+
+        /* Ajustes para móviles */
+        @media (max-width: 768px) {
+            .announcement-info {
+                gap: 8px;
+                max-width: 280px;
+            }
+
+            .ver-ahora-btn,
+            .mi-lista-btn {
+                min-width: 100px;
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            display: flex;
+            gap: 10px;
+            z-index: 3;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+        }
+
+        .indicator.active {
+            background: var(--primary-color);
+            transform: scale(1.2);
+        }
+
+        /* Animación de entrada para los slides */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .announcement-slide {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .announcement-slide.active .announcement-image {
+            transform: scale(1.1);
+        }
+
+        /* Media queries para el carrusel */
+        @media (max-width: 768px) {
+            .announcements-carousel {
+                height: 300px;
+                margin-top: 0;
+            }
+
+            .announcement-content {
+                padding: 20px;
+            }
+
+            .announcement-title {
+                font-size: 1.4em;
+                margin-bottom: 10px;
+            }
         }
 
         /* Ajustes responsive */
+        @media (max-width: 1200px) {
+            .movie-container {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .movie-container {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
         @media (max-width: 768px) {
-            .announcements-carousel {
-                height: 80vh;
-                max-height: 500px;
-                margin: 80px auto 20px auto;
-            }
-            
-            .announcement-title {
-                font-size: 1.5rem;
-            }
-            
-            .netflix-button {
-                padding: 8px 20px;
-                font-size: 0.9rem;
+            .movie-container {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 8px;
+                padding: 8px;
             }
         }
 
         @media (max-width: 480px) {
+            .movie-container {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 6px;
+                padding: 6px;
+            }
+        }
+
+        .categories-wrapper {
+            display: none;
+        }
+
+        .categories-container {
+            display: none;
+        }
+
+        .announcements-carousel {
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
             .announcements-carousel {
-                height: 70vh;
-                max-height: 450px;
-                margin: 70px auto 20px auto;
+                margin-top: 50px;
             }
         }
 
@@ -879,7 +970,7 @@
             opacity: 0;
             transition: opacity 0.3s ease, background 0.3s ease;
             z-index: 10;
-            display: none;
+            display: none; /* Inicialmente oculto */
         }
 
         .nav-arrow:hover {
@@ -903,7 +994,7 @@
 
         @media (max-width: 768px) {
             .nav-arrow {
-                display: none !important;
+                display: none !important; /* Ocultar en móviles */
             }
         }
 
@@ -955,12 +1046,12 @@
             }
 
             .categoria-contenedor .movie-card {
-                width: 110px;
-                min-width: 110px;
+                width: 110px; /* Tamaño fijo más pequeño */
+                min-width: 110px; /* Asegura el tamaño mínimo */
             }
 
             .movie-card img {
-                height: 165px;
+                height: 165px; /* Altura proporcional al nuevo ancho */
             }
 
             .movie-info {
@@ -979,7 +1070,7 @@
 
         @media (max-width: 360px) {
             .categoria-contenedor .movie-card {
-                width: 100px;
+                width: 100px; /* Aún más pequeño para pantallas muy pequeñas */
                 min-width: 100px;
             }
 
@@ -991,7 +1082,7 @@
         .logos-container {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 8px; /* Espacio entre logos */
         }
 
         .categoria-titulo {
@@ -1003,58 +1094,11 @@
             font-size: 1.8em;
             padding-left: 20px;
             text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* Para que los logos pasen a la siguiente línea si no hay espacio */
         }
 
-        .like-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: rgba(0, 0, 0, 0.7);
-            border: none;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            opacity: 0;
-            z-index: 2;
-        }
-
-        .movie-card:hover .like-button {
-            opacity: 1;
-        }
-
-        .like-button i {
-            color: white;
-            font-size: 1.2em;
-            transition: all 0.3s ease;
-        }
-
-        .like-button.liked {
-            background: #ff4081;
-            transform: scale(1.1);
-        }
-
-        .like-button.liked i {
-            color: white;
-            animation: heartBeat 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        @keyframes heartBeat {
-            0% { transform: scale(1); }
-            25% { transform: scale(1.4); }
-            50% { transform: scale(1); }
-            75% { transform: scale(1.2); }
-            100% { transform: scale(1); }
-        }
-
-        .like-button:hover {
-            transform: scale(1.1);
-            background: rgba(255, 64, 129, 0.8);
+        #carouselIndicators {
+            display: none !important;
         }
     </style>
 </head>
@@ -1083,6 +1127,9 @@
     <div class="announcements-carousel">
         <div class="announcements-container" id="announcementsContainer">
             <!-- Los anuncios se cargarán aquí dinámicamente -->
+        </div>
+        <div class="carousel-indicators" id="carouselIndicators">
+            <!-- Los indicadores se generarán dinámicamente -->
         </div>
     </div>
 
@@ -1350,9 +1397,6 @@
                                 <div class="movie-info">
                                     <h3>${pelicula.titulo}</h3>
                                     <p>${pelicula.año || ''}</p>
-                                    <button class="like-button liked" data-pelicula='${JSON.stringify(pelicula)}'>
-                                        <i class="fas fa-heart"></i>
-                                    </button>
                                 </div>
                             </div>
                         `).join('')}
@@ -1384,22 +1428,16 @@
                             </div>
                         </h2>
                         <div class="categoria-contenedor">
-                            ${categoria.peliculas.map(pelicula => {
-                                const estaEnMiLista = miListaPeliculas.some(p => p.titulo === pelicula.titulo);
-                                return `
-                                    <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
-                                        ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
-                                        <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
-                                        <div class="movie-info">
-                                            <h3>${pelicula.titulo}</h3>
-                                            <p>${pelicula.año || ''}</p>
-                                            <button class="like-button ${estaEnMiLista ? 'liked' : ''}" data-pelicula='${JSON.stringify(pelicula)}'>
-                                                <i class="fas fa-heart"></i>
-                                            </button>
-                                        </div>
+                            ${categoria.peliculas.map(pelicula => `
+                                <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
+                                    ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
+                                    <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
+                                    <div class="movie-info">
+                                        <h3>${pelicula.titulo}</h3>
+                                        <p>${pelicula.año || ''}</p>
                                     </div>
-                                `;
-                            }).join('')}
+                                </div>
+                            `).join('')}
                         </div>
                         <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
                         <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
@@ -1409,16 +1447,7 @@
                 }
             }
 
-            // Agregar event listeners para los botones de Me gusta
-            document.querySelectorAll('.like-button').forEach(button => {
-                button.addEventListener('click', (e) => {
-                    e.stopPropagation(); // Evitar que se abra la película al dar like
-                    const peliculaData = JSON.parse(button.getAttribute('data-pelicula'));
-                    toggleLike(button, peliculaData);
-                });
-            });
-
-            // Agregar event listeners para abrir la película
+            // Agregar event listeners a todas las movie-cards
             document.querySelectorAll('.movie-card').forEach(card => {
                 card.addEventListener('click', () => {
                     const peliculaData = card.getAttribute('data-pelicula');
@@ -1435,57 +1464,113 @@
             setupNavArrows();
         }
 
-        // Función modificada para obtener posters aleatorios
-        function obtenerPostersAleatorios(cantidad) {
-            // Filtrar solo películas disponibles
-            const peliculasDisponibles = todasLasPeliculas.filter(pelicula => pelicula.disponible);
+        // Función para obtener películas aleatorias para los posters
+        function obtenerPeliculasAleatorias(peliculas, cantidad) {
+            const peliculasDisponibles = peliculas.filter(p => p.disponible);
+            const peliculasAleatorias = [];
+            const copiasPeliculas = [...peliculasDisponibles];
             
-            // Mezclar el array de películas
-            const peliculasMezcladas = [...peliculasDisponibles].sort(() => Math.random() - 0.5);
+            for (let i = 0; i < cantidad && copiasPeliculas.length > 0; i++) {
+                const indiceAleatorio = Math.floor(Math.random() * copiasPeliculas.length);
+                peliculasAleatorias.push(copiasPeliculas[indiceAleatorio]);
+                copiasPeliculas.splice(indiceAleatorio, 1);
+            }
             
-            // Tomar la cantidad solicitada de películas y mantener toda la información
-            return peliculasMezcladas.slice(0, cantidad);
+            return peliculasAleatorias;
         }
 
-        // Función modificada para mostrar los anuncios
+        // Modificar la función mostrarAnuncios
         function mostrarAnuncios() {
             const container = document.getElementById('announcementsContainer');
-            if (!container) return;
+            container.innerHTML = '';
             
-            const peliculasAleatorias = obtenerPostersAleatorios(5);
-            
-            container.innerHTML = peliculasAleatorias.map((pelicula, index) => `
-                <div class="announcement-slide ${index === 0 ? 'active' : ''}">
+            // Obtener películas aleatorias en lugar de usar announcements
+            const postersAleatorios = obtenerPeliculasAleatorias(todasLasPeliculas, 5);
+
+            postersAleatorios.forEach(pelicula => {
+                const slide = document.createElement('div');
+                slide.className = 'announcement-slide';
+                
+                // Convertimos el objeto película a una cadena JSON y escapamos las comillas
+                const peliculaData = JSON.stringify(pelicula)
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#39;');
+                
+                // Verificar si la película ya está en Mi Lista
+                const miLista = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
+                const estaEnMiLista = miLista.some(p => p.id === pelicula.id);
+                
+                const botonVerAhoraHTML = `
+                    <button class="ver-ahora-btn" data-pelicula='${peliculaData}' onclick="abrirPelicula(this.getAttribute('data-pelicula'))">
+                        <i class="fas fa-play"></i> Reproducir
+                    </button>
+                `;
+                
+                const botonMiListaHTML = `
+                    <button class="mi-lista-btn ${estaEnMiLista ? 'en-mi-lista' : ''}" 
+                            data-pelicula='${peliculaData}' 
+                            onclick="toggleMiLista(this)">
+                        <i class="fas ${estaEnMiLista ? 'fa-check' : 'fa-plus'}"></i>
+                        Mi lista
+                    </button>
+                `;
+                
+                slide.innerHTML = `
                     <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="announcement-image">
                     <div class="announcement-content">
                         <h2 class="announcement-title">${pelicula.titulo}</h2>
-                        <div class="netflix-buttons">
-                            <button class="netflix-button reproducir" onclick='abrirPelicula(${JSON.stringify(pelicula).replace(/"/g, '&quot;')})'>
-                                <i class="fas fa-play"></i>
-                                Reproducir
-                            </button>
-                            <button class="netflix-button mi-lista" onclick="toggleLike(this, ${JSON.stringify(pelicula).replace(/"/g, '&quot;')})">
-                                <i class="fas fa-plus"></i>
-                                Mi lista
-                            </button>
+                        <div class="announcement-info">
+                            ${botonVerAhoraHTML}
+                            ${botonMiListaHTML}
                         </div>
                     </div>
-                </div>
-            `).join('');
-
-            startAutoSlide();
+                `;
+                container.appendChild(slide);
+            });
+            
+            updateSlidePosition();
         }
 
-        // Actualizar la función updateSlidePosition
+        // Función para alternar película en Mi Lista
+        function toggleMiLista(boton) {
+            const peliculaData = JSON.parse(boton.getAttribute('data-pelicula'));
+            const miLista = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
+            const index = miLista.findIndex(p => p.id === peliculaData.id);
+            
+            if (index === -1) {
+                // Agregar a Mi Lista
+                miLista.push(peliculaData);
+                boton.innerHTML = '<i class="fas fa-check"></i> En Mi Lista';
+                boton.classList.add('en-mi-lista');
+            } else {
+                // Quitar de Mi Lista
+                miLista.splice(index, 1);
+                boton.innerHTML = '<i class="fas fa-plus"></i> Agregar a Mi Lista';
+                boton.classList.remove('en-mi-lista');
+            }
+            
+            localStorage.setItem('miListaPeliculas', JSON.stringify(miLista));
+            
+            // Disparar evento para actualizar la interfaz
+            window.dispatchEvent(new Event('miListaPeliculasActualizada'));
+        }
+
         function updateSlidePosition() {
+            const container = document.getElementById('announcementsContainer');
             const slides = document.querySelectorAll('.announcement-slide');
-            slides.forEach((slide, index) => {
+            
+            // Remover la clase active de todos los slides
+            slides.forEach(slide => {
                 slide.classList.remove('active');
             });
+            
+            // Actualizar la posición del contenedor
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Añadir la clase active al slide actual
             slides[currentSlide].classList.add('active');
         }
 
-        // Funciones auxiliares del carrusel
         function startAutoSlide() {
             stopAutoSlide();
             autoSlideInterval = setInterval(() => {
@@ -1509,59 +1594,18 @@
             updateSlidePosition();
         }
 
-        // Función unificada para abrir películas
-        function abrirPelicula(peliculaData) {
-            let pelicula;
-            
-            // Si recibimos un ID (desde el buscador)
-            if (typeof peliculaData === 'number') {
-                pelicula = todasLasPeliculas.find(p => p.id === peliculaData);
-            } 
-            // Si recibimos un string JSON (desde las tarjetas de película)
-            else if (typeof peliculaData === 'string') {
-                try {
-                    pelicula = JSON.parse(peliculaData);
-                } catch (error) {
-                    console.error('Error al procesar datos de película:', error);
-                    return;
-                }
-            }
-            // Si recibimos un objeto (desde otras partes)
-            else if (typeof peliculaData === 'object') {
-                pelicula = peliculaData;
-            }
-
-            if (pelicula) {
-                localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
-                window.location.href = 'movie.html';
-            } else {
-                console.error('No se pudo encontrar la información de la película');
-            }
-        }
-
-        // Modificar la función de mostrar resultados de búsqueda
-        function mostrarResultadosBusqueda(resultados, contenedor) {
-            if (resultados.length === 0) {
-                contenedor.innerHTML = '<div class="resultado-item">No se encontraron resultados</div>';
-            } else {
-                contenedor.innerHTML = resultados.map(pelicula => `
-                    <div class="resultado-item" onclick="abrirPelicula(${JSON.stringify(pelicula).replace(/"/g, '&quot;')})">
-                        <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="resultado-imagen">
-                        <div class="resultado-info">
-                            <div class="resultado-titulo">${pelicula.titulo}</div>
-                            <div class="resultado-instructor">
-                                ${pelicula.año || 'Año no disponible'} • 
-                                <span style="color: var(--primary-color)">${
-                                    Array.isArray(pelicula.genero) 
-                                        ? pelicula.genero.join(', ') 
-                                        : pelicula.genero || 'Género no especificado'
-                                }</span>
-                            </div>
-                        </div>
-                    </div>
-                `).join('');
-            }
-            contenedor.style.display = 'block';
+        // Función para ver serie
+        function verPelicula(peliculaId) {
+            fetch('../DataBase/peliculas.json')
+                .then(response => response.json())
+                .then(data => {
+                    const pelicula = data.peliculas.find(p => p.id === peliculaId);
+                    if (pelicula) {
+                        localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
+                        window.location.href = 'movie.html';
+                    }
+                })
+                .catch(error => console.error('Error:', error));
         }
 
         // Event Listeners
@@ -1868,6 +1912,18 @@
             }
         });
 
+        // Agregar esta nueva función para manejar la apertura de películas
+        function abrirPelicula(peliculaData) {
+            try {
+                const pelicula = JSON.parse(peliculaData);
+                localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
+                window.location.href = 'movie.html';
+            } catch (error) {
+                console.error('Error al procesar la película:', error);
+                console.log('Datos de película recibidos:', peliculaData);
+            }
+        }
+
         // Modificar la función de búsqueda
         function searchMovies(query) {
             const resultadosContainer = document.getElementById('resultadosBusqueda');
@@ -1890,34 +1946,54 @@
             mostrarResultadosBusqueda(resultados, resultadosContainer);
         }
 
-        // Agregar la función toggleLike
-        function toggleLike(button, pelicula) {
-            const miListaPeliculas = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
-            const isLiked = button.classList.contains('liked');
-            
-            if (!isLiked) {
-                button.classList.add('liked');
-                // Agregar al inicio de Mi Lista si no está
-                if (!miListaPeliculas.some(p => p.titulo === pelicula.titulo)) {
-                    miListaPeliculas.unshift(pelicula);
-                }
+        function mostrarResultadosBusqueda(resultados, contenedor) {
+            if (resultados.length === 0) {
+                contenedor.innerHTML = '<div class="resultado-item">No se encontraron resultados</div>';
             } else {
-                button.classList.remove('liked');
-                // Remover de Mi Lista
-                const index = miListaPeliculas.findIndex(p => p.titulo === pelicula.titulo);
-                if (index > -1) {
-                    miListaPeliculas.splice(index, 1);
-                }
+                contenedor.innerHTML = resultados.map(pelicula => `
+                    <div class="resultado-item" onclick="abrirPelicula(${pelicula.id})">
+                        <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="resultado-imagen">
+                        <div class="resultado-info">
+                            <div class="resultado-titulo">${pelicula.titulo}</div>
+                            <div class="resultado-instructor">
+                                ${pelicula.año || 'Año no disponible'} • 
+                                <span style="color: var(--primary-color)">${
+                                    Array.isArray(pelicula.genero) 
+                                        ? pelicula.genero.join(', ') 
+                                        : pelicula.genero || 'Género no especificado'
+                                }</span>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
             }
-            
-            localStorage.setItem('miListaPeliculas', JSON.stringify(miListaPeliculas));
-            window.dispatchEvent(new Event('miListaPeliculasActualizada'));
-            
-            // Actualizar todos los botones de like para la misma película
-            const peliculaJSON = JSON.stringify(pelicula);
-            document.querySelectorAll('.like-button').forEach(btn => {
-                if (btn.getAttribute('data-pelicula') === peliculaJSON) {
-                    btn.classList.toggle('liked', !isLiked);
+            contenedor.style.display = 'block';
+        }
+
+        // Modificar la función setupBuscador
+        function setupBuscador() {
+            const searchInput = document.getElementById('search-input');
+            const resultadosContainer = document.getElementById('resultadosBusqueda');
+            const headerSearch = document.getElementById('headerSearch');
+
+            searchInput.addEventListener('input', (e) => {
+                searchMovies(e.target.value);
+            });
+
+            // Cerrar resultados al hacer clic fuera
+            document.addEventListener('click', (e) => {
+                if (!headerSearch.contains(e.target)) {
+                    resultadosContainer.style.display = 'none';
+                }
+            });
+
+            // Agregar manejo de la tecla Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    headerSearch.classList.remove('active');
+                    searchInput.value = '';
+                    resultadosContainer.style.display = 'none';
+                    mostrarPeliculasPorCategorias(todasLasPeliculas);
                 }
             });
         }
