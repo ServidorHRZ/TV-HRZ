@@ -43,13 +43,61 @@
         }
 
         .reproductor-principal {
+            position: relative;
             width: 100%;
             height: 100%;
             background-color: #000;
-            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .capa-bloqueadora {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            background: transparent;
+            pointer-events: auto;
+        }
+
+        .boton-fullscreen {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 11;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .boton-fullscreen:hover {
+            background: rgba(0, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        .reproductor-principal.fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9999;
+        }
+
+        .reproductor-principal.fullscreen .boton-fullscreen i {
+            transform: rotate(180deg);
         }
 
         .reproductor-iframe {
@@ -574,23 +622,22 @@
     <div class="main-content">
         <div class="reproductor-fijo">
             <div class="reproductor-principal">
+                <!-- Botón de pantalla completa -->
+                <button id="botonPantallaCompleta" class="boton-fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+
+                <!-- Capa para prevenir interacción -->
+                <div class="capa-bloqueadora"></div>
+
                 <!-- Reproductor de telelibre -->
                 <iframe id="reproductor-iframe" 
                         class="reproductor-iframe" 
                         style="display: none;"
                         frameborder="0"
                         scrolling="no"
-                        allow="autoplay; fullscreen"
-                        allowfullscreen
-                        allow-scripts
-                        allow="encrypted-media"
-                        allow="accelerometer"
-                        allow="gyroscope"
-                        allow="picture-in-picture"
-                        volume="1"
-                        sandbox="allow-same-origin allow-scripts allow-forms allow-presentation"
-                        referrerpolicy="no-referrer"
-                        loading="lazy">
+                        allow="autoplay; fullscreen; encrypted-media; accelerometer; gyroscope; picture-in-picture"
+                        allowfullscreen>
                 </iframe>
                 
                 <!-- Reproductor de video HTML5 para m3u8 -->
@@ -930,20 +977,18 @@
             reproductorIframe.style.display = 'none';
             reproductorHtml5.style.display = 'none';
 
-            // Manejar específicamente Win Sports+ y otros canales con embed especial
+            // Configurar iframe sin restricciones
+            reproductorIframe.removeAttribute('sandbox');
+            reproductorIframe.removeAttribute('referrerpolicy');
+
             if (canal.nombre === "Win Sports +") {
                 reproductorIframe.style.display = 'block';
                 reproductorIframe.src = canal.url_stream;
-                // Asegurar que el iframe tenga los permisos necesarios
-                reproductorIframe.setAttribute('allow', 'autoplay; fullscreen; encrypted-media');
-                reproductorIframe.setAttribute('allowfullscreen', 'true');
             }
-            // Manejar otros canales con embed
             else if (canal.url_stream.includes('embed.sdfgnks') || canal.url_stream.includes('embed.php')) {
                 reproductorIframe.style.display = 'block';
                 reproductorIframe.src = canal.url_stream;
             }
-            // Manejar streams HLS (m3u8)
             else if (canal.url_stream.includes('.m3u8')) {
                 reproductorHtml5.style.display = 'block';
                 
@@ -963,7 +1008,6 @@
                     });
                 }
             }
-            // Para otros tipos de URLs
             else {
                 reproductorIframe.style.display = 'block';
                 reproductorIframe.src = canal.url_stream;
@@ -978,6 +1022,10 @@
                     item.classList.remove('activo');
                 }
             });
+
+            // Asegurarse de que la capa bloqueadora esté activa
+            const capaBloqueadora = document.querySelector('.capa-bloqueadora');
+            capaBloqueadora.style.display = 'block';
         }
 
         function obtenerCategorias() {
@@ -1153,6 +1201,37 @@
                     dropdown?.classList.remove('mostrar');
                 }
             }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const botonFullscreen = document.getElementById('botonPantallaCompleta');
+            const reproductorPrincipal = document.querySelector('.reproductor-principal');
+            
+            botonFullscreen.addEventListener('click', function() {
+                if (!document.fullscreenElement) {
+                    if (reproductorPrincipal.requestFullscreen) {
+                        reproductorPrincipal.requestFullscreen();
+                    } else if (reproductorPrincipal.webkitRequestFullscreen) {
+                        reproductorPrincipal.webkitRequestFullscreen();
+                    } else if (reproductorPrincipal.msRequestFullscreen) {
+                        reproductorPrincipal.msRequestFullscreen();
+                    }
+                    botonFullscreen.querySelector('i').classList.replace('fa-expand', 'fa-compress');
+                } else {
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                    } else if (document.webkitExitFullscreen) {
+                        document.webkitExitFullscreen();
+                    } else if (document.msExitFullscreen) {
+                        document.msExitFullscreen();
+                    }
+                    botonFullscreen.querySelector('i').classList.replace('fa-compress', 'fa-expand');
+                }
+            });
+
+            document.addEventListener('fullscreenchange', function() {
+                reproductorPrincipal.classList.toggle('fullscreen', document.fullscreenElement !== null);
+            });
         });
     </script>
 </body>
