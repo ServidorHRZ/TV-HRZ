@@ -628,16 +628,16 @@
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 20px;
+            padding: 30px;
             background: linear-gradient(
                 to top,
-                rgba(0, 0, 0, 0.95) 0%,    /* Más oscuro en la base */
-                rgba(0, 0, 0, 0.8) 40%,    /* Transición suave */
-                rgba(0, 0, 0, 0.6) 60%,    /* Se va haciendo más transparente */
-                rgba(0, 0, 0, 0.2) 80%,    /* Casi transparente */
-                transparent 100%           /* Completamente transparente */
+                rgba(0, 0, 0, 0.95) 0%,
+                rgba(0, 0, 0, 0.8) 40%,
+                rgba(0, 0, 0, 0.6) 60%,
+                rgba(0, 0, 0, 0.2) 80%,
+                transparent 100%
             );
-            text-align: center;
+            z-index: 2; /* Asegura que esté por encima del video */
         }
 
         .announcement-title {
@@ -1100,6 +1100,179 @@
         #carouselIndicators {
             display: none !important;
         }
+
+        /* Nuevo contenedor flex para PC */
+        @media (min-width: 769px) {
+            .announcement-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 30px 50px;
+            }
+
+            .announcement-title {
+                text-align: left;
+                font-size: 2.5em;
+                margin: 0;
+                flex: 1;
+            }
+
+            .announcement-info {
+                margin: 0;
+                justify-content: flex-end;
+                min-width: 280px;
+            }
+        }
+
+        /* Mantener diseño centrado para móviles */
+        @media (max-width: 768px) {
+            .announcement-content {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .announcement-title {
+                font-size: 1.4em;
+                margin-bottom: 15px;
+            }
+
+            .announcement-info {
+                justify-content: center;
+                margin: 15px auto;
+            }
+        }
+
+        .announcement-trailer {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(1.5); /* Hace el video 50% más grande */
+        }
+
+        @media (max-width: 768px) {
+            .announcement-trailer {
+                display: none;
+            }
+        }
+
+        .announcement-slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            flex: 0 0 100%;
+            overflow: hidden; /* Oculta las partes del video que se desborden */
+        }
+
+        /* Asegurar que el contenido esté por encima del video */
+        .announcement-content {
+            z-index: 2;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.95) 0%,
+                rgba(0, 0, 0, 0.6) 60%,
+                transparent 100%
+            );
+        }
+
+        /* Estilos actualizados para el botón de sonido */
+        .sound-toggle {
+            position: absolute;
+            top: 20px; /* Cambiado de bottom a top */
+            right: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border: none;
+            color: #ffffff; /* Cambiado a blanco */
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sound-toggle:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        .sound-toggle i {
+            font-size: 1.2rem;
+            color: #ffffff; /* Asegurando que el ícono sea blanco */
+        }
+
+        /* Ajustes para el carrusel de anuncios en móviles */
+        @media (max-width: 768px) {
+            .announcements-carousel {
+                height: 500px; /* Aumentado de 300px a 500px */
+                margin-top: 50px;
+            }
+
+            .announcement-slide {
+                height: 100%;
+            }
+
+            .announcement-image {
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .announcement-content {
+                padding: 20px;
+                background: linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.95) 0%,
+                    rgba(0, 0, 0, 0.8) 40%,
+                    rgba(0, 0, 0, 0.6) 60%,
+                    rgba(0, 0, 0, 0.4) 80%,
+                    transparent 100%
+                );
+            }
+        }
+
+        /* Ajuste adicional para pantallas más pequeñas */
+        @media (max-width: 480px) {
+            .announcements-carousel {
+                height: 450px; /* Ajustado para pantallas más pequeñas */
+            }
+        }
+
+        /* Ajustes para los botones en móviles */
+        @media (max-width: 768px) {
+            .ver-ahora-btn,
+            .mi-lista-btn {
+                padding: 12px 24px; /* Aumentado de 8px 16px */
+                font-size: 1.1rem; /* Aumentado de 0.9rem */
+                min-width: 140px; /* Aumentado de 120px */
+                gap: 10px; /* Aumentado de 8px */
+            }
+
+            .ver-ahora-btn i,
+            .mi-lista-btn i {
+                font-size: 1.2rem; /* Aumentado el tamaño de los iconos */
+            }
+
+            .announcement-info {
+                gap: 15px; /* Aumentado el espacio entre botones */
+                max-width: 320px; /* Aumentado el ancho máximo del contenedor */
+            }
+        }
+
+        /* Ajuste adicional para pantallas más pequeñas */
+        @media (max-width: 480px) {
+            .ver-ahora-btn,
+            .mi-lista-btn {
+                padding: 10px 20px; /* Ligeramente más pequeño para pantallas muy pequeñas */
+                font-size: 1rem;
+                min-width: 130px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1406,6 +1579,19 @@
                 `;
                 
                 categoriasWrapper.appendChild(seccionMiLista);
+
+                // Agregar event listeners a las tarjetas de Mi Lista
+                const miListaCards = seccionMiLista.querySelectorAll('.movie-card');
+                miListaCards.forEach(card => {
+                    card.addEventListener('click', () => {
+                        try {
+                            const peliculaData = JSON.parse(card.getAttribute('data-pelicula'));
+                            abrirPelicula(peliculaData);
+                        } catch (error) {
+                            console.error('Error al procesar película de Mi Lista:', error);
+                        }
+                    });
+                });
             }
             
             const categorias = organizarPorCategorias(peliculas);
@@ -1484,39 +1670,55 @@
             const container = document.getElementById('announcementsContainer');
             container.innerHTML = '';
             
-            // Obtener películas aleatorias en lugar de usar announcements
             const postersAleatorios = obtenerPeliculasAleatorias(todasLasPeliculas, 5);
+            const esPC = window.innerWidth > 768;
 
-            postersAleatorios.forEach(pelicula => {
+            postersAleatorios.forEach((pelicula, index) => {
                 const slide = document.createElement('div');
                 slide.className = 'announcement-slide';
                 
-                // Convertimos el objeto película a una cadena JSON y escapamos las comillas
-                const peliculaData = JSON.stringify(pelicula)
-                    .replace(/"/g, '&quot;')
-                    .replace(/'/g, '&#39;');
+                // Modificar el src del iframe para que inicie con sonido
+                const trailerSrc = esPC && pelicula.trailer ? 
+                    `${pelicula.trailer}?autoplay=0&mute=0&controls=0&showinfo=0&rel=0&loop=1&playlist=${pelicula.trailer.split('embed/')[1]}&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3` 
+                    : '';
                 
-                // Verificar si la película ya está en Mi Lista
+                const contenidoMedia = esPC && pelicula.trailer ? `
+                    <iframe 
+                        id="trailerFrame_${pelicula.id}"
+                        src="${trailerSrc}"
+                        class="announcement-trailer"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        style="pointer-events: none;"
+                        allowfullscreen>
+                    </iframe>
+                    <button class="sound-toggle" onclick="toggleSound(${pelicula.id})" style="z-index: 3;">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                ` : `
+                    <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="announcement-image">
+                `;
+
                 const miLista = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
                 const estaEnMiLista = miLista.some(p => p.id === pelicula.id);
                 
                 const botonVerAhoraHTML = `
-                    <button class="ver-ahora-btn" data-pelicula='${peliculaData}' onclick="abrirPelicula(this.getAttribute('data-pelicula'))">
+                    <button class="ver-ahora-btn" data-pelicula='${pelicula.id}' onclick="abrirPelicula(${pelicula.id})">
                         <i class="fas fa-play"></i> Reproducir
                     </button>
                 `;
                 
                 const botonMiListaHTML = `
                     <button class="mi-lista-btn ${estaEnMiLista ? 'en-mi-lista' : ''}" 
-                            data-pelicula='${peliculaData}' 
+                            data-pelicula='${pelicula.id}' 
                             onclick="toggleMiLista(this)">
                         <i class="fas ${estaEnMiLista ? 'fa-check' : 'fa-plus'}"></i>
                         Mi lista
                     </button>
                 `;
-                
+
                 slide.innerHTML = `
-                    <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="announcement-image">
+                    ${contenidoMedia}
                     <div class="announcement-content">
                         <h2 class="announcement-title">${pelicula.titulo}</h2>
                         <div class="announcement-info">
@@ -1526,56 +1728,55 @@
                     </div>
                 `;
                 container.appendChild(slide);
+                
+                // Activar solo el primer slide con sonido
+                if (index === 0 && esPC && pelicula.trailer) {
+                    setTimeout(() => {
+                        const iframe = document.getElementById(`trailerFrame_${pelicula.id}`);
+                        iframe.src = iframe.src.replace('autoplay=0', 'autoplay=1');
+                    }, 1000);
+                }
             });
             
             updateSlidePosition();
         }
 
-        // Función para alternar película en Mi Lista
-        function toggleMiLista(boton) {
-            const peliculaData = JSON.parse(boton.getAttribute('data-pelicula'));
-            const miLista = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
-            const index = miLista.findIndex(p => p.id === peliculaData.id);
-            
-            if (index === -1) {
-                // Agregar a Mi Lista
-                miLista.push(peliculaData);
-                boton.innerHTML = '<i class="fas fa-check"></i> En Mi Lista';
-                boton.classList.add('en-mi-lista');
-            } else {
-                // Quitar de Mi Lista
-                miLista.splice(index, 1);
-                boton.innerHTML = '<i class="fas fa-plus"></i> Agregar a Mi Lista';
-                boton.classList.remove('en-mi-lista');
-            }
-            
-            localStorage.setItem('miListaPeliculas', JSON.stringify(miLista));
-            
-            // Disparar evento para actualizar la interfaz
-            window.dispatchEvent(new Event('miListaPeliculasActualizada'));
-        }
-
+        // Modificar la función updateSlidePosition
         function updateSlidePosition() {
             const container = document.getElementById('announcementsContainer');
             const slides = document.querySelectorAll('.announcement-slide');
             
-            // Remover la clase active de todos los slides
-            slides.forEach(slide => {
-                slide.classList.remove('active');
+            slides.forEach((slide, index) => {
+                const iframe = slide.querySelector('iframe');
+                if (iframe) {
+                    if (index === currentSlide) {
+                        // Activar solo el video del slide actual
+                        const newSrc = iframe.src
+                            .replace('autoplay=0', 'autoplay=1')
+                            .replace('mute=1', 'mute=0');
+                        if (iframe.src !== newSrc) {
+                            iframe.src = newSrc;
+                        }
+                    } else {
+                        // Detener completamente los otros videos
+                        const baseUrl = iframe.src.split('?')[0];
+                        iframe.src = `${baseUrl}?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3`;
+                    }
+                }
+                slide.classList.toggle('active', index === currentSlide);
             });
             
-            // Actualizar la posición del contenedor
             container.style.transform = `translateX(-${currentSlide * 100}%)`;
-            
-            // Añadir la clase active al slide actual
-            slides[currentSlide].classList.add('active');
         }
 
         function startAutoSlide() {
             stopAutoSlide();
+            const esPC = window.innerWidth > 768;
+            const intervalo = esPC ? 60000 : 5000; // 60000ms = 1 minuto para PC, 5000ms = 5 segundos para móvil
+            
             autoSlideInterval = setInterval(() => {
                 nextSlide();
-            }, 5000);
+            }, intervalo);
         }
 
         function stopAutoSlide() {
@@ -1584,12 +1785,32 @@
             }
         }
 
+        // Modificar la función nextSlide
         function nextSlide() {
-            currentSlide = (currentSlide + 1) % announcements.length;
+            const slides = document.querySelectorAll('.announcement-slide');
+            
+            // Detener el video actual antes de cambiar
+            const currentIframe = slides[currentSlide].querySelector('iframe');
+            if (currentIframe) {
+                const baseUrl = currentIframe.src.split('?')[0];
+                currentIframe.src = `${baseUrl}?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3`;
+            }
+            
+            currentSlide = (currentSlide + 1) % slides.length;
             updateSlidePosition();
         }
 
+        // Modificar la función goToSlide
         function goToSlide(index) {
+            const slides = document.querySelectorAll('.announcement-slide');
+            
+            // Detener el video actual antes de cambiar
+            const currentIframe = slides[currentSlide].querySelector('iframe');
+            if (currentIframe) {
+                const baseUrl = currentIframe.src.split('?')[0];
+                currentIframe.src = `${baseUrl}?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3`;
+            }
+            
             currentSlide = index;
             updateSlidePosition();
         }
@@ -1617,12 +1838,16 @@
             cargarContenidoConCache('anuncios');
             
             setupCarouselTouch();
+            handleScrollAudio(); // Agregar el manejo del audio
             
             const carousel = document.querySelector('.announcements-carousel');
             if (carousel) {
                 carousel.addEventListener('mouseenter', stopAutoSlide);
                 carousel.addEventListener('mouseleave', startAutoSlide);
             }
+
+            // Agregar un pequeño retraso para asegurar que los iframes estén cargados
+            setTimeout(iniciarReproduccionAutomatica, 1000);
         });
 
         // Búsqueda
@@ -1915,12 +2140,39 @@
         // Agregar esta nueva función para manejar la apertura de películas
         function abrirPelicula(peliculaData) {
             try {
-                const pelicula = JSON.parse(peliculaData);
+                let pelicula;
+                
+                if (typeof peliculaData === 'string') {
+                    // Si es una cadena, intentar parsearla como JSON
+                    try {
+                        pelicula = JSON.parse(peliculaData);
+                    } catch {
+                        console.error('Error al parsear datos de película');
+                        return;
+                    }
+                } else if (typeof peliculaData === 'number') {
+                    // Si es un ID, buscar en todasLasPeliculas
+                    pelicula = todasLasPeliculas.find(p => p.id === peliculaData);
+                } else {
+                    // Si ya es un objeto, usarlo directamente
+                    pelicula = peliculaData;
+                }
+
+                if (!pelicula) {
+                    console.error('No se encontraron datos de la película');
+                    return;
+                }
+
+                // Asegurarse de que todos los datos necesarios estén presentes
+                if (!pelicula.id || !pelicula.titulo) {
+                    console.error('Datos de película incompletos');
+                    return;
+                }
+
                 localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
                 window.location.href = 'movie.html';
             } catch (error) {
-                console.error('Error al procesar la película:', error);
-                console.log('Datos de película recibidos:', peliculaData);
+                console.error('Error al abrir película:', error);
             }
         }
 
@@ -1996,6 +2248,141 @@
                     mostrarPeliculasPorCategorias(todasLasPeliculas);
                 }
             });
+        }
+
+        // Agregar función para controlar el sonido
+        function toggleSound(peliculaId) {
+            const iframe = document.getElementById(`trailerFrame_${peliculaId}`);
+            const button = document.querySelector(`.sound-toggle`);
+            const icon = button.querySelector('i');
+            
+            // Crear nueva URL para el iframe
+            let currentSrc = iframe.src;
+            let isMuted = currentSrc.includes('mute=1');
+            
+            if (isMuted) {
+                // Activar sonido
+                iframe.src = currentSrc.replace('mute=1', 'mute=0');
+                icon.className = 'fas fa-volume-up';
+            } else {
+                // Silenciar
+                iframe.src = currentSrc.replace('mute=0', 'mute=1');
+                icon.className = 'fas fa-volume-mute';
+            }
+        }
+
+        // Modificar la función iniciarReproduccionAutomatica
+        function iniciarReproduccionAutomatica() {
+            if (window.innerWidth <= 768) return; // Solo para PC
+            
+            const slides = document.querySelectorAll('.announcement-slide');
+            slides.forEach((slide, index) => {
+                const iframe = slide.querySelector('.announcement-trailer');
+                if (iframe && index === currentSlide) {
+                    // Solo activar el video del slide actual
+                    iframe.src = iframe.src.replace('autoplay=0', 'autoplay=1');
+                }
+            });
+        }
+
+        // Agregar función para manejar el scroll y el audio
+        function handleScrollAudio() {
+            const carousel = document.querySelector('.announcements-carousel');
+            if (!carousel) return;
+
+            // Variable para almacenar el estado anterior del audio
+            let prevAudioState = new Map();
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const iframes = document.querySelectorAll('.announcement-trailer');
+                    iframes.forEach(iframe => {
+                        if (!entry.isIntersecting) {
+                            // Guardar estado actual y silenciar
+                            let currentSrc = iframe.src;
+                            prevAudioState.set(iframe.id, currentSrc.includes('mute=0'));
+                            if (currentSrc.includes('mute=0')) {
+                                iframe.src = currentSrc.replace('mute=0', 'mute=1');
+                                const soundButton = iframe.parentElement.querySelector('.sound-toggle i');
+                                if (soundButton) {
+                                    soundButton.className = 'fas fa-volume-mute';
+                                }
+                            }
+                        } else {
+                            // Restaurar estado anterior si estaba con sonido
+                            let currentSrc = iframe.src;
+                            if (prevAudioState.get(iframe.id)) {
+                                iframe.src = currentSrc.replace('mute=1', 'mute=0');
+                                const soundButton = iframe.parentElement.querySelector('.sound-toggle i');
+                                if (soundButton) {
+                                    soundButton.className = 'fas fa-volume-up';
+                                }
+                            }
+                        }
+                    });
+                });
+            }, {
+                threshold: 0.5 // Trigger cuando el 50% del carrusel está visible/invisible
+            });
+
+            observer.observe(carousel);
+        }
+
+        // Agregar listener para cambios de tamaño de ventana
+        window.addEventListener('resize', () => {
+            // Reiniciar el intervalo cuando cambie el tamaño de la ventana
+            if (autoSlideInterval) {
+                startAutoSlide();
+            }
+        });
+
+        // Agregar la función toggleMiLista
+        function toggleMiLista(boton) {
+            try {
+                let peliculaData;
+                const peliculaAttr = boton.getAttribute('data-pelicula');
+                
+                // Verificar si es un ID o un objeto JSON
+                if (!isNaN(peliculaAttr)) {
+                    // Si es un ID, buscar la película en todasLasPeliculas
+                    peliculaData = todasLasPeliculas.find(p => p.id === parseInt(peliculaAttr));
+                } else {
+                    // Si es un objeto JSON, parsearlo
+                    try {
+                        peliculaData = JSON.parse(peliculaAttr);
+                    } catch {
+                        console.error('Error al parsear datos de película');
+                        return;
+                    }
+                }
+
+                if (!peliculaData) {
+                    console.error('No se encontraron datos de la película');
+                    return;
+                }
+
+                const miLista = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
+                const indice = miLista.findIndex(p => p.id === peliculaData.id);
+                
+                if (indice === -1) {
+                    // Agregar a mi lista
+                    miLista.push(peliculaData);
+                    boton.innerHTML = '<i class="fas fa-check"></i> Mi lista';
+                    boton.classList.add('en-mi-lista');
+                } else {
+                    // Quitar de mi lista
+                    miLista.splice(indice, 1);
+                    boton.innerHTML = '<i class="fas fa-plus"></i> Mi lista';
+                    boton.classList.remove('en-mi-lista');
+                }
+                
+                localStorage.setItem('miListaPeliculas', JSON.stringify(miLista));
+                
+                // Disparar evento personalizado
+                window.dispatchEvent(new CustomEvent('miListaPeliculasActualizada'));
+            } catch (error) {
+                console.error('Error en toggleMiLista:', error);
+            }
         }
     </script>
 </body>
