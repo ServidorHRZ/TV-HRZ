@@ -1681,7 +1681,7 @@
                 const trailerSrc = esPC && pelicula.trailer ? 
                     `${pelicula.trailer}?autoplay=0&mute=0&controls=0&showinfo=0&rel=0&loop=1&playlist=${pelicula.trailer.split('embed/')[1]}&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3` 
                     : '';
-                
+                // Contenido de la pelicula
                 const contenidoMedia = esPC && pelicula.trailer ? `
                     <iframe 
                         id="trailerFrame_${pelicula.id}"
@@ -1770,12 +1770,24 @@
         }
 
         function startAutoSlide() {
-            stopAutoSlide();
+            stopAutoSlide(); // Detener el intervalo existente
+            
             const esPC = window.innerWidth > 768;
-            const intervalo = esPC ? 60000 : 5000; // 60000ms = 1 minuto para PC, 5000ms = 5 segundos para móvil
+            const intervalo = esPC ? 60000 : 10000; // 60s para PC, 10s para móvil
+            
+            // Asegurarse de que el carrusel existe
+            const container = document.getElementById('announcementsContainer');
+            if (!container) return;
             
             autoSlideInterval = setInterval(() => {
-                nextSlide();
+                const slides = document.querySelectorAll('.announcement-slide');
+                if (!slides.length) return;
+                
+                currentSlide = (currentSlide + 1) % slides.length;
+                
+                // Aplicar la transición suave
+                container.style.transition = 'transform 0.5s ease';
+                updateSlidePosition();
             }, intervalo);
         }
 
@@ -1894,13 +1906,17 @@
                 limpiarYCerrarBusqueda();
             }
         });
-
+     // Carousel Touch  encargadao de la barra de anuncios
         function setupCarouselTouch() {
             const container = document.getElementById('announcementsContainer');
+            if (!container) return;
             
             container.addEventListener('touchstart', touchStart);
             container.addEventListener('touchmove', touchMove);
-            container.addEventListener('touchend', touchEnd);
+            container.addEventListener('touchend', () => {
+                touchEnd();
+                startAutoSlide(); // Reiniciar el autoSlide después de la interacción
+            });
         }
 
         function touchStart(event) {
@@ -1928,7 +1944,7 @@
                 isDragging = false;
             }
         }
-
+        // Carousel Touch encargadao de la barra de anuncios    
         function touchEnd() {
             isDragging = false;
             startAutoSlide();
@@ -1961,7 +1977,7 @@
                     slider.style.cursor = 'grab';
                     slider.style.scrollBehavior = 'smooth';
                 }
-
+                // Carousel Touch encargadao de la barra de anuncios    
                 function drag(e) {
                     if (!isDown) return;
 
@@ -2028,7 +2044,7 @@
                 scroll-snap-align: start;
             }
         `;
-
+        // Carousel Touch encargadao de la barra de anuncios    
         const styleSheet = document.createElement("style");
         styleSheet.textContent = styles;
         document.head.appendChild(styleSheet);
@@ -2091,6 +2107,7 @@
             });
         }
 
+        // Carousel Touch encargadao de la barra de anuncios    
         function cargarCategorias() {
             const mainContent = document.querySelector('.main-content');
             mainContent.innerHTML = ''; // Limpiar contenido existente
@@ -2100,7 +2117,7 @@
             
             if (miListaPeliculas.length > 0) {
                 const miListaHTML = `
-                    <div class="categoria-seccion">
+                <div class="categoria-seccion">
                         <h2 class="categoria-titulo">Mi Lista de Películas <i class="fas fa-heart" style="color: #00ffff;"></i></h2>
                         <div class="categoria-contenedor">
                             ${miListaPeliculas.map(pelicula => `
@@ -2121,7 +2138,6 @@
                 mainContent.insertAdjacentHTML('beforeend', miListaHTML);
             }
 
-            // ... resto del código de categorías ...
         }
 
         // Escuchar cambios en Mi Lista de Películas
@@ -2197,7 +2213,7 @@
 
             mostrarResultadosBusqueda(resultados, resultadosContainer);
         }
-
+        // Carousel Touch encargadao de la barra de anuncios    
         function mostrarResultadosBusqueda(resultados, contenedor) {
             if (resultados.length === 0) {
                 contenedor.innerHTML = '<div class="resultado-item">No se encontraron resultados</div>';
@@ -2270,7 +2286,7 @@
                 icon.className = 'fas fa-volume-mute';
             }
         }
-
+ 
         // Modificar la función iniciarReproduccionAutomatica
         function iniciarReproduccionAutomatica() {
             if (window.innerWidth <= 768) return; // Solo para PC
