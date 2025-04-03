@@ -591,9 +591,9 @@
         /* Estilos mejorados para el carrusel de anuncios */
         .announcements-carousel {
             position: relative;
-            width: 100%;
+            width: 90%; /* Reducido del 100% */
             max-width: 1400px;
-            margin: 0 auto 10px;
+            margin: 60px auto 10px; /* Centrado con margen superior */
             overflow: hidden;
             border-radius: 10px;
             z-index: 1;
@@ -756,8 +756,10 @@
         /* Media queries para el carrusel */
         @media (max-width: 768px) {
             .announcements-carousel {
-                height: 300px;
-                margin-top: 0;
+                width: 88%; /* Reducido de 90% a 88% para un poquito más de margen */
+                height: 450px;
+                margin-top: 50px;
+                border-radius: 15px;
             }
 
             .announcement-content {
@@ -767,6 +769,13 @@
             .announcement-title {
                 font-size: 1.4em;
                 margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .announcements-carousel {
+                width: 90%; /* Reducido de 92% a 90% para un poquito más de margen */
+                height: 450px;
             }
         }
 
@@ -1271,6 +1280,24 @@
                 padding: 10px 20px; /* Ligeramente más pequeño para pantallas muy pequeñas */
                 font-size: 1rem;
                 min-width: 130px;
+            }
+        }
+
+        /* Ajustes responsive para el carrusel */
+        @media (max-width: 768px) {
+            .announcements-carousel {
+                width: 88%;
+                height: 450px;
+                margin-top: 70px; /* Aumentado de 50px a 70px para más margen superior */
+                border-radius: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .announcements-carousel {
+                width: 90%;
+                height: 450px;
+                margin-top: 80px; /* Aumentado a 80px para pantallas más pequeñas */
             }
         }
     </style>
