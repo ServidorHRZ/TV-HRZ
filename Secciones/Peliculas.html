@@ -591,11 +591,11 @@
         /* Estilos mejorados para el carrusel de anuncios */
         .announcements-carousel {
             position: relative;
-            width: 90%; /* Reducido del 100% */
-            max-width: 1400px;
-            margin: 60px auto 10px; /* Centrado con margen superior */
+            width: 100%; /* Cambiado a 100% para PC */
+            max-width: none; /* Eliminado el max-width */
+            margin: 0; /* Eliminados los márgenes en PC */
             overflow: hidden;
-            border-radius: 10px;
+            border-radius: 0; /* Sin bordes redondeados en PC */
             z-index: 1;
             height: 400px;
         }
@@ -756,10 +756,10 @@
         /* Media queries para el carrusel */
         @media (max-width: 768px) {
             .announcements-carousel {
-                width: 88%; /* Reducido de 90% a 88% para un poquito más de margen */
-                height: 450px;
-                margin-top: 50px;
-                border-radius: 15px;
+                width: 88%;
+                height: 500px;
+                margin: 70px auto 10px; /* Restauramos márgenes en móvil */
+                border-radius: 15px; /* Restauramos bordes redondeados en móvil */
             }
 
             .announcement-content {
@@ -774,8 +774,9 @@
 
         @media (max-width: 480px) {
             .announcements-carousel {
-                width: 90%; /* Reducido de 92% a 90% para un poquito más de margen */
-                height: 450px;
+                width: 90%;
+                height: 520px;
+                margin: 80px auto 10px;
             }
         }
 
@@ -1287,8 +1288,8 @@
         @media (max-width: 768px) {
             .announcements-carousel {
                 width: 88%;
-                height: 450px;
-                margin-top: 70px; /* Aumentado de 50px a 70px para más margen superior */
+                height: 500px; /* Aumentado de 450px a 500px para más altura */
+                margin-top: 70px;
                 border-radius: 15px;
             }
         }
@@ -1296,8 +1297,8 @@
         @media (max-width: 480px) {
             .announcements-carousel {
                 width: 90%;
-                height: 450px;
-                margin-top: 80px; /* Aumentado a 80px para pantallas más pequeñas */
+                height: 520px; /* Aumentado de 450px a 520px para más altura en móviles pequeños */
+                margin-top: 80px;
             }
         }
     </style>
