@@ -2308,8 +2308,8 @@
                 const indice = miLista.findIndex(s => s.id === serieId);
 
                 if (indice === -1) {
-                    // Agregar a mi lista
-                    miLista.push(serieData);
+                    // Agregar al principio de mi lista usando unshift
+                    miLista.unshift(serieData);
                     if (boton && boton.innerHTML) {
                         boton.innerHTML = '<i class="fas fa-check"></i> Mi lista';
                         boton.classList.add('en-mi-lista');

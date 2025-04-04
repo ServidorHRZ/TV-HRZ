@@ -2413,8 +2413,8 @@
                 const indice = miLista.findIndex(p => p.id === peliculaData.id);
                 
                 if (indice === -1) {
-                    // Agregar a mi lista
-                    miLista.push(peliculaData);
+                    // Agregar al principio de mi lista usando unshift
+                    miLista.unshift(peliculaData);
                     boton.innerHTML = '<i class="fas fa-check"></i> Mi lista';
                     boton.classList.add('en-mi-lista');
                 } else {
