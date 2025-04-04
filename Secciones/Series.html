@@ -1528,6 +1528,10 @@
         // Agregar estas variables globales
         let touchStartX = 0;
         let touchEndX = 0;
+        let touchStartTime = 0;
+        let touchEndTime = 0;
+        let minSwipeDistance = 100; // Aumentado para requerir un deslizamiento más largo
+        let maxSwipeTime = 300; // Tiempo máximo para considerar un swipe válido
 
         // Función para organizar series por categorías
         function mostrarSeriesPorCategorias(series) {
@@ -1875,27 +1879,33 @@
             const container = document.getElementById('announcementsContainer');
             if (!container) return;
             
-            // Eventos táctiles para móviles
             container.addEventListener('touchstart', (e) => {
                 touchStartX = e.touches[0].clientX;
-                stopAutoSlide(); // Detener el autoslide mientras se interactúa
+                touchStartTime = new Date().getTime();
+                stopAutoSlide();
             }, { passive: true });
 
             container.addEventListener('touchmove', (e) => {
+                e.preventDefault(); // Prevenir scroll mientras se arrastra
                 touchEndX = e.touches[0].clientX;
-            }, { passive: true });
+            }, { passive: false });
 
             container.addEventListener('touchend', () => {
+                touchEndTime = new Date().getTime();
                 handleSwipe();
-                startAutoSlide(); // Reiniciar el autoslide después de la interacción
+                startAutoSlide();
             });
         }
 
         function handleSwipe() {
-            const swipeThreshold = 50; // Umbral mínimo para considerar un swipe
             const swipeDistance = touchEndX - touchStartX;
+            const swipeTime = touchEndTime - touchStartTime;
             
-            if (Math.abs(swipeDistance) > swipeThreshold) {
+            // Solo procesar el swipe si cumple con los criterios
+            if (Math.abs(swipeDistance) > minSwipeDistance && 
+                swipeTime < maxSwipeTime && 
+                Math.abs(swipeDistance) > 50) {
+                
                 const slides = document.querySelectorAll('.announcement-slide');
                 if (swipeDistance > 0) {
                     // Swipe derecha - slide anterior
@@ -1924,7 +1934,7 @@
                 const iframe = slide.querySelector('iframe');
                 if (iframe) {
                     if (index === currentSlide) {
-                        // Activar solo el video del slide actual
+                        // Activar solo el video actual
                         const newSrc = iframe.src
                             .replace('autoplay=0', 'autoplay=1')
                             .replace('mute=1', 'mute=0');
@@ -1932,7 +1942,7 @@
                             iframe.src = newSrc;
                         }
                     } else {
-                        // Detener completamente los otros videos
+                        // Detener otros videos
                         const baseUrl = iframe.src.split('?')[0];
                         iframe.src = `${baseUrl}?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3`;
                     }

@@ -1533,6 +1533,10 @@
         // Agregar estas variables globales
         let touchStartX = 0;
         let touchEndX = 0;
+        let touchStartTime = 0;
+        let touchEndTime = 0;
+        let minSwipeDistance = 100; // Aumentado para requerir un deslizamiento más largo
+        let maxSwipeTime = 300; // Tiempo máximo para considerar un swipe válido
 
         // Función para organizar películas por categorías
         function organizarPorCategorias(peliculas) {
@@ -1972,27 +1976,36 @@
             const container = document.getElementById('announcementsContainer');
             if (!container) return;
             
-            // Eventos táctiles para móviles
             container.addEventListener('touchstart', (e) => {
                 touchStartX = e.touches[0].clientX;
-                stopAutoSlide(); // Detener el autoslide mientras se interactúa
+                touchStartTime = new Date().getTime();
+                stopAutoSlide();
             }, { passive: true });
 
             container.addEventListener('touchmove', (e) => {
+                e.preventDefault(); // Prevenir scroll mientras se arrastra
                 touchEndX = e.touches[0].clientX;
-            }, { passive: true });
+            }, { passive: false });
 
             container.addEventListener('touchend', () => {
+                touchEndTime = new Date().getTime();
                 handleSwipe();
-                startAutoSlide(); // Reiniciar el autoslide después de la interacción
+                startAutoSlide();
             });
         }
 
         function handleSwipe() {
-            const swipeThreshold = 50; // Umbral mínimo para considerar un swipe
             const swipeDistance = touchEndX - touchStartX;
+            const swipeTime = touchEndTime - touchStartTime;
             
-            if (Math.abs(swipeDistance) > swipeThreshold) {
+            // Solo procesar el swipe si:
+            // 1. La distancia es mayor que el mínimo requerido
+            // 2. El tiempo es menor que el máximo permitido
+            // 3. La distancia es significativa (evita toques accidentales)
+            if (Math.abs(swipeDistance) > minSwipeDistance && 
+                swipeTime < maxSwipeTime && 
+                Math.abs(swipeDistance) > 50) {
+                
                 const slides = document.querySelectorAll('.announcement-slide');
                 if (swipeDistance > 0) {
                     // Swipe derecha - slide anterior
