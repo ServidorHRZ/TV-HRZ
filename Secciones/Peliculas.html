@@ -591,11 +591,11 @@
         /* Estilos mejorados para el carrusel de anuncios */
         .announcements-carousel {
             position: relative;
-            width: 100%; /* Cambiado a 100% para PC */
-            max-width: none; /* Eliminado el max-width */
-            margin: 0; /* Eliminados los márgenes en PC */
+            width: 90%; /* Reducido del 100% */
+            max-width: 1400px;
+            margin: 60px auto 10px; /* Centrado con margen superior */
             overflow: hidden;
-            border-radius: 0; /* Sin bordes redondeados en PC */
+            border-radius: 10px;
             z-index: 1;
             height: 400px;
         }
@@ -756,10 +756,10 @@
         /* Media queries para el carrusel */
         @media (max-width: 768px) {
             .announcements-carousel {
-                width: 88%;
-                height: 500px;
-                margin: 70px auto 10px; /* Restauramos márgenes en móvil */
-                border-radius: 15px; /* Restauramos bordes redondeados en móvil */
+                width: 88%; /* Reducido de 90% a 88% para un poquito más de margen */
+                height: 450px;
+                margin-top: 50px;
+                border-radius: 15px;
             }
 
             .announcement-content {
@@ -774,9 +774,8 @@
 
         @media (max-width: 480px) {
             .announcements-carousel {
-                width: 90%;
-                height: 520px;
-                margin: 80px auto 10px;
+                width: 90%; /* Reducido de 92% a 90% para un poquito más de margen */
+                height: 450px;
             }
         }
 
@@ -1420,13 +1419,18 @@
             const urls = {
                 series: '../DataBase/series.json',
                 peliculas: '../DataBase/peliculas.json',
-                anuncios: '../DataBase/movie_announcements.json'
+                anuncios: '../DataBase/peliculas.json' // Cambiado para usar peliculas.json
             };
 
             try {
                 const response = await fetch(urls[tipo]);
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const datos = await response.json();
+                
+                // Si es tipo anuncios, transformamos los datos para mantener compatibilidad
+                if (tipo === 'anuncios') {
+                    datos.announcements = datos.peliculas.filter(pelicula => pelicula.destacado); // Filtramos películas destacadas
+                }
                 
                 // Guardar en caché
                 localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datos));

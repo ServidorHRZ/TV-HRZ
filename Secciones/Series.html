@@ -1417,14 +1417,19 @@
         // Función para cargar contenido desde el servidor
         async function cargarContenidoDesdeServidor(tipo) {
             const urls = {
-                series: '../DataBase/series.json',  // Cambiado de peliculas.json a series.json
-                anuncios: '../DataBase/movie_announcements.json'
+                series: '../DataBase/series.json',
+                anuncios: '../DataBase/series.json' // Cambiado de movie_announcements.json a series.json
             };
 
             try {
                 const response = await fetch(urls[tipo]);
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const datos = await response.json();
+                
+                // Si es tipo anuncios, transformamos los datos para mantener compatibilidad
+                if (tipo === 'anuncios') {
+                    datos.announcements = datos.series.filter(serie => serie.destacado); // Filtramos series destacadas
+                }
                 
                 // Guardar en caché
                 localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datos));
