@@ -534,14 +534,68 @@
             }
         }
 
+        /* Estilos para los resultados de búsqueda */
+        .resultados-busqueda {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.95);
+            border-radius: 0 0 10px 10px;
+            max-height: 70vh;
+            overflow-y: auto;
+            display: none;
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+            z-index: 1000;
+        }
+
+        .resultado-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .resultado-item:hover {
+            background: rgba(0, 255, 255, 0.1);
+        }
+
+        .resultado-imagen {
+            width: 100px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .resultado-info {
+            flex: 1;
+        }
+
+        .resultado-titulo {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .resultado-instructor {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
         /* Estilos mejorados para el carrusel de anuncios */
         .announcements-carousel {
             position: relative;
-            width: 100%;
-            max-width: 1400px;
-            margin: 0 auto 10px;
+            width: 100%; /* Cambiado a 100% para PC */
+            max-width: none; /* Eliminado el max-width */
+            margin: 0; /* Eliminados los márgenes en PC */
             overflow: hidden;
-            border-radius: 10px;
+            border-radius: 0; /* Sin bordes redondeados en PC */
             z-index: 1;
             height: 400px;
         }
@@ -574,60 +628,91 @@
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 40px;
+            padding: 30px;
             background: linear-gradient(
                 to top,
                 rgba(0, 0, 0, 0.95) 0%,
                 rgba(0, 0, 0, 0.8) 40%,
-                rgba(0, 0, 0, 0.4) 80%,
+                rgba(0, 0, 0, 0.6) 60%,
+                rgba(0, 0, 0, 0.2) 80%,
                 transparent 100%
             );
-            color: var(--secondary-color);
-            z-index: 2;
+            z-index: 2; /* Asegura que esté por encima del video */
         }
 
         .announcement-title {
-            font-size: 3.5rem;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil para el texto */
+            color: #00ffff;
+            font-size: 1.8em;
             margin-bottom: 15px;
             font-family: 'Orbitron', sans-serif;
-            background: linear-gradient(45deg, var(--primary-color), #fff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-        }
-
-        .announcement-subtitle {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        .announcement-description {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            opacity: 0.9;
-            max-width: 600px;
-            line-height: 1.6;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: glow 2s ease-in-out infinite alternate;
+            text-align: center;
         }
 
         .announcement-info {
+            position: relative;
             display: flex;
+            justify-content: center;
             align-items: center;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 10px;
+            margin: 15px auto;
+            width: 100%;
+            max-width: 300px;
         }
 
-        .announcement-date {
-            font-size: 1.2rem;
-            color: var(--primary-color);
-            font-weight: bold;
-            display: inline-block;
+        .ver-ahora-btn,
+        .mi-lista-btn {
+            flex: 0 1 auto;
+            min-width: 120px;
             padding: 8px 16px;
-            border: 2px solid var(--primary-color);
-            border-radius: 5px;
-            background: rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .ver-ahora-btn {
+            background: rgba(255, 255, 255, 0.9);
+            color: black;
+            box-shadow: none;
+        }
+
+        .mi-lista-btn {
+            background: rgba(109, 109, 110, 0.7);
+            color: white;
+            box-shadow: none;
+        }
+
+        .ver-ahora-btn:focus,
+        .mi-lista-btn:focus {
+            outline: none;
+            border: none;
+        }
+
+        /* Ajustes para móviles */
+        @media (max-width: 768px) {
+            .announcement-info {
+                gap: 8px;
+                max-width: 280px;
+            }
+
+            .ver-ahora-btn,
+            .mi-lista-btn {
+                min-width: 100px;
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
         }
 
         .carousel-indicators {
@@ -654,33 +739,6 @@
             transform: scale(1.2);
         }
 
-        .ver-ahora-btn {
-            background: var(--primary-color);
-            color: black;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 25px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .ver-ahora-btn:hover {
-            background: #fff;
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
-        }
-
-        .ver-ahora-btn i {
-            font-size: 1.2rem;
-        }
-
         /* Animación de entrada para los slides */
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -698,8 +756,10 @@
         /* Media queries para el carrusel */
         @media (max-width: 768px) {
             .announcements-carousel {
-                height: 300px;
-                margin-top: 0;
+                width: 88%;
+                height: 500px;
+                margin: 70px auto 10px; /* Restauramos márgenes en móvil */
+                border-radius: 15px; /* Restauramos bordes redondeados en móvil */
             }
 
             .announcement-content {
@@ -707,32 +767,16 @@
             }
 
             .announcement-title {
-                font-size: 2rem;
+                font-size: 1.4em;
+                margin-bottom: 10px;
             }
+        }
 
-            .announcement-subtitle {
-                font-size: 1.2rem;
-            }
-
-            .announcement-description {
-                font-size: 0.9rem;
-                margin-bottom: 15px;
-            }
-
-            .announcement-date {
-                font-size: 1rem;
-                padding: 5px 10px;
-            }
-
-            .ver-ahora-btn {
-                padding: 8px 16px;
-                font-size: 0.9rem;
-            }
-
-            .announcement-info {
-                flex-direction: column;
-                gap: 10px;
-                align-items: flex-start;
+        @media (max-width: 480px) {
+            .announcements-carousel {
+                width: 90%;
+                height: 520px;
+                margin: 80px auto 10px;
             }
         }
 
@@ -1063,81 +1107,198 @@
             flex-wrap: wrap; /* Para que los logos pasen a la siguiente línea si no hay espacio */
         }
 
-        /* Estilos para los resultados de búsqueda */
-        .resultados-busqueda {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90%;
-            max-width: 800px;
-            background: rgba(0, 0, 0, 0.95);
-            border-radius: 0 0 10px 10px;
-            max-height: 70vh;
-            overflow-y: auto;
-            display: none;
-            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+        #carouselIndicators {
+            display: none !important;
         }
 
-        .resultado-item {
-            padding: 15px 20px;
-            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        /* Nuevo contenedor flex para PC */
+        @media (min-width: 769px) {
+            .announcement-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 30px 50px;
+            }
+
+            .announcement-title {
+                text-align: left;
+                font-size: 2.5em;
+                margin: 0;
+                flex: 1;
+            }
+
+            .announcement-info {
+                margin: 0;
+                justify-content: flex-end;
+                min-width: 280px;
+            }
+        }
+
+        /* Mantener diseño centrado para móviles */
+        @media (max-width: 768px) {
+            .announcement-content {
+                text-align: center;
+                padding: 20px;
+            }
+
+            .announcement-title {
+                font-size: 1.4em;
+                margin-bottom: 15px;
+            }
+
+            .announcement-info {
+                justify-content: center;
+                margin: 15px auto;
+            }
+        }
+
+        .announcement-trailer {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(1.5); /* Hace el video 50% más grande */
+        }
+
+        @media (max-width: 768px) {
+            .announcement-trailer {
+                display: none;
+            }
+        }
+
+        .announcement-slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            flex: 0 0 100%;
+            overflow: hidden; /* Oculta las partes del video que se desborden */
+        }
+
+        /* Asegurar que el contenido esté por encima del video */
+        .announcement-content {
+            z-index: 2;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.95) 0%,
+                rgba(0, 0, 0, 0.6) 60%,
+                transparent 100%
+            );
+        }
+
+        /* Estilos actualizados para el botón de sonido */
+        .sound-toggle {
+            position: absolute;
+            top: 20px; /* Cambiado de bottom a top */
+            right: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border: none;
+            color: #ffffff; /* Cambiado a blanco */
+            padding: 10px;
+            border-radius: 50%;
             cursor: pointer;
+            z-index: 10;
             transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
             display: flex;
             align-items: center;
-            gap: 15px;
+            justify-content: center;
         }
 
-        .resultado-item:hover {
-            background: rgba(0, 255, 255, 0.1);
+        .sound-toggle:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
         }
 
-        .resultado-imagen {
-            width: 100px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 5px;
+        .sound-toggle i {
+            font-size: 1.2rem;
+            color: #ffffff; /* Asegurando que el ícono sea blanco */
         }
 
-        .resultado-info {
-            flex: 1;
-        }
-
-        .resultado-titulo {
-            color: var(--primary-color);
-            margin-bottom: 5px;
-            font-size: 1rem;
-        }
-
-        .resultado-instructor {
-            color: var(--secondary-color);
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        /* Ajustes responsive para el buscador */
+        /* Ajustes para el carrusel de anuncios en móviles */
         @media (max-width: 768px) {
-            .resultados-busqueda {
-                width: 95%;
-                max-height: 60vh;
+            .announcements-carousel {
+                height: 500px; /* Aumentado de 300px a 500px */
+                margin-top: 50px;
             }
 
-            .resultado-item {
-                padding: 10px 15px;
+            .announcement-slide {
+                height: 100%;
             }
 
-            .resultado-imagen {
-                width: 80px;
-                height: 50px;
+            .announcement-image {
+                height: 100%;
+                object-fit: cover;
             }
 
-            .resultado-titulo {
-                font-size: 0.9rem;
+            .announcement-content {
+                padding: 20px;
+                background: linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.95) 0%,
+                    rgba(0, 0, 0, 0.8) 40%,
+                    rgba(0, 0, 0, 0.6) 60%,
+                    rgba(0, 0, 0, 0.4) 80%,
+                    transparent 100%
+                );
+            }
+        }
+
+        /* Ajuste adicional para pantallas más pequeñas */
+        @media (max-width: 480px) {
+            .announcements-carousel {
+                height: 450px; /* Ajustado para pantallas más pequeñas */
+            }
+        }
+
+        /* Ajustes para los botones en móviles */
+        @media (max-width: 768px) {
+            .ver-ahora-btn,
+            .mi-lista-btn {
+                padding: 12px 24px; /* Aumentado de 8px 16px */
+                font-size: 1.1rem; /* Aumentado de 0.9rem */
+                min-width: 140px; /* Aumentado de 120px */
+                gap: 10px; /* Aumentado de 8px */
             }
 
-            .resultado-instructor {
-                font-size: 0.8rem;
+            .ver-ahora-btn i,
+            .mi-lista-btn i {
+                font-size: 1.2rem; /* Aumentado el tamaño de los iconos */
+            }
+
+            .announcement-info {
+                gap: 15px; /* Aumentado el espacio entre botones */
+                max-width: 320px; /* Aumentado el ancho máximo del contenedor */
+            }
+        }
+
+        /* Ajuste adicional para pantallas más pequeñas */
+        @media (max-width: 480px) {
+            .ver-ahora-btn,
+            .mi-lista-btn {
+                padding: 10px 20px; /* Ligeramente más pequeño para pantallas muy pequeñas */
+                font-size: 1rem;
+                min-width: 130px;
+            }
+        }
+
+        /* Ajustes responsive para el carrusel */
+        @media (max-width: 768px) {
+            .announcements-carousel {
+                width: 88%;
+                height: 500px; /* Aumentado de 450px a 500px para más altura */
+                margin-top: 70px;
+                border-radius: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .announcements-carousel {
+                width: 90%;
+                height: 520px; /* Aumentado de 450px a 520px para más altura en móviles pequeños */
+                margin-top: 80px;
             }
         }
     </style>
@@ -1155,7 +1316,7 @@
             </div>
         </div>
         <div class="header-search-container" id="headerSearch">
-            <input type="text" id="search-input" placeholder="Buscar películas, series y más...">
+            <input type="text" id="search-input" placeholder="Buscar series...">
             <button class="search-toggle" id="searchClose">
                 <i class="fas fa-times"></i>
             </button>
@@ -1201,7 +1362,6 @@
         const CACHE_VERSION = '1.0';
         const CACHE_KEYS = {
             SERIES: 'hrztv_series_cache',
-            PELICULAS: 'hrztv_peliculas_cache',
             ANUNCIOS: 'hrztv_anuncios_cache',
             TIMESTAMP: 'hrztv_cache_timestamp',
             VERSION: 'hrztv_cache_version'
@@ -1257,9 +1417,8 @@
         // Función para cargar contenido desde el servidor
         async function cargarContenidoDesdeServidor(tipo) {
             const urls = {
-                series: '../DataBase/series.json',
-                peliculas: '../DataBase/peliculas.json',
-                anuncios: '../DataBase/announcements.json'
+                series: '../DataBase/series.json',  // Cambiado de peliculas.json a series.json
+                anuncios: '../DataBase/movie_announcements.json'
             };
 
             try {
@@ -1304,14 +1463,9 @@
                     todasLasSeries = datos.series.filter(serie => serie.disponible);
                     mostrarSeriesPorCategorias(todasLasSeries);
                     break;
-                case 'peliculas':
-                    todasLasPeliculas = datos.peliculas.filter(pelicula => pelicula.disponible);
-                    mostrarPeliculasPorCategorias(todasLasPeliculas);
-                    break;
                 case 'anuncios':
                     announcements = datos.announcements;
                     mostrarAnuncios();
-                    setupIndicators();
                     break;
             }
         }
@@ -1335,7 +1489,7 @@
         }
 
         // Variables globales
-        let todasLasSeries = [];
+        let todasLasSeries = [];  // Cambiar de todasLasPeliculas a todasLasSeries
         let currentSlide = 0;
         let announcements = [];
         let autoSlideInterval;
@@ -1344,7 +1498,10 @@
         let isDragging = false;
 
         // Función para organizar series por categorías
-        function organizarPorCategorias(series) {
+        function mostrarSeriesPorCategorias(series) {
+            const categoriasWrapper = document.querySelector('.categorias-wrapper');
+            if (!categoriasWrapper) return;
+
             const categorias = {
                 'mi_lista': { titulo: 'Mi Lista', series: [], mantenerOrden: false },
                 'neflix': { titulo: 'Netflix', series: [], mantenerOrden: false },
@@ -1362,16 +1519,7 @@
                 'deportes': { titulo: 'Deportes', series: [], mantenerOrden: false },
             };
 
-            // Función para mezclar array
-            function shuffleArray(array) {
-                for (let i = array.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [array[i], array[j]] = [array[j], array[i]];
-                }
-                return array;
-            }
-
-            // Agregar series a categorías
+            // Organizar series por categorías
             series.forEach(serie => {
                 if (Array.isArray(serie.genero)) {
                     serie.genero.forEach(gen => {
@@ -1380,7 +1528,7 @@
                             categorias[generoLower].series.push(serie);
                         }
                     });
-                } else {
+                } else if (serie.genero) {
                     const generoLower = serie.genero.toLowerCase();
                     if (categorias[generoLower]) {
                         categorias[generoLower].series.push(serie);
@@ -1388,189 +1536,189 @@
                 }
             });
 
-            // Ordenar series en cada categoría
-            for (const categoria of Object.values(categorias)) {
-                const nuevas = categoria.series.filter(s => s.nuevo);
-                const noNuevas = categoria.series.filter(s => !s.nuevo);
-
-                if (!categoria.mantenerOrden) {
-                    shuffleArray(noNuevas);
-                }
-
-                categoria.series = [...nuevas, ...noNuevas];
-            }
-
-            return categorias;
-        }
-
-        // Función para mostrar series por categorías
-        function mostrarSeriesPorCategorias(series) {
-            const categoriasWrapper = document.querySelector('.categorias-wrapper');
-            if (!categoriasWrapper) return;
-
-            const logosCategoria = {
-                'neflix': ['../logos/1.jpeg'],
-                'amazon': ['../logos/2.jpeg'], // ejemplo con dos logos
-                'disney': ['../logos/3.jpeg', '../logos/5.jpeg'], // ejemplo con dos logos
-                'marvel': ['../logos/4.jpeg'], // ejemplo con dos logos
-                'dc': ['../logos/4.jpeg'],
-                'cartoon': ['../logos/6.jpeg'],
-                'nick': ['https://1000marcas.net/wp-content/uploads/2020/03/logo-Nickelodeon.png'],
-                'discoverykids': ['https://tele-libre.org/img/diskids.webp']
-            };
-
+            // Limpiar el contenedor
             categoriasWrapper.innerHTML = '';
             
-            // Mostrar Mi Lista primero
-            const miLista = JSON.parse(localStorage.getItem('miLista') || '[]');
-            
-            if (miLista.length > 0) {
-                const seccionMiLista = document.createElement('div');
-                seccionMiLista.className = 'categoria-seccion';
-                
-                seccionMiLista.innerHTML = `
-                    <h2 class="categoria-titulo">Mi Lista <i class="fas fa-heart" style="color: #00ffff;"></i></h2>
-                    <div class="categoria-contenedor">
-                        ${miLista.map(serie => `
-                            <div class="movie-card" onclick="abrirSerie(${serie.id})">
-                                <img src="${serie.imagen || serie.miniatura_episodios}" alt="${serie.titulo}">
-                                <div class="movie-info">
-                                    <h3>${serie.titulo}</h3>
-                                    <p>${serie.año || ''}</p>
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
-                `;
-                
-                categoriasWrapper.insertBefore(seccionMiLista, categoriasWrapper.firstChild);
+            // Mostrar Mi Lista primero si existe
+            const miListaSeries = JSON.parse(localStorage.getItem('miListaSeries') || '[]');
+            if (miListaSeries.length > 0) {
+                const seccionMiLista = crearSeccionCategoria('Mi Lista', miListaSeries, true);
+                categoriasWrapper.appendChild(seccionMiLista);
             }
-            
-            const categorias = organizarPorCategorias(series);
 
+            // Mostrar el resto de categorías
             for (const [key, categoria] of Object.entries(categorias)) {
-                if (categoria.series.length > 0) {
-                    const seccion = document.createElement('div');
-                    seccion.className = 'categoria-seccion';
-                    
-                    const logosHTML = logosCategoria[key] ? 
-                        logosCategoria[key].map(logo => 
-                            `<img src="${logo}" alt="${categoria.titulo} logo" class="categoria-logo">`
-                        ).join('') : '';
-                    
-                    seccion.innerHTML = `
-                        <h2 class="categoria-titulo">
-                            ${categoria.titulo}
-                            <div class="logos-container">
-                                ${logosHTML}
-                            </div>
-                        </h2>
-                        <div class="categoria-contenedor">
-                            ${categoria.series.map(serie => `
-                                <div class="movie-card" onclick="abrirSerie(${serie.id})">
-                                    ${serie.badge ? `<div class="badge">${serie.badge}</div>` : ''}
-                                    <img src="${serie.imagen}" alt="${serie.titulo}">
-                                    <div class="movie-info">
-                                        <h3>${serie.titulo}</h3>
-                                        <p>Año: ${serie.año}</p>
-                                    </div>
-                                </div>
-                            `).join('')}
-                        </div>
-                    `;
-                    
+                if (key !== 'mi_lista' && categoria.series.length > 0) {
+                    const seccion = crearSeccionCategoria(categoria.titulo, categoria.series);
                     categoriasWrapper.appendChild(seccion);
                 }
             }
 
-            // Agregar event listeners
-            document.querySelectorAll('.movie-card').forEach(card => {
-                card.addEventListener('click', () => {
-                    const serieData = JSON.parse(card.dataset.serie);
-                    localStorage.setItem('serieSeleccionada', JSON.stringify(serieData));
-                    window.location.href = 'serie.html';
-                });
-            });
-
-            enableDragScroll();
+            // Configurar navegación y eventos después de crear las secciones
             setupNavArrows();
+            enableDragScroll();
         }
 
-        // Funciones para el carrusel de anuncios
+        // Función auxiliar para crear una sección de categoría
+        function crearSeccionCategoria(titulo, series, esMiLista = false) {
+            const seccion = document.createElement('div');
+            seccion.className = 'categoria-seccion';
+
+            const logosHTML = titulo.toLowerCase().includes('netflix') ? 
+                '<img src="../logos/1.jpeg" alt="Netflix logo" class="categoria-logo">' :
+                titulo.toLowerCase().includes('amazon') ? 
+                '<img src="../logos/2.jpeg" alt="Amazon logo" class="categoria-logo">' : '';
+
+            seccion.innerHTML = `
+                <h2 class="categoria-titulo">
+                    ${titulo}
+                    <div class="logos-container">
+                        ${logosHTML}
+                    </div>
+                </h2>
+                <div class="categoria-contenedor">
+                    ${series.map(serie => `
+                        <div class="movie-card" onclick="abrirSerie(${serie.id})">
+                            ${serie.badge ? `<div class="badge">${serie.badge}</div>` : ''}
+                            <img src="${serie.imagen}" alt="${serie.titulo}" loading="lazy">
+                            <div class="movie-info">
+                                <h3>${serie.titulo}</h3>
+                                <p>${serie.año || ''}</p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+                <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
+            `;
+
+            return seccion;
+        }
+
+        // Función para obtener películas aleatorias para los posters
+        function obtenerSeriesAleatorias(series, cantidad) {
+            const seriesDisponibles = series.filter(s => s.disponible);
+            const seriesAleatorias = [];
+            const copiasSeries = [...seriesDisponibles];
+            
+            for (let i = 0; i < cantidad && copiasSeries.length > 0; i++) {
+                const indiceAleatorio = Math.floor(Math.random() * copiasSeries.length);
+                seriesAleatorias.push(copiasSeries[indiceAleatorio]);
+                copiasSeries.splice(indiceAleatorio, 1);
+            }
+            
+            return seriesAleatorias;
+        }
+
+        // Modificar la función mostrarAnuncios
         function mostrarAnuncios() {
             const container = document.getElementById('announcementsContainer');
+            if (!container) return;
+
             container.innerHTML = '';
             
-            announcements.forEach(announcement => {
+            const postersAleatorios = obtenerSeriesAleatorias(todasLasSeries, 5);
+            const esPC = window.innerWidth > 768;
+
+            postersAleatorios.forEach((serie, index) => {
                 const slide = document.createElement('div');
                 slide.className = 'announcement-slide';
                 
-                const botonHTML = announcement.disponible ? 
-                    `<button class="ver-ahora-btn" onclick="verSerie(${announcement.serieId})">
-                        Ver ahora <i class="fas fa-play-circle"></i>
-                    </button>` : '';
+                const miLista = JSON.parse(localStorage.getItem('miListaSeries') || '[]');
+                const estaEnMiLista = miLista.some(s => s.id === serie.id);
                 
-                const fechaHTML = announcement.disponible ? '' : 
-                    `<div class="announcement-date">${announcement.fecha}</div>`;
-                
+                const botonMiListaHTML = `
+                    <button class="mi-lista-btn ${estaEnMiLista ? 'en-mi-lista' : ''}" 
+                            data-pelicula="${serie.id}" 
+                            onclick="toggleMiLista(this)">
+                        <i class="fas ${estaEnMiLista ? 'fa-check' : 'fa-plus'}"></i>
+                        Mi lista
+                    </button>
+                `;
+
+                // Resto del código del slide...
                 slide.innerHTML = `
-                    <img src="${announcement.imagen}" alt="${announcement.titulo}" class="announcement-image">
+                    ${esPC && serie.trailer ? `
+                        <iframe 
+                            id="trailerFrame_${serie.id}"
+                            src="${serie.trailer}?autoplay=0&mute=0&controls=0&showinfo=0&rel=0&loop=1&playlist=${serie.trailer.split('embed/')[1]}&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3"
+                            class="announcement-trailer"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            style="pointer-events: none;"
+                            allowfullscreen>
+                        </iframe>
+                        <button class="sound-toggle" onclick="toggleSound(${serie.id})" style="z-index: 3;">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    ` : `
+                        <img src="${serie.imagen}" alt="${serie.titulo}" class="announcement-image">
+                    `}
                     <div class="announcement-content">
-                        <h2 class="announcement-title">${announcement.titulo}</h2>
-                        <h3 class="announcement-subtitle">${announcement.subtitulo}</h3>
-                        <p class="announcement-description">${announcement.descripcion}</p>
+                        <h2 class="announcement-title">${serie.titulo}</h2>
                         <div class="announcement-info">
-                            ${fechaHTML}
-                            ${botonHTML}
+                            <button class="ver-ahora-btn" onclick="abrirSerie(${serie.id})">
+                                <i class="fas fa-play"></i> Reproducir
+                            </button>
+                            ${botonMiListaHTML}
                         </div>
                     </div>
                 `;
+                
                 container.appendChild(slide);
             });
             
             updateSlidePosition();
         }
 
-        // Funciones auxiliares del carrusel
-        function setupIndicators() {
-            const indicators = document.getElementById('carouselIndicators');
-            indicators.innerHTML = '';
-            
-            announcements.forEach((_, index) => {
-                const indicator = document.createElement('div');
-                indicator.className = `indicator ${index === currentSlide ? 'active' : ''}`;
-                indicator.addEventListener('click', () => goToSlide(index));
-                indicators.appendChild(indicator);
-            });
-        }
-
+        // Modificar la función updateSlidePosition
         function updateSlidePosition() {
             const container = document.getElementById('announcementsContainer');
             const slides = document.querySelectorAll('.announcement-slide');
             
-            // Remover la clase active de todos los slides
-            slides.forEach(slide => {
-                slide.classList.remove('active');
+            slides.forEach((slide, index) => {
+                const iframe = slide.querySelector('iframe');
+                if (iframe) {
+                    if (index === currentSlide) {
+                        // Activar solo el video del slide actual
+                        const newSrc = iframe.src
+                            .replace('autoplay=0', 'autoplay=1')
+                            .replace('mute=1', 'mute=0');
+                        if (iframe.src !== newSrc) {
+                            iframe.src = newSrc;
+                        }
+                    } else {
+                        // Detener completamente los otros videos
+                        const baseUrl = iframe.src.split('?')[0];
+                        iframe.src = `${baseUrl}?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3`;
+                    }
+                }
+                slide.classList.toggle('active', index === currentSlide);
             });
             
-            // Actualizar la posición del contenedor
             container.style.transform = `translateX(-${currentSlide * 100}%)`;
-            
-            // Añadir la clase active al slide actual
-            slides[currentSlide].classList.add('active');
-            
-            // Actualizar los indicadores
-            const indicators = document.querySelectorAll('.indicator');
-            indicators.forEach((indicator, index) => {
-                indicator.classList.toggle('active', index === currentSlide);
-            });
         }
 
         function startAutoSlide() {
-            stopAutoSlide();
+            stopAutoSlide(); // Detener el intervalo existente
+            
+            const esPC = window.innerWidth > 768;
+            const intervalo = esPC ? 60000 : 10000; // 60s para PC, 10s para móvil
+            
+            // Asegurarse de que el carrusel existe
+            const container = document.getElementById('announcementsContainer');
+            if (!container) return;
+            
             autoSlideInterval = setInterval(() => {
-                nextSlide();
-            }, 5000);
+                const slides = document.querySelectorAll('.announcement-slide');
+                if (!slides.length) return;
+                
+                currentSlide = (currentSlide + 1) % slides.length;
+                
+                // Aplicar la transición suave
+                container.style.transition = 'transform 0.5s ease';
+                updateSlidePosition();
+            }, intervalo);
         }
 
         function stopAutoSlide() {
@@ -1579,21 +1727,34 @@
             }
         }
 
+        // Modificar la función nextSlide
         function nextSlide() {
-            currentSlide = (currentSlide + 1) % announcements.length;
+            const slides = document.querySelectorAll('.announcement-slide');
+            
+            // Detener el video actual antes de cambiar
+            const currentIframe = slides[currentSlide].querySelector('iframe');
+            if (currentIframe) {
+                const baseUrl = currentIframe.src.split('?')[0];
+                currentIframe.src = `${baseUrl}?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3`;
+            }
+            
+            currentSlide = (currentSlide + 1) % slides.length;
             updateSlidePosition();
         }
 
+        // Modificar la función goToSlide
         function goToSlide(index) {
+            const slides = document.querySelectorAll('.announcement-slide');
+            
+            // Detener el video actual antes de cambiar
+            const currentIframe = slides[currentSlide].querySelector('iframe');
+            if (currentIframe) {
+                const baseUrl = currentIframe.src.split('?')[0];
+                currentIframe.src = `${baseUrl}?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3`;
+            }
+            
             currentSlide = index;
             updateSlidePosition();
-        }
-
-        function updateIndicators() {
-            const indicators = document.querySelectorAll('.indicator');
-            indicators.forEach((indicator, index) => {
-                indicator.classList.toggle('active', index === currentSlide);
-            });
         }
 
         // Función para ver serie
@@ -1615,22 +1776,25 @@
             gestionarCache();
             
             // Cargar contenido con caché
-            cargarContenidoConCache('series');
+            cargarContenidoConCache('series');  // Cambiado de 'peliculas' a 'series'
             cargarContenidoConCache('anuncios');
             
             setupCarouselTouch();
-            setupBuscador();
+            handleScrollAudio(); // Agregar el manejo del audio
             
             const carousel = document.querySelector('.announcements-carousel');
             if (carousel) {
                 carousel.addEventListener('mouseenter', stopAutoSlide);
                 carousel.addEventListener('mouseleave', startAutoSlide);
             }
+
+            // Agregar un pequeño retraso para asegurar que los iframes estén cargados
+            setTimeout(iniciarReproduccionAutomatica, 1000);
         });
 
         // Búsqueda
         document.getElementById('search-input').addEventListener('input', (e) => {
-            searchMovies(e.target.value);
+            searchSeries(e.target.value);
         });
 
         // Efecto de scroll en el header
@@ -1649,38 +1813,40 @@
         const headerSearch = document.getElementById('headerSearch');
         const searchInput = document.getElementById('search-input');
 
+        // Función para limpiar y cerrar la búsqueda
+        function limpiarYCerrarBusqueda() {
+            headerSearch.classList.remove('active');
+            searchInput.value = ''; // Limpiar el input
+            document.getElementById('resultadosBusqueda').style.display = 'none';
+            mostrarSeriesPorCategorias(todasLasSeries);
+        }
+
+        // Event listener para el botón de cerrar
+        searchClose.addEventListener('click', limpiarYCerrarBusqueda);
+
+        // Event listener para el botón de abrir búsqueda
         searchToggle.addEventListener('click', () => {
             headerSearch.classList.add('active');
             searchInput.focus();
         });
 
-        searchClose.addEventListener('click', () => {
-            headerSearch.classList.remove('active');
-            searchInput.value = '';
-            document.getElementById('resultadosBusqueda').style.display = 'none';
-            document.getElementById('search-input').value = '';
-            mostrarSeriesPorCategorias(todasLasSeries);
-        });
-
-        // Agregar la funcionalidad del botón cerrar
-        document.getElementById('searchClearBtn').addEventListener('click', () => {
-            document.getElementById('search-input').value = '';
-            mostrarSeriesPorCategorias(todasLasSeries);
-        });
-
-        document.getElementById('search-input').addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                e.preventDefault(); // Previene el comportamiento por defecto del Enter
-                searchMovies(e.target.value);
+        // Event listener para la tecla Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                limpiarYCerrarBusqueda();
             }
         });
-
+     // Carousel Touch  encargadao de la barra de anuncios
         function setupCarouselTouch() {
             const container = document.getElementById('announcementsContainer');
+            if (!container) return;
             
             container.addEventListener('touchstart', touchStart);
             container.addEventListener('touchmove', touchMove);
-            container.addEventListener('touchend', touchEnd);
+            container.addEventListener('touchend', () => {
+                touchEnd();
+                startAutoSlide(); // Reiniciar el autoSlide después de la interacción
+            });
         }
 
         function touchStart(event) {
@@ -1708,7 +1874,7 @@
                 isDragging = false;
             }
         }
-
+        // Carousel Touch encargadao de la barra de anuncios    
         function touchEnd() {
             isDragging = false;
             startAutoSlide();
@@ -1741,7 +1907,7 @@
                     slider.style.cursor = 'grab';
                     slider.style.scrollBehavior = 'smooth';
                 }
-
+                // Carousel Touch encargadao de la barra de anuncios    
                 function drag(e) {
                     if (!isDown) return;
 
@@ -1808,7 +1974,7 @@
                 scroll-snap-align: start;
             }
         `;
-
+        // Carousel Touch encargadao de la barra de anuncios    
         const styleSheet = document.createElement("style");
         styleSheet.textContent = styles;
         document.head.appendChild(styleSheet);
@@ -1871,67 +2037,93 @@
             });
         }
 
+        // Carousel Touch encargadao de la barra de anuncios    
         function cargarCategorias() {
             const mainContent = document.querySelector('.main-content');
             mainContent.innerHTML = ''; // Limpiar contenido existente
             
-            // Cargar Mi Lista primero
-            const seriesLiked = JSON.parse(localStorage.getItem('seriesLiked') || '[]');
+            // Cargar Mi Lista de Películas primero
+            const miListaPeliculas = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
             
-            if (seriesLiked.length > 0) {
+            if (miListaPeliculas.length > 0) {
                 const miListaHTML = `
-                    <div class="categoria-seccion">
-                        <h2 class="categoria-titulo">Mi Lista</h2>
+                <div class="categoria-seccion">
+                        <h2 class="categoria-titulo">Mi Lista de Películas <i class="fas fa-heart" style="color: #00ffff;"></i></h2>
                         <div class="categoria-contenedor">
-                            ${seriesLiked.map(serie => `
-                                <div class="movie-card" onclick="mostrarSerie(${JSON.stringify(serie)})">
-                                    <img src="${serie.imagen}" alt="${serie.titulo}">
+                            ${miListaPeliculas.map(pelicula => `
+                                <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
+                                    ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
+                                    <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
                                     <div class="movie-info">
-                                        <h3>${serie.titulo}</h3>
-                                        <p>${serie.año || ''}</p>
+                                        <h3>${pelicula.titulo}</h3>
+                                        <p>${pelicula.año || ''}</p>
                                     </div>
                                 </div>
                             `).join('')}
                         </div>
+                        <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
                     </div>
                 `;
                 mainContent.insertAdjacentHTML('beforeend', miListaHTML);
             }
 
-            // ... resto del código de categorías ...
         }
 
-        // Escuchar cambios en Mi Lista
-        window.addEventListener('seriesListaActualizada', () => {
+        // Escuchar cambios en Mi Lista de Películas
+        window.addEventListener('miListaPeliculasActualizada', () => {
             cargarCategorias();
         });
 
-        // Recargar categorías cuando se actualiza Mi Lista
+        // Recargar categorías cuando se actualiza Mi Lista de Películas
         window.addEventListener('storage', function(e) {
-            if (e.key === 'miLista') {
-                console.log("Actualizando Mi Lista");
-                mostrarSeriesPorCategorias(series);
+            if (e.key === 'miListaPeliculas') {
+                console.log("Actualizando Mi Lista de Películas");
+                mostrarSeriesPorCategorias(todasLasSeries);
             }
         });
 
-        // Agregar esta nueva función para manejar la apertura de series
-        function abrirSerie(serieId) {
-            fetch('../DataBase/series.json')
-                .then(response => response.json())
-                .then(data => {
-                    const serie = data.series.find(s => s.id === serieId);
-                    if (serie) {
-                        localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
-                        window.location.href = 'serie.html';
-                    } else {
-                        console.error('Serie no encontrada');
+        // Agregar esta nueva función para manejar la apertura de películas
+        function abrirPelicula(peliculaData) {
+            try {
+                let pelicula;
+                
+                if (typeof peliculaData === 'string') {
+                    // Si es una cadena, intentar parsearla como JSON
+                    try {
+                        pelicula = JSON.parse(peliculaData);
+                    } catch {
+                        console.error('Error al parsear datos de película');
+                        return;
                     }
-                })
-                .catch(error => console.error('Error al cargar la serie:', error));
+                } else if (typeof peliculaData === 'number') {
+                    // Si es un ID, buscar en todasLasSeries
+                    pelicula = todasLasSeries.find(p => p.id === peliculaData);
+                } else {
+                    // Si ya es un objeto, usarlo directamente
+                    pelicula = peliculaData;
+                }
+
+                if (!pelicula) {
+                    console.error('No se encontraron datos de la película');
+                    return;
+                }
+
+                // Asegurarse de que todos los datos necesarios estén presentes
+                if (!pelicula.id || !pelicula.titulo) {
+                    console.error('Datos de película incompletos');
+                    return;
+                }
+
+                localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
+                window.location.href = 'movie.html';
+            } catch (error) {
+                console.error('Error al abrir película:', error);
+            }
         }
 
         // Modificar la función de búsqueda
-        function searchMovies(query) {
+        function searchSeries(query) {
             const resultadosContainer = document.getElementById('resultadosBusqueda');
             
             if (!query.trim()) {
@@ -1951,7 +2143,7 @@
 
             mostrarResultadosBusqueda(resultados, resultadosContainer);
         }
-
+        // Carousel Touch encargadao de la barra de anuncios    
         function mostrarResultadosBusqueda(resultados, contenedor) {
             if (resultados.length === 0) {
                 contenedor.innerHTML = '<div class="resultado-item">No se encontraron resultados</div>';
@@ -1983,7 +2175,7 @@
             const headerSearch = document.getElementById('headerSearch');
 
             searchInput.addEventListener('input', (e) => {
-                searchMovies(e.target.value);
+                searchSeries(e.target.value);
             });
 
             // Cerrar resultados al hacer clic fuera
@@ -2003,8 +2195,163 @@
                 }
             });
         }
+
+        // Agregar función para controlar el sonido
+        function toggleSound(peliculaId) {
+            const iframe = document.getElementById(`trailerFrame_${peliculaId}`);
+            const button = document.querySelector(`.sound-toggle`);
+            const icon = button.querySelector('i');
+            
+            // Crear nueva URL para el iframe
+            let currentSrc = iframe.src;
+            let isMuted = currentSrc.includes('mute=1');
+            
+            if (isMuted) {
+                // Activar sonido
+                iframe.src = currentSrc.replace('mute=1', 'mute=0');
+                icon.className = 'fas fa-volume-up';
+            } else {
+                // Silenciar
+                iframe.src = currentSrc.replace('mute=0', 'mute=1');
+                icon.className = 'fas fa-volume-mute';
+            }
+        }
+ 
+        // Modificar la función iniciarReproduccionAutomatica
+        function iniciarReproduccionAutomatica() {
+            if (window.innerWidth <= 768) return; // Solo para PC
+            
+            const slides = document.querySelectorAll('.announcement-slide');
+            slides.forEach((slide, index) => {
+                const iframe = slide.querySelector('.announcement-trailer');
+                if (iframe && index === currentSlide) {
+                    // Solo activar el video del slide actual
+                    iframe.src = iframe.src.replace('autoplay=0', 'autoplay=1');
+                }
+            });
+        }
+
+        // Agregar función para manejar el scroll y el audio
+        function handleScrollAudio() {
+            const carousel = document.querySelector('.announcements-carousel');
+            if (!carousel) return;
+
+            // Variable para almacenar el estado anterior del audio
+            let prevAudioState = new Map();
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const iframes = document.querySelectorAll('.announcement-trailer');
+                    iframes.forEach(iframe => {
+                        if (!entry.isIntersecting) {
+                            // Guardar estado actual y silenciar
+                            let currentSrc = iframe.src;
+                            prevAudioState.set(iframe.id, currentSrc.includes('mute=0'));
+                            if (currentSrc.includes('mute=0')) {
+                                iframe.src = currentSrc.replace('mute=0', 'mute=1');
+                                const soundButton = iframe.parentElement.querySelector('.sound-toggle i');
+                                if (soundButton) {
+                                    soundButton.className = 'fas fa-volume-mute';
+                                }
+                            }
+                        } else {
+                            // Restaurar estado anterior si estaba con sonido
+                            let currentSrc = iframe.src;
+                            if (prevAudioState.get(iframe.id)) {
+                                iframe.src = currentSrc.replace('mute=1', 'mute=0');
+                                const soundButton = iframe.parentElement.querySelector('.sound-toggle i');
+                                if (soundButton) {
+                                    soundButton.className = 'fas fa-volume-up';
+                                }
+                            }
+                        }
+                    });
+                });
+            }, {
+                threshold: 0.5 // Trigger cuando el 50% del carrusel está visible/invisible
+            });
+
+            observer.observe(carousel);
+        }
+
+        // Agregar listener para cambios de tamaño de ventana
+        window.addEventListener('resize', () => {
+            // Reiniciar el intervalo cuando cambie el tamaño de la ventana
+            if (autoSlideInterval) {
+                startAutoSlide();
+            }
+        });
+
+        // Agregar la función toggleMiLista
+        function toggleMiLista(boton) {
+            try {
+                const serieId = parseInt(boton.getAttribute('data-pelicula'));
+                if (!serieId) {
+                    console.error('ID de serie no válido');
+                    return;
+                }
+
+                // Buscar la serie en todasLasSeries
+                const serieData = todasLasSeries.find(s => s.id === serieId);
+                if (!serieData) {
+                    console.error('Serie no encontrada');
+                    return;
+                }
+
+                // Obtener la lista actual
+                let miLista = JSON.parse(localStorage.getItem('miListaSeries') || '[]');
+                const indice = miLista.findIndex(s => s.id === serieId);
+
+                if (indice === -1) {
+                    // Agregar a mi lista
+                    miLista.push(serieData);
+                    if (boton && boton.innerHTML) {
+                        boton.innerHTML = '<i class="fas fa-check"></i> Mi lista';
+                        boton.classList.add('en-mi-lista');
+                    }
+                } else {
+                    // Quitar de mi lista
+                    miLista.splice(indice, 1);
+                    if (boton && boton.innerHTML) {
+                        boton.innerHTML = '<i class="fas fa-plus"></i> Mi lista';
+                        boton.classList.remove('en-mi-lista');
+                    }
+                }
+
+                // Guardar la lista actualizada
+                localStorage.setItem('miListaSeries', JSON.stringify(miLista));
+
+                // Actualizar la visualización
+                mostrarSeriesPorCategorias(todasLasSeries);
+            } catch (error) {
+                console.error('Error en toggleMiLista:', error);
+            }
+        }
+
+        // Función para abrir una serie
+        function abrirSerie(serieId) {
+            try {
+                // Buscar la serie en todasLasSeries
+                const serie = todasLasSeries.find(s => s.id === serieId);
+                
+                if (!serie) {
+                    console.error('Serie no encontrada:', serieId);
+                    return;
+                }
+
+                // Guardar la serie seleccionada en localStorage
+                localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
+                
+                // Redirigir a la página correcta de la serie
+                window.location.href = 'serie.html'; // Cambiado de 'ver-serie.html' a 'serie.html'
+                
+            } catch (error) {
+                console.error('Error al abrir la serie:', error);
+            }
+        }
     </script>
 </body>
 </html>
+
 
 
