@@ -1301,6 +1301,29 @@
                 margin-top: 80px;
             }
         }
+
+        /* Estilos para mejorar la experiencia táctil */
+        .announcements-container {
+            touch-action: pan-y pinch-zoom;
+            -webkit-overflow-scrolling: touch;
+            transition: transform 0.3s ease;
+        }
+
+        .announcement-slide {
+            touch-action: pan-y pinch-zoom;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        @media (max-width: 768px) {
+            .announcements-container {
+                will-change: transform;
+            }
+            
+            .announcement-slide {
+                pointer-events: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1502,6 +1525,10 @@
         let currentTranslate = 0;
         let isDragging = false;
 
+        // Agregar estas variables globales
+        let touchStartX = 0;
+        let touchEndX = 0;
+
         // Función para organizar series por categorías
         function mostrarSeriesPorCategorias(series) {
             const categoriasWrapper = document.querySelector('.categorias-wrapper');
@@ -1679,6 +1706,8 @@
         // Modificar la función updateSlidePosition
         function updateSlidePosition() {
             const container = document.getElementById('announcementsContainer');
+            if (!container) return;
+
             const slides = document.querySelectorAll('.announcement-slide');
             
             slides.forEach((slide, index) => {
@@ -1846,43 +1875,72 @@
             const container = document.getElementById('announcementsContainer');
             if (!container) return;
             
-            container.addEventListener('touchstart', touchStart);
-            container.addEventListener('touchmove', touchMove);
+            // Eventos táctiles para móviles
+            container.addEventListener('touchstart', (e) => {
+                touchStartX = e.touches[0].clientX;
+                stopAutoSlide(); // Detener el autoslide mientras se interactúa
+            }, { passive: true });
+
+            container.addEventListener('touchmove', (e) => {
+                touchEndX = e.touches[0].clientX;
+            }, { passive: true });
+
             container.addEventListener('touchend', () => {
-                touchEnd();
-                startAutoSlide(); // Reiniciar el autoSlide después de la interacción
+                handleSwipe();
+                startAutoSlide(); // Reiniciar el autoslide después de la interacción
             });
         }
 
-        function touchStart(event) {
-            startX = event.touches[0].clientX;
-            isDragging = true;
-            stopAutoSlide();
-        }
-
-        function touchMove(event) {
-            if (!isDragging) return;
+        function handleSwipe() {
+            const swipeThreshold = 50; // Umbral mínimo para considerar un swipe
+            const swipeDistance = touchEndX - touchStartX;
             
-            const currentX = event.touches[0].clientX;
-            const diff = startX - currentX;
-            const sensitivity = 50; // Ajusta la sensibilidad del deslizamiento
-
-            if (Math.abs(diff) > sensitivity) {
-                if (diff > 0) {
-                    // Deslizar a la izquierda
-                    currentSlide = Math.min(currentSlide + 1, announcements.length - 1);
+            if (Math.abs(swipeDistance) > swipeThreshold) {
+                const slides = document.querySelectorAll('.announcement-slide');
+                if (swipeDistance > 0) {
+                    // Swipe derecha - slide anterior
+                    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
                 } else {
-                    // Deslizar a la derecha
-                    currentSlide = Math.max(currentSlide - 1, 0);
+                    // Swipe izquierda - siguiente slide
+                    currentSlide = (currentSlide + 1) % slides.length;
                 }
-                updateSlidePosition();
-                isDragging = false;
+                
+                const container = document.getElementById('announcementsContainer');
+                if (container) {
+                    container.style.transition = 'transform 0.3s ease';
+                    updateSlidePosition();
+                }
             }
         }
-        // Carousel Touch encargadao de la barra de anuncios    
-        function touchEnd() {
-            isDragging = false;
-            startAutoSlide();
+
+        // Modificar la función updateSlidePosition para que sea más suave
+        function updateSlidePosition() {
+            const container = document.getElementById('announcementsContainer');
+            if (!container) return;
+
+            const slides = document.querySelectorAll('.announcement-slide');
+            
+            slides.forEach((slide, index) => {
+                const iframe = slide.querySelector('iframe');
+                if (iframe) {
+                    if (index === currentSlide) {
+                        // Activar solo el video del slide actual
+                        const newSrc = iframe.src
+                            .replace('autoplay=0', 'autoplay=1')
+                            .replace('mute=1', 'mute=0');
+                        if (iframe.src !== newSrc) {
+                            iframe.src = newSrc;
+                        }
+                    } else {
+                        // Detener completamente los otros videos
+                        const baseUrl = iframe.src.split('?')[0];
+                        iframe.src = `${baseUrl}?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3`;
+                    }
+                }
+                slide.classList.toggle('active', index === currentSlide);
+            });
+            
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
         }
 
         // Función mejorada para el scroll con mouse
