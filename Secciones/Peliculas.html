@@ -1538,6 +1538,9 @@
         let minSwipeDistance = 100; // Aumentado para requerir un deslizamiento más largo
         let maxSwipeTime = 300; // Tiempo máximo para considerar un swipe válido
 
+        // Agregar una variable para rastrear si hubo movimiento
+        let hasMoved = false;
+
         // Función para organizar películas por categorías
         function organizarPorCategorias(peliculas) {
             const categorias = {
@@ -1979,17 +1982,25 @@
             container.addEventListener('touchstart', (e) => {
                 touchStartX = e.touches[0].clientX;
                 touchStartTime = new Date().getTime();
+                hasMoved = false; // Reiniciar el indicador de movimiento
                 stopAutoSlide();
             }, { passive: true });
 
             container.addEventListener('touchmove', (e) => {
-                e.preventDefault(); // Prevenir scroll mientras se arrastra
                 touchEndX = e.touches[0].clientX;
+                // Marcar que hubo movimiento solo si el desplazamiento es significativo
+                if (Math.abs(touchEndX - touchStartX) > 10) {
+                    hasMoved = true;
+                    e.preventDefault();
+                }
             }, { passive: false });
 
             container.addEventListener('touchend', () => {
                 touchEndTime = new Date().getTime();
-                handleSwipe();
+                // Solo procesar el swipe si realmente hubo movimiento
+                if (hasMoved) {
+                    handleSwipe();
+                }
                 startAutoSlide();
             });
         }
@@ -1998,13 +2009,10 @@
             const swipeDistance = touchEndX - touchStartX;
             const swipeTime = touchEndTime - touchStartTime;
             
-            // Solo procesar el swipe si:
-            // 1. La distancia es mayor que el mínimo requerido
-            // 2. El tiempo es menor que el máximo permitido
-            // 3. La distancia es significativa (evita toques accidentales)
+            // Solo procesar el swipe si cumple con todos los criterios
             if (Math.abs(swipeDistance) > minSwipeDistance && 
                 swipeTime < maxSwipeTime && 
-                Math.abs(swipeDistance) > 50) {
+                hasMoved) { // Agregar verificación de movimiento
                 
                 const slides = document.querySelectorAll('.announcement-slide');
                 if (swipeDistance > 0) {
