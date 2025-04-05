@@ -1056,11 +1056,8 @@
 
             // Función para verificar si la serie está en Mi Lista
             function estaEnMiLista(serie) {
-                const miLista = JSON.parse(localStorage.getItem('miLista') || '[]');
-                return miLista.some(item => 
-                    item.id === serie.id || 
-                    item.titulo === serie.titulo
-                );
+                const miLista = JSON.parse(localStorage.getItem('miListaSeries') || '[]');
+                return miLista.some(item => item.id === serie.id);
             }
 
             // Función para actualizar el botón
@@ -1074,13 +1071,13 @@
 
             // Manejar clic en el botón
             btnAgregarLista.onclick = function() {
-                let miLista = JSON.parse(localStorage.getItem('miLista') || '[]');
+                let miLista = JSON.parse(localStorage.getItem('miListaSeries') || '[]');
                 const enLista = estaEnMiLista(serie);
 
                 if (!enLista) {
                     // Crear objeto de serie limpio
                     const serieLimpia = {
-                        id: serie.id || Date.now(), // Usar timestamp como ID si no existe
+                        id: serie.id || Date.now(),
                         titulo: serie.titulo,
                         imagen: serie.imagen || serie.miniatura_episodios,
                         año: serie.año,
@@ -1088,22 +1085,20 @@
                         descripcion: serie.descripcion
                     };
 
-                    miLista.push(serieLimpia);
+                    miLista.unshift(serieLimpia); // Agregar al principio de la lista
                     console.log("Serie agregada:", serieLimpia);
                 } else {
-                    miLista = miLista.filter(item => 
-                        item.id !== serie.id && 
-                        item.titulo !== serie.titulo
-                    );
+                    miLista = miLista.filter(item => item.id !== serie.id);
                     console.log("Serie eliminada:", serie.titulo);
                 }
 
-                localStorage.setItem('miLista', JSON.stringify(miLista));
+                localStorage.setItem('miListaSeries', JSON.stringify(miLista));
                 actualizarBoton();
 
                 // Notificar cambio
-                const evento = new Event('storage');
-                evento.key = 'miLista';
+                const evento = new CustomEvent('miListaSeriesActualizada', {
+                    detail: { serie: serie, agregada: !enLista }
+                });
                 window.dispatchEvent(evento);
 
                 // Mostrar feedback

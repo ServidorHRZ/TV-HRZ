@@ -1628,6 +1628,32 @@
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Deadpool%203.jpg",
       "enlace": "https://drive.google.com/file/d/1yA-A8IBfcWAn8eA_fEh860NxPp2P_oFw/preview",
       "descripcion": "Wade Wilson se une a Logan en una aventura que promete ser tan violenta como hilarante, mezclando el humor característico de Deadpool con la actitud gruñona de Wolverine."
+    },
+    {
+      "id": 157,
+      "titulo": "Venom",
+      "disponible": true,
+      "nuevo": true,
+      "badge" :"Recien agregado",
+      "año": 2018,
+      "trailer": "https://www.youtube.com/embed/PVK0MQrZmxE",
+      "genero": ["accion", "ciencia ficcion", "marvel"],
+      "imagen": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be7c0483-85eb-4ea8-821f-3afbf8f90d12/dc9s3fn-3fdab1de-a186-4a51-b511-cf92d78013f5.jpg/v1/fill/w_1280,h_1898,q_75,strp/poster_oficial_latino_de_venom__by_cinescalas_dc9s3fn-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg5OCIsInBhdGgiOiJcL2ZcL2JlN2MwNDgzLTg1ZWItNGVhOC04MjFmLTNhZmJmOGY5MGQxMlwvZGM5czNmbi0zZmRhYjFkZS1hMTg2LTRhNTEtYjUxMS1jZjkyZDc4MDEzZjUuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.83s_p1YmxtbfRj-6hWR2tafulZR9On-DUd6s5cFDAms",
+      "enlace": "https://fastream.to/embed-the6ok86zr95.html",
+      "descripcion": "El periodista Eddie Brock está investigando a una empresa llamada Fundación Vida. Mientras realiza un reportaje sobre un experimento científico, Brock entra en contacto con un simbionte alienígena que se fusiona con su cuerpo, otorgándole superpoderes además de una personalidad vengativa y violenta."
+    },
+    {
+      "id": 158,
+      "titulo": "Karate Kid",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado", 
+      "año": 2024,
+      "trailer": "https://www.youtube.com/embed/8c64K6et_fU",
+      "genero": ["accion", "artes marciales", "familiar"],
+      "imagen": "https://posters.movieposterdb.com/10_05/2010/1155076/l_1155076_34fe046a.jpg",
+      "enlace": "https://fastream.to/embed-l2d13uxzsfxs.html",
+      "descripcion": "Un adolescente de China se muda a Brooklyn y encuentra su camino a través de las artes marciales con la ayuda de un mentor experimentado, mientras lucha por adaptarse a su nuevo hogar y enfrentar los desafíos de la vida."
     }
   ]
 }
