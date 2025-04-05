@@ -1323,6 +1323,105 @@
                 pointer-events: auto;
             }
         }
+
+        // Función mejorada para el scroll con mouse
+        function enableDragScroll() {
+            const sliders = document.querySelectorAll('.categoria-contenedor');
+            
+            sliders.forEach(slider => {
+                let isDown = false;
+                let startX;
+                let startY;
+                let scrollLeft;
+                let isHorizontalScroll = false;
+
+                function startDragging(e) {
+                    isDown = true;
+                    slider.style.scrollBehavior = 'auto';
+                    slider.style.cursor = 'grabbing';
+                    
+                    startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
+                    startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
+                    scrollLeft = slider.scrollLeft;
+                }
+
+                function stopDragging() {
+                    isDown = false;
+                    isHorizontalScroll = false;
+                    slider.style.cursor = 'grab';
+                    slider.style.scrollBehavior = 'smooth';
+                }
+                
+                function drag(e) {
+                    if (!isDown) return;
+
+                    const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+                    const y = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
+                    
+                    const deltaX = Math.abs(x - startX);
+                    const deltaY = Math.abs(y - startY);
+
+                    // Determinar dirección del scroll
+                    if (!isHorizontalScroll) {
+                        if (deltaX > deltaY && deltaX > 5) {
+                            isHorizontalScroll = true;
+                            e.preventDefault();
+                        } else if (deltaY > deltaX && deltaY > 5) {
+                            isDown = false;
+                            return;
+                        }
+                    }
+
+                    if (isHorizontalScroll) {
+                        e.preventDefault();
+                        const walk = (x - startX) * 1.5; // Multiplicador de velocidad
+                        slider.scrollLeft = scrollLeft - walk;
+                    }
+                }
+
+                // Event Listeners
+                slider.addEventListener('mousedown', startDragging);
+                slider.addEventListener('mousemove', drag);
+                slider.addEventListener('mouseup', stopDragging);
+                slider.addEventListener('mouseleave', stopDragging);
+                
+                // Touch events
+                slider.addEventListener('touchstart', startDragging, { passive: true });
+                slider.addEventListener('touchmove', drag, { passive: false });
+                slider.addEventListener('touchend', stopDragging);
+            });
+        }
+
+        // Actualizar estilos CSS
+        const styles = `
+            .categoria-contenedor {
+                -webkit-overflow-scrolling: touch;
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+                padding: 5px 0;
+                gap: 8px;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                cursor: grab;
+                scroll-behavior: smooth;
+                scroll-snap-type: x proximity;
+            }
+
+            .categoria-contenedor::-webkit-scrollbar {
+                display: none;
+            }
+
+            .movie-card {
+                user-select: none;
+                -webkit-user-select: none;
+                scroll-snap-align: start;
+            }
+        `;
+
+        const styleSheet = document.createElement("style");
+        styleSheet.textContent = styles;
+        document.head.appendChild(styleSheet);
     </style>
 </head>
 <body>
@@ -2058,7 +2157,7 @@
                     slider.style.cursor = 'grab';
                     slider.style.scrollBehavior = 'smooth';
                 }
-                // Carousel Touch encargadao de la barra de anuncios    
+                
                 function drag(e) {
                     if (!isDown) return;
 
@@ -2098,37 +2197,6 @@
                 slider.addEventListener('touchend', stopDragging);
             });
         }
-
-        // Actualizar estilos CSS
-        const styles = `
-            .categoria-contenedor {
-                -webkit-overflow-scrolling: touch;
-                overflow-x: auto;
-                overflow-y: hidden;
-                white-space: nowrap;
-                padding: 5px 0;
-                gap: 8px;
-                scrollbar-width: none;
-                -ms-overflow-style: none;
-                cursor: grab;
-                scroll-behavior: smooth;
-                scroll-snap-type: x proximity;
-            }
-
-            .categoria-contenedor::-webkit-scrollbar {
-                display: none;
-            }
-
-            .movie-card {
-                user-select: none;
-                -webkit-user-select: none;
-                scroll-snap-align: start;
-            }
-        `;
-        // Carousel Touch encargadao de la barra de anuncios    
-        const styleSheet = document.createElement("style");
-        styleSheet.textContent = styles;
-        document.head.appendChild(styleSheet);
 
         // Función para crear y manejar las flechas de navegación
         function setupNavArrows() {
