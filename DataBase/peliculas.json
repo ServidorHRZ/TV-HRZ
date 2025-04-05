@@ -290,7 +290,7 @@
       "id": 27,
       "titulo": "Uncharted",
       "disponible": true,
-      "nuevo": true,
+      "nuevo": false,
       "año": 2022,
       "genero": ["accion", "neflix"],
       "imagen": "https://image.tmdb.org/t/p/w185/6hlI9Ea1O4IeJ2cj7OiNinqg8Qd.jpg",
