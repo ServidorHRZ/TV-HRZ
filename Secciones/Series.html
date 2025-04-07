@@ -591,11 +591,11 @@
         /* Estilos mejorados para el carrusel de anuncios */
         .announcements-carousel {
             position: relative;
-            width: 100%; /* Cambiado a 100% para PC */
-            max-width: none; /* Eliminado el max-width */
-            margin: 0; /* Eliminados los márgenes en PC */
+            width: 100%; /* Reducido del 100% */
+            max-width: none;
+            margin: 60px auto 10px; /* Centrado con margen superior */
             overflow: hidden;
-            border-radius: 0; /* Sin bordes redondeados en PC */
+            border-radius: 10px;
             z-index: 1;
             height: 400px;
         }
@@ -756,10 +756,10 @@
         /* Media queries para el carrusel */
         @media (max-width: 768px) {
             .announcements-carousel {
-                width: 88%;
-                height: 500px;
-                margin: 70px auto 10px; /* Restauramos márgenes en móvil */
-                border-radius: 15px; /* Restauramos bordes redondeados en móvil */
+                width: 88%; /* Reducido de 90% a 88% para un poquito más de margen */
+                height: 450px;
+                margin-top: 50px;
+                border-radius: 15px;
             }
 
             .announcement-content {
@@ -774,9 +774,8 @@
 
         @media (max-width: 480px) {
             .announcements-carousel {
-                width: 90%;
-                height: 520px;
-                margin: 80px auto 10px;
+                width: 90%; /* Reducido de 92% a 90% para un poquito más de margen */
+                height: 450px;
             }
         }
 
@@ -1325,7 +1324,7 @@
             }
         }
 
-        // Modificar la función enableDragScroll para mejorar la fluidez
+        // Función mejorada para el scroll con mouse
         function enableDragScroll() {
             const sliders = document.querySelectorAll('.categoria-contenedor');
             
@@ -1335,13 +1334,6 @@
                 let startY;
                 let scrollLeft;
                 let isHorizontalScroll = false;
-                let startTime;
-                let lastX;
-                let velocity = 0;
-                let momentumID;
-                let lastTimestamp;
-                let velocityTracker = [];
-                let lastDelta = 0;
 
                 function startDragging(e) {
                     isDown = true;
@@ -1350,38 +1342,24 @@
                     
                     startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
                     startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
-                    lastX = startX;
                     scrollLeft = slider.scrollLeft;
-                    startTime = Date.now();
-                    lastTimestamp = startTime;
-                    velocityTracker = [];
-                    lastDelta = 0;
-
-                    if (momentumID) {
-                        cancelAnimationFrame(momentumID);
-                    }
                 }
 
+                function stopDragging() {
+                    isDown = false;
+                    isHorizontalScroll = false;
+                    slider.style.cursor = 'grab';
+                    slider.style.scrollBehavior = 'smooth';
+                }
+                
                 function drag(e) {
                     if (!isDown) return;
 
-                    const currentX = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
-                    const currentY = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
-                    const currentTime = Date.now();
+                    const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+                    const y = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
                     
-                    const deltaX = Math.abs(currentX - startX);
-                    const deltaY = Math.abs(currentY - startY);
-                    const timeDelta = currentTime - lastTimestamp;
-
-                    // Calcular y suavizar la velocidad con más precisión
-                    if (timeDelta > 0) {
-                        const instantVelocity = (lastX - currentX) / timeDelta;
-                        velocityTracker.push(instantVelocity);
-                        if (velocityTracker.length > 3) { // Reducido para mayor respuesta
-                            velocityTracker.shift();
-                        }
-                        velocity = velocityTracker.reduce((a, b) => a + b, 0) / velocityTracker.length;
-                    }
+                    const deltaX = Math.abs(x - startX);
+                    const deltaY = Math.abs(y - startY);
 
                     // Determinar dirección del scroll
                     if (!isHorizontalScroll) {
@@ -1396,90 +1374,18 @@
 
                     if (isHorizontalScroll) {
                         e.preventDefault();
-                        
-                        // Calcular el delta actual
-                        const currentDelta = currentX - lastX;
-                        
-                        // Suavizar el movimiento combinando el delta actual con el anterior
-                        const smoothDelta = (currentDelta + lastDelta) / 2;
-                        lastDelta = currentDelta;
-
-                        // Ajustar la sensibilidad de manera más precisa
-                        const baseSpeed = 1.2; // Velocidad base más baja
-                        const speedMultiplier = Math.min(1.5, Math.max(0.8, 1 + Math.abs(velocity) * 0.3));
-                        const sensitivity = baseSpeed * speedMultiplier;
-
-                        // Aplicar el movimiento suavizado
-                        const targetScroll = scrollLeft - (currentX - startX) * sensitivity;
-                        const smoothFactor = Math.min(0.4, Math.max(0.15, 0.25 + Math.abs(velocity) * 0.1));
-                        slider.scrollLeft += (targetScroll - slider.scrollLeft) * smoothFactor;
-                    }
-
-                    lastX = currentX;
-                    lastTimestamp = currentTime;
-                }
-
-                function stopDragging(e) {
-                    if (!isDown) return;
-                    
-                    isDown = false;
-                    isHorizontalScroll = false;
-                    slider.style.cursor = 'grab';
-                    
-                    const endTime = Date.now();
-                    const timeElapsed = endTime - startTime;
-                    const averageVelocity = velocityTracker.reduce((a, b) => a + b, 0) / velocityTracker.length;
-                    
-                    // Aplicar momentum solo si el movimiento fue lo suficientemente rápido
-                    if (timeElapsed < 300 && Math.abs(averageVelocity) > 0.05) {
-                        applyMomentum(averageVelocity);
-                    } else {
-                        slider.style.scrollBehavior = 'smooth';
+                        const walk = (x - startX) * 1.5; // Multiplicador de velocidad
+                        slider.scrollLeft = scrollLeft - walk;
                     }
                 }
 
-                function applyMomentum(initialVelocity) {
-                    let currentVelocity = initialVelocity * 25; // Reducido para menor exageración
-                    let deceleration = 0.98; // Fricción más suave
-                    let prevScroll = slider.scrollLeft;
-                    let dampingFactor = 0.92; // Factor de amortiguación inicial más bajo
-
-                    function momentum() {
-                        if (Math.abs(currentVelocity) > 0.01) {
-                            // Aplicar scroll con suavizado adaptativo
-                            const speedFactor = Math.min(1, Math.abs(currentVelocity) * 2);
-                            const smoothFactor = 0.15 + speedFactor * 0.1;
-                            const targetScroll = slider.scrollLeft + currentVelocity * dampingFactor;
-                            
-                            slider.scrollLeft += (targetScroll - slider.scrollLeft) * smoothFactor;
-                            
-                            // Ajustar la deceleración de manera más suave
-                            deceleration = Math.min(0.98, Math.max(0.96, 0.97 + Math.abs(currentVelocity) * 0.002));
-                            currentVelocity *= deceleration;
-                            dampingFactor *= 0.98; // Reducción más gradual
-                            
-                            // Detectar límites con más precisión
-                            if (Math.abs(slider.scrollLeft - prevScroll) < 0.1) {
-                                currentVelocity = 0;
-                            }
-                            prevScroll = slider.scrollLeft;
-                            
-                            momentumID = requestAnimationFrame(momentum);
-                        } else {
-                            slider.style.scrollBehavior = 'smooth';
-                        }
-                    }
-                    
-                    momentum();
-                }
-
-                // Event Listeners para mouse
+                // Event Listeners
                 slider.addEventListener('mousedown', startDragging);
                 slider.addEventListener('mousemove', drag);
                 slider.addEventListener('mouseup', stopDragging);
                 slider.addEventListener('mouseleave', stopDragging);
                 
-                // Event Listeners para touch
+                // Touch events
                 slider.addEventListener('touchstart', startDragging, { passive: true });
                 slider.addEventListener('touchmove', drag, { passive: false });
                 slider.addEventListener('touchend', stopDragging);
@@ -1577,6 +1483,7 @@
         const CACHE_VERSION = '1.0';
         const CACHE_KEYS = {
             SERIES: 'hrztv_series_cache',
+            PELICULAS: 'hrztv_peliculas_cache',
             ANUNCIOS: 'hrztv_anuncios_cache',
             TIMESTAMP: 'hrztv_cache_timestamp',
             VERSION: 'hrztv_cache_version'
@@ -1633,7 +1540,8 @@
         async function cargarContenidoDesdeServidor(tipo) {
             const urls = {
                 series: '../DataBase/series.json',
-                anuncios: '../DataBase/series.json' // Cambiado de movie_announcements.json a series.json
+                peliculas: '../DataBase/series.json',
+                anuncios: '../DataBase/series.json'
             };
 
             try {
@@ -1643,7 +1551,7 @@
                 
                 // Si es tipo anuncios, transformamos los datos para mantener compatibilidad
                 if (tipo === 'anuncios') {
-                    datos.announcements = datos.series.filter(serie => serie.destacado); // Filtramos series destacadas
+                    datos.announcements = datos.series.filter(serie => serie.destacado);
                 }
                 
                 // Guardar en caché
@@ -1683,6 +1591,10 @@
                     todasLasSeries = datos.series.filter(serie => serie.disponible);
                     mostrarSeriesPorCategorias(todasLasSeries);
                     break;
+                case 'peliculas':
+                    todasLasSeries = datos.series.filter(serie => serie.disponible);
+                    mostrarSeriesPorCategorias(todasLasSeries);
+                    break;
                 case 'anuncios':
                     announcements = datos.announcements;
                     mostrarAnuncios();
@@ -1709,7 +1621,7 @@
         }
 
         // Variables globales
-        let todasLasSeries = [];  // Cambiar de todasLasPeliculas a todasLasSeries
+        let todasLasSeries = [];
         let currentSlide = 0;
         let announcements = [];
         let autoSlideInterval;
@@ -1729,10 +1641,7 @@
         let hasMoved = false;
 
         // Función para organizar series por categorías
-        function mostrarSeriesPorCategorias(series) {
-            const categoriasWrapper = document.querySelector('.categorias-wrapper');
-            if (!categoriasWrapper) return;
-
+        function organizarPorCategorias(series) {
             const categorias = {
                 'mi_lista': { titulo: 'Mi Lista', series: [], mantenerOrden: false },
                 'neflix': { titulo: 'Netflix', series: [], mantenerOrden: false },
@@ -1748,9 +1657,19 @@
                 'anime': { titulo: 'Anime', series: [], mantenerOrden: false },
                 'novelas': { titulo: 'Novelas', series: [], mantenerOrden: false },
                 'deportes': { titulo: 'Deportes', series: [], mantenerOrden: false },
+                
             };
 
-            // Organizar series por categorías
+            // Función para mezclar array
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
+            // Agregar series a categorías
             series.forEach(serie => {
                 if (Array.isArray(serie.genero)) {
                     serie.genero.forEach(gen => {
@@ -1759,7 +1678,7 @@
                             categorias[generoLower].series.push(serie);
                         }
                     });
-                } else if (serie.genero) {
+                } else {
                     const generoLower = serie.genero.toLowerCase();
                     if (categorias[generoLower]) {
                         categorias[generoLower].series.push(serie);
@@ -1767,66 +1686,134 @@
                 }
             });
 
-            // Limpiar el contenedor
-            categoriasWrapper.innerHTML = '';
-            
-            // Mostrar Mi Lista primero si existe
-            const miListaSeries = JSON.parse(localStorage.getItem('miListaSeries') || '[]');
-            if (miListaSeries.length > 0) {
-                const seccionMiLista = crearSeccionCategoria('Mi Lista', miListaSeries, true);
-                categoriasWrapper.appendChild(seccionMiLista);
+            // Ordenar series en cada categoría
+            for (const categoria of Object.values(categorias)) {
+                const nuevas = categoria.series.filter(s => s.nuevo);
+                const noNuevas = categoria.series.filter(s => !s.nuevo);
+
+                if (!categoria.mantenerOrden) {
+                    shuffleArray(noNuevas);
+                }
+
+                categoria.series = [...nuevas, ...noNuevas];
             }
 
-            // Mostrar el resto de categorías
+            return categorias;
+        }
+
+        // Función para mostrar series por categorías
+        function mostrarSeriesPorCategorias(series) {
+            const categoriasWrapper = document.querySelector('.categorias-wrapper');
+            if (!categoriasWrapper) return;
+
+            const logosCategoria = {
+                'neflix': ['../logos/1.jpeg'],
+                'amazon': ['../logos/2.jpeg'],
+                'animacion': ['../logos/3.jpeg'],
+                'marvel': ['../logos/7.png'],
+                'dc': ['../logos/4.jpeg']
+            };
+
+            categoriasWrapper.innerHTML = '';
+            
+            // Mostrar Mi Lista de Series primero
+            const miListaSeries = JSON.parse(localStorage.getItem('miListaSeries') || '[]');
+            
+            if (miListaSeries.length > 0) {
+                const seccionMiLista = document.createElement('div');
+                seccionMiLista.className = 'categoria-seccion';
+                
+                seccionMiLista.innerHTML = `
+                    <h2 class="categoria-titulo">Mi Lista <i class="fas fa-heart" style="color: #00ffff;"></i></h2>
+                    <div class="categoria-contenedor">
+                        ${miListaSeries.map(serie => `
+                            <div class="movie-card" data-serie='${JSON.stringify(serie)}'>
+                                ${serie.badge ? `<div class="badge">${serie.badge}</div>` : ''}
+                                <img src="${serie.imagen}" alt="${serie.titulo}">
+                                <div class="movie-info">
+                                    <h3>${serie.titulo}</h3>
+                                    <p>${serie.año || ''}</p>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
+                `;
+                
+                categoriasWrapper.appendChild(seccionMiLista);
+
+                // Agregar event listeners a las tarjetas de Mi Lista
+                const miListaCards = seccionMiLista.querySelectorAll('.movie-card');
+                miListaCards.forEach(card => {
+                    card.addEventListener('click', () => {
+                        try {
+                            const serieData = JSON.parse(card.getAttribute('data-serie'));
+                            abrirSerie(serieData);
+                        } catch (error) {
+                            console.error('Error al procesar serie de Mi Lista:', error);
+                        }
+                    });
+                });
+            }
+            
+            const categorias = organizarPorCategorias(series);
+
             for (const [key, categoria] of Object.entries(categorias)) {
-                if (key !== 'mi_lista' && categoria.series.length > 0) {
-                    const seccion = crearSeccionCategoria(categoria.titulo, categoria.series);
+                if (categoria.series.length > 0) {
+                    const seccion = document.createElement('div');
+                    seccion.className = 'categoria-seccion';
+                    
+                    const logosHTML = logosCategoria[key] ? 
+                        logosCategoria[key].map(logo => 
+                            `<img src="${logo}" alt="${categoria.titulo} logo" class="categoria-logo">`
+                        ).join('') : '';
+                    
+                    seccion.innerHTML = `
+                        <h2 class="categoria-titulo">
+                            ${categoria.titulo}
+                            <div class="logos-container">
+                                ${logosHTML}
+                            </div>
+                        </h2>
+                        <div class="categoria-contenedor">
+                            ${categoria.series.map(serie => `
+                                <div class="movie-card" data-serie='${JSON.stringify(serie)}'>
+                                    ${serie.badge ? `<div class="badge">${serie.badge}</div>` : ''}
+                                    <img src="${serie.imagen}" alt="${serie.titulo}">
+                                    <div class="movie-info">
+                                        <h3>${serie.titulo}</h3>
+                                        <p>${serie.año || ''}</p>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
+                    `;
+                    
                     categoriasWrapper.appendChild(seccion);
                 }
             }
 
-            // Configurar navegación y eventos después de crear las secciones
+            // Agregar event listeners a todas las movie-cards
+            document.querySelectorAll('.movie-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const serieData = card.getAttribute('data-serie');
+                    abrirSerie(serieData);
+                });
+            });
+
+            // Agregar listener para actualizar la interfaz cuando cambie Mi Lista
+            window.addEventListener('miListaSeriesActualizada', () => {
+                mostrarSeriesPorCategorias(todasLasSeries);
+            });
+
+            // Configurar las flechas de navegación después de crear las secciones
             setupNavArrows();
-            enableDragScroll();
         }
 
-        // Función auxiliar para crear una sección de categoría
-        function crearSeccionCategoria(titulo, series, esMiLista = false) {
-            const seccion = document.createElement('div');
-            seccion.className = 'categoria-seccion';
-
-            const logosHTML = titulo.toLowerCase().includes('netflix') ? 
-                '<img src="../logos/1.jpeg" alt="Netflix logo" class="categoria-logo">' :
-                titulo.toLowerCase().includes('amazon') ? 
-                '<img src="../logos/2.jpeg" alt="Amazon logo" class="categoria-logo">' : '';
-
-            seccion.innerHTML = `
-                <h2 class="categoria-titulo">
-                    ${titulo}
-                    <div class="logos-container">
-                        ${logosHTML}
-                    </div>
-                </h2>
-                <div class="categoria-contenedor">
-                    ${series.map(serie => `
-                        <div class="movie-card" onclick="abrirSerie(${serie.id})">
-                            ${serie.badge ? `<div class="badge">${serie.badge}</div>` : ''}
-                            <img src="${serie.imagen}" alt="${serie.titulo}" loading="lazy">
-                            <div class="movie-info">
-                                <h3>${serie.titulo}</h3>
-                                <p>${serie.año || ''}</p>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-                <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
-            `;
-
-            return seccion;
-        }
-
-        // Función para obtener películas aleatorias para los posters
+        // Función para obtener series aleatorias para los posters
         function obtenerSeriesAleatorias(series, cantidad) {
             const seriesDisponibles = series.filter(s => s.disponible);
             const seriesAleatorias = [];
@@ -1844,8 +1831,6 @@
         // Modificar la función mostrarAnuncios
         function mostrarAnuncios() {
             const container = document.getElementById('announcementsContainer');
-            if (!container) return;
-
             container.innerHTML = '';
             
             const postersAleatorios = obtenerSeriesAleatorias(todasLasSeries, 5);
@@ -1855,48 +1840,63 @@
                 const slide = document.createElement('div');
                 slide.className = 'announcement-slide';
                 
+                const trailerSrc = esPC && serie.trailer ? 
+                    `${serie.trailer}?autoplay=0&mute=0&controls=0&showinfo=0&rel=0&loop=1&playlist=${serie.trailer.split('embed/')[1]}&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3` 
+                    : '';
+
+                const contenidoMedia = esPC && serie.trailer ? `
+                    <iframe 
+                        id="trailerFrame_${serie.id}"
+                        src="${trailerSrc}"
+                        class="announcement-trailer"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        style="pointer-events: none;"
+                        allowfullscreen>
+                    </iframe>
+                    <button class="sound-toggle" onclick="toggleSound(${serie.id})" style="z-index: 3;">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                ` : `
+                    <img src="${serie.imagen}" alt="${serie.titulo}" class="announcement-image">
+                `;
+
                 const miLista = JSON.parse(localStorage.getItem('miListaSeries') || '[]');
                 const estaEnMiLista = miLista.some(s => s.id === serie.id);
                 
+                const botonVerAhoraHTML = `
+                    <button class="ver-ahora-btn" data-serie='${serie.id}' onclick="abrirSerie(${serie.id})">
+                        <i class="fas fa-play"></i> Reproducir
+                    </button>
+                `;
+                
                 const botonMiListaHTML = `
                     <button class="mi-lista-btn ${estaEnMiLista ? 'en-mi-lista' : ''}" 
-                            data-pelicula="${serie.id}" 
+                            data-serie='${serie.id}' 
                             onclick="toggleMiLista(this)">
                         <i class="fas ${estaEnMiLista ? 'fa-check' : 'fa-plus'}"></i>
                         Mi lista
                     </button>
                 `;
 
-                // Resto del código del slide...
                 slide.innerHTML = `
-                    ${esPC && serie.trailer ? `
-                        <iframe 
-                            id="trailerFrame_${serie.id}"
-                            src="${serie.trailer}?autoplay=0&mute=0&controls=0&showinfo=0&rel=0&loop=1&playlist=${serie.trailer.split('embed/')[1]}&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3"
-                            class="announcement-trailer"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            style="pointer-events: none;"
-                            allowfullscreen>
-                        </iframe>
-                        <button class="sound-toggle" onclick="toggleSound(${serie.id})" style="z-index: 3;">
-                            <i class="fas fa-volume-up"></i>
-                        </button>
-                    ` : `
-                        <img src="${serie.imagen}" alt="${serie.titulo}" class="announcement-image">
-                    `}
+                    ${contenidoMedia}
                     <div class="announcement-content">
                         <h2 class="announcement-title">${serie.titulo}</h2>
                         <div class="announcement-info">
-                            <button class="ver-ahora-btn" onclick="abrirSerie(${serie.id})">
-                                <i class="fas fa-play"></i> Reproducir
-                            </button>
+                            ${botonVerAhoraHTML}
                             ${botonMiListaHTML}
                         </div>
                     </div>
                 `;
-                
                 container.appendChild(slide);
+                
+                if (index === 0 && esPC && serie.trailer) {
+                    setTimeout(() => {
+                        const iframe = document.getElementById(`trailerFrame_${serie.id}`);
+                        iframe.src = iframe.src.replace('autoplay=0', 'autoplay=1');
+                    }, 1000);
+                }
             });
             
             updateSlidePosition();
@@ -2009,7 +2009,7 @@
             gestionarCache();
             
             // Cargar contenido con caché
-            cargarContenidoConCache('series');  // Cambiado de 'peliculas' a 'series'
+            cargarContenidoConCache('series');
             cargarContenidoConCache('anuncios');
             
             setupCarouselTouch();
@@ -2126,36 +2126,6 @@
             }
         }
 
-        // Modificar la función updateSlidePosition para que sea más suave
-        function updateSlidePosition() {
-            const container = document.getElementById('announcementsContainer');
-            if (!container) return;
-
-            const slides = document.querySelectorAll('.announcement-slide');
-            
-            slides.forEach((slide, index) => {
-                const iframe = slide.querySelector('iframe');
-                if (iframe) {
-                    if (index === currentSlide) {
-                        // Activar solo el video actual
-                        const newSrc = iframe.src
-                            .replace('autoplay=0', 'autoplay=1')
-                            .replace('mute=1', 'mute=0');
-                        if (iframe.src !== newSrc) {
-                            iframe.src = newSrc;
-                        }
-                    } else {
-                        // Detener otros videos
-                        const baseUrl = iframe.src.split('?')[0];
-                        iframe.src = `${baseUrl}?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1&enablejsapi=1&disablekb=1&modestbranding=1&iv_load_policy=3`;
-                    }
-                }
-                slide.classList.toggle('active', index === currentSlide);
-            });
-            
-            container.style.transform = `translateX(-${currentSlide * 100}%)`;
-        }
-
         // Función mejorada para el scroll con mouse
         function enableDragScroll() {
             const sliders = document.querySelectorAll('.categoria-contenedor');
@@ -2166,13 +2136,6 @@
                 let startY;
                 let scrollLeft;
                 let isHorizontalScroll = false;
-                let startTime;
-                let lastX;
-                let velocity = 0;
-                let momentumID;
-                let lastTimestamp;
-                let velocityTracker = [];
-                let lastDelta = 0;
 
                 function startDragging(e) {
                     isDown = true;
@@ -2181,38 +2144,24 @@
                     
                     startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
                     startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
-                    lastX = startX;
                     scrollLeft = slider.scrollLeft;
-                    startTime = Date.now();
-                    lastTimestamp = startTime;
-                    velocityTracker = [];
-                    lastDelta = 0;
-
-                    if (momentumID) {
-                        cancelAnimationFrame(momentumID);
-                    }
                 }
 
+                function stopDragging() {
+                    isDown = false;
+                    isHorizontalScroll = false;
+                    slider.style.cursor = 'grab';
+                    slider.style.scrollBehavior = 'smooth';
+                }
+                
                 function drag(e) {
                     if (!isDown) return;
 
-                    const currentX = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
-                    const currentY = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
-                    const currentTime = Date.now();
+                    const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+                    const y = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
                     
-                    const deltaX = Math.abs(currentX - startX);
-                    const deltaY = Math.abs(currentY - startY);
-                    const timeDelta = currentTime - lastTimestamp;
-
-                    // Calcular y suavizar la velocidad con más precisión
-                    if (timeDelta > 0) {
-                        const instantVelocity = (lastX - currentX) / timeDelta;
-                        velocityTracker.push(instantVelocity);
-                        if (velocityTracker.length > 3) { // Reducido para mayor respuesta
-                            velocityTracker.shift();
-                        }
-                        velocity = velocityTracker.reduce((a, b) => a + b, 0) / velocityTracker.length;
-                    }
+                    const deltaX = Math.abs(x - startX);
+                    const deltaY = Math.abs(y - startY);
 
                     // Determinar dirección del scroll
                     if (!isHorizontalScroll) {
@@ -2227,90 +2176,18 @@
 
                     if (isHorizontalScroll) {
                         e.preventDefault();
-                        
-                        // Calcular el delta actual
-                        const currentDelta = currentX - lastX;
-                        
-                        // Suavizar el movimiento combinando el delta actual con el anterior
-                        const smoothDelta = (currentDelta + lastDelta) / 2;
-                        lastDelta = currentDelta;
-
-                        // Ajustar la sensibilidad de manera más precisa
-                        const baseSpeed = 1.2; // Velocidad base más baja
-                        const speedMultiplier = Math.min(1.5, Math.max(0.8, 1 + Math.abs(velocity) * 0.3));
-                        const sensitivity = baseSpeed * speedMultiplier;
-
-                        // Aplicar el movimiento suavizado
-                        const targetScroll = scrollLeft - (currentX - startX) * sensitivity;
-                        const smoothFactor = Math.min(0.4, Math.max(0.15, 0.25 + Math.abs(velocity) * 0.1));
-                        slider.scrollLeft += (targetScroll - slider.scrollLeft) * smoothFactor;
-                    }
-
-                    lastX = currentX;
-                    lastTimestamp = currentTime;
-                }
-
-                function stopDragging(e) {
-                    if (!isDown) return;
-                    
-                    isDown = false;
-                    isHorizontalScroll = false;
-                    slider.style.cursor = 'grab';
-                    
-                    const endTime = Date.now();
-                    const timeElapsed = endTime - startTime;
-                    const averageVelocity = velocityTracker.reduce((a, b) => a + b, 0) / velocityTracker.length;
-                    
-                    // Aplicar momentum solo si el movimiento fue lo suficientemente rápido
-                    if (timeElapsed < 300 && Math.abs(averageVelocity) > 0.05) {
-                        applyMomentum(averageVelocity);
-                    } else {
-                        slider.style.scrollBehavior = 'smooth';
+                        const walk = (x - startX) * 1.5; // Multiplicador de velocidad
+                        slider.scrollLeft = scrollLeft - walk;
                     }
                 }
 
-                function applyMomentum(initialVelocity) {
-                    let currentVelocity = initialVelocity * 25; // Reducido para menor exageración
-                    let deceleration = 0.98; // Fricción más suave
-                    let prevScroll = slider.scrollLeft;
-                    let dampingFactor = 0.92; // Factor de amortiguación inicial más bajo
-
-                    function momentum() {
-                        if (Math.abs(currentVelocity) > 0.01) {
-                            // Aplicar scroll con suavizado adaptativo
-                            const speedFactor = Math.min(1, Math.abs(currentVelocity) * 2);
-                            const smoothFactor = 0.15 + speedFactor * 0.1;
-                            const targetScroll = slider.scrollLeft + currentVelocity * dampingFactor;
-                            
-                            slider.scrollLeft += (targetScroll - slider.scrollLeft) * smoothFactor;
-                            
-                            // Ajustar la deceleración de manera más suave
-                            deceleration = Math.min(0.98, Math.max(0.96, 0.97 + Math.abs(currentVelocity) * 0.002));
-                            currentVelocity *= deceleration;
-                            dampingFactor *= 0.98; // Reducción más gradual
-                            
-                            // Detectar límites con más precisión
-                            if (Math.abs(slider.scrollLeft - prevScroll) < 0.1) {
-                                currentVelocity = 0;
-                            }
-                            prevScroll = slider.scrollLeft;
-                            
-                            momentumID = requestAnimationFrame(momentum);
-                        } else {
-                            slider.style.scrollBehavior = 'smooth';
-                        }
-                    }
-                    
-                    momentum();
-                }
-
-                // Event Listeners para mouse
+                // Event Listeners
                 slider.addEventListener('mousedown', startDragging);
                 slider.addEventListener('mousemove', drag);
                 slider.addEventListener('mouseup', stopDragging);
                 slider.addEventListener('mouseleave', stopDragging);
                 
-                // Event Listeners para touch
+                // Touch events
                 slider.addEventListener('touchstart', startDragging, { passive: true });
                 slider.addEventListener('touchmove', drag, { passive: false });
                 slider.addEventListener('touchend', stopDragging);
@@ -2380,21 +2257,21 @@
             const mainContent = document.querySelector('.main-content');
             mainContent.innerHTML = ''; // Limpiar contenido existente
             
-            // Cargar Mi Lista de Películas primero
-            const miListaPeliculas = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
+            // Cargar Mi Lista de Series primero
+            const miListaSeries = JSON.parse(localStorage.getItem('miListaSeries') || '[]');
             
-            if (miListaPeliculas.length > 0) {
+            if (miListaSeries.length > 0) {
                 const miListaHTML = `
                 <div class="categoria-seccion">
-                        <h2 class="categoria-titulo">Mi Lista de Películas <i class="fas fa-heart" style="color: #00ffff;"></i></h2>
+                        <h2 class="categoria-titulo">Mi Lista de Series <i class="fas fa-heart" style="color: #00ffff;"></i></h2>
                         <div class="categoria-contenedor">
-                            ${miListaPeliculas.map(pelicula => `
-                                <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
-                                    ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
-                                    <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
+                            ${miListaSeries.map(serie => `
+                                <div class="movie-card" data-serie='${JSON.stringify(serie)}'>
+                                    ${serie.badge ? `<div class="badge">${serie.badge}</div>` : ''}
+                                    <img src="${serie.imagen}" alt="${serie.titulo}">
                                     <div class="movie-info">
-                                        <h3>${pelicula.titulo}</h3>
-                                        <p>${pelicula.año || ''}</p>
+                                        <h3>${serie.titulo}</h3>
+                                        <p>${serie.año || ''}</p>
                                     </div>
                                 </div>
                             `).join('')}
@@ -2408,55 +2285,51 @@
 
         }
 
-        // Escuchar cambios en Mi Lista de Películas
-        window.addEventListener('miListaPeliculasActualizada', () => {
+        // Escuchar cambios en Mi Lista de Series
+        window.addEventListener('miListaSeriesActualizada', () => {
             cargarCategorias();
         });
 
-        // Recargar categorías cuando se actualiza Mi Lista de Películas
+        // Recargar categorías cuando se actualiza Mi Lista de Series
         window.addEventListener('storage', function(e) {
-            if (e.key === 'miListaPeliculas') {
-                console.log("Actualizando Mi Lista de Películas");
-                mostrarSeriesPorCategorias(todasLasSeries);
+            if (e.key === 'miListaSeries') {
+                console.log("Actualizando Mi Lista de Series");
+                mostrarSeriesPorCategorias(series);
             }
         });
 
-        // Agregar esta nueva función para manejar la apertura de películas
-        function abrirPelicula(peliculaData) {
+        // Agregar esta nueva función para manejar la apertura de series
+        function abrirSerie(serieData) {
             try {
-                let pelicula;
+                let serie;
                 
-                if (typeof peliculaData === 'string') {
-                    // Si es una cadena, intentar parsearla como JSON
+                if (typeof serieData === 'string') {
                     try {
-                        pelicula = JSON.parse(peliculaData);
+                        serie = JSON.parse(serieData);
                     } catch {
-                        console.error('Error al parsear datos de película');
+                        console.error('Error al parsear datos de serie');
                         return;
                     }
-                } else if (typeof peliculaData === 'number') {
-                    // Si es un ID, buscar en todasLasSeries
-                    pelicula = todasLasSeries.find(p => p.id === peliculaData);
+                } else if (typeof serieData === 'number') {
+                    serie = todasLasSeries.find(s => s.id === serieData);
                 } else {
-                    // Si ya es un objeto, usarlo directamente
-                    pelicula = peliculaData;
+                    serie = serieData;
                 }
 
-                if (!pelicula) {
-                    console.error('No se encontraron datos de la película');
+                if (!serie) {
+                    console.error('No se encontraron datos de la serie');
                     return;
                 }
 
-                // Asegurarse de que todos los datos necesarios estén presentes
-                if (!pelicula.id || !pelicula.titulo) {
-                    console.error('Datos de película incompletos');
+                if (!serie.id || !serie.titulo) {
+                    console.error('Datos de serie incompletos');
                     return;
                 }
 
-                localStorage.setItem('peliculaSeleccionada', JSON.stringify(pelicula));
-                window.location.href = 'movie.html';
+                localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
+                window.location.href = 'serie.html';
             } catch (error) {
-                console.error('Error al abrir película:', error);
+                console.error('Error al abrir serie:', error);
             }
         }
 
@@ -2535,8 +2408,8 @@
         }
 
         // Agregar función para controlar el sonido
-        function toggleSound(peliculaId) {
-            const iframe = document.getElementById(`trailerFrame_${peliculaId}`);
+        function toggleSound(serieId) {
+            const iframe = document.getElementById(`trailerFrame_${serieId}`);
             const button = document.querySelector(`.sound-toggle`);
             const icon = button.querySelector('i');
             
@@ -2623,68 +2496,49 @@
         // Agregar la función toggleMiLista
         function toggleMiLista(boton) {
             try {
-                const serieId = parseInt(boton.getAttribute('data-pelicula'));
-                if (!serieId) {
-                    console.error('ID de serie no válido');
-                    return;
+                let serieData;
+                const serieAttr = boton.getAttribute('data-serie');
+                
+                // Verificar si es un ID o un objeto JSON
+                if (!isNaN(serieAttr)) {
+                    // Si es un ID, buscar la serie en todasLasSeries
+                    serieData = todasLasSeries.find(s => s.id === parseInt(serieAttr));
+                } else {
+                    // Si es un objeto JSON, parsearlo
+                    try {
+                        serieData = JSON.parse(serieAttr);
+                    } catch {
+                        console.error('Error al parsear datos de serie');
+                        return;
+                    }
                 }
 
-                // Buscar la serie en todasLasSeries
-                const serieData = todasLasSeries.find(s => s.id === serieId);
                 if (!serieData) {
-                    console.error('Serie no encontrada');
+                    console.error('No se encontraron datos de la serie');
                     return;
                 }
 
-                // Obtener la lista actual
-                let miLista = JSON.parse(localStorage.getItem('miListaSeries') || '[]');
-                const indice = miLista.findIndex(s => s.id === serieId);
-
+                const miLista = JSON.parse(localStorage.getItem('miListaSeries') || '[]');
+                const indice = miLista.findIndex(s => s.id === serieData.id);
+                
                 if (indice === -1) {
                     // Agregar al principio de mi lista usando unshift
                     miLista.unshift(serieData);
-                    if (boton && boton.innerHTML) {
-                        boton.innerHTML = '<i class="fas fa-check"></i> Mi lista';
-                        boton.classList.add('en-mi-lista');
-                    }
+                    boton.innerHTML = '<i class="fas fa-check"></i> Mi lista';
+                    boton.classList.add('en-mi-lista');
                 } else {
                     // Quitar de mi lista
                     miLista.splice(indice, 1);
-                    if (boton && boton.innerHTML) {
-                        boton.innerHTML = '<i class="fas fa-plus"></i> Mi lista';
-                        boton.classList.remove('en-mi-lista');
-                    }
+                    boton.innerHTML = '<i class="fas fa-plus"></i> Mi lista';
+                    boton.classList.remove('en-mi-lista');
                 }
-
-                // Guardar la lista actualizada
+                
                 localStorage.setItem('miListaSeries', JSON.stringify(miLista));
-
-                // Actualizar la visualización
-                mostrarSeriesPorCategorias(todasLasSeries);
+                
+                // Disparar evento personalizado
+                window.dispatchEvent(new CustomEvent('miListaSeriesActualizada'));
             } catch (error) {
                 console.error('Error en toggleMiLista:', error);
-            }
-        }
-
-        // Función para abrir una serie
-        function abrirSerie(serieId) {
-            try {
-                // Buscar la serie en todasLasSeries
-                const serie = todasLasSeries.find(s => s.id === serieId);
-                
-                if (!serie) {
-                    console.error('Serie no encontrada:', serieId);
-                    return;
-                }
-
-                // Guardar la serie seleccionada en localStorage
-                localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
-                
-                // Redirigir a la página correcta de la serie
-                window.location.href = 'serie.html'; // Cambiado de 'ver-serie.html' a 'serie.html'
-                
-            } catch (error) {
-                console.error('Error al abrir la serie:', error);
             }
         }
     </script>
