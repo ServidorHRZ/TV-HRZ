@@ -1335,6 +1335,13 @@
                 let startY;
                 let scrollLeft;
                 let isHorizontalScroll = false;
+                let startTime;
+                let lastX;
+                let velocity = 0;
+                let momentumID;
+                let lastTimestamp;
+                let velocityTracker = [];
+                let lastDelta = 0;
 
                 function startDragging(e) {
                     isDown = true;
@@ -1343,24 +1350,38 @@
                     
                     startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
                     startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
+                    lastX = startX;
                     scrollLeft = slider.scrollLeft;
+                    startTime = Date.now();
+                    lastTimestamp = startTime;
+                    velocityTracker = [];
+                    lastDelta = 0;
+
+                    if (momentumID) {
+                        cancelAnimationFrame(momentumID);
+                    }
                 }
 
-                function stopDragging() {
-                    isDown = false;
-                    isHorizontalScroll = false;
-                    slider.style.cursor = 'grab';
-                    slider.style.scrollBehavior = 'smooth';
-                }
-                
                 function drag(e) {
                     if (!isDown) return;
 
-                    const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
-                    const y = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
+                    const currentX = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+                    const currentY = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
+                    const currentTime = Date.now();
                     
-                    const deltaX = Math.abs(x - startX);
-                    const deltaY = Math.abs(y - startY);
+                    const deltaX = Math.abs(currentX - startX);
+                    const deltaY = Math.abs(currentY - startY);
+                    const timeDelta = currentTime - lastTimestamp;
+
+                    // Calcular y suavizar la velocidad con más precisión
+                    if (timeDelta > 0) {
+                        const instantVelocity = (lastX - currentX) / timeDelta;
+                        velocityTracker.push(instantVelocity);
+                        if (velocityTracker.length > 3) { // Reducido para mayor respuesta
+                            velocityTracker.shift();
+                        }
+                        velocity = velocityTracker.reduce((a, b) => a + b, 0) / velocityTracker.length;
+                    }
 
                     // Determinar dirección del scroll
                     if (!isHorizontalScroll) {
@@ -1375,18 +1396,90 @@
 
                     if (isHorizontalScroll) {
                         e.preventDefault();
-                        const walk = (x - startX) * 1.5; // Multiplicador de velocidad
-                        slider.scrollLeft = scrollLeft - walk;
+                        
+                        // Calcular el delta actual
+                        const currentDelta = currentX - lastX;
+                        
+                        // Suavizar el movimiento combinando el delta actual con el anterior
+                        const smoothDelta = (currentDelta + lastDelta) / 2;
+                        lastDelta = currentDelta;
+
+                        // Ajustar la sensibilidad de manera más precisa
+                        const baseSpeed = 1.2; // Velocidad base más baja
+                        const speedMultiplier = Math.min(1.5, Math.max(0.8, 1 + Math.abs(velocity) * 0.3));
+                        const sensitivity = baseSpeed * speedMultiplier;
+
+                        // Aplicar el movimiento suavizado
+                        const targetScroll = scrollLeft - (currentX - startX) * sensitivity;
+                        const smoothFactor = Math.min(0.4, Math.max(0.15, 0.25 + Math.abs(velocity) * 0.1));
+                        slider.scrollLeft += (targetScroll - slider.scrollLeft) * smoothFactor;
+                    }
+
+                    lastX = currentX;
+                    lastTimestamp = currentTime;
+                }
+
+                function stopDragging(e) {
+                    if (!isDown) return;
+                    
+                    isDown = false;
+                    isHorizontalScroll = false;
+                    slider.style.cursor = 'grab';
+                    
+                    const endTime = Date.now();
+                    const timeElapsed = endTime - startTime;
+                    const averageVelocity = velocityTracker.reduce((a, b) => a + b, 0) / velocityTracker.length;
+                    
+                    // Aplicar momentum solo si el movimiento fue lo suficientemente rápido
+                    if (timeElapsed < 300 && Math.abs(averageVelocity) > 0.05) {
+                        applyMomentum(averageVelocity);
+                    } else {
+                        slider.style.scrollBehavior = 'smooth';
                     }
                 }
 
-                // Event Listeners
+                function applyMomentum(initialVelocity) {
+                    let currentVelocity = initialVelocity * 25; // Reducido para menor exageración
+                    let deceleration = 0.98; // Fricción más suave
+                    let prevScroll = slider.scrollLeft;
+                    let dampingFactor = 0.92; // Factor de amortiguación inicial más bajo
+
+                    function momentum() {
+                        if (Math.abs(currentVelocity) > 0.01) {
+                            // Aplicar scroll con suavizado adaptativo
+                            const speedFactor = Math.min(1, Math.abs(currentVelocity) * 2);
+                            const smoothFactor = 0.15 + speedFactor * 0.1;
+                            const targetScroll = slider.scrollLeft + currentVelocity * dampingFactor;
+                            
+                            slider.scrollLeft += (targetScroll - slider.scrollLeft) * smoothFactor;
+                            
+                            // Ajustar la deceleración de manera más suave
+                            deceleration = Math.min(0.98, Math.max(0.96, 0.97 + Math.abs(currentVelocity) * 0.002));
+                            currentVelocity *= deceleration;
+                            dampingFactor *= 0.98; // Reducción más gradual
+                            
+                            // Detectar límites con más precisión
+                            if (Math.abs(slider.scrollLeft - prevScroll) < 0.1) {
+                                currentVelocity = 0;
+                            }
+                            prevScroll = slider.scrollLeft;
+                            
+                            momentumID = requestAnimationFrame(momentum);
+                        } else {
+                            slider.style.scrollBehavior = 'smooth';
+                        }
+                    }
+                    
+                    momentum();
+                }
+
+                // Event Listeners para mouse
                 slider.addEventListener('mousedown', startDragging);
                 slider.addEventListener('mousemove', drag);
                 slider.addEventListener('mouseup', stopDragging);
                 slider.addEventListener('mouseleave', stopDragging);
                 
-                // Touch events
+                // Event Listeners para touch
                 slider.addEventListener('touchstart', startDragging, { passive: true });
                 slider.addEventListener('touchmove', drag, { passive: false });
                 slider.addEventListener('touchend', stopDragging);
@@ -2073,6 +2166,13 @@
                 let startY;
                 let scrollLeft;
                 let isHorizontalScroll = false;
+                let startTime;
+                let lastX;
+                let velocity = 0;
+                let momentumID;
+                let lastTimestamp;
+                let velocityTracker = [];
+                let lastDelta = 0;
 
                 function startDragging(e) {
                     isDown = true;
@@ -2081,24 +2181,38 @@
                     
                     startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
                     startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
+                    lastX = startX;
                     scrollLeft = slider.scrollLeft;
+                    startTime = Date.now();
+                    lastTimestamp = startTime;
+                    velocityTracker = [];
+                    lastDelta = 0;
+
+                    if (momentumID) {
+                        cancelAnimationFrame(momentumID);
+                    }
                 }
 
-                function stopDragging() {
-                    isDown = false;
-                    isHorizontalScroll = false;
-                    slider.style.cursor = 'grab';
-                    slider.style.scrollBehavior = 'smooth';
-                }
-                
                 function drag(e) {
                     if (!isDown) return;
 
-                    const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
-                    const y = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
+                    const currentX = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+                    const currentY = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
+                    const currentTime = Date.now();
                     
-                    const deltaX = Math.abs(x - startX);
-                    const deltaY = Math.abs(y - startY);
+                    const deltaX = Math.abs(currentX - startX);
+                    const deltaY = Math.abs(currentY - startY);
+                    const timeDelta = currentTime - lastTimestamp;
+
+                    // Calcular y suavizar la velocidad con más precisión
+                    if (timeDelta > 0) {
+                        const instantVelocity = (lastX - currentX) / timeDelta;
+                        velocityTracker.push(instantVelocity);
+                        if (velocityTracker.length > 3) { // Reducido para mayor respuesta
+                            velocityTracker.shift();
+                        }
+                        velocity = velocityTracker.reduce((a, b) => a + b, 0) / velocityTracker.length;
+                    }
 
                     // Determinar dirección del scroll
                     if (!isHorizontalScroll) {
@@ -2113,18 +2227,90 @@
 
                     if (isHorizontalScroll) {
                         e.preventDefault();
-                        const walk = (x - startX) * 1.5; // Multiplicador de velocidad
-                        slider.scrollLeft = scrollLeft - walk;
+                        
+                        // Calcular el delta actual
+                        const currentDelta = currentX - lastX;
+                        
+                        // Suavizar el movimiento combinando el delta actual con el anterior
+                        const smoothDelta = (currentDelta + lastDelta) / 2;
+                        lastDelta = currentDelta;
+
+                        // Ajustar la sensibilidad de manera más precisa
+                        const baseSpeed = 1.2; // Velocidad base más baja
+                        const speedMultiplier = Math.min(1.5, Math.max(0.8, 1 + Math.abs(velocity) * 0.3));
+                        const sensitivity = baseSpeed * speedMultiplier;
+
+                        // Aplicar el movimiento suavizado
+                        const targetScroll = scrollLeft - (currentX - startX) * sensitivity;
+                        const smoothFactor = Math.min(0.4, Math.max(0.15, 0.25 + Math.abs(velocity) * 0.1));
+                        slider.scrollLeft += (targetScroll - slider.scrollLeft) * smoothFactor;
+                    }
+
+                    lastX = currentX;
+                    lastTimestamp = currentTime;
+                }
+
+                function stopDragging(e) {
+                    if (!isDown) return;
+                    
+                    isDown = false;
+                    isHorizontalScroll = false;
+                    slider.style.cursor = 'grab';
+                    
+                    const endTime = Date.now();
+                    const timeElapsed = endTime - startTime;
+                    const averageVelocity = velocityTracker.reduce((a, b) => a + b, 0) / velocityTracker.length;
+                    
+                    // Aplicar momentum solo si el movimiento fue lo suficientemente rápido
+                    if (timeElapsed < 300 && Math.abs(averageVelocity) > 0.05) {
+                        applyMomentum(averageVelocity);
+                    } else {
+                        slider.style.scrollBehavior = 'smooth';
                     }
                 }
 
-                // Event Listeners
+                function applyMomentum(initialVelocity) {
+                    let currentVelocity = initialVelocity * 25; // Reducido para menor exageración
+                    let deceleration = 0.98; // Fricción más suave
+                    let prevScroll = slider.scrollLeft;
+                    let dampingFactor = 0.92; // Factor de amortiguación inicial más bajo
+
+                    function momentum() {
+                        if (Math.abs(currentVelocity) > 0.01) {
+                            // Aplicar scroll con suavizado adaptativo
+                            const speedFactor = Math.min(1, Math.abs(currentVelocity) * 2);
+                            const smoothFactor = 0.15 + speedFactor * 0.1;
+                            const targetScroll = slider.scrollLeft + currentVelocity * dampingFactor;
+                            
+                            slider.scrollLeft += (targetScroll - slider.scrollLeft) * smoothFactor;
+                            
+                            // Ajustar la deceleración de manera más suave
+                            deceleration = Math.min(0.98, Math.max(0.96, 0.97 + Math.abs(currentVelocity) * 0.002));
+                            currentVelocity *= deceleration;
+                            dampingFactor *= 0.98; // Reducción más gradual
+                            
+                            // Detectar límites con más precisión
+                            if (Math.abs(slider.scrollLeft - prevScroll) < 0.1) {
+                                currentVelocity = 0;
+                            }
+                            prevScroll = slider.scrollLeft;
+                            
+                            momentumID = requestAnimationFrame(momentum);
+                        } else {
+                            slider.style.scrollBehavior = 'smooth';
+                        }
+                    }
+                    
+                    momentum();
+                }
+
+                // Event Listeners para mouse
                 slider.addEventListener('mousedown', startDragging);
                 slider.addEventListener('mousemove', drag);
                 slider.addEventListener('mouseup', stopDragging);
                 slider.addEventListener('mouseleave', stopDragging);
                 
-                // Touch events
+                // Event Listeners para touch
                 slider.addEventListener('touchstart', startDragging, { passive: true });
                 slider.addEventListener('touchmove', drag, { passive: false });
                 slider.addEventListener('touchend', stopDragging);
