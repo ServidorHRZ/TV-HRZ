@@ -1335,10 +1335,6 @@
                 let startY;
                 let scrollLeft;
                 let isHorizontalScroll = false;
-                let velocity = 0;
-                let rafId = null;
-                let lastX;
-                let timestamp;
 
                 function startDragging(e) {
                     isDown = true;
@@ -1348,58 +1344,15 @@
                     startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
                     startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
                     scrollLeft = slider.scrollLeft;
-                    lastX = startX;
-                    timestamp = Date.now();
-                    
-                    // Cancelar cualquier animación de inercia previa
-                    if (rafId !== null) {
-                        cancelAnimationFrame(rafId);
-                        rafId = null;
-                    }
                 }
 
                 function stopDragging() {
-                    if (!isDown) return;
-                    
                     isDown = false;
                     isHorizontalScroll = false;
                     slider.style.cursor = 'grab';
-                    
-                    // Calcular velocidad final
-                    const now = Date.now();
-                    const dt = now - timestamp;
-                    if (dt > 0) {
-                        velocity = (lastX - startX) / dt;
-                        
-                        // Aplicar inercia solo si la velocidad es significativa
-                        if (Math.abs(velocity) > 0.5) {
-                            applyInertia();
-                        }
-                    }
+                    slider.style.scrollBehavior = 'smooth';
                 }
-
-                function applyInertia() {
-                    const friction = 0.95; // Factor de fricción (ajustar para más o menos deslizamiento)
-                    const minVelocity = 0.05; // Velocidad mínima para detener la animación
-                    
-                    function inertiaStep() {
-                        velocity *= friction;
-                        
-                        // Detener la animación si la velocidad es muy baja
-                        if (Math.abs(velocity) < minVelocity) {
-                            cancelAnimationFrame(rafId);
-                            rafId = null;
-                            return;
-                        }
-                        
-                        // Aplicar el desplazamiento suave
-                        slider.scrollLeft -= velocity * 16; // 16ms es aproximadamente un frame
-                        rafId = requestAnimationFrame(inertiaStep);
-                    }
-                    
-                    rafId = requestAnimationFrame(inertiaStep);
-                }
-
+                
                 function drag(e) {
                     if (!isDown) return;
 
@@ -1422,36 +1375,25 @@
 
                     if (isHorizontalScroll) {
                         e.preventDefault();
-                        const walk = (x - startX) * 2; // Multiplicador de velocidad aumentado
+                        const walk = (x - startX) * 1.5; // Multiplicador de velocidad
                         slider.scrollLeft = scrollLeft - walk;
-                        
-                        // Actualizar posición y timestamp para cálculo de velocidad
-                        lastX = x;
-                        timestamp = Date.now();
                     }
                 }
 
-                // Event Listeners con opciones optimizadas
-                slider.addEventListener('mousedown', startDragging, { passive: false });
-                slider.addEventListener('mousemove', drag, { passive: false });
+                // Event Listeners
+                slider.addEventListener('mousedown', startDragging);
+                slider.addEventListener('mousemove', drag);
                 slider.addEventListener('mouseup', stopDragging);
                 slider.addEventListener('mouseleave', stopDragging);
                 
-                // Touch events con opciones optimizadas
+                // Touch events
                 slider.addEventListener('touchstart', startDragging, { passive: true });
                 slider.addEventListener('touchmove', drag, { passive: false });
                 slider.addEventListener('touchend', stopDragging);
-                
-                // Prevenir el scroll vertical cuando se está haciendo scroll horizontal
-                slider.addEventListener('touchmove', (e) => {
-                    if (isHorizontalScroll) {
-                        e.preventDefault();
-                    }
-                }, { passive: false });
             });
         }
 
-        // Actualizar los estilos CSS para mejorar el rendimiento
+        // Actualizar estilos CSS
         const styles = `
             .categoria-contenedor {
                 -webkit-overflow-scrolling: touch;
@@ -1463,10 +1405,8 @@
                 scrollbar-width: none;
                 -ms-overflow-style: none;
                 cursor: grab;
-                will-change: transform, scroll-position;
-                transform: translateZ(0);
-                backface-visibility: hidden;
-                perspective: 1000px;
+                scroll-behavior: smooth;
+                scroll-snap-type: x proximity;
             }
 
             .categoria-contenedor::-webkit-scrollbar {
@@ -1476,24 +1416,13 @@
             .movie-card {
                 user-select: none;
                 -webkit-user-select: none;
-                will-change: transform;
-                transform: translateZ(0);
-                backface-visibility: hidden;
-            }
-
-            @media (pointer: fine) {
-                .categoria-contenedor {
-                    scroll-snap-type: x proximity;
-                    scroll-behavior: smooth;
-                }
-                
-                .movie-card {
-                    scroll-snap-align: start;
-                }
+                scroll-snap-align: start;
             }
         `;
 
-        // ... existing code ...
+        const styleSheet = document.createElement("style");
+        styleSheet.textContent = styles;
+        document.head.appendChild(styleSheet);
     </style>
 </head>
 <body>
@@ -2144,10 +2073,6 @@
                 let startY;
                 let scrollLeft;
                 let isHorizontalScroll = false;
-                let velocity = 0;
-                let rafId = null;
-                let lastX;
-                let timestamp;
 
                 function startDragging(e) {
                     isDown = true;
@@ -2157,58 +2082,15 @@
                     startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
                     startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
                     scrollLeft = slider.scrollLeft;
-                    lastX = startX;
-                    timestamp = Date.now();
-                    
-                    // Cancelar cualquier animación de inercia previa
-                    if (rafId !== null) {
-                        cancelAnimationFrame(rafId);
-                        rafId = null;
-                    }
                 }
 
                 function stopDragging() {
-                    if (!isDown) return;
-                    
                     isDown = false;
                     isHorizontalScroll = false;
                     slider.style.cursor = 'grab';
-                    
-                    // Calcular velocidad final
-                    const now = Date.now();
-                    const dt = now - timestamp;
-                    if (dt > 0) {
-                        velocity = (lastX - startX) / dt;
-                        
-                        // Aplicar inercia solo si la velocidad es significativa
-                        if (Math.abs(velocity) > 0.5) {
-                            applyInertia();
-                        }
-                    }
+                    slider.style.scrollBehavior = 'smooth';
                 }
-
-                function applyInertia() {
-                    const friction = 0.95; // Factor de fricción (ajustar para más o menos deslizamiento)
-                    const minVelocity = 0.05; // Velocidad mínima para detener la animación
-                    
-                    function inertiaStep() {
-                        velocity *= friction;
-                        
-                        // Detener la animación si la velocidad es muy baja
-                        if (Math.abs(velocity) < minVelocity) {
-                            cancelAnimationFrame(rafId);
-                            rafId = null;
-                            return;
-                        }
-                        
-                        // Aplicar el desplazamiento suave
-                        slider.scrollLeft -= velocity * 16; // 16ms es aproximadamente un frame
-                        rafId = requestAnimationFrame(inertiaStep);
-                    }
-                    
-                    rafId = requestAnimationFrame(inertiaStep);
-                }
-
+                
                 function drag(e) {
                     if (!isDown) return;
 
@@ -2231,32 +2113,21 @@
 
                     if (isHorizontalScroll) {
                         e.preventDefault();
-                        const walk = (x - startX) * 2; // Multiplicador de velocidad aumentado
+                        const walk = (x - startX) * 1.5; // Multiplicador de velocidad
                         slider.scrollLeft = scrollLeft - walk;
-                        
-                        // Actualizar posición y timestamp para cálculo de velocidad
-                        lastX = x;
-                        timestamp = Date.now();
                     }
                 }
 
-                // Event Listeners con opciones optimizadas
-                slider.addEventListener('mousedown', startDragging, { passive: false });
-                slider.addEventListener('mousemove', drag, { passive: false });
+                // Event Listeners
+                slider.addEventListener('mousedown', startDragging);
+                slider.addEventListener('mousemove', drag);
                 slider.addEventListener('mouseup', stopDragging);
                 slider.addEventListener('mouseleave', stopDragging);
                 
-                // Touch events con opciones optimizadas
+                // Touch events
                 slider.addEventListener('touchstart', startDragging, { passive: true });
                 slider.addEventListener('touchmove', drag, { passive: false });
                 slider.addEventListener('touchend', stopDragging);
-                
-                // Prevenir el scroll vertical cuando se está haciendo scroll horizontal
-                slider.addEventListener('touchmove', (e) => {
-                    if (isHorizontalScroll) {
-                        e.preventDefault();
-                    }
-                }, { passive: false });
             });
         }
 
