@@ -1725,13 +1725,52 @@
       "titulo": "Shrek 4",
       "disponible": true,
       "nuevo": true,
-      "badge": "Recien agregado",
+      "badge": "Recien agregado", 
       "año": 2010,
       "trailer": "https://www.youtube.com/embed/Yw_bMVx8HGw",
       "genero": ["animacion", "comedia", "nuevos"],
       "imagen": "https://image.tmdb.org/t/p/original/oqnwVHuf5bDZjOTCre8hZjtoqQ6.jpg",
       "enlace": "https://fastream.to/embed-r8q1nl01fucz.html",
       "descripcion": "Shrek firma un pacto con Rumpelstiltskin para experimentar un día como un verdadero ogro aterrador, sin saber que esto alterará drásticamente su mundo."
+    },
+    {
+      "id": 165,
+      "titulo": "Spider-Man: Un nuevo universo",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado",
+      "año": 2018,
+      "trailer": "https://www.youtube.com/embed/KnVCJFS21rM",
+      "genero": ["animacion", "accion", "marvel", "nuevos"],
+      "imagen": "https://es.web.img2.acsta.net/pictures/18/10/03/19/36/5818625.jpg",
+      "enlace": "https://fastream.to/embed-bg8tg2p3408d.html",
+      "descripcion": "Miles Morales se convierte en el Spider-Man de su realidad y se une con otros Spider-People de distintas dimensiones para salvar su realidad."
+    },
+    {
+      "id": 166,
+      "titulo": "Spider-Man: A través del Spider-Verso",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado",
+      "año": 2023,
+      "trailer": "https://www.youtube.com/embed/oBmazlyP220",
+      "genero": ["animacion", "accion", "marvel", "nuevos"],
+      "imagen": "https://musicart.xboxlive.com/7/8bf26600-0000-0000-0000-000000000002/504/image.jpg",
+      "enlace": "https://fastream.to/embed-6dbyfzqmtgj9.html",
+      "descripcion": "Miles Morales regresa para una nueva aventura épica que transportará al amigable Spider-Man del vecindario de Brooklyn a través del Multiverso para unir fuerzas con Gwen Stacy y un nuevo equipo."
+    },
+    {
+      "id": 167,
+      "titulo": "Snowden",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado",
+      "año": 2016,
+      "trailer": "https://www.youtube.com/embed/cMLik5V3VOI",
+      "genero": ["programacion", "suspenso", "nuevos"],
+      "imagen": "https://pics.filmaffinity.com/Snowden-810908766-large.jpg",
+      "enlace": "https://fastream.to/embed-872rptibtcnm.html",
+      "descripcion": "La historia del ex empleado de la CIA Edward Snowden, quien filtró miles de documentos clasificados a la prensa revelando operaciones de vigilancia masiva por parte de la NSA."
     }
   ]
 }
