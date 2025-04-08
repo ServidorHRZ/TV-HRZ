@@ -1114,22 +1114,43 @@
         @media (min-width: 769px) {
             .announcement-content {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
+                flex-direction: column;
+                justify-content: flex-end;
                 padding: 30px 50px;
+                height: 100%;
+                position: relative;
+            }
+
+            .titulo-container {
+                position: relative;
+                margin-bottom: auto;
+                max-width: 60%;
+            }
+
+            .mini-poster {
+                width: 180px;
+                height: 270px;
+                object-fit: cover;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                margin-bottom: 20px;
+                display: block;
             }
 
             .announcement-title {
                 text-align: left;
                 font-size: 2.5em;
                 margin: 0;
-                flex: 1;
             }
 
             .announcement-info {
-                margin: 0;
+                position: absolute;
+                bottom: 80px;
+                right: 50px;
+                display: flex;
+                gap: 15px;
                 justify-content: flex-end;
-                min-width: 280px;
+                width: auto;
             }
         }
 
@@ -1138,6 +1159,10 @@
             .announcement-content {
                 text-align: center;
                 padding: 20px;
+            }
+
+            .mini-poster {
+                display: none;
             }
 
             .announcement-title {
@@ -1887,7 +1912,10 @@
                 slide.innerHTML = `
                     ${contenidoMedia}
                     <div class="announcement-content">
-                        <h2 class="announcement-title">${pelicula.titulo}</h2>
+                        <div class="titulo-container">
+                            <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="mini-poster">
+                            <h2 class="announcement-title">${pelicula.titulo}</h2>
+                        </div>
                         <div class="announcement-info">
                             ${botonVerAhoraHTML}
                             ${botonMiListaHTML}
