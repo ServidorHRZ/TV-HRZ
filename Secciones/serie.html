@@ -1082,7 +1082,15 @@
                         imagen: serie.imagen || serie.miniatura_episodios,
                         año: serie.año,
                         genero: serie.genero,
-                        descripcion: serie.descripcion
+                        descripcion: serie.descripcion,
+                        temporadas: serie.temporadas,
+                        trailer: serie.trailer,
+                        director: serie.director,
+                        actores: serie.actores,
+                        nuevo: serie.nuevo || false,
+                        disponible: serie.disponible || true,
+                        badge: serie.badge || null,
+                        miniatura_episodios: serie.miniatura_episodios || serie.imagen
                     };
 
                     miLista.unshift(serieLimpia); // Agregar al principio de la lista
