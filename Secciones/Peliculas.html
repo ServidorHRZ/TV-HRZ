@@ -1467,7 +1467,6 @@
             <button class="search-toggle" id="searchClose">
                 <i class="fas fa-times"></i>
             </button>
-            <div id="resultadosBusqueda" class="resultados-busqueda"></div>
         </div>
     </div>
 
@@ -2048,7 +2047,8 @@
             cargarContenidoConCache('anuncios');
             
             setupCarouselTouch();
-            handleScrollAudio(); // Agregar el manejo del audio
+            handleScrollAudio();
+            setupBuscador(); // Agregar esta línea
             
             const carousel = document.querySelector('.announcements-carousel');
             if (carousel) {
@@ -2374,25 +2374,69 @@
 
         // Modificar la función de búsqueda
         function searchMovies(query) {
-            const resultadosContainer = document.getElementById('resultadosBusqueda');
+            const announcementsCarousel = document.querySelector('.announcements-carousel');
             
+            // Si no hay búsqueda, mostrar todo normalmente
             if (!query.trim()) {
-                resultadosContainer.style.display = 'none';
+                mostrarPeliculasPorCategorias(todasLasPeliculas);
+                if (announcementsCarousel) {
+                    announcementsCarousel.style.display = 'block';
+                }
                 return;
             }
 
             const busqueda = query.toLowerCase().trim();
-            const resultados = todasLasPeliculas.filter(pelicula => 
+            const peliculasFiltradas = todasLasPeliculas.filter(pelicula => 
                 pelicula.titulo.toLowerCase().includes(busqueda) ||
                 (pelicula.genero && (
                     Array.isArray(pelicula.genero) 
                         ? pelicula.genero.some(g => g.toLowerCase().includes(busqueda))
                         : pelicula.genero.toLowerCase().includes(busqueda)
                 ))
-            ).slice(0, 10); // Limitar a 10 resultados
+            );
 
-            mostrarResultadosBusqueda(resultados, resultadosContainer);
+            // Ocultar el carrusel durante la búsqueda en todas las plataformas
+            if (announcementsCarousel) {
+                announcementsCarousel.style.display = 'none';
+            }
+
+            // Mostrar resultados directamente en las categorías
+            mostrarPeliculasPorCategorias(peliculasFiltradas);
         }
+
+        // Modificar la función setupBuscador para manejar la visibilidad del carrusel
+        function setupBuscador() {
+            const searchInput = document.getElementById('search-input');
+            const headerSearch = document.getElementById('headerSearch');
+            const announcementsCarousel = document.querySelector('.announcements-carousel');
+
+            searchInput.addEventListener('input', (e) => {
+                searchMovies(e.target.value);
+            });
+
+            // Agregar manejo de la tecla Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    headerSearch.classList.remove('active');
+                    searchInput.value = '';
+                    if (announcementsCarousel) {
+                        announcementsCarousel.style.display = 'block';
+                    }
+                    mostrarPeliculasPorCategorias(todasLasPeliculas);
+                }
+            });
+
+            // Restaurar el carrusel cuando se borra la búsqueda
+            searchInput.addEventListener('search', () => {
+                if (!searchInput.value) {
+                    if (announcementsCarousel) {
+                        announcementsCarousel.style.display = 'block';
+                    }
+                    mostrarPeliculasPorCategorias(todasLasPeliculas);
+                }
+            });
+        }
+
         // Carousel Touch encargadao de la barra de anuncios    
         function mostrarResultadosBusqueda(resultados, contenedor) {
             if (resultados.length === 0) {
@@ -2416,34 +2460,6 @@
                 `).join('');
             }
             contenedor.style.display = 'block';
-        }
-
-        // Modificar la función setupBuscador
-        function setupBuscador() {
-            const searchInput = document.getElementById('search-input');
-            const resultadosContainer = document.getElementById('resultadosBusqueda');
-            const headerSearch = document.getElementById('headerSearch');
-
-            searchInput.addEventListener('input', (e) => {
-                searchMovies(e.target.value);
-            });
-
-            // Cerrar resultados al hacer clic fuera
-            document.addEventListener('click', (e) => {
-                if (!headerSearch.contains(e.target)) {
-                    resultadosContainer.style.display = 'none';
-                }
-            });
-
-            // Agregar manejo de la tecla Escape
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    headerSearch.classList.remove('active');
-                    searchInput.value = '';
-                    resultadosContainer.style.display = 'none';
-                    mostrarPeliculasPorCategorias(todasLasPeliculas);
-                }
-            });
         }
 
         // Agregar función para controlar el sonido

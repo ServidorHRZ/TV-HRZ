@@ -1403,7 +1403,7 @@
       "titulo": "Arrow",
       "disponible": true,
       "nuevo": false,
-      "enProceso": true,
+      "enProceso": false,
       "descripcion": "Después de un naufragio que lo dejó varado en una isla durante cinco años, Oliver Queen regresa a casa convertido en un experto arquero para luchar contra el crimen y la corrupción en Ciudad Starling.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gKG5QGz5Ngf8fgWpBsWtlg5L2SF.jpg",
       "año": 2012,
@@ -1477,7 +1477,7 @@
             },
             {
               "numero": 9,
-              "titulo": "Year's End",
+              "titulo": "Years End",
               "descripcion": "Un nuevo arquero aparece en la ciudad imitando los crímenes de Oliver.",
               "duracion": "42:00",
               "url": "https://drive.google.com/file/d/1iWA9ipoIniiZBQSL3XUN0DOEfsZ_Shsi/preview"

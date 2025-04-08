@@ -1467,7 +1467,6 @@
             <button class="search-toggle" id="searchClose">
                 <i class="fas fa-times"></i>
             </button>
-            <div id="resultadosBusqueda" class="resultados-busqueda"></div>
         </div>
     </div>
 
@@ -2366,65 +2365,44 @@
 
         // Modificar la función de búsqueda
         function searchSeries(query) {
-            const resultadosContainer = document.getElementById('resultadosBusqueda');
+            const announcementsCarousel = document.querySelector('.announcements-carousel');
             
+            // Si no hay búsqueda, mostrar todo normalmente
             if (!query.trim()) {
-                resultadosContainer.style.display = 'none';
+                mostrarSeriesPorCategorias(todasLasSeries);
+                if (announcementsCarousel) {
+                    announcementsCarousel.style.display = 'block';
+                }
                 return;
             }
 
             const busqueda = query.toLowerCase().trim();
-            const resultados = todasLasSeries.filter(serie => 
+            const seriesFiltradas = todasLasSeries.filter(serie => 
                 serie.titulo.toLowerCase().includes(busqueda) ||
                 (serie.genero && (
                     Array.isArray(serie.genero) 
                         ? serie.genero.some(g => g.toLowerCase().includes(busqueda))
                         : serie.genero.toLowerCase().includes(busqueda)
                 ))
-            ).slice(0, 10); // Limitar a 10 resultados
+            );
 
-            mostrarResultadosBusqueda(resultados, resultadosContainer);
-        }
-        // Carousel Touch encargadao de la barra de anuncios    
-        function mostrarResultadosBusqueda(resultados, contenedor) {
-            if (resultados.length === 0) {
-                contenedor.innerHTML = '<div class="resultado-item">No se encontraron resultados</div>';
-            } else {
-                contenedor.innerHTML = resultados.map(serie => `
-                    <div class="resultado-item" onclick="abrirSerie(${serie.id})">
-                        <img src="${serie.imagen}" alt="${serie.titulo}" class="resultado-imagen">
-                        <div class="resultado-info">
-                            <div class="resultado-titulo">${serie.titulo}</div>
-                            <div class="resultado-instructor">
-                                ${serie.año || 'Año no disponible'} • 
-                                <span style="color: var(--primary-color)">${
-                                    Array.isArray(serie.genero) 
-                                        ? serie.genero.join(', ') 
-                                        : serie.genero || 'Género no especificado'
-                                }</span>
-                            </div>
-                        </div>
-                    </div>
-                `).join('');
+            // Ocultar el carrusel durante la búsqueda en todas las plataformas
+            if (announcementsCarousel) {
+                announcementsCarousel.style.display = 'none';
             }
-            contenedor.style.display = 'block';
+
+            // Mostrar resultados directamente en las categorías
+            mostrarSeriesPorCategorias(seriesFiltradas);
         }
 
-        // Modificar la función setupBuscador
+        // Modificar la función setupBuscador para manejar la visibilidad del carrusel
         function setupBuscador() {
             const searchInput = document.getElementById('search-input');
-            const resultadosContainer = document.getElementById('resultadosBusqueda');
             const headerSearch = document.getElementById('headerSearch');
+            const announcementsCarousel = document.querySelector('.announcements-carousel');
 
             searchInput.addEventListener('input', (e) => {
                 searchSeries(e.target.value);
-            });
-
-            // Cerrar resultados al hacer clic fuera
-            document.addEventListener('click', (e) => {
-                if (!headerSearch.contains(e.target)) {
-                    resultadosContainer.style.display = 'none';
-                }
             });
 
             // Agregar manejo de la tecla Escape
@@ -2432,7 +2410,19 @@
                 if (e.key === 'Escape') {
                     headerSearch.classList.remove('active');
                     searchInput.value = '';
-                    resultadosContainer.style.display = 'none';
+                    if (announcementsCarousel) {
+                        announcementsCarousel.style.display = 'block';
+                    }
+                    mostrarSeriesPorCategorias(todasLasSeries);
+                }
+            });
+
+            // Restaurar el carrusel cuando se borra la búsqueda
+            searchInput.addEventListener('search', () => {
+                if (!searchInput.value) {
+                    if (announcementsCarousel) {
+                        announcementsCarousel.style.display = 'block';
+                    }
                     mostrarSeriesPorCategorias(todasLasSeries);
                 }
             });
