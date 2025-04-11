@@ -6783,12 +6783,12 @@
               "numero": 1,
               "titulo": "El Coleccionista",
               "descripcion": "Marinette sospecha que Gabriel Agreste podría ser Hawk Moth.",
-              "duracion": "22:00",
+              "duracion": "22:00", 
               "url": "https://fastream.to/embed-pjxckgrtz30e.html"
             },
             {
               "numero": 2,
-              "titulo": "Despair Bear", 
+              "titulo": "Despair Bear",
               "descripcion": "El mayordomo de Chloé es akumatizado en un oso de peluche malvado.",
               "duracion": "22:00",
               "url": "https://fastream.to/embed-db7tewgtpuae.html"
@@ -6953,6 +6953,102 @@
               "descripcion": "La batalla final contra Hawk Moth revela nuevos secretos.",
               "duracion": "22:00",
               "url": "https://fastream.to/embed-mvqkh5iz7l1e.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "titulo": "Hora de Aventura",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "enProceso": false,
+      "descripcion": "Finn el humano y Jake el perro viven emocionantes aventuras en la mágica Tierra de Ooo, ayudando a otros y luchando contra el mal.",
+      "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qk3eQ8jW4opJ48gFWYUXWaMT4l.jpg",
+      "año": 2010,
+      "genero": ["animacion", "cartoon", "nuevos"],
+      "director": "Pendleton Ward",
+      "actores": [
+        "Jeremy Shada",
+        "John DiMaggio",
+        "Hynden Walch"
+      ],
+      "trailer": "https://www.youtube.com/embed/uM7eHk3XhH4",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Pánico en la Fiesta del Palacio",
+              "descripcion": "Finn y Jake deben salvar una fiesta en el Dulce Reino de una invasión de zombis de caramelo.",
+              "duracion": "11:00", 
+              "url": "https://fastream.to/embed-my65l49hk90m.html"
+            },
+            {
+              "numero": 2,
+              "titulo": "Problemas en el Espacio Grumoso",
+              "descripcion": "Finn y Jake visitan el Espacio Grumoso y se meten en problemas con la Princesa Grumosa.",
+              "duracion": "11:00",
+              "url": "https://fastream.to/embed-w844gefgs57d.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "Prisioneros del Amor",
+              "descripcion": "El Rey Helado secuestra princesas y Finn y Jake deben rescatarlas.",
+              "duracion": "11:00", 
+              "url": "https://fastream.to/embed-klu2jfta9cso.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "El Enchiridión",
+              "descripcion": "Finn busca un antiguo manual de héroes llamado El Enchiridión.",
+              "duracion": "11:00",
+              "url": "https://fastream.to/embed-nk6gnw45bu7f.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "El Jardín de la Bruja",
+              "descripcion": "Finn y Jake exploran el jardín mágico de una poderosa bruja.",
+              "duracion": "11:00",
+              "url": "https://fastream.to/embed-uhiirwxs9uce.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "Los Ojos",
+              "descripcion": "Un misterioso caballo observa a Finn y Jake mientras duermen.",
+              "duracion": "11:00",
+              "url": "https://fastream.to/embed-24bl9qip3wnx.html"
+            },
+            {
+              "numero": 7,
+              "titulo": "Ricardio el Corazón",
+              "descripcion": "El corazón viviente del Rey Helado causa problemas en el Dulce Reino.",
+              "duracion": "11:00",
+              "url": "https://fastream.to/embed-l92671maetxx.html"
+            },
+            {
+              "numero": 8,
+              "titulo": "Hombres de Negocios",
+              "descripcion": "Finn y Jake se enfrentan a unos hombres de negocios que quieren comprar el Dulce Reino.",
+              "duracion": "11:00",
+              "url": "https://fastream.to/embed-1gzmng39jqen.html"
+            },
+            {
+              "numero": 9,
+              "titulo": "Mi Héroe",
+              "descripcion": "Finn conoce a su héroe Billy y aprende una valiosa lección.",
+              "duracion": "11:00",
+              "url": "https://fastream.to/embed-jddoeocsxbea.html"
+            },
+            {
+              "numero": 10,
+              "titulo": "Memorias en la Montaña",
+              "descripcion": "Finn y Jake exploran una misteriosa montaña llena de recuerdos del pasado.",
+              "duracion": "11:00",
+              "url": "https://fastream.to/embed-elya4kkw0gli.html"
             }
           ]
         }
