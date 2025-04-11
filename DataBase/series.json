@@ -6507,8 +6507,389 @@
               "numero": 6,
               "titulo": "Fin de Semana Mortal",
               "descripcion": "Durante un retiro policial, Shawn debe resolver un asesinato mientras mantiene su secreto.",
-              "duracion": "43:00",
+              "duracion": "43:00", 
               "url": "https://drive.google.com/file/d/1nj0_sfK_07x1u5YPTV7RAZZTs-xNX2Ba/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "titulo": "Miraculous Ladybug",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "enProceso": false,
+      "descripcion": "Marinette es una estudiante normal con una vida secreta como la superheroína Ladybug, protegiendo París junto a Cat Noir de villanos akumatizados.",
+      "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FkphxoWmU5NbNbkTSkJnMe3EbguE.jpg&w=128&q=75",
+      "año": 2015,
+      "genero": ["animacion", "disney", "familiar", "nuevos"],
+      "director": "Thomas Astruc",
+      "actores": [
+        "Cristina Vee",
+        "Bryce Papenbrook",
+        "Keith Silverstein"
+      ],
+      "trailer": "https://www.youtube.com/embed/qTxFDI2wdzQ",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Clima Tempestuoso",
+              "descripcion": "En su primer día como superheroína, Marinette enfrenta a una villana del clima.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1qi2f2uPAGUEO0CG42x5EpzfCLJNPWFc7/preview"
+            },
+            {
+              "numero": 2, 
+              "titulo": "El Burbujeador",
+              "descripcion": "El mejor amigo de Adrien es akumatizado en el Burbujeador.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/1B8ortajzcGq1nAMMxZp5z6wbYFjuJnr6/preview"
+            },
+            {
+              "numero": 3,
+              "titulo": "El Faraón",
+              "descripcion": "Un historiador akumatizado busca revivir a una antigua princesa egipcia.",
+              "duracion": "22:00",
+              "url": "https://drive.google.com/file/d/17m6tsgYn4nmGzj_nx6GjMg_XPQP2p7va/preview"
+            },
+            {
+              "numero": 4,
+              "titulo": "Lady WiFi",
+              "descripcion": "Alya es akumatizada en Lady WiFi y busca revelar la identidad de Ladybug.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-hkgw36crzjh5.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "Timebreaker",
+              "descripcion": "Alix es akumatizada en Timebreaker y obtiene el poder de viajar en el tiempo.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-8kekqcm9sarv.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "Sr. Paloma",
+              "descripcion": "Un hombre es akumatizado en Sr. Paloma después de que las palomas son prohibidas en París.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-j7nw63958okn.html"
+            },
+            {
+              "numero": 7,
+              "titulo": "Rogercop",
+              "descripcion": "El oficial Roger es akumatizado en Rogercop, un policía robot que impone reglas estrictas.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-hzblg5ptx4us.html"
+            },
+            {
+              "numero": 8,
+              "titulo": "Cupido Negro",
+              "descripcion": "Kim es akumatizado en Cupido Negro en el día de San Valentín.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-2dbe0fwxlv18.html"
+            },
+            {
+              "numero": 9,
+              "titulo": "Horrificadora",
+              "descripcion": "Durante la filmación de una película, Mylène es akumatizada en Horrificadora.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-ec8dn6vmm9uk.html"
+            },
+            {
+              "numero": 10,
+              "titulo": "Princesa Fragancia",
+              "descripcion": "Rose es akumatizada en Princesa Fragancia y usa perfume para controlar a la gente.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-njt110qpfuly.html"
+            },
+            {
+              "numero": 11,
+              "titulo": "Simón Dice",
+              "descripcion": "Un concursante de TV es akumatizado en Simón Dice con poder de control mental.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-fdhh83hsdeof.html"
+            },
+            {
+              "numero": 12,
+              "titulo": "Gamer",
+              "descripcion": "Max es akumatizado en Gamer después de perder un torneo de videojuegos.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-9gpznmjqw44z.html"
+            },
+            {
+              "numero": 13,
+              "titulo": "Animan",
+              "descripcion": "El padre de Kim es akumatizado en Animan con poder de transformarse en animales.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-qlhblqe1powq.html"
+            },
+            {
+              "numero": 14,
+              "titulo": "Kung Food",
+              "descripcion": "El tío de Marinette es akumatizado en Kung Food después de perder una competencia.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-mra4gcud39wn.html"
+            },
+            {
+              "numero": 15,
+              "titulo": "El Jugador",
+              "descripcion": "Un jugador de fútbol es akumatizado en el Jugador.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-kvmxesbspd4x.html"
+            },
+            {
+              "numero": 16,
+              "titulo": "Reflekta",
+              "descripcion": "Juleka es akumatizada en Reflekta con poder de transformar a otros en su imagen.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-33954an7kbxg.html"
+            },
+            {
+              "numero": 17,
+              "titulo": "Pixelador",
+              "descripcion": "Un fotógrafo es akumatizado en Pixelador con poder de digitalizar personas.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-dwoixtu3pnug.html"
+            },
+            {
+              "numero": 18,
+              "titulo": "Guitar Villain",
+              "descripcion": "Jagged Stone es akumatizado en Guitar Villain.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-v02z50qbxizu.html"
+            },
+            {
+              "numero": 19,
+              "titulo": "Puppeteer",
+              "descripcion": "La hermana pequeña de Manon es akumatizada en Puppeteer.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-tubzywwdci1r.html"
+            },
+            {
+              "numero": 20,
+              "titulo": "Reflector",
+              "descripcion": "Una fotógrafa es akumatizada en Reflector.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-a1rw5nkyyni3.html"
+            },
+            {
+              "numero": 21,
+              "titulo": "Volpina",
+              "descripcion": "Lila es akumatizada en Volpina, una villana con poder de crear ilusiones.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-60e1qzdkvkja.html"
+            },
+            {
+              "numero": 22,
+              "titulo": "Antibug",
+              "descripcion": "Chloé es akumatizada en Antibug, una versión malvada de Ladybug.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-9ivglfyw9462.html"
+            },
+            {
+              "numero": 23,
+              "titulo": "El Mimo",
+              "descripcion": "El padre de Mylène es akumatizado en el Mimo.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-w8awesodjsgm.html"
+            },
+            {
+              "numero": 24,
+              "titulo": "El Coleccionista",
+              "descripcion": "Gabriel Agreste es akumatizado en el Coleccionista.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-tw4zc108m0rf.html"
+            },
+            {
+              "numero": 25,
+              "titulo": "Corazón de Piedra",
+              "descripcion": "El origen de Ladybug y Cat Noir cuando Ivan es akumatizado.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-mvqkh5iz7l1e.html"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "El Coleccionista",
+              "descripcion": "Marinette sospecha que Gabriel Agreste podría ser Hawk Moth.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-pjxckgrtz30e.html"
+            },
+            {
+              "numero": 2,
+              "titulo": "Despair Bear", 
+              "descripcion": "El mayordomo de Chloé es akumatizado en un oso de peluche malvado.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-db7tewgtpuae.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "Prime Queen",
+              "descripcion": "Una presentadora de noticias es akumatizada después de buscar una historia sobre Ladybug.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-sve74fh10qmx.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "Befana",
+              "descripcion": "La abuela de Marinette es akumatizada durante su fiesta de cumpleaños.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-hkgw36crzjh5.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "Riposte",
+              "descripcion": "Una esgrimista es akumatizada después de perder un duelo.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-8kekqcm9sarv.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "Robostus",
+              "descripcion": "El robot de Max desarrolla sentimientos y es akumatizado.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-j7nw63958okn.html"
+            },
+            {
+              "numero": 7,
+              "titulo": "The Dark Owl",
+              "descripcion": "El Sr. Damocles es akumatizado en un supervillano búho.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-hzblg5ptx4us.html"
+            },
+            {
+              "numero": 8,
+              "titulo": "Gigantitan",
+              "descripcion": "Un bebé es akumatizado en un gigante destructivo.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-2dbe0fwxlv18.html"
+            },
+            {
+              "numero": 9,
+              "titulo": "Glaciator",
+              "descripcion": "Un vendedor de helados es akumatizado después de ser rechazado.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-ec8dn6vmm9uk.html"
+            },
+            {
+              "numero": 10,
+              "titulo": "Sapotis",
+              "descripcion": "Las hermanas gemelas de Alya son akumatizadas.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-njt110qpfuly.html"
+            },
+            {
+              "numero": 11,
+              "titulo": "Gorizilla",
+              "descripcion": "El guardaespaldas de Adrien es akumatizado en un gorila gigante.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-fdhh83hsdeof.html"
+            },
+            {
+              "numero": 12,
+              "titulo": "Captain Hardrock",
+              "descripcion": "La madre de Juleka es akumatizada en una pirata musical.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-9gpznmjqw44z.html"
+            },
+            {
+              "numero": 13,
+              "titulo": "Zombizou",
+              "descripcion": "La Srta. Bustier es akumatizada en una villana que esparce besos zombis.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-qlhblqe1powq.html"
+            },
+            {
+              "numero": 14,
+              "titulo": "Syren",
+              "descripcion": "Ondine es akumatizada en una sirena que inunda París.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-mra4gcud39wn.html"
+            },
+            {
+              "numero": 15,
+              "titulo": "Frightningale",
+              "descripcion": "Clara Nightingale es akumatizada en una villana musical.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-kvmxesbspd4x.html"
+            },
+            {
+              "numero": 16,
+              "titulo": "Troublemaker",
+              "descripcion": "Penny Rolling es akumatizada durante un programa de TV.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-33954an7kbxg.html"
+            },
+            {
+              "numero": 17,
+              "titulo": "Reverser",
+              "descripcion": "Marc es akumatizado después de un malentendido con Nathaniel.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-dwoixtu3pnug.html"
+            },
+            {
+              "numero": 18,
+              "titulo": "Anansi",
+              "descripcion": "La hermana mayor de Alya es akumatizada en una villana araña.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-v02z50qbxizu.html"
+            },
+            {
+              "numero": 19,
+              "titulo": "Sandboy",
+              "descripcion": "Un niño es akumatizado y hace realidad las pesadillas.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-tubzywwdci1r.html"
+            },
+            {
+              "numero": 20,
+              "titulo": "Style Queen",
+              "descripcion": "Audrey Bourgeois es akumatizada durante la semana de la moda.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-a1rw5nkyyni3.html"
+            },
+            {
+              "numero": 21,
+              "titulo": "Queen Wasp",
+              "descripcion": "Chloé obtiene el Miraculous de la abeja pero es akumatizada.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-60e1qzdkvkja.html"
+            },
+            {
+              "numero": 22,
+              "titulo": "Malediktator",
+              "descripcion": "El padre de Chloé es akumatizado en un dictador.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-9ivglfyw9462.html"
+            },
+            {
+              "numero": 23,
+              "titulo": "Frozer",
+              "descripcion": "Un patinador es akumatizado y congela todo París.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-w8awesodjsgm.html"
+            },
+            {
+              "numero": 24,
+              "titulo": "Catalyst",
+              "descripcion": "Nathalie es akumatizada para ayudar a Hawk Moth.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-tw4zc108m0rf.html"
+            },
+            {
+              "numero": 25,
+              "titulo": "Mayura",
+              "descripcion": "La batalla final contra Hawk Moth revela nuevos secretos.",
+              "duracion": "22:00",
+              "url": "https://fastream.to/embed-mvqkh5iz7l1e.html"
             }
           ]
         }
