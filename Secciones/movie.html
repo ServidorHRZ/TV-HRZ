@@ -29,14 +29,35 @@
         .player-container {
             position: relative;
             width: 100%;
-            background: #000;
-            margin-bottom: 20px;
+            background: var(--background-color);
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .player-wrapper {
             position: relative;
             padding-top: 56.25%; /* 16:9 Aspect Ratio */
-            background: #000;
+            background: var(--overlay-color);
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .player-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+            pointer-events: none;
+            z-index: 1;
         }
 
         .player-wrapper iframe {
@@ -46,13 +67,38 @@
             width: 100%;
             height: 100%;
             border: none;
+            z-index: 0;
+        }
+
+        @media (min-width: 1200px) {
+            .player-container {
+                padding: 30px 0;
+            }
+
+            .player-wrapper {
+                width: 85%;
+                max-width: 1200px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .player-wrapper {
+                width: 100%;
+                border-radius: 0;
+                max-width: none;
+            }
+
+            .player-container {
+                padding: 0;
+                margin-bottom: 5px;
+            }
         }
 
         .content-info {
             position: relative;
             padding: 20px 30px;
             max-width: 1200px;
-            margin: 20px auto;
+            margin: 0 auto;
             width: 100%;
             box-sizing: border-box;
             background: var(--overlay-color);
@@ -64,12 +110,22 @@
         .movie-header {
             display: flex;
             gap: 30px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            position: relative;
+            padding: 20px;
+            background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.9),
+                rgba(0, 0, 0, 0.7)
+            );
+            border-radius: 15px;
         }
 
         .movie-poster-container {
             flex-shrink: 0;
             width: 200px;
+            position: relative;
+            transition: transform 0.3s ease;
         }
 
         .movie-poster {
@@ -79,23 +135,16 @@
             transition: transform 0.3s ease;
         }
 
-        .movie-poster:hover {
-            transform: scale(1.05);
-        }
-
         .movie-title-section {
             display: flex;
             flex-direction: column;
             justify-content: center;
-        }
-
-        .movie-details {
-            margin-top: 20px;
+            flex: 1;
         }
 
         .movie-title {
             font-size: 2.5em;
-            margin: 0;
+            margin: 0 0 15px 0;
             color: var(--primary-color);
             font-weight: 700;
             letter-spacing: 1px;
@@ -103,17 +152,53 @@
         }
 
         .movie-metadata {
-            margin-top: 15px;
             display: flex;
-            gap: 20px;
             align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .movie-year, #movie-genre {
             color: #999;
+            font-size: 1.1em;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .action-button.mi-lista {
+            background: rgba(109, 109, 110, 0.7);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .action-button.mi-lista:hover {
+            background: rgba(109, 109, 110, 0.9);
+            transform: translateY(-2px);
+        }
+
+        .action-button.mi-lista.en-lista {
+            background: rgba(0, 255, 255, 0.2);
+        }
+
+        .action-button.mi-lista i {
+            font-size: 1.1em;
         }
 
         .movie-description-section {
-            margin-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 20px;
+            margin-top: 15px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
         }
 
         .movie-description {
@@ -121,11 +206,6 @@
             line-height: 1.8;
             color: #ccc;
             margin: 0;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         .expand-description {
@@ -324,39 +404,42 @@
         }
 
         @media (max-width: 768px) {
+            .player-container {
+                margin-bottom: 5px;
+            }
+
+            .content-info {
+                padding: 15px;
+            }
+
             .movie-header {
+                padding: 15px;
+                margin-bottom: 10px;
+            }
+
+            .movie-description-section {
+                margin-top: 10px;
+                padding: 15px;
+            }
+
+            .movie-header {
+                flex-direction: column;
                 gap: 20px;
+                align-items: center;
+                text-align: center;
             }
 
             .movie-poster-container {
-                width: 140px;
-            }
-
-            .movie-title {
-                font-size: 2em;
-            }
-
-            body {
-                padding-bottom: 100px;
-            }
-
-            .movie-actions {
-                flex-wrap: wrap;
-            }
-
-            .action-button {
-                padding: 10px 20px;
-                font-size: 1em;
+                width: 180px;
             }
 
             .movie-metadata {
+                justify-content: center;
                 flex-wrap: wrap;
-                gap: 15px;
             }
 
-            .action-button.like {
-                height: 40px;
-                padding: 10px 14px;
+            .action-buttons {
+                justify-content: center;
             }
         }
 
@@ -375,7 +458,7 @@
         }
 
         .action-button.reconectar {
-            margin: 15px auto;
+            margin: 10px auto;
             display: flex;
             background: rgba(0, 255, 255, 0.15);
             border: 1px solid var(--primary-color);
@@ -420,9 +503,11 @@
                 <div class="movie-metadata">
                     <span class="movie-year" id="movie-year"></span>
                     <span id="movie-genre"></span>
-                    <button class="action-button like" id="likeButton">
-                        <i class="fas fa-heart"></i>
-                        <span>Me gusta</span>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-button mi-lista" id="likeButton">
+                        <i class="fas fa-plus"></i>
+                        <span>Mi lista</span>
                     </button>
                 </div>
             </div>
@@ -513,22 +598,25 @@
                 // Verificar si la película ya está en favoritos
                 const peliculaEstaEnLista = miListaPeliculas.some(p => p.titulo === peliculaSeleccionada.titulo);
                 if (peliculaEstaEnLista) {
-                    likeButton.classList.add('liked');
+                    likeButton.classList.add('en-lista');
+                    likeButton.innerHTML = '<i class="fas fa-check"></i><span>Mi lista</span>';
                 }
 
-                // Manejar clicks en el botón Me gusta
+                // Manejar clicks en el botón Mi lista
                 likeButton.addEventListener('click', () => {
                     const miListaPeliculas = JSON.parse(localStorage.getItem('miListaPeliculas') || '[]');
-                    const isLiked = !likeButton.classList.contains('liked');
+                    const isInList = !likeButton.classList.contains('en-lista');
                     
-                    if (isLiked) {
-                        likeButton.classList.add('liked');
+                    if (isInList) {
+                        likeButton.classList.add('en-lista');
+                        likeButton.innerHTML = '<i class="fas fa-check"></i><span>Mi lista</span>';
                         // Agregar al inicio de Mi Lista si no está
                         if (!miListaPeliculas.some(p => p.titulo === peliculaSeleccionada.titulo)) {
                             miListaPeliculas.unshift(peliculaSeleccionada);
                         }
                     } else {
-                        likeButton.classList.remove('liked');
+                        likeButton.classList.remove('en-lista');
+                        likeButton.innerHTML = '<i class="fas fa-plus"></i><span>Mi lista</span>';
                         // Remover de Mi Lista
                         const index = miListaPeliculas.findIndex(p => p.titulo === peliculaSeleccionada.titulo);
                         if (index > -1) {
