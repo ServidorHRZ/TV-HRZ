@@ -859,6 +859,38 @@
     <script>
         let isMuted = false;
         let youtubePlayer = null;
+        let screenOrientationLock = null;
+
+        // Función para detectar si es un dispositivo móvil
+        function esDispositivoMovil() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        // Función para forzar orientación horizontal
+        function forzarOrientacionHorizontal() {
+            if (esDispositivoMovil()) {
+                if (screen.orientation && screen.orientation.lock) {
+                    screen.orientation.lock('landscape')
+                        .then(() => {
+                            console.log('Orientación bloqueada en horizontal');
+                        })
+                        .catch((error) => {
+                            console.error('Error al bloquear orientación:', error);
+                        });
+                } else if (screen.lockOrientation) {
+                    screen.lockOrientation('landscape');
+                }
+            }
+        }
+
+        // Función para liberar el bloqueo de orientación
+        function liberarOrientacion() {
+            if (screen.orientation && screen.orientation.unlock) {
+                screen.orientation.unlock();
+            } else if (screen.unlockOrientation) {
+                screen.unlockOrientation();
+            }
+        }
 
         // Función para silenciar el trailer
         function muteTrailer() {
@@ -1267,6 +1299,9 @@
                         // Agregar la clase 'playing' al episodio actual
                         episodio.classList.add('playing');
 
+                        // Forzar orientación horizontal en dispositivos móviles
+                        forzarOrientacionHorizontal();
+
                         // Entrar en pantalla completa después de un breve retraso
                         setTimeout(() => {
                             const player = document.getElementById('episodio-player');
@@ -1499,6 +1534,31 @@
             const firstScriptTag = document.getElementsByTagName('script')[0];
             firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         }
+
+        // Agregar evento para detectar cuando se sale de pantalla completa
+        document.addEventListener('fullscreenchange', () => {
+            if (!document.fullscreenElement) {
+                liberarOrientacion();
+            }
+        });
+
+        document.addEventListener('webkitfullscreenchange', () => {
+            if (!document.webkitFullscreenElement) {
+                liberarOrientacion();
+            }
+        });
+
+        document.addEventListener('mozfullscreenchange', () => {
+            if (!document.mozFullScreenElement) {
+                liberarOrientacion();
+            }
+        });
+
+        document.addEventListener('msfullscreenchange', () => {
+            if (!document.msFullscreenElement) {
+                liberarOrientacion();
+            }
+        });
     </script>
 </body>
 </html>
