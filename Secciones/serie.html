@@ -827,7 +827,7 @@
         </button>
         <div class="episodios-player" id="episodios-player">
             <div class="episodios-player-container">
-                <iframe id="episodio-player" src="" frameborder="0" allowfullscreen></iframe>
+                <iframe id="episodio-player" src="" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
                 <button class="action-button reconectar" id="btnReconectar" style="display: none;">
                     <i class="fas fa-sync-alt"></i>
                     <span>Reintentar conexión</span>
@@ -1266,6 +1266,20 @@
                         
                         // Agregar la clase 'playing' al episodio actual
                         episodio.classList.add('playing');
+
+                        // Entrar en pantalla completa después de un breve retraso
+                        setTimeout(() => {
+                            const player = document.getElementById('episodio-player');
+                            if (player.requestFullscreen) {
+                                player.requestFullscreen();
+                            } else if (player.webkitRequestFullscreen) {
+                                player.webkitRequestFullscreen();
+                            } else if (player.mozRequestFullScreen) {
+                                player.mozRequestFullScreen();
+                            } else if (player.msRequestFullscreen) {
+                                player.msRequestFullscreen();
+                            }
+                        }, 1000);
                     }
                 });
             });
