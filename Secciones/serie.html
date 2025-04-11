@@ -29,6 +29,8 @@
             margin: 0 auto;
             padding: 15px;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
         }
         h1, h2, h3 {
             font-family: 'Orbitron', sans-serif;
@@ -642,46 +644,72 @@
 
         /* Mantener los estilos originales para PC (min-width: 769px) */
         @media (min-width: 769px) {
-            .hero-section {
-                height: 80vh;
+            .container {
+                flex-direction: column;
+                gap: 20px;
             }
 
-            .hero-content {
-                bottom: 10%;
-                left: 5%;
+            .container.con-diseno-lateral {
                 flex-direction: row;
-                align-items: flex-end;
-                gap: 30px;
             }
 
-            .hero-poster {
-                display: block;
-                width: 300px;
+            .episodios-player {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
             }
 
-            .hero-info {
-                max-width: 50%;
+            .container.con-diseno-lateral .episodios-player {
+                flex: 1;
+                max-width: 70%;
             }
 
-            /* Mostrar todos los elementos en PC */
-            .serie-metadata,
-            .genero-tags,
-            .serie-descripcion,
-            .serie-info-grid {
-                display: block;
+            .temporadas-container {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 20px;
+                height: auto;
+                overflow-y: visible;
+                position: relative;
             }
 
-            .episodio {
-                grid-template-columns: 140px 1fr 35px;
-                padding: 15px;
+            .container.con-diseno-lateral .temporadas-container {
+                flex: 1;
+                max-width: 30%;
+                margin-top: 0;
+                height: calc(100vh - 200px);
+                overflow-y: auto;
+                position: sticky;
+                top: 20px;
             }
 
-            .episodio-contenido {
-                text-align: left;
+            .temporadas-container::-webkit-scrollbar {
+                width: 8px;
             }
 
-            .episodio-titulo {
-                margin-bottom: 8px;
+            .temporadas-container::-webkit-scrollbar-track {
+                background: rgba(0, 0, 0, 0.2);
+                border-radius: 4px;
+            }
+
+            .temporadas-container::-webkit-scrollbar-thumb {
+                background: var(--primary-color);
+                border-radius: 4px;
+            }
+
+            .temporadas-container::-webkit-scrollbar-thumb:hover {
+                background: #00cccc;
+            }
+
+            .episodios-player iframe {
+                margin-bottom: 20px;
+                height: auto;
+                aspect-ratio: 16/9;
+            }
+
+            .container.con-diseno-lateral .episodios-player iframe {
+                margin-bottom: 0;
+                height: calc(100vh - 200px);
             }
         }
 
@@ -726,8 +754,15 @@
             }
         }
 
+        .botones-control {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
         .action-button.reconectar {
-            margin: 15px auto;
+            margin: 0;
             display: flex;
             background: rgba(0, 255, 255, 0.15);
             border: 1px solid var(--primary-color);
@@ -827,11 +862,21 @@
         </button>
         <div class="episodios-player" id="episodios-player">
             <div class="episodios-player-container">
-                <iframe id="episodio-player" src="" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-                <button class="action-button reconectar" id="btnReconectar" style="display: none;">
-                    <i class="fas fa-sync-alt"></i>
-                    <span>Reintentar conexión</span>
-                </button>
+                <iframe id="episodio-player" src="" frameborder="0" allowfullscreen></iframe>
+                <div class="botones-control">
+                    <button class="action-button reconectar" id="btnAnterior" style="display: none;">
+                        <i class="fas fa-step-backward"></i>
+                        <span>Anterior</span>
+                    </button>
+                    <button class="action-button reconectar" id="btnReconectar" style="display: none;">
+                        <i class="fas fa-sync-alt"></i>
+                        <span>Reintentar conexión</span>
+                    </button>
+                    <button class="action-button reconectar" id="btnSiguiente" style="display: none;">
+                        <i class="fas fa-step-forward"></i>
+                        <span>Siguiente</span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="temporadas-container" id="temporadas-container"></div>
@@ -859,38 +904,6 @@
     <script>
         let isMuted = false;
         let youtubePlayer = null;
-        let screenOrientationLock = null;
-
-        // Función para detectar si es un dispositivo móvil
-        function esDispositivoMovil() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-
-        // Función para forzar orientación horizontal
-        function forzarOrientacionHorizontal() {
-            if (esDispositivoMovil()) {
-                if (screen.orientation && screen.orientation.lock) {
-                    screen.orientation.lock('landscape')
-                        .then(() => {
-                            console.log('Orientación bloqueada en horizontal');
-                        })
-                        .catch((error) => {
-                            console.error('Error al bloquear orientación:', error);
-                        });
-                } else if (screen.lockOrientation) {
-                    screen.lockOrientation('landscape');
-                }
-            }
-        }
-
-        // Función para liberar el bloqueo de orientación
-        function liberarOrientacion() {
-            if (screen.orientation && screen.orientation.unlock) {
-                screen.orientation.unlock();
-            } else if (screen.unlockOrientation) {
-                screen.unlockOrientation();
-            }
-        }
 
         // Función para silenciar el trailer
         function muteTrailer() {
@@ -1251,6 +1264,76 @@
                 temporadasContainer.appendChild(temporadaElement);
             });
 
+            // Función para reproducir automáticamente el primer capítulo en PC
+            function reproducirPrimerCapitulo() {
+                if (window.innerWidth >= 769) { // Solo en PC
+                    const primeraTemporada = serie.temporadas[0];
+                    if (primeraTemporada && primeraTemporada.episodios.length > 0) {
+                        const primerEpisodio = primeraTemporada.episodios[0];
+                        const episodioElement = document.querySelector(`.episodio[data-episodio="1"]`);
+                        
+                        if (episodioElement) {
+                            // Abrir la primera temporada
+                            const temporadaElement = episodioElement.closest('.temporada');
+                            temporadaElement.classList.add('active');
+                            temporadaElement.querySelector('.episodios').style.display = 'block';
+                            
+                            // Reproducir el primer episodio
+                            const videoUrl = episodioElement.getAttribute('data-url');
+                            const episodioPlayer = document.getElementById('episodio-player');
+                            const episodiosPlayer = document.getElementById('episodios-player');
+                            const btnReconectar = document.getElementById('btnReconectar');
+                            const btnAnterior = document.getElementById('btnAnterior');
+                            const btnSiguiente = document.getElementById('btnSiguiente');
+                            
+                            // Silenciar el trailer
+                            muteTrailer();
+                            
+                            episodioPlayer.src = videoUrl;
+                            episodiosPlayer.classList.add('active');
+                            btnReconectar.style.display = 'flex';
+                            btnAnterior.style.display = 'flex';
+                            btnSiguiente.style.display = 'flex';
+                            
+                            // Agregar clase para el diseño lateral
+                            container.classList.add('con-diseno-lateral');
+                            
+                            // Marcar como playing
+                            episodioElement.classList.add('playing');
+                            
+                            // Configurar el botón de reconexión
+                            btnReconectar.onclick = () => {
+                                const srcActual = episodioPlayer.src;
+                                episodioPlayer.src = '';
+                                setTimeout(() => {
+                                    episodioPlayer.src = srcActual;
+                                }, 100);
+                            };
+
+                            // Configurar botones de navegación
+                            btnAnterior.onclick = () => {
+                                const episodioActual = document.querySelector('.episodio.playing');
+                                const episodioAnterior = episodioActual.previousElementSibling;
+                                if (episodioAnterior && episodioAnterior.classList.contains('episodio')) {
+                                    episodioAnterior.click();
+                                }
+                            };
+
+                            btnSiguiente.onclick = () => {
+                                const episodioActual = document.querySelector('.episodio.playing');
+                                const episodioSiguiente = episodioActual.nextElementSibling;
+                                if (episodioSiguiente && episodioSiguiente.classList.contains('episodio')) {
+                                    episodioSiguiente.click();
+                                }
+                            };
+                        }
+                    }
+                }
+            }
+
+            // Llamar a la función después de un breve retraso para asegurar que todo esté cargado
+            setTimeout(reproducirPrimerCapitulo, 500);
+
             // Modificar el manejo de click en episodios
             document.querySelectorAll('.episodio').forEach(episodio => {
                 episodio.addEventListener('click', (e) => {
@@ -1259,6 +1342,9 @@
                         const episodioPlayer = document.getElementById('episodio-player');
                         const episodiosPlayer = document.getElementById('episodios-player');
                         const btnReconectar = document.getElementById('btnReconectar');
+                        const btnAnterior = document.getElementById('btnAnterior');
+                        const btnSiguiente = document.getElementById('btnSiguiente');
+                        const container = document.querySelector('.container');
 
                         // Silenciar el trailer cuando se reproduce un episodio
                         muteTrailer();
@@ -1266,6 +1352,11 @@
                         episodioPlayer.src = videoUrl;
                         episodiosPlayer.classList.add('active');
                         btnReconectar.style.display = 'flex';
+                        btnAnterior.style.display = 'flex';
+                        btnSiguiente.style.display = 'flex';
+                        
+                        // Agregar clase para el diseño lateral
+                        container.classList.add('con-diseno-lateral');
 
                         // Desplazamiento suave hacia el reproductor
                         episodiosPlayer.scrollIntoView({ 
@@ -1273,13 +1364,30 @@
                             block: 'start'
                         });
 
-                        // Configurar el botón de reconexión
+                        // Configurar el botón de reconexión y navegación
                         btnReconectar.onclick = () => {
                             const srcActual = episodioPlayer.src;
                             episodioPlayer.src = '';
                             setTimeout(() => {
                                 episodioPlayer.src = srcActual;
                             }, 100);
+                        };
+
+                        // Configurar botones de navegación
+                        btnAnterior.onclick = () => {
+                            const episodioActual = document.querySelector('.episodio.playing');
+                            const episodioAnterior = episodioActual.previousElementSibling;
+                            if (episodioAnterior && episodioAnterior.classList.contains('episodio')) {
+                                episodioAnterior.click();
+                            }
+                        };
+
+                        btnSiguiente.onclick = () => {
+                            const episodioActual = document.querySelector('.episodio.playing');
+                            const episodioSiguiente = episodioActual.nextElementSibling;
+                            if (episodioSiguiente && episodioSiguiente.classList.contains('episodio')) {
+                                episodioSiguiente.click();
+                            }
                         };
 
                         // Marcar como visto después de 30 segundos
@@ -1298,23 +1406,6 @@
                         
                         // Agregar la clase 'playing' al episodio actual
                         episodio.classList.add('playing');
-
-                        // Forzar orientación horizontal en dispositivos móviles
-                        forzarOrientacionHorizontal();
-
-                        // Entrar en pantalla completa después de un breve retraso
-                        setTimeout(() => {
-                            const player = document.getElementById('episodio-player');
-                            if (player.requestFullscreen) {
-                                player.requestFullscreen();
-                            } else if (player.webkitRequestFullscreen) {
-                                player.webkitRequestFullscreen();
-                            } else if (player.mozRequestFullScreen) {
-                                player.mozRequestFullScreen();
-                            } else if (player.msRequestFullscreen) {
-                                player.msRequestFullscreen();
-                            }
-                        }, 1000);
                     }
                 });
             });
@@ -1534,31 +1625,6 @@
             const firstScriptTag = document.getElementsByTagName('script')[0];
             firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         }
-
-        // Agregar evento para detectar cuando se sale de pantalla completa
-        document.addEventListener('fullscreenchange', () => {
-            if (!document.fullscreenElement) {
-                liberarOrientacion();
-            }
-        });
-
-        document.addEventListener('webkitfullscreenchange', () => {
-            if (!document.webkitFullscreenElement) {
-                liberarOrientacion();
-            }
-        });
-
-        document.addEventListener('mozfullscreenchange', () => {
-            if (!document.mozFullScreenElement) {
-                liberarOrientacion();
-            }
-        });
-
-        document.addEventListener('msfullscreenchange', () => {
-            if (!document.msFullscreenElement) {
-                liberarOrientacion();
-            }
-        });
     </script>
 </body>
 </html>
