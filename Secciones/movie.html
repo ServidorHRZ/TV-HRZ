@@ -38,7 +38,7 @@
 
         .player-wrapper {
             position: relative;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 50%; /* Ajustado a 50% para PC */
             background: var(--overlay-color);
             width: 100%;
             max-width: 1000px;
@@ -72,17 +72,19 @@
 
         @media (min-width: 1200px) {
             .player-container {
-                padding: 30px 0;
+                padding: 25px 0; /* Ajustado el padding */
             }
 
             .player-wrapper {
                 width: 85%;
                 max-width: 1200px;
+                padding-top: 45%; /* Ajustado para pantallas grandes */
             }
         }
 
         @media (max-width: 768px) {
             .player-wrapper {
+                padding-top: 56.25%; /* Mantener 16:9 en móviles */
                 width: 100%;
                 border-radius: 0;
                 max-width: none;
