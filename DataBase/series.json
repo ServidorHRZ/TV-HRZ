@@ -6477,37 +6477,100 @@
             },
             {
               "numero": 2,
-              "titulo": "Investigación Paranormal", 
-              "descripcion": "Shawn y Gus investigan una casa supuestamente embrujada donde ocurrió un asesinato.",
+              "titulo": "Concurso de ortografía",
+              "descripcion": "Shawn y Gus investigan un misterioso caso durante un concurso de ortografía.",
               "duracion": "43:00",
               "url": "https://drive.google.com/file/d/18RdhF_-XrKeNqROyqk9n_ieURH0Z-uvi/preview"
             },
             {
               "numero": 3,
-              "titulo": "Habla Ahora o Calla Para Siempre",
+              "titulo": "Habla ahora o calla para siempre",
               "descripcion": "El dúo investiga la desaparición de un anillo de compromiso y descubre un crimen mayor.",
-              "duracion": "43:00", 
+              "duracion": "43:00",
               "url": "https://drive.google.com/file/d/1trfutst39ys4c_TjDqtVClXNqGSOmi5e/preview"
             },
             {
               "numero": 4,
-              "titulo": "Mujer Desaparecida",
-              "descripcion": "Shawn y Gus buscan a una mujer desaparecida mientras compiten con un detective privado rival.",
+              "titulo": "Mujer busca marido muerto; se permite fumar, mascotas no",
+              "descripcion": "Shawn y Gus investigan el caso de una mujer que busca a su marido desaparecido.",
               "duracion": "43:00",
               "url": "https://drive.google.com/file/d/1kFgG49x0XOdV67QE6lBlLwZkpfENxWTZ/preview"
             },
             {
               "numero": 5,
-              "titulo": "9 Vidas",
+              "titulo": "9 vidas",
               "descripcion": "Un aparente suicidio lleva a Shawn y Gus a investigar una conspiración corporativa.",
               "duracion": "43:00",
               "url": "https://drive.google.com/file/d/1jdn80Ns-cfIoB1djjyeGKIHkWs7ne5Kc/preview"
             },
             {
               "numero": 6,
-              "titulo": "Fin de Semana Mortal",
+              "titulo": "Guerreros de fin de semana",
               "descripcion": "Durante un retiro policial, Shawn debe resolver un asesinato mientras mantiene su secreto.",
-              "duracion": "43:00", 
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1nj0_sfK_07x1u5YPTV7RAZZTs-xNX2Ba/preview"
+            },
+            {
+              "numero": 7,
+              "titulo": "¿A quién vas a llamar?",
+              "descripcion": "Shawn y Gus investigan actividad paranormal en un caso misterioso.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1nj0_sfK_07x1u5YPTV7RAZZTs-xNX2Ba/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "Shawn contra el Red Phantom",
+              "descripcion": "Un misterioso caso lleva a Shawn a enfrentarse con un enigmático criminal.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1nj0_sfK_07x1u5YPTV7RAZZTs-xNX2Ba/preview"
+            },
+            {
+              "numero": 9,
+              "titulo": "No me olvides",
+              "descripcion": "Un caso del pasado regresa para atormentar a Shawn y al departamento de policía.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1nj0_sfK_07x1u5YPTV7RAZZTs-xNX2Ba/preview"
+            },
+            {
+              "numero": 10,
+              "titulo": "De la Tierra a Starbucks",
+              "descripcion": "Shawn y Gus investigan un misterioso caso relacionado con una cafetería local.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1nj0_sfK_07x1u5YPTV7RAZZTs-xNX2Ba/preview"
+            },
+            {
+              "numero": 11,
+              "titulo": "¿Me quiere? Huy, se ha muerto",
+              "descripcion": "Un romance se convierte en tragedia cuando ocurre un asesinato inesperado.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1nj0_sfK_07x1u5YPTV7RAZZTs-xNX2Ba/preview"
+            },
+            {
+              "numero": 12,
+              "titulo": "Nublado, posibilidad de asesinato",
+              "descripcion": "Un meteorólogo es encontrado muerto en circunstancias misteriosas.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1nj0_sfK_07x1u5YPTV7RAZZTs-xNX2Ba/preview"
+            },
+            {
+              "numero": 13,
+              "titulo": "Juego, set, asesinato",
+              "descripcion": "Un torneo de tenis se convierte en escena del crimen.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1nj0_sfK_07x1u5YPTV7RAZZTs-xNX2Ba/preview"
+            },
+            {
+              "numero": 14,
+              "titulo": "¿Poker? Si acabamos de empezar",
+              "descripcion": "Un juego de poker se convierte en el centro de una investigación criminal.",
+              "duracion": "43:00",
+              "url": "https://drive.google.com/file/d/1nj0_sfK_07x1u5YPTV7RAZZTs-xNX2Ba/preview"
+            },
+            {
+              "numero": 15,
+              "titulo": "Espeluznante Sherry",
+              "descripcion": "Shawn y Gus investigan un caso que involucra a una misteriosa mujer llamada Sherry.",
+              "duracion": "43:00",
               "url": "https://drive.google.com/file/d/1nj0_sfK_07x1u5YPTV7RAZZTs-xNX2Ba/preview"
             }
           ]
@@ -6562,7 +6625,7 @@
               "titulo": "Lady WiFi",
               "descripcion": "Alya es akumatizada en Lady WiFi y busca revelar la identidad de Ladybug.",
               "duracion": "22:00",
-              "url": "https://fastream.to/embed-hkgw36crzjh5.html"
+              "url": "https://drive.google.com/file/d/1v9Of0Yljo0MpoM6fAYi0rsdUszwm9N6Z/preview"
             },
             {
               "numero": 5,
@@ -6576,7 +6639,7 @@
               "titulo": "Sr. Paloma",
               "descripcion": "Un hombre es akumatizado en Sr. Paloma después de que las palomas son prohibidas en París.",
               "duracion": "22:00",
-              "url": "https://fastream.to/embed-j7nw63958okn.html"
+              "url": "https://drive.google.com/file/d/1kB94JxA1lIqbnLXobZgghlgjln9AUZOS/preview"
             },
             {
               "numero": 7,
