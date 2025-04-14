@@ -7051,6 +7051,74 @@
           ]
         }
       ]
+    },
+    {
+      "id": 48,
+      "titulo": "El Jardinero",
+      "disponible": true,
+      "nuevo": true,
+      "enProceso": false,
+      "descripcion": "Un asesino que no solia sentir emociones se enamora, inesperadamente, de la chica a la que debía asesinar... pero ella tiene su propio pasado turbulento.",
+      "imagen": "https://images.justwatch.com/poster/329521036/s332/temporada-1",
+      "año": 2023,
+      "genero": ["neflix", "drama", "nuevos"],
+      "badge": "Recién agregado",
+      "director": "Álvaro Bota",
+      "actores": [
+        "Álvaro Bota",
+        "Cecilia Suárez",
+        "Catalina Sopelana"
+      ],
+      "trailer": "https://www.youtube.com/embed/F__GiNn8c4U",
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Episodio 1",
+              "descripcion": "Primer episodio de El Jardinero",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-69vnykypm8md.html"
+            },
+            {
+              "numero": 2,
+              "titulo": "Episodio 2", 
+              "descripcion": "Segundo episodio de El Jardinero",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-r7j8qkby2err.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "Episodio 3",
+              "descripcion": "Tercer episodio de El Jardinero",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-nypd9dnimtgn.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "Episodio 4",
+              "descripcion": "Cuarto episodio de El Jardinero",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-95ifzyxrmk27.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "Episodio 5",
+              "descripcion": "Quinto episodio de El Jardinero",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-ivjpzlnba016.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "Episodio 6",
+              "descripcion": "Sexto episodio de El Jardinero",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-kp3k68fjxvkv.html"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
