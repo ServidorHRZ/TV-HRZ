@@ -414,17 +414,25 @@
       "logo": "https://tele-libre.org/img/diskids.webp",
       "categoria": "Infantil", 
       "descripcion": "Canal educativo para niños preescolares con programación que combina entretenimiento y aprendizaje.",
-      "url_stream": "https://www.televisiongratishd2.com/discovery-kids-en-vivo.html"
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/discoverykids.html"
     },
     {
       "id": 92,
-      "nombre": "Win Sports +",
+      "nombre": "Win Sports",
       "logo": "https://television-libre.tv/img/winsports.webp",
-      "categoria": "Deportes",
+      "categoria": "Deportes", 
       "descripcion": "Canal deportivo colombiano especializado en fútbol y otros deportes nacionales.",
-      "url_stream": "https://tele-libre.org/en-vivo-online/win-sports-premium/embed.php"
-    }
-    ,{
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/winsports.html"
+    },
+    {
+      "id": 97,
+      "nombre": "Win Sports +",
+      "logo": "https://television-libre.tv/img/winsportsmas.webp",
+      "categoria": "Deportes",
+      "descripcion": "Canal premium de Win Sports con contenido exclusivo y transmisiones deportivas adicionales.",
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/winsportsplus.html"
+    },
+    {
       "id": 93,
       "nombre": "La Rosa de Guadalupe 24/7",
       "logo": "https://www.cablevisionhd.com/imge/larosa.png",
