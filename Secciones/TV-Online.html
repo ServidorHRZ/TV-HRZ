@@ -877,8 +877,8 @@
                 if (linea.startsWith('#EXTINF:')) {
                     // Extraer información del canal
                     const infoMatch = linea.match(/tvg-logo="([^"]*)".*,(.*)$/);
-                    const nombreCanal = infoMatch ? infoMatch[2].trim() : 'Canal Sin Nombre';
-                    const logoUrl = infoMatch && infoMatch[1] ? infoMatch[1] : 'https://i.imgur.com/WaGRlFO.png';
+                    const nombreCanal = infoMatch ? infoMatch[2].trim() : 'Señal Externa';
+                    const logoUrl = infoMatch && infoMatch[1] ? infoMatch[1] : 'https://png.pngtree.com/png-clipart/20220605/original/pngtree-signal-network-png-image_7963295.png';
                     
                     canalActual = {
                         id: canales.length + 1000, // Para evitar conflictos con IDs existentes
