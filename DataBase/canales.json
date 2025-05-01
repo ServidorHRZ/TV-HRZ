@@ -419,7 +419,7 @@
     {
       "id": 92,
       "nombre": "Win Sports",
-      "logo": "https://television-libre.tv/img/winsports.webp",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Win_Sports_nuevo_logo.svg/2560px-Win_Sports_nuevo_logo.svg.png",
       "categoria": "Deportes", 
       "descripcion": "Canal deportivo colombiano especializado en fútbol y otros deportes nacionales.",
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/winsports.html"
@@ -427,7 +427,7 @@
     {
       "id": 97,
       "nombre": "Win Sports +",
-      "logo": "https://television-libre.tv/img/winsportsmas.webp",
+      "logo": "https://television-libre.tv/img/winsports.webp",
       "categoria": "Deportes",
       "descripcion": "Canal premium de Win Sports con contenido exclusivo y transmisiones deportivas adicionales.",
       "url_stream": "https://embed.sdfgnksbounce.com/embed2/winsportsplus.html"
