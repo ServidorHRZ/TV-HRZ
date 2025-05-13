@@ -78,7 +78,7 @@
       "logo": "https://www.telelibre.net/img/espn2.webp",
       "categoria": "Deportes",
       "descripcion": "Segundo canal de ESPN con más deportes en vivo.",
-      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn2-op2"
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn2.html"
     },
     {
       "id": 7,
@@ -206,7 +206,7 @@
       "logo": "https://www.telelibre.net/img/espn3.webp",
       "categoria": "Deportes",
       "descripcion": "Tercer canal de ESPN con más deportes en vivo.",
-      "url_stream": "https://www.telelibre.net/en-vivo/player/embed.php?r=espn3-op2"
+      "url_stream": "https://embed.sdfgnksbounce.com/embed2/espn3.html"
     },
     {
       "id": 44,
