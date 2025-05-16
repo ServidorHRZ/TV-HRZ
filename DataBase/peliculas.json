@@ -33,7 +33,7 @@
     {
       "id": 3,
       "titulo": "300: El origen de un imperio",
-      "disponible": true,
+      "disponible": false,
       "nuevo": false,
       "año": 2014,
       "genero": [
