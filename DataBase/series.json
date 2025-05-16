@@ -161,7 +161,7 @@
     {
       "id": 4,
       "titulo": "MacGyver",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "badge": "Recien agregado",
       "enProceso": false,
@@ -341,7 +341,12 @@
       "descripcion": "Antes de los eventos de La Casa de Papel, Berlin y un grupo de expertos ladrones planean uno de los atracos más ambiciosos de su carrera en París.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BYjEwNjFmNjMtMGYzNy00MzBiLWJlYjAtMGJjNTEwZGFhMjNlXkEyXkFqcGc@._V1_QL75_UY281_CR18,0,190,281_.jpg",
       "año": 2023,
-      "genero": ["neflix", "crimen", "drama", "suspenso"],
+      "genero": [
+        "neflix",
+        "crimen",
+        "drama",
+        "suspenso"
+      ],
       "director": "Álex Pina",
       "actores": [
         "Pedro Alonso",
@@ -423,7 +428,12 @@
       "descripcion": "Un grupo de criminales liderados por El Profesor planean los mayores atracos de la historia, primero en la Fábrica Nacional de Moneda y Timbre y luego en el Banco de España.",
       "imagen": "https://www.aceprensa.com/wp-content/uploads/2019/08/71446-1-683x1024.jpg",
       "año": 2017,
-      "genero": ["neflix", "crimen", "drama", "suspenso"],
+      "genero": [
+        "neflix",
+        "crimen",
+        "drama",
+        "suspenso"
+      ],
       "director": "Álex Pina",
       "actores": [
         "Úrsula Corberó",
@@ -683,7 +693,12 @@
       "descripcion": "Un ladrón profesional y maestro del disfraz que sigue los pasos de su abuelo, realizando elaborados atracos mientras es perseguido por un tenaz detective.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sgxawbFB5Vi5OkPWQLNfl3dvkNJ.jpg",
       "año": 2021,
-      "genero": ["neflix", "crimen", "drama", "suspenso"],
+      "genero": [
+        "neflix",
+        "crimen",
+        "drama",
+        "suspenso"
+      ],
       "director": "George Kay",
       "actores": [
         "Omar Sy",
@@ -780,7 +795,7 @@
             },
             {
               "numero": 2,
-              "titulo": "Capítulo 2", 
+              "titulo": "Capítulo 2",
               "descripcion": "Una nueva amenaza emerge mientras Assane intenta mantener a su familia a salvo.",
               "duracion": "42:00",
               "url": "https://fastream.to/embed-z0i5826oywc5.html"
@@ -833,7 +848,12 @@
       "descripcion": "Dexter Morgan, un experto forense en sangre para el departamento de policía de Miami, lleva una vida secreta como asesino en serie, pero con un giro: solo mata a otros asesinos que han eludido la justicia.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fq8dWfc4JwQuv3HayIZeO84jAXED.jpg&w=256&q=75",
       "año": 2006,
-      "genero": ["accion", "crimen", "drama", "suspenso"],
+      "genero": [
+        "accion",
+        "crimen",
+        "drama",
+        "suspenso"
+      ],
       "director": "James Manos Jr.",
       "actores": [
         "Michael C. Hall",
@@ -854,7 +874,12 @@
       "descripcion": "Ambientada 10 años después de que Dexter desapareciera en el ojo del huracán Laura, la serie lo encuentra viviendo con un nombre falso en la pequeña ciudad de Iron Lake, Nueva York.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9EBKgrFIsCFSV1RZKWhYUdbtGiv.jpg&w=256&q=75",
       "año": 2021,
-      "genero": ["accion", "crimen", "drama", "suspenso"],
+      "genero": [
+        "accion",
+        "crimen",
+        "drama",
+        "suspenso"
+      ],
       "director": "Clyde Phillips",
       "actores": [
         "Michael C. Hall",
@@ -951,7 +976,12 @@
       "descripcion": "En 1991, Miami. Dexter Morgan pasa de ser estudiante a ser un asesino en serie vengador, ya que sus impulsos sanguinarios no pueden ignorarse y debe aprender a canalizar su oscuridad interior. Un desafío particular para el joven Dexter, que comienza una pasantía forense en el Departamento de Policía Metropolitana de Miami.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9XLULEZTkeLwRytTUQtgmx2HH4o.jpg&w=256&q=75",
       "año": 2024,
-      "genero": ["accion", "crimen", "drama", "suspenso"],
+      "genero": [
+        "accion",
+        "crimen",
+        "drama",
+        "suspenso"
+      ],
       "director": "Marcos Siega",
       "actores": [
         "Michael C. Hall",
@@ -2093,7 +2123,7 @@
               "numero": 3,
               "titulo": "Familia de Pícaros",
               "descripcion": "Los Snart regresan a Central City.",
-              "duracion": "42:00", 
+              "duracion": "42:00",
               "url": "https://fastream.to/embed-23f9e5b9178u.html"
             },
             {
@@ -2509,7 +2539,7 @@
               "url": "https://fastream.to/embed-wx89hl1cmhx5.html"
             },
             {
-              "numero": 2, 
+              "numero": 2,
               "titulo": "402 Payment Required",
               "descripcion": "Darlene lidia con la pérdida mientras Elliot enfrenta su pasado.",
               "duracion": "45:00",
@@ -2519,7 +2549,7 @@
               "numero": 3,
               "titulo": "403 Forbidden",
               "descripcion": "Whiterose revela sus verdaderas intenciones mientras Elliot busca respuestas.",
-              "duracion": "45:00", 
+              "duracion": "45:00",
               "url": "https://fastream.to/embed-i272aye6h3bx.html"
             },
             {
@@ -5901,7 +5931,7 @@
           "numero": 2,
           "episodios": [
             {
-              "numero": 1, 
+              "numero": 1,
               "titulo": "Nuevos Comienzos",
               "descripcion": "Luna comienza una nueva etapa en el Jam & Roller",
               "duracion": "45:00",
@@ -5940,7 +5970,7 @@
             },
             {
               "numero": 2,
-              "titulo": "Mancha Roja", 
+              "titulo": "Mancha Roja",
               "descripcion": "El equipo investiga el asesinato de una estudiante universitaria",
               "duracion": "43:00",
               "url": "https://drive.google.com/file/d/1X9FDyqJ0rApeOTY6KY40HbsiqpTpawhg/preview"
@@ -5949,7 +5979,7 @@
               "numero": 3,
               "titulo": "Marea Roja",
               "descripcion": "Jane y Lisbon investigan la muerte de un buzo",
-              "duracion": "43:00", 
+              "duracion": "43:00",
               "url": "https://drive.google.com/file/d/1Zl5I9yY6_mitmXFgg1_Ak3tGS-UMH1OV/preview"
             },
             {
@@ -5996,7 +6026,7 @@
             },
             {
               "numero": 10,
-              "titulo": "Rojo Brillante", 
+              "titulo": "Rojo Brillante",
               "descripcion": "El CBI investiga el asesinato de un famoso chef",
               "duracion": "43:00",
               "url": "https://drive.google.com/file/d/1mV-T75e-mlG90nedrdyc3v6sTqjMvorR/preview"
@@ -6017,7 +6047,7 @@
       "director": "Hank Scanlon",
       "actores": [
         "Seth Rogen",
-        "Alex Borstein", 
+        "Alex Borstein",
         "John C. Reilly"
       ],
       "temporadas": [
@@ -6035,7 +6065,7 @@
               "numero": 2,
               "titulo": "Jorge cuenta las estrellas",
               "descripcion": "Jorge aprende sobre las estrellas y la astronomía con el Hombre del Sombrero Amarillo",
-              "duracion": "11:00", 
+              "duracion": "11:00",
               "url": "https://drive.google.com/file/d/1vThAOhblZB2ttIi-0RlyYI6x-G34fEBF/view?usp=drive_link"
             },
             {
@@ -6197,7 +6227,7 @@
             },
             {
               "numero": 3,
-              "titulo": "El Secreto Sale a la Luz", 
+              "titulo": "El Secreto Sale a la Luz",
               "descripcion": "Charlotte descubre el secreto de Henry como Kid Danger",
               "duracion": "23:00",
               "url": "https://fastream.to/embed-lxgkupanckf1.html"
@@ -6264,7 +6294,10 @@
       "descripcion": "La historia sigue a Tsubasa Ozora, un joven y talentoso futbolista que sueña con llevar a Japón a ganar la Copa Mundial.",
       "imagen": "https://i.pinimg.com/736x/2b/d8/7f/2bd87ff3418b94fa610cba787aa28c70.jpg",
       "año": 1983,
-      "genero": ["anime", "cartoon"],
+      "genero": [
+        "anime",
+        "cartoon"
+      ],
       "director": "Yōichi Takahashi",
       "actores": [
         "Akari Hibino",
@@ -6285,7 +6318,7 @@
             },
             {
               "numero": 2,
-              "titulo": "El Desafío", 
+              "titulo": "El Desafío",
               "descripcion": "Tsubasa acepta el reto de Wakabayashi para demostrar sus habilidades.",
               "duracion": "25:00",
               "url": "https://fastream.to/embed-iffm7maipyrv.html"
@@ -6358,7 +6391,10 @@
       "descripcion": "Goku y sus amigos defienden la Tierra contra poderosos enemigos extraterrestres y otras amenazas mientras exploran el poder de las Esferas del Dragón.",
       "imagen": "https://image.tmdb.org/t/p/original/jB9l4mp0bzBgzE5y4tvBH6AMeMk.jpg",
       "año": 1989,
-      "genero": ["anime", "cartoon"],
+      "genero": [
+        "anime",
+        "cartoon"
+      ],
       "director": "Akira Toriyama",
       "actores": [
         "Masako Nozawa",
@@ -6449,16 +6485,21 @@
       "titulo": "Psych",
       "disponible": true,
       "nuevo": true,
-      "badge": "Recién agregado", 
+      "badge": "Recién agregado",
       "enProceso": false,
       "descripcion": "Shawn Spencer, un joven con extraordinarias habilidades de observación, se hace pasar por detective psíquico y junto a su mejor amigo Burton Guster, ayuda al Departamento de Policía de Santa Barbara a resolver crímenes mientras mantiene su engaño.",
       "imagen": "https://es.web.img3.acsta.net/pictures/15/09/25/09/39/065425.jpg",
       "año": 2006,
-      "genero": ["comedia", "crimen", "misterio", "nuevos"],
+      "genero": [
+        "comedia",
+        "crimen",
+        "misterio",
+        "nuevos"
+      ],
       "director": "Steve Franks",
       "actores": [
         "James Roday",
-        "Dulé Hill", 
+        "Dulé Hill",
         "Timothy Omundson"
       ],
       "trailer": "https://www.youtube.com/embed/NPBh-lFfiik",
@@ -6512,7 +6553,7 @@
               "numero": 7,
               "titulo": "¿A quién vas a llamar?",
               "descripcion": "Shawn y Gus investigan actividad paranormal en un caso misterioso.",
-              "duracion": "43:00", 
+              "duracion": "43:00",
               "url": "https://drive.google.com/file/d/1elBR3qlhj8JI_9kI4sCRAWtol_M4GzAg/preview"
             },
             {
@@ -6585,7 +6626,12 @@
       "descripcion": "Marinette es una estudiante normal con una vida secreta como la superheroína Ladybug, protegiendo París junto a Cat Noir de villanos akumatizados.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FkphxoWmU5NbNbkTSkJnMe3EbguE.jpg&w=128&q=75",
       "año": 2015,
-      "genero": ["animacion", "disney", "familiar", "nuevos"],
+      "genero": [
+        "animacion",
+        "disney",
+        "familiar",
+        "nuevos"
+      ],
       "director": "Thomas Astruc",
       "actores": [
         "Cristina Vee",
@@ -6605,7 +6651,7 @@
               "url": "https://drive.google.com/file/d/1qi2f2uPAGUEO0CG42x5EpzfCLJNPWFc7/preview"
             },
             {
-              "numero": 2, 
+              "numero": 2,
               "titulo": "El Burbujeador",
               "descripcion": "El mejor amigo de Adrien es akumatizado en el Burbujeador.",
               "duracion": "22:00",
@@ -6781,7 +6827,7 @@
               "numero": 1,
               "titulo": "El Coleccionista",
               "descripcion": "Marinette sospecha que Gabriel Agreste podría ser Hawk Moth.",
-              "duracion": "22:00", 
+              "duracion": "22:00",
               "url": "https://fastream.to/embed-pjxckgrtz30e.html"
             },
             {
@@ -6966,7 +7012,11 @@
       "descripcion": "Finn el humano y Jake el perro viven emocionantes aventuras en la mágica Tierra de Ooo, ayudando a otros y luchando contra el mal.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qk3eQ8jW4opJ48gFWYUXWaMT4l.jpg",
       "año": 2010,
-      "genero": ["animacion", "cartoon", "nuevos"],
+      "genero": [
+        "animacion",
+        "cartoon",
+        "nuevos"
+      ],
       "director": "Pendleton Ward",
       "actores": [
         "Jeremy Shada",
@@ -6982,7 +7032,7 @@
               "numero": 1,
               "titulo": "Pánico en la Fiesta del Palacio",
               "descripcion": "Finn y Jake deben salvar una fiesta en el Dulce Reino de una invasión de zombis de caramelo.",
-              "duracion": "11:00", 
+              "duracion": "11:00",
               "url": "https://fastream.to/embed-my65l49hk90m.html"
             },
             {
@@ -6996,7 +7046,7 @@
               "numero": 3,
               "titulo": "Prisioneros del Amor",
               "descripcion": "El Rey Helado secuestra princesas y Finn y Jake deben rescatarlas.",
-              "duracion": "11:00", 
+              "duracion": "11:00",
               "url": "https://fastream.to/embed-klu2jfta9cso.html"
             },
             {
@@ -7061,7 +7111,11 @@
       "descripcion": "Un asesino que no solia sentir emociones se enamora, inesperadamente, de la chica a la que debía asesinar... pero ella tiene su propio pasado turbulento.",
       "imagen": "https://images.justwatch.com/poster/329521036/s332/temporada-1",
       "año": 2023,
-      "genero": ["neflix", "drama", "nuevos"],
+      "genero": [
+        "neflix",
+        "drama",
+        "nuevos"
+      ],
       "badge": "Recién agregado",
       "director": "Álvaro Bota",
       "actores": [
@@ -7083,7 +7137,7 @@
             },
             {
               "numero": 2,
-              "titulo": "Episodio 2", 
+              "titulo": "Episodio 2",
               "descripcion": "Segundo episodio de El Jardinero",
               "duracion": "45:00",
               "url": "https://fastream.to/embed-r7j8qkby2err.html"
