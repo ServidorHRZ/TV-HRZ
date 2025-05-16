@@ -169,7 +169,7 @@
     {
       "id": 4,
       "titulo": "MacGyver",
-      "disponible": true,
+      "disponible": false,
       "nuevo": true,
       "badge": "Recien agregado",
       "enProceso": false,
