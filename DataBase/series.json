@@ -55,6 +55,13 @@
               "numero": 6,
               "titulo": "El Precio del Amor",
               "duracion": "45:00"
+            },
+            {
+              "numero": 7,
+              "titulo": "Episodio 7",
+              "descripcion": "xcc",
+              "duracion": "45:00",
+              "url": "https://colombia.as.com/tikitakas/disney-se-funcionara-con-star-cuales-seran-los-cambios-n/"
             }
           ]
         }
