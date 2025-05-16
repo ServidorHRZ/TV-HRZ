@@ -6,7 +6,7 @@
       "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7Zz2Sw8SkFKJOZZtFPKnGXtGZ3s.jpg",
       "disponible": true,
       "nuevo": true,
-      "badge": "Recién agregado",
+      "badge": "Recién agregada",
       "enProceso": false,
       "descripcion": "Ruby Bell es una estudiante becada que ingresa a la prestigiosa escuela Maxton Hall, donde conoce a James Beaufort, el chico más popular y rico del instituto. A pesar de sus diferencias sociales y económicas, surge una atracción entre ellos que deberán mantener en secreto.",
       "imagen": "https://i.ebayimg.com/00/s/MTYwMFgxMDgw/z/XrEAAOSwTzFmNDmU/$_57.JPG?set_id=8800005007",
@@ -29,50 +29,38 @@
             {
               "numero": 1,
               "titulo": "Bienvenida a Maxton Hall",
-              "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
+              "duracion": "45:00"
             },
             {
               "numero": 2,
               "titulo": "Secretos y Mentiras",
-              "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
+              "duracion": "45:00"
             },
             {
               "numero": 3,
               "titulo": "Diferencias Sociales",
-              "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
+              "duracion": "45:00"
             },
             {
               "numero": 4,
               "titulo": "Decisiones Difíciles",
-              "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
+              "duracion": "45:00"
             },
             {
               "numero": 5,
               "titulo": "Verdades Ocultas",
-              "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
+              "duracion": "45:00"
             },
             {
               "numero": 6,
               "titulo": "El Precio del Amor",
-              "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
+              "duracion": "45:00"
             },
             {
               "numero": 7,
               "titulo": "Episodio 7",
-              "duracion": "45:00",
               "descripcion": "xcc",
+              "duracion": "45:00",
               "url": "https://colombia.as.com/tikitakas/disney-se-funcionara-con-star-cuales-seran-los-cambios-n/"
             }
           ]
