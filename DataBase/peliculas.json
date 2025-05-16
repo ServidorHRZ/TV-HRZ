@@ -77,7 +77,7 @@
     {
       "id": 6,
       "titulo": "Jumanji: El siguiente nivel",
-      "disponible": false,
+      "disponible": true,
       "nuevo": false,
       "año": 2019,
       "genero": [
