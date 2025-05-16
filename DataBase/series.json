@@ -83,7 +83,7 @@
       "id": 2,
       "titulo": "Yo Soy Betty, la Fea",
       "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iEBOiXiDGaxVR6w8aKgG5MEusuO.jpg",
-      "disponible": true,
+      "disponible": false,
       "nuevo": true,
       "badge": "Recién agregada",
       "enProceso": false,
