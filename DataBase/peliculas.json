@@ -19,7 +19,7 @@
     {
       "id": 2,
       "titulo": "300",
-      "disponible": true,
+      "disponible": false,
       "nuevo": false,
       "año": 2006,
       "genero": [
