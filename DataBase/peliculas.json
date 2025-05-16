@@ -3,7 +3,7 @@
     {
       "id": 1,
       "titulo": "Flamin Hot",
-      "disponible": false,
+      "disponible": true,
       "nuevo": false,
       "año": 2023,
       "genero": [
