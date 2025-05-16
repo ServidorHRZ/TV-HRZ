@@ -4,7 +4,7 @@
       "id": 1,
       "titulo": "Maxton Hall",
       "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7Zz2Sw8SkFKJOZZtFPKnGXtGZ3s.jpg",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "badge": "Recién agregada",
       "enProceso": false,
@@ -320,7 +320,7 @@
       "disponible": true,
       "nuevo": false,
       "enProceso": true,
-      "descripcion": "Antes de los eventos de La Casa de Papel, Berlin y un grupo de expertos ladrones planean uno de los atracos más ambiciosos de su carrera en París.",
+      "descripcion": "Antes de los eventos de La Casa de Papel, Berlin y un grupo de expertos ladrones planean uno de los atracos más ambiciosos de su carrera en París. Andre",
       "imagen": "https://m.media-amazon.com/images/M/MV5BYjEwNjFmNjMtMGYzNy00MzBiLWJlYjAtMGJjNTEwZGFhMjNlXkEyXkFqcGc@._V1_QL75_UY281_CR18,0,190,281_.jpg",
       "año": 2023,
       "genero": [
@@ -344,62 +344,56 @@
             {
               "numero": 1,
               "titulo": "En París",
-              "descripcion": "Berlín llega a París con un ambicioso plan para robar joyas valoradas en 44 millones de euros.",
               "duracion": "45:00",
+              "descripcion": "Berlín llega a París con un ambicioso plan para robar joyas valoradas en 44 millones de euros.",
               "url": "https://drive.google.com/file/d/1OtdW3X8jJ51cc-NhPJ6zteskYEY2L8C0/preview"
             },
             {
               "numero": 2,
               "titulo": "Como si fuera la última vez",
-              "descripcion": "El equipo comienza los preparativos mientras Berlín se enamora de una misteriosa mujer.",
               "duracion": "45:00",
+              "descripcion": "El equipo comienza los preparativos mientras Berlín se enamora de una misteriosa mujer.",
               "url": "https://drive.google.com/file/d/1Dvk-DcLKZreovntQ2BjcbJoxtiLgdHzj/preview"
             },
             {
               "numero": 3,
               "titulo": "Lo que nos une",
-              "descripcion": "Las tensiones aumentan cuando un miembro del equipo amenaza con abandonar el plan.",
               "duracion": "45:00",
+              "descripcion": "Las tensiones aumentan cuando un miembro del equipo amenaza con abandonar el plan.",
               "url": "https://drive.google.com/file/d/1BBH1c0pPr_8JK7H67M8zV37GhkISk8NQ/preview"
             },
             {
               "numero": 4,
               "titulo": "Un paso en falso",
-              "descripcion": "Un error inesperado pone en peligro toda la operación.",
               "duracion": "45:00",
+              "descripcion": "Un error inesperado pone en peligro toda la operación.",
               "url": "https://drive.google.com/file/d/14CEoHYWA2ITYw9W9W28xNjk0iO0vLyDK/preview"
             },
             {
               "numero": 5,
               "titulo": "El precio del amor",
-              "descripcion": "Berlín debe elegir entre el amor y la lealtad a su equipo.",
               "duracion": "45:00",
+              "descripcion": "Berlín debe elegir entre el amor y la lealtad a su equipo.",
               "url": "https://drive.google.com/file/d/1yltBen5K5o6JHBzWi3acZBqBEqBGnq26/preview"
             },
             {
               "numero": 6,
               "titulo": "El momento de la verdad",
-              "descripcion": "El equipo se prepara para ejecutar la fase final del robo.",
               "duracion": "45:00",
+              "descripcion": "El equipo se prepara para ejecutar la fase final del robo.",
               "url": "https://drive.google.com/file/d/1aPeFDdT5-eNvX8n0MpQsHmyZx4VveXtU/preview"
             },
             {
               "numero": 7,
               "titulo": "Todo o nada",
+              "duracion": "45:00",
               "descripcion": "La policía se acerca mientras el equipo intenta completar el robo.",
-              "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1h_5yPrLFH3nYa-E8bQucJDO2q8TKh-6M/preview"
-            },
-            {
-              "numero": 8,
-              "titulo": "El último baile",
-              "descripcion": "Berlín y su equipo enfrentan las consecuencias finales de su ambicioso plan.",
-              "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/15S_Jid94FPANq5lHo3YPoBqImZsSz8yp/preview"
             }
           ]
         }
-      ]
+      ],
+      "badge": ""
     },
     {
       "id": 6,
