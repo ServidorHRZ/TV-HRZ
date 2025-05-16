@@ -62,7 +62,7 @@
     {
       "id": 5,
       "titulo": "Jumanji: Bienvenidos a la jungla",
-      "disponible": true,
+      "disponible": false,
       "nuevo": false,
       "año": 2017,
       "genero": [
