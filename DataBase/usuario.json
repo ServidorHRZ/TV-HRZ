@@ -1,0 +1,12 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "usuario": "Andres",
+      "password": "1724",
+      "rol": "propietario",
+      "estado": "activo",
+      "fechaCreacion": "2024-01-01"
+    }
+  ]
+}
