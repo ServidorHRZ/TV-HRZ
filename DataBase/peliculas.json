@@ -851,7 +851,7 @@
     {
       "id": 69,
       "titulo": "Deseo navideño cumplido",
-      "disponible": true,
+      "disponible": false,
       "nuevo": false,
       "año": 2023,
       "genero": "navidad",
