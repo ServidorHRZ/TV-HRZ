@@ -124,12 +124,14 @@
       "miniatura_episodios": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FaSe4aB8tiPQMoQt9B4SKFgIymwL.jpg&w=256&q=75",
       "disponible": false,
       "nuevo": true,
-      "badge": "Recien agregado",
+      "badge": "Recién agregado",
       "enProceso": false,
       "descripcion": "Peter Parker, un estudiante de secundaria, adquiere increíbles poderes arácnidos después de ser mordido por una araña radiactiva. Ahora debe aprender a equilibrar su vida normal con su rol como el superhéroe Spider-Man mientras protege Nueva York.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FaSe4aB8tiPQMoQt9B4SKFgIymwL.jpg&w=256&q=75",
       "año": 2025,
-      "genero": "animacion",
+      "genero": [
+        "animacion"
+      ],
       "director": "Bob Richardson",
       "actores": [
         "Christopher Daniel Barnes",
@@ -138,7 +140,12 @@
         "Linda Gary"
       ],
       "trailer": "https://www.youtube.com/embed/DZGN9fZvQhc",
-      "temporadas": []
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": []
+        }
+      ]
     },
     {
       "id": 4,
