@@ -70,8 +70,10 @@
       "enProceso": false,
       "descripcion": "Betty Pinzón es una economista brillante pero poco agraciada que consigue trabajo como secretaria en Ecomoda, una prestigiosa empresa de moda. A pesar de su inteligencia y dedicación, debe enfrentarse diariamente a las burlas y el rechazo por su apariencia, mientras se enamora secretamente de su jefe Armando Mendoza.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FiEBOiXiDGaxVR6w8aKgG5MEusuO.jpg&w=256&q=75",
-      "año": 1999,
-      "genero": "novelas",
+      "año": 1998,
+      "genero": [
+        "novelas"
+      ],
       "director": "Mario Ribero Ferreira",
       "actores": [
         "Ana María Orozco",
@@ -90,37 +92,27 @@
             {
               "numero": 1,
               "titulo": "Capítulo 1",
-              "descripcion": "Betty llega a Ecomoda buscando trabajo como secretaria ejecutiva.",
-              "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1G__KSaFoYdtngXU-w1lvjaNjKIgjGNGO/preview"
+              "duracion": "45:00"
             },
             {
               "numero": 2,
               "titulo": "Capítulo 2",
-              "descripcion": "Betty comienza su trabajo en Ecomoda y conoce a sus compañeros.",
-              "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1faKcgwcfK6fImq-B15igHIWDyC90tWIP/preview"
+              "duracion": "45:00"
             },
             {
               "numero": 3,
               "titulo": "Capítulo 3",
-              "descripcion": "Betty enfrenta sus primeros desafíos como secretaria de presidencia.",
-              "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1f-eiqoWgN0-cT2IFG27Df4WOUoxrn4lP/preview"
+              "duracion": "45:00"
             },
             {
               "numero": 4,
               "titulo": "Capítulo 4",
-              "descripcion": "Betty comienza a desarrollar sentimientos por Armando.",
-              "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1mfRR4hzWAybQvl1_f0SNHN3UqbbumAVs/preview"
+              "duracion": "45:00"
             },
             {
               "numero": 5,
               "titulo": "Capítulo 5",
-              "descripcion": "El cuartel de las feas se forma mientras Betty demuestra su capacidad.",
-              "duracion": "45:00",
-              "url": "https://drive.google.com/file/d/1Lb4ouu1a3UOv3C226Do6xCs7OwImFVwv/preview"
+              "duracion": "45:00"
             }
           ]
         }
