@@ -4,7 +4,7 @@
       "id": 1,
       "titulo": "Maxton Hall",
       "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7Zz2Sw8SkFKJOZZtFPKnGXtGZ3s.jpg",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "badge": "Recién agregada",
       "enProceso": false,
