@@ -6,14 +6,12 @@
       "miniatura_episodios": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7Zz2Sw8SkFKJOZZtFPKnGXtGZ3s.jpg",
       "disponible": true,
       "nuevo": true,
-      "badge": "Recién agregado",
+      "badge": "Recién agregada",
       "enProceso": false,
       "descripcion": "Ruby Bell es una estudiante becada que ingresa a la prestigiosa escuela Maxton Hall, donde conoce a James Beaufort, el chico más popular y rico del instituto. A pesar de sus diferencias sociales y económicas, surge una atracción entre ellos que deberán mantener en secreto.",
       "imagen": "https://i.ebayimg.com/00/s/MTYwMFgxMDgw/z/XrEAAOSwTzFmNDmU/$_57.JPG?set_id=8800005007",
-      "año": 2024,
-      "genero": [
-        "amazon"
-      ],
+      "año": 2023,
+      "genero": "amazon",
       "director": "Anika Decker",
       "actores": [
         "Mimi Fiedler",
@@ -29,51 +27,44 @@
             {
               "numero": 1,
               "titulo": "Bienvenida a Maxton Hall",
+              "descripcion": "Ruby Bell llega como estudiante becada a la prestigiosa escuela Maxton Hall, donde conoce a James Beaufort.",
               "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
+              "url": "https://drive.google.com/file/d/1XIwFYJyhad5RPuBPHBvs43S03VJksUIQ/preview"
             },
             {
               "numero": 2,
               "titulo": "Secretos y Mentiras",
+              "descripcion": "Ruby descubre los secretos que esconde la familia Beaufort mientras su atracción por James crece.",
               "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
+              "url": "https://drive.google.com/file/d/1o5DZO7pR-kNhiMr78AbtwRhUmZBkcvEe/preview"
             },
             {
               "numero": 3,
               "titulo": "Diferencias Sociales",
+              "descripcion": "Las diferencias sociales entre Ruby y James comienzan a causar conflictos en su relación.",
               "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
+              "url": "https://drive.google.com/file/d/1X0rTTmD-Nxm3m74uUqtEBH_YGp7TIZT2/preview"
             },
             {
               "numero": 4,
               "titulo": "Decisiones Difíciles",
+              "descripcion": "Ruby debe tomar decisiones importantes que afectarán su futuro en Maxton Hall.",
               "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
+              "url": "https://drive.google.com/file/d/1bgtrpj8QBmMLEO5vp7rReVUCCz6p-nPk/preview"
             },
             {
               "numero": 5,
               "titulo": "Verdades Ocultas",
+              "descripcion": "Secretos del pasado salen a la luz y amenazan con destruir todo lo que Ruby ha construido.",
               "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
+              "url": "https://drive.google.com/file/d/1EhStcoIMUr5hgkXVaC-GRNB20DbPWW7M/preview"
             },
             {
               "numero": 6,
               "titulo": "El Precio del Amor",
+              "descripcion": "Ruby y James enfrentan las consecuencias de su relación prohibida.",
               "duracion": "45:00",
-              "descripcion": "",
-              "url": ""
-            },
-            {
-              "numero": 7,
-              "titulo": "Episodio 7",
-              "duracion": "45:00",
-              "descripcion": "xcc",
-              "url": "https://colombia.as.com/tikitakas/disney-se-funcionara-con-star-cuales-seran-los-cambios-n/"
+              "url": "https://drive.google.com/file/d/1IijH7gz0Afih7HUpZrJqhJvhz8XlxbjM/preview"
             }
           ]
         }
@@ -89,10 +80,8 @@
       "enProceso": false,
       "descripcion": "Betty Pinzón es una economista brillante pero poco agraciada que consigue trabajo como secretaria en Ecomoda, una prestigiosa empresa de moda. A pesar de su inteligencia y dedicación, debe enfrentarse diariamente a las burlas y el rechazo por su apariencia, mientras se enamora secretamente de su jefe Armando Mendoza.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FiEBOiXiDGaxVR6w8aKgG5MEusuO.jpg&w=256&q=75",
-      "año": 1998,
-      "genero": [
-        "novelas"
-      ],
+      "año": 1999,
+      "genero": "novelas",
       "director": "Mario Ribero Ferreira",
       "actores": [
         "Ana María Orozco",
@@ -111,27 +100,37 @@
             {
               "numero": 1,
               "titulo": "Capítulo 1",
-              "duracion": "45:00"
+              "descripcion": "Betty llega a Ecomoda buscando trabajo como secretaria ejecutiva.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1G__KSaFoYdtngXU-w1lvjaNjKIgjGNGO/preview"
             },
             {
               "numero": 2,
               "titulo": "Capítulo 2",
-              "duracion": "45:00"
+              "descripcion": "Betty comienza su trabajo en Ecomoda y conoce a sus compañeros.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1faKcgwcfK6fImq-B15igHIWDyC90tWIP/preview"
             },
             {
               "numero": 3,
               "titulo": "Capítulo 3",
-              "duracion": "45:00"
+              "descripcion": "Betty enfrenta sus primeros desafíos como secretaria de presidencia.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1f-eiqoWgN0-cT2IFG27Df4WOUoxrn4lP/preview"
             },
             {
               "numero": 4,
               "titulo": "Capítulo 4",
-              "duracion": "45:00"
+              "descripcion": "Betty comienza a desarrollar sentimientos por Armando.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1mfRR4hzWAybQvl1_f0SNHN3UqbbumAVs/preview"
             },
             {
               "numero": 5,
               "titulo": "Capítulo 5",
-              "duracion": "45:00"
+              "descripcion": "El cuartel de las feas se forma mientras Betty demuestra su capacidad.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/1Lb4ouu1a3UOv3C226Do6xCs7OwImFVwv/preview"
             }
           ]
         }
@@ -143,14 +142,12 @@
       "miniatura_episodios": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FaSe4aB8tiPQMoQt9B4SKFgIymwL.jpg&w=256&q=75",
       "disponible": false,
       "nuevo": true,
-      "badge": "Recién agregado",
+      "badge": "Recien agregado",
       "enProceso": false,
       "descripcion": "Peter Parker, un estudiante de secundaria, adquiere increíbles poderes arácnidos después de ser mordido por una araña radiactiva. Ahora debe aprender a equilibrar su vida normal con su rol como el superhéroe Spider-Man mientras protege Nueva York.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FaSe4aB8tiPQMoQt9B4SKFgIymwL.jpg&w=256&q=75",
       "año": 2025,
-      "genero": [
-        "animacion"
-      ],
+      "genero": "animacion",
       "director": "Bob Richardson",
       "actores": [
         "Christopher Daniel Barnes",
@@ -159,12 +156,7 @@
         "Linda Gary"
       ],
       "trailer": "https://www.youtube.com/embed/DZGN9fZvQhc",
-      "temporadas": [
-        {
-          "numero": 1,
-          "episodios": []
-        }
-      ]
+      "temporadas": []
     },
     {
       "id": 4,
@@ -346,15 +338,10 @@
       "disponible": true,
       "nuevo": false,
       "enProceso": true,
-      "descripcion": "Antes de los eventos de La Casa de Papel, Berlin y un grupo de expertos ladrones planean uno de los atracos más ambiciosos de su carrera en París. Andre",
+      "descripcion": "Antes de los eventos de La Casa de Papel, Berlin y un grupo de expertos ladrones planean uno de los atracos más ambiciosos de su carrera en París.",
       "imagen": "https://m.media-amazon.com/images/M/MV5BYjEwNjFmNjMtMGYzNy00MzBiLWJlYjAtMGJjNTEwZGFhMjNlXkEyXkFqcGc@._V1_QL75_UY281_CR18,0,190,281_.jpg",
       "año": 2023,
-      "genero": [
-        "neflix",
-        "crimen",
-        "drama",
-        "suspenso"
-      ],
+      "genero": ["neflix", "crimen", "drama", "suspenso"],
       "director": "Álex Pina",
       "actores": [
         "Pedro Alonso",
@@ -370,56 +357,62 @@
             {
               "numero": 1,
               "titulo": "En París",
-              "duracion": "45:00",
               "descripcion": "Berlín llega a París con un ambicioso plan para robar joyas valoradas en 44 millones de euros.",
+              "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1OtdW3X8jJ51cc-NhPJ6zteskYEY2L8C0/preview"
             },
             {
               "numero": 2,
               "titulo": "Como si fuera la última vez",
-              "duracion": "45:00",
               "descripcion": "El equipo comienza los preparativos mientras Berlín se enamora de una misteriosa mujer.",
+              "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1Dvk-DcLKZreovntQ2BjcbJoxtiLgdHzj/preview"
             },
             {
               "numero": 3,
               "titulo": "Lo que nos une",
-              "duracion": "45:00",
               "descripcion": "Las tensiones aumentan cuando un miembro del equipo amenaza con abandonar el plan.",
+              "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1BBH1c0pPr_8JK7H67M8zV37GhkISk8NQ/preview"
             },
             {
               "numero": 4,
               "titulo": "Un paso en falso",
-              "duracion": "45:00",
               "descripcion": "Un error inesperado pone en peligro toda la operación.",
+              "duracion": "45:00",
               "url": "https://drive.google.com/file/d/14CEoHYWA2ITYw9W9W28xNjk0iO0vLyDK/preview"
             },
             {
               "numero": 5,
               "titulo": "El precio del amor",
-              "duracion": "45:00",
               "descripcion": "Berlín debe elegir entre el amor y la lealtad a su equipo.",
+              "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1yltBen5K5o6JHBzWi3acZBqBEqBGnq26/preview"
             },
             {
               "numero": 6,
               "titulo": "El momento de la verdad",
-              "duracion": "45:00",
               "descripcion": "El equipo se prepara para ejecutar la fase final del robo.",
+              "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1aPeFDdT5-eNvX8n0MpQsHmyZx4VveXtU/preview"
             },
             {
               "numero": 7,
               "titulo": "Todo o nada",
-              "duracion": "45:00",
               "descripcion": "La policía se acerca mientras el equipo intenta completar el robo.",
+              "duracion": "45:00",
               "url": "https://drive.google.com/file/d/1h_5yPrLFH3nYa-E8bQucJDO2q8TKh-6M/preview"
+            },
+            {
+              "numero": 8,
+              "titulo": "El último baile",
+              "descripcion": "Berlín y su equipo enfrentan las consecuencias finales de su ambicioso plan.",
+              "duracion": "45:00",
+              "url": "https://drive.google.com/file/d/15S_Jid94FPANq5lHo3YPoBqImZsSz8yp/preview"
             }
           ]
         }
-      ],
-      "badge": ""
+      ]
     },
     {
       "id": 6,
@@ -430,12 +423,7 @@
       "descripcion": "Un grupo de criminales liderados por El Profesor planean los mayores atracos de la historia, primero en la Fábrica Nacional de Moneda y Timbre y luego en el Banco de España.",
       "imagen": "https://www.aceprensa.com/wp-content/uploads/2019/08/71446-1-683x1024.jpg",
       "año": 2017,
-      "genero": [
-        "neflix",
-        "crimen",
-        "drama",
-        "suspenso"
-      ],
+      "genero": ["neflix", "crimen", "drama", "suspenso"],
       "director": "Álex Pina",
       "actores": [
         "Úrsula Corberó",
@@ -695,12 +683,7 @@
       "descripcion": "Un ladrón profesional y maestro del disfraz que sigue los pasos de su abuelo, realizando elaborados atracos mientras es perseguido por un tenaz detective.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sgxawbFB5Vi5OkPWQLNfl3dvkNJ.jpg",
       "año": 2021,
-      "genero": [
-        "neflix",
-        "crimen",
-        "drama",
-        "suspenso"
-      ],
+      "genero": ["neflix", "crimen", "drama", "suspenso"],
       "director": "George Kay",
       "actores": [
         "Omar Sy",
@@ -797,7 +780,7 @@
             },
             {
               "numero": 2,
-              "titulo": "Capítulo 2",
+              "titulo": "Capítulo 2", 
               "descripcion": "Una nueva amenaza emerge mientras Assane intenta mantener a su familia a salvo.",
               "duracion": "42:00",
               "url": "https://fastream.to/embed-z0i5826oywc5.html"
@@ -850,12 +833,7 @@
       "descripcion": "Dexter Morgan, un experto forense en sangre para el departamento de policía de Miami, lleva una vida secreta como asesino en serie, pero con un giro: solo mata a otros asesinos que han eludido la justicia.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fq8dWfc4JwQuv3HayIZeO84jAXED.jpg&w=256&q=75",
       "año": 2006,
-      "genero": [
-        "accion",
-        "crimen",
-        "drama",
-        "suspenso"
-      ],
+      "genero": ["accion", "crimen", "drama", "suspenso"],
       "director": "James Manos Jr.",
       "actores": [
         "Michael C. Hall",
@@ -876,12 +854,7 @@
       "descripcion": "Ambientada 10 años después de que Dexter desapareciera en el ojo del huracán Laura, la serie lo encuentra viviendo con un nombre falso en la pequeña ciudad de Iron Lake, Nueva York.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9EBKgrFIsCFSV1RZKWhYUdbtGiv.jpg&w=256&q=75",
       "año": 2021,
-      "genero": [
-        "accion",
-        "crimen",
-        "drama",
-        "suspenso"
-      ],
+      "genero": ["accion", "crimen", "drama", "suspenso"],
       "director": "Clyde Phillips",
       "actores": [
         "Michael C. Hall",
@@ -978,12 +951,7 @@
       "descripcion": "En 1991, Miami. Dexter Morgan pasa de ser estudiante a ser un asesino en serie vengador, ya que sus impulsos sanguinarios no pueden ignorarse y debe aprender a canalizar su oscuridad interior. Un desafío particular para el joven Dexter, que comienza una pasantía forense en el Departamento de Policía Metropolitana de Miami.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9XLULEZTkeLwRytTUQtgmx2HH4o.jpg&w=256&q=75",
       "año": 2024,
-      "genero": [
-        "accion",
-        "crimen",
-        "drama",
-        "suspenso"
-      ],
+      "genero": ["accion", "crimen", "drama", "suspenso"],
       "director": "Marcos Siega",
       "actores": [
         "Michael C. Hall",
@@ -2125,7 +2093,7 @@
               "numero": 3,
               "titulo": "Familia de Pícaros",
               "descripcion": "Los Snart regresan a Central City.",
-              "duracion": "42:00",
+              "duracion": "42:00", 
               "url": "https://fastream.to/embed-23f9e5b9178u.html"
             },
             {
@@ -2541,7 +2509,7 @@
               "url": "https://fastream.to/embed-wx89hl1cmhx5.html"
             },
             {
-              "numero": 2,
+              "numero": 2, 
               "titulo": "402 Payment Required",
               "descripcion": "Darlene lidia con la pérdida mientras Elliot enfrenta su pasado.",
               "duracion": "45:00",
@@ -2551,7 +2519,7 @@
               "numero": 3,
               "titulo": "403 Forbidden",
               "descripcion": "Whiterose revela sus verdaderas intenciones mientras Elliot busca respuestas.",
-              "duracion": "45:00",
+              "duracion": "45:00", 
               "url": "https://fastream.to/embed-i272aye6h3bx.html"
             },
             {
@@ -5933,7 +5901,7 @@
           "numero": 2,
           "episodios": [
             {
-              "numero": 1,
+              "numero": 1, 
               "titulo": "Nuevos Comienzos",
               "descripcion": "Luna comienza una nueva etapa en el Jam & Roller",
               "duracion": "45:00",
@@ -5972,7 +5940,7 @@
             },
             {
               "numero": 2,
-              "titulo": "Mancha Roja",
+              "titulo": "Mancha Roja", 
               "descripcion": "El equipo investiga el asesinato de una estudiante universitaria",
               "duracion": "43:00",
               "url": "https://drive.google.com/file/d/1X9FDyqJ0rApeOTY6KY40HbsiqpTpawhg/preview"
@@ -5981,7 +5949,7 @@
               "numero": 3,
               "titulo": "Marea Roja",
               "descripcion": "Jane y Lisbon investigan la muerte de un buzo",
-              "duracion": "43:00",
+              "duracion": "43:00", 
               "url": "https://drive.google.com/file/d/1Zl5I9yY6_mitmXFgg1_Ak3tGS-UMH1OV/preview"
             },
             {
@@ -6028,7 +5996,7 @@
             },
             {
               "numero": 10,
-              "titulo": "Rojo Brillante",
+              "titulo": "Rojo Brillante", 
               "descripcion": "El CBI investiga el asesinato de un famoso chef",
               "duracion": "43:00",
               "url": "https://drive.google.com/file/d/1mV-T75e-mlG90nedrdyc3v6sTqjMvorR/preview"
@@ -6049,7 +6017,7 @@
       "director": "Hank Scanlon",
       "actores": [
         "Seth Rogen",
-        "Alex Borstein",
+        "Alex Borstein", 
         "John C. Reilly"
       ],
       "temporadas": [
@@ -6067,7 +6035,7 @@
               "numero": 2,
               "titulo": "Jorge cuenta las estrellas",
               "descripcion": "Jorge aprende sobre las estrellas y la astronomía con el Hombre del Sombrero Amarillo",
-              "duracion": "11:00",
+              "duracion": "11:00", 
               "url": "https://drive.google.com/file/d/1vThAOhblZB2ttIi-0RlyYI6x-G34fEBF/view?usp=drive_link"
             },
             {
@@ -6229,7 +6197,7 @@
             },
             {
               "numero": 3,
-              "titulo": "El Secreto Sale a la Luz",
+              "titulo": "El Secreto Sale a la Luz", 
               "descripcion": "Charlotte descubre el secreto de Henry como Kid Danger",
               "duracion": "23:00",
               "url": "https://fastream.to/embed-lxgkupanckf1.html"
@@ -6296,10 +6264,7 @@
       "descripcion": "La historia sigue a Tsubasa Ozora, un joven y talentoso futbolista que sueña con llevar a Japón a ganar la Copa Mundial.",
       "imagen": "https://i.pinimg.com/736x/2b/d8/7f/2bd87ff3418b94fa610cba787aa28c70.jpg",
       "año": 1983,
-      "genero": [
-        "anime",
-        "cartoon"
-      ],
+      "genero": ["anime", "cartoon"],
       "director": "Yōichi Takahashi",
       "actores": [
         "Akari Hibino",
@@ -6320,7 +6285,7 @@
             },
             {
               "numero": 2,
-              "titulo": "El Desafío",
+              "titulo": "El Desafío", 
               "descripcion": "Tsubasa acepta el reto de Wakabayashi para demostrar sus habilidades.",
               "duracion": "25:00",
               "url": "https://fastream.to/embed-iffm7maipyrv.html"
@@ -6393,10 +6358,7 @@
       "descripcion": "Goku y sus amigos defienden la Tierra contra poderosos enemigos extraterrestres y otras amenazas mientras exploran el poder de las Esferas del Dragón.",
       "imagen": "https://image.tmdb.org/t/p/original/jB9l4mp0bzBgzE5y4tvBH6AMeMk.jpg",
       "año": 1989,
-      "genero": [
-        "anime",
-        "cartoon"
-      ],
+      "genero": ["anime", "cartoon"],
       "director": "Akira Toriyama",
       "actores": [
         "Masako Nozawa",
@@ -6487,21 +6449,16 @@
       "titulo": "Psych",
       "disponible": true,
       "nuevo": true,
-      "badge": "Recién agregado",
+      "badge": "Recién agregado", 
       "enProceso": false,
       "descripcion": "Shawn Spencer, un joven con extraordinarias habilidades de observación, se hace pasar por detective psíquico y junto a su mejor amigo Burton Guster, ayuda al Departamento de Policía de Santa Barbara a resolver crímenes mientras mantiene su engaño.",
       "imagen": "https://es.web.img3.acsta.net/pictures/15/09/25/09/39/065425.jpg",
       "año": 2006,
-      "genero": [
-        "comedia",
-        "crimen",
-        "misterio",
-        "nuevos"
-      ],
+      "genero": ["comedia", "crimen", "misterio", "nuevos"],
       "director": "Steve Franks",
       "actores": [
         "James Roday",
-        "Dulé Hill",
+        "Dulé Hill", 
         "Timothy Omundson"
       ],
       "trailer": "https://www.youtube.com/embed/NPBh-lFfiik",
@@ -6555,7 +6512,7 @@
               "numero": 7,
               "titulo": "¿A quién vas a llamar?",
               "descripcion": "Shawn y Gus investigan actividad paranormal en un caso misterioso.",
-              "duracion": "43:00",
+              "duracion": "43:00", 
               "url": "https://drive.google.com/file/d/1elBR3qlhj8JI_9kI4sCRAWtol_M4GzAg/preview"
             },
             {
@@ -6628,12 +6585,7 @@
       "descripcion": "Marinette es una estudiante normal con una vida secreta como la superheroína Ladybug, protegiendo París junto a Cat Noir de villanos akumatizados.",
       "imagen": "https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FkphxoWmU5NbNbkTSkJnMe3EbguE.jpg&w=128&q=75",
       "año": 2015,
-      "genero": [
-        "animacion",
-        "disney",
-        "familiar",
-        "nuevos"
-      ],
+      "genero": ["animacion", "disney", "familiar", "nuevos"],
       "director": "Thomas Astruc",
       "actores": [
         "Cristina Vee",
@@ -6653,7 +6605,7 @@
               "url": "https://drive.google.com/file/d/1qi2f2uPAGUEO0CG42x5EpzfCLJNPWFc7/preview"
             },
             {
-              "numero": 2,
+              "numero": 2, 
               "titulo": "El Burbujeador",
               "descripcion": "El mejor amigo de Adrien es akumatizado en el Burbujeador.",
               "duracion": "22:00",
@@ -6829,7 +6781,7 @@
               "numero": 1,
               "titulo": "El Coleccionista",
               "descripcion": "Marinette sospecha que Gabriel Agreste podría ser Hawk Moth.",
-              "duracion": "22:00",
+              "duracion": "22:00", 
               "url": "https://fastream.to/embed-pjxckgrtz30e.html"
             },
             {
@@ -7014,11 +6966,7 @@
       "descripcion": "Finn el humano y Jake el perro viven emocionantes aventuras en la mágica Tierra de Ooo, ayudando a otros y luchando contra el mal.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qk3eQ8jW4opJ48gFWYUXWaMT4l.jpg",
       "año": 2010,
-      "genero": [
-        "animacion",
-        "cartoon",
-        "nuevos"
-      ],
+      "genero": ["animacion", "cartoon", "nuevos"],
       "director": "Pendleton Ward",
       "actores": [
         "Jeremy Shada",
@@ -7034,7 +6982,7 @@
               "numero": 1,
               "titulo": "Pánico en la Fiesta del Palacio",
               "descripcion": "Finn y Jake deben salvar una fiesta en el Dulce Reino de una invasión de zombis de caramelo.",
-              "duracion": "11:00",
+              "duracion": "11:00", 
               "url": "https://fastream.to/embed-my65l49hk90m.html"
             },
             {
@@ -7048,7 +6996,7 @@
               "numero": 3,
               "titulo": "Prisioneros del Amor",
               "descripcion": "El Rey Helado secuestra princesas y Finn y Jake deben rescatarlas.",
-              "duracion": "11:00",
+              "duracion": "11:00", 
               "url": "https://fastream.to/embed-klu2jfta9cso.html"
             },
             {
@@ -7113,11 +7061,7 @@
       "descripcion": "Un asesino que no solia sentir emociones se enamora, inesperadamente, de la chica a la que debía asesinar... pero ella tiene su propio pasado turbulento.",
       "imagen": "https://images.justwatch.com/poster/329521036/s332/temporada-1",
       "año": 2023,
-      "genero": [
-        "neflix",
-        "drama",
-        "nuevos"
-      ],
+      "genero": ["neflix", "drama", "nuevos"],
       "badge": "Recién agregado",
       "director": "Álvaro Bota",
       "actores": [
@@ -7139,7 +7083,7 @@
             },
             {
               "numero": 2,
-              "titulo": "Episodio 2",
+              "titulo": "Episodio 2", 
               "descripcion": "Segundo episodio de El Jardinero",
               "duracion": "45:00",
               "url": "https://fastream.to/embed-r7j8qkby2err.html"
