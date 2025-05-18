@@ -112,8 +112,6 @@ class GitHubAPI {
 class AdminPanel {
     constructor() {
         this.github = new GitHubAPI();
-    constructor() {
-        this.github = new GitHubAPI();
         this.peliculas = [];
         this.series = [];
         this.seccionActual = 'dashboard';
@@ -999,11 +997,6 @@ class AdminPanel {
 // Inicializar el panel de administrador
 let adminPanel;
 document.addEventListener('DOMContentLoaded', () => {
-    adminPanel = new AdminPanel();
-    adminPanel.init().catch(error => {
-        console.error('Error al inicializar el panel:', error);
-        mostrarError('Error al inicializar el panel. Por favor, contacta al administrador.');
-    });
     adminPanel = new AdminPanel();
     adminPanel.init().catch(error => {
         console.error('Error al inicializar el panel:', error);
