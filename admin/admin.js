@@ -98,10 +98,14 @@ class AdminPanel {
         this.peliculas = [];
         this.series = [];
         this.seccionActual = 'dashboard';
+        this.currentPage = 1;
+        this.itemsPerPage = 12;
+        this.currentTemporada = 1;
     }
 
     async init() {
         try {
+            await this.checkAuth();
             await this.cargarDatos();
             this.setupEventListeners();
             this.actualizarEstadisticas();
@@ -111,6 +115,37 @@ class AdminPanel {
             console.error('Error en la inicialización:', error);
             throw error;
         }
+    }
+
+    async checkAuth() {
+        const adminUser = localStorage.getItem('admin_user');
+        
+        if (!adminUser) {
+            // No hay sesión de administrador, redirigir a la página principal
+            this.redirectToHome();
+            return;
+        }
+        
+        try {
+            const userData = JSON.parse(adminUser);
+            const validRoles = ['administrador', 'propietario'];
+            
+            if (!validRoles.includes(userData.rol)) {
+                // El usuario no tiene un rol válido
+                this.redirectToHome();
+            }
+            
+            // Si llega hasta aquí, el usuario está autenticado correctamente
+            console.log('Usuario autenticado:', userData.usuario);
+        } catch (error) {
+            console.error('Error al verificar autenticación:', error);
+            this.redirectToHome();
+        }
+    }
+
+    redirectToHome() {
+        alert('Acceso no autorizado. Debes iniciar sesión como administrador.');
+        window.location.href = '../index.html';
     }
 
     async cargarDatos() {

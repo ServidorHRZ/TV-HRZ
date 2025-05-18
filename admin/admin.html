@@ -1096,10 +1096,13 @@
             text-decoration: none;
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 0.8rem;
             font-weight: 600;
             margin-top: 1rem;
             box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+            width: auto;
+            min-width: 200px;
         }
 
         .return-button:hover {
@@ -1112,6 +1115,7 @@
             .creator-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
+                padding: 0;
             }
 
             .creator-card, .return-card {
@@ -1128,11 +1132,89 @@
 
             .return-description {
                 font-size: 1rem;
+                max-width: 100%;
             }
 
             .return-button {
-                padding: 0.8rem 2rem;
+                width: 90%;
+                padding: 0.8rem 1.5rem;
                 font-size: 1.1rem;
+                margin: 1rem auto;
+            }
+
+            .creator-social {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .social-link {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .stats-grid {
+                padding: 0;
+                margin: 1rem 0;
+            }
+
+            .admin-container {
+                padding: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .creator-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .creator-description {
+                font-size: 0.9rem;
+                margin: 1rem 0;
+            }
+
+            .creator-title {
+                font-size: 1rem;
+            }
+
+            .stats-grid {
+                gap: 0.8rem;
+            }
+
+            .stat-card {
+                padding: 1rem;
+            }
+
+            .stat-number {
+                font-size: 1.5rem;
+            }
+
+            .stat-label {
+                font-size: 0.8rem;
+            }
+
+            .admin-container {
+                margin: 1rem auto;
+            }
+
+            .return-button {
+                width: 85%;
+                padding: 0.7rem 1rem;
+                font-size: 1rem;
+                margin: 0.5rem auto;
+            }
+
+            .return-card {
+                padding: 1.2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .return-description {
+                margin: 0.5rem auto;
+                padding: 0 0.5rem;
             }
         }
     </style>
@@ -1201,7 +1283,7 @@
                     <p class="return-description">
                         Regresa a la aplicación principal de HRZ TV para disfrutar del mejor contenido en streaming
                     </p>
-                    <a href="../index.html" class="return-button">
+                    <a href="../Secciones/Perfil.html" class="return-button">
                         <i class="fas fa-play"></i> Ir a HRZ TV
                     </a>
                 </div>

@@ -202,6 +202,35 @@
             box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
         }
 
+        /* Botones de acceso */
+        .access-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .access-btn {
+            padding: 8px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+        }
+
+        .admin-btn {
+            background: linear-gradient(45deg, #ff0000, #ff6b6b);
+            color: white;
+        }
+
+        .admin-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+        }
+
         .favorites-section {
             margin: 40px 0;
             position: relative;
@@ -1194,6 +1223,66 @@
                 display: none;
             }
         }
+
+        /* Modal de login */
+        .login-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 1001;
+            align-items: center;
+            justify-content: center;
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        .login-modal-content {
+            background: linear-gradient(145deg, #1a1a1a, #000000);
+            border: 2px solid var(--primary-color);
+            border-radius: 20px;
+            padding: 30px;
+            width: 90%;
+            max-width: 400px;
+            position: relative;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        .login-modal-title {
+            color: #ff6b6b;
+            margin: 0 0 25px;
+            font-size: 1.8rem;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .login-error {
+            color: #ff6b6b;
+            background: rgba(255, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            text-align: center;
+            display: none;
+        }
+
+        .login-success {
+            color: var(--primary-color);
+            background: rgba(0, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            text-align: center;
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -1224,6 +1313,11 @@
                         <i class="fas fa-crown"></i> Admin
                     </span>
                 </h2>
+                <div class="access-buttons">
+                    <button class="access-btn admin-btn" onclick="showLoginModal()">
+                        <i class="fas fa-user-shield"></i> Administrador
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -1323,6 +1417,42 @@
         </div>
     </div>
 
+    <!-- Modal de login para administradores -->
+    <div class="login-modal" id="loginModal">
+        <div class="login-modal-content">
+            <h3 class="login-modal-title">
+                <i class="fas fa-user-shield"></i>
+                Acceso Administrador
+            </h3>
+            <div class="login-error" id="loginError">
+                <i class="fas fa-exclamation-circle"></i> Usuario o contraseña incorrectos
+            </div>
+            <div class="login-success" id="loginSuccess">
+                <i class="fas fa-check-circle"></i> Inicio de sesión exitoso, redireccionando...
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label class="form-label">Usuario</label>
+                    <input type="text" class="modal-input" id="loginUsername" placeholder="Ingresa tu usuario" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" class="modal-input" id="loginPassword" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="modal-btn cancel-btn" onclick="hideLoginModal()">
+                        <i class="fas fa-times"></i>
+                        Cancelar
+                    </button>
+                    <button type="submit" class="modal-btn save-btn">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Acceder
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <nav class="bottom-nav">
         <a href="Peliculas.html" class="nav-item">
             <i class="fas fa-film"></i>
@@ -1368,6 +1498,7 @@
             loadProfileData();
             loadFavorites();
             setupImageUpload();
+            setupLoginForm();
         });
 
         // Función para cargar los datos del perfil
@@ -1835,6 +1966,72 @@
             const type = containerId === 'moviesFavorites' ? 'pelicula' : 'serie';
             const items = JSON.parse(localStorage.getItem(type === 'pelicula' ? 'miListaPeliculas' : 'miListaSeries') || '[]');
             displayFavorites(items, containerId, type);
+        }
+
+        // Funciones para el login de administrador
+        function showLoginModal() {
+            const modal = document.getElementById('loginModal');
+            document.getElementById('loginUsername').value = '';
+            document.getElementById('loginPassword').value = '';
+            document.getElementById('loginError').style.display = 'none';
+            document.getElementById('loginSuccess').style.display = 'none';
+            modal.style.display = 'flex';
+        }
+
+        function hideLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        function setupLoginForm() {
+            const loginForm = document.getElementById('loginForm');
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const username = document.getElementById('loginUsername').value;
+                const password = document.getElementById('loginPassword').value;
+                validateLogin(username, password);
+            });
+        }
+
+        async function validateLogin(username, password) {
+            try {
+                const response = await fetch('../DataBase/usuarios.json');
+                if (!response.ok) {
+                    throw new Error('Error al cargar los usuarios');
+                }
+                
+                const data = await response.json();
+                const usuarios = data.usuarios || [];
+                
+                const user = usuarios.find(u => 
+                    u.usuario.toLowerCase() === username.toLowerCase() && 
+                    u.password === password && 
+                    u.estado === 'activo'
+                );
+                
+                if (user) {
+                    document.getElementById('loginError').style.display = 'none';
+                    document.getElementById('loginSuccess').style.display = 'block';
+                    
+                    // Guardar info de sesión
+                    localStorage.setItem('admin_user', JSON.stringify({
+                        id: user.id,
+                        usuario: user.usuario,
+                        rol: user.rol
+                    }));
+                    
+                    // Redirigir después de un breve retraso
+                    setTimeout(() => {
+                        window.location.href = '../admin/admin.html';
+                    }, 1500);
+                } else {
+                    document.getElementById('loginError').style.display = 'block';
+                    document.getElementById('loginSuccess').style.display = 'none';
+                }
+            } catch (error) {
+                console.error('Error en el inicio de sesión:', error);
+                document.getElementById('loginError').textContent = 'Error al procesar la solicitud. Inténtelo más tarde.';
+                document.getElementById('loginError').style.display = 'block';
+            }
         }
     </script>
 </body>
