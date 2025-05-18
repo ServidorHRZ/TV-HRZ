@@ -1,11 +1,91 @@
 class GitHubAPI {
-    constructor(token) {
-        this.token = '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'; // Token fijo
+    constructor() {
+        // Token de acceso personal de GitHub
+        this.token = localStorage.getItem('github_token');
         this.baseUrl = 'https://api.github.com';
         this.owner = 'ServidorHRZ';
         this.repo = 'TV-HRZ';
         this.maxRetries = 3;
-        this.retryDelay = 1000; // 1 segundo
+        this.retryDelay = 1000;
+    }
+
+    getHeaders() {
+        return {
+            'Authorization': 'Basic ' + btoa(this.token + ':x-oauth-basic'),
+            'Accept': 'application/vnd.github.v3+json',
+            'User-Agent': 'TV-HRZ-Admin',
+            'Content-Type': 'application/json'
+        };
+    }
+
+    async getContents(path) {
+        return this.retryOperation(async () => {
+            try {
+                console.log('Intentando obtener contenido de:', path);
+                const response = await fetch(`${this.baseUrl}/repos/${this.owner}/${this.repo}/contents/${path}`, {
+                    method: 'GET',
+                    headers: this.getHeaders()
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json().catch(() => ({}));
+                    console.error('Error Response:', {
+                        status: response.status,
+                        statusText: response.statusText,
+                        headers: response.headers,
+                        errorData: errorData
+                    });
+                    throw new Error(`GitHub API error: ${response.status} - ${errorData.message || response.statusText}`);
+                }
+
+                const data = await response.json();
+                console.log('Contenido obtenido correctamente');
+                const content = decodeURIComponent(escape(atob(data.content)));
+                return {
+                    content: content,
+                    sha: data.sha
+                };
+            } catch (error) {
+                console.error('Error detallado al obtener contenido:', error);
+                throw error;
+            }
+        });
+    }
+
+    async updateFile(path, content, sha) {
+        return this.retryOperation(async () => {
+            try {
+                console.log('Intentando actualizar archivo:', path);
+                const encodedContent = btoa(unescape(encodeURIComponent(content)));
+
+                const response = await fetch(`${this.baseUrl}/repos/${this.owner}/${this.repo}/contents/${path}`, {
+                    method: 'PUT',
+                    headers: this.getHeaders(),
+                    body: JSON.stringify({
+                        message: `Actualización de ${path} - ${new Date().toISOString()}`,
+                        content: encodedContent,
+                        sha: sha
+                    })
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json().catch(() => ({}));
+                    console.error('Error Response:', {
+                        status: response.status,
+                        statusText: response.statusText,
+                        headers: response.headers,
+                        errorData: errorData
+                    });
+                    throw new Error(`GitHub API error: ${response.status} - ${errorData.message || response.statusText}`);
+                }
+
+                console.log('Archivo actualizado correctamente');
+                return await response.json();
+            } catch (error) {
+                console.error('Error detallado al actualizar archivo:', error);
+                throw error;
+            }
+        });
     }
 
     async retryOperation(operation, retries = this.maxRetries) {
@@ -18,85 +98,20 @@ class GitHubAPI {
                 console.error(`Intento ${i + 1} fallido:`, error);
                 
                 if (error.message && error.message.includes('401')) {
-                    console.error('Error de autenticación. Verificar el token.');
-                    throw new Error('Error de autenticación. Por favor, contacta al administrador.');
+                    console.error('Error de autenticación. Detalles completos:', error);
+                    throw new Error('Error de autenticación. Verifica el token de acceso.');
                 }
                 
-                if (error.message && error.message.includes('409')) {
-                    await new Promise(resolve => setTimeout(resolve, this.retryDelay * 3));
-                } else {
-                    await new Promise(resolve => setTimeout(resolve, this.retryDelay));
-                }
+                await new Promise(resolve => setTimeout(resolve, this.retryDelay * (i + 1)));
             }
         }
         throw lastError;
     }
-
-    async getContents(path) {
-        return this.retryOperation(async () => {
-            try {
-                const response = await fetch(`${this.baseUrl}/repos/${this.owner}/${this.repo}/contents/${path}`, {
-                    headers: {
-                        'Authorization': `Bearer ${this.token}`,
-                        'Accept': 'application/vnd.github.v3+json'
-                    }
-                });
-
-                if (!response.ok) {
-                    const errorData = await response.json().catch(() => ({}));
-                    throw new Error(`GitHub API error: ${response.status} - ${errorData.message || response.statusText}`);
-                }
-
-                const data = await response.json();
-                
-                // Decodificar el contenido en base64 y manejar caracteres especiales
-                const content = decodeURIComponent(escape(atob(data.content)));
-                return {
-                    content: content,
-                    sha: data.sha
-                };
-            } catch (error) {
-                console.error('Error al obtener contenido:', error);
-                throw error;
-            }
-        });
-    }
-
-    async updateFile(path, content, sha) {
-        return this.retryOperation(async () => {
-            try {
-                // Codificar contenido manejando caracteres especiales
-                const encodedContent = btoa(unescape(encodeURIComponent(content)));
-                
-                const response = await fetch(`${this.baseUrl}/repos/${this.owner}/${this.repo}/contents/${path}`, {
-                    method: 'PUT',
-                    headers: {
-                        'Authorization': `Bearer ${this.token}`,
-                        'Accept': 'application/vnd.github.v3+json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        message: `Actualización de ${path} - ${new Date().toISOString()}`,
-                        content: encodedContent,
-                        sha: sha
-                    })
-                });
-
-                if (!response.ok) {
-                    const errorData = await response.json().catch(() => ({}));
-                    throw new Error(`GitHub API error: ${response.status} - ${errorData.message || response.statusText}`);
-                }
-
-                return await response.json();
-            } catch (error) {
-                console.error('Error al actualizar archivo:', error);
-                throw error;
-            }
-        });
-    }
 }
 
 class AdminPanel {
+    constructor() {
+        this.github = new GitHubAPI();
     constructor() {
         this.github = new GitHubAPI();
         this.peliculas = [];
@@ -984,6 +999,11 @@ class AdminPanel {
 // Inicializar el panel de administrador
 let adminPanel;
 document.addEventListener('DOMContentLoaded', () => {
+    adminPanel = new AdminPanel();
+    adminPanel.init().catch(error => {
+        console.error('Error al inicializar el panel:', error);
+        mostrarError('Error al inicializar el panel. Por favor, contacta al administrador.');
+    });
     adminPanel = new AdminPanel();
     adminPanel.init().catch(error => {
         console.error('Error al inicializar el panel:', error);
