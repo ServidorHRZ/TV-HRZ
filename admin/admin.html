@@ -1217,6 +1217,54 @@
                 padding: 0 0.5rem;
             }
         }
+
+        /* Estilos para el formulario del token */
+        #token-form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #token-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        #token-form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        #token-form label {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: block;
+            font-weight: 500;
+        }
+
+        #token-form .form-input {
+            width: 100%;
+            padding: 0.8rem;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--primary-color);
+            border-radius: 8px;
+            color: var(--secondary-color);
+            font-size: 1rem;
+        }
+
+        #token-form .btn-primary {
+            align-self: flex-start;
+            min-width: 150px;
+        }
+
+        @media (max-width: 768px) {
+            #token-form-container {
+                padding: 0 1rem;
+            }
+            
+            #token-form .btn-primary {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1238,6 +1286,24 @@
     <div class="admin-container">
         <!-- Dashboard Section -->
         <section id="dashboard" class="admin-section active">
+            <!-- Token Configuration Card -->
+            <div class="admin-card">
+                <h2 class="admin-card-title">
+                    <i class="fas fa-key"></i> Configuración de GitHub
+                </h2>
+                <div id="token-form-container">
+                    <form id="token-form" class="admin-form">
+                        <div class="form-group">
+                            <label for="github-token">Token de Acceso Personal de GitHub</label>
+                            <input type="password" id="github-token" class="form-input" placeholder="Ingresa tu token de GitHub">
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> Guardar Token
+                        </button>
+                    </form>
+                </div>
+            </div>
+
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-number">0</div>
@@ -1633,13 +1699,37 @@
 
     <script src="admin.js"></script>
     <script>
-        // Inicializar el panel con el token almacenado
         document.addEventListener('DOMContentLoaded', () => {
+            // Verificar si hay un token almacenado
             const token = localStorage.getItem('github_token');
+            
+            // Configurar el formulario del token
+            const tokenForm = document.getElementById('token-form');
+            const tokenInput = document.getElementById('github-token');
+            
             if (token) {
-                adminPanel = new AdminPanel(token);
-                adminPanel.init();
+                // Si hay token, inicializar el panel y ocultar el formulario
+                tokenInput.value = token;
+                adminPanel = new AdminPanel();
+                adminPanel.init().catch(error => {
+                    console.error('Error al inicializar el panel:', error);
+                    mostrarError('Error al inicializar el panel. Verifica tu token de GitHub.');
+                    localStorage.removeItem('github_token');
+                });
             }
+            
+            // Manejar el envío del formulario del token
+            tokenForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const newToken = tokenInput.value.trim();
+                
+                if (newToken) {
+                    localStorage.setItem('github_token', newToken);
+                    location.reload(); // Recargar la página para reinicializar con el nuevo token
+                } else {
+                    mostrarError('Por favor ingresa un token válido');
+                }
+            });
             
             // Inicializar buscadores
             initSearchFunctionality();
