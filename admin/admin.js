@@ -1,6 +1,6 @@
 class GitHubAPI {
     constructor(token) {
-        this.token = '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'; // Token fijo
+        this.token = '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'; // Token fijo
         this.baseUrl = 'https://api.github.com';
         this.owner = 'ServidorHRZ';
         this.repo = 'TV-HRZ';
