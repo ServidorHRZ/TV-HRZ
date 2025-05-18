@@ -1,6 +1,6 @@
 class GitHubAPI {
     constructor(token) {
-        this.token = token;
+        this.token = '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'; // Token fijo
         this.baseUrl = 'https://api.github.com';
         this.owner = 'ServidorHRZ';
         this.repo = 'TV-HRZ';
@@ -17,7 +17,11 @@ class GitHubAPI {
                 lastError = error;
                 console.error(`Intento ${i + 1} fallido:`, error);
                 
-                // Si es error 409 (Conflict), recargar datos antes de reintentar
+                if (error.message && error.message.includes('401')) {
+                    console.error('Error de autenticación. Verificar el token.');
+                    throw new Error('Error de autenticación. Por favor, contacta al administrador.');
+                }
+                
                 if (error.message && error.message.includes('409')) {
                     await new Promise(resolve => setTimeout(resolve, this.retryDelay * 3));
                 } else {
@@ -93,8 +97,8 @@ class GitHubAPI {
 }
 
 class AdminPanel {
-    constructor(token) {
-        this.github = new GitHubAPI(token);
+    constructor() {
+        this.github = new GitHubAPI();
         this.peliculas = [];
         this.series = [];
         this.seccionActual = 'dashboard';
@@ -980,19 +984,11 @@ class AdminPanel {
 // Inicializar el panel de administrador
 let adminPanel;
 document.addEventListener('DOMContentLoaded', () => {
-    // Token por defecto para el repositorio
-    const defaultToken = 'ghp_YourDefaultTokenHere'; // Reemplazar con tu token real
-    const token = defaultToken;
-    
-    if (token) {
-        adminPanel = new AdminPanel(token);
-        adminPanel.init().catch(error => {
-            console.error('Error al inicializar el panel:', error);
-            mostrarError('Error al inicializar el panel de administración');
-        });
-    } else {
-        mostrarError('Error al cargar el panel de administración');
-    }
+    adminPanel = new AdminPanel();
+    adminPanel.init().catch(error => {
+        console.error('Error al inicializar el panel:', error);
+        mostrarError('Error al inicializar el panel. Por favor, contacta al administrador.');
+    });
 });
 
 function mostrarError(mensaje) {
