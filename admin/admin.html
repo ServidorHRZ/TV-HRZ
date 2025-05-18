@@ -1707,15 +1707,20 @@
             const tokenForm = document.getElementById('token-form');
             const tokenInput = document.getElementById('github-token');
             
-            if (token) {
-                // Si hay token, inicializar el panel y ocultar el formulario
-                tokenInput.value = token;
+            // Función para inicializar el panel
+            const initializePanel = () => {
                 adminPanel = new AdminPanel();
                 adminPanel.init().catch(error => {
                     console.error('Error al inicializar el panel:', error);
                     mostrarError('Error al inicializar el panel. Verifica tu token de GitHub.');
                     localStorage.removeItem('github_token');
                 });
+            };
+            
+            if (token) {
+                // Si hay token, inicializar el panel
+                tokenInput.value = token;
+                initializePanel();
             }
             
             // Manejar el envío del formulario del token
@@ -1725,7 +1730,8 @@
                 
                 if (newToken) {
                     localStorage.setItem('github_token', newToken);
-                    location.reload(); // Recargar la página para reinicializar con el nuevo token
+                    initializePanel();
+                    mostrarNotificacion('Token guardado correctamente', 'success');
                 } else {
                     mostrarError('Por favor ingresa un token válido');
                 }
