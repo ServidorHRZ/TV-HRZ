@@ -980,7 +980,10 @@ class AdminPanel {
 // Inicializar el panel de administrador
 let adminPanel;
 document.addEventListener('DOMContentLoaded', () => {
-    const token = localStorage.getItem('github_token');
+    // Token por defecto para el repositorio
+    const defaultToken = 'ghp_YourDefaultTokenHere'; // Reemplazar con tu token real
+    const token = defaultToken;
+    
     if (token) {
         adminPanel = new AdminPanel(token);
         adminPanel.init().catch(error => {
@@ -988,7 +991,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mostrarError('Error al inicializar el panel de administración');
         });
     } else {
-        alert('Por favor, configura tu token de GitHub en la sección de configuración');
+        mostrarError('Error al cargar el panel de administración');
     }
 });
 
