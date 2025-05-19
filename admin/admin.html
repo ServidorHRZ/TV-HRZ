@@ -1265,6 +1265,74 @@
                 width: 100%;
             }
         }
+
+        /* Estilos para los contenedores de géneros */
+        .generos-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 0.5rem;
+            max-height: 200px;
+            overflow-y: auto;
+            padding: 0.5rem;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--primary-color);
+            border-radius: 8px;
+        }
+
+        .genero-checkbox {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .genero-checkbox:hover {
+            background: rgba(0, 255, 255, 0.1);
+        }
+
+        .genero-checkbox input[type="checkbox"] {
+            margin-right: 0.5rem;
+            cursor: pointer;
+        }
+
+        .genero-checkbox label {
+            color: var(--secondary-color);
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .genero-checkbox input[type="checkbox"]:checked + label {
+            color: var(--primary-color);
+        }
+
+        /* Estilo personalizado para la barra de desplazamiento */
+        .generos-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .generos-container::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+
+        .generos-container::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        .generos-container::-webkit-scrollbar-thumb:hover {
+            background: #00cccc;
+        }
+
+        @media (max-width: 768px) {
+            .generos-container {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                max-height: 250px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1488,8 +1556,84 @@
                                     <label for="genero">
                                         <i class="fas fa-tags"></i> Géneros
                                     </label>
-                                    <input type="text" id="genero" name="genero" class="form-input" required 
-                                           placeholder="Ej: acción, aventura">
+                                    <div class="generos-container">
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-nuevos" name="genero" value="nuevos">
+                                            <label for="genero-nuevos">Estrenos</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-mi_lista" name="genero" value="mi_lista">
+                                            <label for="genero-mi_lista">Mi Lista</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-programacion" name="genero" value="programacion">
+                                            <label for="genero-programacion">Programación</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-accion" name="genero" value="accion">
+                                            <label for="genero-accion">Acción y Mucho Más</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-familiar" name="genero" value="familiar">
+                                            <label for="genero-familiar">Películas Familiares</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-netflix" name="genero" value="netflix">
+                                            <label for="genero-netflix">Netflix</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-amazon" name="genero" value="amazon">
+                                            <label for="genero-amazon">Amazon Prime</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-suspenso" name="genero" value="suspenso">
+                                            <label for="genero-suspenso">Suspenso y Drama</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-marvel" name="genero" value="marvel">
+                                            <label for="genero-marvel">Marvel</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-dc" name="genero" value="dc">
+                                            <label for="genero-dc">DC Comics</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-animacion" name="genero" value="animacion">
+                                            <label for="genero-animacion">Animación</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-clasicos" name="genero" value="clasicos">
+                                            <label for="genero-clasicos">Clásicos</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-cristiana" name="genero" value="cristiana">
+                                            <label for="genero-cristiana">Películas Cristianas</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-comedia" name="genero" value="comedia">
+                                            <label for="genero-comedia">Comedia</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-rapidosyfuriosos" name="genero" value="rapidosyfuriosos">
+                                            <label for="genero-rapidosyfuriosos">Rápidos y Furiosos</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-navidad" name="genero" value="navidad">
+                                            <label for="genero-navidad">Navidad</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-anime" name="genero" value="anime">
+                                            <label for="genero-anime">Anime</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-ciencia_ficcion" name="genero" value="ciencia_ficcion">
+                                            <label for="genero-ciencia_ficcion">Ciencia Ficción</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="genero-terror" name="genero" value="terror">
+                                            <label for="genero-terror">Terror</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="anio">
@@ -1581,8 +1725,68 @@
                                     <label for="serieGenero">
                                         <i class="fas fa-tags"></i> Géneros
                                     </label>
-                                    <input type="text" id="serieGenero" name="genero" class="form-input" required 
-                                           placeholder="Ej: acción, drama">
+                                    <div class="generos-container">
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-nuevos" name="serieGenero" value="nuevos">
+                                            <label for="serie-genero-nuevos">Nuevas Series</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-mi_lista" name="serieGenero" value="mi_lista">
+                                            <label for="serie-genero-mi_lista">Mi Lista</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-netflix" name="serieGenero" value="netflix">
+                                            <label for="serie-genero-netflix">Netflix</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-crimen" name="serieGenero" value="crimen">
+                                            <label for="serie-genero-crimen">Crimen y Suspenso</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-amazon" name="serieGenero" value="amazon">
+                                            <label for="serie-genero-amazon">Amazon Prime</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-accion" name="serieGenero" value="accion">
+                                            <label for="serie-genero-accion">Accion y Mucho Mas</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-marvel" name="serieGenero" value="marvel">
+                                            <label for="serie-genero-marvel">Marvel</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-dc" name="serieGenero" value="dc">
+                                            <label for="serie-genero-dc">DC Comics</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-cartoon" name="serieGenero" value="cartoon">
+                                            <label for="serie-genero-cartoon">Cartoon Network</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-disney" name="serieGenero" value="disney">
+                                            <label for="serie-genero-disney">Disney+</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-nick" name="serieGenero" value="nick">
+                                            <label for="serie-genero-nick">Nickelodeon</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-discoverykids" name="serieGenero" value="discoverykids">
+                                            <label for="serie-genero-discoverykids">Discovery Kids</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-anime" name="serieGenero" value="anime">
+                                            <label for="serie-genero-anime">Anime</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-novelas" name="serieGenero" value="novelas">
+                                            <label for="serie-genero-novelas">Novelas</label>
+                                        </div>
+                                        <div class="genero-checkbox">
+                                            <input type="checkbox" id="serie-genero-deportes" name="serieGenero" value="deportes">
+                                            <label for="serie-genero-deportes">Deportes</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="serieAnio">
