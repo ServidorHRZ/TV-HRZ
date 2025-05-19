@@ -2038,8 +2038,8 @@
       "id": 1747617906269,
       "titulo": "Avatar 2",
       "disponible": true,
-      "nuevo": true,
-      "badge": "Recién agregado",
+      "nuevo": false,
+      "badge": "",
       "año": 2022,
       "trailer": "https://youtu.be/FSyWAxUg3Go?si=Dpd7OY0IffnVrJCp",
       "genero": [
