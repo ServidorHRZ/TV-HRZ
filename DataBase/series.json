@@ -7200,7 +7200,20 @@
       "director": "",
       "actores": [],
       "enProceso": false,
-      "temporadas": []
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Episodio 1",
+              "descripcion": "sd",
+              "duracion": "45:00",
+              "url": "https://colombia.as.com/tikitakas/disney-se-funcionara-con-star-cuales-seran-los-cambios-n/"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
