@@ -7185,7 +7185,7 @@
       ]
     },
     {
-      "id": 1747618927650,
+      "id": 1747618927651,
       "titulo": "App 1",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSvtam1GiJf4-2Myz_Vt0CXHLJ-KnWwsFJ6Q&s",
       "trailer": "https://www.youtube.com/embed/xIBiJ_SzJTA",
@@ -7200,7 +7200,20 @@
       "director": "",
       "actores": [],
       "enProceso": false,
-      "temporadas": []
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Episodio 1",
+              "duracion": "45:00",
+              "descripcion": "sd",
+              "url": "https://colombia.as.com/tikitakas/disney-se-funcionara-con-star-cuales-seran-los-cambios-n/"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
