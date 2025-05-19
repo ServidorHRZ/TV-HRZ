@@ -266,20 +266,33 @@ class AdminPanel {
             actualizarVistaPrevia(e.target.value);
         });
 
+        // Desmarcar todos los géneros
+        form.querySelectorAll('input[name="genero"]').forEach(checkbox => {
+            checkbox.checked = false;
+        });
+
         if (pelicula) {
             titulo.textContent = 'Editar Película';
             form.titulo.value = pelicula.titulo || '';
             form.imagen.value = pelicula.imagen || '';
             form.enlace.value = pelicula.enlace || '';
             form.trailer.value = pelicula.trailer || '';
-            form.genero.value = Array.isArray(pelicula.genero) ? pelicula.genero.join(', ') : pelicula.genero || '';
             form.anio.value = pelicula.año || '';
             form.descripcion.value = pelicula.descripcion || '';
             form.disponible.checked = pelicula.disponible !== false;
             form.nuevo.checked = pelicula.nuevo === true;
             form.querySelector('#peliculaId').value = pelicula.id;
             
-            // Actualizar vista previa con la imagen existente
+            // Marcar los géneros correspondientes
+            if (Array.isArray(pelicula.genero)) {
+                pelicula.genero.forEach(genero => {
+                    const checkbox = form.querySelector(`input[name="genero"][value="${genero}"]`);
+                    if (checkbox) {
+                        checkbox.checked = true;
+                    }
+                });
+            }
+            
             actualizarVistaPrevia(pelicula.imagen);
         } else {
             titulo.textContent = 'Agregar Película';
@@ -303,11 +316,9 @@ class AdminPanel {
             const form = document.getElementById('peliculaForm');
             const peliculaId = form.querySelector('#peliculaId').value;
             
-            // Convertir géneros a array y limpiar espacios
-            const generos = form.genero.value
-                .split(',')
-                .map(g => g.trim().toLowerCase())
-                .filter(g => g !== '');
+            // Obtener géneros seleccionados
+            const generosSeleccionados = Array.from(form.querySelectorAll('input[name="genero"]:checked'))
+                .map(checkbox => checkbox.value);
 
             const nuevaPelicula = {
                 id: peliculaId ? parseInt(peliculaId) : Date.now(),
@@ -317,7 +328,7 @@ class AdminPanel {
                 badge: form.nuevo.checked ? "Recién agregado" : "",
                 año: parseInt(form.anio.value),
                 trailer: form.trailer.value.trim(),
-                genero: generos,
+                genero: generosSeleccionados,
                 imagen: form.imagen.value.trim(),
                 enlace: form.enlace.value.trim(),
                 descripcion: form.descripcion.value.trim()
@@ -387,12 +398,16 @@ class AdminPanel {
                 serieExistente = this.series.find(s => s.id === parseInt(serieId));
             }
             
+            // Obtener géneros seleccionados
+            const generosSeleccionados = Array.from(form.querySelectorAll('input[name="serieGenero"]:checked'))
+                .map(checkbox => checkbox.value);
+            
             const nuevaSerie = {
                 id: serieId ? parseInt(serieId) : Date.now(),
                 titulo: form.serieTitulo.value.trim(),
                 imagen: form.serieImagen.value.trim(),
                 trailer: form.serieTrailer.value.trim(),
-                genero: form.serieGenero.value.split(',').map(g => g.trim()),
+                genero: generosSeleccionados,
                 año: parseInt(form.serieAnio.value),
                 descripcion: form.serieDescripcion.value.trim(),
                 disponible: form.serieDisponible.checked,
@@ -497,6 +512,7 @@ class AdminPanel {
         const handleImageError = (img) => {
             img.onerror = null; // Prevenir bucle infinito
             img.src = 'https://via.placeholder.com/300x450/000000/00ffff?text=Imagen+No+Disponible';
+            console.error('Error al cargar la imagen:', img.dataset.originalSrc);
         };
 
         // Actualizar grid de películas
@@ -507,6 +523,7 @@ class AdminPanel {
                     <img src="${pelicula.imagen}" 
                          alt="${pelicula.titulo}" 
                          class="movie-thumbnail"
+                         data-original-src="${pelicula.imagen}"
                          onerror="this.onerror=null;this.src='https://via.placeholder.com/300x450/000000/00ffff?text=Imagen+No+Disponible';">
                     <div class="movie-content">
                         <div class="movie-header">
@@ -708,8 +725,13 @@ class AdminPanel {
         };
 
         // Event listener para la URL de la imagen
-        form.imagen.addEventListener('input', (e) => {
+        form.serieImagen.addEventListener('input', (e) => {
             actualizarVistaPrevia(e.target.value);
+        });
+
+        // Desmarcar todos los géneros
+        form.querySelectorAll('input[name="serieGenero"]').forEach(checkbox => {
+            checkbox.checked = false;
         });
 
         if (serie) {
@@ -717,12 +739,21 @@ class AdminPanel {
             form.serieTitulo.value = serie.titulo || '';
             form.serieImagen.value = serie.imagen || '';
             form.serieTrailer.value = serie.trailer || '';
-            form.serieGenero.value = Array.isArray(serie.genero) ? serie.genero.join(', ') : serie.genero || '';
             form.serieAnio.value = serie.año || '';
             form.serieDescripcion.value = serie.descripcion || '';
             form.serieDisponible.checked = serie.disponible !== false;
             form.serieNuevo.checked = serie.nuevo === true;
             form.querySelector('#serieId').value = serie.id;
+            
+            // Marcar los géneros correspondientes
+            if (Array.isArray(serie.genero)) {
+                serie.genero.forEach(genero => {
+                    const checkbox = form.querySelector(`input[name="serieGenero"][value="${genero}"]`);
+                    if (checkbox) {
+                        checkbox.checked = true;
+                    }
+                });
+            }
             
             actualizarVistaPrevia(serie.imagen);
             this.cargarTemporadas(serie.temporadas || []);
