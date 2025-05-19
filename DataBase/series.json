@@ -7233,7 +7233,7 @@
       ]
     },
     {
-      "id": 1747620888561,
+      "id": 1747620888558,
       "titulo": "suits",
       "imagen": "https://image.tmdb.org/t/p/w185/vQiryp6LioFxQThywxbC6TuoDjy.jpg",
       "trailer": "https://youtu.be/8pApNU09c_g?si=bJZzuX5JY7sXScw2",
@@ -7246,20 +7246,7 @@
       "director": "",
       "actores": [],
       "enProceso": false,
-      "temporadas": [
-        {
-          "numero": 1,
-          "episodios": [
-            {
-              "numero": 2,
-              "titulo": "Piloto",
-              "descripcion": "Capitulo 2",
-              "duracion": "45:00",
-              "url": "https://fastream.to/embed-3h9xckhy1muf.html"
-            }
-          ]
-        }
-      ]
+      "temporadas": []
     }
   ]
 }
