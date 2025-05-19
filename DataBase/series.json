@@ -1793,7 +1793,7 @@
       "id": 17,
       "titulo": "Legends of Tomorrow",
       "badge": "Recien agregado",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Un grupo de héroes y villanos deben trabajar juntos cuando son reclutados por el Maestro del Tiempo para viajar a través del tiempo y evitar una catástrofe que podría afectar no solo a la Tierra, sino a todo el tiempo en sí.",
