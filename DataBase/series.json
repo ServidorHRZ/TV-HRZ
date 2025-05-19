@@ -1792,14 +1792,17 @@
     {
       "id": 17,
       "titulo": "Legends of Tomorrow",
-      "badge": "Recien agregado",
-      "disponible": false,
+      "badge": "Recién agregado",
+      "disponible": true,
       "nuevo": true,
       "enProceso": true,
       "descripcion": "Un grupo de héroes y villanos deben trabajar juntos cuando son reclutados por el Maestro del Tiempo para viajar a través del tiempo y evitar una catástrofe que podría afectar no solo a la Tierra, sino a todo el tiempo en sí.",
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfpogpu-W-S62wyIUE2fQ9W3cFtt71v9vk0A&s",
       "año": 2016,
-      "genero": "dc",
+      "genero": [
+        "accion",
+        "dc"
+      ],
       "director": "Greg Berlanti",
       "actores": [
         "Caity Lotz",
@@ -1814,113 +1817,113 @@
             {
               "numero": 1,
               "titulo": "Piloto, Parte 1",
-              "descripcion": "Rip Hunter recluta a un equipo de héroes y villanos para salvar el mundo.",
               "duracion": "42:00",
+              "descripcion": "Rip Hunter recluta a un equipo de héroes y villanos para salvar el mundo.",
               "url": "https://fastream.to/embed-fuenis10klj7.html"
             },
             {
               "numero": 2,
               "titulo": "Piloto, Parte 2",
-              "descripcion": "El equipo viaja a 1975 para encontrar al Dr. Aldus Boardman.",
               "duracion": "42:00",
+              "descripcion": "El equipo viaja a 1975 para encontrar al Dr. Aldus Boardman.",
               "url": "https://drive.google.com/file/d/1def456xyz/preview"
             },
             {
               "numero": 3,
               "titulo": "Sangre y Vínculos",
-              "descripcion": "El equipo persigue a Vandal Savage en Noruega.",
               "duracion": "42:00",
+              "descripcion": "El equipo persigue a Vandal Savage en Noruega.",
               "url": "https://drive.google.com/file/d/1ghi789xyz/preview"
             },
             {
               "numero": 4,
               "titulo": "Guerreros Blancos",
-              "descripcion": "El equipo viaja a la URSS durante la Guerra Fría.",
               "duracion": "42:00",
+              "descripcion": "El equipo viaja a la URSS durante la Guerra Fría.",
               "url": "https://drive.google.com/file/d/1jkl012xyz/preview"
             },
             {
               "numero": 5,
               "titulo": "Fracaso es una Opción",
-              "descripcion": "Ray y Sara se infiltran en un banco en los años 50.",
               "duracion": "42:00",
+              "descripcion": "Ray y Sara se infiltran en un banco en los años 50.",
               "url": "https://drive.google.com/file/d/1mno345xyz/preview"
             },
             {
               "numero": 6,
               "titulo": "Star City 2046",
-              "descripcion": "El equipo llega a una versión post-apocalíptica de Star City.",
               "duracion": "42:00",
+              "descripcion": "El equipo llega a una versión post-apocalíptica de Star City.",
               "url": "https://drive.google.com/file/d/1pqr678xyz/preview"
             },
             {
               "numero": 7,
               "titulo": "Marooned",
-              "descripcion": "La Waverider es atacada por piratas espaciales.",
               "duracion": "42:00",
+              "descripcion": "La Waverider es atacada por piratas espaciales.",
               "url": "https://drive.google.com/file/d/1stu901xyz/preview"
             },
             {
               "numero": 8,
               "titulo": "Noche de los Halcones",
-              "descripcion": "El equipo viaja al Antiguo Egipto.",
               "duracion": "42:00",
+              "descripcion": "El equipo viaja al Antiguo Egipto.",
               "url": "https://drive.google.com/file/d/1vwx234xyz/preview"
             },
             {
               "numero": 9,
               "titulo": "Left Behind",
-              "descripcion": "Ray, Sara y Kendra quedan varados en 1958.",
               "duracion": "42:00",
+              "descripcion": "Ray, Sara y Kendra quedan varados en 1958.",
               "url": "https://drive.google.com/file/d/1yza567xyz/preview"
             },
             {
               "numero": 10,
               "titulo": "Progenie",
-              "descripcion": "El equipo protege a una joven Per Degaton.",
               "duracion": "42:00",
+              "descripcion": "El equipo protege a una joven Per Degaton.",
               "url": "https://drive.google.com/file/d/1bcd890xyz/preview"
             },
             {
               "numero": 11,
               "titulo": "El Magnífico Ocho",
-              "descripcion": "Las Leyendas se encuentran en el Viejo Oeste.",
               "duracion": "42:00",
+              "descripcion": "Las Leyendas se encuentran en el Viejo Oeste.",
               "url": "https://drive.google.com/file/d/1efg123xyz/preview"
             },
             {
               "numero": 12,
               "titulo": "Último Refugio",
-              "descripcion": "El equipo es perseguido por los Cazadores del Tiempo.",
               "duracion": "42:00",
+              "descripcion": "El equipo es perseguido por los Cazadores del Tiempo.",
               "url": "https://drive.google.com/file/d/1hij456xyz/preview"
             },
             {
               "numero": 13,
               "titulo": "Leviathan",
-              "descripcion": "El equipo llega a un Londres futurista controlado por Savage.",
               "duracion": "42:00",
+              "descripcion": "El equipo llega a un Londres futurista controlado por Savage.",
               "url": "https://drive.google.com/file/d/1klm789xyz/preview"
             },
             {
               "numero": 14,
               "titulo": "Río del Tiempo",
-              "descripcion": "Rip lleva al equipo a un lugar seguro en el flujo temporal.",
               "duracion": "42:00",
+              "descripcion": "Rip lleva al equipo a un lugar seguro en el flujo temporal.",
               "url": "https://drive.google.com/file/d/1nop012xyz/preview"
             },
             {
               "numero": 15,
               "titulo": "Destino",
-              "descripcion": "El equipo descubre la verdad sobre los Maestros del Tiempo.",
               "duracion": "42:00",
+              "descripcion": "El equipo descubre la verdad sobre los Maestros del Tiempo.",
               "url": "https://drive.google.com/file/d/1qrs345xyz/preview"
             },
             {
               "numero": 16,
               "titulo": "Leyendas",
-              "descripcion": "El equipo tiene su confrontación final con Vandal Savage.",
               "duracion": "42:00",
+              "descripcion": "El equipo tiene su confrontación final con Vandal Savage.",
               "url": "https://drive.google.com/file/d/1tuv678xyz/preview"
             }
           ]
