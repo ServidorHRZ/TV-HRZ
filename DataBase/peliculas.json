@@ -2035,7 +2035,7 @@
       "descripcion": "Una película de superhéroes estadounidense basada en el equipo de Marvel Comics los Thunderbolts. Producida por Marvel Studios y distribuida por Walt Disney Studios Motion Pictures, esta es la película número 36 del Universo cinematográfico de Marvel."
     },
     {
-      "id": 1747617906269,
+      "id": 175,
       "titulo": "Avatar 2",
       "disponible": true,
       "nuevo": false,
@@ -2052,107 +2052,14 @@
       "descripcion": "Avatar es una épica aventura de ciencia ficción ambientada en el año 2154, en la exuberante luna de Pandora, un mundo rico en biodiversidad habitado por los Na vi, una raza humanoide de color azul que vive en armonía con la naturaleza. La historia sigue a Jake Sully, un ex-marine parapléjico que es seleccionado para participar en el programa Avatar, que permite a los humanos controlar cuerpos híbridos humanos-Na vi mediante conexión neuronal."
     },
     {
-      "id": 1747619947470,
-      "titulo": "Capitan America Un Nuevo Mundo",
-      "disponible": false,
+      "id": 176,
+      "titulo": "Enola Holmes",
+      "disponible": true,
       "nuevo": true,
-      "badge": "Recién agregado",
-      "año": 2025,
-      "trailer": "https://youtu.be/RXoqRPP-y5c?si=Pazk3CICIqa3Ic7_",
-      "genero": [
-        "accion",
-        "marvel"
-      ],
-      "imagen": "https://lumiere-a.akamaihd.net/v1/images/rochelle_teaser2_poster_las_9a24549d.jpeg?region=0%2C0%2C770%2C1100",
-      "enlace": "https://fastream.to/embed-fm85l3960jva.html",
-      "descripcion": "Capitan america"
-    },
-    {
-      "id": 1747773829091,
-      "titulo": "Enola Holmes",
-      "disponible": true,
-      "nuevo": false,
-      "badge": "",
+      "badge": "Recien agregado",
       "año": 2020,
       "trailer": "https://youtu.be/bxG9VN9RrVs?si=0C8oiVPmBgAS4I-x",
-      "genero": [
-        "netflix"
-      ],
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqFXmyOmhS6A6lmoZw98rk-NZ72ycRF82adg&s",
-      "enlace": "https://fastream.to/embed-68rtaq433596.html",
-      "descripcion": "Enola Holmes, la hermana menor de Sherlock, descubre que su madre ha desaparecido y se dispone a encontrarla. En su búsqueda, saca a relucir el sabueso que corre por sus venas y se encuentra con una conspiración que gira en torno a un misterioso lord, demostrando que su ilustre hermano no es el único talento en la familia"
-    },
-    {
-      "id": 1747773831838,
-      "titulo": "Enola Holmes",
-      "disponible": true,
-      "nuevo": false,
-      "badge": "",
-      "año": 2020,
-      "trailer": "https://youtu.be/bxG9VN9RrVs?si=0C8oiVPmBgAS4I-x",
-      "genero": [
-        "netflix"
-      ],
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqFXmyOmhS6A6lmoZw98rk-NZ72ycRF82adg&s",
-      "enlace": "https://fastream.to/embed-68rtaq433596.html",
-      "descripcion": "Enola Holmes, la hermana menor de Sherlock, descubre que su madre ha desaparecido y se dispone a encontrarla. En su búsqueda, saca a relucir el sabueso que corre por sus venas y se encuentra con una conspiración que gira en torno a un misterioso lord, demostrando que su ilustre hermano no es el único talento en la familia"
-    },
-    {
-      "id": 1747773832722,
-      "titulo": "Enola Holmes",
-      "disponible": true,
-      "nuevo": false,
-      "badge": "",
-      "año": 2020,
-      "trailer": "https://youtu.be/bxG9VN9RrVs?si=0C8oiVPmBgAS4I-x",
-      "genero": [
-        "netflix"
-      ],
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqFXmyOmhS6A6lmoZw98rk-NZ72ycRF82adg&s",
-      "enlace": "https://fastream.to/embed-68rtaq433596.html",
-      "descripcion": "Enola Holmes, la hermana menor de Sherlock, descubre que su madre ha desaparecido y se dispone a encontrarla. En su búsqueda, saca a relucir el sabueso que corre por sus venas y se encuentra con una conspiración que gira en torno a un misterioso lord, demostrando que su ilustre hermano no es el único talento en la familia"
-    },
-    {
-      "id": 1747773832829,
-      "titulo": "Enola Holmes",
-      "disponible": true,
-      "nuevo": false,
-      "badge": "",
-      "año": 2020,
-      "trailer": "https://youtu.be/bxG9VN9RrVs?si=0C8oiVPmBgAS4I-x",
-      "genero": [
-        "netflix"
-      ],
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqFXmyOmhS6A6lmoZw98rk-NZ72ycRF82adg&s",
-      "enlace": "https://fastream.to/embed-68rtaq433596.html",
-      "descripcion": "Enola Holmes, la hermana menor de Sherlock, descubre que su madre ha desaparecido y se dispone a encontrarla. En su búsqueda, saca a relucir el sabueso que corre por sus venas y se encuentra con una conspiración que gira en torno a un misterioso lord, demostrando que su ilustre hermano no es el único talento en la familia"
-    },
-    {
-      "id": 1747773832973,
-      "titulo": "Enola Holmes",
-      "disponible": true,
-      "nuevo": false,
-      "badge": "",
-      "año": 2020,
-      "trailer": "https://youtu.be/bxG9VN9RrVs?si=0C8oiVPmBgAS4I-x",
-      "genero": [
-        "netflix"
-      ],
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqFXmyOmhS6A6lmoZw98rk-NZ72ycRF82adg&s",
-      "enlace": "https://fastream.to/embed-68rtaq433596.html",
-      "descripcion": "Enola Holmes, la hermana menor de Sherlock, descubre que su madre ha desaparecido y se dispone a encontrarla. En su búsqueda, saca a relucir el sabueso que corre por sus venas y se encuentra con una conspiración que gira en torno a un misterioso lord, demostrando que su ilustre hermano no es el único talento en la familia"
-    },
-    {
-      "id": 1747773833222,
-      "titulo": "Enola Holmes",
-      "disponible": true,
-      "nuevo": false,
-      "badge": "",
-      "año": 2020,
-      "trailer": "https://youtu.be/bxG9VN9RrVs?si=0C8oiVPmBgAS4I-x",
-      "genero": [
-        "netflix"
-      ],
+      "genero": ["netflix", "familiar"],
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqFXmyOmhS6A6lmoZw98rk-NZ72ycRF82adg&s",
       "enlace": "https://fastream.to/embed-68rtaq433596.html",
       "descripcion": "Enola Holmes, la hermana menor de Sherlock, descubre que su madre ha desaparecido y se dispone a encontrarla. En su búsqueda, saca a relucir el sabueso que corre por sus venas y se encuentra con una conspiración que gira en torno a un misterioso lord, demostrando que su ilustre hermano no es el único talento en la familia"
