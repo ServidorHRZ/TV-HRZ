@@ -1744,7 +1744,7 @@
         // Función para organizar series por categorías
         function organizarPorCategorias(series) {
             const categorias = {
-                'nuevos': { titulo: 'Nuevas Series', series: [], mantenerOrden: false },
+                'estrenos': { titulo: 'Estrenos', series: [], mantenerOrden: false },
                 'mi_lista': { titulo: 'Mi Lista', series: [], mantenerOrden: false },
                 'neflix': { titulo: 'Netflix', series: [], mantenerOrden: false },
                 'crimen': { titulo: 'Crimen y Suspenso', series: [], mantenerOrden: false },
@@ -1773,6 +1773,11 @@
 
             // Agregar series a categorías
             series.forEach(serie => {
+                // Agregar a la categoría Estrenos si tiene la propiedad estreno
+                if (serie.estreno) {
+                    categorias['estrenos'].series.push(serie);
+                }
+                
                 if (Array.isArray(serie.genero)) {
                     serie.genero.forEach(gen => {
                         const generoLower = gen.toLowerCase();
@@ -1780,15 +1785,22 @@
                             categorias[generoLower].series.push(serie);
                         }
                     });
-                } else {
+                } else if (typeof serie.genero === 'string') {
                     const generoLower = serie.genero.toLowerCase();
                     if (categorias[generoLower]) {
                         categorias[generoLower].series.push(serie);
                     }
                 }
+                
+                if (serie.plataforma) {
+                    const plataformaLower = serie.plataforma.toLowerCase();
+                    if (categorias[plataformaLower]) {
+                        categorias[plataformaLower].series.push(serie);
+                    }
+                }
             });
 
-            // Ordenar series en cada categoría
+            // Ordenar series en cada categoría (nuevas primero)
             for (const categoria of Object.values(categorias)) {
                 const nuevas = categoria.series.filter(s => s.nuevo);
                 const noNuevas = categoria.series.filter(s => !s.nuevo);
@@ -1836,7 +1848,7 @@
                                 <div class="movie-info">
                                     <h3>${serie.titulo}</h3>
                                     <p>${serie.año || ''}</p>
-                                </div>
+                                </div>  
                             </div>
                         `).join('')}
                     </div>
@@ -1845,19 +1857,6 @@
                 `;
                 
                 categoriasWrapper.appendChild(seccionMiLista);
-
-                // Agregar event listeners a las tarjetas de Mi Lista
-                const miListaCards = seccionMiLista.querySelectorAll('.movie-card');
-                miListaCards.forEach(card => {
-                    card.addEventListener('click', () => {
-                        try {
-                            const serieData = JSON.parse(card.getAttribute('data-serie'));
-                            abrirSerie(serieData);
-                        } catch (error) {
-                            console.error('Error al procesar serie de Mi Lista:', error);
-                        }
-                    });
-                });
             }
             
             const categorias = organizarPorCategorias(series);
@@ -1882,6 +1881,7 @@
                         <div class="categoria-contenedor">
                             ${categoria.series.map(serie => `
                                 <div class="movie-card" data-serie='${JSON.stringify(serie)}'>
+                                    ${serie.nuevo ? `<div class="badge">NUEVO</div>` : ''}
                                     ${serie.badge ? `<div class="badge">${serie.badge}</div>` : ''}
                                     <img src="${serie.imagen}" alt="${serie.titulo}">
                                     <div class="movie-info">

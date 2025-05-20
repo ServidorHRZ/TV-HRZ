@@ -1060,7 +1060,11 @@
       "descripcion": "El Dr. Gregory House, un genio de la medicina poco convencional y antisocial, lidera un equipo de diagnóstico en el hospital universitario Princeton-Plainsboro. A pesar de su actitud sarcástica y sus métodos poco ortodoxos, House resuelve los casos médicos más complejos y misteriosos.",
       "imagen": "https://image.tmdb.org/t/p/original/lW7MvZ4m49IUj2UrUu4z0xVVl81.jpg",
       "año": 2004,
-      "genero": "suspenso",
+      "genero": [
+        "suspenso",
+        "crimen",
+        "comedia"
+      ],
       "director": "David Shore",
       "actores": [
         "Hugh Laurie",
@@ -1323,7 +1327,7 @@
       "descripcion": "Una adaptación moderna de las historias clásicas de Sherlock Holmes, ambientada en el Londres del siglo XXI.",
       "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Sherlock.jpg",
       "año": 2010,
-      "genero": "suspenso",
+      "genero": "crimen",
       "director": "Mark Gatiss, Steven Moffat",
       "actores": [
         "Benedict Cumberbatch",

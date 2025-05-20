@@ -1749,7 +1749,7 @@
         // Función para organizar peliculas por categorías
         function organizarPorCategorias(peliculas) {
             const categorias = {
-                'nuevos': { titulo: 'Estrenos', peliculas: [], mantenerOrden: false },
+                'estrenos': { titulo: 'Estrenos', peliculas: [], mantenerOrden: false },
                 'mi_lista': { titulo: 'Mi Lista', peliculas: [], mantenerOrden: false },
                 'programacion': { titulo: 'Programación', peliculas: [], mantenerOrden: false },
                 'accion': { titulo: 'Acción y Mucho Más', peliculas: [], mantenerOrden: false },
@@ -1769,10 +1769,20 @@
                 'terror': { titulo: 'Terror', peliculas: [], mantenerOrden: false }
             };
 
+            // Función para mezclar array
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
             // Agregar películas a categorías
             peliculas.forEach(pelicula => {
-                if (pelicula.nuevo) {
-                    categorias['nuevos'].peliculas.push(pelicula);
+                // Agregar a la categoría Estrenos si tiene la propiedad estreno
+                if (pelicula.estreno) {
+                    categorias['estrenos'].peliculas.push(pelicula);
                 }
                 
                 if (Array.isArray(pelicula.genero)) {
@@ -1789,7 +1799,6 @@
                     }
                 }
                 
-                // Agregar a plataformas específicas si corresponde
                 if (pelicula.plataforma) {
                     const plataformaLower = pelicula.plataforma.toLowerCase();
                     if (categorias[plataformaLower]) {
@@ -1797,6 +1806,18 @@
                     }
                 }
             });
+
+            // Ordenar películas en cada categoría (nuevas primero)
+            for (const categoria of Object.values(categorias)) {
+                const nuevas = categoria.peliculas.filter(p => p.nuevo);
+                const noNuevas = categoria.peliculas.filter(p => !p.nuevo);
+
+                if (!categoria.mantenerOrden) {
+                    shuffleArray(noNuevas);
+                }
+
+                categoria.peliculas = [...nuevas, ...noNuevas];
+            }
 
             return categorias;
         }
@@ -1812,7 +1833,7 @@
                 'animacion': ['../logos/3.jpeg'],
                 'marvel': ['../logos/7.png'],
                 'dc': ['../logos/4.jpeg'],
-                'nuevos': ['https://cdnsnte1.s3.us-west-1.amazonaws.com/wp-content/uploads/2025/02/20120506/boton_nuevo_paz.png'],
+                'estrenos': ['https://cdnsnte1.s3.us-west-1.amazonaws.com/wp-content/uploads/2025/02/20120506/boton_nuevo_paz.png'],
             };
 
             categoriasWrapper.innerHTML = '';
@@ -1880,6 +1901,7 @@
                         <div class="categoria-contenedor">
                             ${categoria.peliculas.map(pelicula => `
                                 <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
+                                    ${pelicula.nuevo ? `<div class="badge">NUEVO</div>` : ''}
                                     ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
                                     <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
                                     <div class="movie-info">
