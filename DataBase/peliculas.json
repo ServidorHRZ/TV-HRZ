@@ -2059,7 +2059,10 @@
       "badge": "Recien agregado",
       "año": 2020,
       "trailer": "https://youtu.be/bxG9VN9RrVs?si=0C8oiVPmBgAS4I-x",
-      "genero": ["netflix","familiar"],
+      "genero": [
+        "neflix",
+        "familiar"
+      ],
       "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqFXmyOmhS6A6lmoZw98rk-NZ72ycRF82adg&s",
       "enlace": "https://fastream.to/embed-68rtaq433596.html",
       "descripcion": "Enola Holmes, la hermana menor de Sherlock, descubre que su madre ha desaparecido y se dispone a encontrarla. En su búsqueda, saca a relucir el sabueso que corre por sus venas y se encuentra con una conspiración que gira en torno a un misterioso lord, demostrando que su ilustre hermano no es el único talento en la familia"
