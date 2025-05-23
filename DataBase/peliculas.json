@@ -2071,19 +2071,39 @@
       "descripcion": "Enola Holmes, la hermana menor de Sherlock, descubre que su madre ha desaparecido y se dispone a encontrarla. En su búsqueda, saca a relucir el sabueso que corre por sus venas y se encuentra con una conspiración que gira en torno a un misterioso lord, demostrando que su ilustre hermano no es el único talento en la familia"
     },
     {
-      "id": 1747795052191,
-      "titulo": "Avengers: Infinity War",
+      "id": 177,
+      "titulo": "Lilo & Stitch",
       "disponible": true,
       "nuevo": true,
-      "badge": "Recién agregado",
-      "año": 2018,
-      "trailer": "https://www.youtube.com/watch?v=QwievZ1Tx-8",
+      "badge": "Recien agregado",
+      "año": 2025,
+      "trailer": "https://youtu.be/wAtaSKQ4-T0?si=_6Vj8QI-_K-Hs0Hs",
       "genero": [
-        "marvel"
+        "animacion",
+        "familiar",
+        "disney",
+        "estrenos"
       ],
-      "imagen": "https://www.startpage.com/av/proxy-image?piurl=http%3A%2F%2Fwww.blackfilm.com%2Fread%2Fwp-content%2Fuploads%2F2018%2F03%2FAvengers-Infinity-War-new-poster.jpg&sp=1747794775T2e765bbc6fcfb8ebd0f90a4765479c025ee6492cf11ebc264772f0b69e057690",
-      "enlace": "https://dhcplay.com/zobkkb8wwnx1/",
-      "descripcion": "Los Avengers y sus aliados deberán estar dispuestos a sacrificarlo todo con el fin de derrotar a Thanos antes de que él ponga fin al universo."
+      "imagen": "https://m.media-amazon.com/images/M/MV5BYTBmMDBhNWYtNTk4MS00NzBmLTk5ZWItM2ZlZjY4NTYxNWQzXkEyXkFqcGc@._V1_.jpg",
+      "enlace": "https://fastream.to/embed-di0qe4ktb1vp.html",
+      "descripcion": "Una niña hawaiana solitaria llamada Lilo adopta lo que ella cree que es un perro inocente, al que nombra Stitch. Stitch es en realidad un experimento genético que escapó de un planeta alienígena y aterrizó en la Tierra. A través de su amistad, Lilo ayuda a Stitch a comprender el significado de ohana (familia) mientras él la protege de los agentes alienígenas que intentan capturarlo."
+    },
+    {
+      "id": 178,
+      "titulo": "Mision Imposible: Sentencia Final",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recien agregado",
+      "año": 2025,
+      "trailer": "https://youtu.be/2m1drlOZSDw?si=_6Vj8QI-_K-Hs0Hs",
+      "genero": [
+        "accion",
+        "estrenos"
+      ],
+      "imagen": "https://m.media-amazon.com/images/M/MV5BMjQ3MzNlOTEtNGU5ZS00ODI0LTgxNDctMjA4MTUxMjY4NTU0XkEyXkFqcGc@._V1_.jpg",
+      "enlace": "https://fastream.to/embed-x8743te8qgqv.html",
+      "descripcion": "En Misión Imposible: Sentencia Final, Ethan Hunt y su equipo del FMI se embarcan en su misión más peligrosa hasta la fecha: localizar una nueva y terrorífica arma que amenaza a toda la humanidad antes de que caiga en las manos equivocadas. Con el control del futuro y el destino del mundo en juego, y las fuerzas oscuras del pasado de Ethan acercándose, comienza una carrera mortal alrededor del mundo."
     }
   ]
 }
+
