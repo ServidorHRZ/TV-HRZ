@@ -7373,6 +7373,18 @@
               "url": "https://www.yourupload.com/embed/4XKslK6E2s72"
             }
           ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Episodio 1",
+              "descripcion": "Segunda temporada",
+              "duracion": "23:00",
+              "url": "https://www.yourupload.com/embed/AVvw2CfRF1QO"
+            }
+          ]
         }
       ]
     }
