@@ -7267,6 +7267,24 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1748140091904,
+      "titulo": "Solo leveling",
+      "imagen": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuLhpQKwRJ1XWIbAy8VXAqwk5vDeKojrS2k8F4RpCtOaCrQT9q",
+      "trailer": "https://www.youtube.com/watch?v=Kjta12rmtkA&t=5s",
+      "genero": [
+        "anime"
+      ],
+      "año": 2024,
+      "descripcion": "En un mundo de cazadores superdotados y monstruos, un débil cazador adquiere poderes a través de un misterioso programa, lo que le lleva a convertirse en uno de los cazadores más fuertes y a conquistar las mazmorras más poderosas.",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "director": "",
+      "actores": [],
+      "enProceso": false,
+      "temporadas": []
     }
   ]
 }
