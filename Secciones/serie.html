@@ -168,82 +168,167 @@
         }
         .episodio {
             display: grid;
-            grid-template-columns: 140px 1fr 35px;
+            grid-template-columns: 120px 1fr 35px;
             gap: 15px;
             align-items: center;
-            background: #212121;
+            background: rgba(0, 0, 0, 0.3);
             margin-bottom: 1px;
-            transition: background 0.3s ease;
-            padding: 10px;
+            transition: all 0.3s ease;
+            padding: 12px;
+            cursor: pointer;
+            position: relative;
         }
+
+        .episodio:hover {
+            background: rgba(0, 255, 255, 0.05);
+        }
+
+        .episodio.playing::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background: var(--primary-color);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
         .episodio-thumbnail-container {
             position: relative;
-            width: 140px;
-            height: 90px;
+            width: 120px;
+            height: 68px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
+
         .episodio-contenido {
-            padding-right: 20px;
+            padding-right: 15px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            gap: 5px;
         }
+
         .episodio-numero {
             position: absolute;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 4px 8px;
-            font-size: 0.9em;
+            top: 5px;
+            left: 5px;
+            background: rgba(0, 0, 0, 0.8);
+            color: var(--primary-color);
+            padding: 3px 8px;
+            font-size: 0.8em;
             z-index: 1;
-            border-radius: 4px 0 4px 0;
+            border-radius: 4px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            backdrop-filter: blur(4px);
         }
+
         .episodio-thumbnail {
             width: 100%;
             height: 100%;
-            border-radius: 4px;
-            overflow: hidden;
+            position: relative;
         }
+
+        .episodio-thumbnail::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+        }
+
         .episodio-thumbnail img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.3s ease;
         }
+
+        .episodio:hover .episodio-thumbnail img {
+            transform: scale(1.05);
+        }
+
         .episodio-titulo {
-            font-size: 1em;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 8px;
+            font-size: 0.95em;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 4px;
+            font-weight: 500;
+            line-height: 1.4;
         }
+
         .episodio-descripcion {
-            font-size: 0.9em;
-            color: rgba(255, 255, 255, 0.6);
-            -webkit-line-clamp: 1;
+            font-size: 0.85em;
+            color: rgba(255, 255, 255, 0.7);
+            -webkit-line-clamp: 2;
             overflow: hidden;
             display: -webkit-box;
             -webkit-box-orient: vertical;
+            line-height: 1.4;
         }
         .episodio-visto {
-            width: 24px;
-            height: 24px;
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(0, 255, 255, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             transition: all 0.3s ease;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
         }
+
+        .episodio-visto::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--primary-color);
+            transform: scale(0);
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
         .episodio-visto i {
-            font-size: 12px;
-            color: transparent;
+            font-size: 14px;
+            color: rgba(0, 255, 255, 0.4);
             transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
         }
+
+        .episodio-visto:hover {
+            border-color: var(--primary-color);
+            transform: scale(1.1);
+        }
+
         .episodio-visto.visto {
             border-color: var(--primary-color);
-            background: var(--primary-color);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
         }
+
+        .episodio-visto.visto::before {
+            transform: scale(1);
+        }
+
         .episodio-visto.visto i {
+            color: #000;
+        }
+
+        .episodio-visto:hover i {
+            color: var(--primary-color);
+        }
+
+        .episodio-visto.visto:hover i {
             color: #000;
         }
         .episodio.playing {
@@ -642,88 +727,225 @@
             }
         }
 
-        /* Mantener los estilos originales para PC (min-width: 769px) */
+        /* Estilos para PC (min-width: 769px) */
         @media (min-width: 769px) {
             .container {
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: 70% 30%;
                 gap: 20px;
-            }
-
-            .container.con-diseno-lateral {
-                flex-direction: row;
+                padding: 20px;
+                max-width: 1800px;
+                margin: 0 auto;
+                height: calc(100vh - 350px);
+                position: relative;
             }
 
             .episodios-player {
                 width: 100%;
-                max-width: 100%;
+                height: 100%;
                 margin: 0;
-            }
-
-            .container.con-diseno-lateral .episodios-player {
-                flex: 1;
-                max-width: 70%;
-            }
-
-            .temporadas-container {
-                width: 100%;
-                max-width: 100%;
-                margin-top: 20px;
-                height: auto;
-                overflow-y: visible;
-                position: relative;
-            }
-
-            .container.con-diseno-lateral .temporadas-container {
-                flex: 1;
-                max-width: 30%;
-                margin-top: 0;
-                height: calc(100vh - 350px);
-                overflow-y: auto;
                 position: sticky;
                 top: 20px;
             }
 
+            .episodios-player-container {
+                height: calc(100vh - 350px);
+                display: flex;
+                flex-direction: column;
+            }
+
+            .episodios-player iframe {
+                width: 100%;
+                height: calc(100vh - 350px);
+                min-height: unset;
+                border-radius: 15px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+                background: #000;
+                margin-bottom: 20px;
+            }
+
+            .temporadas-container {
+                height: calc(100vh - 350px);
+                overflow-y: auto;
+                background: rgba(0, 0, 0, 0.4);
+                border-radius: 15px;
+                padding: 15px;
+                padding-bottom: 100px;
+                border: 1px solid rgba(0, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                position: sticky;
+                top: 20px;
+            }
+
+            /* Estilos del scrollbar para PC */
             .temporadas-container::-webkit-scrollbar {
                 width: 8px;
             }
 
             .temporadas-container::-webkit-scrollbar-track {
-                background: rgba(0, 0, 0, 0.2);
+                background: rgba(0, 255, 255, 0.05);
                 border-radius: 4px;
             }
 
             .temporadas-container::-webkit-scrollbar-thumb {
                 background: var(--primary-color);
                 border-radius: 4px;
+                border: 2px solid rgba(0, 0, 0, 0.2);
             }
 
             .temporadas-container::-webkit-scrollbar-thumb:hover {
-                background: #00cccc;
+                background: #00e5e5;
+                border: 2px solid rgba(0, 0, 0, 0.3);
             }
 
-            .episodios-player iframe {
-                margin-bottom: 20px;
-                height: auto;
-                aspect-ratio: 16/9;
-                max-height: 600px;
+            /* Estilos del scrollbar para el dropdown de temporadas */
+            .temporadas-dropdown::-webkit-scrollbar {
+                width: 6px;
             }
 
-            .container.con-diseno-lateral .episodios-player iframe {
-                margin-bottom: 0;
-                height: auto;
-                max-height: 600px;
-                width: 100%;
+            .temporadas-dropdown::-webkit-scrollbar-track {
+                background: rgba(0, 255, 255, 0.05);
+                border-radius: 3px;
+            }
+
+            .temporadas-dropdown::-webkit-scrollbar-thumb {
+                background: var(--primary-color);
+                border-radius: 3px;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+            }
+
+            .temporadas-dropdown::-webkit-scrollbar-thumb:hover {
+                background: #00e5e5;
+            }
+
+            .temporada-selector {
+                position: relative;
+                margin-bottom: 15px;
+            }
+
+            .temporada-actual {
+                background: rgba(0, 255, 255, 0.1);
+                padding: 15px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid rgba(0, 255, 255, 0.2);
+                transition: all 0.3s ease;
+            }
+
+            .temporada-actual:hover {
+                background: rgba(0, 255, 255, 0.2);
+            }
+
+            .temporadas-dropdown {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.95);
+                border: 1px solid rgba(0, 255, 255, 0.2);
+                border-radius: 10px;
+                margin-top: 5px;
+                z-index: 1000;
+                display: none;
+                max-height: 300px;
+                overflow-y: auto;
+            }
+
+            .temporadas-dropdown.active {
+                display: block;
+                animation: fadeIn 0.2s ease;
+            }
+
+            .temporada-option {
+                padding: 12px 20px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .temporada-option:hover {
+                background: rgba(0, 255, 255, 0.1);
+            }
+
+            .temporada-option.selected {
+                background: rgba(0, 255, 255, 0.2);
+                color: var(--primary-color);
+            }
+
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+
+            .temporada {
+                margin-bottom: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: all 0.3s ease;
+                display: none;
+            }
+
+            .temporada.active {
+                display: block;
+            }
+
+            .episodios {
+                display: block !important;
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            .botones-control {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 20px;
+                padding-bottom: 20px;
+                position: relative;
+                bottom: 25px;
+            }
+
+            .action-button.reconectar {
+                background: rgba(0, 255, 255, 0.1);
+                border: 1px solid var(--primary-color);
+                padding: 12px 24px;
+                border-radius: 25px;
+                transition: all 0.3s ease;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                color: var(--secondary-color);
+                font-size: 0.95em;
+                cursor: pointer;
+            }
+
+            .action-button.reconectar:hover {
+                background: rgba(0, 255, 255, 0.2);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+            }
+
+            .action-button.reconectar i {
+                font-size: 1.1em;
+            }
+
+            .action-button.reconectar:active {
+                transform: translateY(0);
             }
         }
 
         .agregar-lista-btn {
-            position: absolute;
+            position: fixed;
             top: 20px;
             right: 20px;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.8);
             border: 2px solid var(--primary-color);
             color: var(--primary-color);
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 25px;
             font-size: 1rem;
             cursor: pointer;
@@ -731,12 +953,16 @@
             align-items: center;
             gap: 8px;
             transition: all 0.3s ease;
-            z-index: 10;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .agregar-lista-btn:hover {
             background: var(--primary-color);
             color: black;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
         }
 
         .agregar-lista-btn i {
@@ -1196,16 +1422,80 @@
             const temporadasContainer = document.getElementById('temporadas-container');
             temporadasContainer.innerHTML = ''; // Limpiar contenedor
 
-            serie.temporadas.forEach(temporada => {
-                const temporadaElement = document.createElement('div');
-                temporadaElement.className = 'temporada';
-                
-                temporadaElement.innerHTML = `
-                    <div class="temporada-titulo">
-                        Temporada ${temporada.numero}
+            // Crear selector de temporadas (solo para PC)
+            if (window.innerWidth >= 769) {
+                const temporadaSelector = document.createElement('div');
+                temporadaSelector.className = 'temporada-selector';
+                temporadaSelector.innerHTML = `
+                    <div class="temporada-actual">
+                        <span>Temporada 1</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="episodios" style="display: none;">
+                    <div class="temporadas-dropdown">
+                        ${serie.temporadas.map((temp, index) => `
+                            <div class="temporada-option ${index === 0 ? 'selected' : ''}" data-temporada="${temp.numero}">
+                                <span>Temporada ${temp.numero}</span>
+                                <i class="fas ${index === 0 ? 'fa-check' : ''}"></i>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                temporadasContainer.appendChild(temporadaSelector);
+
+                // Manejar eventos del selector
+                const temporadaActual = temporadaSelector.querySelector('.temporada-actual');
+                const temporadasDropdown = temporadaSelector.querySelector('.temporadas-dropdown');
+                const temporadaOptions = temporadaSelector.querySelectorAll('.temporada-option');
+
+                temporadaActual.addEventListener('click', () => {
+                    temporadasDropdown.classList.toggle('active');
+                });
+
+                // Cerrar dropdown al hacer clic fuera
+                document.addEventListener('click', (e) => {
+                    if (!temporadaSelector.contains(e.target)) {
+                        temporadasDropdown.classList.remove('active');
+                    }
+                });
+
+                temporadaOptions.forEach(option => {
+                    option.addEventListener('click', () => {
+                        const tempNumero = option.dataset.temporada;
+                        
+                        // Actualizar selector
+                        temporadaActual.querySelector('span').textContent = `Temporada ${tempNumero}`;
+                        temporadaOptions.forEach(opt => {
+                            opt.classList.remove('selected');
+                            opt.querySelector('i').className = 'fas';
+                        });
+                        option.classList.add('selected');
+                        option.querySelector('i').className = 'fas fa-check';
+                        
+                        // Mostrar temporada seleccionada
+                        document.querySelectorAll('.temporada').forEach(temp => {
+                            temp.classList.remove('active');
+                        });
+                        document.querySelector(`.temporada[data-numero="${tempNumero}"]`).classList.add('active');
+                        
+                        temporadasDropdown.classList.remove('active');
+                    });
+                });
+            }
+
+            // Crear contenedor de temporadas
+            serie.temporadas.forEach((temporada, index) => {
+                const temporadaElement = document.createElement('div');
+                temporadaElement.className = `temporada ${index === 0 ? 'active' : ''}`;
+                temporadaElement.setAttribute('data-numero', temporada.numero);
+                
+                temporadaElement.innerHTML = `
+                    ${window.innerWidth < 769 ? `
+                        <div class="temporada-titulo">
+                            Temporada ${temporada.numero}
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    ` : ''}
+                    <div class="episodios" style="${window.innerWidth < 769 ? 'display: none;' : ''}">
                         ${temporada.episodios.map(episodio => {
                             const estaVisto = esCapituloVisto(serie.id, temporada.numero, episodio.numero);
                             return `
@@ -1233,40 +1523,26 @@
                     </div>
                 `;
 
-                // Agregar eventos para marcar como visto
-                temporadaElement.addEventListener('click', (e) => {
-                    const episodioVisto = e.target.closest('.episodio-visto');
-                    if (episodioVisto) {
-                        e.stopPropagation();
-                        const episodio = episodioVisto.closest('.episodio');
-                        const serieId = episodio.dataset.serie;
-                        const temporadaNum = episodio.dataset.temporada;
-                        const episodioNum = episodio.dataset.episodio;
+                // Solo agregar eventos de expansión para móvil
+                if (window.innerWidth < 769) {
+                    const tituloTemporada = temporadaElement.querySelector('.temporada-titulo');
+                    tituloTemporada.addEventListener('click', () => {
+                        const episodios = temporadaElement.querySelector('.episodios');
+                        const estaActivo = temporadaElement.classList.contains('active');
                         
-                        const estaVisto = toggleCapituloVisto(serieId, temporadaNum, episodioNum);
-                        episodio.classList.toggle('visto', estaVisto);
-                        episodioVisto.classList.toggle('visto', estaVisto);
-                    }
-                });
+                        // Cerrar todas las temporadas
+                        document.querySelectorAll('.temporada').forEach(t => {
+                            t.classList.remove('active');
+                            t.querySelector('.episodios').style.display = 'none';
+                        });
 
-                // Agregar evento click para expandir/colapsar temporada
-                const tituloTemporada = temporadaElement.querySelector('.temporada-titulo');
-                tituloTemporada.addEventListener('click', () => {
-                    const episodios = temporadaElement.querySelector('.episodios');
-                    const estaActivo = temporadaElement.classList.contains('active');
-                    
-                    // Cerrar todas las temporadas
-                    document.querySelectorAll('.temporada').forEach(t => {
-                        t.classList.remove('active');
-                        t.querySelector('.episodios').style.display = 'none';
+                        // Abrir/cerrar la temporada actual
+                        if (!estaActivo) {
+                            temporadaElement.classList.add('active');
+                            episodios.style.display = 'block';
+                        }
                     });
-
-                    // Abrir/cerrar la temporada actual
-                    if (!estaActivo) {
-                        temporadaElement.classList.add('active');
-                        episodios.style.display = 'block';
-                    }
-                });
+                }
 
                 temporadasContainer.appendChild(temporadaElement);
             });
