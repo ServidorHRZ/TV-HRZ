@@ -592,12 +592,14 @@
       "nuevo": false,
       "año": 2006,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9OYC68a3NH5ySyTBjLQDzxhApMi.jpg&w=256&q=75",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BMTQ2NTMxODEyNV5BMl5BanBnXkFtZTcwMDgxMjA0MQ@@._V1_.jpg",
       "enlace": "https://fastream.to/embed-vvv7p1l8znyd.html",
-      "descripcion": "Un adolescente problemático se muda a Tokio y se adentra en el mundo del drift racing. Deberá perfeccionar sus habilidades de conducción mientras enfrenta los peligros de la escena de carreras underground."
+      "descripcion": "Un adolescente problemático se muda a Tokio y se adentra en el mundo del drift racing. Deberá perfeccionar sus habilidades de conducción mientras enfrenta los peligros de la escena de carreras underground.",
+      "badge": "",
+      "trailer": "https://youtu.be/gj2zGDVoBkI?si=8jyeGosj2RbyLrrM"
     },
     {
       "id": 46,
