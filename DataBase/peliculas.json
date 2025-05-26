@@ -640,12 +640,14 @@
       "nuevo": false,
       "año": 2013,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F6zUkjB5OtiFhN2DiqdT1IllNJTa.jpg&w=256&q=75g",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_.jpg",
       "enlace": "https://fastream.to/embed-mmwr1ibs3jzh.html",
-      "descripcion": "Hobbs recluta a Dom y su equipo para ayudar a detener una organización de mercenarios letales. A cambio, recibirán el perdón total por sus crímenes pasados."
+      "descripcion": "Hobbs recluta a Dom y su equipo para ayudar a detener una organización de mercenarios letales. A cambio, recibirán el perdón total por sus crímenes pasados.",
+      "badge": "",
+      "trailer": "https://youtu.be/FltUYVLZEao?si=RGO6A8J5HS-difcG"
     },
     {
       "id": 49,
