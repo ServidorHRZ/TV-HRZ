@@ -624,12 +624,14 @@
       "nuevo": false,
       "año": 2011,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FmtRhCiT4hZzaP6c3DJqec1Jjm0i.jpg&w=256&q=75",
+      "imagen": "https://images.justwatch.com/poster/176283998/s718/fast-y-furious-5.jpg",
       "enlace": "https://fastream.to/embed-c83w0vh5tt7s.html",
-      "descripcion": "Dom y su equipo planean un último gran robo en Río de Janeiro mientras son perseguidos por un implacable agente federal y un poderoso señor del crimen."
+      "descripcion": "Dom y su equipo planean un último gran robo en Río de Janeiro mientras son perseguidos por un implacable agente federal y un poderoso señor del crimen.",
+      "badge": "",
+      "trailer": "https://youtu.be/uBmnUB4TOWQ?si=VGO3iSD2YSHGGNmf"
     },
     {
       "id": 48,
