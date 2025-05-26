@@ -2139,8 +2139,8 @@
       "id": 1748212627248,
       "titulo": "Harry Potter y la piedra filosofal",
       "disponible": true,
-      "nuevo": false,
-      "badge": "",
+      "nuevo": true,
+      "badge": "Recién agregado",
       "año": 2001,
       "trailer": "https://youtu.be/tXRXEqd5AhQ?si=ZB3ExxYNqYjilh0h",
       "genero": [
