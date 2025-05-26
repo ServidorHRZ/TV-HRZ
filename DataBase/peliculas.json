@@ -608,12 +608,14 @@
       "nuevo": false,
       "año": 2009,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fb4oE1Bw6KmON4qNIfjgJbVYkOWZ.jpg&w=256&q=75",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BZDQzMTEzYzktNjhjNC00N2IwLWIzN2ItMGQ1MjBkNGNhY2VmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "enlace": "https://fastream.to/embed-19q5gkaqjphe.html",
-      "descripcion": "Dominic Toretto y Brian O'Conner vuelven a unir fuerzas para enfrentarse a un traficante de drogas mientras buscan venganza por la muerte de un ser querido."
+      "descripcion": "Dominic Toretto y Brian O'Conner vuelven a unir fuerzas para enfrentarse a un traficante de drogas mientras buscan venganza por la muerte de un ser querido.",
+      "badge": "",
+      "trailer": "https://youtu.be/_ixlOH9EzL4?si=V5sQztXlWW5vAV3m"
     },
     {
       "id": 47,
