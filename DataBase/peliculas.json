@@ -2214,8 +2214,8 @@
       "id": 1748232655697,
       "titulo": "Harry Potter y el prisionero de Azkaban",
       "disponible": true,
-      "nuevo": false,
-      "badge": "",
+      "nuevo": true,
+      "badge": "Recién agregado",
       "año": 2004,
       "trailer": "https://youtu.be/boD5ojmUgHY?si=ox_kmhwncrcqt0fg",
       "genero": [
