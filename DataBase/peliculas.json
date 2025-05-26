@@ -656,12 +656,14 @@
       "nuevo": false,
       "año": 2015,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F4eU34MXsBECZPU52BpjMiUMIwBR.jpg&w=256&q=75",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BMTQxOTA2NDUzOV5BMl5BanBnXkFtZTgwNzY2MTMxMzE@._V1_.jpg",
       "enlace": "https://fastream.to/embed-lkpnq954rvrb.html",
-      "descripcion": "El equipo enfrenta a Deckard Shaw, quien busca venganza por su hermano. La familia deberá unirse una vez más para protegerse mutuamente."
+      "descripcion": "El equipo enfrenta a Deckard Shaw, quien busca venganza por su hermano. La familia deberá unirse una vez más para protegerse mutuamente.",
+      "badge": "",
+      "trailer": "https://youtu.be/5knpy1naqmc?si=jmhsusK2Z-AR5U0W"
     },
     {
       "id": 50,
