@@ -498,11 +498,18 @@
       "id": 38,
       "titulo": "Henry Danger: La Película",
       "disponible": true,
-      "año": 2020,
-      "genero": "accion",
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FdTHEq2PIRAIq4COayxraiGiaajX.jpg&w=256&q=75",
+      "año": 2025,
+      "genero": [
+        "accion",
+        "familiar",
+        "comedia"
+      ],
+      "imagen": "https://m.media-amazon.com/images/M/MV5BNDg3ZjBjZmQtMmVlZC00MTJiLThjNDItZjJhMGFlYmYzZmM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "enlace": "https://drive.google.com/file/d/14vyy0LSSSfSbJhXu1Qdp-rs0fUip8kq7/preview",
-      "descripcion": "Henry Hart debe enfrentar su mayor desafío como Kid Danger cuando una amenaza llega a Swellview y pone en peligro todo lo que le importa. Con la ayuda del Capitán Man, deberá salvar la ciudad una vez más."
+      "descripcion": "Henry Hart se convierte en un héroe local en Dystopia después de dejar atrás Swellview. Cuando las trampas de la fama comienzan a pasar factura, se produce un giro con la presentación de Missy, una superfan que pone su mundo patas arriba.",
+      "nuevo": false,
+      "badge": "",
+      "trailer": "https://youtu.be/WJ5jEHazfb0?si=OvZHcxwGjpZvmVTb"
     },
     {
       "id": 39,
