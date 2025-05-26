@@ -700,12 +700,14 @@
       "nuevo": false,
       "año": 2023,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FlZRRxutZIXQSAq0mXNHdM7kPfBP.jpg&w=256&q=75",
+      "imagen": "https://www.universalpictures.com.mx/tl_files/content/movies/fastx/poster/01.jpg",
       "enlace": "https://fastream.to/embed-xpeyon4vo7si.html",
-      "descripcion": "La familia Toretto enfrenta su enemigo más letal: un vengativo hijo que culpa a Dom por la muerte de su padre. Con nuevos y viejos aliados, deberán detener una amenaza que podría destruirlo todo."
+      "descripcion": "La familia Toretto enfrenta su enemigo más letal: un vengativo hijo que culpa a Dom por la muerte de su padre. Con nuevos y viejos aliados, deberán detener una amenaza que podría destruirlo todo.",
+      "badge": "",
+      "trailer": "https://youtu.be/O5BOxn8Go8U?si=SVF7Gw7Ra7_UiH2l"
     },
     {
       "id": 53,
