@@ -2154,8 +2154,8 @@
       "id": 1748213296367,
       "titulo": "Harry Potter y la cámara de los secretos",
       "disponible": true,
-      "nuevo": false,
-      "badge": "",
+      "nuevo": true,
+      "badge": "Recién agregado",
       "año": 2002,
       "trailer": "https://youtu.be/C8CL5TbiFwY?si=zc-Sy-1kN_UHwLUA",
       "genero": [
