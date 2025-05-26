@@ -575,12 +575,15 @@
       "disponible": true,
       "año": 2003,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FfZtSG5a6i5Ca39WQylLVmvWI5b.jpg&w=256&q=75",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BOTQzYzEwNWMtOTAwYy00YWYwLWE1NTEtZTkxOGQxZTM0M2VhXkEyXkFqcGc@._V1_.jpg",
       "enlace": "https://fastream.to/embed-eaxmrzzqq76m.html",
-      "descripcion": "Brian OConner se une a su amigo Roman Pearce para infiltrarse en una organización criminal en Miami. Deberán usar sus habilidades de conducción para desmantelar un peligroso cartel."
+      "descripcion": "Brian OConner se une a su amigo Roman Pearce para infiltrarse en una organización criminal en Miami. Deberán usar sus habilidades de conducción para desmantelar un peligroso cartel.",
+      "nuevo": false,
+      "badge": "",
+      "trailer": "https://youtu.be/8gf7FEmBDDA?si=pvhGn-sHIEMBnuPZ"
     },
     {
       "id": 45,
