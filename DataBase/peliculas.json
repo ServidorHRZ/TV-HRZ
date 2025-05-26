@@ -498,11 +498,18 @@
       "id": 38,
       "titulo": "Henry Danger: La Película",
       "disponible": true,
-      "año": 2020,
-      "genero": "accion",
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FdTHEq2PIRAIq4COayxraiGiaajX.jpg&w=256&q=75",
+      "año": 2025,
+      "genero": [
+        "accion",
+        "familiar",
+        "comedia"
+      ],
+      "imagen": "https://m.media-amazon.com/images/M/MV5BNDg3ZjBjZmQtMmVlZC00MTJiLThjNDItZjJhMGFlYmYzZmM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "enlace": "https://drive.google.com/file/d/14vyy0LSSSfSbJhXu1Qdp-rs0fUip8kq7/preview",
-      "descripcion": "Henry Hart debe enfrentar su mayor desafío como Kid Danger cuando una amenaza llega a Swellview y pone en peligro todo lo que le importa. Con la ayuda del Capitán Man, deberá salvar la ciudad una vez más."
+      "descripcion": "Henry Hart se convierte en un héroe local en Dystopia después de dejar atrás Swellview. Cuando las trampas de la fama comienzan a pasar factura, se produce un giro con la presentación de Missy, una superfan que pone su mundo patas arriba.",
+      "nuevo": false,
+      "badge": "",
+      "trailer": "https://youtu.be/WJ5jEHazfb0?si=OvZHcxwGjpZvmVTb"
     },
     {
       "id": 39,
@@ -552,12 +559,15 @@
       "disponible": true,
       "año": 2001,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrCdEN70nBLJfrzE7NwPtCSxjjrA.jpg&w=256&q=75",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BZDU0Yjk5MTctZDI3OS00YmM4LWIxOTMtYTU2NjYyYzdkMWJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "enlace": "https://drive.google.com/file/d/18IpwJ4_jxq7yrF0d8qz0YJEITQHqw0o6/preview",
-      "descripcion": "Un policía encubierto se infiltra en una banda de carreras callejeras ilegales para investigar una serie de robos. Sin embargo, se encuentra dividido entre su deber y la lealtad que desarrolla con el líder de la banda."
+      "descripcion": "Un policía encubierto se infiltra en una banda de carreras callejeras ilegales para investigar una serie de robos. Sin embargo, se encuentra dividido entre su deber y la lealtad que desarrolla con el líder de la banda.",
+      "nuevo": false,
+      "badge": "",
+      "trailer": "https://youtu.be/-oJHZre7XZY?si=bnx8G8Fy9w9yNKFM"
     },
     {
       "id": 44,
@@ -565,12 +575,15 @@
       "disponible": true,
       "año": 2003,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FfZtSG5a6i5Ca39WQylLVmvWI5b.jpg&w=256&q=75",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BOTQzYzEwNWMtOTAwYy00YWYwLWE1NTEtZTkxOGQxZTM0M2VhXkEyXkFqcGc@._V1_.jpg",
       "enlace": "https://fastream.to/embed-eaxmrzzqq76m.html",
-      "descripcion": "Brian OConner se une a su amigo Roman Pearce para infiltrarse en una organización criminal en Miami. Deberán usar sus habilidades de conducción para desmantelar un peligroso cartel."
+      "descripcion": "Brian OConner se une a su amigo Roman Pearce para infiltrarse en una organización criminal en Miami. Deberán usar sus habilidades de conducción para desmantelar un peligroso cartel.",
+      "nuevo": false,
+      "badge": "",
+      "trailer": "https://youtu.be/8gf7FEmBDDA?si=pvhGn-sHIEMBnuPZ"
     },
     {
       "id": 45,
@@ -579,12 +592,14 @@
       "nuevo": false,
       "año": 2006,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F9OYC68a3NH5ySyTBjLQDzxhApMi.jpg&w=256&q=75",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BMTQ2NTMxODEyNV5BMl5BanBnXkFtZTcwMDgxMjA0MQ@@._V1_.jpg",
       "enlace": "https://fastream.to/embed-vvv7p1l8znyd.html",
-      "descripcion": "Un adolescente problemático se muda a Tokio y se adentra en el mundo del drift racing. Deberá perfeccionar sus habilidades de conducción mientras enfrenta los peligros de la escena de carreras underground."
+      "descripcion": "Un adolescente problemático se muda a Tokio y se adentra en el mundo del drift racing. Deberá perfeccionar sus habilidades de conducción mientras enfrenta los peligros de la escena de carreras underground.",
+      "badge": "",
+      "trailer": "https://youtu.be/gj2zGDVoBkI?si=8jyeGosj2RbyLrrM"
     },
     {
       "id": 46,
@@ -593,12 +608,14 @@
       "nuevo": false,
       "año": 2009,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fb4oE1Bw6KmON4qNIfjgJbVYkOWZ.jpg&w=256&q=75",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BZDQzMTEzYzktNjhjNC00N2IwLWIzN2ItMGQ1MjBkNGNhY2VmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "enlace": "https://fastream.to/embed-19q5gkaqjphe.html",
-      "descripcion": "Dominic Toretto y Brian O'Conner vuelven a unir fuerzas para enfrentarse a un traficante de drogas mientras buscan venganza por la muerte de un ser querido."
+      "descripcion": "Dominic Toretto y Brian O'Conner vuelven a unir fuerzas para enfrentarse a un traficante de drogas mientras buscan venganza por la muerte de un ser querido.",
+      "badge": "",
+      "trailer": "https://youtu.be/_ixlOH9EzL4?si=V5sQztXlWW5vAV3m"
     },
     {
       "id": 47,
@@ -607,12 +624,14 @@
       "nuevo": false,
       "año": 2011,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FmtRhCiT4hZzaP6c3DJqec1Jjm0i.jpg&w=256&q=75",
+      "imagen": "https://images.justwatch.com/poster/176283998/s718/fast-y-furious-5.jpg",
       "enlace": "https://fastream.to/embed-c83w0vh5tt7s.html",
-      "descripcion": "Dom y su equipo planean un último gran robo en Río de Janeiro mientras son perseguidos por un implacable agente federal y un poderoso señor del crimen."
+      "descripcion": "Dom y su equipo planean un último gran robo en Río de Janeiro mientras son perseguidos por un implacable agente federal y un poderoso señor del crimen.",
+      "badge": "",
+      "trailer": "https://youtu.be/uBmnUB4TOWQ?si=VGO3iSD2YSHGGNmf"
     },
     {
       "id": 48,
@@ -621,12 +640,14 @@
       "nuevo": false,
       "año": 2013,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F6zUkjB5OtiFhN2DiqdT1IllNJTa.jpg&w=256&q=75g",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_.jpg",
       "enlace": "https://fastream.to/embed-mmwr1ibs3jzh.html",
-      "descripcion": "Hobbs recluta a Dom y su equipo para ayudar a detener una organización de mercenarios letales. A cambio, recibirán el perdón total por sus crímenes pasados."
+      "descripcion": "Hobbs recluta a Dom y su equipo para ayudar a detener una organización de mercenarios letales. A cambio, recibirán el perdón total por sus crímenes pasados.",
+      "badge": "",
+      "trailer": "https://youtu.be/FltUYVLZEao?si=RGO6A8J5HS-difcG"
     },
     {
       "id": 49,
@@ -635,12 +656,14 @@
       "nuevo": false,
       "año": 2015,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F4eU34MXsBECZPU52BpjMiUMIwBR.jpg&w=256&q=75",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BMTQxOTA2NDUzOV5BMl5BanBnXkFtZTgwNzY2MTMxMzE@._V1_.jpg",
       "enlace": "https://fastream.to/embed-lkpnq954rvrb.html",
-      "descripcion": "El equipo enfrenta a Deckard Shaw, quien busca venganza por su hermano. La familia deberá unirse una vez más para protegerse mutuamente."
+      "descripcion": "El equipo enfrenta a Deckard Shaw, quien busca venganza por su hermano. La familia deberá unirse una vez más para protegerse mutuamente.",
+      "badge": "",
+      "trailer": "https://youtu.be/5knpy1naqmc?si=jmhsusK2Z-AR5U0W"
     },
     {
       "id": 50,
@@ -677,12 +700,14 @@
       "nuevo": false,
       "año": 2023,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FlZRRxutZIXQSAq0mXNHdM7kPfBP.jpg&w=256&q=75",
+      "imagen": "https://www.universalpictures.com.mx/tl_files/content/movies/fastx/poster/01.jpg",
       "enlace": "https://fastream.to/embed-xpeyon4vo7si.html",
-      "descripcion": "La familia Toretto enfrenta su enemigo más letal: un vengativo hijo que culpa a Dom por la muerte de su padre. Con nuevos y viejos aliados, deberán detener una amenaza que podría destruirlo todo."
+      "descripcion": "La familia Toretto enfrenta su enemigo más letal: un vengativo hijo que culpa a Dom por la muerte de su padre. Con nuevos y viejos aliados, deberán detener una amenaza que podría destruirlo todo.",
+      "badge": "",
+      "trailer": "https://youtu.be/O5BOxn8Go8U?si=SVF7Gw7Ra7_UiH2l"
     },
     {
       "id": 53,
@@ -1081,10 +1106,15 @@
       "titulo": "Toy Story 4",
       "disponible": true,
       "año": 2019,
-      "genero": "animacion",
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FyF1vPDuHVrAUMX5dy1tVMbAjkEL.jpg&w=256&q=75",
+      "genero": [
+        "animacion"
+      ],
+      "imagen": "https://pics.filmaffinity.com/toy_story_4-462756582-large.jpg",
       "enlace": "https://drive.google.com/file/d/1ZF8rHpWopwkRGcniZoJ-dEi9vaOVVsmb/preview",
-      "descripcion": "Woody, Buzz y el resto de la pandilla se embarcan en un viaje por carretera con Bonnie y un nuevo juguete llamado Forky. La aventura se convierte en una reunión inesperada cuando Woody se encuentra con su vieja amiga Bo Peep."
+      "descripcion": "Woody siempre ha tenido claro cuál es su labor en el mundo y cuál es su prioridad: cuidar a su dueño, ya sea Andy o Bonnie. Sin embargo, Woody descubrirá lo grande que puede ser el mundo para un juguete cuando Forky se convierta en su nuevo compañero de habitación. Los juguetes se embarcarán en una aventura de la que no se olvidarán jamás.",
+      "nuevo": false,
+      "badge": "",
+      "trailer": "https://youtu.be/JfHU2qYfHkk?si=1BW9TFPrcDHcYR2y"
     },
     {
       "id": 90,
@@ -2103,7 +2133,243 @@
       "imagen": "https://m.media-amazon.com/images/M/MV5BMjQ3MzNlOTEtNGU5ZS00ODI0LTgxNDctMjA4MTUxMjY4NTU0XkEyXkFqcGc@._V1_.jpg",
       "enlace": "https://fastream.to/embed-x8743te8qgqv.html",
       "descripcion": "En Misión Imposible: Sentencia Final, Ethan Hunt y su equipo del FMI se embarcan en su misión más peligrosa hasta la fecha: localizar una nueva y terrorífica arma que amenaza a toda la humanidad antes de que caiga en las manos equivocadas. Con el control del futuro y el destino del mundo en juego, y las fuerzas oscuras del pasado de Ethan acercándose, comienza una carrera mortal alrededor del mundo."
+    },
+    {
+      "id": 1748137405014,
+      "titulo": "Upgrade: Máquina asesina",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2018,
+      "trailer": "https://www.youtube.com/watch?v=GWkDKAgvEpE",
+      "genero": [
+        "programacion"
+      ],
+      "imagen": "https://image.tmdb.org/t/p/original/nzyTr6SOmLgQxKTGpqS2bDNd4nE.jpg",
+      "enlace": "https://fastream.to/embed-5egn8qa40cd1.html",
+      "descripcion": "Tras ver cómo su mujer es asesinada tras un accidente que le deja parapléjico, un hombre se somete a una operación que le permite volver a caminar para así poder vengar a su esposa."
+    },
+    {
+      "id": 1748139207377,
+      "titulo": "Battleship Batalla Naval",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2012,
+      "trailer": "https://youtu.be/vxyeK3_BCuE?si=Z6wCZAtuIZ9xKWR3",
+      "genero": [
+        "accion",
+        "suspenso"
+      ],
+      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/e923a3d5dcbc2a98983adfa2c87fec66106853498f58be98830d232fa5cf130e.jpg",
+      "enlace": "https://fastream.to/embed-qs8w0zuodjub.html",
+      "descripcion": "la batalla será entre la U.S. Navy y… ¡una flota alienígena! La historia nos propone una épica aventura de acción que transcurre en el mar, el cielo y la tierra, y en la que nuestro planeta lucha por sobrevivir contra una fuerza muy superior. Un oficial de la Marina destinado al John Paul Jones; Sam Shane, una fisioterapeuta de la Marina y novia de Hopper; Stone el hermano mayor de Hopper y comandante del Samson; la suboficial Raikes, especialista en armas del John Paul Jones; y el almirante Shane, el oficial superior de Hopper y Stone (y padre de Sam)."
+    },
+    {
+      "id": 1748212627248,
+      "titulo": "Harry Potter y la piedra filosofal",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2001,
+      "trailer": "https://youtu.be/tXRXEqd5AhQ?si=ZB3ExxYNqYjilh0h",
+      "genero": [
+        "accion",
+        "ciencia_ficcion"
+      ],
+      "imagen": "https://www.bizcochito.es/img/tt0241527-en-pos.webp",
+      "enlace": "https://fastream.to/embed-qmzh6kug0z27.html",
+      "descripcion": "El día en que cumple once años, Harry Potter se entera de que es hijo de dos destacados hechiceros, de los que ha heredado poderes mágicos. En la escuela Hogwarts de Magia y Hechicería, donde se educa con otros niños que también tienen poderes especiales, aprenderá todo lo necesario para ser mago."
+    },
+    {
+      "id": 1748213296367,
+      "titulo": "Harry Potter y la cámara de los secretos",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2002,
+      "trailer": "https://youtu.be/C8CL5TbiFwY?si=zc-Sy-1kN_UHwLUA",
+      "genero": [
+        "accion",
+        "ciencia_ficcion"
+      ],
+      "imagen": "https://image.tmdb.org/t/p/w780/bhCfAzeMMg7GyLDT11yVM2i1NPh.jpg",
+      "enlace": "https://fastream.to/embed-4dq5q9ker2cl.html",
+      "descripcion": "Terminado el verano, Harry (Radcliffe) no ve la hora de abandonar la casa de sus odiosos tíos, pero, inesperadamente se presenta en su dormitorio Dobby, un elfo doméstico, que le anuncia que correrá un gran peligro si vuelve a Hogwarts. A pesar de los esfuerzos del elfo por retenerlo, Harry es rescatado por Ron y sus hermanos, con la ayuda de un coche volador, y recibido con los brazos abiertos en el cálido hogar de los Weasley."
+    },
+    {
+      "id": 1748214022033,
+      "titulo": "GUASÓN",
+      "disponible": false,
+      "nuevo": false,
+      "badge": "",
+      "año": 2019,
+      "trailer": "https://youtu.be/TobNCFMK_bs?si=b7uoXi-8cMNIdxG8",
+      "genero": [
+        "dc"
+      ],
+      "imagen": "https://th.bing.com/th/id/OIP.pFU8KGm9FP9yLMt3_cqMXAHaJQ?cb=iwp2&rs=1&pid=ImgDetMain",
+      "enlace": "https://uqload.net/embed-10zu89q59iqr.html",
+      "descripcion": "Arthur Fleck es un hombre ignorado por la sociedad, cuya motivación en la vida es hacer reír. Pero una serie de trágicos acontecimientos le llevarán a ver el mundo de otra forma. Película basada en el popular personaje de DC Comics Joker, conocido como archivillano de Batman, pero que en este film tomará un cariz más realista y oscuro."
+    },
+    {
+      "id": 1748214026198,
+      "titulo": "GUASÓN",
+      "disponible": false,
+      "nuevo": false,
+      "badge": "",
+      "año": 2019,
+      "trailer": "https://youtu.be/TobNCFMK_bs?si=b7uoXi-8cMNIdxG8",
+      "genero": [
+        "dc"
+      ],
+      "imagen": "https://th.bing.com/th/id/OIP.pFU8KGm9FP9yLMt3_cqMXAHaJQ?cb=iwp2&rs=1&pid=ImgDetMain",
+      "enlace": "https://uqload.net/embed-10zu89q59iqr.html",
+      "descripcion": "Arthur Fleck es un hombre ignorado por la sociedad, cuya motivación en la vida es hacer reír. Pero una serie de trágicos acontecimientos le llevarán a ver el mundo de otra forma. Película basada en el popular personaje de DC Comics Joker, conocido como archivillano de Batman, pero que en este film tomará un cariz más realista y oscuro."
+    },
+    {
+      "id": 1748214027294,
+      "titulo": "GUASÓN",
+      "disponible": false,
+      "nuevo": false,
+      "badge": "",
+      "año": 2019,
+      "trailer": "https://youtu.be/TobNCFMK_bs?si=b7uoXi-8cMNIdxG8",
+      "genero": [
+        "dc"
+      ],
+      "imagen": "https://th.bing.com/th/id/OIP.pFU8KGm9FP9yLMt3_cqMXAHaJQ?cb=iwp2&rs=1&pid=ImgDetMain",
+      "enlace": "https://uqload.net/embed-10zu89q59iqr.html",
+      "descripcion": "Arthur Fleck es un hombre ignorado por la sociedad, cuya motivación en la vida es hacer reír. Pero una serie de trágicos acontecimientos le llevarán a ver el mundo de otra forma. Película basada en el popular personaje de DC Comics Joker, conocido como archivillano de Batman, pero que en este film tomará un cariz más realista y oscuro."
+    },
+    {
+      "id": 1748232655697,
+      "titulo": "Harry Potter y el prisionero de Azkaban",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2004,
+      "trailer": "https://youtu.be/boD5ojmUgHY?si=ox_kmhwncrcqt0fg",
+      "genero": [
+        "accion",
+        "ciencia_ficcion"
+      ],
+      "imagen": "https://www.bizcochito.es/img/tt0304141-es-pos.webp",
+      "enlace": "https://fastream.to/embed-miv7s13mchss.html",
+      "descripcion": "Cuando Harry Potter y sus amigos vuelven a Hogwarts para cursar su tercer año de estudios, se ven involucrados en un misterio: de la prisión para magos de Azkaban se ha fugado Sirius Black, un peligroso mago que fue cómplice de Lord Voldemort y que intentará vengarse de Harry Potter. El joven aprendiz de mago contribuyó en gran medida a la condena de Sirius, por lo que hay razones para temer por su vida."
+    },
+    {
+      "id": 1748233077571,
+      "titulo": "Harry Potter y el cáliz de fuego",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2005,
+      "trailer": "https://youtu.be/AUMOURumGSo?si=mnXYGdgtBLpzZQrw",
+      "genero": [
+        "accion",
+        "ciencia_ficcion"
+      ],
+      "imagen": "https://musicart.xboxlive.com/7/21e15000-0000-0000-0000-000000000002/504/image.jpg",
+      "enlace": "https://fastream.to/embed-ewko8o7573oh.html",
+      "descripcion": "Ha transcurrido otro verano con la familia Dursley y Harry está muy ansioso de volver a su cuarto curso en la escuela de magia y hechicería de Hogwarts. Ya con catorce años, Harry y sus amigos tienen una larga experiencia en combates y hechizos. Pero este año les espera una gran sorpresa. Este año se celebra en Hogwarts el Torneo de los Tres Magos. Allí se elegirá el campeón de los tres colegios de magia más conocidos."
+    },
+    {
+      "id": 1748233358114,
+      "titulo": "Harry Potter y la Orden del Fénix",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2007,
+      "trailer": "https://youtu.be/L33W2CwZSW0?si=pwohj7ZNDKGcMV2q",
+      "genero": [
+        "accion",
+        "ciencia_ficcion"
+      ],
+      "imagen": "https://m.media-amazon.com/images/I/91sAY-HWYpL.jpg",
+      "enlace": "https://fastream.to/embed-sdo7tre46pye.html",
+      "descripcion": "Harry regresa a Hogwarts para realizar su quinto año de escuela. Pero lo que pronto descubre es que la comunidad mágica no cree que haya tenido un encuentro con Lord Voldemort. Es así que han ignorado todas las alertas del profesor Dumbledore. A raíz de esto el Ministerio de Magia, dirigido por Cornelius Fudge, ha designado una profesora especial para Hogwarts. Ella es Dolores Umbridge y ella tomará la asignatura de defensa contra las magias oscuras. Nuevas reglas se deben aplicar en el colegio y los chicos se ven totalmente desprotegidos con las nuevas prohibiciones."
+    },
+    {
+      "id": 1748233652090,
+      "titulo": "Harry Potter y el misterio del príncipe",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2009,
+      "trailer": "https://youtu.be/8bgLXigzeso?si=8-GIPXx7-t2YoyV5",
+      "genero": [
+        "accion",
+        "ciencia_ficcion"
+      ],
+      "imagen": "https://musicart.xboxlive.com/7/31e15000-0000-0000-0000-000000000002/504/image.jpg",
+      "enlace": "https://fastream.to/embed-44tu0umx1dfy.html",
+      "descripcion": "El mundo muggle se encuentra en su peor momento, ya que acontecimientos extraños están pasando, que involucran al mundo mágico. En medio de este caos Harry comienza su sexto curso en Hogwarts y es elegido como capitán de Quidditch, ahora su año está totalmente repleto de partidos, chicas y exámenes. Además de sus tareas escolares Dumbledore tiene pensado preparar a Harry para combatir en esta próxima batalla. Ahora juntos deben buscar la forma de conseguir un oscuro secreto que está relacionado con el señor tenebroso, pero está bloqueado por el profesor Slughorn."
+    },
+    {
+      "id": 1748233924672,
+      "titulo": "Harry Potter y las Reliquias de la Muerte - Parte 1",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2010,
+      "trailer": "https://youtu.be/WsJ9LDIX7ic?si=0NPexzu5yf9KD7kv",
+      "genero": [
+        "accion",
+        "ciencia_ficcion"
+      ],
+      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/d41d911189bb4b7ce08ce980e2ea187dbfca3e600d42a860f191345ddcc1efef.jpg",
+      "enlace": "https://fastream.to/embed-jnmxpwqhektl.html",
+      "descripcion": "Las aventuras de Harry y sus amigos están llegando al final, luego de la partida del profesor Dumbledore les toca a los chicos continuar con la búsqueda de los Horrocruxes. Esta es la estrategia que los chicos deben completar para poder derrotar al Señor Tenebroso. Ahora no cuentan con la protección del profesor y las fuerzas oscuras amenazan con separarlos. El mundo mágico ahora es un lugar peligroso y todos son seguidores del Señor Tenebroso. Los mortífagos están adueñados del Ministerio de Magia, al igual que Hogwarts en las manos de Snape. Harry se ha vuelto en el indeseado número 1. Por lo que tiene una orden de captura y deben llevarlo vivo ante Voldemort. Lo único que podría ayudar al mundo mágico es que los chicos encuentren el resto de los Horrocruxes."
+    },
+    {
+      "id": 1748234104797,
+      "titulo": "Harry Potter y las Reliquias de la Muerte - Parte 2",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2011,
+      "trailer": "https://youtu.be/-kDonIIXuqo?si=SLhPyZphm-WC706n",
+      "genero": [
+        "accion",
+        "ciencia_ficcion"
+      ],
+      "imagen": "https://musicart.xboxlive.com/7/44e15000-0000-0000-0000-000000000002/504/image.jpg",
+      "enlace": "https://fastream.to/embed-vlk7fyw5fi46.html",
+      "descripcion": "Harry, Ron y Hermione siguen en la búsqueda de los Horrocruxes, siendo una tarea más difícil de lo que imaginaban. La presencia de el que no debe ser nombrado poco a poco se va debilitando, dejando una oportunidad remota para acabar con él. Ahora solo quedan cuatro objetos por conseguir ,pero ninguno sabe dónde puedan estar. Los tres jóvenes magos consiguen una pista de un horrocrux, la copa de Helga Hufflepuff, que está escondida en Gringotts. Por lo que elaboran un plan con la ayuda de un duende para conseguirlo. Los siguientes son la Diadema de Rowena Ravenclaw y Nagini, pero para ello deben volver a la escuela Hogwarts. Allí encuentran más aliados que están dispuestos a comenzar la gran batalla. Luego de una larga búsqueda y pelea, Harry descubrió que el último Horrocrux se encuentra dentro de él. Es así que decide entregar su propia vida para salvar a los suyo. Ahora debe pelear con el propio Voldemort para decidir el futuro del mundo mágico."
+    },
+    {
+      "id": 1748236465832,
+      "titulo": "The LEGO Batman Movie",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2017,
+      "trailer": "https://youtu.be/5f1Mh5X9ncI?si=BUf-abH-W4ssnPAt",
+      "genero": [
+        "familiar",
+        "dc",
+        "animacion"
+      ],
+      "imagen": "https://www.originalfilmart.com/cdn/shop/files/lego_batman_movie_2017_advance_original_film_art_c2c3787b-1c80-4fd8-a708-dbed08ff1c85.webp?v=1744401519&width=1200",
+      "enlace": "https://fastream.to/embed-firjmvbglior.html",
+      "descripcion": "El irreverente espíritu de diversión que convirtió a La LEGO película en un fenómeno mundial, con el mismo hombre que lidera tal grupo, LEGO Batman, que protagoniza su primera aventura en la gran pantalla. Pero se están produciendo cambios en Gotham, y si quiere salvar a la ciudad de la hostil conquista de El Joker, puede que tenga que dejar de actuar en solitario, intentar trabajar con otros y, tal vez, aprender a relajarse. Will Arnett repite protagonismo desde La LEGO película como la voz de LEGO Batman, también conocido como Bruce Wayne, Zach Galifianakis (El tour de los Muppets, las películas de Resacón en Las Vegas) en el papel de El Joker; Michael Cera (Arrested Development) como el huérfano Dick Grayson; Rosario Dawson (Daredevil) como Barbara Gordon; y Ralph Fiennes (las películas de Harry Potter) como Alfred."
+    },
+    {
+      "id": 1748236838121,
+      "titulo": "Justice League: The Flashpoint Paradox",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2013,
+      "trailer": "https://youtu.be/1Skx2gcdZJw?si=29CrVuzEoQHaL5Bw",
+      "genero": [
+        "dc",
+        "animacion"
+      ],
+      "imagen": "https://m.media-amazon.com/images/M/MV5BMzc3Y2Q1ZTAtNjViNi00ZDljLWI3NGUtY2FjZGQ3Y2FiNjI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "enlace": "https://fastream.to/embed-qkyrrbmfvn0f.html",
+      "descripcion": "Barry Allen despierta en una realidad alternativa, donde descubre que ningun héroe de la Liga de la Justicia existe, a excepción de Batman, Aquaman y Wonder Woman; estos dos últimos tienen una enorme guerra, incluso los Atlantes de Aquaman inundaron Europa y las Amazonas conquistaron Inglaterra."
     }
   ]
 }
-
