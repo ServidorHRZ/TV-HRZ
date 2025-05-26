@@ -559,12 +559,15 @@
       "disponible": true,
       "año": 2001,
       "genero": [
-        "rapidosyfuriosos",
-        "accion"
+        "accion",
+        "rapidosyfuriosos"
       ],
-      "imagen": "https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FrCdEN70nBLJfrzE7NwPtCSxjjrA.jpg&w=256&q=75",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BZDU0Yjk5MTctZDI3OS00YmM4LWIxOTMtYTU2NjYyYzdkMWJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "enlace": "https://drive.google.com/file/d/18IpwJ4_jxq7yrF0d8qz0YJEITQHqw0o6/preview",
-      "descripcion": "Un policía encubierto se infiltra en una banda de carreras callejeras ilegales para investigar una serie de robos. Sin embargo, se encuentra dividido entre su deber y la lealtad que desarrolla con el líder de la banda."
+      "descripcion": "Un policía encubierto se infiltra en una banda de carreras callejeras ilegales para investigar una serie de robos. Sin embargo, se encuentra dividido entre su deber y la lealtad que desarrolla con el líder de la banda.",
+      "nuevo": false,
+      "badge": "",
+      "trailer": "https://youtu.be/-oJHZre7XZY?si=bnx8G8Fy9w9yNKFM"
     },
     {
       "id": 44,
