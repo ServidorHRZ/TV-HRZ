@@ -2747,6 +2747,23 @@
       "imagen": "https://m.media-amazon.com/images/M/MV5BM2JmMWMxYTQtNTMyOC00ZTM2LWI5MWYtMmY1YTZiZDg5M2M1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "enlace": "https://fastream.to/embed-7vn2sqqzunnh.html",
       "descripcion": "Especial para televisión que se ubica en el arco argumental de Dragon Ball Z. Se cuenta la historia del padre de Goku, Bardock, y su intento por salvar su planeta aunque le cueste la vida..."
+    },
+    {
+      "id": 1748487328431,
+      "titulo": "Sing 2: Ven y Canta",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2021,
+      "trailer": "https://youtu.be/HREn8iMT2vo?si=meONHccL7QSPvoc4",
+      "genero": [
+        "familiar",
+        "animacion",
+        "comedia"
+      ],
+      "imagen": "https://es.web.img2.acsta.net/pictures/21/11/08/11/02/2660783.jpg",
+      "enlace": "https://fastream.to/embed-5ek4dyi0878z.html",
+      "descripcion": "Buster Moon y su elenco de animales artistas se preparan para lanzar un deslumbrante espectáculo escénico en la capital mundial del entretenimiento. Solo hay un problema: debe convencer a la estrella de rock más solitaria del mundo de unirse a ellos."
     }
   ]
 }
