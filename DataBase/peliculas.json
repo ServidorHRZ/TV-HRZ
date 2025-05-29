@@ -2614,6 +2614,24 @@
       "imagen": "https://m.media-amazon.com/images/M/MV5BNGZkMWExNjctN2I3ZC00NDYwLTk5ODQtYWMxNTdhNmMzMDA1XkEyXkFqcGc@._V1_.jpg",
       "enlace": "https://fastream.to/embed-kqcip3ganxzl.html",
       "descripcion": "La persistencia de Gokú por rescatar el mundo, reaparece Freezer, uno de los villanos más recordados, después de que sus antiguos aliados irrumpieron en la tierra y, con las ayudas de las esferas del dragón, lo revivieran. Freezer, tan malévolo y poderoso como siempre, tiene muy claro qué hará en esta nueva vida: vengarse de los Saiyajin. La tarea, por supuesto, no le resultará sencilla, pero contará con una oleada de hombres que lo ayudarán."
+    },
+    {
+      "id": 1748484709286,
+      "titulo": "Transformers One",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2024,
+      "trailer": "https://youtu.be/APZhIJGQ7mM?si=jDHMJEB_SgOL1j9M",
+      "genero": [
+        "accion",
+        "familiar",
+        "animacion",
+        "ciencia_ficcion"
+      ],
+      "imagen": "https://xl.movieposterdb.com/24_09/2024/8864596/xl_transformers-one-movie-poster_a0e0bc0a.jpg",
+      "enlace": "https://dhcplay.com/e/jz88lgrywjqp",
+      "descripcion": "La historia jamás contada del origen de Optimus Prime y Megatron y de cómo pasaron de ser hermanos de armas que cambiaron el destino de Cybertron para siempre, a convertirse en enemigos acérrimos."
     }
   ]
 }
