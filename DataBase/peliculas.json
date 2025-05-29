@@ -2632,6 +2632,23 @@
       "imagen": "https://xl.movieposterdb.com/24_09/2024/8864596/xl_transformers-one-movie-poster_a0e0bc0a.jpg",
       "enlace": "https://dhcplay.com/e/jz88lgrywjqp",
       "descripcion": "La historia jamás contada del origen de Optimus Prime y Megatron y de cómo pasaron de ser hermanos de armas que cambiaron el destino de Cybertron para siempre, a convertirse en enemigos acérrimos."
+    },
+    {
+      "id": 1748485140864,
+      "titulo": "Robot Dreams",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2023,
+      "trailer": "https://youtu.be/0CHV_ZDlhrA?si=tVf2wG8Guy19FylU",
+      "genero": [
+        "familiar",
+        "suspenso",
+        "animacion"
+      ],
+      "imagen": "https://megustaelcine.com/wp-content/uploads/2024/02/POSTER-Mi-amigo-robot-717x1024.jpeg",
+      "enlace": "https://fastream.to/embed-pxw564rnfg44.html",
+      "descripcion": "DOG es un perro solitario que vive en Manhattan. Un día decide construirse un robot, un amigo. Su amistad crece, hasta hacerse inseparables, al ritmo del Nueva York de los ochenta. Una noche de verano, Dog con gran pena, se ve obligado a abandonar a ROBOT en la playa. ¿Volverán a encontrarse?"
     }
   ]
 }
