@@ -2618,7 +2618,7 @@
     {
       "id": 1748484709286,
       "titulo": "Transformers One",
-      "disponible": false,
+      "disponible": true,
       "nuevo": true,
       "badge": "Recién agregado",
       "año": 2024,
@@ -2649,6 +2649,23 @@
       "imagen": "https://megustaelcine.com/wp-content/uploads/2024/02/POSTER-Mi-amigo-robot-717x1024.jpeg",
       "enlace": "https://fastream.to/embed-pxw564rnfg44.html",
       "descripcion": "DOG es un perro solitario que vive en Manhattan. Un día decide construirse un robot, un amigo. Su amistad crece, hasta hacerse inseparables, al ritmo del Nueva York de los ochenta. Una noche de verano, Dog con gran pena, se ve obligado a abandonar a ROBOT en la playa. ¿Volverán a encontrarse?"
+    },
+    {
+      "id": 1748485570627,
+      "titulo": "¡Patos!",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2023,
+      "trailer": "https://youtu.be/0yAHD2p7yrk?si=Wt-v8x5SvaQqOEGS",
+      "genero": [
+        "familiar",
+        "animacion",
+        "comedia"
+      ],
+      "imagen": "https://m.media-amazon.com/images/M/MV5BMGY1Yjc3Y2YtYjc3ZC00OTcyLTgxODAtNjM0MGRlZjQ5OGM0XkEyXkFqcGc@._V1_.jpg",
+      "enlace": "https://fastream.to/embed-yvj4jo29jhiu.html",
+      "descripcion": "Una familia de patos intenta convencer a su sobreprotector padre para que se vayan a las vacaciones de su vida."
     }
   ]
 }
