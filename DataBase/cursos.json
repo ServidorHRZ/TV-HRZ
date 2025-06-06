@@ -1,0 +1,385 @@
+{
+  "lenguajes": [
+    {
+      "id": "python", 
+      "titulo": "Python",
+      "logo": "https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/python/logo.png",
+      "cursos": [
+        {
+          "id": 1,
+          "titulo": "Python para principiantes",
+          "imagen": "https://i.ytimg.com/vi/Kp4Mvapo5kc/maxresdefault.jpg", 
+          "videoUrl": "https://www.youtube.com/embed/Kp4Mvapo5kc",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "MoureDev by Brais Moure",
+          "descripcion": "Curso completo de Python desde cero. Aprenderás los fundamentos del lenguaje, tipos de datos, estructuras de control, funciones, módulos y mucho más. Un curso práctico con ejercicios y ejemplos reales."
+        },
+        {
+          "id": 2,
+          "titulo": "Python desde cero",
+          "imagen": "https://i.ytimg.com/vi/nKPbfIU442g/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/nKPbfIU442g",
+          "nivel": "Basico", 
+          "duracion": "8h",
+          "instructor": "Yo soy Dalto",
+          "descripcion": "Curso profesional de Python desde cero. Aprenderás programación orientada a objetos, manejo de archivos, bases de datos, interfaces gráficas y más. Un curso intensivo con proyectos reales y explicaciones detalladas."
+        },
+        {
+          "id": 3,
+          "titulo": "Python POO desde Cero",
+          "imagen": "data:image/jpeg;base64,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",
+          "videoUrl": "https://www.youtube.com/embed/HtKqSJX7VoM",
+          "nivel": "Intermedio",
+          "duracion": "4h",
+          "instructor": "Yo soy Dalto",
+          "descripcion": "Curso completo de Programación Orientada a Objetos con Python. Aprenderás sobre clases, objetos, herencia, polimorfismo, encapsulamiento y todos los conceptos fundamentales de POO con ejemplos prácticos y ejercicios."
+        },
+        {
+          "id": 4,
+          "titulo": "Django Framework desde Cero",
+          "imagen": "https://i.ytimg.com/vi/T1intZyhXDU/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/T1intZyhXDU",
+          "nivel": "Intermedio",
+          "duracion": "4h", 
+          "instructor": "Fazt",
+          "descripcion": "Desarrollo web con Django Framework. Aprenderás a crear aplicaciones web completas, gestión de bases de datos, autenticación y más."
+        },
+        {
+          "id": 5,
+          "titulo": "Aprende Python ahora! curso completo e intensivo desde cero",
+          "imagen": "https://i.ytimg.com/vi/tQZy0U8s9LY/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/tQZy0U8s9LY",
+          "nivel": "Basico",
+          "duracion": "4h",
+          "instructor": "Hola Mundo",
+          "descripcion": "Curso intensivo y completo de Python desde cero. Aprenderás los fundamentos del lenguaje de manera práctica y efectiva, con ejemplos y ejercicios para principiantes."
+        },
+        {
+          "id": 6,
+          "titulo": "Curso Completo de Python para Principiantes (2023)",
+          "imagen": "https://i.ytimg.com/vi/swdcD6OPMlk/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/swdcD6OPMlk",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "Mouredev by Brais Moure",
+          "descripcion": "Curso completo y actualizado de Python para principiantes. Aprenderás desde los conceptos básicos hasta temas más avanzados con ejemplos prácticos y ejercicios."
+        },
+        {
+          "id": 7,
+          "titulo": "Curso COMPLETO de Python DESDE CERO para Principiantes 2025",
+          "imagen": "https://i.ytimg.com/vi/TkN2i-_4N4g/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/TkN2i-_4N4g",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "Mouredev by Brais Moure",
+          "descripcion": "Curso completo y actualizado de Python para principiantes. Aprenderás desde los conceptos básicos hasta temas más avanzados con ejemplos prácticos y ejercicios."
+        },
+        {
+          "id": 8,
+          "titulo": "Curso de PYTHON desde CERO para BACKEND",
+          "imagen": "https://i.ytimg.com/vi/_y9qQZXE24A/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/_y9qQZXE24A?si=pRDdzgmP7W7HfZF1",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "Mouredev by Brais Moure",
+          "descripcion": "Curso completo de Python enfocado en desarrollo backend. Aprenderás desde los fundamentos del lenguaje hasta conceptos avanzados de desarrollo del lado del servidor."
+        },
+        {
+          "id": 9,
+          "titulo": "CURSO COMPLETO DE PYTHON - 11 HORAS",
+          "imagen": "https://i.ytimg.com/vi/jRwW7WCCkIo/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/jRwW7WCCkIo?si=ry9EuoFb10u0ze5Z",
+          "nivel": "Basico",
+          "duracion": "11h",
+          "instructor": "Soy Dalto",
+          "descripcion": "Curso completo de Python que cubre todos los conceptos fundamentales del lenguaje. A lo largo de 11 horas, aprenderás desde lo más básico hasta temas más avanzados con ejemplos prácticos y ejercicios."
+        }
+      ]
+    },
+    {
+      "id": "java",
+      "titulo": "Java",
+      "logo": "https://cdn.freebiesupply.com/logos/large/2x/java-4-logo-png-transparent.png",
+      "cursos": [
+        {
+          "id": 21,
+          "titulo": "Java para principiantes",
+          "imagen": "https://i.ytimg.com/vi/oz9wPzx6-ew/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCtVFT16TQ4qL0YpI_87zYf5lnJqw",
+          "videoUrl": "https://www.youtube.com/embed/oz9wPzx6-ew?si=D9fhOBOXAFmzJSlb",
+          "nivel": "Basico",
+          "duracion": "3h",
+          "instructor": "Programando en Java",
+          "descripcion": "Aprende Java desde cero con este curso introductorio. Dominarás los conceptos básicos de programación, incluyendo sintaxis, operadores, bucles, arrays y funciones. Curso ideal para dar tus primeros pasos en el desarrollo con Java."
+        },
+        {
+          "id": 22,
+          "titulo": "Aprende Java Ahora! curso completo desde cero para principiantes",
+          "imagen": "https://i.ytimg.com/vi/b0NHh8RNWK4/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/b0NHh8RNWK4?si=X68lV4qQIbuvRv-a",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "Píldoras Informáticas",
+          "descripcion": "Curso completo de Java para principiantes. Aprenderás los fundamentos del lenguaje, programación orientada a objetos, estructuras de datos, interfaces gráficas y más. Un curso práctico con ejemplos y ejercicios paso a paso."
+        },
+        {
+          "id": 23,
+          "titulo": "Aprende Java en 2025: El curso definitivo para principiantes",
+          "imagen": "https://i.ytimg.com/vi/Bi9AmOBDJGY/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/Bi9AmOBDJGY?si=dZ7-JIJlYo2GfWON",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "Píldoras Informáticas",
+          "descripcion": "Curso completo y actualizado de Java para principiantes. Aprenderás los fundamentos del lenguaje, programación orientada a objetos, estructuras de datos y desarrollo de aplicaciones prácticas."
+        },
+        {
+          "id": 24,
+          "titulo": "JAVA desde cero | Curso tutorial completo gratis con Spring, Hibernate, PostgreSQL, Docker y más",
+          "imagen": "https://i.ytimg.com/vi/BdNqW63ZaB0/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/BdNqW63ZaB0?si=xMhot0AM791Jc6qV",
+          "nivel": "Basico",
+          "duracion": "12h",
+          "instructor": "Programación en Español",
+          "descripcion": "Curso completo de Java que cubre desde los fundamentos hasta tecnologías avanzadas como Spring, Hibernate, PostgreSQL y Docker. Aprenderás desarrollo backend profesional con Java y las herramientas más demandadas en la industria."
+        },
+        {
+          "id": 25,
+          "titulo": "Curso Completo de Java para Principiantes (2021)",
+          "imagen": "https://i.ytimg.com/vi/Z8zAKYLZBqc/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/Z8zAKYLZBqc?si=zN_Gn5vx0pcIdQF4",
+          "nivel": "Basico",
+          "duracion": "8h",
+          "instructor": "TodoCode",
+          "descripcion": "Curso completo de Java para principiantes actualizado a 2021. Aprenderás los fundamentos del lenguaje, programación orientada a objetos, manejo de excepciones, colecciones y más. Un curso práctico con ejemplos y ejercicios para dominar Java desde cero."
+        }   
+      ]
+    },
+    {
+      "id": "javascript",
+      "titulo": "JavaScript",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "cursos": [
+        {
+          "id": 31,
+          "titulo": "JavaScript de Cero a Junior",
+          "imagen": "data:image/jpeg;base64,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",
+          "videoUrl": "https://www.youtube.com/embed/z95mZVUcJ-E?si=UlygsG3zvY7_yfa4",
+          "nivel": "Basico",
+          "duracion": "10h", 
+          "instructor": "Yo soy Dalto",
+          "descripcion": "Curso completo de JavaScript desde cero a junior. Aprenderás desde lo básico hasta conceptos avanzados como ES6+, asincronía, DOM, APIs y más. Un curso práctico con ejercicios y proyectos reales."
+        },
+        {
+          "id": 32,
+          "titulo": "JavaScript desde Cero",
+          "imagen": "https://i.ytimg.com/vi/1glVfFxj8a4/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/1glVfFxj8a4?si=J1fFGkjybv7juHa5", 
+          "nivel": "Basico",
+          "duracion": "6h",
+          "instructor": "MoureDev by Brais Moure",
+          "descripcion": "Curso introductorio de JavaScript. Aprenderás los conceptos fundamentales del lenguaje a través de ejemplos prácticos y ejercicios básicos."
+        },
+        {
+          "id": 33,
+          "titulo": "Aprende JavaScript Ahora! curso completo desde cero",
+          "imagen": "https://i.ytimg.com/vi/QoC4RxNIs5M/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/QoC4RxNIs5M?si=8BFRzPyETlzJpyzK",
+          "nivel": "Basico", 
+          "duracion": "4h",
+          "instructor": "HolaMundo",
+          "descripcion": "Curso completo de JavaScript desde cero. Aprenderás los fundamentos del lenguaje, manipulación del DOM, eventos, funciones, objetos y todo lo necesario para comenzar a programar en JavaScript. Un curso práctico con ejemplos y ejercicios para principiantes."
+        },
+        {
+          "id": 34,
+          "titulo": "Fundamentos de Programação com JavaScript Curso Completo",
+          "imagen": "https://i.ytimg.com/vi/aA31cVca_hI/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/aA31cVca_hI?si=Ft_n7p155iQzFITG",
+          "nivel": "Basico",
+          "duracion": "8h",
+          "instructor": "Programador Espartano",
+          "descripcion": "Curso completo de JavaScript con más de 8 horas de contenido. Aprenderás los fundamentos de programación usando JavaScript, incluyendo variables, funciones, objetos, arrays y más. Un curso exhaustivo ideal para principiantes que quieren aprender a programar."
+        }
+      ]
+    },
+    {
+      "id": "flutter",
+      "titulo": "Flutter y Dart", 
+      "logo": "https://storage.googleapis.com/cms-storage-bucket/6a07d8a62f4308d2b854.svg",
+      "cursos": [
+        {
+          "id": 41,
+          "titulo": "Flutter desde Cero",
+          "imagen": "https://escuelafullstack.com/web/image/slide.channel/31/image_512",
+          "videoUrl": "https://www.youtube.com/embed/IKG1eV2SetA?si=UFg5NkiRcLeyxC-M",
+          "nivel": "Basico",
+          "duracion": "10h",
+          "instructor": "Programación Android by AristiDevs",
+          "descripcion": "Curso completo de Flutter y Dart desde cero. Aprenderás a desarrollar aplicaciones móviles multiplataforma, incluyendo widgets, gestión de estado, navegación, consumo de APIs y bases de datos. Curso práctico con ejemplos reales y código fuente disponible en GitHub. Link: https://github.com/ArisGuimera/Flutter-Expert"
+        },
+        {
+          "id": 42,
+          "titulo": "Cómo Crear Apps Para Ganar Dinero | Curso Flutter",
+          "imagen": "https://i.ytimg.com/vi/YtqmGxskJ9k/maxresdefault.jpg", 
+          "videoUrl": "https://www.youtube.com/embed/YtqmGxskJ9k?si=erQwTEvbztHMqh9U",
+          "nivel": "Intermedio",
+          "duracion": "2h",
+          "instructor": "HolaMundo",
+          "descripcion": "Aprende a crear aplicaciones móviles rentables con Flutter. Este curso te enseñará cómo desarrollar apps que puedas monetizar, incluyendo estrategias de monetización, publicidad in-app y modelos de negocio para aplicaciones móviles."
+        },
+        {
+          "id": 43,
+          "titulo": "CURSO de FLUTTERFLOW gratis 2024 | DESDE CERO para PRINCIPIANTES",
+          "imagen": "https://i.ytimg.com/vi/1WS6DHUFfxk/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/1WS6DHUFfxk?si=HJsqR4GwE7XF_aZv", 
+          "nivel": "Basico",
+          "duracion": "2h",
+          "instructor": "HolaMundo",
+          "descripcion": "Curso completo de FlutterFlow desde cero para principiantes. Aprenderás a crear aplicaciones móviles sin código utilizando FlutterFlow, una herramienta visual para desarrollo de apps con Flutter. Ideal para quienes quieren comenzar en el desarrollo de aplicaciones móviles sin experiencia previa en programación."
+        },
+        {
+          "id": 44,
+          "titulo": "Aprende FLUTTER! con 3 proyectos incluidos",
+          "imagen": "https://i.ytimg.com/vi/IRLLVmN7nQI/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/IRLLVmN7nQI?si=4XuiiQzJyqOpyVdQ",
+          "nivel": "Basico",
+          "duracion": "4h",
+          "instructor": "HolaMundo",
+          "descripcion": "Curso práctico de Flutter donde aprenderás desarrollando 3 proyectos reales. Perfecto para principiantes que quieren aprender Flutter mediante ejemplos prácticos y aplicaciones completas."
+        }
+      ]
+    },
+    {
+      "id": "docker",
+      "titulo": "Docker",
+      "logo": "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
+      "cursos": [
+        {
+          "id": 51,
+          "titulo": "Docker desde Cero",
+          "imagen": "https://i.ytimg.com/vi/4Dko5W96WHg/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/4Dko5W96WHg?si=94hLmCniMjg3pNBx",
+          "nivel": "Basico", 
+          "duracion": "2h",
+          "instructor": "Pelado Nerd",
+          "descripcion": "Curso completo de Docker desde cero. Aprenderás los conceptos fundamentales de contenedores, imágenes, redes, volúmenes y docker-compose. Un curso práctico con ejemplos reales para dominar Docker."
+        }
+      ,
+      {
+        "id": 52,
+        "titulo": "Docker desde Cero 🐋",
+        "imagen": "https://i.ytimg.com/vi/rmty_WNvJvA/sddefault.jpg",
+        "videoUrl": "https://www.youtube.com/embed/rmty_WNvJvA?si=dacILk3G2qpAZshx",
+        "nivel": "Basico",
+        "duracion": "1h",
+        "instructor": "HolaMundo",
+        "descripcion": "Curso completo de Docker desde cero. Aprenderás los conceptos fundamentales de contenedores, imágenes, redes y todo lo necesario para empezar a utilizar Docker en tus proyectos. Un curso práctico con ejemplos reales."
+      }
+      ,
+      {
+        "id": 53,
+        "titulo": "EL MEJOR CURSO DE DOCKER EN TIEMPO RECORD",
+        "imagen": "https://i.ytimg.com/vi/ZvF6yKHPVRE/maxresdefault.jpg",
+        "videoUrl": "https://www.youtube.com/embed/ZvF6yKHPVRE?si=A8nxxvf7lP8jjYtp",
+        "nivel": "Basico",
+        "duracion": "2h",
+        "instructor": "MoureDev by Brais Moure",
+        "descripcion": "Curso intensivo de Docker que cubre los conceptos fundamentales en tiempo récord. Aprenderás lo esencial sobre contenedores, imágenes y comandos básicos de Docker de forma rápida y efectiva."
+      },
+      {
+        "id": 54,
+        "titulo": "DOCKER De NOVATO a PRO",
+        "imagen": "https://i.ytimg.com/vi/CV_Uf3Dq-EU/maxresdefault.jpg",
+        "videoUrl": "https://www.youtube.com/embed/CV_Uf3Dq-EU?si=pI8P_8zG33_8sBX7",
+        "nivel": "Basico",
+        "duracion": "4h",
+        "instructor": "Pelado Nerd",
+        "descripcion": "Curso completo de Docker que te llevará desde los conceptos más básicos hasta un nivel profesional. Aprenderás sobre contenedores, imágenes, redes, volúmenes, docker-compose y las mejores prácticas para implementar Docker en entornos de producción."
+      },
+      {
+        "id": 55,
+        "titulo": "CURSO COMPLETO DE DOCKER",
+        "imagen": "https://i.ytimg.com/vi/6wbfODetPbE/maxresdefault.jpg",
+        "videoUrl": "https://www.youtube.com/embed/6wbfODetPbE?si=GYHge_YNUdZ6ZJvM",
+        "nivel": "Basico",
+        "duracion": "2h",
+        "instructor": "Fazt",
+        "descripcion": "Curso completo de Docker que cubre todos los conceptos fundamentales. Aprenderás sobre contenedores, imágenes, redes, volúmenes y cómo utilizar Docker en tus proyectos de desarrollo. Incluye ejemplos prácticos y explicaciones detalladas."
+      }
+      ]
+    },
+    {
+      "id": "csharp",
+      "titulo": "C#",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png", 
+      "cursos": [
+        {
+          "id": 56,
+          "titulo": "Curso de C# / .NET Para Iniciantes",
+          "imagen": "https://i.ytimg.com/vi/oTivhgjbhIg/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/oTivhgjbhIg?si=qEsrMjic2sH2I1dM",
+          "nivel": "Basico",
+          "duracion": "2h", 
+          "instructor": "Código Estudiante",
+          "descripcion": "Curso completo de C# y .NET para principiantes. Aprenderás los fundamentos del lenguaje C#, programación orientada a objetos, y cómo desarrollar aplicaciones con el framework .NET. Incluye ejemplos prácticos y explicaciones paso a paso."
+        },
+        {
+          "id": 57,
+          "titulo": "Curso Completo de C# para Principiantes (2021) 🚀",
+          "imagen": "https://i.ytimg.com/vi/TqiysLEBZo4/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/TqiysLEBZo4?si=xQdvu4opnbh4QZlQ",
+          "nivel": "Basico", 
+          "duracion": "4h",
+          "instructor": "HolaMundo",
+          "descripcion": "Curso completo de C# desde cero. Aprenderás los conceptos fundamentales del lenguaje, tipos de datos, estructuras de control, programación orientada a objetos y más. Un curso práctico con ejemplos reales para dominar C#."
+        },
+        {
+          "id": 58,
+          "titulo": "Aprende lo Básico de C# - Tutorial Completo para Principiantes",
+          "imagen": "https://i.ytimg.com/vi/6W2wYwHQNT4/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/6W2wYwHQNT4?si=PNU0ngPUjgwn8qyo",
+          "nivel": "Basico",
+          "duracion": "3h",
+          "instructor": "Fazt",
+          "descripcion": "Tutorial completo de C# para principiantes donde aprenderás los conceptos básicos del lenguaje. Incluye tipos de datos, variables, funciones, clases, objetos y todo lo necesario para comenzar a programar en C#."
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "titulo": "Git y GitHub",
+      "logo": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+      "cursos": [
+        {
+          "id": 59,
+          "titulo": "Curso de GIT y GITHUB desde CERO para PRINCIPIANTES",
+          "imagen": "https://i.ytimg.com/vi/HiXLkL42tMU/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/HiXLkL42tMU?si=abcdefghijk",
+          "nivel": "Basico",
+          "duracion": "3h",
+          "instructor": "Fazt",
+          "descripcion": "Curso completo de Git y GitHub desde cero. Aprenderás control de versiones, comandos básicos de Git, trabajo con repositorios, ramas, fusiones y colaboración en proyectos usando GitHub. Perfecto para principiantes que quieren aprender las mejores prácticas de control de versiones."
+        },
+        {
+          "id": 60,
+          "titulo": "Curso de GIT desde CERO (Completo)",
+          "imagen": "https://i.ytimg.com/vi/9ZJ-K-zk_Go/maxresdefault.jpg", 
+          "videoUrl": "https://www.youtube.com/embed/9ZJ-K-zk_Go?si=BFOUdr711HrS_IoM",
+          "nivel": "Basico",
+          "duracion": "4h",
+          "instructor": "Soy Dalto",
+          "descripcion": "Curso completo de Git desde cero. Aprenderás los conceptos fundamentales del control de versiones, comandos básicos, manejo de ramas, resolución de conflictos y flujos de trabajo profesionales con Git."
+        },
+        {
+          "id": 61,
+          "titulo": "Curso Git & GitHub",
+          "imagen": "https://i.ytimg.com/vi/suzMNqDQiyU/maxresdefault.jpg",
+          "videoUrl": "https://www.youtube.com/embed/suzMNqDQiyU?si=fZ2SdJN7c47fZORi",
+          "nivel": "Basico",
+          "duracion": "4h",
+          "instructor": "jonmircha",
+          "descripcion": "Curso completo de Git y GitHub. Aprenderás desde los conceptos básicos hasta técnicas avanzadas de control de versiones, trabajo colaborativo, gestión de repositorios y flujos de trabajo profesionales."
+        }
+      ]
+    }
+  ]
+}

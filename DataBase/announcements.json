@@ -1,0 +1,56 @@
+{
+  "announcements": [
+    {
+      "id": 1,
+      "tipo": "nuevo_episodio",
+      "titulo": "Chica Vampiro",
+      "subtitulo": "Disponible Ahora",
+      "descripcion": "Daisy es una adolescente normal hasta que en su cumpleaños número 16 es mordida por un vampiro.",
+      "imagen": "https://www.lavanguardia.com/peliculas-series/images/serie/poster/2013/5/w1280/mWpTjJO99SMusPHdV12UuMwtoNc.jpg",
+      "destacado": false,
+      "fecha": "Disponible Ahora",
+      "link": "serie.html",
+      "serieId": 39,
+      "disponible": true
+    },
+    {
+      "id": 2,
+      "tipo": "nuevo_episodio",
+      "titulo": "Supergirl",
+      "subtitulo": "¡Próximamente!",
+      "descripcion": "Las aventuras de Kara Zor-El, la prima de Superman, quien después de 12 años ocultando sus poderes debe aprender a aceptar sus habilidades para convertirse en una heroína.",
+      "imagen": "https://www.mubis.es/media/users/12373/267582/supergirl-la-serie-del-arrowverso-llegara-a-su-fin-en-2021-con-la-temporada-6-original.jpg",
+      "fecha": "Muy Pronto",
+      "destacado": true,
+      "link": "serie.html", 
+      "serieId": 28,
+      "disponible": false
+    },
+    {
+      "id": 3,
+      "tipo": "nuevo_episodio",
+      "titulo": "Legends of Tomorrow",
+      "subtitulo": "¡Próximamente!",
+      "descripcion": "Un grupo de héroes y villanos deben trabajar juntos cuando son reclutados por el Maestro del Tiempo para viajar a través del tiempo y evitar una catástrofe.",
+      "imagen": "https://variety.com/wp-content/uploads/2015/05/dcs-legends-of-tomorrow.jpg",
+      "fecha": "Muy Pronto",
+      "destacado": true,
+      "link": "serie.html",
+      "serieId": 29,
+      "disponible": false
+    },
+    {
+      "id": 4,
+      "tipo": "nuevo_episodio",
+      "titulo": "Mr. Robot",
+      "subtitulo": "Temporada 3",
+      "descripcion": "Elliot, un brillante programador con problemas de ansiedad social, trabaja como ingeniero de seguridad cibernética mientras se involucra en actividades de hacktivismo.",
+      "imagen": "https://www.elindependiente.com/wp-content/uploads/2019/09/cropped-mr-robot-1280x720.jpg",
+      "fecha": "Próximamente",
+      "destacado": true,
+      "link": "serie.html",
+      "serieId": 2,
+      "disponible": true
+    }
+  ]
+}

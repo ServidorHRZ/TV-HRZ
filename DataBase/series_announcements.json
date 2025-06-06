@@ -1,0 +1,69 @@
+{
+  "announcements": [
+    {
+      "id": 1,
+      "tipo": "nuevo_episodio",
+      "titulo": "Arrow",
+      "subtitulo": "Disponible Ahora!",
+      "descripcion": "Después de un naufragio que lo dejó varado en una isla durante cinco años, Oliver Queen regresa a casa convertido en un experto arquero para luchar contra el crimen y la corrupción en Ciudad Starling.",
+      "imagen": "https://wallpapers.com/images/featured/flecha-verde-7fxabozek6nvsry9.jpg",
+      "fecha": "Disponible Ahora",
+      "destacado": true,
+      "link": "serie.html",
+      "serieId": 27,
+      "disponible": true
+    },
+    {
+      "id": 2,
+      "tipo": "nuevo_episodio", 
+      "titulo": "Yo Soy Betty la Fea",
+      "subtitulo": "¡La telenovela más exitosa de Colombia!",
+      "descripcion": "La historia de Beatriz Pinzón Solano, una brillante economista que trabaja en una prestigiosa empresa de moda, donde deberá enfrentar prejuicios por su apariencia física mientras encuentra el verdadero amor.",
+      "imagen": "https://m.media-amazon.com/images/S/pv-target-images/7bfdc74b24ca50974c59931a6ea2261b84e1fe71407c9755953f0b5faa29522b._SX1080_FMpng_.png",
+      "fecha": "10 de marzo",
+      "destacado": true,
+      "link": "serie.html",
+      "serieId": 28,
+      "disponible": false
+    },
+    {
+      "id": 3,
+      "tipo": "nuevo_episodio",
+      "titulo": "Legends of Tomorrow",
+      "subtitulo": "¡Próximamente!",
+      "descripcion": "Un grupo de héroes y villanos deben trabajar juntos cuando son reclutados por el Maestro del Tiempo para viajar a través del tiempo y evitar una catástrofe.",
+      "imagen": "https://variety.com/wp-content/uploads/2015/05/dcs-legends-of-tomorrow.jpg",
+      "fecha": "5 de marzo",
+      "destacado": true,
+      "link": "serie.html",
+      "serieId": 29,
+      "disponible": false
+    },
+    {
+      "id": 4,
+      "tipo": "nuevo_episodio",
+      "titulo": "Mr. Robot",
+      "subtitulo": "Temporada 3",
+      "descripcion": "Elliot, un brillante programador con problemas de ansiedad social, trabaja como ingeniero de seguridad cibernética mientras se involucra en actividades de hacktivismo.",
+      "imagen": "https://www.elindependiente.com/wp-content/uploads/2019/09/cropped-mr-robot-1280x720.jpg",
+      "fecha": "Próximamente",
+      "destacado": true,
+      "link": "serie.html",
+      "serieId": 2,
+      "disponible": true
+    },
+    {
+      "id": 5,
+      "tipo": "nuevo_episodio",
+      "titulo": "BERLN",
+      "subtitulo": "¡Nueva Serie!",
+      "descripcion": "Andrés de Fonollosa, también conocido como Berlín, planea uno de los robos más extraordinarios de su carrera criminal: hacer desaparecer joyas valoradas en 44 millones.",
+      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/10/berlin-3205308.jpg?tf=3840x",
+      "fecha": "7 de marzo",
+      "destacado": true,
+      "link": "serie.html", 
+      "serieId": 30,
+      "disponible": false
+    }
+  ]
+} 

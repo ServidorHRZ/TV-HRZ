@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRZ TV - Mantenimiento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00ffff;
+            --secondary-color: #ffffff;
+            --background-color: #000000;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, var(--background-color), #1a1a1a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .maintenance-container {
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a1a, #000000);
+            padding: clamp(1.5rem, 5vw, 3rem);
+            border-radius: 20px;
+            border: 2px solid var(--primary-color);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+            width: 100%;
+            max-width: 600px;
+            margin: 10px;
+            animation: glow 2s ease-in-out infinite alternate;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            word-wrap: break-word;
+        }
+        p {
+            color: var(--secondary-color);
+            line-height: 1.6;
+            font-size: clamp(0.9rem, 3vw, 1.1rem);
+            margin: 1rem 0;
+        }
+        .icon {
+            font-size: clamp(3rem, 8vw, 4rem);
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            animation: pulse 2s infinite;
+        }
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color);
+            }
+            to {
+                box-shadow: 0 0 15px var(--primary-color), 0 0 25px var(--primary-color);
+            }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .status-info {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: clamp(1rem, 3vw, 1.5rem);
+            margin: 1.5rem 0;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+        }
+        .status-info i {
+            margin-right: 10px;
+            color: var(--primary-color);
+        }
+
+        /* Media Queries para dispositivos móviles */
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .maintenance-container {
+                margin: 5px;
+                padding: 1.5rem;
+            }
+            .status-info {
+                padding: 1rem;
+            }
+            .status-info p {
+                display: flex;
+                align-items: center;
+                text-align: left;
+                margin: 0.8rem 0;
+            }
+            .status-info i {
+                flex-shrink: 0;
+                margin-right: 8px;
+            }
+        }
+
+        /* Media Queries para tablets */
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            .maintenance-container {
+                margin: 15px;
+                padding: 2rem;
+            }
+        }
+
+        /* Media Queries para pantallas con altura reducida */
+        @media screen and (max-height: 600px) {
+            .icon {
+                margin-bottom: 1rem;
+            }
+            h1 {
+                margin-bottom: 1rem;
+            }
+            .status-info {
+                margin: 1rem 0;
+            }
+            p {
+                margin: 0.7rem 0;
+            }
+        }
+
+        /* Asegurar que el contenido sea legible en pantallas muy pequeñas */
+        @media screen and (max-width: 320px) {
+            .maintenance-container {
+                padding: 1rem;
+            }
+            .status-info {
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <i class="fas fa-tools icon"></i>
+        <h1>Sitio en Mantenimiento</h1>
+        <p>Estamos realizando mejoras en nuestro sistema para brindarte una mejor experiencia de entretenimiento.</p>
+        <div class="status-info">
+            <p><i class="fas fa-clock"></i>Estaremos de vuelta el 2 de marzo de 2025 a las 12:00 de la noche.</p>
+            <p><i class="fas fa-wrench"></i>Actualizando nuestros sistemas para ti.</p>
+        </div>
+        <p>Gracias por tu comprensión y paciencia.</p>
+    </div>
+</body>
+</html>

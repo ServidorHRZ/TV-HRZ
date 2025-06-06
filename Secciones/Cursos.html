@@ -1,0 +1,921 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRZ TV - Películas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00ffff;
+            --secondary-color: #ffffff;
+            --background-color: #000000;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(45deg, var(--background-color), #1a1a1a);
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.2);
+            z-index: 1000;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item.active {
+            color: var(--primary-color);
+        }
+
+        .nav-item i {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .nav-item span {
+            font-size: 0.8rem;
+        }
+
+        /* Actualización de estilos tipográficos y de movimiento */
+        .lenguaje-titulo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin: 25px 0;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .curso-card {
+            flex: 0 0 auto;
+            width: 320px;
+            height: 280px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            margin: 10px;
+            background: linear-gradient(165deg, rgba(20, 20, 20, 0.95), rgba(10, 10, 10, 0.98));
+            border: 1px solid rgba(0, 255, 255, 0.15);
+            touch-action: pan-y pinch-zoom;
+        }
+
+        .curso-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.15);
+            border-color: var(--primary-color);
+        }
+
+        .curso-card:hover .curso-thumbnail img {
+            transform: scale(1.1);
+        }
+
+        .curso-thumbnail {
+            width: 100%;
+            height: 60%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .curso-thumbnail::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 70%;
+            background: linear-gradient(to top, 
+                rgba(0, 0, 0, 1) 10%,
+                rgba(0, 0, 0, 0.8) 30%,
+                rgba(0, 0, 0, 0) 100%
+            );
+            z-index: 1;
+        }
+
+        .curso-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+        .curso-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            z-index: 2;
+            background: linear-gradient(180deg, 
+                transparent,
+                rgba(0, 0, 0, 0.9) 20%
+            );
+        }
+
+        .curso-info h3 {
+            font-family: 'Roboto', sans-serif;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin: 0 0 15px 0;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .curso-detalles {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+
+        .curso-duracion {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            background: rgba(0, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .curso-duracion i {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+        }
+
+        .curso-nivel {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, 
+                rgba(0, 255, 255, 1),
+                rgba(0, 200, 200, 1)
+            );
+            color: rgba(0, 0, 0, 0.9);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 10px rgba(0, 255, 255, 0.3);
+        }
+
+        /* Estilos para las secciones de lenguajes */
+        .lenguaje-seccion {
+            position: relative;
+            margin: 40px 0;
+            padding: 0;
+        }
+
+        .lenguaje-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .cursos-contenedor {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            gap: 10px;
+            padding: 15px;
+            margin: 0 30px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            position: relative;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x proximity;
+            touch-action: pan-y pinch-zoom;
+            overscroll-behavior-x: contain;
+        }
+
+        .cursos-contenedor::-webkit-scrollbar {
+            display: none;
+        }
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.7);
+            border: none;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .nav-arrow.prev {
+            left: 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .nav-arrow.next {
+            right: 0;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .lenguaje-seccion:hover .nav-arrow {
+            opacity: 1;
+        }
+
+        .nav-arrow:hover {
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            width: 50px;
+        }
+
+        /* Ajustes responsive */
+        @media (max-width: 768px) {
+            .curso-card {
+                width: 260px;
+                height: 200px;
+            }
+
+            .lenguaje-titulo {
+                font-size: 1.5rem;
+                margin: 20px 0;
+            }
+
+            .curso-info h3 {
+                font-size: 1.1rem;
+            }
+
+            .nav-arrow {
+                display: none;
+            }
+
+            .cursos-contenedor {
+                margin: 0 10px;
+                padding: 10px;
+            }
+        }
+
+        .main-content {
+            padding-bottom: 20px; /* Espacio para el menú inferior en escritorio */
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding-bottom: 20px; /* Espacio para el menú inferior en móviles */
+            }
+        }
+
+        /* Estilos para el buscador */
+        .buscador-contenedor {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1001;
+            box-shadow: 0 2px 10px rgba(0, 255, 255, 0.2);
+            display: flex;
+            justify-content: center;
+        }
+
+        .buscador-input {
+            width: 80%;
+            max-width: 600px;
+            padding: 12px 20px;
+            border: 2px solid var(--primary-color);
+            border-radius: 25px;
+            background: rgba(0, 0, 0, 0.8);
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .buscador-input:focus {
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+        }
+
+        .resultados-busqueda {
+            position: fixed;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            max-width: 600px;
+            max-height: 70vh;
+            overflow-y: auto;
+            background: rgba(0, 0, 0, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+            z-index: 1000;
+            display: none;
+        }
+
+        .resultado-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .resultado-item:hover {
+            background: rgba(0, 255, 255, 0.1);
+        }
+
+        .resultado-imagen {
+            width: 100px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .resultado-info {
+            flex: 1;
+        }
+
+        .resultado-titulo {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .resultado-instructor {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Ajuste para el contenido principal */
+        .main-content {
+            margin-top: 80px;
+        }
+
+        /* Ajustes responsive para el buscador */
+        @media (max-width: 768px) {
+            .buscador-contenedor {
+                padding: 10px;
+            }
+
+            .buscador-input {
+                width: 90%;
+                padding: 10px 15px;
+                font-size: 1rem;
+            }
+
+            .resultados-busqueda {
+                width: 95%;
+                top: 60px;
+                max-height: 60vh;
+            }
+
+            .resultado-item {
+                padding: 10px 15px;
+            }
+
+            .resultado-imagen {
+                width: 80px;
+                height: 50px;
+            }
+
+            .resultado-titulo {
+                font-size: 0.9rem;
+            }
+
+            .resultado-instructor {
+                font-size: 0.8rem;
+            }
+
+            /* Ajustar el espacio para el contenido principal en móviles */
+            .main-content {
+                margin-top: 60px;
+                padding-bottom: 70px; /* Más espacio para el menú inferior */
+            }
+
+            /* Mejorar la interacción táctil */
+            .buscador-input {
+                -webkit-appearance: none; /* Mejora la apariencia en iOS */
+                border-radius: 15px;
+            }
+
+            .resultado-item {
+                padding: 12px;
+                gap: 10px;
+            }
+
+            .resultado-item:active {
+                background: rgba(0, 255, 255, 0.15); /* Feedback táctil */
+            }
+
+            /* Mejorar la legibilidad */
+            .resultado-info {
+                line-height: 1.3;
+            }
+        }
+
+        /* Ajustes específicos para pantallas muy pequeñas */
+        @media (max-width: 360px) {
+            .buscador-input {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
+
+            .resultado-imagen {
+                width: 70px;
+                height: 45px;
+            }
+
+            .resultado-titulo {
+                font-size: 0.85rem;
+            }
+
+            .resultado-instructor {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Ajuste específico para PC */
+        @media (min-width: 769px) {
+            .main-content {
+                margin-top: 100px; /* Aumentar el margen superior solo en PC */
+                padding-bottom: 20px;
+            }
+
+            .lenguaje-seccion:first-child {
+                padding-top: 20px; /* Añadir padding adicional a la primera sección */
+            }
+        }
+
+        /* Mantener el margen original para móviles */
+        @media (max-width: 768px) {
+            .main-content {
+                margin-top: 60px;
+                padding-bottom: 70px;
+            }
+        }
+
+        /* Estilos para el header y buscador */
+        .top-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-container h1 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            margin: 0;
+            background: linear-gradient(45deg, var(--primary-color), #fff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .header-search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-toggle {
+            background: transparent;
+            border: none;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-toggle:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        .header-search-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 1rem;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            z-index: 1001;
+        }
+
+        .header-search-container.active {
+            transform: translateY(0);
+        }
+
+        .search-wrapper {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            gap: 10px;
+        }
+
+        .search-wrapper input {
+            flex: 1;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 25px;
+            background: rgba(0, 0, 0, 0.8);
+            color: var(--secondary-color);
+            outline: none;
+        }
+
+        .resultados-busqueda {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.95);
+            border-radius: 0 0 10px 10px;
+            max-height: 70vh;
+            overflow-y: auto;
+            display: none;
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <h1>HRZ TV</h1>
+            </div>
+            <div class="header-search">
+                <button class="search-toggle" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="header-search-container" id="headerSearch">
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="Buscar cursos...">
+                <button class="search-toggle" id="searchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="resultados-busqueda" id="resultadosBusqueda"></div>
+        </div>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="Peliculas.html" class="nav-item">
+            <i class="fas fa-film"></i>
+            <span>Películas</span>
+        </a>
+        <a href="Series.html" class="nav-item">
+            <i class="fas fa-tv"></i>
+            <span>Series</span>
+        </a>
+        <a href="TV-Online.html" class="nav-item">
+            <i class="fas fa-broadcast-tower"></i>
+            <span>TV Online</span>
+        </a>
+        <a href="Cursos.html" class="nav-item active">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Cursos</span>
+        </a>
+        <a href="Perfil.html" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>Perfil</span>
+        </a>
+    </nav>
+
+    <script>
+        let todosLosCursos = [];
+
+        async function cargarCursos() {
+            try {
+                const response = await fetch('../DataBase/cursos.json');
+                const data = await response.json();
+                const lenguajesAleatorios = [...data.lenguajes].sort(() => Math.random() - 0.5);
+                
+                // Almacenar todos los cursos en un array
+                todosLosCursos = lenguajesAleatorios.reduce((acc, lenguaje) => {
+                    return acc.concat(lenguaje.cursos.map(curso => ({
+                        ...curso,
+                        lenguaje: lenguaje.titulo
+                    })));
+                }, []);
+
+                mostrarCursos(lenguajesAleatorios);
+                setupNavegacion();
+                setupBuscador();
+            } catch (error) {
+                console.error('Error cargando los cursos:', error);
+            }
+        }
+
+        function mostrarCursos(lenguajes) {
+            const contenedor = document.createElement('div');
+            contenedor.className = 'main-content';
+            document.body.insertBefore(contenedor, document.querySelector('.bottom-nav'));
+
+            lenguajes.forEach(seccion => {
+                // Crear una copia del array de cursos y mezclarlos aleatoriamente
+                const cursosAleatorios = [...seccion.cursos].sort(() => Math.random() - 0.5);
+                
+                const seccionHTML = `
+                    <div class="lenguaje-seccion">
+                        <h2 class="lenguaje-titulo">
+                            <img src="${seccion.logo}" alt="${seccion.titulo}" class="lenguaje-logo">
+                            ${seccion.titulo}
+                        </h2>
+                        <div class="cursos-contenedor">
+                            ${cursosAleatorios.map(curso => `
+                                <div class="curso-card" onclick="abrirCurso(${curso.id})">
+                                    <div class="curso-thumbnail">
+                                        <img src="${curso.imagen}" alt="${curso.titulo}">
+                                    </div>
+                                    <div class="curso-info">
+                                        <h3>${curso.titulo}</h3>
+                                        <div class="curso-detalles">
+                                            <span class="curso-nivel">${curso.nivel}</span>
+                                            <span class="curso-duracion">
+                                                <i class="fas fa-clock"></i>
+                                                ${curso.duracion}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <button class="nav-arrow prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="nav-arrow next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                `;
+                contenedor.innerHTML += seccionHTML;
+            });
+        }
+
+        function setupNavegacion() {
+            const secciones = document.querySelectorAll('.lenguaje-seccion');
+            
+            secciones.forEach(seccion => {
+                const contenedor = seccion.querySelector('.cursos-contenedor');
+                const prevBtn = seccion.querySelector('.nav-arrow.prev');
+                const nextBtn = seccion.querySelector('.nav-arrow.next');
+                
+                let startX, startY;
+                let scrollLeft;
+                let isDragging = false;
+                let startTime;
+                let momentumID;
+                let isScrollingHorizontally = false;
+
+                function startDragging(e) {
+                    isDragging = true;
+                    startTime = Date.now();
+                    if (e.type === 'mousedown') {
+                        startX = e.pageX;
+                        startY = e.pageY;
+                    } else {
+                        startX = e.touches[0].pageX;
+                        startY = e.touches[0].pageY;
+                    }
+                    scrollLeft = contenedor.scrollLeft;
+                    isScrollingHorizontally = false;
+
+                    if (momentumID) {
+                        cancelAnimationFrame(momentumID);
+                    }
+
+                    contenedor.style.scrollBehavior = 'auto';
+                    contenedor.style.cursor = 'grabbing';
+                }
+
+                function drag(e) {
+                    if (!isDragging) return;
+
+                    let currentX, currentY;
+                    if (e.type === 'mousemove') {
+                        currentX = e.pageX;
+                        currentY = e.pageY;
+                    } else {
+                        currentX = e.touches[0].pageX;
+                        currentY = e.touches[0].pageY;
+                    }
+
+                    // Calcular la diferencia en X e Y
+                    const diffX = Math.abs(currentX - startX);
+                    const diffY = Math.abs(currentY - startY);
+
+                    // Si aún no se ha determinado la dirección del scroll
+                    if (!isScrollingHorizontally && (diffX > 5 || diffY > 5)) {
+                        // Si el movimiento horizontal es mayor que el vertical
+                        isScrollingHorizontally = diffX > diffY;
+                        
+                        // Si es scroll vertical, detener el manejo del evento
+                        if (!isScrollingHorizontally) {
+                            isDragging = false;
+                            return;
+                        }
+                    }
+
+                    // Solo prevenir el comportamiento por defecto si es scroll horizontal
+                    if (isScrollingHorizontally) {
+                        e.preventDefault();
+                        const walk = (currentX - startX) * 1.5;
+                        contenedor.scrollLeft = scrollLeft - walk;
+                    }
+                }
+
+                function stopDragging() {
+                    if (!isDragging) return;
+                    
+                    isDragging = false;
+                    const endTime = Date.now();
+                    const timeElapsed = endTime - startTime;
+                    
+                    contenedor.style.cursor = 'grab';
+                    contenedor.style.scrollBehavior = 'smooth';
+
+                    // Aplicar momentum si el movimiento fue rápido
+                    if (timeElapsed < 100) {
+                        const velocity = (contenedor.scrollLeft - scrollLeft) / timeElapsed;
+                        applyMomentum(velocity);
+                    }
+                }
+
+                function applyMomentum(velocity) {
+                    let currentVelocity = velocity * 15; // Factor de momentum
+                    
+                    function momentum() {
+                        if (Math.abs(currentVelocity) > 0.1) {
+                            contenedor.scrollLeft += currentVelocity;
+                            currentVelocity *= 0.95; // Fricción
+                            momentumID = requestAnimationFrame(momentum);
+                        }
+                    }
+                    
+                    momentum();
+                }
+
+                // Event Listeners para mouse
+                contenedor.addEventListener('mousedown', startDragging);
+                contenedor.addEventListener('mousemove', drag);
+                contenedor.addEventListener('mouseup', stopDragging);
+                contenedor.addEventListener('mouseleave', stopDragging);
+
+                // Event Listeners para touch
+                contenedor.addEventListener('touchstart', startDragging, { passive: true });
+                contenedor.addEventListener('touchmove', drag, { passive: false });
+                contenedor.addEventListener('touchend', stopDragging);
+
+                // Navegación con flechas
+                prevBtn?.addEventListener('click', () => scroll(contenedor, 'prev'));
+                nextBtn?.addEventListener('click', () => scroll(contenedor, 'next'));
+
+                // Actualizar visibilidad de flechas
+                contenedor.addEventListener('scroll', () => {
+                    updateArrowsVisibility(contenedor, prevBtn, nextBtn);
+                });
+                
+                // Verificar visibilidad inicial
+                updateArrowsVisibility(contenedor, prevBtn, nextBtn);
+            });
+        }
+
+        function scroll(contenedor, direction) {
+            const scrollAmount = contenedor.clientWidth * 0.8;
+            contenedor.scrollBy({
+                left: direction === 'prev' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        function updateArrowsVisibility(contenedor, prevBtn, nextBtn) {
+            const isAtStart = contenedor.scrollLeft <= 0;
+            const isAtEnd = contenedor.scrollLeft >= contenedor.scrollWidth - contenedor.clientWidth;
+
+            prevBtn.style.display = isAtStart ? 'none' : 'block';
+            nextBtn.style.display = isAtEnd ? 'none' : 'block';
+        }
+
+        function abrirCurso(cursoId) {
+            window.location.href = `cursoView.html?id=${cursoId}`;
+        }
+
+        function setupBuscador() {
+            const searchInput = document.getElementById('search-input');
+            const resultadosContainer = document.getElementById('resultadosBusqueda');
+            const headerSearch = document.getElementById('headerSearch');
+
+            searchInput.addEventListener('input', (e) => {
+                const busqueda = e.target.value.toLowerCase().trim();
+                
+                if (busqueda.length < 1) {
+                    resultadosContainer.style.display = 'none';
+                    return;
+                }
+
+                const resultados = todosLosCursos.filter(curso => 
+                    curso.titulo.toLowerCase().includes(busqueda) ||
+                    curso.instructor?.toLowerCase().includes(busqueda) ||
+                    curso.lenguaje?.toLowerCase().includes(busqueda)
+                ).slice(0, 10); // Limitar a 10 resultados
+
+                mostrarResultados(resultados, resultadosContainer);
+            });
+
+            // Cerrar resultados al hacer clic fuera
+            document.addEventListener('click', (e) => {
+                if (!headerSearch.contains(e.target)) {
+                    resultadosContainer.style.display = 'none';
+                }
+            });
+        }
+
+        function mostrarResultados(resultados, contenedor) {
+            if (resultados.length === 0) {
+                contenedor.innerHTML = '<div class="resultado-item">No se encontraron resultados</div>';
+            } else {
+                contenedor.innerHTML = resultados.map(curso => `
+                    <div class="resultado-item" onclick="abrirCurso(${curso.id})">
+                        <img src="${curso.imagen}" alt="${curso.titulo}" class="resultado-imagen">
+                        <div class="resultado-info">
+                            <div class="resultado-titulo">${curso.titulo}</div>
+                            <div class="resultado-instructor">
+                                ${curso.instructor || 'Instructor no disponible'} • 
+                                <span style="color: var(--primary-color)">${curso.lenguaje || 'Lenguaje no especificado'}</span>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+            contenedor.style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', cargarCursos);
+
+        // Agregar el código para el manejo del buscador en el header
+        const searchToggle = document.getElementById('searchToggle');
+        const searchClose = document.getElementById('searchClose');
+        const headerSearch = document.getElementById('headerSearch');
+        const searchInput = document.getElementById('search-input');
+
+        searchToggle.addEventListener('click', () => {
+            headerSearch.classList.add('active');
+            searchInput.focus();
+        });
+
+        searchClose.addEventListener('click', () => {
+            headerSearch.classList.remove('active');
+            searchInput.value = '';
+            document.getElementById('resultadosBusqueda').style.display = 'none'; // Ocultar resultados
+        });
+    </script>
+</body>
+</html>
