@@ -7806,10 +7806,11 @@
       "imagen": "https://es.web.img2.acsta.net/pictures/21/08/05/13/56/3641619.jpg",
       "trailer": "https://www.youtube.com/embed/Q4og7q_BWUU",
       "genero": [
+        "accion",
         "marvel"
       ],
       "año": 2021,
-      "descripcion": "HB",
+      "descripcion": "Inspirándose en los cómics del mismo nombre, cada episodio explora un momento crucial del Universo Cinematográfico Marvel.",
       "disponible": true,
       "nuevo": true,
       "badge": "Recién agregado",
@@ -7823,64 +7824,64 @@
             {
               "numero": 1,
               "titulo": "¿Qué pasaría si... el Capitán Carter fuera el Primer Vengador?",
-              "descripcion": "Steve Rogers es gravemente herido y Peggy Carter se vuelve la primera supersoldado del mundo.",
               "duracion": "31:13",
+              "descripcion": "Steve Rogers es gravemente herido y Peggy Carter se vuelve la primera supersoldado del mundo.",
               "url": "https://fastream.to/embed-oy92wcmfrlk7.html"
             },
             {
               "numero": 2,
               "titulo": "¿Qué pasaría si... TChalla se convirtiera en Star-Lord?",
-              "descripcion": "Los piratas espaciales conocidos como los Devastadores secuestran a TChalla en vez de a Peter Quill.",
               "duracion": "32:14",
+              "descripcion": "Los piratas espaciales conocidos como los Devastadores secuestran a TChalla en vez de a Peter Quill.",
               "url": "https://fastream.to/embed-c5oz7fcrs1k7.html"
             },
             {
               "numero": 3,
               "titulo": "¿Qué pasaría si... el mundo perdiera a sus héroes más poderosos?",
-              "descripcion": "Nick Furia intenta fundar los Vengadores y un asesino en serie ataca a sus candidatos.",
               "duracion": "30:24",
+              "descripcion": "Nick Furia intenta fundar los Vengadores y un asesino en serie ataca a sus candidatos.",
               "url": "https://fastream.to/embed-ilsobdcif3st.html"
             },
             {
               "numero": 4,
               "titulo": "¿Qué pasaría si... el Doctor Strange perdiera el corazón en lugar de las manos?",
-              "descripcion": "El Doctor Strange utiliza el Ojo de Agamotto en un intento por cambiar el pasado.",
               "duracion": "34:39",
+              "descripcion": "El Doctor Strange utiliza el Ojo de Agamotto en un intento por cambiar el pasado.",
               "url": "https://fastream.to/embed-ny3oj23kf842.html"
             },
             {
               "numero": 5,
               "titulo": "¿Qué pasaría si... hubiera zombis?",
-              "descripcion": "Un virus zombi infecta a los Vengadores y los héroes supervivientes parten en busca de una cura.",
               "duracion": "29:59",
+              "descripcion": "Un virus zombi infecta a los Vengadores y los héroes supervivientes parten en busca de una cura.",
               "url": "https://fastream.to/embed-k88u3rifooxw.html"
             },
             {
               "numero": 6,
               "titulo": "¿Qué pasaría si... Killmonger rescatara a Tony Stark?",
-              "descripcion": "Un soldado apodado Killmonger rescata a Tony Stark cuando sufre un ataque en Afganistán.",
               "duracion": "31:03",
+              "descripcion": "Un soldado apodado Killmonger rescata a Tony Stark cuando sufre un ataque en Afganistán.",
               "url": "https://fastream.to/embed-mjdc6nkfkmij.html"
             },
             {
               "numero": 7,
               "titulo": "¿Qué pasaría si... Thor fuera hijo único?",
-              "descripcion": "Thor, que nunca aprendió a ser un héroe, organiza una caótica fiesta intergaláctica en la Tierra.",
               "duracion": "32:51",
+              "descripcion": "Thor, que nunca aprendió a ser un héroe, organiza una caótica fiesta intergaláctica en la Tierra.",
               "url": "https://fastream.to/embed-to567kvnt183.html"
             },
             {
               "numero": 8,
               "titulo": "¿Qué pasaría si... Ultrón ganara?",
-              "descripcion": "Natasha Romanoff y Clint Barton buscan destruir al robot asesino Ultrón luego de una catástrofe.",
               "duracion": "28:24",
+              "descripcion": "Natasha Romanoff y Clint Barton buscan destruir al robot asesino Ultrón luego de una catástrofe.",
               "url": "https://fastream.to/embed-ncg2dsv45k7n.html"
             },
             {
               "numero": 9,
               "titulo": "¿Qué pasaría si... el Vigilante rompiera su juramento?",
-              "descripcion": "El vigilante reúne a los personajes de los anteriores capítulos para formar los vengadores multiverso para detener a Ultron.",
               "duracion": "33:04",
+              "descripcion": "El vigilante reúne a los personajes de los anteriores capítulos para formar los vengadores multiverso para detener a Ultron.",
               "url": "https://fastream.to/embed-uchivpjuln2l.html"
             }
           ]
