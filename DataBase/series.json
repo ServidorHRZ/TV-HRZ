@@ -7750,7 +7750,20 @@
       "director": "",
       "actores": [],
       "enProceso": false,
-      "temporadas": []
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Un nuevo orden mundial",
+              "descripcion": "Sam Wilson lucha con la decisión de aceptar el escudo del Capitán América, mientras Bucky Barnes intenta enmendar sus errores del pasado. Ambos siguen caminos separados, pero una nueva amenaza global comienza a emerger.",
+              "duracion": "45:00",
+              "url": "https://fastream.to/embed-20yg0mn1055o.html"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
