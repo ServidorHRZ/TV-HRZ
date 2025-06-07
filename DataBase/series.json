@@ -7816,7 +7816,20 @@
       "director": "",
       "actores": [],
       "enProceso": false,
-      "temporadas": []
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "¿Qué pasaría si... el Capitán Carter fuera el Primer Vengador?",
+              "descripcion": "Steve Rogers es gravemente herido y Peggy Carter se vuelve la primera supersoldado del mundo.",
+              "duracion": "31:13",
+              "url": "https://fastream.to/embed-oy92wcmfrlk7.html"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
