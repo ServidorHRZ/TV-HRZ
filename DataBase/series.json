@@ -7669,7 +7669,20 @@
       "director": "",
       "actores": [],
       "enProceso": false,
-      "temporadas": []
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Aang",
+              "descripcion": "Un maestro del aire intenta asimilar quién es al tiempo que estalla una guerra. Un siglo después, dos hermanos de una Tribu del Agua encuentran algo que lo cambia todo.",
+              "duracion": "1:03:52",
+              "url": "https://fastream.to/embed-u7epgdaix521.html"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
