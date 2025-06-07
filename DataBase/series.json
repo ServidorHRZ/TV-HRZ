@@ -7745,8 +7745,8 @@
       "año": 2021,
       "descripcion": "Siguiendo los eventos de Vengadores: Endgame, Sam Wilson/Falcon y Bucky Barnes/Soldado de Invierno se unen en una aventura global que pondrá a prueba sus habilidades - y su paciencia.",
       "disponible": true,
-      "nuevo": false,
-      "badge": "",
+      "nuevo": true,
+      "badge": "Recién agregado",
       "director": "",
       "actores": [],
       "enProceso": false,
@@ -7757,43 +7757,43 @@
             {
               "numero": 1,
               "titulo": "Un nuevo orden mundial",
-              "descripcion": "Sam Wilson lucha con la decisión de aceptar el escudo del Capitán América, mientras Bucky Barnes intenta enmendar sus errores del pasado. Ambos siguen caminos separados, pero una nueva amenaza global comienza a emerger.",
               "duracion": "45:00",
+              "descripcion": "Sam Wilson lucha con la decisión de aceptar el escudo del Capitán América, mientras Bucky Barnes intenta enmendar sus errores del pasado. Ambos siguen caminos separados, pero una nueva amenaza global comienza a emerger.",
               "url": "https://fastream.to/embed-20yg0mn1055o.html"
             },
             {
               "numero": 2,
               "titulo": "El patriota estrella",
-              "descripcion": "Sam y Bucky se reúnen de mala gana cuando el gobierno presenta a un nuevo Capitán América: John Walker. La dupla debe enfrentarse a un grupo radical llamado los Sin Banderas, que poseen una fuerza sorprendente.",
               "duracion": "45:00",
+              "descripcion": "Sam y Bucky se reúnen de mala gana cuando el gobierno presenta a un nuevo Capitán América: John Walker. La dupla debe enfrentarse a un grupo radical llamado los Sin Banderas, que poseen una fuerza sorprendente.",
               "url": "https://fastream.to/embed-zgjhymr42n45.html"
             },
             {
               "numero": 3,
               "titulo": "El poder del poder",
-              "descripcion": "En busca de respuestas, Sam y Bucky recurren a Helmut Zemo, el villano que dividió a los Vengadores. Su misión los lleva a Madripoor, una ciudad sin ley donde se cruzan con una figura del pasado: Sharon Carter.",
               "duracion": "45:00",
+              "descripcion": "En busca de respuestas, Sam y Bucky recurren a Helmut Zemo, el villano que dividió a los Vengadores. Su misión los lleva a Madripoor, una ciudad sin ley donde se cruzan con una figura del pasado: Sharon Carter.",
               "url": "https://fastream.to/embed-fhrnwnkggl84.html"
             },
             {
               "numero": 4,
               "titulo": "El mundo nos observa",
-              "descripcion": "La presión aumenta cuando los métodos de los Sin Banderas se vuelven más extremos. John Walker toma decisiones cuestionables mientras Sam intenta razonar con Karli Morgenthau, la líder del grupo rebelde.",
               "duracion": "45:00",
+              "descripcion": "La presión aumenta cuando los métodos de los Sin Banderas se vuelven más extremos. John Walker toma decisiones cuestionables mientras Sam intenta razonar con Karli Morgenthau, la líder del grupo rebelde.",
               "url": "https://fastream.to/embed-fjwsx702h94h.html"
             },
             {
               "numero": 5,
               "titulo": "La verdad",
-              "descripcion": "Tras un desenlace violento, Sam y Bucky enfrentan las consecuencias. Se revelan verdades dolorosas sobre el legado del Capitán América, y Sam debe decidir si está listo para asumir el escudo.",
               "duracion": "45:00",
+              "descripcion": "Tras un desenlace violento, Sam y Bucky enfrentan las consecuencias. Se revelan verdades dolorosas sobre el legado del Capitán América, y Sam debe decidir si está listo para asumir el escudo.",
               "url": "https://fastream.to/embed-wpju7usz007z.html"
             },
             {
               "numero": 6,
               "titulo": "Un mundo, un pueblo",
-              "descripcion": "En el enfrentamiento final, Sam abraza plenamente el rol del Capitán América. Junto a Bucky, lucha por detener a los Sin Banderas y restaurar el orden, mientras ambos hombres encuentran una nueva dirección en sus vidas.",
               "duracion": "45:00",
+              "descripcion": "En el enfrentamiento final, Sam abraza plenamente el rol del Capitán América. Junto a Bucky, lucha por detener a los Sin Banderas y restaurar el orden, mientras ambos hombres encuentran una nueva dirección en sus vidas.",
               "url": "https://fastream.to/embed-ucc97omg25ga.html"
             }
           ]
