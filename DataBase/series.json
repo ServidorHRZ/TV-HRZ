@@ -7267,7 +7267,7 @@
       "id": 50,
       "titulo": "Solo leveling",
       "imagen": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuLhpQKwRJ1XWIbAy8VXAqwk5vDeKojrS2k8F4RpCtOaCrQT9q",
-      "trailer": "https://www.youtube.com/embed/bQAFicg_9SY", 
+      "trailer": "https://www.youtube.com/embed/bQAFicg_9SY",
       "genero": [
         "anime"
       ],
@@ -7279,7 +7279,7 @@
       "director": "Shunsuke Nakashige",
       "actores": [
         "Taito Ban",
-        "Genta Nakamura", 
+        "Genta Nakamura",
         "Reina Ueda",
         "Hiroki Touchi",
         "Banjo Ginga"
@@ -7652,6 +7652,24 @@
           ]
         }
       ]
+    },
+    {
+      "id": 53,
+      "titulo": "Avatar: La leyenda de Aang",
+      "imagen": "https://pics.filmaffinity.com/avatar_the_last_airbender-291647715-large.jpg",
+      "trailer": "https://www.youtube.com/embed/gapK18-dFMw",
+      "genero": [
+        "neflix"
+      ],
+      "año": 2024,
+      "descripcion": "El nuevo y joven Avatar debe aprender a controlar los elementos para salvar un mundo en guerra, además de enfrentarse a un despiadado enemigo decidido a pararle los pies.",
+      "disponible": false,
+      "nuevo": false,
+      "badge": "",
+      "director": "",
+      "actores": [],
+      "enProceso": false,
+      "temporadas": []
     }
   ]
 }
