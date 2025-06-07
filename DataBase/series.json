@@ -7732,6 +7732,25 @@
           ]
         }
       ]
+    },
+    {
+      "id": 54,
+      "titulo": "Falcon y el Soldado de Invierno",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BZDRmMzlmM2QtZDQ1MS00ZDVkLThlODctMmY0MTcyZTg1MDQ2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/embed/nfucjOtnSXI",
+      "genero": [
+        "accion",
+        "marvel"
+      ],
+      "año": 2021,
+      "descripcion": "Siguiendo los eventos de Vengadores: Endgame, Sam Wilson/Falcon y Bucky Barnes/Soldado de Invierno se unen en una aventura global que pondrá a prueba sus habilidades - y su paciencia.",
+      "disponible": true,
+      "nuevo": false,
+      "badge": "",
+      "director": "",
+      "actores": [],
+      "enProceso": false,
+      "temporadas": []
     }
   ]
 }
