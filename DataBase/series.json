@@ -7267,7 +7267,7 @@
       "id": 50,
       "titulo": "Solo leveling",
       "imagen": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuLhpQKwRJ1XWIbAy8VXAqwk5vDeKojrS2k8F4RpCtOaCrQT9q",
-      "trailer": "https://www.youtube.com/embed/bQAFicg_9SY", 
+      "trailer": "https://www.youtube.com/embed/bQAFicg_9SY",
       "genero": [
         "anime"
       ],
@@ -7279,7 +7279,7 @@
       "director": "Shunsuke Nakashige",
       "actores": [
         "Taito Ban",
-        "Genta Nakamura", 
+        "Genta Nakamura",
         "Reina Ueda",
         "Hiroki Touchi",
         "Banjo Ginga"
@@ -7648,6 +7648,280 @@
               "duracion": "48:34",
               "descripcion": "Golpeado, maltratado y traicionado, John 117 lidera a los Spartans en una misión suicida para encontrar Halo y salvar a la humanidad.",
               "url": "https://fastream.to/embed-w3svrfunjw9d.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "titulo": "Avatar: La leyenda de Aang",
+      "imagen": "https://pics.filmaffinity.com/avatar_the_last_airbender-291647715-large.jpg",
+      "trailer": "https://www.youtube.com/embed/gapK18-dFMw",
+      "genero": [
+        "neflix"
+      ],
+      "año": 2024,
+      "descripcion": "El nuevo y joven Avatar debe aprender a controlar los elementos para salvar un mundo en guerra, además de enfrentarse a un despiadado enemigo decidido a pararle los pies.",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "director": "",
+      "actores": [],
+      "enProceso": false,
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Aang",
+              "duracion": "1:03:52",
+              "descripcion": "Un maestro del aire intenta asimilar quién es al tiempo que estalla una guerra. Un siglo después, dos hermanos de una Tribu del Agua encuentran algo que lo cambia todo.",
+              "url": "https://fastream.to/embed-u7epgdaix521.html"
+            },
+            {
+              "numero": 2,
+              "titulo": "Guerrero",
+              "duracion": "48:45",
+              "descripcion": "Aang, Katara y Sokka llegan a una isla habitada por unas guerreras de élite que toman su nombre de la Avatar Kyoshi. La Nación del Fuego descubre el paradero del Avatar.",
+              "url": "https://fastream.to/embed-l1clupetwrps.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "Omashu",
+              "duracion": "52:39",
+              "descripcion": "Los rumores acerca de un traidor dividen al trío en Omashu, donde un mecanicista y un grupo rebelde complican sus planes para proteger el Reino de la Tierra.",
+              "url": "https://fastream.to/embed-uz90p5ocb1hw.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "En la Oscuridad",
+              "duracion": "55:40",
+              "descripcion": "Aang, prisionero, tiene un encuentro con un rey al que le gustan los juegos. Para encontrar a su amigo, Katara y Sokka deben atravesar un túnel y olvidar sus diferencias.",
+              "url": "https://fastream.to/embed-a23ilgvjk78j.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "El Viaje al Mundo de los Espíritus",
+              "duracion": "51:42",
+              "descripcion": "El grupo llega al mundo de los espíritus para cumplir una misión de rescate. Allí se enfrentan cara a cara a peligrosas amenazas, recuerdos dolorosos y un misterioso ser.",
+              "url": "https://fastream.to/embed-xsahsxvjfewb.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "Máscaras",
+              "duracion": "56:38",
+              "descripcion": "Un Aang desesperado le pide ayuda al Avatar Roku. La Nación del Fuego le pisa los talones y acaba encerrado en una fortaleza, pero un intruso enmascarado lo libera.",
+              "url": "https://fastream.to/embed-ubbe73y00d8l.html"
+            },
+            {
+              "numero": 7,
+              "titulo": "El Norte",
+              "duracion": "47:08",
+              "descripcion": "Un ataque inminente se cierne sobre la Tribu del Agua del Norte. Katara reta a un maestro del agua, Sokka conoce a una princesa y Aang sigue el consejo de Kuruk.",
+              "url": "https://fastream.to/embed-r3zi4d6qwt7e.html"
+            },
+            {
+              "numero": 8,
+              "titulo": "Leyendas",
+              "duracion": "57:48",
+              "descripcion": "Zhao guía a la Nación del Fuego hacia el norte, con un audaz plan para debilitar a la tribu del agua, pero cuando la batalla se recrudece, Aang se vuelve más poderoso.",
+              "url": "https://fastream.to/embed-w0l4vi1hpzgx.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "titulo": "Falcon y el Soldado de Invierno",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BZDRmMzlmM2QtZDQ1MS00ZDVkLThlODctMmY0MTcyZTg1MDQ2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/embed/nfucjOtnSXI",
+      "genero": [
+        "accion",
+        "marvel"
+      ],
+      "año": 2021,
+      "descripcion": "Siguiendo los eventos de Vengadores: Endgame, Sam Wilson/Falcon y Bucky Barnes/Soldado de Invierno se unen en una aventura global que pondrá a prueba sus habilidades - y su paciencia.",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "director": "",
+      "actores": [],
+      "enProceso": false,
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "Un nuevo orden mundial",
+              "duracion": "45:00",
+              "descripcion": "Sam Wilson lucha con la decisión de aceptar el escudo del Capitán América, mientras Bucky Barnes intenta enmendar sus errores del pasado. Ambos siguen caminos separados, pero una nueva amenaza global comienza a emerger.",
+              "url": "https://fastream.to/embed-20yg0mn1055o.html"
+            },
+            {
+              "numero": 2,
+              "titulo": "El patriota estrella",
+              "duracion": "45:00",
+              "descripcion": "Sam y Bucky se reúnen de mala gana cuando el gobierno presenta a un nuevo Capitán América: John Walker. La dupla debe enfrentarse a un grupo radical llamado los Sin Banderas, que poseen una fuerza sorprendente.",
+              "url": "https://fastream.to/embed-zgjhymr42n45.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "El poder del poder",
+              "duracion": "45:00",
+              "descripcion": "En busca de respuestas, Sam y Bucky recurren a Helmut Zemo, el villano que dividió a los Vengadores. Su misión los lleva a Madripoor, una ciudad sin ley donde se cruzan con una figura del pasado: Sharon Carter.",
+              "url": "https://fastream.to/embed-fhrnwnkggl84.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "El mundo nos observa",
+              "duracion": "45:00",
+              "descripcion": "La presión aumenta cuando los métodos de los Sin Banderas se vuelven más extremos. John Walker toma decisiones cuestionables mientras Sam intenta razonar con Karli Morgenthau, la líder del grupo rebelde.",
+              "url": "https://fastream.to/embed-fjwsx702h94h.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "La verdad",
+              "duracion": "45:00",
+              "descripcion": "Tras un desenlace violento, Sam y Bucky enfrentan las consecuencias. Se revelan verdades dolorosas sobre el legado del Capitán América, y Sam debe decidir si está listo para asumir el escudo.",
+              "url": "https://fastream.to/embed-wpju7usz007z.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "Un mundo, un pueblo",
+              "duracion": "45:00",
+              "descripcion": "En el enfrentamiento final, Sam abraza plenamente el rol del Capitán América. Junto a Bucky, lucha por detener a los Sin Banderas y restaurar el orden, mientras ambos hombres encuentran una nueva dirección en sus vidas.",
+              "url": "https://fastream.to/embed-ucc97omg25ga.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "titulo": "¿Qué pasaría si...?",
+      "imagen": "https://es.web.img2.acsta.net/pictures/21/08/05/13/56/3641619.jpg",
+      "trailer": "https://www.youtube.com/embed/Q4og7q_BWUU",
+      "genero": [
+        "marvel"
+      ],
+      "año": 2021,
+      "descripcion": "Inspirándose en los cómics del mismo nombre, cada episodio explora un momento crucial del Universo Cinematográfico Marvel.",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "director": "",
+      "actores": [],
+      "enProceso": false,
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "¿Qué pasaría si... el Capitán Carter fuera el Primer Vengador?",
+              "duracion": "31:13",
+              "descripcion": "Steve Rogers es gravemente herido y Peggy Carter se vuelve la primera supersoldado del mundo.",
+              "url": "https://fastream.to/embed-oy92wcmfrlk7.html"
+            },
+            {
+              "numero": 2,
+              "titulo": "¿Qué pasaría si... TChalla se convirtiera en Star-Lord?",
+              "duracion": "32:14",
+              "descripcion": "Los piratas espaciales conocidos como los Devastadores secuestran a TChalla en vez de a Peter Quill.",
+              "url": "https://fastream.to/embed-c5oz7fcrs1k7.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "¿Qué pasaría si... el mundo perdiera a sus héroes más poderosos?",
+              "duracion": "30:24",
+              "descripcion": "Nick Furia intenta fundar los Vengadores y un asesino en serie ataca a sus candidatos.",
+              "url": "https://fastream.to/embed-ilsobdcif3st.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "¿Qué pasaría si... el Doctor Strange perdiera el corazón en lugar de las manos?",
+              "duracion": "34:39",
+              "descripcion": "El Doctor Strange utiliza el Ojo de Agamotto en un intento por cambiar el pasado.",
+              "url": "https://fastream.to/embed-ny3oj23kf842.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "¿Qué pasaría si... hubiera zombis?",
+              "duracion": "29:59",
+              "descripcion": "Un virus zombi infecta a los Vengadores y los héroes supervivientes parten en busca de una cura.",
+              "url": "https://fastream.to/embed-k88u3rifooxw.html"
+            },
+            {
+              "numero": 6,
+              "titulo": "¿Qué pasaría si... Killmonger rescatara a Tony Stark?",
+              "duracion": "31:03",
+              "descripcion": "Un soldado apodado Killmonger rescata a Tony Stark cuando sufre un ataque en Afganistán.",
+              "url": "https://fastream.to/embed-mjdc6nkfkmij.html"
+            },
+            {
+              "numero": 7,
+              "titulo": "¿Qué pasaría si... Thor fuera hijo único?",
+              "duracion": "32:51",
+              "descripcion": "Thor, que nunca aprendió a ser un héroe, organiza una caótica fiesta intergaláctica en la Tierra.",
+              "url": "https://fastream.to/embed-to567kvnt183.html"
+            },
+            {
+              "numero": 8,
+              "titulo": "¿Qué pasaría si... Ultrón ganara?",
+              "duracion": "28:24",
+              "descripcion": "Natasha Romanoff y Clint Barton buscan destruir al robot asesino Ultrón luego de una catástrofe.",
+              "url": "https://fastream.to/embed-ncg2dsv45k7n.html"
+            },
+            {
+              "numero": 9,
+              "titulo": "¿Qué pasaría si... el Vigilante rompiera su juramento?",
+              "duracion": "33:04",
+              "descripcion": "El vigilante reúne a los personajes de los anteriores capítulos para formar los vengadores multiverso para detener a Ultron.",
+              "url": "https://fastream.to/embed-uchivpjuln2l.html"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "¿Qué pasaría si... Nebula se uniera al Cuerpo Nova?",
+              "duracion": "28:40",
+              "descripcion": "En un mundo donde Ronan derroca a Thanos mucho antes de los acontecimientos de Infinity War, Nebula es reclutada para unirse a los Nova Corps. Desesperada por escapar de la sombra de su padre, se propone demostrar sus dotes de detective.",
+              "url": "https://fastream.to/embed-3zect5mjmo9w.html"
+            },
+            {
+              "numero": 2,
+              "titulo": "¿Qué pasaría si... Peter Quill atacara a los héroes más poderosos de la Tierra?",
+              "duracion": "29:55",
+              "descripcion": "Cuando Ego y Peter Quill amenazan a la tierra en 1988, Howard Stark y Peggy Carter forman un equipo.",
+              "url": "https://fastream.to/embed-uut0ho8s4a0n.html"
+            },
+            {
+              "numero": 3,
+              "titulo": "¿Qué pasaría si... Happy Hogan salvara la Navidad?",
+              "duracion": "27:00",
+              "descripcion": "Cuando la Torre de los Vengadores es asaltada en Navidades, Happy Hogan demuestra ser un héroe.",
+              "url": "https://fastream.to/embed-j1ml82whxy2w.html"
+            },
+            {
+              "numero": 4,
+              "titulo": "¿Qué pasaría si... Iron Man se estrellara contra el Gran Maestro?",
+              "duracion": "31:43",
+              "descripcion": "Tony Stark desafía al Gran Maestro en un gran premio que acaba siendo un destructivo derbi a muerte.",
+              "url": "https://fastream.to/embed-469a9go0yotl.html"
+            },
+            {
+              "numero": 5,
+              "titulo": "¿Qué pasaría si... el Capitán Carter luchara contra la Hydra Stomper?",
+              "duracion": "30:35",
+              "descripcion": "Después de recuperar al Hydra Stomper, perdido hace mucho tiempo, la misión de la Capitana Carter de salvar a su antiguo amor, Steve Rogers, la pone en curso de colisión con nuevos enemigos.",
+              "url": "https://fastream.to/embed-zucvthbp3wbf.html"
             }
           ]
         }
