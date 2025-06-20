@@ -7926,6 +7926,24 @@
           ]
         }
       ]
+    },
+    {
+      "id": 56,
+      "titulo": "Love, Death & Robots",
+      "imagen": "https://m.media-amazon.com/images/M/MV5BZDY3OTZiYzktN2U5My00MzRhLWJiZjItZjNlZmM3OGViZmFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "trailer": "https://www.youtube.com/embed/sV7Vwqiovb8",
+      "genero": [
+        "neflix"
+      ],
+      "año": 2019,
+      "descripcion": "Seres terroríficos, sorpresas retorcidas y humor negro convergen en esta antología de relatos animados para adultos presentada por Tim Miller y David Fincher.",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "director": "",
+      "actores": [],
+      "enProceso": false,
+      "temporadas": []
     }
   ]
 }
