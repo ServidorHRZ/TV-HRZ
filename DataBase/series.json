@@ -7943,7 +7943,20 @@
       "director": "",
       "actores": [],
       "enProceso": false,
-      "temporadas": []
+      "temporadas": [
+        {
+          "numero": 1,
+          "episodios": [
+            {
+              "numero": 1,
+              "titulo": "La ventaja de Sonnie",
+              "descripcion": "Una mujer llamada Sonnie controla remotamente a un monstruo genéticamente diseñado para batallas clandestinas de gladiadores. Un hombre rico le ofrece mucho dinero para perder, pero ella se niega. Después de que ella gana el combate, él regresa para hacerle pagar, solo para descubrir que él tiene las cosas complicadas.",
+              "duracion": "17:14",
+              "url": "https://fastream.to/embed-usgd9nihs17g.html"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
