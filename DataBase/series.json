@@ -8205,6 +8205,25 @@
           ]
         }
       ]
+    },
+    {
+      "id": 57,
+      "titulo": "The Last of Us",
+      "imagen": "https://pics.filmaffinity.com/The_Last_of_Us_T1_Serie_de_TV-722385305-large.jpg",
+      "trailer": "https://www.youtube.com/embed/yyGetSp7CIc",
+      "genero": [
+        "crimen",
+        "accion"
+      ],
+      "año": 2023,
+      "descripcion": "Año 2023, veinte años después del comienzo de una plaga mundial que infectó a población con un hongo mutado transformando a las personas en unas criaturas caníbales, el contrabandista Joel tiene la misión de escoltar a la adolescente Ellie por un mundo postapocalíptico en el nada va a ser fácil para los viajeros. Joel todavía vive atormentado por el recuerdo de su única hija. Ellie es portadora de algo que podría cambiar el destino de la humanidad, conseguirán sobrevivir los dos.",
+      "disponible": false,
+      "nuevo": false,
+      "badge": "",
+      "director": "",
+      "actores": [],
+      "enProceso": false,
+      "temporadas": []
     }
   ]
 }
