@@ -3605,6 +3605,22 @@
       "imagen": "https://m.media-amazon.com/images/M/MV5BYTNkYjc5MjQtZjE1NC00OTM2LTg2ZWQtNDBkYmU2NmQyMjFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "enlace": "https://fastream.to/embed-ffz2c2am38w9.html",
       "descripcion": "El veterano mercenario Barney Esquizo Ross y su equipo de estrellas, formado por los hombres más duros, afrontan un nuevo desafío, en una trama cargada de acción. Para superarlo y salir airosos, deberán recurrir a su ingenio, experiencia y a la fuerza bruta que los caracteriza."
+    },
+    {
+      "id": 273,
+      "titulo": "Jurassic Park",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 1993,
+      "trailer": "https://www.youtube.com/embed/RtBuQmT6bb4",
+      "genero": [
+        "accion",
+        "ciencia_ficcion"
+      ],
+      "imagen": "https://es.web.img2.acsta.net/pictures/14/03/25/09/25/346980.jpg",
+      "enlace": "https://fastream.to/embed-7gx1g20zioz9.html",
+      "descripcion": "El multimillonario John Hammond tiene una idea para un espectacular parque temático: una isla retirada donde los visitantes puedan observar dinosaurios reales. Con la última tecnología en el desarrollo de ADN, los científicos pueden clonar braquiosaurios, triceratops, velociraptors y un tiranosaurio rex, utilizando para ello la sangre fosilizada en ámbar contenida en insectos que los mordieron hace millones de años. Los paleontólogos Alan Grant, Ellie Sattler y Ian Malcolm visitan el parque y quedan muy sorprendidos con los resultados obtenidos. Pero cuando un problemático empleado manipula el sofisticado sistema de seguridad los dinosaurios escapan, obligando a los visitantes a luchar por su supervivencia."
     }
   ]
 }
