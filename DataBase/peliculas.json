@@ -3684,6 +3684,21 @@
       "imagen": "https://m.media-amazon.com/images/M/MV5BOWMyZTJmMTUtNDNiYy00ZGE2LWIzZjAtZmQyZWQ0NjdiMjI5XkEyXkFqcGc@._V1_.jpg",
       "enlace": "https://fastream.to/embed-ieorycev7gih.html",
       "descripcion": "Biopic que narrará la vida personal y profesional de la cantante y compositora Amy Winehouse, que comenzó como cantante de jazz para convertirse en una superestrella mundial de la música ganadora de varios premios Grammy. Su vida se truncó en 2011 a los 27 años provocada por una vida llena de consumo y abuso de alcohol y drogas."
+    },
+    {
+      "id": 278,
+      "titulo": "Casate Conmigo",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2022,
+      "trailer": "https://www.youtube.com/embed/8hXboMXWavE",
+      "genero": [
+        "suspenso"
+      ],
+      "imagen": "https://m.media-amazon.com/images/M/MV5BOTU5OWQ2M2UtZGUxOC00NzBiLWIxZWEtMTc1MWM2Nzg1ODdhXkEyXkFqcGc@._V1_.jpg",
+      "enlace": "https://fastream.to/embed-g09tmbtpzmja.html",
+      "descripcion": "Una estrella del pop es abandonada por su prometido, una estrella del rock, momentos antes de su boda en el Madison Square Garden, por lo que decide casarse con un hombre que selecciona aleatoriamente entre el público."
     }
   ]
 }
