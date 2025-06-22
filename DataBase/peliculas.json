@@ -1275,12 +1275,17 @@
     {
       "id": 105,
       "titulo": "Logan",
-      "disponible": false,
+      "disponible": true,
       "año": 2017,
-      "genero": "marvel",
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/Logan.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_LOGAN/preview",
-      "descripcion": "En un futuro cercano, un Logan envejecido cuida de un enfermo Profesor X mientras protege a una joven mutante con poderes similares a los suyos. Una última aventura que pondrá a prueba su legado como Wolverine."
+      "genero": [
+        "marvel"
+      ],
+      "imagen": "https://m.media-amazon.com/images/M/MV5BM2JjODdkMGMtNmY2YS00OGM2LThiY2YtZGYyNzE4Nzc2ODA0XkEyXkFqcGc@._V1_.jpg",
+      "enlace": "https://fastream.to/embed-sd4g34q15zdm.html",
+      "descripcion": "En un futuro cercano, un Logan envejecido cuida de un enfermo Profesor X mientras protege a una joven mutante con poderes similares a los suyos. Una última aventura que pondrá a prueba su legado como Wolverine.",
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "trailer": "https://www.youtube.com/embed/atu1yOOXIz0"
     },
     {
       "id": 106,
