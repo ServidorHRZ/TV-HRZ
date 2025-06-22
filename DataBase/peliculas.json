@@ -3541,6 +3541,22 @@
       "imagen": "https://m.media-amazon.com/images/M/MV5BMzZhNTA3YWEtNWQyOC00MDYwLWFiYTctYzQ3ZmYwNTUzODQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "enlace": "https://fastream.to/embed-dsqj16ffmpyv.html",
       "descripcion": "Después de los sucesos ocurridos en Terminator 2: el juicio final, Sarah Connor se verá obligada a luchar del lado de Grace, una mujer híbrido entre humano y cyborg. De ellas dependerá el futuro de la humanidad, que está gravemente amenazado por un nuevo y poderoso Terminator, recién modificado del futuro. En su camino además recibirán la ayuda del modelo T-800."
+    },
+    {
+      "id": 269,
+      "titulo": "Los Indestructibles",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2010,
+      "trailer": "https://www.youtube.com/embed/8KtYRALe-xo",
+      "genero": [
+        "accion",
+        "suspenso"
+      ],
+      "imagen": "https://pics.filmaffinity.com/Los_mercenarios-610203684-large.jpg",
+      "enlace": "https://fastream.to/embed-tu11qoxljc2i.html",
+      "descripcion": "Un grupo de mercenarios es contratado para infiltrarse en un país sudamericano y derrocar a su despiadado y corrupto dictador. Una vez allí, se verán atrapados en una telaraña de engaño y traición. Una vez fracasada la misión, tendrán que enfrentarse a un reto aún más difícil, salvar la unidad del grupo y la amistad que los ha unido durante largos años."
     }
   ]
 }
