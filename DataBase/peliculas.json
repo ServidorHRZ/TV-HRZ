@@ -3653,6 +3653,22 @@
       "imagen": "https://m.media-amazon.com/images/M/MV5BN2FmMjhlZDYtNmYyMy00NTdjLTlhYzYtZWNlMDY2MmUzOGM2XkEyXkFqcGc@._V1_.jpg",
       "enlace": "https://fastream.to/embed-8ye46c996vjb.html",
       "descripcion": "El doctor Alan Grant, ansioso por conseguir fondos que financien su estudio sobre la inteligencia del velociraptor, acepta la oferta de pareja de millonarios, Paul y Amanda Kirby, para sobrevolar la Isla Sorna, en Puerto Rico, poblada por dinosaurios creados genéticamente para un parque recreativo. Tras producirse un aterrizaje forzoso en la isla, Alan descubre que los Kirby estaban buscando a su hijo adolescente, perdido en la isla tras un accidente de parapente."
+    },
+    {
+      "id": 276,
+      "titulo": "Shaolin Soccer",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2001,
+      "trailer": "https://www.youtube.com/embed/KEWUDWYDdYs",
+      "genero": [
+        "accion",
+        "comedia"
+      ],
+      "imagen": "https://m.media-amazon.com/images/M/MV5BM2JhYTkzYmUtYjY1Mi00OWNjLTk4N2ItNDRkZTIyMzgyMjMyXkEyXkFqcGc@._V1_.jpg",
+      "enlace": "https://fastream.to/embed-l8zz57x9f3zx.html",
+      "descripcion": "Un joven seguidor de Shaolin reúne a sus hermanos para formar un equipo de fútbol usando sus habilidades en artes marciales a su favor."
     }
   ]
 }
