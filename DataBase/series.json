@@ -8217,9 +8217,9 @@
       ],
       "año": 2023,
       "descripcion": "Año 2023, veinte años después del comienzo de una plaga mundial que infectó a población con un hongo mutado transformando a las personas en unas criaturas caníbales, el contrabandista Joel tiene la misión de escoltar a la adolescente Ellie por un mundo postapocalíptico en el nada va a ser fácil para los viajeros. Joel todavía vive atormentado por el recuerdo de su única hija. Ellie es portadora de algo que podría cambiar el destino de la humanidad, conseguirán sobrevivir los dos.",
-      "disponible": false,
-      "nuevo": false,
-      "badge": "",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
       "director": "",
       "actores": [],
       "enProceso": false,
@@ -8230,64 +8230,64 @@
             {
               "numero": 1,
               "titulo": "Cuando Estés Perdido en la Oscuridad",
-              "descripcion": "Veinte años después de que un brote de hongos asola el planeta, a los sobrevivientes Joel y Tess se les asigna una misión que podría cambiarlo todo.",
               "duracion": "1:20:43",
+              "descripcion": "Veinte años después de que un brote de hongos asola el planeta, a los sobrevivientes Joel y Tess se les asigna una misión que podría cambiarlo todo.",
               "url": "https://fastream.to/embed-qd15sz06fhe5.html"
             },
             {
               "numero": 2,
               "titulo": "Infectados",
-              "descripcion": "Luego de escapar de la zona de cuarentena, Joel y Tess discuten sobre el destino de Ellie mientras transitan las ruinas de un Boston abandonado ya hace mucho tiempo.",
               "duracion": "52:47",
+              "descripcion": "Luego de escapar de la zona de cuarentena, Joel y Tess discuten sobre el destino de Ellie mientras transitan las ruinas de un Boston abandonado ya hace mucho tiempo.",
               "url": "https://fastream.to/embed-qr8ha4j35gyk.html"
             },
             {
               "numero": 3,
               "titulo": "Mucho, Mucho Tiempo",
-              "descripcion": "Cuando un extraño se acerca al recinto de Bill, un aficionado en preparativos para eventos apocalípticos, ambos forjan una conexión poco probable. Más tarde, Joel y Ellie buscan la guía de Bill.",
               "duracion": "1:15:38",
+              "descripcion": "Cuando un extraño se acerca al recinto de Bill, un aficionado en preparativos para eventos apocalípticos, ambos forjan una conexión poco probable. Más tarde, Joel y Ellie buscan la guía de Bill.",
               "url": "https://fastream.to/embed-h235i3zl5q4d.html"
             },
             {
               "numero": 4,
               "titulo": "Por Favor, Sostén Mi Mano",
-              "descripcion": "Después de abandonar su camioneta en Kansas City, Joel y Ellie intentan escapar sin llamar la atención de una vengativa líder rebelde.",
               "duracion": "45:08",
+              "descripcion": "Después de abandonar su camioneta en Kansas City, Joel y Ellie intentan escapar sin llamar la atención de una vengativa líder rebelde.",
               "url": "https://fastream.to/embed-yvrpsndzk9dc.html"
             },
             {
               "numero": 5,
               "titulo": "Resistir y Sobrevivir",
-              "descripcion": "Mientras intentan evadir a los rebeldes, Joel y Ellie se cruzan con el hombre más buscado de Kansas City. Mientras tanto, Kathleen continúa su persecución.",
               "duracion": "59:04",
+              "descripcion": "Mientras intentan evadir a los rebeldes, Joel y Ellie se cruzan con el hombre más buscado de Kansas City. Mientras tanto, Kathleen continúa su persecución.",
               "url": "https://fastream.to/embed-4k93bhsxnh9e.html"
             },
             {
               "numero": 6,
               "titulo": "Parentesco",
-              "descripcion": "Tras ignorar los consejos de los lugareños, Joel y Ellie se adentran más en un territorio peligroso en busca de las luciérnagas y de Tommy.",
               "duracion": "58:41",
+              "descripcion": "Tras ignorar los consejos de los lugareños, Joel y Ellie se adentran más en un territorio peligroso en busca de las luciérnagas y de Tommy.",
               "url": "https://fastream.to/embed-yl042ixnykvp.html"
             },
             {
               "numero": 7,
               "titulo": "Lo que Dejamos Atrás",
-              "descripcion": "Mientras Joel lucha por sobrevivir, Ellie recuerda la noche que lo cambió todo.",
               "duracion": "55:20",
+              "descripcion": "Mientras Joel lucha por sobrevivir, Ellie recuerda la noche que lo cambió todo.",
               "url": "https://fastream.to/embed-kojq9f8h5fuy.html"
             },
             {
               "numero": 8,
               "titulo": "Cuando Más Necesitamos",
-              "descripcion": "Ellie se cruza con un vengativo grupo de supervivientes y llama la atención de su líder. Un Joel debilitado se enfrenta a una nueva amenaza.",
               "duracion": "50:44",
+              "descripcion": "Ellie se cruza con un vengativo grupo de supervivientes y llama la atención de su líder. Un Joel debilitado se enfrenta a una nueva amenaza.",
               "url": "https://fastream.to/embed-4ffm66zeutr9.html"
             },
             {
               "numero": 9,
               "titulo": "Busca la Luz",
-              "descripcion": "Una Anna embarazada deposita su confianza en una amiga de toda la vida. Más tarde, Joel y Ellie se acercan al final de su viaje.",
               "duracion": "43:34",
+              "descripcion": "Una Anna embarazada deposita su confianza en una amiga de toda la vida. Más tarde, Joel y Ellie se acercan al final de su viaje.",
               "url": "https://fastream.to/embed-o13gbt36s9kd.html"
             }
           ]
