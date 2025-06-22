@@ -1250,12 +1250,17 @@
     {
       "id": 103,
       "titulo": "X-Men: Días del futuro pasado",
-      "disponible": false,
+      "disponible": true,
       "año": 2014,
-      "genero": "marvel",
-      "imagen": "https://servidorhrz.github.io/TV.HRZ/IMG/XMenDOFP.jpg",
-      "enlace": "https://drive.google.com/file/d/ID_XMEN_DOFP/preview",
-      "descripcion": "Los X-Men envían a Wolverine al pasado para cambiar un evento histórico que podría resultar en la destrucción tanto de humanos como de mutantes. Una misión que unirá a las versiones jóvenes y mayores de los X-Men."
+      "genero": [
+        "marvel"
+      ],
+      "imagen": "https://es.web.img2.acsta.net/pictures/14/04/30/15/56/008969.jpg",
+      "enlace": "https://fastream.to/embed-ybyelr11psva.html",
+      "descripcion": "Los X-Men envían a Wolverine al pasado para cambiar un evento histórico que podría resultar en la destrucción tanto de humanos como de mutantes. Una misión que unirá a las versiones jóvenes y mayores de los X-Men.",
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "trailer": "https://www.youtube.com/embed/KPLp3YTMQuk"
     },
     {
       "id": 104,
