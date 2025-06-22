@@ -3744,6 +3744,22 @@
       "imagen": "https://pics.filmaffinity.com/Bohemian_Rhapsody-748186150-large.jpg",
       "enlace": "https://fastream.to/embed-72uvurptxo9y.html",
       "descripcion": "Es una rotunda y sonora celebración de Queen, de su música y de su extraordinario cantante Freddie Mercury, que desafió estereotipos e hizo añicos tradiciones para convertirse en uno de los showmans más queridos del mundo."
+    },
+    {
+      "id": 282,
+      "titulo": "Ready Player One",
+      "disponible": true,
+      "nuevo": true,
+      "badge": "Recién agregado",
+      "año": 2018,
+      "trailer": "https://www.youtube.com/embed/xTHPN0XeoMc",
+      "genero": [
+        "accion",
+        "ciencia_ficcion"
+      ],
+      "imagen": "https://pics.filmaffinity.com/Ready_Player_One-508487059-large.jpg",
+      "enlace": "https://fastream.to/embed-kzaoc2o1o0rh.html",
+      "descripcion": "Año 2045. Wade Watts es un adolescente al que le gusta evadirse del cada vez más sombrío mundo real a través de una popular utopía virtual a escala global llamada Oasis. Un día, su excéntrico y multimillonario creador muere, pero antes ofrece su fortuna y el destino de su empresa al ganador de una elaborada búsqueda del tesoro a través de los rincones más inhóspitos de su creación. Será el punto de partida para que Wade se enfrente a jugadores, poderosos enemigos corporativos y otros competidores despiadados, dispuestos a hacer lo que sea, tanto dentro de Oasis como del mundo real, para hacerse con el premio."
     }
   ]
 }
