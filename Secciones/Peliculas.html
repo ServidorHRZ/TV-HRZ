@@ -1126,19 +1126,19 @@
                 position: relative;
                 background: linear-gradient(
                     90deg,
-                    rgba(0, 0, 0, 0.95) 0%,
-                    rgba(0, 0, 0, 0.85) 30%,
-                    rgba(0, 0, 0, 0.5) 60%,
-                    rgba(0, 0, 0, 0.2) 80%,
-                    transparent 100%
+                    rgba(0, 0, 0, 0.7) 0%,
+                    rgba(0, 0, 0, 0.5) 25%,
+                    rgba(0, 0, 0, 0.2) 45%,
+                    rgba(0, 0, 0, 0.05) 65%,
+                    transparent 85%
                 );
             }
 
             .content-main {
                 position: absolute;
-                bottom: 100px;
+                bottom: 120px;
                 left: 60px;
-                max-width: 50%;
+                max-width: 40%;
                 z-index: 3;
             }
 
@@ -1146,15 +1146,17 @@
                 animation: hideInfo 10s forwards;
                 opacity: 1;
                 margin-bottom: 24px;
-                padding: 20px;
+                padding: 15px;
                 border-radius: 8px;
+                background: rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(3px);
             }
 
             .announcement-title {
                 text-align: left;
-                font-size: 3.5em;
-                margin: 0;
-                line-height: 1.1;
+                font-size: 2.8em;
+                margin: 0 0 10px 0;
+                line-height: 1.0;
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
                 font-weight: 700;
                 letter-spacing: 1px;
@@ -1163,35 +1165,42 @@
 
             .announcement-description {
                 color: #fff;
-                font-size: 1.2em;
-                line-height: 1.6;
-                margin-top: 16px;
+                font-size: 1.0em;
+                line-height: 1.4;
+                margin-top: 8px;
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
                 opacity: 0.9;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             .announcement-info {
                 position: absolute;
                 bottom: 40px;
-                left: 80px; /* Aumentado de 60px a 120px para moverlo más a la derecha */
+                left: 75px;
                 display: flex;
                 gap: 12px;
                 z-index: 5;
                 padding: 15px;
                 border-radius: 8px;
+                background: rgba(0, 0, 0, 0.15);
+                backdrop-filter: blur(3px);
             }
 
             .ver-ahora-btn,
             .mi-lista-btn {
-                padding: 12px 28px;
-                font-size: 1.1rem;
+                padding: 12px 24px;
+                font-size: 1.0rem;
                 border-radius: 4px;
                 transition: all 0.3s ease;
                 display: flex;
                 align-items: center;
                 gap: 8px;
                 font-weight: 500;
-                min-width: 160px;
+                min-width: 140px;
                 justify-content: center;
             }
 
@@ -1219,7 +1228,7 @@
 
             .ver-ahora-btn i,
             .mi-lista-btn i {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
         }
 
@@ -1422,104 +1431,7 @@
             }
         }
 
-        // Función mejorada para el scroll con mouse
-        function enableDragScroll() {
-            const sliders = document.querySelectorAll('.categoria-contenedor');
-            
-            sliders.forEach(slider => {
-                let isDown = false;
-                let startX;
-                let startY;
-                let scrollLeft;
-                let isHorizontalScroll = false;
 
-                function startDragging(e) {
-                    isDown = true;
-                    slider.style.scrollBehavior = 'auto';
-                    slider.style.cursor = 'grabbing';
-                    
-                    startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
-                    startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
-                    scrollLeft = slider.scrollLeft;
-                }
-
-                function stopDragging() {
-                    isDown = false;
-                    isHorizontalScroll = false;
-                    slider.style.cursor = 'grab';
-                    slider.style.scrollBehavior = 'smooth';
-                }
-                
-                function drag(e) {
-                    if (!isDown) return;
-
-                    const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
-                    const y = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
-                    
-                    const deltaX = Math.abs(x - startX);
-                    const deltaY = Math.abs(y - startY);
-
-                    // Determinar dirección del scroll
-                    if (!isHorizontalScroll) {
-                        if (deltaX > deltaY && deltaX > 5) {
-                            isHorizontalScroll = true;
-                            e.preventDefault();
-                        } else if (deltaY > deltaX && deltaY > 5) {
-                            isDown = false;
-                return;
-                        }
-                    }
-
-                    if (isHorizontalScroll) {
-                        e.preventDefault();
-                        const walk = (x - startX) * 1.5; // Multiplicador de velocidad
-                        slider.scrollLeft = scrollLeft - walk;
-                    }
-                }
-
-                // Event Listeners
-                slider.addEventListener('mousedown', startDragging);
-                slider.addEventListener('mousemove', drag);
-                slider.addEventListener('mouseup', stopDragging);
-                slider.addEventListener('mouseleave', stopDragging);
-                
-                // Touch events
-                slider.addEventListener('touchstart', startDragging, { passive: true });
-                slider.addEventListener('touchmove', drag, { passive: false });
-                slider.addEventListener('touchend', stopDragging);
-            });
-        }
-
-        // Actualizar estilos CSS
-        const styles = `
-            .categoria-contenedor {
-                -webkit-overflow-scrolling: touch;
-                overflow-x: auto;
-                overflow-y: hidden;
-                white-space: nowrap;
-                padding: 5px 0;
-                gap: 8px;
-                scrollbar-width: none;
-                -ms-overflow-style: none;
-                cursor: grab;
-                scroll-behavior: smooth;
-                scroll-snap-type: x proximity;
-            }
-
-            .categoria-contenedor::-webkit-scrollbar {
-                display: none;
-            }
-
-            .movie-card {
-                user-select: none;
-                -webkit-user-select: none;
-                scroll-snap-align: start;
-            }
-        `;
-
-        const styleSheet = document.createElement("style");
-        styleSheet.textContent = styles;
-        document.head.appendChild(styleSheet);
     </style>
 </head>
 <body>
@@ -2408,6 +2320,74 @@
 
         }
 
+        // Función mejorada para el scroll con mouse
+        function enableDragScroll() {
+            const sliders = document.querySelectorAll('.categoria-contenedor');
+            
+            sliders.forEach(slider => {
+                let isDown = false;
+                let startX;
+                let startY;
+                let scrollLeft;
+                let isHorizontalScroll = false;
+
+                function startDragging(e) {
+                    isDown = true;
+                    slider.style.scrollBehavior = 'auto';
+                    slider.style.cursor = 'grabbing';
+                    
+                    startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
+                    startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
+                    scrollLeft = slider.scrollLeft;
+                }
+
+                function stopDragging() {
+                    isDown = false;
+                    isHorizontalScroll = false;
+                    slider.style.cursor = 'grab';
+                    slider.style.scrollBehavior = 'smooth';
+                }
+                
+                function drag(e) {
+                    if (!isDown) return;
+
+                    const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
+                    const y = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
+                    
+                    const deltaX = Math.abs(x - startX);
+                    const deltaY = Math.abs(y - startY);
+
+                    // Determinar dirección del scroll
+                    if (!isHorizontalScroll) {
+                        if (deltaX > deltaY && deltaX > 5) {
+                            isHorizontalScroll = true;
+                            e.preventDefault();
+                        } else if (deltaY > deltaX && deltaY > 5) {
+                            isDown = false;
+                            return;
+                        }
+                    }
+
+                    if (isHorizontalScroll) {
+                        e.preventDefault();
+                        const walk = (x - startX) * 1.5; // Multiplicador de velocidad
+                        slider.scrollLeft = scrollLeft - walk;
+                    }
+                }
+
+                // Event Listeners
+                slider.addEventListener('mousedown', startDragging);
+                slider.addEventListener('mousemove', drag);
+                slider.addEventListener('mouseup', stopDragging);
+                slider.addEventListener('mouseleave', stopDragging);
+                
+                // Touch events
+                slider.addEventListener('touchstart', startDragging, { passive: true });
+                slider.addEventListener('touchmove', drag, { passive: false });
+                slider.addEventListener('touchend', stopDragging);
+            });
+        }
+
         // Escuchar cambios en Mi Lista de Series
         window.addEventListener('miListaPeliculasActualizada', () => {
             cargarCategorias();
@@ -2521,9 +2501,44 @@
             });
         }
 
+        // Agregar estilos CSS para el scroll con mouse
+        function agregarEstilosScroll() {
+            const styles = `
+                .categoria-contenedor {
+                    -webkit-overflow-scrolling: touch;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    white-space: nowrap;
+                    padding: 5px 0;
+                    gap: 8px;
+                    scrollbar-width: none;
+                    -ms-overflow-style: none;
+                    cursor: grab;
+                    scroll-behavior: smooth;
+                    scroll-snap-type: x proximity;
+                }
+
+                .categoria-contenedor::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .categoria-contenedor .movie-card {
+                    user-select: none;
+                    -webkit-user-select: none;
+                    scroll-snap-align: start;
+                }
+            `;
+
+            const styleSheet = document.createElement("style");
+            styleSheet.textContent = styles;
+            document.head.appendChild(styleSheet);
+        }
+
         // Agregar la inicialización del buscador al cargar la página
         document.addEventListener('DOMContentLoaded', () => {
             setupBuscador();
+            agregarEstilosScroll();
+            enableDragScroll();
             // ... resto del código existente ...
         });
 
