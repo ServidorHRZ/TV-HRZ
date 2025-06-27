@@ -555,12 +555,12 @@
       "id": 7,
       "titulo": "El Juego del Calamar",
       "disponible": true,
-      "nuevo": false,
+      "nuevo": true,
       "enProceso": false,
       "descripcion": "Cientos de jugadores con problemas económicos aceptan una extraña invitación para competir en juegos infantiles. Dentro les esperan un premio tentador y desafíos letales.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg",
       "año": 2021,
-      "genero": "neflix",
+      "genero": [],
       "director": "Hwang Dong-hyuk",
       "actores": [
         "Lee Jung-jae",
@@ -576,64 +576,64 @@
             {
               "numero": 1,
               "titulo": "Luz roja, luz verde",
-              "descripcion": "Agobiado por las deudas, un hombre desesperado acepta participar en un misterioso juego por un gran premio en efectivo.",
               "duracion": "60:00",
+              "descripcion": "Agobiado por las deudas, un hombre desesperado acepta participar en un misterioso juego por un gran premio en efectivo.",
               "url": "https://drive.google.com/file/d/sample1/preview"
             },
             {
               "numero": 2,
               "titulo": "Infierno",
-              "descripcion": "Los jugadores se enfrentan a la dura realidad del primer juego mientras el policía Hwang Jun-ho comienza su investigación.",
               "duracion": "63:00",
+              "descripcion": "Los jugadores se enfrentan a la dura realidad del primer juego mientras el policía Hwang Jun-ho comienza su investigación.",
               "url": "https://drive.google.com/file/d/sample2/preview"
             },
             {
               "numero": 3,
               "titulo": "El hombre del paraguas",
-              "descripcion": "Los jugadores trabajan en equipo para superar el siguiente desafío mortal.",
               "duracion": "54:00",
+              "descripcion": "Los jugadores trabajan en equipo para superar el siguiente desafío mortal.",
               "url": "https://drive.google.com/file/d/sample3/preview"
             },
             {
               "numero": 4,
               "titulo": "No confíes en nadie",
-              "descripcion": "Los jugadores forman alianzas mientras se preparan para el siguiente juego.",
               "duracion": "55:00",
+              "descripcion": "Los jugadores forman alianzas mientras se preparan para el siguiente juego.",
               "url": "https://drive.google.com/file/d/sample4/preview"
             },
             {
               "numero": 5,
               "titulo": "Un mundo justo",
-              "descripcion": "Los jugadores compiten en parejas para el siguiente juego mortal.",
               "duracion": "52:00",
+              "descripcion": "Los jugadores compiten en parejas para el siguiente juego mortal.",
               "url": "https://drive.google.com/file/d/sample5/preview"
             },
             {
               "numero": 6,
               "titulo": "Gganbu",
-              "descripcion": "Los jugadores deben tomar decisiones difíciles en el siguiente juego que pone a prueba su lealtad.",
               "duracion": "62:00",
+              "descripcion": "Los jugadores deben tomar decisiones difíciles en el siguiente juego que pone a prueba su lealtad.",
               "url": "https://drive.google.com/file/d/sample6/preview"
             },
             {
               "numero": 7,
               "titulo": "VIPS",
-              "descripcion": "Los VIP llegan para observar el juego mientras los jugadores enfrentan su desafío más peligroso hasta ahora.",
               "duracion": "58:00",
+              "descripcion": "Los VIP llegan para observar el juego mientras los jugadores enfrentan su desafío más peligroso hasta ahora.",
               "url": "https://drive.google.com/file/d/sample7/preview"
             },
             {
               "numero": 8,
               "titulo": "El líder",
-              "descripcion": "El juego final enfrenta a los jugadores restantes en una batalla por la supervivencia.",
               "duracion": "55:00",
+              "descripcion": "El juego final enfrenta a los jugadores restantes en una batalla por la supervivencia.",
               "url": "https://drive.google.com/file/d/sample8/preview"
             },
             {
               "numero": 9,
               "titulo": "Un día de suerte",
-              "descripcion": "El ganador es coronado mientras se revelan secretos impactantes.",
               "duracion": "56:00",
+              "descripcion": "El ganador es coronado mientras se revelan secretos impactantes.",
               "url": "https://drive.google.com/file/d/sample9/preview"
             }
           ]
@@ -644,50 +644,50 @@
             {
               "numero": 1,
               "titulo": "Capitulo 1",
-              "descripcion": "Disponible",
               "duracion": "55:00",
+              "descripcion": "Disponible",
               "url": "https://drive.google.com/file/d/1lIXp4RsyjciVv61dvw-5G-l-YzzPPKoS/preview"
             },
             {
               "numero": 2,
               "titulo": "Capitulo 2",
-              "descripcion": "Disponible",
               "duracion": "55:00",
+              "descripcion": "Disponible",
               "url": "https://drive.google.com/file/d/13CnLfnrtBYPlCg7Qkhb_XcnSvMUexFUI/preview"
             },
             {
               "numero": 3,
               "titulo": "Capitulo 3",
-              "descripcion": "Disponible",
               "duracion": "55:00",
+              "descripcion": "Disponible",
               "url": "https://drive.google.com/file/d/1JbQ5i1vsrdjUPPMxxvl0vttTKtJgIicP/preview"
             },
             {
               "numero": 4,
               "titulo": "Capitulo 4",
-              "descripcion": "Disponible",
               "duracion": "55:00",
+              "descripcion": "Disponible",
               "url": "https://drive.google.com/file/d/1lbDPpEkLFA2LtvVRx15gEDp6EtGKZ6cA/preview"
             },
             {
               "numero": 5,
               "titulo": "Capitulo 5",
-              "descripcion": "Disponible",
               "duracion": "55:00",
+              "descripcion": "Disponible",
               "url": "https://drive.google.com/file/d/1he_tKq-qgAmeL1AYFfsIamji7nxzDHya/preview"
             },
             {
               "numero": 6,
               "titulo": "Capitulo 6",
-              "descripcion": "Disponible",
               "duracion": "55:00",
+              "descripcion": "Disponible",
               "url": "https://drive.google.com/file/d/1c2-kSF_0pYbU8FAXkbK5DY_XC0fg63Ro/preview"
             },
             {
               "numero": 7,
               "titulo": "Capitulo 7",
-              "descripcion": "Disponible",
               "duracion": "55:00",
+              "descripcion": "Disponible",
               "url": "https://drive.google.com/file/d/1jOs7MvYiSdoDjG6w-CzHgy4hrAHxHzwG/preview"
             }
           ]
@@ -698,48 +698,49 @@
             {
               "numero": 1,
               "titulo": "Llaves y cuchillos",
-              "descripcion": "Se retoma justo después de la rebelión: Gi‑hun vuelve al juego, varios jugadores resultan heridos y se reorganiza la violencia entre vigilantes y participantes. El Front Man emite nuevas órdenes, mientras algunos conciben alianzas peligrosas.",
               "duracion": "45:00",
+              "descripcion": "Se retoma justo después de la rebelión: Gi‑hun vuelve al juego, varios jugadores resultan heridos y se reorganiza la violencia entre vigilantes y participantes. El Front Man emite nuevas órdenes, mientras algunos conciben alianzas peligrosas.",
               "url": "https://fastream.to/embed-uvzhabdssrgu.html"
             },
             {
               "numero": 2,
               "titulo": "La noche estrellada",
-              "descripcion": "Se desarrolla una prueba en la que los jugadores cruzan un puente meciendo una cuerda entre ellos en una noche oscura. La tensión emociona mientras avanzan y muchos mueren, incluyendo personajes claves.",
               "duracion": "45:00",
+              "descripcion": "Se desarrolla una prueba en la que los jugadores cruzan un puente meciendo una cuerda entre ellos en una noche oscura. La tensión emociona mientras avanzan y muchos mueren, incluyendo personajes claves.",
               "url": "https://fastream.to/embed-er30msce6sxn.html"
             },
             {
               "numero": 3,
               "titulo": "No es tu culpa",
-              "descripcion": "Los sobrevivientes procesan culpa y traición tras el trauma de la ronda anterior. Los personajes exploran sus límites morales y se revelan más secretos en un entorno cada vez más hostil.",
               "duracion": "45:00",
+              "descripcion": "Los sobrevivientes procesan culpa y traición tras el trauma de la ronda anterior. Los personajes exploran sus límites morales y se revelan más secretos en un entorno cada vez más hostil.",
               "url": "https://fastream.to/embed-j141x60lbu78.html"
             },
             {
               "numero": 4,
               "titulo": "222",
-              "descripcion": "En esta fase, la jugadora embarazada (Player 222) y su bebé toman un protagonismo emocional. La dinámica cambia, se revelan diálogos conmovedores y se plantea un choque entre sacrificio y supervivencia.",
               "duracion": "45:00",
+              "descripcion": "En esta fase, la jugadora embarazada (Player 222) y su bebé toman un protagonismo emocional. La dinámica cambia, se revelan diálogos conmovedores y se plantea un choque entre sacrificio y supervivencia.",
               "url": "https://fastream.to/embed-144ft0bwf9nm.html"
             },
             {
               "numero": 5,
               "titulo": "○△□",
-              "descripcion": "Una versión aérea del clásico juego del calamar se juega en estructuras colgantes con formas de círculo, triángulo y cuadrado. Los sobrevivientes deben confrontarse físicamente por su vida y la del bebé.",
               "duracion": "45:00",
+              "descripcion": "Una versión aérea del clásico juego del calamar se juega en estructuras colgantes con formas de círculo, triángulo y cuadrado. Los sobrevivientes deben confrontarse físicamente por su vida y la del bebé.",
               "url": "https://fastream.to/embed-zlflpl7figu7.html"
             },
             {
               "numero": 6,
               "titulo": "Humanos",
-              "descripcion": "La prueba final enfrenta a los pocos sobrevivientes restantes. Gi‑hun toma decisiones extremas para proteger al bebé. En un acto heroico, sacrifica su vida para asegurar la victoria del recién nacido.",
               "duracion": "45:00",
+              "descripcion": "La prueba final enfrenta a los pocos sobrevivientes restantes. Gi‑hun toma decisiones extremas para proteger al bebé. En un acto heroico, sacrifica su vida para asegurar la victoria del recién nacido.",
               "url": "https://fastream.to/embed-0n6sc8wqnuzf.html"
             }
           ]
         }
-      ]
+      ],
+      "badge": "Recién agregado"
     },
     {
       "id": 8,
