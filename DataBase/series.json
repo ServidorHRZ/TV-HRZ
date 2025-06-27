@@ -560,7 +560,13 @@
       "descripcion": "Cientos de jugadores con problemas económicos aceptan una extraña invitación para competir en juegos infantiles. Dentro les esperan un premio tentador y desafíos letales.",
       "imagen": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg",
       "año": 2021,
-      "genero": [],
+      "genero": [
+        "neflix",
+        "crimen",
+        "drama",
+        "estrenos"
+      ],
+      "badge": "Recién agregado"
       "director": "Hwang Dong-hyuk",
       "actores": [
         "Lee Jung-jae",
@@ -740,7 +746,6 @@
           ]
         }
       ],
-      "badge": "Recién agregado"
     },
     {
       "id": 8,
