@@ -566,7 +566,7 @@
         "drama",
         "estrenos"
       ],
-      "badge": "Recién agregado"
+      "badge": "Recién agregado",
       "director": "Hwang Dong-hyuk",
       "actores": [
         "Lee Jung-jae",
@@ -745,8 +745,8 @@
             }
           ]
         }
-      ],
-    },
+      ]
+    },    
     {
       "id": 8,
       "titulo": "Lupin",
