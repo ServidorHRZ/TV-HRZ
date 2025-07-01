@@ -2115,14 +2115,12 @@
       "titulo": "Lilo & Stitch",
       "disponible": true,
       "nuevo": false,
-      "badge": "Recien agregado",
+      "badge": "",
       "año": 2025,
-      "trailer": "https://youtu.be/wAtaSKQ4-T0?si=_6Vj8QI-_K-Hs0Hs",
+      "trailer": "https://www.youtube.com/embed/wAtaSKQ4-T0",
       "genero": [
-        "animacion",
         "familiar",
-        "disney",
-        "estrenos"
+        "animacion"
       ],
       "imagen": "https://m.media-amazon.com/images/M/MV5BYTBmMDBhNWYtNTk4MS00NzBmLTk5ZWItM2ZlZjY4NTYxNWQzXkEyXkFqcGc@._V1_.jpg",
       "enlace": "https://fastream.to/embed-di0qe4ktb1vp.html",
