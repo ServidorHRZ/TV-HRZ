@@ -1,151 +1,17 @@
-// Constantes para el manejo de caché
-const CACHE_VERSION = '1.0';
+// Las funciones de Firestore se cargan desde firestore-peliculas-simple.js
+// No necesitamos imports para evitar problemas de CORS
+
+// Constantes para el manejo de caché local (fallback)
+const CACHE_VERSION = '2.0'; // Incrementado para Firestore
 const CACHE_KEYS = {
-    PELICULAS: 'hrztv_peliculas_cache',
-    ANUNCIOS: 'hrztv_anuncios_cache',
-    TIMESTAMP: 'hrztv_cache_timestamp',
-    VERSION: 'hrztv_cache_version'
+    PELICULAS: 'hrztv_peliculas_firestore_cache',
+    ANUNCIOS: 'hrztv_anuncios_firestore_cache',
+    TIMESTAMP: 'hrztv_firestore_timestamp',
+    VERSION: 'hrztv_firestore_version'
 };
 
-// Función para manejar el caché
-function gestionarCache() {
-    const cacheVersion = localStorage.getItem(CACHE_KEYS.VERSION);
-    
-    // Si la versión del caché es diferente o no existe, limpiar todo el caché
-    if (cacheVersion !== CACHE_VERSION) {
-        Object.values(CACHE_KEYS).forEach(key => localStorage.removeItem(key));
-        localStorage.setItem(CACHE_KEYS.VERSION, CACHE_VERSION);
-    }
-}
-
-// Función para verificar si el caché está actualizado
-function esCacheActualizado() {
-    const ultimaActualizacion = localStorage.getItem(CACHE_KEYS.TIMESTAMP);
-    if (!ultimaActualizacion) return false;
-    
-    // Verificar si han pasado más de 24 horas desde la última actualización
-    const TIEMPO_CACHE = 24 * 60 * 60 * 1000; // 24 horas en milisegundos
-    return (Date.now() - parseInt(ultimaActualizacion)) < TIEMPO_CACHE;
-}
-
-// Función para cargar contenido con caché
-async function cargarContenidoConCache(tipo) {
-    const cacheKey = CACHE_KEYS[tipo.toUpperCase()];
-    const contenidoCache = localStorage.getItem(cacheKey);
-    
-    try {
-        // Si hay caché válido, usarlo primero
-        if (contenidoCache && esCacheActualizado()) {
-            const datosCache = JSON.parse(contenidoCache);
-            actualizarInterfaz(tipo, datosCache);
-            
-            // Actualizar en segundo plano
-            actualizarContenidoEnSegundoPlano(tipo);
-        } else {
-            // Si no hay caché o está desactualizado, cargar desde el servidor
-            await cargarContenidoDesdeServidor(tipo);
-        }
-    } catch (error) {
-        console.error(`Error cargando ${tipo}:`, error);
-        // Si hay error, usar caché aunque esté desactualizado
-        if (contenidoCache) {
-            actualizarInterfaz(tipo, JSON.parse(contenidoCache));
-        }
-    }
-}
-
-// Función para cargar contenido desde el servidor
-async function cargarContenidoDesdeServidor(tipo) {
-    const urls = {
-        peliculas: '../DataBase/peliculas.json',
-        anuncios: '../DataBase/peliculas.json'
-    };
-
-    try {
-        console.log(`Cargando ${tipo}...`); // Debug
-        const response = await fetch(urls[tipo]);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const datos = await response.json();
-        console.log(`Datos cargados para ${tipo}:`, datos); // Debug
-        
-        // Si es tipo anuncios, transformamos los datos
-        if (tipo === 'anuncios') {
-            datos.announcements = datos.peliculas.filter(p => p.destacado);
-        }
-        
-        // Guardar en caché
-        localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datos));
-        localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
-        
-        // Actualizar interfaz
-        actualizarInterfaz(tipo, datos);
-        
-        return datos;
-    } catch (error) {
-        console.error(`Error cargando ${tipo}:`, error);
-        throw error;
-    }
-}
-
-// Función para actualizar contenido en segundo plano
-async function actualizarContenidoEnSegundoPlano(tipo) {
-    try {
-        const datosNuevos = await cargarContenidoDesdeServidor(tipo);
-        const datosCache = JSON.parse(localStorage.getItem(CACHE_KEYS[tipo.toUpperCase()]));
-        
-        // Comparar y actualizar solo si hay cambios
-        if (JSON.stringify(datosNuevos) !== JSON.stringify(datosCache)) {
-            localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datosNuevos));
-            localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
-            actualizarInterfaz(tipo, datosNuevos);
-        }
-    } catch (error) {
-        console.error(`Error actualizando ${tipo} en segundo plano:`, error);
-    }
-}
-
-// Función para actualizar la interfaz según el tipo de contenido
-function actualizarInterfaz(tipo, datos) {
-    console.log(`Actualizando interfaz para ${tipo}`, datos); // Debug
-    switch (tipo) {
-        case 'peliculas':
-            if (datos && datos.peliculas) {
-                todasLasPeliculas = datos.peliculas.filter(p => p.disponible);
-                console.log('Películas filtradas:', todasLasPeliculas); // Debug
-                mostrarPeliculasPorCategorias(todasLasPeliculas);
-            } else {
-                console.error('No se encontraron datos de películas válidos');
-            }
-            break;
-        case 'anuncios':
-            if (datos && datos.announcements) {
-                announcements = datos.announcements;
-                mostrarAnuncios();
-            }
-            break;
-    }
-}
-
-// Función para precargar imágenes
-function precargarImagenes(datos) {
-    const imagenes = [];
-    
-    datos.forEach(item => {
-        if (item.imagen) {
-            const img = new Image();
-            img.src = item.imagen;
-            imagenes.push(img);
-        }
-        if (item.miniatura) {
-            const img = new Image();
-            img.src = item.miniatura;
-            imagenes.push(img);
-        }
-    });
-}
-
 // Variables globales
-let todasLasSeries = [];
+let todasLasPeliculas = [];
 let currentSlide = 0;
 let announcements = [];
 let autoSlideInterval;
@@ -158,13 +24,162 @@ let touchStartX = 0;
 let touchEndX = 0;
 let touchStartTime = 0;
 let touchEndTime = 0;
-let minSwipeDistance = 100; // Aumentado para requerir un deslizamiento más largo
-let maxSwipeTime = 300; // Tiempo máximo para considerar un swipe válido
-
-// Agregar una variable para rastrear si hubo movimiento
+let minSwipeDistance = 100;
+let maxSwipeTime = 300;
 let hasMoved = false;
 
-// Función para organizar peliculas por categorías
+// Función para manejar el caché local (fallback)
+function gestionarCacheLocal() {
+    const cacheVersion = localStorage.getItem(CACHE_KEYS.VERSION);
+    
+    if (cacheVersion !== CACHE_VERSION) {
+        Object.values(CACHE_KEYS).forEach(key => localStorage.removeItem(key));
+        localStorage.setItem(CACHE_KEYS.VERSION, CACHE_VERSION);
+    }
+}
+
+// Función principal para cargar contenido
+async function cargarContenidoConFirestore() {
+    try {
+        console.log('🚀 Iniciando carga desde Firestore...');
+        
+        // Verificar que las funciones de Firestore estén disponibles
+        if (!window.firestorePeliculas) {
+            throw new Error('Funciones de Firestore no están disponibles');
+        }
+        
+        // Verificar conexión con Firestore
+        const conexionOK = await window.firestorePeliculas.verificarConexionFirestore();
+        if (!conexionOK) {
+            throw new Error('No se pudo conectar con Firestore');
+        }
+
+        // Cargar películas desde Firestore
+        const peliculas = await window.firestorePeliculas.cargarPeliculasDesdeFirestore();
+        
+        if (peliculas && peliculas.length > 0) {
+            todasLasPeliculas = peliculas.filter(p => p.disponible !== false);
+            console.log(`✅ Cargadas ${todasLasPeliculas.length} películas desde Firestore`);
+            
+            // Guardar en cache local como respaldo
+            localStorage.setItem(CACHE_KEYS.PELICULAS, JSON.stringify(todasLasPeliculas));
+            localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
+            
+            // Mostrar películas
+            mostrarPeliculasPorCategorias(todasLasPeliculas);
+            
+            // Cargar anuncios (películas destacadas)
+            await cargarAnunciosDesdeFirestore();
+            
+        } else {
+            throw new Error('No se encontraron películas en Firestore');
+        }
+
+    } catch (error) {
+        console.warn('⚠️ Error cargando desde Firestore, intentando fallback:', error);
+        await cargarDesdeRespaldo();
+    }
+}
+
+// Función para cargar anuncios desde Firestore
+async function cargarAnunciosDesdeFirestore() {
+    try {
+        if (!window.firestorePeliculas || !window.firestorePeliculas.cargarPeliculasDestacadas) {
+            throw new Error('Funciones de Firestore no disponibles para anuncios');
+        }
+        
+        const peliculasDestacadas = await window.firestorePeliculas.cargarPeliculasDestacadas();
+        
+        if (peliculasDestacadas && peliculasDestacadas.length > 0) {
+            announcements = peliculasDestacadas;
+            console.log(`📺 Cargados ${announcements.length} anuncios desde Firestore`);
+        } else {
+            // Si no hay películas destacadas, usar las primeras 5 películas
+            announcements = todasLasPeliculas.slice(0, 5);
+            console.log('📺 Usando películas aleatorias como anuncios');
+        }
+        
+        localStorage.setItem(CACHE_KEYS.ANUNCIOS, JSON.stringify(announcements));
+        mostrarAnuncios();
+        
+    } catch (error) {
+        console.error('Error cargando anuncios desde Firestore:', error);
+        // Usar películas aleatorias como fallback
+        announcements = todasLasPeliculas.slice(0, 5);
+        mostrarAnuncios();
+    }
+}
+
+// Función de respaldo para cargar desde JSON local o cache
+async function cargarDesdeRespaldo() {
+    try {
+        console.log('🔄 Intentando cargar desde cache local...');
+        
+        // Intentar cargar desde cache local primero
+        const cacheLocal = localStorage.getItem(CACHE_KEYS.PELICULAS);
+        if (cacheLocal) {
+            todasLasPeliculas = JSON.parse(cacheLocal);
+            console.log('⚡ Cargado desde cache local');
+            mostrarPeliculasPorCategorias(todasLasPeliculas);
+            
+            const anunciosCache = localStorage.getItem(CACHE_KEYS.ANUNCIOS);
+            if (anunciosCache) {
+                announcements = JSON.parse(anunciosCache);
+                mostrarAnuncios();
+            }
+            return;
+        }
+
+        // Si no hay cache, intentar cargar desde JSON como último recurso
+        console.log('📁 Intentando cargar desde JSON local...');
+        const response = await fetch('../DataBase/peliculas.json');
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        
+        const datos = await response.json();
+        if (datos && datos.peliculas) {
+            todasLasPeliculas = datos.peliculas.filter(p => p.disponible !== false);
+            console.log(`📄 Cargadas ${todasLasPeliculas.length} películas desde JSON local`);
+            mostrarPeliculasPorCategorias(todasLasPeliculas);
+            
+            // Crear anuncios desde las primeras películas
+            announcements = todasLasPeliculas.slice(0, 5);
+            mostrarAnuncios();
+        }
+
+    } catch (error) {
+        console.error('💥 Error en todos los métodos de carga:', error);
+        mostrarErrorCarga();
+    }
+}
+
+// Función para mostrar error de carga
+function mostrarErrorCarga() {
+    const categoriasWrapper = document.querySelector('.categorias-wrapper');
+    if (categoriasWrapper) {
+        categoriasWrapper.innerHTML = `
+            <div style="text-align: center; padding: 50px; color: #fff;">
+                <h2>❌ Error de Conexión</h2>
+                <p>No se pudieron cargar las películas. Por favor:</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li>• Verifica tu conexión a internet</li>
+                    <li>• Recarga la página</li>
+                    <li>• Asegúrate de que Firestore esté configurado correctamente</li>
+                </ul>
+                <button onclick="location.reload()" style="
+                    background: linear-gradient(45deg, #ff6b35, #f7931e);
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin-top: 20px;
+                ">🔄 Recargar Página</button>
+            </div>
+        `;
+    }
+}
+
+// Función para organizar peliculas por categorías (mantenida igual)
 function organizarPorCategorias(peliculas) {
     const categorias = {
         'estrenos': { titulo: 'Estrenos', peliculas: [], mantenerOrden: false },
@@ -184,7 +199,9 @@ function organizarPorCategorias(peliculas) {
         'rapidosyfuriosos': { titulo: 'Rápidos y Furiosos', peliculas: [], mantenerOrden: false },
         'anime': { titulo: 'Anime', peliculas: [], mantenerOrden: false },
         'ciencia_ficcion': { titulo: 'Ciencia Ficcion', peliculas: [], mantenerOrden: false },
-        'terror': { titulo: 'Terror', peliculas: [], mantenerOrden: false }
+        'terror': { titulo: 'Terror', peliculas: [], mantenerOrden: false },
+        'navidad': { titulo: 'Películas de Navidad', peliculas: [], mantenerOrden: false },
+        'programacion': { titulo: 'Programación y Tecnología', peliculas: [], mantenerOrden: false }
     };
 
     // Función para mezclar array
@@ -558,9 +575,8 @@ document.addEventListener('DOMContentLoaded', () => {
         categoriasWrapper.style.display = 'block';
     }
     
-    gestionarCache();
-    cargarContenidoConCache('peliculas');
-    cargarContenidoConCache('anuncios');
+    gestionarCacheLocal();
+    cargarContenidoConFirestore();
     
     setupCarouselTouch();
     handleScrollAudio();
@@ -826,73 +842,7 @@ function cargarCategorias() {
 
 }
 
-// Función mejorada para el scroll con mouse
-function enableDragScroll() {
-    const sliders = document.querySelectorAll('.categoria-contenedor');
-    
-    sliders.forEach(slider => {
-        let isDown = false;
-        let startX;
-        let startY;
-        let scrollLeft;
-        let isHorizontalScroll = false;
-
-        function startDragging(e) {
-            isDown = true;
-            slider.style.scrollBehavior = 'auto';
-            slider.style.cursor = 'grabbing';
-            
-            startX = e.type === 'mousedown' ? e.pageX : e.touches[0].pageX;
-            startY = e.type === 'mousedown' ? e.pageY : e.touches[0].pageY;
-            scrollLeft = slider.scrollLeft;
-        }
-
-        function stopDragging() {
-            isDown = false;
-            isHorizontalScroll = false;
-            slider.style.cursor = 'grab';
-            slider.style.scrollBehavior = 'smooth';
-        }
-        
-        function drag(e) {
-            if (!isDown) return;
-
-            const x = e.type === 'mousemove' ? e.pageX : e.touches[0].pageX;
-            const y = e.type === 'mousemove' ? e.pageY : e.touches[0].pageY;
-            
-            const deltaX = Math.abs(x - startX);
-            const deltaY = Math.abs(y - startY);
-
-            // Determinar dirección del scroll
-            if (!isHorizontalScroll) {
-                if (deltaX > deltaY && deltaX > 5) {
-                    isHorizontalScroll = true;
-                    e.preventDefault();
-                } else if (deltaY > deltaX && deltaY > 5) {
-                    isDown = false;
-                    return;
-                }
-            }
-
-            if (isHorizontalScroll) {
-                e.preventDefault();
-                const walk = (x - startX) * 1.5; // Multiplicador de velocidad
-                slider.scrollLeft = scrollLeft - walk;
-            }
-        }
-
-        // Event Listeners
-        slider.addEventListener('mousedown', startDragging);
-        slider.addEventListener('mousemove', drag);
-        slider.addEventListener('mouseup', stopDragging);
-        slider.addEventListener('mouseleave', stopDragging);
-        
-        // Touch events
-        slider.addEventListener('touchstart', startDragging, { passive: true });
-        slider.addEventListener('touchmove', drag, { passive: false });
-        slider.addEventListener('touchend', stopDragging);
-    });
-}
+// Función enableDragScroll eliminada - ya existe una versión anterior
 
 // Escuchar cambios en Mi Lista de Series
 window.addEventListener('miListaPeliculasActualizada', () => {
@@ -942,8 +892,8 @@ function abrirPelicula(peliculaData) {
     }
 }
 
- // Modificar la función de búsqueda
- function searchPeliculas(query) {
+ // Función de búsqueda actualizada para Firestore
+async function searchPeliculas(query) {
     const announcementsCarousel = document.querySelector('.announcements-carousel');
     
     // Si no hay búsqueda, mostrar todo normalmente
@@ -955,33 +905,58 @@ function abrirPelicula(peliculaData) {
         return;
     }
 
-    const busqueda = query.toLowerCase().trim();
-    const peliculasFiltradas = todasLasPeliculas.filter(pelicula => 
-        pelicula.titulo.toLowerCase().includes(busqueda) ||
-        (pelicula.genero && (
-            Array.isArray(pelicula.genero) 
-                ? pelicula.genero.some(g => g.toLowerCase().includes(busqueda))
-                : pelicula.genero.toLowerCase().includes(busqueda)
-        ))
-    );
+    try {
+        const busqueda = query.toLowerCase().trim();
+        
+        // Intentar buscar usando Firestore primero
+        let peliculasFiltradas;
+        try {
+            if (window.firestorePeliculas && window.firestorePeliculas.buscarPeliculasFirestore) {
+                peliculasFiltradas = await window.firestorePeliculas.buscarPeliculasFirestore(busqueda);
+            } else {
+                throw new Error('Funciones de Firestore no disponibles');
+            }
+        } catch (error) {
+            console.warn('Error buscando en Firestore, usando búsqueda local:', error);
+            // Fallback a búsqueda local
+            peliculasFiltradas = todasLasPeliculas.filter(pelicula => 
+                pelicula.titulo.toLowerCase().includes(busqueda) ||
+                (pelicula.genero && (
+                    Array.isArray(pelicula.genero) 
+                        ? pelicula.genero.some(g => g.toLowerCase().includes(busqueda))
+                        : pelicula.genero.toLowerCase().includes(busqueda)
+                ))
+            );
+        }
 
-    // Ocultar el carrusel durante la búsqueda en todas las plataformas
-    if (announcementsCarousel) {
-        announcementsCarousel.style.display = 'none';
+        // Ocultar el carrusel durante la búsqueda en todas las plataformas
+        if (announcementsCarousel) {
+            announcementsCarousel.style.display = 'none';
+        }
+
+        // Mostrar resultados directamente en las categorías
+        mostrarPeliculasPorCategorias(peliculasFiltradas);
+        
+    } catch (error) {
+        console.error('Error en búsqueda:', error);
+        // Mostrar mensaje de error o fallback
+        mostrarPeliculasPorCategorias([]);
     }
-
-    // Mostrar resultados directamente en las categorías
-    mostrarPeliculasPorCategorias(peliculasFiltradas);
 }
 
-// Modificar la función setupBuscador para manejar la visibilidad del carrusel
+// Función setupBuscador actualizada para manejar funciones asíncronas
 function setupBuscador() {
     const searchInput = document.getElementById('search-input');
     const headerSearch = document.getElementById('headerSearch');
     const announcementsCarousel = document.querySelector('.announcements-carousel');
 
+    // Agregar debounce para mejorar rendimiento
+    let timeoutId;
     searchInput.addEventListener('input', (e) => {
-        searchPeliculas(e.target.value);
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(async () => {
+            await searchPeliculas(e.target.value);
+        }, 300); // Esperar 300ms después de que el usuario deje de escribir
     });
 
     // Agregar manejo de la tecla Escape
@@ -1040,12 +1015,45 @@ function agregarEstilosScroll() {
     document.head.appendChild(styleSheet);
 }
 
-// Agregar la inicialización del buscador al cargar la página
-document.addEventListener('DOMContentLoaded', () => {
+// Inicialización actualizada para Firestore
+document.addEventListener('DOMContentLoaded', async () => {
+    console.log('🎬 Iniciando HRZ TV con Firestore...');
+    
+    // Configurar interfaz básica
     setupBuscador();
     agregarEstilosScroll();
     enableDragScroll();
-    // ... resto del código existente ...
+    setupCarouselTouch();
+    
+    // Configurar botones de búsqueda
+    const searchToggle = document.getElementById('searchToggle');
+    const searchClose = document.getElementById('searchClose');
+    const headerSearch = document.getElementById('headerSearch');
+    const searchInput = document.getElementById('search-input');
+
+    if (searchToggle && headerSearch && searchClose && searchInput) {
+        searchToggle.addEventListener('click', () => {
+            headerSearch.classList.add('active');
+            searchInput.focus();
+        });
+
+        searchClose.addEventListener('click', () => {
+            headerSearch.classList.remove('active');
+            searchInput.value = '';
+            searchPeliculas(''); // Limpiar búsqueda
+        });
+    }
+    
+    // Pequeño delay para asegurar que Firebase se haya cargado
+    setTimeout(async () => {
+        try {
+            console.log('⏳ Esperando a que Firebase se cargue...');
+            await cargarContenidoConFirestore();
+            console.log('✅ HRZ TV cargado completamente');
+        } catch (error) {
+            console.error('Error en la inicialización:', error);
+        }
+    }, 1000); // 1 segundo de delay
 });
 
 // Carousel Touch encargadao de la barra de anuncios    

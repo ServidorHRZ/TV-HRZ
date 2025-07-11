@@ -57,20 +57,32 @@
 
  // Función para cargar contenido desde el servidor
  async function cargarContenidoDesdeServidor(tipo) {
-     const urls = {
-         series: '../DataBase/series.json',
-         peliculas: '../DataBase/series.json',
-         anuncios: '../DataBase/series.json'
-     };
-
      try {
-         const response = await fetch(urls[tipo]);
-         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-         const datos = await response.json();
+         let datos;
          
-         // Si es tipo anuncios, transformamos los datos para mantener compatibilidad
-         if (tipo === 'anuncios') {
-             datos.announcements = datos.series.filter(serie => serie.destacado);
+         if (tipo === 'series' || tipo === 'peliculas') {
+             // Usar Firestore para cargar series
+             if (window.firestoreSeries) {
+                 console.log('🔄 Cargando series desde Firestore...');
+                 datos = await window.firestoreSeries.cargarSeries();
+             } else {
+                 console.warn('⚠️ Firestore no disponible, usando JSON local');
+                 const response = await fetch('../DataBase/series.json');
+                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                 datos = await response.json();
+             }
+         } else if (tipo === 'anuncios') {
+             // Para anuncios, usamos las series disponibles
+             if (window.firestoreSeries) {
+                 const seriesData = await window.firestoreSeries.cargarSeries();
+                 datos = seriesData;
+                 datos.announcements = datos.series.filter(serie => serie.destacado);
+             } else {
+                 const response = await fetch('../DataBase/series.json');
+                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                 datos = await response.json();
+                 datos.announcements = datos.series.filter(serie => serie.destacado);
+             }
          }
          
          // Guardar en caché
@@ -82,7 +94,31 @@
          
          return datos;
      } catch (error) {
-         throw error;
+         console.error(`Error cargando ${tipo} desde Firestore:`, error);
+         
+         // Respaldo: intentar cargar desde JSON local
+         try {
+             console.warn(`⚠️ Usando respaldo JSON para ${tipo}`);
+             const response = await fetch('../DataBase/series.json');
+             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+             const datos = await response.json();
+             
+             if (tipo === 'anuncios') {
+                 datos.announcements = datos.series.filter(serie => serie.destacado);
+             }
+             
+             // Guardar en caché
+             localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datos));
+             localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
+             
+             // Actualizar interfaz
+             actualizarInterfaz(tipo, datos);
+             
+             return datos;
+         } catch (backupError) {
+             console.error(`Error en respaldo JSON para ${tipo}:`, backupError);
+             throw error;
+         }
      }
  }
 
@@ -517,17 +553,45 @@
  }
 
  // Función para ver serie
- function verSerie(serieId) {
-     fetch('../DataBase/series.json')
-         .then(response => response.json())
-         .then(data => {
+ async function verSerie(serieId) {
+     try {
+         let serie;
+         
+         // Intentar cargar desde Firestore primero
+         if (window.firestoreSeries) {
+             serie = await window.firestoreSeries.obtenerSeriePorId(serieId);
+         }
+         
+         // Si no se encuentra en Firestore, intentar desde JSON local
+         if (!serie) {
+             console.warn('⚠️ Serie no encontrada en Firestore, intentando JSON local');
+             const response = await fetch('../DataBase/series.json');
+             const data = await response.json();
+             serie = data.series.find(s => s.id === serieId);
+         }
+         
+         if (serie) {
+             localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
+             window.location.href = 'serie.html';
+         } else {
+             console.error('Serie no encontrada con ID:', serieId);
+         }
+     } catch (error) {
+         console.error('Error al cargar serie:', error);
+         
+         // Respaldo final: intentar desde JSON local
+         try {
+             const response = await fetch('../DataBase/series.json');
+             const data = await response.json();
              const serie = data.series.find(s => s.id === serieId);
              if (serie) {
                  localStorage.setItem('serieSeleccionada', JSON.stringify(serie));
                  window.location.href = 'serie.html';
              }
-         })
-         .catch(error => console.error('Error:', error));
+         } catch (backupError) {
+             console.error('Error en respaldo:', backupError);
+         }
+     }
  }
 
  // Agregar estilos CSS para el scroll con mouse

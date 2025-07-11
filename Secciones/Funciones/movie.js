@@ -39,11 +39,23 @@ window.addEventListener('load', () => {
                 `;
             }
 
-            // Cargar y mostrar recomendaciones
-            fetch('../DataBase/peliculas.json')
-                .then(response => response.json())
-                .then(data => {
-                    const todasLasPeliculas = data.peliculas;
+            // Cargar y mostrar recomendaciones desde Firestore
+            const cargarRecomendaciones = async () => {
+                try {
+                    // Intentar cargar desde Firestore primero
+                    let todasLasPeliculas = [];
+                    
+                    if (window.firestorePeliculas && window.firestorePeliculas.cargarPeliculasDesdeFirestore) {
+                        todasLasPeliculas = await window.firestorePeliculas.cargarPeliculasDesdeFirestore();
+                    }
+                    
+                    // Si no hay películas desde Firestore, intentar desde JSON como fallback
+                    if (todasLasPeliculas.length === 0) {
+                        console.log('Fallback: Cargando recomendaciones desde JSON');
+                        const response = await fetch('../DataBase/peliculas.json');
+                        const data = await response.json();
+                        todasLasPeliculas = data.peliculas;
+                    }
                     
                     // Filtrar películas del mismo género
                     const peliculasSimilares = todasLasPeliculas
@@ -105,11 +117,14 @@ window.addEventListener('load', () => {
                             });
                         });
                     }
-                })
-                .catch(error => {
+                } catch (error) {
                     console.error('Error al cargar las recomendaciones:', error);
                     document.getElementById('recommendations-container').innerHTML = '<p>Error al cargar las recomendaciones</p>';
-                });
+                }
+            };
+
+            // Ejecutar la función de cargar recomendaciones
+            cargarRecomendaciones();
 
             // Actualizar layout móvil
             document.getElementById('movie-title').textContent = peliculaSeleccionada.titulo;
