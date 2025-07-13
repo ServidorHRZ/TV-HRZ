@@ -1,8 +1,8 @@
 // Las funciones de Firestore se cargan desde firestore-peliculas-simple.js
 // No necesitamos imports para evitar problemas de CORS
 
-// Constantes para el manejo de caché local (fallback)
-const CACHE_VERSION = '2.0'; // Incrementado para Firestore
+// Constantes para el manejo de caché local (mejorado)
+const CACHE_VERSION = '2.1'; // Incrementado para nueva versión de cache
 const CACHE_KEYS = {
     PELICULAS: 'hrztv_peliculas_firestore_cache',
     ANUNCIOS: 'hrztv_anuncios_firestore_cache',
@@ -28,85 +28,205 @@ let minSwipeDistance = 100;
 let maxSwipeTime = 300;
 let hasMoved = false;
 
-// Función para manejar el caché local (fallback)
+// Función para manejar el caché local mejorado
 function gestionarCacheLocal() {
     const cacheVersion = localStorage.getItem(CACHE_KEYS.VERSION);
     
+    // Si la versión del caché es diferente o no existe, limpiar todo el caché
     if (cacheVersion !== CACHE_VERSION) {
         Object.values(CACHE_KEYS).forEach(key => localStorage.removeItem(key));
         localStorage.setItem(CACHE_KEYS.VERSION, CACHE_VERSION);
     }
 }
 
-// Función principal para cargar contenido
-async function cargarContenidoConFirestore() {
+// Función para verificar si el caché está actualizado
+function esCacheActualizado() {
+    const ultimaActualizacion = localStorage.getItem(CACHE_KEYS.TIMESTAMP);
+    if (!ultimaActualizacion) return false;
+    
+    // Verificar si han pasado más de 24 horas desde la última actualización
+    const TIEMPO_CACHE = 24 * 60 * 60 * 1000; // 24 horas en milisegundos
+    return (Date.now() - parseInt(ultimaActualizacion)) < TIEMPO_CACHE;
+}
+
+// Función para cargar contenido con caché mejorado
+async function cargarContenidoConCache(tipo) {
+    const cacheKey = CACHE_KEYS[tipo.toUpperCase()];
+    const contenidoCache = localStorage.getItem(cacheKey);
+    
     try {
-        console.log('🚀 Iniciando carga desde Firestore...');
-        
-        // Verificar que las funciones de Firestore estén disponibles
-        if (!window.firestorePeliculas) {
-            throw new Error('Funciones de Firestore no están disponibles');
-        }
-        
-        // Verificar conexión con Firestore
-        const conexionOK = await window.firestorePeliculas.verificarConexionFirestore();
-        if (!conexionOK) {
-            throw new Error('No se pudo conectar con Firestore');
-        }
-
-        // Cargar películas desde Firestore
-        const peliculas = await window.firestorePeliculas.cargarPeliculasDesdeFirestore();
-        
-        if (peliculas && peliculas.length > 0) {
-            todasLasPeliculas = peliculas.filter(p => p.disponible !== false);
-            console.log(`✅ Cargadas ${todasLasPeliculas.length} películas desde Firestore`);
+        // Si hay caché válido, usarlo primero
+        if (contenidoCache && esCacheActualizado()) {
+            console.log(`⚡ Cargando ${tipo} desde cache (rápido)`);
+            const datosCache = JSON.parse(contenidoCache);
+            actualizarInterfaz(tipo, datosCache);
             
-            // Guardar en cache local como respaldo
-            localStorage.setItem(CACHE_KEYS.PELICULAS, JSON.stringify(todasLasPeliculas));
-            localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
-            
-            // Mostrar películas
-            mostrarPeliculasPorCategorias(todasLasPeliculas);
-            
-            // Cargar anuncios (películas destacadas)
-            await cargarAnunciosDesdeFirestore();
-            
+            // Actualizar en segundo plano solo si es necesario
+            actualizarContenidoEnSegundoPlano(tipo);
+            return datosCache;
         } else {
-            throw new Error('No se encontraron películas en Firestore');
+            // Si no hay caché o está desactualizado, cargar desde el servidor
+            console.log(`🔄 Cargando ${tipo} desde servidor`);
+            return await cargarContenidoDesdeServidor(tipo);
         }
-
     } catch (error) {
-        console.warn('⚠️ Error cargando desde Firestore, intentando fallback:', error);
-        await cargarDesdeRespaldo();
+        console.error(`Error cargando ${tipo}:`, error);
+        // Si hay error, usar caché aunque esté desactualizado
+        if (contenidoCache) {
+            console.log(`🔄 Usando cache desactualizado para ${tipo}`);
+            const datosCache = JSON.parse(contenidoCache);
+            actualizarInterfaz(tipo, datosCache);
+            return datosCache;
+        }
+        throw error;
     }
 }
 
-// Función para cargar anuncios desde Firestore
-async function cargarAnunciosDesdeFirestore() {
+// Función para cargar contenido desde el servidor
+async function cargarContenidoDesdeServidor(tipo) {
     try {
-        if (!window.firestorePeliculas || !window.firestorePeliculas.cargarPeliculasDestacadas) {
-            throw new Error('Funciones de Firestore no disponibles para anuncios');
+        let datos;
+        
+        if (tipo === 'peliculas') {
+            // Verificar que las funciones de Firestore estén disponibles
+            if (!window.firestorePeliculas) {
+                throw new Error('Funciones de Firestore no están disponibles');
+            }
+            
+            // Verificar conexión con Firestore
+            const conexionOK = await window.firestorePeliculas.verificarConexionFirestore();
+            if (!conexionOK) {
+                throw new Error('No se pudo conectar con Firestore');
+            }
+
+            // Cargar películas desde Firestore
+            const peliculas = await window.firestorePeliculas.cargarPeliculasDesdeFirestore();
+            
+            if (peliculas && peliculas.length > 0) {
+                datos = { peliculas: peliculas.filter(p => p.disponible !== false) };
+                console.log(`✅ Cargadas ${datos.peliculas.length} películas desde Firestore`);
+            } else {
+                throw new Error('No se encontraron películas en Firestore');
+            }
+        } else if (tipo === 'anuncios') {
+            // Para anuncios, usar películas destacadas
+            if (window.firestorePeliculas && window.firestorePeliculas.cargarPeliculasDestacadas) {
+                const peliculasDestacadas = await window.firestorePeliculas.cargarPeliculasDestacadas();
+                datos = { announcements: peliculasDestacadas || todasLasPeliculas.slice(0, 5) };
+            } else {
+                // Usar primeras 5 películas como fallback
+                datos = { announcements: todasLasPeliculas.slice(0, 5) };
+            }
         }
         
-        const peliculasDestacadas = await window.firestorePeliculas.cargarPeliculasDestacadas();
+        // Guardar en caché
+        localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datos));
+        localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
         
-        if (peliculasDestacadas && peliculasDestacadas.length > 0) {
-            announcements = peliculasDestacadas;
-            console.log(`📺 Cargados ${announcements.length} anuncios desde Firestore`);
-        } else {
-            // Si no hay películas destacadas, usar las primeras 5 películas
-            announcements = todasLasPeliculas.slice(0, 5);
-            console.log('📺 Usando películas aleatorias como anuncios');
-        }
+        // Actualizar interfaz
+        actualizarInterfaz(tipo, datos);
         
-        localStorage.setItem(CACHE_KEYS.ANUNCIOS, JSON.stringify(announcements));
-        mostrarAnuncios();
-        
+        return datos;
     } catch (error) {
-        console.error('Error cargando anuncios desde Firestore:', error);
-        // Usar películas aleatorias como fallback
-        announcements = todasLasPeliculas.slice(0, 5);
-        mostrarAnuncios();
+        console.error(`Error cargando ${tipo} desde Firestore:`, error);
+        
+        // Respaldo: intentar cargar desde JSON local
+        try {
+            console.warn(`⚠️ Usando respaldo JSON para ${tipo}`);
+            const response = await fetch('../DataBase/peliculas.json');
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const datos = await response.json();
+            
+            if (tipo === 'anuncios') {
+                datos.announcements = datos.peliculas.slice(0, 5);
+            }
+            
+            // Guardar en caché
+            localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datos));
+            localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
+            
+            // Actualizar interfaz
+            actualizarInterfaz(tipo, datos);
+            
+            return datos;
+        } catch (backupError) {
+            console.error(`Error en respaldo JSON para ${tipo}:`, backupError);
+            throw error;
+        }
+    }
+}
+
+// Función para actualizar contenido en segundo plano
+async function actualizarContenidoEnSegundoPlano(tipo) {
+    try {
+        const datosNuevos = await cargarContenidoDesdeServidor(tipo);
+        const datosCache = JSON.parse(localStorage.getItem(CACHE_KEYS[tipo.toUpperCase()]));
+        
+        // Comparar y actualizar solo si hay cambios
+        if (JSON.stringify(datosNuevos) !== JSON.stringify(datosCache)) {
+            console.log(`🔄 Actualizando ${tipo} en segundo plano - Se encontraron cambios`);
+            localStorage.setItem(CACHE_KEYS[tipo.toUpperCase()], JSON.stringify(datosNuevos));
+            localStorage.setItem(CACHE_KEYS.TIMESTAMP, Date.now().toString());
+            actualizarInterfaz(tipo, datosNuevos);
+        } else {
+            console.log(`✅ ${tipo} está actualizado - No hay cambios`);
+        }
+    } catch (error) {
+        console.error(`Error actualizando ${tipo} en segundo plano:`, error);
+    }
+}
+
+// Función para actualizar la interfaz según el tipo de contenido
+function actualizarInterfaz(tipo, datos) {
+    switch (tipo) {
+        case 'peliculas':
+            todasLasPeliculas = datos.peliculas;
+            mostrarPeliculasPorCategorias(todasLasPeliculas);
+            // Precargar imágenes en segundo plano
+            precargarImagenes(todasLasPeliculas);
+            break;
+        case 'anuncios':
+            announcements = datos.announcements;
+            mostrarAnuncios();
+            break;
+    }
+}
+
+// Función para precargar imágenes
+function precargarImagenes(peliculas) {
+    const imagenes = [];
+    
+    peliculas.forEach(pelicula => {
+        if (pelicula.imagen) {
+            const img = new Image();
+            img.src = pelicula.imagen;
+            imagenes.push(img);
+        }
+        if (pelicula.miniatura) {
+            const img = new Image();
+            img.src = pelicula.miniatura;
+            imagenes.push(img);
+        }
+    });
+    
+    console.log(`📸 Precargando ${imagenes.length} imágenes...`);
+}
+
+// Función principal para cargar contenido (reemplaza cargarContenidoConFirestore)
+async function cargarContenidoPrincipal() {
+    try {
+        console.log('🚀 Iniciando carga de películas con cache mejorado...');
+        
+        // Cargar películas con cache
+        await cargarContenidoConCache('peliculas');
+        
+        // Cargar anuncios con cache
+        await cargarContenidoConCache('anuncios');
+        
+        console.log('✅ Carga completada');
+    } catch (error) {
+        console.error('💥 Error en carga principal:', error);
+        await cargarDesdeRespaldo();
     }
 }
 
@@ -118,14 +238,16 @@ async function cargarDesdeRespaldo() {
         // Intentar cargar desde cache local primero
         const cacheLocal = localStorage.getItem(CACHE_KEYS.PELICULAS);
         if (cacheLocal) {
-            todasLasPeliculas = JSON.parse(cacheLocal);
+            const datosCache = JSON.parse(cacheLocal);
             console.log('⚡ Cargado desde cache local');
-            mostrarPeliculasPorCategorias(todasLasPeliculas);
+            
+            // Usar el nuevo sistema de actualización de interfaz
+            actualizarInterfaz('peliculas', datosCache);
             
             const anunciosCache = localStorage.getItem(CACHE_KEYS.ANUNCIOS);
             if (anunciosCache) {
-                announcements = JSON.parse(anunciosCache);
-                mostrarAnuncios();
+                const anunciosData = JSON.parse(anunciosCache);
+                actualizarInterfaz('anuncios', anunciosData);
             }
             return;
         }
@@ -137,13 +259,15 @@ async function cargarDesdeRespaldo() {
         
         const datos = await response.json();
         if (datos && datos.peliculas) {
-            todasLasPeliculas = datos.peliculas.filter(p => p.disponible !== false);
-            console.log(`📄 Cargadas ${todasLasPeliculas.length} películas desde JSON local`);
-            mostrarPeliculasPorCategorias(todasLasPeliculas);
+            const peliculasData = { peliculas: datos.peliculas.filter(p => p.disponible !== false) };
+            console.log(`📄 Cargadas ${peliculasData.peliculas.length} películas desde JSON local`);
+            
+            // Actualizar interfaz con nuevo sistema
+            actualizarInterfaz('peliculas', peliculasData);
             
             // Crear anuncios desde las primeras películas
-            announcements = todasLasPeliculas.slice(0, 5);
-            mostrarAnuncios();
+            const anunciosData = { announcements: peliculasData.peliculas.slice(0, 5) };
+            actualizarInterfaz('anuncios', anunciosData);
         }
 
     } catch (error) {
@@ -568,6 +692,13 @@ function verPelicula(peliculaId) {
         .catch(error => console.error('Error:', error));
 }
 
+// Función para limpiar cache manualmente
+function limpiarCacheManualmente() {
+    Object.values(CACHE_KEYS).forEach(key => localStorage.removeItem(key));
+    console.log('🧹 Cache limpiado manualmente');
+    location.reload(); // Recargar página para obtener datos frescos
+}
+
 // Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
     const categoriasWrapper = document.querySelector('.categorias-wrapper');
@@ -576,7 +707,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     gestionarCacheLocal();
-    cargarContenidoConFirestore();
+    cargarContenidoPrincipal(); // Cambiado a cargarContenidoPrincipal
     
     setupCarouselTouch();
     handleScrollAudio();
@@ -892,7 +1023,7 @@ function abrirPelicula(peliculaData) {
     }
 }
 
- // Función de búsqueda actualizada para Firestore
+ // Función de búsqueda optimizada con caché
 async function searchPeliculas(query) {
     const announcementsCarousel = document.querySelector('.announcements-carousel');
     
@@ -908,25 +1039,24 @@ async function searchPeliculas(query) {
     try {
         const busqueda = query.toLowerCase().trim();
         
-        // Intentar buscar usando Firestore primero
-        let peliculasFiltradas;
-        try {
-            if (window.firestorePeliculas && window.firestorePeliculas.buscarPeliculasFirestore) {
+        // Buscar primero en los datos locales (más rápido)
+        let peliculasFiltradas = todasLasPeliculas.filter(pelicula => 
+            pelicula.titulo.toLowerCase().includes(busqueda) ||
+            (pelicula.genero && (
+                Array.isArray(pelicula.genero) 
+                    ? pelicula.genero.some(g => g.toLowerCase().includes(busqueda))
+                    : pelicula.genero.toLowerCase().includes(busqueda)
+            ))
+        );
+
+        // Solo usar Firestore si no hay datos locales o si la búsqueda local está vacía
+        if (peliculasFiltradas.length === 0 && window.firestorePeliculas && window.firestorePeliculas.buscarPeliculasFirestore) {
+            try {
+                console.log('🔍 Buscando en Firestore...');
                 peliculasFiltradas = await window.firestorePeliculas.buscarPeliculasFirestore(busqueda);
-            } else {
-                throw new Error('Funciones de Firestore no disponibles');
+            } catch (error) {
+                console.warn('Error buscando en Firestore:', error);
             }
-        } catch (error) {
-            console.warn('Error buscando en Firestore, usando búsqueda local:', error);
-            // Fallback a búsqueda local
-            peliculasFiltradas = todasLasPeliculas.filter(pelicula => 
-                pelicula.titulo.toLowerCase().includes(busqueda) ||
-                (pelicula.genero && (
-                    Array.isArray(pelicula.genero) 
-                        ? pelicula.genero.some(g => g.toLowerCase().includes(busqueda))
-                        : pelicula.genero.toLowerCase().includes(busqueda)
-                ))
-            );
         }
 
         // Ocultar el carrusel durante la búsqueda en todas las plataformas
@@ -944,40 +1074,63 @@ async function searchPeliculas(query) {
     }
 }
 
-// Función setupBuscador actualizada para manejar funciones asíncronas
+// Función setupBuscador optimizada con debounce mejorado
 function setupBuscador() {
     const searchInput = document.getElementById('search-input');
     const headerSearch = document.getElementById('headerSearch');
     const announcementsCarousel = document.querySelector('.announcements-carousel');
 
-    // Agregar debounce para mejorar rendimiento
+    // Agregar debounce optimizado para mejorar rendimiento
     let timeoutId;
+    let lastQuery = '';
+    
     searchInput.addEventListener('input', (e) => {
+        const currentQuery = e.target.value;
+        
+        // Si es la misma búsqueda, no hacer nada
+        if (currentQuery === lastQuery) return;
+        
         clearTimeout(timeoutId);
-        timeoutId = setTimeout(async () => {
-            await searchPeliculas(e.target.value);
-        }, 300); // Esperar 300ms después de que el usuario deje de escribir
-    });
-
-    // Agregar manejo de la tecla Escape
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            headerSearch.classList.remove('active');
-            searchInput.value = '';
+        
+        // Si el campo está vacío, mostrar todo inmediatamente
+        if (!currentQuery.trim()) {
             if (announcementsCarousel) {
                 announcementsCarousel.style.display = 'block';
             }
             mostrarPeliculasPorCategorias(todasLasPeliculas);
+            lastQuery = currentQuery;
+            return;
+        }
+        
+        // Debounce para búsquedas
+        timeoutId = setTimeout(async () => {
+            await searchPeliculas(currentQuery);
+            lastQuery = currentQuery;
+        }, 200); // Reducido a 200ms para mejor respuesta
+    });
+
+    // Función para limpiar búsqueda
+    function limpiarBusqueda() {
+        headerSearch.classList.remove('active');
+        searchInput.value = '';
+        lastQuery = '';
+        if (announcementsCarousel) {
+            announcementsCarousel.style.display = 'block';
+        }
+        mostrarPeliculasPorCategorias(todasLasPeliculas);
+    }
+
+    // Agregar manejo de la tecla Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            limpiarBusqueda();
         }
     });
 
     // Restaurar el carrusel cuando se borra la búsqueda
     searchInput.addEventListener('search', () => {
         if (!searchInput.value) {
-            if (announcementsCarousel) {
-                announcementsCarousel.style.display = 'block';
-            }
-            mostrarPeliculasPorCategorias(todasLasPeliculas);
+            limpiarBusqueda();
         }
     });
 }
@@ -1015,15 +1168,16 @@ function agregarEstilosScroll() {
     document.head.appendChild(styleSheet);
 }
 
-// Inicialización actualizada para Firestore
+// Inicialización optimizada para Firestore
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log('🎬 Iniciando HRZ TV con Firestore...');
+    console.log('🎬 Iniciando HRZ TV con sistema de cache mejorado...');
     
     // Configurar interfaz básica
     setupBuscador();
     agregarEstilosScroll();
     enableDragScroll();
     setupCarouselTouch();
+    handleScrollAudio();
     
     // Configurar botones de búsqueda
     const searchToggle = document.getElementById('searchToggle');
@@ -1044,16 +1198,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
     
-    // Pequeño delay para asegurar que Firebase se haya cargado
+    // Reducir delay para carga más rápida
     setTimeout(async () => {
         try {
-            console.log('⏳ Esperando a que Firebase se cargue...');
-            await cargarContenidoConFirestore();
-            console.log('✅ HRZ TV cargado completamente');
+            console.log('⏳ Cargando contenido...');
+            await cargarContenidoPrincipal();
+            console.log('✅ HRZ TV cargado completamente con cache optimizado');
         } catch (error) {
             console.error('Error en la inicialización:', error);
         }
-    }, 1000); // 1 segundo de delay
+    }, 500); // Reducido a 500ms para carga más rápida
 });
 
 // Carousel Touch encargadao de la barra de anuncios    
@@ -1215,3 +1369,16 @@ function toggleMiLista(boton) {
         console.error('Error en toggleMiLista:', error);
     }
 }
+
+// Exponer funciones para depuración
+window.limpiarCachePeliculas = limpiarCacheManualmente;
+window.debugPeliculas = {
+    cache: () => console.log('📦 Cache:', {
+        peliculas: localStorage.getItem(CACHE_KEYS.PELICULAS),
+        anuncios: localStorage.getItem(CACHE_KEYS.ANUNCIOS),
+        timestamp: localStorage.getItem(CACHE_KEYS.TIMESTAMP),
+        actualizado: esCacheActualizado()
+    }),
+    limpiar: limpiarCacheManualmente,
+    recargar: () => cargarContenidoPrincipal()
+};

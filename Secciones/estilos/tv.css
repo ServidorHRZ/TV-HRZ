@@ -53,12 +53,151 @@ body {
     pointer-events: auto;
 }
 
-.boton-fullscreen {
+/* Controles del reproductor */
+.controles-reproductor {
     position: absolute;
     bottom: 10px;
+    left: 10px;
     right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     z-index: 11;
-    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.reproductor-principal:hover .controles-reproductor {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Control de volumen */
+.control-volumen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.boton-volumen {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.boton-volumen:hover {
+    background: rgba(0, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.slider-volumen {
+    width: 80px;
+    height: 6px;
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.control-volumen:hover .slider-volumen {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.volumen-track {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.volumen-progress {
+    height: 100%;
+    background: var(--primary-color);
+    width: 100%;
+    border-radius: 3px;
+    transition: width 0.1s ease;
+}
+
+.volumen-handle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: grab;
+}
+
+.volumen-handle:active {
+    cursor: grabbing;
+}
+
+.slider-volumen:hover .volumen-handle {
+    opacity: 1;
+}
+
+/* Mostrar controles en pantalla completa */
+.reproductor-principal.fullscreen .controles-reproductor {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.reproductor-principal.fullscreen:hover .controles-reproductor {
+    opacity: 1;
+}
+
+/* Efectos adicionales */
+.volumen-track:hover .volumen-progress {
+    background: #00e6e6;
+}
+
+.volumen-track:hover .volumen-handle {
+    background: #00e6e6;
+    box-shadow: 0 0 8px rgba(0, 230, 230, 0.5);
+}
+
+/* Tooltip para el volumen */
+.control-volumen::after {
+    content: attr(data-volumen) '%';
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.control-volumen:hover::after {
+    opacity: 1;
+}
+
+.boton-fullscreen {
+    background: rgba(0, 0, 0, 0.7);
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -73,7 +212,7 @@ body {
 }
 
 .boton-fullscreen:hover {
-    background: rgba(0, 255, 255, 0.2);
+    background: rgba(0, 255, 255, 0.3);
     transform: scale(1.1);
 }
 
@@ -395,6 +534,43 @@ body {
 
     .lista-header {
         top: 30vh;
+    }
+
+    /* Controles móviles */
+    .controles-reproductor {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .controles-reproductor.mostrar-movil {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .slider-volumen {
+        width: 60px;
+        opacity: 0;
+        transform: translateX(-10px);
+        transition: all 0.3s ease;
+    }
+
+    .control-volumen:hover .slider-volumen,
+    .controles-reproductor.mostrar-movil .slider-volumen {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .boton-volumen,
+    .boton-fullscreen {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .volumen-handle {
+        width: 10px;
+        height: 10px;
     }
 }
 

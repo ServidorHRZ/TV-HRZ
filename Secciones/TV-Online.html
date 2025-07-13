@@ -13,10 +13,26 @@
     <div class="main-content">
         <div class="reproductor-fijo">
             <div class="reproductor-principal">
-                <!-- Botón de pantalla completa -->
-                <button id="botonPantallaCompleta" class="boton-fullscreen">
-                    <i class="fas fa-expand"></i>
-                </button>
+                <!-- Controles del reproductor -->
+                <div class="controles-reproductor">
+                    <!-- Control de volumen -->
+                    <div class="control-volumen">
+                        <button id="botonVolumen" class="boton-volumen">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        <div class="slider-volumen">
+                            <div class="volumen-track">
+                                <div class="volumen-progress"></div>
+                                <div class="volumen-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Botón de pantalla completa -->
+                    <button id="botonPantallaCompleta" class="boton-fullscreen">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
 
                 <!-- Capa para prevenir interacción -->
                 <div class="capa-bloqueadora"></div>

@@ -455,4 +455,254 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('fullscreenchange', function() {
         reproductorPrincipal.classList.toggle('fullscreen', document.fullscreenElement !== null);
     });
+
+    // Control de volumen
+    let volumenActual = 1; // Volumen inicial al 100%
+    let esMuteado = false;
+    let volumenAnterior = 1;
+    
+    const botonVolumen = document.getElementById('botonVolumen');
+    const sliderVolumen = document.querySelector('.slider-volumen');
+    const volumenProgress = document.querySelector('.volumen-progress');
+    const volumenHandle = document.querySelector('.volumen-handle');
+    const reproductorHtml5 = document.getElementById('reproductor-html5');
+    
+    // Función para actualizar el volumen visual
+    function actualizarVolumenVisual(volumen) {
+        const porcentaje = volumen * 100;
+        volumenProgress.style.width = `${porcentaje}%`;
+        volumenHandle.style.right = `${100 - porcentaje}%`;
+        
+        // Actualizar tooltip
+        const controlVolumen = document.querySelector('.control-volumen');
+        if (controlVolumen) {
+            controlVolumen.setAttribute('data-volumen', Math.round(porcentaje));
+        }
+        
+        // Cambiar icono según el volumen
+        const icono = botonVolumen.querySelector('i');
+        if (volumen === 0 || esMuteado) {
+            icono.className = 'fas fa-volume-mute';
+        } else if (volumen < 0.5) {
+            icono.className = 'fas fa-volume-down';
+        } else {
+            icono.className = 'fas fa-volume-up';
+        }
+    }
+    
+    // Función para aplicar el volumen
+    function aplicarVolumen(volumen) {
+        volumenActual = Math.max(0, Math.min(1, volumen));
+        
+        // Aplicar al reproductor HTML5
+        if (reproductorHtml5) {
+            reproductorHtml5.volume = esMuteado ? 0 : volumenActual;
+        }
+        
+        // Actualizar visual
+        actualizarVolumenVisual(volumenActual);
+        
+        // Guardar en localStorage
+        localStorage.setItem('volumen_tv', volumenActual);
+    }
+    
+    // Cargar volumen guardado
+    const volumenGuardado = localStorage.getItem('volumen_tv');
+    if (volumenGuardado) {
+        volumenActual = parseFloat(volumenGuardado);
+        aplicarVolumen(volumenActual);
+    } else {
+        aplicarVolumen(1);
+    }
+    
+    // Botón de volumen - toggle mute
+    botonVolumen.addEventListener('click', function() {
+        if (esMuteado) {
+            // Desmutear
+            esMuteado = false;
+            aplicarVolumen(volumenAnterior);
+        } else {
+            // Mutear
+            esMuteado = true;
+            volumenAnterior = volumenActual;
+            aplicarVolumen(0);
+        }
+    });
+    
+    // Variables para el arrastre
+    let estaArrastrando = false;
+    
+    // Función para obtener la posición del mouse/touch relativa al slider
+    function obtenerPosicionRelativa(event, elemento) {
+        const rect = elemento.getBoundingClientRect();
+        const x = (event.clientX || event.touches[0].clientX) - rect.left;
+        return Math.max(0, Math.min(1, x / rect.width));
+    }
+    
+    // Eventos del slider
+    sliderVolumen.addEventListener('mousedown', function(e) {
+        estaArrastrando = true;
+        const nuevoVolumen = obtenerPosicionRelativa(e, sliderVolumen);
+        esMuteado = false;
+        aplicarVolumen(nuevoVolumen);
+    });
+    
+    sliderVolumen.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        estaArrastrando = true;
+        const nuevoVolumen = obtenerPosicionRelativa(e, sliderVolumen);
+        esMuteado = false;
+        aplicarVolumen(nuevoVolumen);
+    });
+    
+    document.addEventListener('mousemove', function(e) {
+        if (estaArrastrando) {
+            const nuevoVolumen = obtenerPosicionRelativa(e, sliderVolumen);
+            aplicarVolumen(nuevoVolumen);
+        }
+    });
+    
+    document.addEventListener('touchmove', function(e) {
+        if (estaArrastrando) {
+            e.preventDefault();
+            const nuevoVolumen = obtenerPosicionRelativa(e, sliderVolumen);
+            aplicarVolumen(nuevoVolumen);
+        }
+    });
+    
+    document.addEventListener('mouseup', function() {
+        estaArrastrando = false;
+    });
+    
+    document.addEventListener('touchend', function() {
+        estaArrastrando = false;
+    });
+    
+    // Control de volumen con rueda del mouse
+    sliderVolumen.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        const cambio = e.deltaY > 0 ? -0.05 : 0.05;
+        esMuteado = false;
+        aplicarVolumen(volumenActual + cambio);
+    });
+    
+    // También en el botón de volumen
+    botonVolumen.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        const cambio = e.deltaY > 0 ? -0.05 : 0.05;
+        esMuteado = false;
+        aplicarVolumen(volumenActual + cambio);
+    });
+    
+    // Aplicar volumen cuando se carga un nuevo canal
+    const funcionReproducirCanalOriginal = window.reproducirCanal;
+    window.reproducirCanal = function(canal) {
+        funcionReproducirCanalOriginal(canal);
+        
+        // Esperar un poco para que el reproductor se inicialice
+        setTimeout(() => {
+            const reproductorHtml5 = document.getElementById('reproductor-html5');
+            if (reproductorHtml5) {
+                reproductorHtml5.volume = esMuteado ? 0 : volumenActual;
+            }
+        }, 500);
+    };
+    
+    // Control de volumen con teclado
+    document.addEventListener('keydown', function(e) {
+        // Solo funcionar si el foco está en el reproductor o no hay elemento enfocado
+        if (document.activeElement === document.body || 
+            document.activeElement === reproductorPrincipal ||
+            document.activeElement === reproductorHtml5) {
+            
+            switch(e.key) {
+                case 'ArrowUp':
+                    e.preventDefault();
+                    esMuteado = false;
+                    aplicarVolumen(volumenActual + 0.1);
+                    break;
+                case 'ArrowDown':
+                    e.preventDefault();
+                    esMuteado = false;
+                    aplicarVolumen(volumenActual - 0.1);
+                    break;
+                case 'm':
+                case 'M':
+                    e.preventDefault();
+                    botonVolumen.click();
+                    break;
+            }
+        }
+    });
+
+    // Control de visibilidad de controles en móviles
+    let timerOcultarControles = null;
+    const controlesReproductor = document.querySelector('.controles-reproductor');
+    
+    function mostrarControlesMovil() {
+        if (window.innerWidth <= 768) {
+            controlesReproductor.classList.add('mostrar-movil');
+            
+            // Limpiar timer anterior si existe
+            if (timerOcultarControles) {
+                clearTimeout(timerOcultarControles);
+            }
+            
+            // Ocultar controles después de 3 segundos
+            timerOcultarControles = setTimeout(() => {
+                controlesReproductor.classList.remove('mostrar-movil');
+            }, 3000);
+        }
+    }
+    
+    function ocultarControlesMovil() {
+        if (window.innerWidth <= 768) {
+            controlesReproductor.classList.remove('mostrar-movil');
+            if (timerOcultarControles) {
+                clearTimeout(timerOcultarControles);
+            }
+        }
+    }
+    
+    // Eventos táctiles para móvil
+    reproductorPrincipal.addEventListener('touchstart', function(e) {
+        if (window.innerWidth <= 768) {
+            // No interferir con los controles de volumen
+            if (!e.target.closest('.controles-reproductor')) {
+                mostrarControlesMovil();
+            }
+        }
+    });
+    
+    // También para clics en desktop
+    reproductorPrincipal.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            // No interferir con los controles de volumen
+            if (!e.target.closest('.controles-reproductor')) {
+                mostrarControlesMovil();
+            }
+        }
+    });
+    
+    // Resetear timer cuando se interactúa con los controles
+    controlesReproductor.addEventListener('touchstart', function() {
+        if (window.innerWidth <= 768) {
+            mostrarControlesMovil();
+        }
+    });
+    
+    // Ocultar controles cuando se hace scroll (indica que el usuario ya no está viendo el video)
+    window.addEventListener('scroll', function() {
+        ocultarControlesMovil();
+    });
+    
+    // Manejar cambios de orientación
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            controlesReproductor.classList.remove('mostrar-movil');
+            if (timerOcultarControles) {
+                clearTimeout(timerOcultarControles);
+            }
+        }
+    });
 });
