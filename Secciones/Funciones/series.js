@@ -1,4 +1,4 @@
- // Constantes para el manejo de caché
+// Constantes para el manejo de caché
  const CACHE_VERSION = '1.0';
  const CACHE_KEYS = {
      SERIES: 'hrztv_series_cache',
@@ -280,7 +280,7 @@
          'animacion': ['../logos/3.jpeg'],
          'marvel': ['../logos/7.png'],
          'dc': ['../logos/4.jpeg'],
-         'nuevos': ['https://cdnsnte1.s3.us-west-1.amazonaws.com/wp-content/uploads/2025/02/20120506/boton_nuevo_paz.png'],
+         'estrenos': ['https://cdnsnte1.s3.us-west-1.amazonaws.com/wp-content/uploads/2025/02/20120506/boton_nuevo_paz.png'],
      };
 
      categoriasWrapper.innerHTML = '';
@@ -297,7 +297,7 @@
              <div class="categoria-contenedor">
                  ${miListaSeries.map(serie => `
                      <div class="movie-card" data-serie='${JSON.stringify(serie)}'>
-                         ${serie.badge ? `<div class="badge">${serie.badge}</div>` : ''}
+                         ${serie.nuevo ? `<div class="badge">Recién Agregado</div>` : (serie.badge && serie.badge !== 'nuevo' ? `<div class="badge">${serie.badge}</div>` : '')}
                          <img src="${serie.imagen}" alt="${serie.titulo}">
                          <div class="movie-info">
                              <h3>${serie.titulo}</h3>
@@ -335,8 +335,7 @@
                  <div class="categoria-contenedor">
                      ${categoria.series.map(serie => `
                          <div class="movie-card" data-serie='${JSON.stringify(serie)}'>
-                             ${serie.nuevo ? `<div class="badge">NUEVO</div>` : ''}
-                             ${serie.badge ? `<div class="badge">${serie.badge}</div>` : ''}
+                             ${serie.nuevo ? `<div class="badge">Recién Agregado</div>` : (serie.badge && serie.badge !== 'nuevo' ? `<div class="badge">${serie.badge}</div>` : '')}
                              <img src="${serie.imagen}" alt="${serie.titulo}">
                              <div class="movie-info">
                                  <h3>${serie.titulo}</h3>
@@ -892,7 +891,7 @@
                  <div class="categoria-contenedor">
                      ${miListaSeries.map(serie => `
                          <div class="movie-card" data-serie='${JSON.stringify(serie)}'>
-                             ${serie.badge ? `<div class="badge">${serie.badge}</div>` : ''}
+                             ${serie.nuevo ? `<div class="badge">Recién Agregado</div>` : (serie.badge && serie.badge !== 'nuevo' ? `<div class="badge">${serie.badge}</div>` : '')}
                              <img src="${serie.imagen}" alt="${serie.titulo}">
                              <div class="movie-info">
                                  <h3>${serie.titulo}</h3>

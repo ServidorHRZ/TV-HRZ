@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRZ TV - Dashboard de Administración</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <h1 class="logo">HRZ TV</h1>
+                <span class="admin-badge">Admin Dashboard</span>
+            </div>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="user-menu">
+                    <button class="user-button" id="userButton">
+                        <i class="fas fa-user-circle"></i>
+                        <span id="userName">Administrador</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu" id="userDropdown">
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-user"></i> Perfil
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-cog"></i> Configuración
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <h3 class="nav-title">Contenido</h3>
+                <a href="#" class="nav-item active" data-section="dashboard">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item" data-section="peliculas">
+                    <i class="fas fa-film"></i>
+                    <span>Películas</span>
+                </a>
+                <a href="#" class="nav-item" data-section="series">
+                    <i class="fas fa-tv"></i>
+                    <span>Series</span>
+                </a>
+                <a href="#" class="nav-item" data-section="canales">
+                    <i class="fas fa-broadcast-tower"></i>
+                    <span>Canales TV</span>
+                </a>
+                <a href="#" class="nav-item" data-section="cursos">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Cursos</span>
+                </a>
+            </div>
+            <div class="nav-section">
+                <h3 class="nav-title">Gestión</h3>
+                <a href="#" class="nav-item" data-section="imagenes">
+                    <i class="fas fa-images"></i>
+                    <span>Gestión de Imágenes</span>
+                </a>
+                <a href="#" class="nav-item" data-section="estadisticas">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Estadísticas</span>
+                </a>
+                <a href="#" class="nav-item" data-section="configuracion">
+                    <i class="fas fa-cog"></i>
+                    <span>Configuración</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <!-- Dashboard Overview -->
+        <div class="content-section active" id="dashboard">
+            <div class="section-header">
+                <h2 class="section-title">Dashboard</h2>
+                <p class="section-subtitle">Resumen general del sistema</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 class="stat-number" id="totalPeliculas">0</h3>
+                        <p class="stat-label">Películas</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 class="stat-number" id="totalSeries">0</h3>
+                        <p class="stat-label">Series</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 class="stat-number" id="totalCanales">0</h3>
+                        <p class="stat-label">Canales TV</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 class="stat-number" id="totalCursos">0</h3>
+                        <p class="stat-label">Cursos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-activity">
+                <h3 class="activity-title">Actividad Reciente</h3>
+                <div class="activity-list" id="activityList">
+                    <!-- Actividad se cargará dinámicamente -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Películas Section -->
+        <div class="content-section" id="peliculas">
+            <div class="section-header">
+                <h2 class="section-title">Gestión de Películas</h2>
+                <button class="btn btn-primary" id="addPeliculaBtn">
+                    <i class="fas fa-plus"></i> Agregar Película
+                </button>
+            </div>
+            
+            <div class="content-grid">
+                <div class="form-panel">
+                    <h3 class="panel-title">Agregar Nueva Película</h3>
+                    <form id="peliculaForm" class="content-form">
+                        <div class="form-group">
+                            <label for="peliculaTitulo">Título *</label>
+                            <input type="text" id="peliculaTitulo" name="titulo" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="peliculaAno">Año</label>
+                                <input type="number" id="peliculaAno" name="ano" min="1900" max="2030">
+                            </div>
+                            <div class="form-group">
+                                <label for="peliculaDuracion">Duración (min)</label>
+                                <input type="number" id="peliculaDuracion" name="duracion" min="1">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="peliculaDescripcion">Descripción</label>
+                            <textarea id="peliculaDescripcion" name="descripcion" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="peliculaGenero">Categorías *</label>
+                            <div class="genre-selection">
+                                <div class="genre-grid">
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="estrenos">
+                                        <span class="genre-label">Estrenos</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="accion">
+                                        <span class="genre-label">Acción</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="comedia">
+                                        <span class="genre-label">Comedia</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="drama">
+                                        <span class="genre-label">Drama</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="terror">
+                                        <span class="genre-label">Terror</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="ciencia_ficcion">
+                                        <span class="genre-label">Ciencia Ficción</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="animacion">
+                                        <span class="genre-label">Animación</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="familiar">
+                                        <span class="genre-label">Familiar</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="netflix">
+                                        <span class="genre-label">Netflix</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="amazon">
+                                        <span class="genre-label">Amazon Prime</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="suspenso">
+                                        <span class="genre-label">Suspenso</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="romance">
+                                        <span class="genre-label">Romance</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="aventura">
+                                        <span class="genre-label">Aventura</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="documental">
+                                        <span class="genre-label">Documental</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="musical">
+                                        <span class="genre-label">Musical</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="biografia">
+                                        <span class="genre-label">Biografía</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="crimen">
+                                        <span class="genre-label">Crimen</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="guerra">
+                                        <span class="genre-label">Guerra</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="western">
+                                        <span class="genre-label">Western</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="thriller">
+                                        <span class="genre-label">Thriller</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="misterio">
+                                        <span class="genre-label">Misterio</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="fantasia">
+                                        <span class="genre-label">Fantasía</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="historica">
+                                        <span class="genre-label">Histórica</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="marvel">
+                                        <span class="genre-label">Marvel</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="dc">
+                                        <span class="genre-label">DC</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="anime">
+                                        <span class="genre-label">Anime</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="cristiana">
+                                        <span class="genre-label">Cristiana</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="clasicos">
+                                        <span class="genre-label">Clásicos</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="rapidosyfuriosos">
+                                        <span class="genre-label">Rápidos y Furiosos</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="navidad">
+                                        <span class="genre-label">Navidad</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="programacion">
+                                        <span class="genre-label">Programación</span>
+                                    </label>
+                                    <!-- Nuevas plataformas de streaming -->
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="hbo">
+                                        <span class="genre-label">HBO Max</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="disney">
+                                        <span class="genre-label">Disney+</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="paramount">
+                                        <span class="genre-label">Paramount+</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="apple">
+                                        <span class="genre-label">Apple TV+</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="hulu">
+                                        <span class="genre-label">Hulu</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="peacock">
+                                        <span class="genre-label">Peacock</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="starz">
+                                        <span class="genre-label">Starz</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="showtime">
+                                        <span class="genre-label">Showtime</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="crunchyroll">
+                                        <span class="genre-label">Crunchyroll</span>
+                                    </label>
+                                    <!-- Nuevos géneros -->
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="deportes">
+                                        <span class="genre-label">Deportes</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="reality">
+                                        <span class="genre-label">Reality Show</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="talk_show">
+                                        <span class="genre-label">Talk Show</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="noticias">
+                                        <span class="genre-label">Noticias</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="infantil">
+                                        <span class="genre-label">Infantil</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="educativo">
+                                        <span class="genre-label">Educativo</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="cooking">
+                                        <span class="genre-label">Cocina</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="viajes">
+                                        <span class="genre-label">Viajes</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="naturaleza">
+                                        <span class="genre-label">Naturaleza</span>
+                                    </label>
+                                    <label class="genre-option">
+                                        <input type="checkbox" name="genero" value="tecnologia">
+                                        <span class="genre-label">Tecnología</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="peliculaImagen">Imagen Principal</label>
+                            <div class="file-upload-area" id="peliculaImagenArea">
+                                <input type="file" id="peliculaImagen" name="imagen" accept="image/*" hidden>
+                                <div class="upload-placeholder">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <p>Arrastra una imagen aquí o haz clic para seleccionar</p>
+                                    <span class="file-info">PNG, JPG, GIF hasta 10MB</span>
+                                </div>
+                                <div class="image-preview" id="peliculaImagenPreview"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="peliculaTrailer">URL del Trailer (YouTube)</label>
+                            <input type="url" id="peliculaTrailer" name="trailer" placeholder="https://www.youtube.com/watch?v=...">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="peliculaEnlace">URL de Reproducción *</label>
+                            <input type="url" id="peliculaEnlace" name="enlace" required placeholder="https://...">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group checkbox-group">
+                                <label>
+                                    <input type="checkbox" id="peliculaNuevo" name="nuevo">
+                                    <span class="checkmark"></span>
+                                    Recién Agregado
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label>
+                                    <input type="checkbox" id="peliculaDisponible" name="disponible" checked>
+                                    <span class="checkmark"></span>
+                                    Disponible
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" id="cancelPeliculaBtn">
+                                <i class="fas fa-times"></i> Cancelar
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Guardar Película
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="list-panel">
+                    <h3 class="panel-title">Lista de Películas</h3>
+                    
+                    <!-- Filtros avanzados -->
+                    <div class="filters-section">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="searchPeliculas" placeholder="Buscar películas...">
+                        </div>
+                        
+                        <div class="filter-controls">
+                            <div class="filter-group">
+                                <label for="filterGenero">Filtrar por categoría:</label>
+                                <select id="filterGenero">
+                                    <option value="">Todas las categorías</option>
+                                    <option value="estrenos">Estrenos</option>
+                                    <option value="accion">Acción</option>
+                                    <option value="comedia">Comedia</option>
+                                    <option value="drama">Drama</option>
+                                    <option value="terror">Terror</option>
+                                    <option value="ciencia_ficcion">Ciencia Ficción</option>
+                                    <option value="animacion">Animación</option>
+                                    <option value="familiar">Familiar</option>
+                                    <option value="netflix">Netflix</option>
+                                    <option value="amazon">Amazon Prime</option>
+                                    <option value="hbo">HBO Max</option>
+                                    <option value="disney">Disney+</option>
+                                    <option value="paramount">Paramount+</option>
+                                    <option value="apple">Apple TV+</option>
+                                    <option value="hulu">Hulu</option>
+                                    <option value="marvel">Marvel</option>
+                                    <option value="dc">DC</option>
+                                    <option value="anime">Anime</option>
+                                    <option value="cristiana">Cristiana</option>
+                                    <option value="clasicos">Clásicos</option>
+                                </select>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <label for="filterAno">Filtrar por año:</label>
+                                <select id="filterAno">
+                                    <option value="">Todos los años</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="older">Anteriores a 2018</option>
+                                </select>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <label for="filterEstado">Estado:</label>
+                                <select id="filterEstado">
+                                    <option value="">Todos</option>
+                                    <option value="disponible">Disponibles</option>
+                                    <option value="no_disponible">No disponibles</option>
+                                    <option value="nuevo">Recién agregados</option>
+                                </select>
+                            </div>
+                            
+                            <button class="btn btn-secondary" id="clearFilters">
+                                <i class="fas fa-times"></i> Limpiar filtros
+                            </button>
+                        </div>
+                        
+                        <div class="results-info">
+                            <span id="resultsCount">0 películas encontradas</span>
+                            <div class="view-options">
+                                <button class="view-btn active" data-view="grid" title="Vista en cuadrícula">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="view-btn" data-view="list" title="Vista en lista">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-list enhanced" id="peliculasList">
+                        <!-- Lista se cargará dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Series Section -->
+        <div class="content-section" id="series">
+            <div class="section-header">
+                <h2 class="section-title">Gestión de Series</h2>
+                <button class="btn btn-primary" id="addSerieBtn">
+                    <i class="fas fa-plus"></i> Agregar Serie
+                </button>
+            </div>
+            
+            <div class="content-grid">
+                <div class="form-panel">
+                    <h3 class="panel-title">Agregar Nueva Serie</h3>
+                    <form id="serieForm" class="content-form">
+                        <div class="form-group">
+                            <label for="serieTitulo">Título *</label>
+                            <input type="text" id="serieTitulo" name="titulo" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="serieAno">Año</label>
+                                <input type="number" id="serieAno" name="ano" min="1900" max="2030">
+                            </div>
+                            <div class="form-group">
+                                <label for="serieTemporadas">Temporadas</label>
+                                <input type="number" id="serieTemporadas" name="temporadas" min="1">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serieDescripcion">Descripción</label>
+                            <textarea id="serieDescripcion" name="descripcion" rows="3"></textarea>
+                        </div>
+                        
+                        <!-- Selección de categorías con checkboxes -->
+                        <div class="form-group">
+                            <label>Categorías *</label>
+                            <div class="genre-selection" id="serieGenreSelection">
+                                <div class="genre-grid">
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieEstrenos" name="genero" value="estrenos">
+                                        <label for="serieEstrenos" class="genre-label">Estrenos</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieAccion" name="genero" value="accion">
+                                        <label for="serieAccion" class="genre-label">Acción</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieComedia" name="genero" value="comedia">
+                                        <label for="serieComedia" class="genre-label">Comedia</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieDrama" name="genero" value="drama">
+                                        <label for="serieDrama" class="genre-label">Drama</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieTerror" name="genero" value="terror">
+                                        <label for="serieTerror" class="genre-label">Terror</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieCienciaFiccion" name="genero" value="ciencia_ficcion">
+                                        <label for="serieCienciaFiccion" class="genre-label">Ciencia Ficción</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieAnimacion" name="genero" value="animacion">
+                                        <label for="serieAnimacion" class="genre-label">Animación</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieFamiliar" name="genero" value="familiar">
+                                        <label for="serieFamiliar" class="genre-label">Familiar</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieSuspenso" name="genero" value="suspenso">
+                                        <label for="serieSuspenso" class="genre-label">Suspenso</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieRomance" name="genero" value="romance">
+                                        <label for="serieRomance" class="genre-label">Romance</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieAventura" name="genero" value="aventura">
+                                        <label for="serieAventura" class="genre-label">Aventura</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieDocumental" name="genero" value="documental">
+                                        <label for="serieDocumental" class="genre-label">Documental</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieMusical" name="genero" value="musical">
+                                        <label for="serieMusical" class="genre-label">Musical</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieBiografia" name="genero" value="biografia">
+                                        <label for="serieBiografia" class="genre-label">Biografía</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieCrimen" name="genero" value="crimen">
+                                        <label for="serieCrimen" class="genre-label">Crimen</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieGuerra" name="genero" value="guerra">
+                                        <label for="serieGuerra" class="genre-label">Guerra</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieWestern" name="genero" value="western">
+                                        <label for="serieWestern" class="genre-label">Western</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieThriller" name="genero" value="thriller">
+                                        <label for="serieThriller" class="genre-label">Thriller</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieMisterio" name="genero" value="misterio">
+                                        <label for="serieMisterio" class="genre-label">Misterio</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieFantasia" name="genero" value="fantasia">
+                                        <label for="serieFantasia" class="genre-label">Fantasía</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieHistorica" name="genero" value="historica">
+                                        <label for="serieHistorica" class="genre-label">Histórica</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieMarvel" name="genero" value="marvel">
+                                        <label for="serieMarvel" class="genre-label">Marvel</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieDc" name="genero" value="dc">
+                                        <label for="serieDc" class="genre-label">DC</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieAnime" name="genero" value="anime">
+                                        <label for="serieAnime" class="genre-label">Anime</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieCristiana" name="genero" value="cristiana">
+                                        <label for="serieCristiana" class="genre-label">Cristiana</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieClasicos" name="genero" value="clasicos">
+                                        <label for="serieClasicos" class="genre-label">Clásicos</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieNetflix" name="genero" value="netflix">
+                                        <label for="serieNetflix" class="genre-label">Netflix</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieAmazon" name="genero" value="amazon">
+                                        <label for="serieAmazon" class="genre-label">Amazon Prime</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieHbo" name="genero" value="hbo">
+                                        <label for="serieHbo" class="genre-label">HBO Max</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieDisney" name="genero" value="disney">
+                                        <label for="serieDisney" class="genre-label">Disney+</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieParamount" name="genero" value="paramount">
+                                        <label for="serieParamount" class="genre-label">Paramount+</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieApple" name="genero" value="apple">
+                                        <label for="serieApple" class="genre-label">Apple TV+</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieHulu" name="genero" value="hulu">
+                                        <label for="serieHulu" class="genre-label">Hulu</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="seriePeacock" name="genero" value="peacock">
+                                        <label for="seriePeacock" class="genre-label">Peacock</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieStarz" name="genero" value="starz">
+                                        <label for="serieStarz" class="genre-label">Starz</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieShowtime" name="genero" value="showtime">
+                                        <label for="serieShowtime" class="genre-label">Showtime</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieCrunchyroll" name="genero" value="crunchyroll">
+                                        <label for="serieCrunchyroll" class="genre-label">Crunchyroll</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieCartoon" name="genero" value="cartoon">
+                                        <label for="serieCartoon" class="genre-label">Cartoon Network</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieNick" name="genero" value="nick">
+                                        <label for="serieNick" class="genre-label">Nickelodeon</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieDiscoveryKids" name="genero" value="discoverykids">
+                                        <label for="serieDiscoveryKids" class="genre-label">Discovery Kids</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieNovelas" name="genero" value="novelas">
+                                        <label for="serieNovelas" class="genre-label">Novelas</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieDeportes" name="genero" value="deportes">
+                                        <label for="serieDeportes" class="genre-label">Deportes</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieRealityShow" name="genero" value="reality_show">
+                                        <label for="serieRealityShow" class="genre-label">Reality Show</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieTalkShow" name="genero" value="talk_show">
+                                        <label for="serieTalkShow" class="genre-label">Talk Show</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieNoticias" name="genero" value="noticias">
+                                        <label for="serieNoticias" class="genre-label">Noticias</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieInfantil" name="genero" value="infantil">
+                                        <label for="serieInfantil" class="genre-label">Infantil</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieEducativo" name="genero" value="educativo">
+                                        <label for="serieEducativo" class="genre-label">Educativo</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieCocina" name="genero" value="cocina">
+                                        <label for="serieCocina" class="genre-label">Cocina</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieViajes" name="genero" value="viajes">
+                                        <label for="serieViajes" class="genre-label">Viajes</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieNaturaleza" name="genero" value="naturaleza">
+                                        <label for="serieNaturaleza" class="genre-label">Naturaleza</label>
+                                    </div>
+                                    <div class="genre-option">
+                                        <input type="checkbox" id="serieTecnologia" name="genero" value="tecnologia">
+                                        <label for="serieTecnologia" class="genre-label">Tecnología</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serieImagen">Imagen Principal</label>
+                            <div class="file-upload-area" id="serieImagenArea">
+                                <input type="file" id="serieImagen" name="imagen" accept="image/*" hidden>
+                                <div class="upload-placeholder">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <p>Arrastra una imagen aquí o haz clic para seleccionar</p>
+                                    <span class="file-info">PNG, JPG, GIF hasta 10MB</span>
+                                </div>
+                                <div class="image-preview" id="serieImagenPreview"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serieTrailer">URL del Trailer (YouTube)</label>
+                            <input type="url" id="serieTrailer" name="trailer" placeholder="https://www.youtube.com/watch?v=...">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serieEnlace">URL de Reproducción *</label>
+                            <input type="url" id="serieEnlace" name="enlace" required placeholder="https://...">
+                        </div>
+                        
+                        <!-- Gestión de Capítulos -->
+                        <div class="form-group">
+                            <label>Gestión de Capítulos</label>
+                            <div class="chapters-section">
+                                <div class="chapters-header">
+                                    <button type="button" class="btn btn-secondary" id="addChapterBtn">
+                                        <i class="fas fa-plus"></i> Agregar Capítulo
+                                    </button>
+                                    <span class="chapters-count">0 capítulos agregados</span>
+                                </div>
+                                <div class="chapters-list" id="chaptersList">
+                                    <!-- Los capítulos se agregarán dinámicamente aquí -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group checkbox-group">
+                                <label>
+                                    <input type="checkbox" id="serieNuevo" name="nuevo">
+                                    <span class="checkmark"></span>
+                                    Recién Agregado
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label>
+                                    <input type="checkbox" id="serieDestacado" name="destacado">
+                                    <span class="checkmark"></span>
+                                    Destacar en carousel
+                                </label>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label>
+                                    <input type="checkbox" id="serieDisponible" name="disponible" checked>
+                                    <span class="checkmark"></span>
+                                    Disponible
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" id="cancelSerieBtn">
+                                <i class="fas fa-times"></i> Cancelar
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Guardar Serie
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="list-panel">
+                    <h3 class="panel-title">Lista de Series</h3>
+                    
+                    <!-- Filtros avanzados -->
+                    <div class="filters-section">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="searchSeries" placeholder="Buscar series...">
+                        </div>
+                        
+                        <div class="filter-controls">
+                            <div class="filter-group">
+                                <label for="filterSerieGenero">Filtrar por categoría:</label>
+                                <select id="filterSerieGenero">
+                                    <option value="">Todas las categorías</option>
+                                    <option value="estrenos">Estrenos</option>
+                                    <option value="accion">Acción</option>
+                                    <option value="comedia">Comedia</option>
+                                    <option value="drama">Drama</option>
+                                    <option value="terror">Terror</option>
+                                    <option value="ciencia_ficcion">Ciencia Ficción</option>
+                                    <option value="animacion">Animación</option>
+                                    <option value="familiar">Familiar</option>
+                                    <option value="suspenso">Suspenso</option>
+                                    <option value="romance">Romance</option>
+                                    <option value="aventura">Aventura</option>
+                                    <option value="documental">Documental</option>
+                                    <option value="musical">Musical</option>
+                                    <option value="biografia">Biografía</option>
+                                    <option value="crimen">Crimen</option>
+                                    <option value="guerra">Guerra</option>
+                                    <option value="western">Western</option>
+                                    <option value="thriller">Thriller</option>
+                                    <option value="misterio">Misterio</option>
+                                    <option value="fantasia">Fantasía</option>
+                                    <option value="historica">Histórica</option>
+                                    <option value="netflix">Netflix</option>
+                                    <option value="amazon">Amazon Prime</option>
+                                    <option value="hbo">HBO Max</option>
+                                    <option value="disney">Disney+</option>
+                                    <option value="paramount">Paramount+</option>
+                                    <option value="apple">Apple TV+</option>
+                                    <option value="hulu">Hulu</option>
+                                    <option value="peacock">Peacock</option>
+                                    <option value="starz">Starz</option>
+                                    <option value="showtime">Showtime</option>
+                                    <option value="crunchyroll">Crunchyroll</option>
+                                    <option value="cartoon">Cartoon Network</option>
+                                    <option value="nick">Nickelodeon</option>
+                                    <option value="discoverykids">Discovery Kids</option>
+                                    <option value="marvel">Marvel</option>
+                                    <option value="dc">DC</option>
+                                    <option value="anime">Anime</option>
+                                    <option value="cristiana">Cristiana</option>
+                                    <option value="clasicos">Clásicos</option>
+                                    <option value="novelas">Novelas</option>
+                                    <option value="deportes">Deportes</option>
+                                    <option value="reality_show">Reality Show</option>
+                                    <option value="talk_show">Talk Show</option>
+                                    <option value="noticias">Noticias</option>
+                                    <option value="infantil">Infantil</option>
+                                    <option value="educativo">Educativo</option>
+                                    <option value="cocina">Cocina</option>
+                                    <option value="viajes">Viajes</option>
+                                    <option value="naturaleza">Naturaleza</option>
+                                    <option value="tecnologia">Tecnología</option>
+                                </select>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <label for="filterSerieAno">Filtrar por año:</label>
+                                <select id="filterSerieAno">
+                                    <option value="">Todos los años</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="older">Anteriores a 2018</option>
+                                </select>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <label for="filterSerieEstado">Estado:</label>
+                                <select id="filterSerieEstado">
+                                    <option value="">Todos</option>
+                                    <option value="disponible">Disponibles</option>
+                                    <option value="no_disponible">No disponibles</option>
+                                    <option value="nuevo">Recién agregados</option>
+                                    <option value="destacado">Destacados</option>
+                                </select>
+                            </div>
+                            
+                            <button class="btn btn-secondary" id="clearSerieFilters">
+                                <i class="fas fa-times"></i> Limpiar filtros
+                            </button>
+                        </div>
+                        
+                        <div class="results-info">
+                            <span id="serieResultsCount">0 series encontradas</span>
+                            <div class="view-options">
+                                <button class="view-btn active" data-view="grid" title="Vista en cuadrícula" id="serieGridView">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="view-btn" data-view="list" title="Vista en lista" id="serieListView">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-list enhanced" id="seriesList">
+                        <!-- Lista se cargará dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Cargando...</p>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Modal para confirmaciones -->
+    <div class="modal" id="confirmModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Confirmar Acción</h3>
+                <button class="modal-close" id="confirmModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="confirmMessage">¿Estás seguro de que deseas realizar esta acción?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="confirmCancel">Cancelar</button>
+                <button class="btn btn-danger" id="confirmAction">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Scripts -->
+    <script src="dashboard.js"></script>
+</body>
+</html>

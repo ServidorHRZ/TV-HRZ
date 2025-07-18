@@ -311,8 +311,17 @@ function organizarPorCategorias(peliculas) {
         'programacion': { titulo: 'Programación', peliculas: [], mantenerOrden: false },
         'accion': { titulo: 'Acción y Mucho Más', peliculas: [], mantenerOrden: false },
         'familiar': { titulo: 'Películas Familiares', peliculas: [], mantenerOrden: false },
-        'neflix': { titulo: 'Netflix', peliculas: [], mantenerOrden: false },
+        'netflix': { titulo: 'Netflix', peliculas: [], mantenerOrden: false },
         'amazon': { titulo: 'Amazon Prime', peliculas: [], mantenerOrden: false },
+        'hbo': { titulo: 'HBO Max', peliculas: [], mantenerOrden: false },
+        'disney': { titulo: 'Disney+', peliculas: [], mantenerOrden: false },
+        'paramount': { titulo: 'Paramount+', peliculas: [], mantenerOrden: false },
+        'apple': { titulo: 'Apple TV+', peliculas: [], mantenerOrden: false },
+        'hulu': { titulo: 'Hulu', peliculas: [], mantenerOrden: false },
+        'peacock': { titulo: 'Peacock', peliculas: [], mantenerOrden: false },
+        'starz': { titulo: 'Starz', peliculas: [], mantenerOrden: false },
+        'showtime': { titulo: 'Showtime', peliculas: [], mantenerOrden: false },
+        'crunchyroll': { titulo: 'Crunchyroll', peliculas: [], mantenerOrden: false },
         'suspenso': { titulo: 'Suspenso y Drama', peliculas: [], mantenerOrden: false },
         'marvel': { titulo: 'Marvel', peliculas: [], mantenerOrden: false },
         'dc': { titulo: 'DC Comics', peliculas: [], mantenerOrden: false },
@@ -325,7 +334,17 @@ function organizarPorCategorias(peliculas) {
         'ciencia_ficcion': { titulo: 'Ciencia Ficcion', peliculas: [], mantenerOrden: false },
         'terror': { titulo: 'Terror', peliculas: [], mantenerOrden: false },
         'navidad': { titulo: 'Películas de Navidad', peliculas: [], mantenerOrden: false },
-        'programacion': { titulo: 'Programación y Tecnología', peliculas: [], mantenerOrden: false }
+        'drama': { titulo: 'Drama', peliculas: [], mantenerOrden: false },
+        'deportes': { titulo: 'Deportes', peliculas: [], mantenerOrden: false },
+        'reality_show': { titulo: 'Reality Show', peliculas: [], mantenerOrden: false },
+        'talk_show': { titulo: 'Talk Show', peliculas: [], mantenerOrden: false },
+        'noticias': { titulo: 'Noticias', peliculas: [], mantenerOrden: false },
+        'infantil': { titulo: 'Infantil', peliculas: [], mantenerOrden: false },
+        'educativo': { titulo: 'Educativo', peliculas: [], mantenerOrden: false },
+        'cocina': { titulo: 'Cocina', peliculas: [], mantenerOrden: false },
+        'viajes': { titulo: 'Viajes', peliculas: [], mantenerOrden: false },
+        'naturaleza': { titulo: 'Naturaleza', peliculas: [], mantenerOrden: false },
+        'tecnologia': { titulo: 'Tecnología', peliculas: [], mantenerOrden: false },
     };
 
     // Función para mezclar array
@@ -387,11 +406,20 @@ function mostrarPeliculasPorCategorias(peliculas) {
     if (!categoriasWrapper) return;
 
     const logosCategoria = {
-        'neflix': ['../logos/1.jpeg'],
+        'netflix': ['../logos/1.jpeg'],
         'amazon': ['../logos/2.jpeg'],
         'animacion': ['../logos/3.jpeg'],
         'marvel': ['../logos/7.png'],
         'dc': ['../logos/4.jpeg'],
+        'hbo': ['https://cdn.teletime.com.br/wp-content/uploads/2021/03/hbo-max-logo.jpg'],
+        'disney': ['../logos/3.jpeg'],
+        'paramount': ['https://www.paramountplus.com/assets/pplus/PPlus_Logo_1200x630_BLUE.png'],
+        'apple': ['../logos/apple-tv.png'],
+        'hulu': ['../logos/hulu.png'],
+        'peacock': ['../logos/peacock.png'],
+        'starz': ['../logos/starz.png'],
+        'showtime': ['../logos/showtime.png'],
+        'crunchyroll': ['../logos/crunchyroll.png'],
         'estrenos': ['https://cdnsnte1.s3.us-west-1.amazonaws.com/wp-content/uploads/2025/02/20120506/boton_nuevo_paz.png'],
     };
 
@@ -409,7 +437,7 @@ function mostrarPeliculasPorCategorias(peliculas) {
             <div class="categoria-contenedor">
                 ${miListaPeliculas.map(pelicula => `
                     <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
-                        ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
+                        ${pelicula.nuevo ? `<div class="badge">Recién Agregado</div>` : (pelicula.badge && pelicula.badge !== 'nuevo' ? `<div class="badge">${pelicula.badge}</div>` : '')}
                         <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
                         <div class="movie-info">
                             <h3>${pelicula.titulo}</h3>
@@ -460,8 +488,7 @@ function mostrarPeliculasPorCategorias(peliculas) {
                 <div class="categoria-contenedor">
                     ${categoria.peliculas.map(pelicula => `
                         <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
-                            ${pelicula.nuevo ? `<div class="badge">NUEVO</div>` : ''}
-                            ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
+                            ${pelicula.nuevo ? `<div class="badge">Recién Agregado</div>` : (pelicula.badge && pelicula.badge !== 'nuevo' ? `<div class="badge">${pelicula.badge}</div>` : '')}
                             <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
                             <div class="movie-info">
                                 <h3>${pelicula.titulo}</h3>
@@ -955,7 +982,7 @@ function cargarCategorias() {
                 <div class="categoria-contenedor">
                     ${miListaPeliculas.map(pelicula => `
                         <div class="movie-card" data-pelicula='${JSON.stringify(pelicula)}'>
-                            ${pelicula.badge ? `<div class="badge">${pelicula.badge}</div>` : ''}
+                            ${pelicula.nuevo ? `<div class="badge">Recién Agregado</div>` : (pelicula.badge && pelicula.badge !== 'nuevo' ? `<div class="badge">${pelicula.badge}</div>` : '')}
                             <img src="${pelicula.imagen}" alt="${pelicula.titulo}">
                             <div class="movie-info">
                                 <h3>${pelicula.titulo}</h3>
