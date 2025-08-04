@@ -591,6 +591,17 @@ footer {
     height: 500px; /* Reducido de 600px a 500px para PC */
 }
 
+/* Ajuste para pantallas grandes de PC - hacer el video más alto */
+@media (min-width: 1200px) {
+    .announcements-carousel {
+        height: 650px; /* Aumentado para pantallas grandes */
+    }
+    
+    .announcement-trailer {
+        transform: scale(1.4); /* Reducido para evitar que se corte tanto por los lados */
+    }
+}
+
 .announcements-container {
     display: flex;
     transition: transform 0.5s ease;
@@ -1117,10 +1128,10 @@ footer {
         position: relative;
         background: linear-gradient(
             90deg,
-            rgba(0, 0, 0, 0.7) 0%,
-            rgba(0, 0, 0, 0.5) 25%,
-            rgba(0, 0, 0, 0.2) 45%,
-            rgba(0, 0, 0, 0.05) 65%,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.3) 25%,
+            rgba(0, 0, 0, 0.1) 45%,
+            rgba(0, 0, 0, 0.02) 65%,
             transparent 85%
         );
     }
@@ -1278,8 +1289,8 @@ footer {
     z-index: 2;
     background: linear-gradient(
         to top,
-        rgba(0, 0, 0, 0.95) 0%,
-        rgba(0, 0, 0, 0.6) 60%,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.3) 60%,
         transparent 100%
     );
 }
@@ -1334,10 +1345,10 @@ footer {
         padding: 20px;
         background: linear-gradient(
             to top,
-            rgba(0, 0, 0, 0.95) 0%,
-            rgba(0, 0, 0, 0.8) 40%,
-            rgba(0, 0, 0, 0.6) 60%,
-            rgba(0, 0, 0, 0.4) 80%,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.5) 40%,
+            rgba(0, 0, 0, 0.3) 60%,
+            rgba(0, 0, 0, 0.2) 80%,
             transparent 100%
         );
     }
