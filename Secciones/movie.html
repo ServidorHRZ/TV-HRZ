@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HRZ TV - Reproducir</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./estilos/movie.css">
 </head>
+
 <body>
     <!-- Layout para PC -->
     <div class="pc-layout">
-        <div class="left-column">
-            <div class="movie-info-pc">
+        <!-- Sección superior: información + reproductor -->
+        <div class="top-section">
+            <!-- Información de la película (izquierda) -->
+            <div class="movie-info-left">
                 <img id="movie-poster-pc" class="movie-poster-pc" src="" alt="">
                 <div class="movie-details-pc">
-                    <h1 class="movie-title" id="movie-title-pc"></h1>
-                    <div class="movie-metadata">
-                        <span class="movie-year" id="movie-year-pc"></span>
-                        <span id="movie-genre-pc"></span>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="action-button mi-lista" id="likeButton-pc">
-                            <i class="fas fa-plus"></i>
-                            <span>Mi lista</span>
+                    <h1 class="movie-title-pc" id="movie-title-pc"></h1>
+                    <p class="movie-description-pc" id="movie-description-pc"></p>
+                    <div class="action-buttons-pc">
+                        <button class="action-button trailer-pc" id="trailerButton-pc">
+                            <span>TRAILER</span>
+                        </button>
+                        <button class="action-button mi-lista-pc" id="likeButton-pc">
+                            <span>MI LISTA</span>
                         </button>
                     </div>
-                    <div class="movie-description-section">
-                        <p class="movie-description" id="movie-description-pc"></p>
-                    </div>
                 </div>
             </div>
-            <div class="trailer-section" id="trailer-container">
-                <!-- El trailer se insertará aquí -->
+
+            <!-- Reproductor (derecha) -->
+            <div class="player-right">
+                <div class="player-wrapper-pc" id="player-wrapper-pc">
+                    <!-- El reproductor se insertará aquí -->
+                </div>
+                <button class="action-button reconectar-pc" id="btnReconectar-pc">
+                    <span>REINTENTAR CONEXION</span>
+                </button>
             </div>
         </div>
-        <div class="right-column">
-            <div class="player-wrapper-pc" id="player-wrapper-pc">
-                <!-- El reproductor se insertará aquí -->
-            </div>
-            <button class="action-button reconectar" id="btnReconectar-pc">
-                <i class="fas fa-sync-alt"></i>
-                <span>Reintentar conexión</span>
-            </button>
-            <div class="recommendations">
-                <h2 class="recommendations-title">Películas recomendadas</h2>
-                <div class="recommendations-grid" id="recommendations-container">
-                    <!-- Las recomendaciones se insertarán aquí -->
-                </div>
+
+        <!-- Sección de recomendaciones -->
+        <div class="recommendations-section">
+            <div class="recommendations-grid" id="recommendations-container">
+                <!-- Las recomendaciones se insertarán aquí -->
             </div>
         </div>
     </div>
@@ -88,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="movie-description-section">
                 <p class="movie-description" id="movie-description"></p>
             </div>
@@ -138,9 +139,10 @@
     <!-- Firebase SDK desde CDN -->
     <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
-    
+
     <!-- Scripts locales -->
     <script src="./Funciones/firestore-peliculas-simple.js"></script>
     <script src="./Funciones/movie.js"></script>
 </body>
+
 </html>

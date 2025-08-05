@@ -6,7 +6,6 @@ window.addEventListener('load', () => {
         const updateLayouts = () => {
             // Actualizar layout PC
             document.getElementById('movie-title-pc').textContent = peliculaSeleccionada.titulo;
-            document.getElementById('movie-year-pc').textContent = peliculaSeleccionada.año;
             document.getElementById('movie-description-pc').textContent = peliculaSeleccionada.descripcion || 'Descripción no disponible.';
             document.getElementById('movie-poster-pc').src = peliculaSeleccionada.imagen;
             document.getElementById('movie-poster-pc').alt = peliculaSeleccionada.titulo;
@@ -26,17 +25,39 @@ window.addEventListener('load', () => {
                 </iframe>
             `;
 
-            // Insertar trailer (ejemplo con YouTube, ajustar según tus necesidades)
-            const trailerContainer = document.getElementById('trailer-container');
-            if (peliculaSeleccionada.trailer) {
-                trailerContainer.innerHTML = `
-                    <iframe 
-                        src="${peliculaSeleccionada.trailer}"
-                        allowfullscreen
-                        allow="autoplay; fullscreen"
-                        style="border: none;">
-                    </iframe>
+            // Configurar el botón de trailer para PC
+            const trailerButtonPC = document.getElementById('trailerButton-pc');
+            if (peliculaSeleccionada.trailer && trailerButtonPC) {
+                trailerButtonPC.style.display = 'flex';
+                trailerButtonPC.innerHTML = `
+                    <i class="fas fa-play"></i>
+                    <span>TRAILER</span>
                 `;
+                
+                trailerButtonPC.addEventListener('click', () => {
+                    // Mostrar el modal
+                    const trailerModal = document.getElementById('trailerModal');
+                    const trailerModalTitle = document.getElementById('trailerModalTitle');
+                    const trailerModalContainer = document.getElementById('trailerContainer');
+                    
+                    trailerModal.classList.add('show');
+                    trailerModalTitle.textContent = `Trailer - ${peliculaSeleccionada.titulo}`;
+                    
+                    // Insertar el trailer
+                    trailerModalContainer.innerHTML = `
+                        <iframe 
+                            src="${peliculaSeleccionada.trailer}?autoplay=1&mute=0"
+                            allowfullscreen
+                            allow="autoplay; fullscreen"
+                            style="border: none;">
+                        </iframe>
+                    `;
+                    
+                    // Prevenir scroll del body
+                    document.body.style.overflow = 'hidden';
+                });
+            } else if (trailerButtonPC) {
+                trailerButtonPC.style.display = 'none';
             }
 
             // Cargar y mostrar recomendaciones desde Firestore
@@ -67,7 +88,7 @@ window.addEventListener('load', () => {
                                    Array.isArray(peliculaSeleccionada.genero) &&
                                    p.genero.some(g => peliculaSeleccionada.genero.includes(g));
                         })
-                        .slice(0, 10); // Aumentado a 10 recomendaciones (5x2)
+                        .slice(0, 7); // 7 recomendaciones en una sola fila
 
                     const recomendacionesContainer = document.getElementById('recommendations-container');
                     if (peliculasSimilares.length > 0) {
@@ -95,7 +116,7 @@ window.addEventListener('load', () => {
                         const peliculasAleatorias = todasLasPeliculas
                             .filter(p => p.id !== peliculaSeleccionada.id && p.disponible)
                             .sort(() => Math.random() - 0.5)
-                            .slice(0, 10);
+                            .slice(0, 7);
 
                         recomendacionesContainer.innerHTML = peliculasAleatorias
                             .map(pelicula => `
@@ -149,7 +170,7 @@ window.addEventListener('load', () => {
             `;
 
             // Configurar botones de Mi Lista
-            const setupMiListaButton = (buttonId) => {
+            const setupMiListaButton = (buttonId, isPC = false) => {
                 const button = document.getElementById(buttonId);
                 if (!button) return;
 
@@ -159,10 +180,20 @@ window.addEventListener('load', () => {
 
                 // Actualizar estado visual del botón
                 button.classList.toggle('en-lista', estaEnLista);
-                button.innerHTML = `
-                    <i class="fas ${estaEnLista ? 'fa-check' : 'fa-plus'}"></i>
-                    <span>${estaEnLista ? 'En mi lista' : 'Mi lista'}</span>
-                `;
+                
+                if (isPC) {
+                    // Para PC: con iconos también
+                    button.innerHTML = `
+                        <i class="fas ${estaEnLista ? 'fa-check' : 'fa-plus'}"></i>
+                        <span>${estaEnLista ? 'EN MI LISTA' : 'MI LISTA'}</span>
+                    `;
+                } else {
+                    // Para móvil: con iconos
+                    button.innerHTML = `
+                        <i class="fas ${estaEnLista ? 'fa-check' : 'fa-plus'}"></i>
+                        <span>${estaEnLista ? 'En mi lista' : 'Mi lista'}</span>
+                    `;
+                }
 
                 // Agregar event listener
                 button.onclick = () => {
@@ -173,18 +204,34 @@ window.addEventListener('load', () => {
                         // Agregar a la lista
                         miLista.push(peliculaSeleccionada);
                         button.classList.add('en-lista');
-                        button.innerHTML = `
-                            <i class="fas fa-check"></i>
-                            <span>En mi lista</span>
-                        `;
+                        
+                        if (isPC) {
+                            button.innerHTML = `
+                                <i class="fas fa-check"></i>
+                                <span>EN MI LISTA</span>
+                            `;
+                        } else {
+                            button.innerHTML = `
+                                <i class="fas fa-check"></i>
+                                <span>En mi lista</span>
+                            `;
+                        }
                     } else {
                         // Quitar de la lista
                         miLista.splice(index, 1);
                         button.classList.remove('en-lista');
-                        button.innerHTML = `
-                            <i class="fas fa-plus"></i>
-                            <span>Mi lista</span>
-                        `;
+                        
+                        if (isPC) {
+                            button.innerHTML = `
+                                <i class="fas fa-plus"></i>
+                                <span>MI LISTA</span>
+                            `;
+                        } else {
+                            button.innerHTML = `
+                                <i class="fas fa-plus"></i>
+                                <span>Mi lista</span>
+                            `;
+                        }
                     }
 
                     localStorage.setItem('miListaPeliculas', JSON.stringify(miLista));
@@ -192,8 +239,8 @@ window.addEventListener('load', () => {
             };
 
             // Configurar botones para PC y móvil
-            setupMiListaButton('likeButton-pc');
-            setupMiListaButton('likeButton');
+            setupMiListaButton('likeButton-pc', true); // PC version
+            setupMiListaButton('likeButton', false);   // Mobile version
 
             // Configurar el botón de trailer para móvil
             const trailerButton = document.getElementById('trailerButton');
@@ -207,7 +254,7 @@ window.addEventListener('load', () => {
                 
                 trailerButton.addEventListener('click', () => {
                     // Mostrar el modal
-                    trailerModal.style.display = 'block';
+                    trailerModal.classList.add('show');
                     trailerModalTitle.textContent = `Trailer - ${peliculaSeleccionada.titulo}`;
                     
                     // Insertar el trailer
@@ -226,7 +273,7 @@ window.addEventListener('load', () => {
 
                 // Cerrar modal
                 const closeModal = () => {
-                    trailerModal.style.display = 'none';
+                    trailerModal.classList.remove('show');
                     trailerModalContainer.innerHTML = ''; // Detener el video
                     document.body.style.overflow = 'auto';
                 };
@@ -242,7 +289,7 @@ window.addEventListener('load', () => {
 
                 // Cerrar modal con la tecla Escape
                 document.addEventListener('keydown', (e) => {
-                    if (e.key === 'Escape' && trailerModal.style.display === 'block') {
+                    if (e.key === 'Escape' && trailerModal.classList.contains('show')) {
                         closeModal();
                     }
                 });
@@ -257,7 +304,13 @@ window.addEventListener('load', () => {
         updateLayouts();
 
         // Manejar el botón de reconexión para PC
-        document.getElementById('btnReconectar-pc').addEventListener('click', () => {
+        const btnReconectarPC = document.getElementById('btnReconectar-pc');
+        btnReconectarPC.innerHTML = `
+            <i class="fas fa-sync-alt"></i>
+            <span>REINTENTAR CONEXION</span>
+        `;
+        
+        btnReconectarPC.addEventListener('click', () => {
             const iframe = document.querySelector('#player-wrapper-pc iframe');
             if (iframe) {
                 const srcActual = iframe.src;
